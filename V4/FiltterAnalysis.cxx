@@ -715,34 +715,45 @@ void EventLoopAnalysisTemplate::analysis()
   }
 //matching Jets With gen quarks
   zcount=0;
-  vector<float> gjet_DRscore;
+  vector<float> gjet_DRscore, gjet_index;
   gjet_DRscore.clear();
-  float saveDR=100, jetDR;
-  for(size_t j=0; j < jet_e->size(); j++){
-    for(size_t i=0; i < GenDau_pt->size(); i++){
-      if(abs(GenDau_mompdgId->at(i))==24 && abs(GenDau_pdgId->at(i))!=24){
+  gjet_index.clear();
+  float saveDR, jetDR;
+  size_t saveInd;
+  for(size_t i=0; i < GenDau_pt->size(); i++){
+    saveDR=100;
+    saveInd=0;
+    if(abs(GenDau_mompdgId->at(i))==24 && abs(GenDau_pdgId->at(i))!=24){
+      for(size_t j=0; j < jet_e->size(); j++){
         jetDR=deltaR(GenDau_eta->at(i),GenDau_phi->at(i),jet_eta->at(j),jet_phi->at(j));
-        if(jetDR<saveDR) saveDR=jetDR;
+        if(jetDR<saveDR){
+          saveDR=jetDR;
+          saveInd=j;
+        }
       }
+      gjet_DRscore.push_back(saveDR);
+      gjet_index.push_back(saveInd);
     }
-    gjet_DRscore.push_back(saveDR);
   }
 
 //CheckJet and DR score size
-  if(gjet_DRscore.size()!=jet_pt->size()) cout<<"sizeError: "<<gjet_DRscore.size()<<' '<<jet_pt->size()<<'\n';
+  //if(gjet_DRscore.size()!=jet_pt->size()) cout<<"sizeError: "<<gjet_DRscore.size()<<' '<<jet_pt->size()<<'\n';
 ///Signal Dijet Invariant mass
+if(gjet_DRscore.size()>1){
   for(size_t i=0; i < gjet_DRscore.size(); i++){
+    //if(gjet_index.at(i)>jet_e->size())cout<<"sizeError: "<<gjet_index.at(i)<<' '<<jet_pt->size()<<endl;
     for(size_t j=0; j < gjet_DRscore.size(); j++){
+      //if(gjet_index.at(j)>jet_e->size())cout<<"sizeError: "<<gjet_index.at(j)<<' '<<jet_pt->size()<<endl;
       px=0,py=0,pz=0,e=0,m=0;
       if(i!=j){
-        if( gjet_DRscore.at(i)<0.1 && gjet_DRscore.at(j)<0.1){
-          //cout<<mass1+genjet_mass->at(j)<<endl;
-          px=cos(jet_phi->at(i))*corr_jet_pt->at(i) + cos(jet_phi->at(j))*corr_jet_pt->at(j);
-          py=sin(jet_phi->at(i))*corr_jet_pt->at(i) + sin(jet_phi->at(j))*corr_jet_pt->at(j);
-          float corr1=corr_jet_pt->at(i)/jet_pt->at(i);
-          float corr2=corr_jet_pt->at(j)/jet_pt->at(j);
-          pz=jet_pz->at(i)*corr1+jet_pz->at(j)*corr2;
-          e=jet_e->at(i)*corr1+jet_e->at(j)*corr2;
+        if( gjet_DRscore.at(i)<0.5 && gjet_DRscore.at(j)<0.5){
+          //cout<<mass1+genjet_mass.at(j)<<endl;
+          px=cos(jet_phi->at(gjet_index.at(i)))*corr_jet_pt->at(gjet_index.at(i)) + cos(jet_phi->at(gjet_index.at(j)))*corr_jet_pt->at(gjet_index.at(j));
+          py=sin(jet_phi->at(gjet_index.at(i)))*corr_jet_pt->at(gjet_index.at(i)) + sin(jet_phi->at(gjet_index.at(j)))*corr_jet_pt->at(gjet_index.at(j));
+          float corr1=corr_jet_pt->at(gjet_index.at(i))/jet_pt->at(gjet_index.at(i));
+          float corr2=corr_jet_pt->at(gjet_index.at(j))/jet_pt->at(gjet_index.at(j));
+          pz=jet_pz->at(gjet_index.at(i))*corr1+jet_pz->at(gjet_index.at(j))*corr2;
+          e=jet_e->at(gjet_index.at(i))*corr1+jet_e->at(gjet_index.at(j))*corr2;
           m=sqrt( e*e - px*px - py*py - pz*pz );
 
           for(size_t k=0; k < electron_pt->size(); k++){
@@ -761,6 +772,8 @@ void EventLoopAnalysisTemplate::analysis()
       }
     }
   }
+}
+
   if(zcount>=1) WZSjet_massfilter->Fill(1);
   else WZSjet_massfilter->Fill(0);
 /////////////////////////Generated Inva Mass/////////////////////////////////

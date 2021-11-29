@@ -119,7 +119,7 @@ public :
   vector<bool>   *electron_isTight;
   vector<float>   *genelec_pt;
   vector<float>   *genelec_DRscore;
-  vector<float>   *electron_Bsecvec;
+  //vector<float>   *electron_Bsecvec;
   vector<float>   *secvec_deltaR;
   vector<float>   *secvec_disp;
   vector<float>   *secvec_posx;
@@ -161,7 +161,7 @@ public :
   TBranch        *b_electron_isTight;
   TBranch        *b_genelec_pt;
   TBranch        *b_genelec_DRscore;
-  TBranch        *b_electron_Bsecvec;
+  //TBranch        *b_electron_Bsecvec;
   TBranch        *b_secvec_deltaR;
   TBranch        *b_secvec_disp;
   TBranch        *b_secvec_posx;
@@ -302,7 +302,7 @@ void EventLoopAnalysisTemplate::Init(TTree *tree)
    electron_isTight=0;
    genelec_pt=0;
    genelec_DRscore=0;
-   electron_Bsecvec=0;
+   //electron_Bsecvec=0;
    secvec_deltaR=0;
    secvec_disp=0;
    secvec_posx=0;
@@ -357,7 +357,7 @@ void EventLoopAnalysisTemplate::Init(TTree *tree)
    fChain->SetBranchAddress("electron_isTight",&electron_isTight,&b_electron_isTight);
    fChain->SetBranchAddress("genelec_pt",&genelec_pt,&b_genelec_pt);
    fChain->SetBranchAddress("genelec_DRscore",&genelec_DRscore,&b_genelec_DRscore);
-   fChain->SetBranchAddress("electron_Bsecvec",&electron_Bsecvec,&b_electron_Bsecvec);
+   //fChain->SetBranchAddress("electron_Bsecvec",&electron_Bsecvec,&b_electron_Bsecvec);
    fChain->SetBranchAddress("secvec_deltaR",&secvec_deltaR,&b_secvec_deltaR);
    fChain->SetBranchAddress("secvec_disp",&secvec_disp,&b_secvec_disp);
    fChain->SetBranchAddress("secvec_posx",&secvec_posx,&b_secvec_posx);
@@ -461,12 +461,12 @@ void EventLoopAnalysisTemplate::analysis()
         hists[2]->Fill(electron_eta->at(i));
       }
 
-      if(electron_Bsecvec->at(i)!=-1){
+      /*if(electron_Bsecvec->at(i)!=-1){
         if(secvec_disp->size()>electron_Bsecvec->at(i)) {
           //if(!electron_isLoose->at(i))hists[12]->Fill(secvec_disp->at(electron_Bsecvec->at(i)));
           //if(electron_isLoose->at(i)) hists[11]->Fill(secvec_disp->at(electron_Bsecvec->at(i)));
         }
-      }
+      }*/
       //compare to MC
       //if(GenPart_mompdgId->size()!=GenPart_pt->size())cout<<GenPart_mompdgId->size()<<' '<<GenPart_pt->size();
       for (size_t j = 0; j < GenPart_pt->size(); j++) {
@@ -496,9 +496,9 @@ void EventLoopAnalysisTemplate::analysis()
             }
 
             //////////Best Secondary vertex/////////////////////
-            if(electron_Bsecvec->at(i)!=-1){
+            /*if(electron_Bsecvec->at(i)!=-1){
               if(secvec_disp->size()>electron_Bsecvec->at(i)) hists[12]->Fill(secvec_disp->at(electron_Bsecvec->at(i)));
-            }
+            }*/
           }
         }
       }
@@ -603,9 +603,9 @@ void EventLoopAnalysisTemplate::analysis()
         for (size_t j = 0; j < GenPart_pt->size(); j++) {
           if(abs(GenPart_pdgId->at(j)) == 11 && abs(GenPart_mompdgId->at(j)) == 556){
             if( genelec_DRscore->at(i)<0.1 && genelec_pt->at(i)==GenPart_pt->at(j) ){
-              if(electron_Bsecvec->at(i)!=-1){
+              /*if(electron_Bsecvec->at(i)!=-1){
                 if(secvec_disp->size()>electron_Bsecvec->at(i)) LW200EleBsecvec_f->Fill(secvec_disp->at(electron_Bsecvec->at(i)));
-              }
+              }*/
             }
           }
         }
@@ -698,9 +698,7 @@ int main()
 
 
   map<string, pair<string,float> > sampleNames;
-  sampleNames.insert(make_pair("LWSM200DnR_noFilter_notracks",make_pair("LW200",1)));
-
-
+  sampleNames.insert(make_pair("myoutput_100",make_pair("LW200",1)));
 
 
   //loop over sample files with names  defined above
