@@ -42,43 +42,42 @@ using namespace std;
  * Base path to local filesystem or to EOS containing the datasets
  */
 //const std::string samplesBasePath = "root://eospublic.cern.ch//eos/opendata/cms/upload/od-workshop/ws2021/";
-TH1F* WZelectron_num = new TH1F("WZelectron_num","number of events with elec/phot pt>20GeV",10,0,10);
-TH1F* WZelectron_pt = new TH1F("WZelectron_pt","Electrons pt for missing trigg",100,0,200);
-TH1F* WZelectron_eta = new TH1F("WZelectron_eta","Electrons eta for missing trigg",100,-5,5);
-TH1F* WZphoton_num = new TH1F("Photon_number","Number of photons pt>17GeV",10,0,10);
-TH1F* WZphoton_pt = new TH1F("Photon_pt","Photon transverse momentum pt>17GeV",100,0,200);
-TH1F* WZphoton_eta = new TH1F("Photon_eta","Photon pseudorapidity pt>17GeV",100,-5,5);
-TH1F* WZSGenele_num = new TH1F("WZSGenele_num","Number of signal gen-electrons per event (pt<15GeV)",3,0,3);
-TH1F* WZSGenele_pt = new TH1F("WZSGenele_pt","Signal Genele pt ",100,0,200);
-TH1F* WZSGenele_eta = new TH1F("WZSGenele_eta","Signal Genele eta",100,-5,5);
-TH1F* WZGenphot_num = new TH1F("Genphot_num","Number of gen-photon pt>17GeV",50,0,100);
-TH1F* WZGenphot_pt = new TH1F("Genphot_pt","Gen-photon transverse momentumpt pt>17GeV",100,0,200);
-TH1F* WZGenphot_eta = new TH1F("Genphot_eta","Gen-photon pseudorapidity pt>17GeV",100,-5,5);
-TH1F* WZGenelec_num = new TH1F("WZGenelec_num","number of gen-electrons",50,0,100);
-TH1F* WZGenelec_pt = new TH1F("WZGenelec_pt","Genelec pt",100,0,200);
-TH1F* WZGenelec_eta = new TH1F("WZGenelec_eta","Genelec eta",100,-5,5);
-TH1F* WZGenWdau_pt = new TH1F("WZGenWdau_pt","GensWdau pt for missing trigg",100,0,200);
-TH1F* WZGenWdau_eta = new TH1F("WZGenWdau_eta","GensWdau eta for missing trigg",100,-5,5);
-TH1F* WZHelec_num = new TH1F("High_electron_number","Number of Second most energetic electron pt>15GeV",3,0,3);
-TH1F* WZHelec_pt = new TH1F("High_electron_pt","Second most energetic electron transverse momentum pt>15GeV",100,0,200);
-TH1F* WZHelec_eta = new TH1F("High_electron_eta","Second most energetic electron pseudorapidity pt>15GeV",100,-5,5);
-TH1F* WZTrack_num = new TH1F("Tracks_number","Number of tracks pt>15GeV",50,0,100);
-TH1F* WZTrack_pt = new TH1F("Tracks_pt","Tracks transverse momentum pt>15GeV",100,0,200);
-TH1F* WZTrack_eta = new TH1F("Tracks_eta","Tracks pseudorapidity pt>15GeV",100,-5,5);
-TH1F* WZHtrk_num = new TH1F("High_track_number","Number of Second most energetic track pt>15GeV",3,0,3);
-TH1F* WZHtrk_pt = new TH1F("High_track_pt","Second most energetic track transverse momentum pt>15GeV",100,0,200);
-TH1F* WZHtrk_eta = new TH1F("High_track_eta","Second most energetic track pseudorapidity pt>15GeV",100,-5,5);
-TH1F* WZjet_mass = new TH1F("WZDiJet_Invmass","Invariant mass from DiJets ",800,0,400);
-TH1F* WZLW_mass = new TH1F("WZLW_Invmass","Invariant mass from LW",800,0,400);
-TH1F* WZCorrjet_mass = new TH1F("WZDiCorrJet_Invmass","Invariant mass from corrected DiJets ",800,0,400);
-TH1F* WZSjet_mass = new TH1F("WZSDiJet_Invmass","Invariant mass from Signal DiJets ",800,0,400);
-TH1F* WZGenjet_mass = new TH1F("WZGenDiJet_Invmass","Invariant mass from Gen DiJets ",800,0,400);
-TH1F* WZRecoEle_mass = new TH1F("WZRecoDiEle_Invmass","Invariant mass from Reco DiElec",800,0,400);
-TH1F* WZjet_massfilter = new TH1F("WZDiJet_Invmass_filter","Events with DiJets invariant mass ",2,0,2);
-TH1F* WZSjet_massfilter = new TH1F("WZSDiJet_Invmass_filter","Events with Signal DiJets invariant mass ",2,0,2);
-TH1F* WZGenjet_massfilter = new TH1F("WZDiGenJet_Invmass_filter","Events with Gen DiJets invariant mass ",2,0,2);
-TH1F* WZWdau_deltaR = new TH1F("WZWdau_deltaR","DeltaR for Z daughters",201,0,20);
-//TH1F* WZEleBsecvec = new TH1F("Electron best match","Best matched secondary vertex displacement",100,0,0.1);
+TH1F* LW200electron_num = new TH1F("LW200electron_num","number of events with elec/phot pt>20GeV",10,0,10);
+TH1F* LW200electron_pt = new TH1F("LW200electron_pt","Electrons pt for missing trigg",100,0,200);
+TH1F* LW200electron_eta = new TH1F("LW200electron_eta","Electrons eta for missing trigg",100,-5,5);
+TH1F* LW200photon_num = new TH1F("Photon_number","Number of photons pt>17GeV",10,0,10);
+TH1F* LW200photon_pt = new TH1F("Photon_pt","Photon transverse momentum pt>17GeV",100,0,200);
+TH1F* LW200photon_eta = new TH1F("Photon_eta","Photon pseudorapidity pt>17GeV",100,-5,5);
+TH1F* LW200SGenele_num = new TH1F("LW200SGenele_num","Number of signal gen-electrons per event (pt<15GeV)",3,0,3);
+TH1F* LW200SGenele_pt = new TH1F("LW200SGenele_pt","Signal Genele pt ",100,0,200);
+TH1F* LW200SGenele_eta = new TH1F("LW200SGenele_eta","Signal Genele eta",100,-5,5);
+TH1F* LW200Genphot_num = new TH1F("Genphot_num","Number of gen-photon pt>17GeV",50,0,100);
+TH1F* LW200Genphot_pt = new TH1F("Genphot_pt","Gen-photon transverse momentumpt pt>17GeV",100,0,200);
+TH1F* LW200Genphot_eta = new TH1F("Genphot_eta","Gen-photon pseudorapidity pt>17GeV",100,-5,5);
+TH1F* LW200Genelec_num = new TH1F("LW200Genelec_num","number of gen-electrons",50,0,100);
+TH1F* LW200Genelec_pt = new TH1F("LW200Genelec_pt","Genelec pt",100,0,200);
+TH1F* LW200Genelec_eta = new TH1F("LW200Genelec_eta","Genelec eta",100,-5,5);
+TH1F* LW200GenZdau_pt = new TH1F("LW200GenZdau_pt","GensZdau pt for missing trigg",100,0,200);
+TH1F* LW200GenZdau_eta = new TH1F("LW200GenZdau_eta","GensZdau eta for missing trigg",100,-5,5);
+TH1F* LW200Helec_num = new TH1F("LW200High_electron_number","Number of Second most energetic electron pt>15GeV",3,0,3);
+TH1F* LW200Helec_pt = new TH1F("LW200High_electron_pt","Second most energetic electron transverse momentum pt>15GeV",100,0,200);
+TH1F* LW200Helec_eta = new TH1F("LW200High_electron_eta","Second most energetic electron pseudorapidity pt>15GeV",100,-5,5);
+TH1F* LW200Track_num = new TH1F("LW200Tracks_number","Number of tracks pt>15GeV",50,0,100);
+TH1F* LW200Track_eta = new TH1F("LW200Tracks_eta","Tracks pseudorapidity pt>15GeV",100,-5,5);
+TH1F* LW200Track_pt = new TH1F("LW200Tracks_pt","Tracks transverse momentum pt>15GeV",100,0,200);
+TH1F* LW200Htrk_num = new TH1F("LW200High_track_number","Number of Second most energetic track pt>15GeV",3,0,3);
+TH1F* LW200Htrk_pt = new TH1F("LW200High_track_pt","Second most energetic track transverse momentum pt>15GeV",100,0,200);
+TH1F* LW200Htrk_eta = new TH1F("LW200High_track_eta","Second most energetic track pseudorapidity pt>15GeV",100,-5,5);
+TH1F* LW200jet_mass = new TH1F("LW200DiJet_Invmass","Invariant mass from DiJets ",800,0,400);
+TH1F* LW200LW_mass = new TH1F("LW200LW_Invmass","Invariant mass from LW",800,0,400);
+TH1F* LW200Corrjet_mass = new TH1F("LW200DiCorrJet_Invmass","Invariant mass from corrected DiJets ",800,0,400);
+TH1F* LW200Sjet_mass = new TH1F("LW200SDiJet_Invmass","Invariant mass from Signal DiJets ",800,0,400);
+TH1F* LW200Genjet_mass = new TH1F("LW200RecoDiEle_Invmass","Invariant mass from Gen DiJets ",800,0,400);
+TH1F* LW200RecoEle_mass = new TH1F("LW200RecoDiEle_Invmass","Invariant mass from Reco DiElec",800,0,400);
+TH1F* LW200jet_massfilter = new TH1F("LW200DiJet_Invmass_filter","Events with DiJets invariant mass ",2,0,2);
+TH1F* LW200Sjet_massfilter = new TH1F("LW200SDiJet_Invmass_filter","Events with Signal DiJets invariant mass ",2,0,2);
+TH1F* LW200Genjet_massfilter = new TH1F("LW200DiGenJet_Invmass_filter","Events with Gen DiJets invariant mass ",2,0,2);
+//TH1F* LW200EleBsecvec = new TH1F("Electron best match","Best matched secondary vertex displacement",100,0,0.1);
 const std::string samplesBasePath = "";
 
 
@@ -145,7 +144,6 @@ public :
   vector<float>   *jet_px;
   vector<float>   *jet_py;
   vector<float>   *jet_phi;
-  vector<float>   *jet_eta;
   vector<float>   *genjet_e;
   vector<float>   *genjet_pt;
   vector<float>   *genjet_pz;
@@ -196,7 +194,6 @@ public :
   TBranch        *b_jet_px;
   TBranch        *b_jet_py;
   TBranch        *b_jet_phi;
-  TBranch        *b_jet_eta;
   TBranch        *b_genjet_e;
   TBranch        *b_genjet_pt;
   TBranch        *b_genjet_pz;
@@ -232,7 +229,6 @@ public :
   virtual void     Loop();
   virtual Bool_t   Notify();
   virtual void     Show(Long64_t entry = -1);
-  virtual float deltaR(float eta1, float phi1, float eta2, float phi2);
   void analysis();
   Float_t MinimalSelection(Int_t entry);
 
@@ -247,23 +243,23 @@ EventLoopAnalysisTemplate::EventLoopAnalysisTemplate(TString thefile, TString th
   labeltag = thelabel;
   theweight = sampleweight;
 
-  hists[0]=WZelectron_num;
-  hists[1]=WZelectron_pt;
-  hists[2]=WZelectron_eta;
-  hists[3]=WZphoton_num;
-  hists[4]=WZphoton_pt;
-  hists[5]=WZphoton_eta;
-  hists[6]=WZSGenele_num;
-  hists[7]=WZSGenele_pt;
-  hists[8]=WZSGenele_eta;
-  hists[9]=WZGenphot_num;
-  hists[10]=WZGenphot_pt;
-  hists[11]=WZGenphot_eta;
-  hists[12]=WZGenWdau_pt;
-  hists[13]=WZGenWdau_eta;
-  hists[14]=WZGenelec_num;
-  hists[15]=WZGenelec_pt;
-  hists[16]=WZGenelec_eta;
+  hists[0]=LW200electron_num;
+  hists[1]=LW200electron_pt;
+  hists[2]=LW200electron_eta;
+  hists[3]=LW200photon_num;
+  hists[4]=LW200photon_pt;
+  hists[5]=LW200photon_eta;
+  hists[6]=LW200SGenele_num;
+  hists[7]=LW200SGenele_pt;
+  hists[8]=LW200SGenele_eta;
+  hists[9]=LW200Genphot_num;
+  hists[10]=LW200Genphot_pt;
+  hists[11]=LW200Genphot_eta;
+  hists[12]=LW200GenZdau_pt;
+  hists[13]=LW200GenZdau_eta;
+  hists[14]=LW200Genelec_num;
+  hists[15]=LW200Genelec_pt;
+  hists[16]=LW200Genelec_eta;
 
 // if parameter tree is not specified (or zero), connect the file
 // used to generate this class and read the Tree.
@@ -349,7 +345,6 @@ void EventLoopAnalysisTemplate::Init(TTree *tree)
    jet_px=0;
    jet_py=0;
    jet_phi=0;
-   jet_eta=0;
    genjet_e=0;
    genjet_pt=0;
    genjet_pz=0;
@@ -427,7 +422,6 @@ void EventLoopAnalysisTemplate::Init(TTree *tree)
    fChain->SetBranchAddress("jet_px",&jet_px,&b_jet_px);
    fChain->SetBranchAddress("jet_py",&jet_py,&b_jet_py);
    fChain->SetBranchAddress("jet_phi",&jet_phi,&b_jet_phi);
-   fChain->SetBranchAddress("jet_eta",&jet_eta,&b_jet_eta);
    fChain->SetBranchAddress("genjet_e",&genjet_e,&b_genjet_e);
    fChain->SetBranchAddress("genjet_pt",&genjet_pt,&b_genjet_pt);
    fChain->SetBranchAddress("genjet_pz",&genjet_pz,&b_genjet_pz);
@@ -523,18 +517,18 @@ void EventLoopAnalysisTemplate::analysis()
     sort(vect.begin(),vect.end());
     /*if(vect[vect.size()-1].first>Minpt){
       Hcount++;
-      WZHelec_pt->Fill(vect[vect.size()-1].first);
-      WZHelec_eta->Fill(vect[vect.size()-1].second);
+      LW200Helec_pt->Fill(vect[vect.size()-1].first);
+      LW200Helec_eta->Fill(vect[vect.size()-1].second);
     }*/
     if(vect.size()>=2){
       if(vect[vect.size()-2].first>Minpt){
-        WZHelec_pt->Fill(vect[vect.size()-2].first);
-        WZHelec_eta->Fill(vect[vect.size()-2].second);
+        LW200Helec_pt->Fill(vect[vect.size()-2].first);
+        LW200Helec_eta->Fill(vect[vect.size()-2].second);
         Hcount++;
       }
     }
   }
-  WZHelec_num->Fill(Hcount);
+  LW200Helec_num->Fill(Hcount);
   vect.clear();
   Hcount=0;
 
@@ -544,27 +538,27 @@ void EventLoopAnalysisTemplate::analysis()
     for (size_t i = 0; i < track_pt->size(); i++) {
       if (track_pt->at(i)>Minpt && track_chi2->at(i)<1) {
         ntrk++;
-        WZTrack_pt->Fill(track_pt->at(i));
-        WZTrack_eta->Fill(track_eta->at(i));
+        LW200Track_pt->Fill(track_pt->at(i));
+        LW200Track_eta->Fill(track_eta->at(i));
       }
       vect.push_back(make_pair(track_pt->at(i),track_eta->at(i)));
     }
     sort(vect.begin(),vect.end());
     /*if(vect[vect.size()-1].first>Minpt){
       Hcount++;
-      WZHtrk_pt->Fill(vect[vect.size()-1].first);
-      WZHtrk_eta->Fill(vect[vect.size()-1].second);
+      LW200Htrk_pt->Fill(vect[vect.size()-1].first);
+      LW200Htrk_eta->Fill(vect[vect.size()-1].second);
     }*/
     if(vect.size()>=2){
       if(vect[vect.size()-2].first>Minpt){
-        WZHtrk_pt->Fill(vect[vect.size()-2].first);
-        WZHtrk_eta->Fill(vect[vect.size()-2].second);
+        LW200Htrk_pt->Fill(vect[vect.size()-2].first);
+        LW200Htrk_eta->Fill(vect[vect.size()-2].second);
         Hcount++;
       }
     }
   }
-  WZTrack_num->Fill(ntrk);
-  WZHtrk_num->Fill(Hcount);
+  LW200Track_num->Fill(ntrk);
+  LW200Htrk_num->Fill(Hcount);
   //Filling photons pt
   int nphot=0;
   if(photon_pt->size()!=0){
@@ -591,7 +585,7 @@ void EventLoopAnalysisTemplate::analysis()
         hists[8]->Fill(GenDau_eta->at (i));
       }
     }
-    if (abs(GenDau_mompdgId->at(i)) == 24) {
+    if (abs(GenDau_mompdgId->at(i)) == 23) {
       hists[12]->Fill(GenDau_pt->at(i));
       hists[13]->Fill(GenDau_eta->at (i));
     }
@@ -662,7 +656,7 @@ void EventLoopAnalysisTemplate::analysis()
           cout<<"Elept: "<<GenDau_pt->at(i)<<" eta: "<<GenDau_eta->at(i)<<" phi: "<<GenDau_phi->at(i)<<'\n';
         }
       }
-      if (abs(GenDau_mompdgId->at(i)) == 24) {
+      if (abs(GenDau_mompdgId->at(i)) == 23) {
         hists[12]->Fill(GenDau_pt->at(i));
         hists[13]->Fill(GenDau_eta->at (i));
       }
@@ -685,13 +679,13 @@ void EventLoopAnalysisTemplate::analysis()
         m=sqrt( e*e - px*px - py*py - pz*pz );
         if(m>MinZm && m<MaxZm){
           zcount++;
-          WZjet_mass->Fill(m);
+          LW200jet_mass->Fill(m);
         }
       }
     }
   }
-  if(zcount>=1) WZjet_massfilter->Fill(1);
-  else WZjet_massfilter->Fill(0);
+  if(zcount>=1) LW200jet_massfilter->Fill(1);
+  else LW200jet_massfilter->Fill(0);
 //correctedJetMass
   float corr_pt;
   for(size_t i=0; i < jet_mass->size(); i++){
@@ -708,34 +702,18 @@ void EventLoopAnalysisTemplate::analysis()
         m=sqrt( e*e - px*px - py*py - pz*pz );
 
         if(m>MinZm && m<MaxZm){
-          WZCorrjet_mass->Fill(m);
+          LW200Corrjet_mass->Fill(m);
         }
       }
     }
   }
-//matching Jets With gen quarks
-  zcount=0;
-  vector<float> gjet_DRscore;
-  gjet_DRscore.clear();
-  float saveDR=100, jetDR;
-  for(size_t j=0; j < jet_e->size(); j++){
-    for(size_t i=0; i < GenDau_pt->size(); i++){
-      if(abs(GenDau_mompdgId->at(i))==24 && abs(GenDau_pdgId->at(i))!=24){
-        jetDR=deltaR(GenDau_eta->at(i),GenDau_phi->at(i),jet_eta->at(j),jet_phi->at(j));
-        if(jetDR<saveDR) saveDR=jetDR;
-      }
-    }
-    gjet_DRscore.push_back(saveDR);
-  }
 
-//CheckJet and DR score size
-  if(gjet_DRscore.size()!=jet_pt->size()) cout<<"sizeError: "<<gjet_DRscore.size()<<' '<<jet_pt->size()<<'\n';
-///Signal Dijet Invariant mass
-  for(size_t i=0; i < gjet_DRscore.size(); i++){
-    for(size_t j=0; j < gjet_DRscore.size(); j++){
+  zcount=0;
+  for(size_t i=0; i < genjet_pt->size(); i++){
+    for(size_t j=0; j < genjet_pt->size(); j++){
       px=0,py=0,pz=0,e=0,m=0;
       if(i!=j){
-        if( gjet_DRscore.at(i)<0.1 && gjet_DRscore.at(j)<0.1){
+        if( genjet_DRscore->at(i)<0.1 && genjet_DRscore->at(j)<0.1){
           //cout<<mass1+genjet_mass->at(j)<<endl;
           px=cos(jet_phi->at(i))*corr_jet_pt->at(i) + cos(jet_phi->at(j))*corr_jet_pt->at(j);
           py=sin(jet_phi->at(i))*corr_jet_pt->at(i) + sin(jet_phi->at(j))*corr_jet_pt->at(j);
@@ -750,50 +728,35 @@ void EventLoopAnalysisTemplate::analysis()
             py=py+electron_py->at(k);
             pz=pz+electron_pz->at(k);
             Mlw=sqrt( e*e - px*px - py*py - pz*pz );
-            WZLW_mass->Fill(Mlw);
+            LW200LW_mass->Fill(Mlw);
           }
 
           if(m>MinZm && m<MaxZm){
             zcount++;
-            WZSjet_mass->Fill(m);
+            LW200Sjet_mass->Fill(m);
           }
         }
       }
     }
   }
-  if(zcount>=1) WZSjet_massfilter->Fill(1);
-  else WZSjet_massfilter->Fill(0);
+  if(zcount>=1) LW200Sjet_massfilter->Fill(1);
+  else LW200Sjet_massfilter->Fill(0);
 /////////////////////////Generated Inva Mass/////////////////////////////////
   zcount=0;
   for (size_t i = 0; i < GenDau_pt->size(); i++) {
     for (size_t j = 0; j < GenDau_pt->size(); j++) {
-      if(abs(GenDau_mompdgId->at(i))==24 && abs(GenDau_mompdgId->at(j))==24
-        && abs(GenDau_pdgId->at(i))!=24 && abs(GenDau_pdgId->at(j))!=24){
+      if(GenDau_mompdgId->at(i)==23 && GenDau_mompdgId->at(j)==23){
         if(i!=j){
-          float drWdau=deltaR(GenDau_eta->at(i),GenDau_phi->at(i),GenDau_eta->at(j),GenDau_phi->at(j));
-          WZWdau_deltaR->Fill(drWdau);
-          //WZWdau_deltaR->Fill(GenDau_pdgId->at(i));
-          float e1=sqrt(GenDau_mass->at(i)*GenDau_mass->at(i)+GenDau_pt->at(i)*GenDau_pt->at(i)+GenDau_pz->at(i)*GenDau_pz->at(i));
-          float e2=sqrt(GenDau_mass->at(j)*GenDau_mass->at(j)+GenDau_pt->at(j)*GenDau_pt->at(j)+GenDau_pz->at(j)*GenDau_pz->at(j));
-          px=GenDau_px->at(i)+GenDau_px->at(j);
-          py=GenDau_py->at(i)+GenDau_py->at(j);
-          pz=GenDau_pz->at(i)+GenDau_pz->at(j);
-          e=e1+e2;
-          m=sqrt( e*e - px*px - py*py - pz*pz );
-          //cout<<GenDau_pdgId->at(i)<<' '<<GenDau_pdgId->at(j)<<' '<<m<<endl;
-          WZGenjet_mass->Fill(m);
           if(GenDau_pdgId->at(i)==11 && GenDau_pdgId->at(j)==-11){
             //zcount++;
-            //float drWdau=deltaR(GenDau_eta->at(i),GenDau_phi->at(i),GenDau_eta->at(j),GenDau_phi->at(j));
-            //WZWdau_deltaR->Fill(drWdau);
-            /*float e1=sqrt(GenDau_mass->at(i)*GenDau_mass->at(i)+GenDau_pt->at(i)*GenDau_pt->at(i)+GenDau_pz->at(i)*GenDau_pz->at(i));
+            float e1=sqrt(GenDau_mass->at(i)*GenDau_mass->at(i)+GenDau_pt->at(i)*GenDau_pt->at(i)+GenDau_pz->at(i)*GenDau_pz->at(i));
             float e2=sqrt(GenDau_mass->at(j)*GenDau_mass->at(j)+GenDau_pt->at(j)*GenDau_pt->at(j)+GenDau_pz->at(j)*GenDau_pz->at(j));
             px=GenDau_px->at(i)+GenDau_px->at(j);
             py=GenDau_py->at(i)+GenDau_py->at(j);
             pz=GenDau_pz->at(i)+GenDau_pz->at(j);
             e=e1+e2;
             m=sqrt( e*e - px*px - py*py - pz*pz );
-            WZGenjet_mass->Fill(m);*/
+            LW200Genjet_mass->Fill(m);
 
             for (size_t k = 0; k < electron_pt->size(); k++) {
               for (size_t l = 0; l < electron_pt->size(); l++) {
@@ -804,7 +767,7 @@ void EventLoopAnalysisTemplate::analysis()
                     pz=electron_pz->at(k)+electron_pz->at(l);
                     e =electron_e->at(k) +electron_e->at(l);
                     m=sqrt( e*e - px*px - py*py - pz*pz );
-                    WZRecoEle_mass->Fill(m);
+                    LW200RecoEle_mass->Fill(m);
                   }
                 }
               }
@@ -814,8 +777,8 @@ void EventLoopAnalysisTemplate::analysis()
       }
     }
   }
-  if(zcount>=1) WZGenjet_massfilter->Fill(1);
-  else WZGenjet_massfilter->Fill(0);
+  if(zcount>=1) LW200Genjet_massfilter->Fill(1);
+  else LW200Genjet_massfilter->Fill(0);
   //////////////////////Reco Electron Inv Mass/////////////////////////////
 
 
@@ -856,13 +819,7 @@ Float_t EventLoopAnalysisTemplate::MinimalSelection(Int_t entry)
 
 }//------MinimalSelection
 
-float EventLoopAnalysisTemplate::deltaR(float eta1, float phi1, float eta2, float phi2) {
-  float deta = eta1 - eta2;
-  float dphi = std::abs(phi1 - phi2);
-  if (dphi > 3.14159)
-    dphi -= (2 * 3.14159);
-  return deta * deta + dphi * dphi;
-}
+
 
 
 //-----------------------------------------------------------------
@@ -885,7 +842,7 @@ int main()
 
 
   map<string, pair<string,float> > sampleNames;
-  sampleNames.insert(make_pair("WZJetsTo2L2Q",make_pair("WZ",1)));
+  sampleNames.insert(make_pair("myoutput_Data",make_pair("LW200",1)));
 
 
 
@@ -917,42 +874,41 @@ int main()
   TFile* hfile = new TFile("FiltterAnalysis.root","RECREATE");
 
   //Save signal region histos
-  WZelectron_num->Write();
-  WZelectron_pt->Write();
-  WZelectron_eta->Write();
-  WZphoton_num->Write();
-  WZphoton_pt->Write();
-  WZphoton_eta->Write();
-  WZSGenele_num->Write();
-  WZSGenele_pt->Write();
-  WZSGenele_eta->Write();
-  WZGenphot_num->Write();
-  WZGenphot_pt->Write();
-  WZGenphot_eta->Write();
-  WZGenWdau_pt->Write();
-  WZGenWdau_eta->Write();
-  WZGenelec_num->Write();
-  WZGenelec_pt->Write();
-  WZGenelec_eta->Write();
-  WZHelec_pt->Write();
-  WZHelec_eta->Write();
-  WZHelec_num->Write();
-  WZTrack_pt->Write();
-  WZTrack_eta->Write();
-  WZTrack_num->Write();
-  WZHtrk_pt->Write();
-  WZHtrk_eta->Write();
-  WZHtrk_num->Write();
-  WZjet_mass->Write();
-  WZCorrjet_mass->Write();
-  WZSjet_mass->Write();
-  WZGenjet_mass->Write();
-  WZjet_massfilter->Write();
-  WZSjet_massfilter->Write();
-  WZGenjet_massfilter->Write();
-  WZLW_mass->Write();
-  WZRecoEle_mass->Write();
-  WZWdau_deltaR->Write();
+  LW200electron_num->Write();
+  LW200electron_pt->Write();
+  LW200electron_eta->Write();
+  LW200photon_num->Write();
+  LW200photon_pt->Write();
+  LW200photon_eta->Write();
+  LW200SGenele_num->Write();
+  LW200SGenele_pt->Write();
+  LW200SGenele_eta->Write();
+  LW200Genphot_num->Write();
+  LW200Genphot_pt->Write();
+  LW200Genphot_eta->Write();
+  LW200GenZdau_pt->Write();
+  LW200GenZdau_eta->Write();
+  LW200Genelec_num->Write();
+  LW200Genelec_pt->Write();
+  LW200Genelec_eta->Write();
+  LW200Helec_pt->Write();
+  LW200Helec_eta->Write();
+  LW200Helec_num->Write();
+  LW200Track_pt->Write();
+  LW200Track_eta->Write();
+  LW200Track_num->Write();
+  LW200Htrk_pt->Write();
+  LW200Htrk_eta->Write();
+  LW200Htrk_num->Write();
+  LW200jet_mass->Write();
+  LW200Corrjet_mass->Write();
+  LW200Sjet_mass->Write();
+  LW200Genjet_mass->Write();
+  LW200jet_massfilter->Write();
+  LW200Sjet_massfilter->Write();
+  LW200Genjet_massfilter->Write();
+  LW200LW_mass->Write();
+  LW200RecoEle_mass->Write();
 
   hfile->Close();
 

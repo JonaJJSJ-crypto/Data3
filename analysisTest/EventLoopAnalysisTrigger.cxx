@@ -14,7 +14,7 @@
 //
 //
 // Compile me with:
-// g++ -std=c++11 -g -O3 -Wall -Wextra -o EventLoopAnalysisObj EventLoopAnalysisObj.cxx $(root-config --cflags --libs)
+// g++ -std=c++11 -g -O3 -Wall -Wextra -o EventLoopAnalysisTrigg EventLoopAnalysisTrigger.cxx $(root-config --cflags --libs)
 /////////////////////////////////////////////////////////////////////
 
 //Include ROOT classes
@@ -156,7 +156,6 @@ public :
   TTree           *tmets;
   TTree           *tjets;
   TTree           *telectrons;
-  TTree           *ttrigobjs;
 
   Int_t           fCurrent; //!current Tree number in a TChain
   TString          labeltag;
@@ -202,16 +201,6 @@ public :
   vector<float>   *electron_pz;
   vector<float>   *electron_px;
   vector<float>   *electron_py;
-  vector<float>   *electron_phi;
-  vector<float>   *electron_eta;
-  vector<float>   *trk_isHQ;
-  vector<float>   *trigobj_e;
-  vector<float>   *trigobj_pt;
-  vector<float>   *trigobj_pz;
-  vector<float>   *trigobj_px;
-  vector<float>   *trigobj_py;
-  vector<float>   *trigobj_phi;
-  vector<float>   *trigobj_eta;
   Float_t         met_pt;
   Float_t         met_phi;
 
@@ -253,16 +242,6 @@ public :
   TBranch        *b_electron_pz;
   TBranch        *b_electron_px;
   TBranch        *b_electron_py;
-  TBranch        *b_electron_phi;
-  TBranch        *b_electron_eta;
-  TBranch        *b_trk_isHQ;
-  TBranch        *b_trigobj_e;
-  TBranch        *b_trigobj_pt;
-  TBranch        *b_trigobj_pz;
-  TBranch        *b_trigobj_px;
-  TBranch        *b_trigobj_py;
-  TBranch        *b_trigobj_phi;
-  TBranch        *b_trigobj_eta;
 
   EventLoopAnalysisTemplate(TString filename, TString labeltag, Float_t theweight);
   virtual ~EventLoopAnalysisTemplate();
@@ -272,7 +251,6 @@ public :
   virtual void     Loop();
   virtual Bool_t   Notify();
   virtual void     Show(Long64_t entry = -1);
-  virtual float deltaR(float eta1, float phi1, float eta2, float phi2);
   void analysis();
   bool MinimalSelection();
 
@@ -347,7 +325,6 @@ EventLoopAnalysisTemplate::EventLoopAnalysisTemplate(TString thefile, TString th
    tmets = (TTree*)f->Get("mymets/Events");
    tjets = (TTree*)f->Get("myjets/Events");
    telectrons = (TTree*)f->Get("myelectrons/Events");
-   ttrigobjs = (TTree*)f->Get("mytrigEvent/Events");
    //Make friends so we can have access to friends variables
    //we may not use all of the available information
    //it is just an example
@@ -358,7 +335,6 @@ EventLoopAnalysisTemplate::EventLoopAnalysisTemplate(TString thefile, TString th
    tree->AddFriend(tmets);
    tree->AddFriend(tjets);
    tree->AddFriend(telectrons);
-   tree->AddFriend(ttrigobjs);
    Init(tree);
 }
 
@@ -433,16 +409,6 @@ void EventLoopAnalysisTemplate::Init(TTree *tree)
    electron_px = 0;
    electron_py = 0;
    electron_pz = 0;
-   electron_phi = 0;
-   electron_eta = 0;
-   trk_isHQ = 0;
-   trigobj_e = 0;
-   trigobj_pt = 0;
-   trigobj_px = 0;
-   trigobj_py = 0;
-   trigobj_pz = 0;
-   trigobj_phi = 0;
-   trigobj_eta = 0;
 
    // Set branch addresses and branch pointers
    if (!tree) return;
@@ -476,6 +442,7 @@ void EventLoopAnalysisTemplate::Init(TTree *tree)
    fChain->SetBranchAddress("tau_mass", &tau_mass, &b_tau_mass);
    fChain->SetBranchAddress("met_pt", &met_pt, &b_met_pt);
    fChain->SetBranchAddress("met_phi", &met_phi, &b_met_phi);
+   fChain->SetBranchAddress("jet_pt",&jet_pt,&b_jet_pt);
    fChain->SetBranchAddress("corr_jet_pt",&corr_jet_pt,&b_corr_jet_pt);
    fChain->SetBranchAddress("jet_px",&jet_px,&b_jet_px);
    fChain->SetBranchAddress("jet_py",&jet_py,&b_jet_py);
@@ -485,17 +452,7 @@ void EventLoopAnalysisTemplate::Init(TTree *tree)
    fChain->SetBranchAddress("electron_px",&electron_px,&b_electron_px);
    fChain->SetBranchAddress("electron_py",&electron_py,&b_electron_py);
    fChain->SetBranchAddress("electron_pz",&electron_pz,&b_electron_pz);
-   fChain->SetBranchAddress("electron_phi",&electron_phi,&b_electron_phi);
-   fChain->SetBranchAddress("electron_eta",&electron_eta,&b_electron_eta);
    fChain->SetBranchAddress("electron_e",&electron_e,&b_electron_e);
-   fChain->SetBranchAddress("trk_isHQ",&trk_isHQ,&b_trk_isHQ);
-   fChain->SetBranchAddress("trigobj_px",&trigobj_px,&b_trigobj_px);
-   fChain->SetBranchAddress("trigobj_py",&trigobj_py,&b_trigobj_py);
-   fChain->SetBranchAddress("trigobj_pz",&trigobj_pz,&b_trigobj_pz);
-   fChain->SetBranchAddress("trigobj_phi",&trigobj_phi,&b_trigobj_phi);
-   fChain->SetBranchAddress("trigobj_eta",&trigobj_eta,&b_trigobj_eta);
-   fChain->SetBranchAddress("trigobj_e",&trigobj_e,&b_trigobj_e);
-
    Notify();
 }
 
@@ -555,22 +512,6 @@ void EventLoopAnalysisTemplate::analysis()
   if (!MinimalSelection()) return;
   //counter_ms++;
 
-  /////Identify electron as Trig OBJ
-  std::vector<bool> TobjisFound;
-  tobj.clear()
-  for (size_t y=0; y<trigobj_e->size(); y++){
-    float saveDR=100;
-    bool saveQ=false;
-    for (size_t x=0; x<electron_e->size(); x++){
-      DRet=deltaR(electron_eta->at(x),electron_phi->at(x),trigobj_eta->at(y),trigobj_phi->at(y));
-      if(DRet<saveDR){
-         saveDR=DRet;
-         saveQ=trk_isHQ;
-      }
-    }
-    if (saveDR<0.1) TobjisFound.push_back(true);
-    else TobjisFound.push_back(false);
-  }
 
   //fill histograms for signal region
   Int_t histsize = sizeof(hists)/sizeof(hists[0]);
@@ -593,20 +534,19 @@ void EventLoopAnalysisTemplate::analysis()
         //correctedJetMass
         //float corr_pt;
         for(size_t i=0; i < jet_e->size(); i++){
-
           for(size_t k=0; k < jet_e->size(); k++){
             px=0,py=0,pz=0,e=0,m=0;
             if(i!=k){
-              px=cos(jet_phi->at(i))*corr_jet_pt->at(i) + cos(jet_phi->at(j))*corr_jet_pt->at(j);
-              py=sin(jet_phi->at(i))*corr_jet_pt->at(i) + sin(jet_phi->at(j))*corr_jet_pt->at(j);
+              px=cos(jet_phi->at(i))*corr_jet_pt->at(i) + cos(jet_phi->at(k))*corr_jet_pt->at(k);
+              py=sin(jet_phi->at(i))*corr_jet_pt->at(i) + sin(jet_phi->at(k))*corr_jet_pt->at(k);
               float corr1=corr_jet_pt->at(i)/jet_pt->at(i);
-              float corr2=corr_jet_pt->at(j)/jet_pt->at(j);
-              pz=jet_pz->at(i)*corr1+jet_pz->at(j)*corr2;
-              e=jet_e->at(i)*corr1+jet_e->at(j)*corr2;
+              float corr2=corr_jet_pt->at(k)/jet_pt->at(k);
+              pz=jet_pz->at(i)*corr1+jet_pz->at(k)*corr2;
+              e=jet_e->at(i)*corr1+jet_e->at(k)*corr2;
               m=sqrt( e*e - px*px - py*py - pz*pz );
-            }
 
-            hists[j]->Fill(m,theweight);
+              hists[j]->Fill(m,theweight);
+            }
           }
         }
       }
@@ -617,20 +557,18 @@ void EventLoopAnalysisTemplate::analysis()
         //float corr_pt;
         for(size_t i=0; i < jet_e->size(); i++){
           for(size_t k=0; k < jet_e->size(); k++){
-            for(size_t l=0; l < trigobj_e->size(); l++){
+            for(size_t l=0; l < electron_e->size(); l++){
               px=0,py=0,pz=0,e=0,m=0;
               if(i!=k){
-                if(TobjisFound->at(k)){
-                  px=cos(jet_phi->at(i))*corr_jet_pt->at(i) + cos(jet_phi->at(k))*corr_jet_pt->at(k) + trigobj_px->at(l);
-                  py=sin(jet_phi->at(i))*corr_jet_pt->at(i) + sin(jet_phi->at(k))*corr_jet_pt->at(k) + trigobj_py->at(l);
-                  float corr1=corr_jet_pt->at(i)/jet_pt->at(i);
-                  float corr2=corr_jet_pt->at(k)/jet_pt->at(k);
-                  pz=jet_pz->at(i)*corr1+jet_pz->at(k)*corr2+trigobj_pz->at(l);
-                  e=jet_e->at(i)*corr1+jet_e->at(k)*corr2+trigobj_e->at(l);
-                  m=sqrt( e*e - px*px - py*py - pz*pz );
+                px=cos(jet_phi->at(i))*corr_jet_pt->at(i) + cos(jet_phi->at(k))*corr_jet_pt->at(k) + electron_px->at(l);
+                py=sin(jet_phi->at(i))*corr_jet_pt->at(i) + sin(jet_phi->at(k))*corr_jet_pt->at(k) + electron_py->at(l);
+                float corr1=corr_jet_pt->at(i)/jet_pt->at(i);
+                float corr2=corr_jet_pt->at(k)/jet_pt->at(k);
+                pz=jet_pz->at(i)*corr1+jet_pz->at(k)*corr2+electron_pz->at(l);
+                e=jet_e->at(i)*corr1+jet_e->at(k)*corr2+electron_e->at(l);
+                m=sqrt( e*e - px*px - py*py - pz*pz );
 
-                  hists[j]->Fill(m,theweight);
-                }
+                hists[j]->Fill(m,theweight);
               }
             }
           }
@@ -670,13 +608,7 @@ bool EventLoopAnalysisTemplate::MinimalSelection()
 
 }//------MinimalSelection
 
-float EventLoopAnalysisTemplate::deltaR(float eta1, float phi1, float eta2, float phi2) {
-  float deta = eta1 - eta2;
-  float dphi = std::abs(phi1 - phi2);
-  if (dphi > 3.14159)
-    dphi -= (2 * 3.14159);
-  return deta * deta + dphi * dphi;
-}
+
 
 
 //-----------------------------------------------------------------
@@ -757,7 +689,7 @@ int main()
     time.Print();
   }
 
-  TFile* hfile = new TFile("OBJ/histogramsObj.root","RECREATE");
+  TFile* hfile = new TFile("TriggerFilter/histogramsTrigg.root","RECREATE");
 
   //Save signal region histos
   /*dataRunB_npv->Write();
@@ -802,6 +734,7 @@ int main()
   /*LW300_LWMass->Write();
   LW400_LWMass->Write();
   LW500_LWMass->Write();*/
+
 
   hfile->Close();
 
