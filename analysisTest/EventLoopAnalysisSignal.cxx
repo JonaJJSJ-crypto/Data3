@@ -1,4 +1,4 @@
-  //////////////////////////////////////////////////////////////////////
+//////////////////////////////////////////////////////////////////////
 // This template analysis code has been built with fragments from the
 // classes automatically obtained by the TTree MakeClass() method.
 //
@@ -14,7 +14,7 @@
 //
 //
 // Compile me with:
-// g++ -std=c++11 -g -O3 -Wall -Wextra -o EventLoopAnalysisTrigg EventLoopAnalysisTrigger.cxx $(root-config --cflags --libs)
+// g++ -std=c++11 -g -O3 -Wall -Wextra -o EventLoopAnalysisSignal EventLoopAnalysisSignal.cxx $(root-config --cflags --libs)
 /////////////////////////////////////////////////////////////////////
 
 //Include ROOT classes
@@ -46,10 +46,10 @@ const std::string samplesBasePath = "Datos/";
 
 //book example histograms for specific variables
 //copy them in the constructor if you add more
-const int nhists = 36;
+const int nhists = 3;
 
 //Histograms for signal region
-TH1F* dataRunB_npv = new TH1F("dataRunB_npv","Number of primary vertices",25,5,30);
+/*TH1F* dataRunB_npv = new TH1F("dataRunB_npv","Number of primary vertices",25,5,30);
 
 TH1F* dataRunC_npv  = new TH1F("dataRunC_npv","Number of primary vertices",25,5,30);
 
@@ -67,15 +67,15 @@ TH1F* ttZ_npv = new TH1F("ttZ_npv","Number of primary vertices",25,5,30);
 
 TH1F* WW_npv = new TH1F("WW_npv","Number of primary vertices",25,5,30);
 
-TH1F* WZ_npv = new TH1F("WZ_npv","Number of primary vertices",25,5,30);
+TH1F* WZ_npv = new TH1F("WZ_npv","Number of primary vertices",25,5,30);*/
 
 TH1F* LW200_npv = new TH1F("LW200_npv","Number of primary vertices",25,5,30);
 
-TH1F* LW300_npv = new TH1F("LW300_npv","Number of primary vertices",25,5,30);
+/*TH1F* LW300_npv = new TH1F("LW300_npv","Number of primary vertices",25,5,30);
 
-//TH1F* LW400_npv = new TH1F("LW400_npv","Number of primary vertices",25,5,30);
+TH1F* LW400_npv = new TH1F("LW400_npv","Number of primary vertices",25,5,30);
 
-//TH1F* LW500_npv = new TH1F("LW500_npv","Number of primary vertices",25,5,30);
+TH1F* LW500_npv = new TH1F("LW500_npv","Number of primary vertices",25,5,30);
 
 TH1F* dataRunB_JetMass = new TH1F("dataRunB_JetMass","Invariant mass from DiJets",800,0,400);
 
@@ -95,15 +95,15 @@ TH1F* ttZ_JetMass = new TH1F("ttZ_JetMass","Invariant mass from DiJets",800,0,40
 
 TH1F* WW_JetMass = new TH1F("WW_JetMass","Invariant mass from DiJets",800,0,400);
 
-TH1F* WZ_JetMass = new TH1F("WZ_JetMass","Invariant mass from DiJets",800,0,400);
+TH1F* WZ_JetMass = new TH1F("WZ_JetMass","Invariant mass from DiJets",800,0,400);*/
 
 TH1F* LW200_JetMass = new TH1F("LW200_JetMass","Invariant mass from DiJets",800,0,400);
 
-TH1F* LW300_JetMass = new TH1F("LW300_JetMass","Invariant mass from DiJets",800,0,400);
+/*TH1F* LW300_JetMass = new TH1F("LW300_JetMass","Invariant mass from DiJets",800,0,400);
 
-//TH1F* LW400_JetMass = new TH1F("LW400_JetMass","Invariant mass from DiJets",800,0,400);
+TH1F* LW400_JetMass = new TH1F("LW400_JetMass","Invariant mass from DiJets",800,0,400);
 
-//TH1F* LW500_JetMass = new TH1F("LW500_JetMass","Invariant mass from DiJets",800,0,400);
+TH1F* LW500_JetMass = new TH1F("LW500_JetMass","Invariant mass from DiJets",800,0,400);
 
 TH1F* dataRunB_LWMass = new TH1F("dataRunB_LWMass","Invariant mass from LW",800,0,400);
 
@@ -123,16 +123,17 @@ TH1F* ttZ_LWMass = new TH1F("ttZ_LWMass","Invariant mass from LW",800,0,400);
 
 TH1F* WW_LWMass = new TH1F("WW_LWMass","Invariant mass from LW",800,0,400);
 
-TH1F* WZ_LWMass = new TH1F("WZ_LWMass","Invariant mass from LW",800,0,400);
+TH1F* WZ_LWMass = new TH1F("WZ_LWMass","Invariant mass from LW",800,0,400);*/
 
 TH1F* LW200_LWMass = new TH1F("LW200_LWMass","Invariant mass from LW",800,0,400);
 
-TH1F* LW300_LWMass = new TH1F("LW300_LWMass","Invariant mass from LW",800,0,400);
+/*TH1F* LW300_LWMass = new TH1F("LW300_LWMass","Invariant mass from LW",800,0,400);
 
-//TH1F* LW400_LWMass = new TH1F("LW400_LWMass","Invariant mass from LW",800,0,400);
+TH1F* LW400_LWMass = new TH1F("LW400_LWMass","Invariant mass from LW",800,0,400);
 
-//TH1F* LW500_LWMass = new TH1F("LW500_LWMass","Invariant mass from LW",800,0,400);
+TH1F* LW500_LWMass = new TH1F("LW500_LWMass","Invariant mass from LW",800,0,400);*/
 
+TH1F* LW200_JetHQ = new TH1F("LW200_JetHQ","JetHQ",2,0,2);
 
 //Requiered trigger
 //string triggerRequest = "HLT_Photon36_CaloId10_Iso50_Photon22_CaloId10_Iso50";
@@ -156,6 +157,7 @@ public :
   TTree           *tmets;
   TTree           *tjets;
   TTree           *telectrons;
+  TTree           *ttrigobjs;
 
   Int_t           fCurrent; //!current Tree number in a TChain
   TString          labeltag;
@@ -196,11 +198,30 @@ public :
   vector<float>   *jet_px;
   vector<float>   *jet_py;
   vector<float>   *jet_phi;
+  vector<float>   *jet_eta;
+  vector<float>   *NConstituents;
+  vector<float>   *NeutralHF;
+  vector<float>   *NeutralEMF;
+  vector<float>   *MuonF;
+  vector<float>   *ChargedEMF;
+  vector<float>   *ChargedHF;
+  vector<float>   *ChargedMult;
+  vector<float>   *electron_ch;
   vector<float>   *electron_e;
   vector<float>   *electron_pt;
   vector<float>   *electron_pz;
   vector<float>   *electron_px;
   vector<float>   *electron_py;
+  vector<float>   *electron_phi;
+  vector<float>   *electron_eta;
+  vector<float>   *trk_isHQ;
+  vector<float>   *trigobj_e;
+  vector<float>   *trigobj_pt;
+  vector<float>   *trigobj_pz;
+  vector<float>   *trigobj_px;
+  vector<float>   *trigobj_py;
+  vector<float>   *trigobj_phi;
+  vector<float>   *trigobj_eta;
   Float_t         met_pt;
   Float_t         met_phi;
 
@@ -237,11 +258,30 @@ public :
   TBranch        *b_jet_px;
   TBranch        *b_jet_py;
   TBranch        *b_jet_phi;
+  TBranch        *b_jet_eta;
+  TBranch        *b_NConstituents;
+  TBranch        *b_NeutralHF;
+  TBranch        *b_NeutralEMF;
+  TBranch        *b_MuonF;
+  TBranch        *b_ChargedEMF;
+  TBranch        *b_ChargedHF;
+  TBranch        *b_ChargedMult;
+  TBranch        *b_electron_ch;
   TBranch        *b_electron_e;
   TBranch        *b_electron_pt;
   TBranch        *b_electron_pz;
   TBranch        *b_electron_px;
   TBranch        *b_electron_py;
+  TBranch        *b_electron_phi;
+  TBranch        *b_electron_eta;
+  TBranch        *b_trk_isHQ;
+  TBranch        *b_trigobj_e;
+  TBranch        *b_trigobj_pt;
+  TBranch        *b_trigobj_pz;
+  TBranch        *b_trigobj_px;
+  TBranch        *b_trigobj_py;
+  TBranch        *b_trigobj_phi;
+  TBranch        *b_trigobj_eta;
 
   EventLoopAnalysisTemplate(TString filename, TString labeltag, Float_t theweight);
   virtual ~EventLoopAnalysisTemplate();
@@ -251,6 +291,7 @@ public :
   virtual void     Loop();
   virtual Bool_t   Notify();
   virtual void     Show(Long64_t entry = -1);
+  virtual float deltaR(float eta1, float phi1, float eta2, float phi2);
   void analysis();
   bool MinimalSelection();
 
@@ -267,31 +308,31 @@ EventLoopAnalysisTemplate::EventLoopAnalysisTemplate(TString thefile, TString th
 
 
   //Load histograms for signal region
-  hists[0] = dataRunB_npv;
+  /*hists[0] = dataRunB_npv;
   hists[1] = dataRunC_npv;
   hists[2] = ZLL_npv;
   hists[3] = TT_npv;
   hists[4] = W3J_npv;
   hists[5] = W2J_npv;
-  hists[6] = W1J_npv;
-  hists[21] = LW200_npv;
-  hists[7] = dataRunB_JetMass;
+  hists[6] = W1J_npv;*/
+  hists[0] = LW200_npv;
+/*  hists[7] = dataRunB_JetMass;
   hists[8] = dataRunC_JetMass;
   hists[9] = ZLL_JetMass;
   hists[10] = TT_JetMass;
   hists[11] = W3J_JetMass;
   hists[12] = W2J_JetMass;
-  hists[13] = W1J_JetMass;
-  hists[22] = LW200_JetMass;
-  hists[14] = dataRunB_LWMass;
+  hists[13] = W1J_JetMass;*/
+  hists[1] = LW200_JetMass;
+/*  hists[14] = dataRunB_LWMass;
   hists[15] = dataRunC_LWMass;
   hists[16] = ZLL_LWMass;
   hists[17] = TT_LWMass;
   hists[18] = W3J_LWMass;
   hists[19] = W2J_LWMass;
-  hists[20] = W1J_LWMass;
-  hists[23] = LW200_LWMass;
-  hists[24] = WW_npv;
+  hists[20] = W1J_LWMass;*/
+  hists[2] = LW200_LWMass;
+  /*hists[24] = WW_npv;
   hists[25] = WZ_npv;
   hists[26] = ttZ_npv;
   hists[27] = WW_JetMass;
@@ -301,14 +342,14 @@ EventLoopAnalysisTemplate::EventLoopAnalysisTemplate(TString thefile, TString th
   hists[31] = WZ_LWMass;
   hists[32] = ttZ_LWMass;
   hists[33] = LW300_LWMass;
-  //hists[34] = LW400_LWMass;
-  //hists[35] = LW500_LWMass;
-  hists[34] = LW300_JetMass;
-  //hists[37] = LW400_JetMass;
-  //hists[38] = LW500_JetMass;
-  hists[35] = LW300_npv;
-  //hists[40] = LW400_npv;
-  //hists[41] = LW500_npv;
+  hists[34] = LW400_LWMass;
+  hists[35] = LW500_LWMass;
+  hists[36] = LW300_JetMass;
+  hists[37] = LW400_JetMass;
+  hists[38] = LW500_JetMass;
+  hists[39] = LW300_npv;
+  hists[40] = LW400_npv;
+  hists[41] = LW500_npv;*/
 
 
 // if parameter tree is not specified (or zero), connect the file
@@ -325,6 +366,7 @@ EventLoopAnalysisTemplate::EventLoopAnalysisTemplate(TString thefile, TString th
    tmets = (TTree*)f->Get("mymets/Events");
    tjets = (TTree*)f->Get("myjets/Events");
    telectrons = (TTree*)f->Get("myelectrons/Events");
+   ttrigobjs = (TTree*)f->Get("mytrigEvent/Events");
    //Make friends so we can have access to friends variables
    //we may not use all of the available information
    //it is just an example
@@ -335,6 +377,7 @@ EventLoopAnalysisTemplate::EventLoopAnalysisTemplate(TString thefile, TString th
    tree->AddFriend(tmets);
    tree->AddFriend(tjets);
    tree->AddFriend(telectrons);
+   tree->AddFriend(ttrigobjs);
    Init(tree);
 }
 
@@ -404,11 +447,30 @@ void EventLoopAnalysisTemplate::Init(TTree *tree)
    jet_py = 0;
    jet_pz = 0;
    jet_phi = 0;
+   jet_eta = 0;
+   NConstituents = 0;
+   NeutralHF = 0;
+   NeutralEMF = 0;
+   MuonF = 0;
+   ChargedEMF = 0;
+   ChargedHF = 0;
+   ChargedMult = 0;
+   electron_ch = 0;
    electron_e = 0;
    electron_pt = 0;
    electron_px = 0;
    electron_py = 0;
    electron_pz = 0;
+   electron_phi = 0;
+   electron_eta = 0;
+   trk_isHQ = 0;
+   trigobj_e = 0;
+   trigobj_pt = 0;
+   trigobj_px = 0;
+   trigobj_py = 0;
+   trigobj_pz = 0;
+   trigobj_phi = 0;
+   trigobj_eta = 0;
 
    // Set branch addresses and branch pointers
    if (!tree) return;
@@ -442,17 +504,36 @@ void EventLoopAnalysisTemplate::Init(TTree *tree)
    fChain->SetBranchAddress("tau_mass", &tau_mass, &b_tau_mass);
    fChain->SetBranchAddress("met_pt", &met_pt, &b_met_pt);
    fChain->SetBranchAddress("met_phi", &met_phi, &b_met_phi);
-   fChain->SetBranchAddress("jet_pt",&jet_pt,&b_jet_pt);
    fChain->SetBranchAddress("corr_jet_pt",&corr_jet_pt,&b_corr_jet_pt);
+   fChain->SetBranchAddress("jet_pt",&jet_pt,&b_jet_pt);
    fChain->SetBranchAddress("jet_px",&jet_px,&b_jet_px);
    fChain->SetBranchAddress("jet_py",&jet_py,&b_jet_py);
    fChain->SetBranchAddress("jet_pz",&jet_pz,&b_jet_pz);
    fChain->SetBranchAddress("jet_phi",&jet_phi,&b_jet_phi);
+   fChain->SetBranchAddress("jet_eta",&jet_eta,&b_jet_eta);
    fChain->SetBranchAddress("jet_e",&jet_e,&b_jet_e);
+   fChain->SetBranchAddress("NConstituents",&NConstituents,&b_NConstituents);
+   fChain->SetBranchAddress("NeutralHF",&NeutralHF,&b_NeutralHF);
+   fChain->SetBranchAddress("NeutralEMF",&NeutralEMF,&b_NeutralEMF);
+   fChain->SetBranchAddress("MuonF",&MuonF,&b_MuonF);
+   fChain->SetBranchAddress("ChargedEMF",&ChargedEMF,&b_ChargedEMF);
+   fChain->SetBranchAddress("ChargedHF",&ChargedHF,&b_ChargedHF);
+   fChain->SetBranchAddress("ChargedMult",&ChargedMult,&b_ChargedMult);
    fChain->SetBranchAddress("electron_px",&electron_px,&b_electron_px);
    fChain->SetBranchAddress("electron_py",&electron_py,&b_electron_py);
    fChain->SetBranchAddress("electron_pz",&electron_pz,&b_electron_pz);
+   fChain->SetBranchAddress("electron_phi",&electron_phi,&b_electron_phi);
+   fChain->SetBranchAddress("electron_eta",&electron_eta,&b_electron_eta);
    fChain->SetBranchAddress("electron_e",&electron_e,&b_electron_e);
+   fChain->SetBranchAddress("electron_ch",&electron_ch,&b_electron_ch);
+   fChain->SetBranchAddress("trk_isHQ",&trk_isHQ,&b_trk_isHQ);
+   fChain->SetBranchAddress("trigobj_px",&trigobj_px,&b_trigobj_px);
+   fChain->SetBranchAddress("trigobj_py",&trigobj_py,&b_trigobj_py);
+   fChain->SetBranchAddress("trigobj_pz",&trigobj_pz,&b_trigobj_pz);
+   fChain->SetBranchAddress("trigobj_phi",&trigobj_phi,&b_trigobj_phi);
+   fChain->SetBranchAddress("trigobj_eta",&trigobj_eta,&b_trigobj_eta);
+   fChain->SetBranchAddress("trigobj_e",&trigobj_e,&b_trigobj_e);
+
    Notify();
 }
 
@@ -512,6 +593,51 @@ void EventLoopAnalysisTemplate::analysis()
   if (!MinimalSelection()) return;
   //counter_ms++;
 
+  //////////JetSelection///////
+  vector<bool> JetisHQ;
+  JetisHQ.clear();
+  for(size_t x=0; x<jet_e->size(); x++){
+    if(abs(jet_eta->at(x))<2.5){
+      if(NConstituents->at(x)>1 && NeutralHF->at(x)<0.9 && MuonF->at(x)<0.8) JetisHQ.push_back(true);
+      else JetisHQ.push_back(false);
+    }
+    else{
+      if(NConstituents->at(x)>1 && NeutralHF->at(x)<0.9 && MuonF->at(x)<0.8 &&
+          ChargedHF->at(x)>0 && ChargedEMF->at(x)>0 && ChargedMult->at(x)<0.80) JetisHQ.push_back(true);
+      else JetisHQ.push_back(false);
+    }
+  }
+  /////Identify electron as Trig OBJ
+  vector<bool> TobjisFound;
+  vector<int>  TobjisHQ;
+  TobjisFound.clear();
+  for (size_t y=0; y<trigobj_e->size(); y++){
+    float saveDR=100;
+    int saveQ=0;
+    for (size_t x=0; x<electron_e->size(); x++){
+      float DRet=deltaR(electron_eta->at(x),electron_phi->at(x),trigobj_eta->at(y),trigobj_phi->at(y));
+      if(DRet<saveDR){
+         saveDR=DRet;
+         saveQ=trk_isHQ->at(x);
+      }
+    }
+    if (saveDR<0.1){
+      TobjisFound.push_back(true);
+      TobjisHQ.push_back(saveQ);
+    }
+    else {
+      TobjisFound.push_back(false);
+      TobjisHQ.push_back(saveQ);
+    }
+  }
+  /////Check NeutralCurrent
+  bool neutral=false, pos=false, neg=false;
+  for( size_t x=0; x<electron_e->size(); x++ ){
+    if(electron_ch->at(x)>0)pos=true;
+    if(electron_ch->at(x)<0)neg=true;
+  }
+  neutral=pos*neg;
+  if(!neutral) return;
 
   //fill histograms for signal region
   Int_t histsize = sizeof(hists)/sizeof(hists[0]);
@@ -533,10 +659,12 @@ void EventLoopAnalysisTemplate::analysis()
         float px,py,pz,e,m;
         //correctedJetMass
         //float corr_pt;
+        if(JetisHQ.size()!=jet_e->size())cout<<"size error\n";
         for(size_t i=0; i < jet_e->size(); i++){
+          LW200_JetHQ->Fill(JetisHQ.at(i));
           for(size_t k=0; k < jet_e->size(); k++){
             px=0,py=0,pz=0,e=0,m=0;
-            if(i!=k){
+            if(i!=k && JetisHQ.at(i) && JetisHQ.at(k)){
               px=cos(jet_phi->at(i))*corr_jet_pt->at(i) + cos(jet_phi->at(k))*corr_jet_pt->at(k);
               py=sin(jet_phi->at(i))*corr_jet_pt->at(i) + sin(jet_phi->at(k))*corr_jet_pt->at(k);
               float corr1=corr_jet_pt->at(i)/jet_pt->at(i);
@@ -547,7 +675,7 @@ void EventLoopAnalysisTemplate::analysis()
 
               hists[j]->Fill(m,theweight);
             }
-          }
+           }
         }
       }
       if(thevar == "LWMass"){
@@ -557,18 +685,20 @@ void EventLoopAnalysisTemplate::analysis()
         //float corr_pt;
         for(size_t i=0; i < jet_e->size(); i++){
           for(size_t k=0; k < jet_e->size(); k++){
-            for(size_t l=0; l < electron_e->size(); l++){
+            for(size_t l=0; l < trigobj_e->size(); l++){
               px=0,py=0,pz=0,e=0,m=0;
-              if(i!=k){
-                px=cos(jet_phi->at(i))*corr_jet_pt->at(i) + cos(jet_phi->at(k))*corr_jet_pt->at(k) + electron_px->at(l);
-                py=sin(jet_phi->at(i))*corr_jet_pt->at(i) + sin(jet_phi->at(k))*corr_jet_pt->at(k) + electron_py->at(l);
-                float corr1=corr_jet_pt->at(i)/jet_pt->at(i);
-                float corr2=corr_jet_pt->at(k)/jet_pt->at(k);
-                pz=jet_pz->at(i)*corr1+jet_pz->at(k)*corr2+electron_pz->at(l);
-                e=jet_e->at(i)*corr1+jet_e->at(k)*corr2+electron_e->at(l);
-                m=sqrt( e*e - px*px - py*py - pz*pz );
+              if(i!=k && JetisHQ.at(i) && JetisHQ.at(k)){
+                if(TobjisFound.at(l) && TobjisHQ.at(l)){
+                  px=cos(jet_phi->at(i))*corr_jet_pt->at(i) + cos(jet_phi->at(k))*corr_jet_pt->at(k) + trigobj_px->at(l);
+                  py=sin(jet_phi->at(i))*corr_jet_pt->at(i) + sin(jet_phi->at(k))*corr_jet_pt->at(k) + trigobj_py->at(l);
+                  float corr1=corr_jet_pt->at(i)/jet_pt->at(i);
+                  float corr2=corr_jet_pt->at(k)/jet_pt->at(k);
+                  pz=jet_pz->at(i)*corr1+jet_pz->at(k)*corr2+trigobj_pz->at(l);
+                  e=jet_e->at(i)*corr1+jet_e->at(k)*corr2+trigobj_e->at(l);
+                  m=sqrt( e*e - px*px - py*py - pz*pz );
 
-                hists[j]->Fill(m,theweight);
+                  hists[j]->Fill(m,theweight);
+                }
               }
             }
           }
@@ -608,7 +738,13 @@ bool EventLoopAnalysisTemplate::MinimalSelection()
 
 }//------MinimalSelection
 
-
+float EventLoopAnalysisTemplate::deltaR(float eta1, float phi1, float eta2, float phi2) {
+  float deta = eta1 - eta2;
+  float dphi = std::abs(phi1 - phi2);
+  if (dphi > 3.14159)
+    dphi -= (2 * 3.14159);
+  return deta * deta + dphi * dphi;
+}
 
 
 //-----------------------------------------------------------------
@@ -630,37 +766,37 @@ int main()
   //const float integratedLuminosity = 7.055 * 1000.0; // Run2012C only
   const float integratedLuminosity = 11.467 * 1000.0; // Run2012B+C
 
-  const float W1J_w =  6381.2 / 29784800.0 * integratedLuminosity;
+  /*const float W1J_w =  6381.2 / 29784800.0 * integratedLuminosity;
   const float W2J_w =  2039.8 / 30693853.0 * integratedLuminosity;
   const float W3J_w =  612.5 / 15241144.0 * integratedLuminosity;
   const float TT_w = 225.2 / 6423106.0 * integratedLuminosity;
-  const float ZLL_w = 3503.7 / 30458871.0 * integratedLuminosity;
+  const float ZLL_w = 3503.7 / 30458871.0 * integratedLuminosity;*/
   const float LW200_w = 0.0059 / 150000 * integratedLuminosity;
-  const float LW300_w = 0.00096 / 150000 * integratedLuminosity;
+  /*const float LW300_w = 0.00096 / 150000 * integratedLuminosity;
   const float LW400_w = 0.00023 / 150000 * integratedLuminosity;
   const float LW500_w = 0.00006 / 150000 * integratedLuminosity;
   const float WW_w = 5.824 / 1933120 * integratedLuminosity;
   const float WZ_w = 2.207 / 3215990 * integratedLuminosity;
   const float ttZ_w = 0.175 / 787495 * integratedLuminosity;
   const float dataRunB_w = 1.0;
-  const float dataRunC_w = 1.0;
+  const float dataRunC_w = 1.0;*/
 
 
   map<string, pair<string,float> > sampleNames;
-  sampleNames.insert(make_pair("WWJetsTo2L2Nu",make_pair("WW",WW_w)));
+  /*sampleNames.insert(make_pair("WWJetsTo2L2Nu",make_pair("WW",WW_w)));
   sampleNames.insert(make_pair("WZJetsTo2L2Q",make_pair("WZ",WZ_w)));
   sampleNames.insert(make_pair("ttbarZ",make_pair("ttZ",ttZ_w)));
   sampleNames.insert(make_pair("W1JetsToLNu",make_pair("W1J",W1J_w)));
   sampleNames.insert(make_pair("W2JetsToLNu",make_pair("W2J",W2J_w)));
   sampleNames.insert(make_pair("W3JetsToLNu",make_pair("W3J",W3J_w)));
   sampleNames.insert(make_pair("TTbar",make_pair("TT",TT_w)));
-  sampleNames.insert(make_pair("DYJetsToLL",make_pair("ZLL",ZLL_w)));
-  sampleNames.insert(make_pair("LWSM200DnR",make_pair("LW200",LW200_w)));
-  sampleNames.insert(make_pair("LWSM300DnR",make_pair("LW300",LW300_w)));
-  //sampleNames.insert(make_pair("LWSM400DnR",make_pair("LW400",LW400_w)));
-  //sampleNames.insert(make_pair("LWSM500DnR",make_pair("LW500",LW500_w)));
+  sampleNames.insert(make_pair("DYJetsToLL",make_pair("ZLL",ZLL_w)));*/
+  sampleNames.insert(make_pair("myoutput_Data",make_pair("LW200",LW200_w)));
+  /*sampleNames.insert(make_pair("LWSM300DnR",make_pair("LW300",LW300_w)));
+  sampleNames.insert(make_pair("LWSM400DnR",make_pair("LW400",LW400_w)));
+  sampleNames.insert(make_pair("LWSM500DnR",make_pair("LW500",LW500_w)));
   sampleNames.insert(make_pair("Run2012B_DoublePhoton",make_pair("dataRunB",dataRunB_w)));
-  sampleNames.insert(make_pair("Run2012C_DoublePhoton",make_pair("dataRunC",dataRunC_w)));
+  sampleNames.insert(make_pair("Run2012C_DoublePhoton",make_pair("dataRunC",dataRunC_w)));*/
 
 
 
@@ -689,10 +825,10 @@ int main()
     time.Print();
   }
 
-  TFile* hfile = new TFile("TriggerFilter/histogramsTrigg.root","RECREATE");
+  TFile* hfile = new TFile("Signal/histogramsSignal.root","RECREATE");
 
   //Save signal region histos
-  dataRunB_npv->Write();
+  /*dataRunB_npv->Write();
   dataRunC_npv->Write();
   ZLL_npv->Write();
   TT_npv->Write();
@@ -701,11 +837,11 @@ int main()
   W1J_npv->Write();
   WW_npv->Write();
   WZ_npv->Write();
-  ttZ_npv->Write();
+  ttZ_npv->Write();*/
   LW200_npv->Write();
-  LW300_npv->Write();
-  //LW400_npv->Write();
-  //LW500_npv->Write();
+  /*LW300_npv->Write();
+  LW400_npv->Write();
+  LW500_npv->Write();
   dataRunB_JetMass->Write();
   dataRunC_JetMass->Write();
   ZLL_JetMass->Write();
@@ -715,11 +851,11 @@ int main()
   W1J_JetMass->Write();
   WW_JetMass->Write();
   WZ_JetMass->Write();
-  ttZ_JetMass->Write();
+  ttZ_JetMass->Write();*/
   LW200_JetMass->Write();
-  LW300_JetMass->Write();
-  //LW400_JetMass->Write();
-  //LW500_JetMass->Write();
+  /*LW300_JetMass->Write();
+  LW400_JetMass->Write();
+  LW500_JetMass->Write();
   dataRunB_LWMass->Write();
   dataRunC_LWMass->Write();
   ZLL_LWMass->Write();
@@ -729,12 +865,12 @@ int main()
   W1J_LWMass->Write();
   WW_LWMass->Write();
   WZ_LWMass->Write();
-  ttZ_LWMass->Write();
+  ttZ_LWMass->Write();*/
   LW200_LWMass->Write();
-  LW300_LWMass->Write();
-  //LW400_LWMass->Write();
-  //LW500_LWMass->Write();
-
+  /*LW300_LWMass->Write();
+  LW400_LWMass->Write();
+  LW500_LWMass->Write();*/
+  LW200_JetHQ->Write();
 
   hfile->Close();
 

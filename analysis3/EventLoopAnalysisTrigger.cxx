@@ -637,8 +637,8 @@ int main()
   const float ZLL_w = 3503.7 / 30458871.0 * integratedLuminosity;
   const float LW200_w = 0.0059 / 150000 * integratedLuminosity;
   const float LW300_w = 0.00096 / 150000 * integratedLuminosity;
-  const float LW400_w = 0.00023 / 150000 * integratedLuminosity;
-  const float LW500_w = 0.00006 / 150000 * integratedLuminosity;
+  //const float LW400_w = 0.00023 / 150000 * integratedLuminosity;
+  //const float LW500_w = 0.00006 / 150000 * integratedLuminosity;
   const float WW_w = 5.824 / 1933120 * integratedLuminosity;
   const float WZ_w = 2.207 / 3215990 * integratedLuminosity;
   const float ttZ_w = 0.175 / 787495 * integratedLuminosity;

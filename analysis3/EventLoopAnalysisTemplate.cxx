@@ -14,7 +14,7 @@
 //
 //
 // Compile me with:
-// g++ -std=c++11 -g -O3 -Wall -Wextra -o EventLoopAnalysisTrigg EventLoopAnalysisTrigger.cxx $(root-config --cflags --libs)
+// g++ -std=c++11 -g -O3 -Wall -Wextra -o EventLoopAnalysis EventLoopAnalysisTemplate.cxx $(root-config --cflags --libs)
 /////////////////////////////////////////////////////////////////////
 
 //Include ROOT classes
@@ -135,11 +135,7 @@ TH1F* LW300_LWMass = new TH1F("LW300_LWMass","Invariant mass from LW",800,0,400)
 
 
 //Requiered trigger
-//string triggerRequest = "HLT_Photon36_CaloId10_Iso50_Photon22_CaloId10_Iso50";
-string triggerRequest[] = {"HLT_Photon36_CaloId10_Iso50_Photon22_CaloId10_Iso50",
-                           "HLT_Photon36_CaloId10_Iso50_Photon22_R9Id85",
-                           "HLT_Photon36_R9Id85_Photon22_CaloId10_Iso50",
-                           "HLT_Photon36_R9Id85_Photon22_R9Id85"};
+string triggerRequest = "HLT_Photon36_CaloId10_Iso50_Photon22_CaloId10_Iso50";
 
 // Fixed size dimensions of array or collections stored in the TTree if any.
 
@@ -509,7 +505,7 @@ void EventLoopAnalysisTemplate::analysis()
   //cout<<"analysis() execution"<<endl;
 
   //minimal selection including trigger requirement
-  if (!MinimalSelection()) return;
+  //if (!MinimalSelection()) return;
   //counter_ms++;
 
 
@@ -594,15 +590,14 @@ bool EventLoopAnalysisTemplate::MinimalSelection()
   bool isTrigger = false;
 
   //Check trigger and acceptance bit
-  for(size_t x=0; x<4; x++){
-    for (map<string, int>::iterator it=triggermap->begin();it!=triggermap->end();it++){
-      if(it->first.find(triggerRequest[x])!=string::npos &&
-         it->second!=0){
-  	 //cout<<it->first<<"  "<<it->second<<endl;
-        isTrigger = true;
-      }
+  for (map<string, int>::iterator it=triggermap->begin();it!=triggermap->end();it++){
+    if(it->first.find(triggerRequest)!=string::npos &&
+       it->second!=0){
+	 //cout<<it->first<<"  "<<it->second<<endl;
+      isTrigger = true;
     }
   }
+
 
   return isTrigger;
 
@@ -637,8 +632,8 @@ int main()
   const float ZLL_w = 3503.7 / 30458871.0 * integratedLuminosity;
   const float LW200_w = 0.0059 / 150000 * integratedLuminosity;
   const float LW300_w = 0.00096 / 150000 * integratedLuminosity;
-  const float LW400_w = 0.00023 / 150000 * integratedLuminosity;
-  const float LW500_w = 0.00006 / 150000 * integratedLuminosity;
+  //const float LW400_w = 0.00023 / 150000 * integratedLuminosity;
+  //const float LW500_w = 0.00006 / 150000 * integratedLuminosity;
   const float WW_w = 5.824 / 1933120 * integratedLuminosity;
   const float WZ_w = 2.207 / 3215990 * integratedLuminosity;
   const float ttZ_w = 0.175 / 787495 * integratedLuminosity;
@@ -689,7 +684,7 @@ int main()
     time.Print();
   }
 
-  TFile* hfile = new TFile("TriggerFilter/histogramsTrigg.root","RECREATE");
+  TFile* hfile = new TFile("NoFilter/histograms.root","RECREATE");
 
   //Save signal region histos
   dataRunB_npv->Write();
@@ -734,7 +729,6 @@ int main()
   LW300_LWMass->Write();
   //LW400_LWMass->Write();
   //LW500_LWMass->Write();
-
 
   hfile->Close();
 
