@@ -11,7 +11,9 @@ ROOT.gROOT.SetBatch(True)
 labels = {
         "npv": "Number of primary vertices",
         "JetMass": "DiJets invariant mass",
-        "LWMass": "LW invariant mass"
+        "LWMass": "LW invariant mass",
+        "nsv": "Number od secondary vertices",
+        "svd": "Secondary vertex displacement"
         #"eta_2": "Tau #eta",
         #"m_vis": "Visible di-tau mass / GeV",
         }
@@ -24,6 +26,9 @@ colors = {
         "W": ROOT.TColor.GetColor(222, 90, 106),
         "QCD":  ROOT.TColor.GetColor(250, 202, 255),
         "ZLL": ROOT.TColor.GetColor(248, 206, 104),
+        "WW" : ROOT.TColor.GetColor(100, 192, 232),
+        "WZ" : ROOT.TColor.GetColor(500, 150, 104),
+        "ttZ" : ROOT.TColor.GetColor(238, 286, 134),
         #"ZLL": ROOT.TColor.GetColor(100, 192, 232),
         #"ZTT": ROOT.TColor.GetColor(248, 206, 104),
         }
@@ -113,6 +118,12 @@ def main(variable):
 
     ZLL = getHistogram(tfile, "ZLL", variable)
 
+    WW = getHistogram(tfile, "WW", variable)
+
+    WZ = getHistogram(tfile, "WZ", variable)
+
+    ttZ = getHistogram(tfile, "ttZ", variable)
+
     # Data
     data = getHistogram(tfile, "dataRunB", variable)
     dataRunC = getHistogram(tfile, "dataRunC", variable)
@@ -149,7 +160,7 @@ def main(variable):
         #x.SetLineWidth(3)
 
 
-    for x, l in [(TT, "TT"), (ZLL, "ZLL"), (W, "W")]:
+    for x, l in [(TT, "TT"), (ZLL, "ZLL"), (W, "W"),(WW, "WW"), (WZ, "WZ"), (ttZ, "ttZ")]:
         x.SetLineWidth(0)
         x.SetFillColor(colors[l])
     #ZLL.SetLineWidth(0)
@@ -158,7 +169,7 @@ def main(variable):
 
     stack = ROOT.THStack("", "")
 #    for x in [QCD, TT, W, ZLL]:
-    for x in [TT, W, ZLL]:
+    for x in [TT, W, ZLL, WW, WZ, ttZ]:
         stack.Add(x)
     #stack.Add(ZLL)
 
@@ -182,6 +193,9 @@ def main(variable):
     # Add legend
     legend = ROOT.TLegend(0.4, 0.73, 0.90, 0.88)
     legend.SetNColumns(2)
+    legend.AddEntry(WW, "WW", "f")
+    legend.AddEntry(WZ, "WZ", "f")
+    legend.AddEntry(ttZ, "t#bar{t}Z", "f")
     legend.AddEntry(ZLL, "Z#rightarrowll", "f")
     legend.AddEntry(W, "W+jets", "f")
     legend.AddEntry(TT, "t#bar{t}", "f")
@@ -199,7 +213,7 @@ def main(variable):
     latex.SetTextSize(0.04)
     latex.SetTextFont(42)
     latex.DrawLatex(0.6, 0.935, "11.5 fb^{-1} (2012, 8 TeV)")
-    latex.DrawLatex(0.16, 0.935, "#bf{CMS Open Data}")
+    latex.DrawLatex(0.24, 0.935, "#bf{CMS Open Data}")
 
     # Save
     c.SaveAs("%s.pdf" % (variable))
