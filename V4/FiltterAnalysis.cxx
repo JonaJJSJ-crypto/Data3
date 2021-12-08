@@ -674,7 +674,7 @@ void EventLoopAnalysisTemplate::analysis()
   float px,py,pz,e,m,Mlw;
   int zcount=0;
   for(size_t i=0; i < jet_mass->size(); i++){
-    for(size_t j=0; j < jet_mass->size(); j++){
+    for(size_t j=i+1; j < jet_mass->size(); j++){
       if(i!=j){
         px=0,py=0,pz=0,e=0,m=0,Mlw=0;
         //cout<<mass1+jet_mass->at(j)<<endl;
@@ -695,7 +695,7 @@ void EventLoopAnalysisTemplate::analysis()
 //correctedJetMass
   float corr_pt;
   for(size_t i=0; i < jet_mass->size(); i++){
-    for(size_t j=0; j < jet_mass->size(); j++){
+    for(size_t j=i+1; j < jet_mass->size(); j++){
       if(j!=i){
         corr_pt=0,pz=0,e=0,m=0;
         //cout<<mass1+jet_mass->at(j)<<endl;
@@ -742,7 +742,7 @@ void EventLoopAnalysisTemplate::analysis()
 if(gjet_DRscore.size()>1){
   for(size_t i=0; i < gjet_DRscore.size(); i++){
     //if(gjet_index.at(i)>jet_e->size())cout<<"sizeError: "<<gjet_index.at(i)<<' '<<jet_pt->size()<<endl;
-    for(size_t j=0; j < gjet_DRscore.size(); j++){
+    for(size_t j=i+1; j < gjet_DRscore.size(); j++){
       //if(gjet_index.at(j)>jet_e->size())cout<<"sizeError: "<<gjet_index.at(j)<<' '<<jet_pt->size()<<endl;
       px=0,py=0,pz=0,e=0,m=0;
       if(i!=j){
@@ -779,7 +779,7 @@ if(gjet_DRscore.size()>1){
 /////////////////////////Generated Inva Mass/////////////////////////////////
   zcount=0;
   for (size_t i = 0; i < GenDau_pt->size(); i++) {
-    for (size_t j = 0; j < GenDau_pt->size(); j++) {
+    for (size_t j = i+1; j < GenDau_pt->size(); j++) {
       if(abs(GenDau_mompdgId->at(i))==24 && abs(GenDau_mompdgId->at(j))==24
         && abs(GenDau_pdgId->at(i))!=24 && abs(GenDau_pdgId->at(j))!=24){
         if(i!=j){

@@ -46,7 +46,7 @@ const std::string samplesBasePath = "Datos/";
 
 //book example histograms for specific variables
 //copy them in the constructor if you add more
-const int nhists = 36;
+const int nhists = 60;
 
 //Histograms for signal region
 TH1F* dataRunB_npv = new TH1F("dataRunB_npv","Number of primary vertices",25,5,30);
@@ -76,6 +76,62 @@ TH1F* LW300_npv = new TH1F("LW300_npv","Number of primary vertices",25,5,30);
 //TH1F* LW400_npv = new TH1F("LW400_npv","Number of primary vertices",25,5,30);
 
 //TH1F* LW500_npv = new TH1F("LW500_npv","Number of primary vertices",25,5,30);
+
+TH1F* dataRunB_nsv = new TH1F("dataRunB_nsv","Number of secondary vertices",20,0,2000);
+
+TH1F* dataRunC_nsv  = new TH1F("dataRunC_nsv","Number of secondary vertices",20,0,2000);
+
+TH1F* ZLL_nsv = new TH1F("ZLL_nsv","Number of secondary vertices",20,0,2000);
+
+TH1F* TT_nsv = new TH1F("TT_nsv","Number of secondary vertices",20,0,2000);
+
+TH1F* W3J_nsv = new TH1F("W3J_nsv","Number of secondary vertices",20,0,2000);
+
+TH1F* W2J_nsv = new TH1F("W2J_nsv","Number of secondary vertices",20,0,2000);
+
+TH1F* W1J_nsv = new TH1F("W1J_nsv","Number of secondary vertices",20,0,2000);
+
+TH1F* ttZ_nsv = new TH1F("ttZ_nsv","Number of secondary vertices",20,0,2000);
+
+TH1F* WW_nsv = new TH1F("WW_nsv","Number of secondary vertices",20,0,2000);
+
+TH1F* WZ_nsv = new TH1F("WZ_nsv","Number of secondary vertices",20,0,2000);
+
+TH1F* LW200_nsv = new TH1F("LW200_nsv","Number of secondary vertices",20,0,2000);
+
+TH1F* LW300_nsv = new TH1F("LW300_nsv","Number of secondary vertices",20,0,2000);
+
+//TH1F* LW400_nsv = new TH1F("LW400_nsv","Number of secondary vertices",20,0,2000);
+
+//TH1F* LW500_nsv = new TH1F("LW500_nsv","Number of secondary vertices",20,0,2000);
+
+TH1F* dataRunB_svd = new TH1F("dataRunB_svd","secondary vertex displacement",100,0,1);
+
+TH1F* dataRunC_svd  = new TH1F("dataRunC_svd","secondary vertex displacement",100,0,1);
+
+TH1F* ZLL_svd = new TH1F("ZLL_svd","secondary vertex displacement",100,0,1);
+
+TH1F* TT_svd = new TH1F("TT_svd","secondary vertex displacement",100,0,1);
+
+TH1F* W3J_svd = new TH1F("W3J_svd","secondary vertex displacement",100,0,1);
+
+TH1F* W2J_svd = new TH1F("W2J_svd","secondary vertex displacement",100,0,1);
+
+TH1F* W1J_svd = new TH1F("W1J_svd","secondary vertex displacement",100,0,1);
+
+TH1F* ttZ_svd = new TH1F("ttZ_svd","secondary vertex displacement",100,0,1);
+
+TH1F* WW_svd = new TH1F("WW_svd","secondary vertex displacement",100,0,1);
+
+TH1F* WZ_svd = new TH1F("WZ_svd","secondary vertex displacement",100,0,1);
+
+TH1F* LW200_svd = new TH1F("LW200_svd","secondary vertex displacement",100,0,1);
+
+TH1F* LW300_svd = new TH1F("LW300_svd","secondary vertex displacement",100,0,1);
+
+//TH1F* LW400_svd = new TH1F("LW400_svd","secondary vertex displacement",100,0,1);
+
+//TH1F* LW500_svd = new TH1F("LW500_svd","secondary vertex displacement",100,0,1);
 
 TH1F* dataRunB_JetMass = new TH1F("dataRunB_JetMass","Invariant mass from DiJets",800,0,400);
 
@@ -129,9 +185,9 @@ TH1F* LW200_LWMass = new TH1F("LW200_LWMass","Invariant mass from LW",800,0,400)
 
 TH1F* LW300_LWMass = new TH1F("LW300_LWMass","Invariant mass from LW",800,0,400);
 
-TH1F* LW400_LWMass = new TH1F("LW400_LWMass","Invariant mass from LW",800,0,400);
+//TH1F* LW400_LWMass = new TH1F("LW400_LWMass","Invariant mass from LW",800,0,400);
 
-TH1F* LW500_LWMass = new TH1F("LW500_LWMass","Invariant mass from LW",800,0,400);
+//TH1F* LW500_LWMass = new TH1F("LW500_LWMass","Invariant mass from LW",800,0,400);
 
 //TH1F* LW200_JetHQ = new TH1F("LW200_JetHQ","JetHQ",2,0,2);
 
@@ -172,7 +228,11 @@ public :
   UInt_t          luminosityBlock;
   ULong64_t	   event;
   Int_t           PV_npvs;
+  Int_t           numbersecvec;
   std::map<std::string, int> *triggermap;
+  vector<float>   *PV_x;
+  vector<float>   *PV_y;
+  vector<float>   *PV_z;
   vector<float>   *muon_pt;
   vector<float>   *muon_eta;
   vector<float>   *muon_phi;
@@ -221,6 +281,9 @@ public :
   vector<float>   *trigobj_py;
   vector<float>   *trigobj_phi;
   vector<float>   *trigobj_eta;
+  vector<float>   *secvec_posx;
+  vector<float>   *secvec_posy;
+  vector<float>   *secvec_posz;
   Float_t         met_pt;
   Float_t         met_phi;
 
@@ -229,7 +292,11 @@ public :
   TBranch        *b_luminosityBlock;   //!
   TBranch        *b_event;   //!
   TBranch        *b_PV_npvs;   //!
+  TBranch        *b_numbersecvec;   //!
   TBranch        *b_triggermap;   //!
+  TBranch        *b_PV_x;   //!
+  TBranch        *b_PV_y;   //!
+  TBranch        *b_PV_z;   //!
   TBranch        *b_muon_pt;   //!
   TBranch        *b_muon_eta;   //!
   TBranch        *b_muon_phi;   //!
@@ -280,6 +347,9 @@ public :
   TBranch        *b_trigobj_py;
   TBranch        *b_trigobj_phi;
   TBranch        *b_trigobj_eta;
+  TBranch        *b_secvec_posx;
+  TBranch        *b_secvec_posy;
+  TBranch        *b_secvec_posz;
 
   EventLoopAnalysisTemplate(TString filename, TString labeltag, Float_t theweight);
   virtual ~EventLoopAnalysisTemplate();
@@ -348,6 +418,34 @@ EventLoopAnalysisTemplate::EventLoopAnalysisTemplate(TString thefile, TString th
   hists[35] = LW300_npv;
   //hists[40] = LW400_npv;
   //hists[41] = LW500_npv;
+  hists[36] = dataRunB_nsv;
+  hists[37] = dataRunC_nsv;
+  hists[38] = ZLL_nsv;
+  hists[39] = TT_nsv;
+  hists[40] = W3J_nsv;
+  hists[41] = W2J_nsv;
+  hists[42] = W1J_nsv;
+  hists[43] = WW_nsv;
+  hists[44] = WZ_nsv;
+  hists[45] = ttZ_nsv;
+  hists[46] = LW200_nsv;
+  hists[47] = LW200_nsv;
+  //hists[40] = LW400_nsv;
+  //hists[41] = LW500_nsv;
+  hists[48] = dataRunB_svd;
+  hists[49] = dataRunC_svd;
+  hists[50] = ZLL_svd;
+  hists[51] = TT_svd;
+  hists[52] = W3J_svd;
+  hists[53] = W2J_svd;
+  hists[54] = W1J_svd;
+  hists[55] = WW_svd;
+  hists[56] = WZ_svd;
+  hists[57] = ttZ_svd;
+  hists[58] = LW200_svd;
+  hists[59] = LW200_svd;
+  //hists[40] = LW400_svd;
+  //hists[41] = LW500_svd;
 
 
 // if parameter tree is not specified (or zero), connect the file
@@ -421,6 +519,9 @@ void EventLoopAnalysisTemplate::Init(TTree *tree)
 
    // Set object pointer
    triggermap =0;
+   PV_x = 0;
+   PV_y = 0;
+   PV_z = 0;
    muon_pt = 0;
    muon_eta = 0;
    muon_phi = 0;
@@ -468,6 +569,9 @@ void EventLoopAnalysisTemplate::Init(TTree *tree)
    trigobj_pz = 0;
    trigobj_phi = 0;
    trigobj_eta = 0;
+   secvec_posx = 0;
+   secvec_posy = 0;
+   secvec_posz = 0;
 
    // Set branch addresses and branch pointers
    if (!tree) return;
@@ -481,6 +585,10 @@ void EventLoopAnalysisTemplate::Init(TTree *tree)
    fChain->SetBranchAddress("luminosityBlock", &luminosityBlock, &b_luminosityBlock);
    fChain->SetBranchAddress("event", &event, &b_event);
    fChain->SetBranchAddress("PV_npvs", &PV_npvs, &b_PV_npvs);
+   fChain->SetBranchAddress("numbersecvec", &numbersecvec, &b_numbersecvec);
+   fChain->SetBranchAddress("PV_x", &PV_x, &b_PV_x);
+   fChain->SetBranchAddress("PV_y", &PV_y, &b_PV_y);
+   fChain->SetBranchAddress("PV_z", &PV_z, &b_PV_z);
    fChain->SetBranchAddress("triggermap",&triggermap,&b_triggermap);
    fChain->SetBranchAddress("muon_pt", &muon_pt, &b_muon_pt);
    fChain->SetBranchAddress("muon_eta", &muon_eta, &b_muon_eta);
@@ -529,6 +637,9 @@ void EventLoopAnalysisTemplate::Init(TTree *tree)
    fChain->SetBranchAddress("trigobj_phi",&trigobj_phi,&b_trigobj_phi);
    fChain->SetBranchAddress("trigobj_eta",&trigobj_eta,&b_trigobj_eta);
    fChain->SetBranchAddress("trigobj_e",&trigobj_e,&b_trigobj_e);
+   fChain->SetBranchAddress("secvec_posx",&secvec_posx,&b_secvec_posx);
+   fChain->SetBranchAddress("secvec_posy",&secvec_posy,&b_secvec_posy);
+   fChain->SetBranchAddress("secvec_posz",&secvec_posz,&b_secvec_posz);
 
    Notify();
 }
@@ -592,21 +703,32 @@ void EventLoopAnalysisTemplate::analysis()
   //////////JetSelection///////
   vector<bool> JetisHQ;
   JetisHQ.clear();
+  size_t Jhqcount=0;
   for(size_t x=0; x<jet_e->size(); x++){
     if(abs(jet_eta->at(x))<2.5){
-      if(NConstituents->at(x)>1 && NeutralHF->at(x)<0.9 && MuonF->at(x)<0.8) JetisHQ.push_back(true);
+      if(NConstituents->at(x)>1 && NeutralHF->at(x)<0.9 && MuonF->at(x)<0.8){
+        JetisHQ.push_back(true);
+        Jhqcount++;
+      }
       else JetisHQ.push_back(false);
     }
     else{
       if(NConstituents->at(x)>1 && NeutralHF->at(x)<0.9 && MuonF->at(x)<0.8 &&
-          ChargedHF->at(x)>0 && ChargedEMF->at(x)>0 && ChargedMult->at(x)<0.80) JetisHQ.push_back(true);
+          ChargedHF->at(x)>0 && ChargedEMF->at(x)>0 && ChargedMult->at(x)<0.80){
+            JetisHQ.push_back(true);
+            Jhqcount++;
+          }
       else JetisHQ.push_back(false);
     }
   }
+  if(Jhqcount<4) return;
   /////Identify electron as Trig OBJ
   vector<bool> TobjisFound;
   vector<int>  TobjisHQ;
   TobjisFound.clear();
+  TobjisHQ.clear();
+  size_t objcount=0;
+  size_t hqcount=0;
   for (size_t y=0; y<trigobj_e->size(); y++){
     float saveDR=100;
     int saveQ=0;
@@ -620,12 +742,16 @@ void EventLoopAnalysisTemplate::analysis()
     if (saveDR<0.1){
       TobjisFound.push_back(true);
       TobjisHQ.push_back(saveQ);
+      objcount++;
+      if(saveQ==1) hqcount++;
     }
     else {
       TobjisFound.push_back(false);
       TobjisHQ.push_back(saveQ);
     }
   }
+  if(objcount<2) return;
+  if(hqcount<2) return;
   //fill histograms for signal region
   Int_t histsize = sizeof(hists)/sizeof(hists[0]);
   for (Int_t j=0;j<histsize;++j){
@@ -638,6 +764,23 @@ void EventLoopAnalysisTemplate::analysis()
       //primary vertices
       if(thevar == "npv"){
 	       hists[j]->Fill(PV_npvs,theweight);
+      }
+
+      //secondary Vertices
+      if(thevar == "nsv"){
+	       hists[j]->Fill(numbersecvec,theweight);
+      }
+
+      //secondary vertex displacements
+      if(thevar == "svd"){
+        float dx,dy,dz,disp;
+        for (size_t i = 0; i < secvec_posx->size(); i++) {
+          dx=PV_x->at(0)-secvec_posx->at(i);
+          dy=PV_y->at(0)-secvec_posy->at(i);
+          dz=PV_z->at(0)-secvec_posz->at(i);
+          disp=sqrt( dx*dx + dy*dy + dz*dz );
+          hists[j]->Fill(disp,theweight);
+        }
       }
 
       //JetMass
@@ -858,6 +1001,34 @@ int main()
   //LW400_LWMass->Write();
   //LW500_LWMass->Write();
   //LW200_JetHQ->Write();
+  dataRunB_nsv->Write();
+  dataRunC_nsv->Write();
+  ZLL_nsv->Write();
+  TT_nsv->Write();
+  W3J_nsv->Write();
+  W2J_nsv->Write();
+  W1J_nsv->Write();
+  WW_nsv->Write();
+  WZ_nsv->Write();
+  ttZ_nsv->Write();
+  LW200_nsv->Write();
+  LW300_nsv->Write();
+  //LW400_nsv->Write();
+  //LW500_nsv->Write();
+  dataRunB_svd->Write();
+  dataRunC_svd->Write();
+  ZLL_svd->Write();
+  TT_svd->Write();
+  W3J_svd->Write();
+  W2J_svd->Write();
+  W1J_svd->Write();
+  WW_svd->Write();
+  WZ_svd->Write();
+  ttZ_svd->Write();
+  LW200_svd->Write();
+  LW300_svd->Write();
+  //LW400_svd->Write();
+  //LW500_svd->Write();
 
   hfile->Close();
 

@@ -77,61 +77,61 @@ TH1F* LW300_npv = new TH1F("LW300_npv","Number of primary vertices",25,5,30);
 
 //TH1F* LW500_npv = new TH1F("LW500_npv","Number of primary vertices",25,5,30);
 
-TH1F* dataRunB_nsv = new TH1F("dataRunB_nsv","Number of secondary vertices",25,5,30);
+TH1F* dataRunB_nsv = new TH1F("dataRunB_nsv","Number of secondary vertices",20,0,2000);
 
-TH1F* dataRunC_nsv  = new TH1F("dataRunC_nsv","Number of secondary vertices",25,5,30);
+TH1F* dataRunC_nsv  = new TH1F("dataRunC_nsv","Number of secondary vertices",20,0,2000);
 
-TH1F* ZLL_nsv = new TH1F("ZLL_nsv","Number of secondary vertices",25,5,30);
+TH1F* ZLL_nsv = new TH1F("ZLL_nsv","Number of secondary vertices",20,0,2000);
 
-TH1F* TT_nsv = new TH1F("TT_nsv","Number of secondary vertices",25,5,30);
+TH1F* TT_nsv = new TH1F("TT_nsv","Number of secondary vertices",20,0,2000);
 
-TH1F* W3J_nsv = new TH1F("W3J_nsv","Number of secondary vertices",25,5,30);
+TH1F* W3J_nsv = new TH1F("W3J_nsv","Number of secondary vertices",20,0,2000);
 
-TH1F* W2J_nsv = new TH1F("W2J_nsv","Number of secondary vertices",25,5,30);
+TH1F* W2J_nsv = new TH1F("W2J_nsv","Number of secondary vertices",20,0,2000);
 
-TH1F* W1J_nsv = new TH1F("W1J_nsv","Number of secondary vertices",25,5,30);
+TH1F* W1J_nsv = new TH1F("W1J_nsv","Number of secondary vertices",20,0,2000);
 
-TH1F* ttZ_nsv = new TH1F("ttZ_nsv","Number of secondary vertices",25,5,30);
+TH1F* ttZ_nsv = new TH1F("ttZ_nsv","Number of secondary vertices",20,0,2000);
 
-TH1F* WW_nsv = new TH1F("WW_nsv","Number of secondary vertices",25,5,30);
+TH1F* WW_nsv = new TH1F("WW_nsv","Number of secondary vertices",20,0,2000);
 
-TH1F* WZ_nsv = new TH1F("WZ_nsv","Number of secondary vertices",25,5,30);
+TH1F* WZ_nsv = new TH1F("WZ_nsv","Number of secondary vertices",20,0,2000);
 
-TH1F* LW200_nsv = new TH1F("LW200_nsv","Number of secondary vertices",25,5,30);
+TH1F* LW200_nsv = new TH1F("LW200_nsv","Number of secondary vertices",20,0,2000);
 
-TH1F* LW300_nsv = new TH1F("LW300_nsv","Number of secondary vertices",25,5,30);
+TH1F* LW300_nsv = new TH1F("LW300_nsv","Number of secondary vertices",20,0,2000);
 
-//TH1F* LW400_nsv = new TH1F("LW400_nsv","Number of secondary vertices",25,5,30);
+//TH1F* LW400_nsv = new TH1F("LW400_nsv","Number of secondary vertices",20,0,2000);
 
-//TH1F* LW500_nsv = new TH1F("LW500_nsv","Number of secondary vertices",25,5,30);
+//TH1F* LW500_nsv = new TH1F("LW500_nsv","Number of secondary vertices",20,0,2000);
 
-TH1F* dataRunB_svd = new TH1F("dataRunB_svd","secondary vertex displacement",100,0,20);
+TH1F* dataRunB_svd = new TH1F("dataRunB_svd","secondary vertex displacement",100,0,1);
 
-TH1F* dataRunC_svd  = new TH1F("dataRunC_svd","secondary vertex displacement",100,0,20);
+TH1F* dataRunC_svd  = new TH1F("dataRunC_svd","secondary vertex displacement",100,0,1);
 
-TH1F* ZLL_svd = new TH1F("ZLL_svd","secondary vertex displacement",100,0,20);
+TH1F* ZLL_svd = new TH1F("ZLL_svd","secondary vertex displacement",100,0,1);
 
-TH1F* TT_svd = new TH1F("TT_svd","secondary vertex displacement",100,0,20);
+TH1F* TT_svd = new TH1F("TT_svd","secondary vertex displacement",100,0,1);
 
-TH1F* W3J_svd = new TH1F("W3J_svd","secondary vertex displacement",100,0,20);
+TH1F* W3J_svd = new TH1F("W3J_svd","secondary vertex displacement",100,0,1);
 
-TH1F* W2J_svd = new TH1F("W2J_svd","secondary vertex displacement",100,0,20);
+TH1F* W2J_svd = new TH1F("W2J_svd","secondary vertex displacement",100,0,1);
 
-TH1F* W1J_svd = new TH1F("W1J_svd","secondary vertex displacement",100,0,20);
+TH1F* W1J_svd = new TH1F("W1J_svd","secondary vertex displacement",100,0,1);
 
-TH1F* ttZ_svd = new TH1F("ttZ_svd","secondary vertex displacement",100,0,20);
+TH1F* ttZ_svd = new TH1F("ttZ_svd","secondary vertex displacement",100,0,1);
 
-TH1F* WW_svd = new TH1F("WW_svd","secondary vertex displacement",100,0,20);
+TH1F* WW_svd = new TH1F("WW_svd","secondary vertex displacement",100,0,1);
 
-TH1F* WZ_svd = new TH1F("WZ_svd","secondary vertex displacement",100,0,20);
+TH1F* WZ_svd = new TH1F("WZ_svd","secondary vertex displacement",100,0,1);
 
-TH1F* LW200_svd = new TH1F("LW200_svd","secondary vertex displacement",100,0,20);
+TH1F* LW200_svd = new TH1F("LW200_svd","secondary vertex displacement",100,0,1);
 
-TH1F* LW300_svd = new TH1F("LW300_svd","secondary vertex displacement",100,0,20);
+TH1F* LW300_svd = new TH1F("LW300_svd","secondary vertex displacement",100,0,1);
 
-//TH1F* LW400_svd = new TH1F("LW400_svd","secondary vertex displacement",100,0,20);
+//TH1F* LW400_svd = new TH1F("LW400_svd","secondary vertex displacement",100,0,1);
 
-//TH1F* LW500_svd = new TH1F("LW500_svd","secondary vertex displacement",100,0,20);
+//TH1F* LW500_svd = new TH1F("LW500_svd","secondary vertex displacement",100,0,1);
 
 TH1F* dataRunB_JetMass = new TH1F("dataRunB_JetMass","Invariant mass from DiJets",800,0,400);
 
@@ -636,6 +636,7 @@ void EventLoopAnalysisTemplate::Init(TTree *tree)
    fChain->SetBranchAddress("electron_e",&electron_e,&b_electron_e);
    fChain->SetBranchAddress("electron_ch",&electron_ch,&b_electron_ch);
    fChain->SetBranchAddress("trk_isHQ",&trk_isHQ,&b_trk_isHQ);
+   fChain->SetBranchAddress("trigobj_pt",&trigobj_pt,&b_trigobj_pt);
    fChain->SetBranchAddress("trigobj_px",&trigobj_px,&b_trigobj_px);
    fChain->SetBranchAddress("trigobj_py",&trigobj_py,&b_trigobj_py);
    fChain->SetBranchAddress("trigobj_pz",&trigobj_pz,&b_trigobj_pz);
@@ -708,45 +709,69 @@ void EventLoopAnalysisTemplate::analysis()
   //////////JetSelection///////
   vector<bool> JetisHQ;
   JetisHQ.clear();
+  size_t Jhqcount=0;
   for(size_t x=0; x<jet_e->size(); x++){
     if(abs(jet_eta->at(x))<2.5){
-      if(NConstituents->at(x)>1 && NeutralHF->at(x)<0.9 && MuonF->at(x)<0.8) JetisHQ.push_back(true);
+      if(NConstituents->at(x)>1 && NeutralHF->at(x)<0.9 && MuonF->at(x)<0.8){
+        JetisHQ.push_back(true);
+        Jhqcount++;
+      }
       else JetisHQ.push_back(false);
     }
     else{
       if(NConstituents->at(x)>1 && NeutralHF->at(x)<0.9 && MuonF->at(x)<0.8 &&
-          ChargedHF->at(x)>0 && ChargedEMF->at(x)>0 && ChargedMult->at(x)<0.80) JetisHQ.push_back(true);
+          ChargedHF->at(x)>0 && ChargedEMF->at(x)>0 && ChargedMult->at(x)<0.80){
+            JetisHQ.push_back(true);
+            Jhqcount++;
+          }
       else JetisHQ.push_back(false);
     }
   }
+  if(Jhqcount<4) return;
   /////Identify electron as Trig OBJ
   vector<bool> TobjisFound;
   vector<int>  TobjisHQ;
+  vector<float> TobjCh;
   TobjisFound.clear();
+  TobjisHQ.clear();
+  TobjCh.clear();
+  size_t objcount=0;
+  size_t hqcount=0;
   for (size_t y=0; y<trigobj_e->size(); y++){
     float saveDR=100;
     int saveQ=0;
+    float saveCh=0;
     for (size_t x=0; x<electron_e->size(); x++){
       float DRet=deltaR(electron_eta->at(x),electron_phi->at(x),trigobj_eta->at(y),trigobj_phi->at(y));
       if(DRet<saveDR){
          saveDR=DRet;
          saveQ=trk_isHQ->at(x);
+         saveCh=electron_ch->at(x);
       }
     }
     if (saveDR<0.1){
       TobjisFound.push_back(true);
       TobjisHQ.push_back(saveQ);
+      TobjCh.push_back(saveCh);
+      objcount++;
+      if(saveQ==1) hqcount++;
     }
     else {
       TobjisFound.push_back(false);
       TobjisHQ.push_back(saveQ);
+      TobjCh.push_back(saveCh);
     }
   }
+  if(objcount<2) return;
+  if(hqcount<2) return;
+
+
   /////Check NeutralCurrent
   bool neutral=false, pos=false, neg=false;
-  for( size_t x=0; x<electron_e->size(); x++ ){
-    if(electron_pt->at(x)>25 && electron_ch->at(x)>0)pos=true;
-    if(electron_pt->at(x)>25 && electron_ch->at(x)<0)neg=true;
+  if(!(trigobj_e->size()==TobjCh.size() && TobjCh.size()==TobjisFound.size() && TobjisFound.size()==TobjisHQ.size())) cout<<"size error\n";
+  for( size_t x=0; x<trigobj_e->size(); x++ ){
+    if(trigobj_pt->at(x)>25 && TobjCh.at(x)>0 && TobjisFound.at(x) && TobjisHQ.at(x)==1)pos=true;
+    if(trigobj_pt->at(x)>25 && TobjCh.at(x)<0 && TobjisFound.at(x) && TobjisHQ.at(x)==1)neg=true;
   }
   neutral=pos*neg;
   if(!neutral) return;
@@ -763,6 +788,23 @@ void EventLoopAnalysisTemplate::analysis()
       //primary vertices
       if(thevar == "npv"){
 	       hists[j]->Fill(PV_npvs,theweight);
+      }
+
+      //secondary Vertices
+      if(thevar == "nsv"){
+	       hists[j]->Fill(numbersecvec,theweight);
+      }
+
+      //secondary vertex displacements
+      if(thevar == "svd"){
+        float dx,dy,dz,disp;
+        for (size_t i = 0; i < secvec_posx->size(); i++) {
+          dx=PV_x->at(0)-secvec_posx->at(i);
+          dy=PV_y->at(0)-secvec_posy->at(i);
+          dz=PV_z->at(0)-secvec_posz->at(i);
+          disp=sqrt( dx*dx + dy*dy + dz*dz );
+          hists[j]->Fill(disp,theweight);
+        }
       }
 
       //JetMass
@@ -994,7 +1036,7 @@ int main()
   WZ_nsv->Write();
   ttZ_nsv->Write();
   LW200_nsv->Write();
-  LW200_nsv->Write();
+  LW300_nsv->Write();
   //LW400_nsv->Write();
   //LW500_nsv->Write();
   dataRunB_svd->Write();
@@ -1008,7 +1050,7 @@ int main()
   WZ_svd->Write();
   ttZ_svd->Write();
   LW200_svd->Write();
-  LW200_svd->Write();
+  LW300_svd->Write();
   //LW400_svd->Write();
   //LW500_svd->Write();
 

@@ -151,8 +151,12 @@ def main(variable):
 
     #scale_ggH = 10.0
     #ggH.Scale(scale_ggH)
-    scale_LW200 = 10000.0
-    LW200.Scale(scale_LW200)
+    if variable == "svd" or variable == "nsv" :
+        scale_LW200 = 100.0
+        LW200.Scale(scale_LW200)
+    else:
+        scale_LW200 = 10000.0
+        LW200.Scale(scale_LW200)
 
     LW200.SetLineWidth(3)
 
@@ -174,6 +178,7 @@ def main(variable):
     #stack.Add(ZLL)
 
     c = ROOT.TCanvas("", "", 600, 600)
+    #c.SetLogy()
     stack.Draw("hist")
     name = data.GetTitle()
     if name in labels:
@@ -216,8 +221,13 @@ def main(variable):
     latex.DrawLatex(0.24, 0.935, "#bf{CMS Open Data}")
 
     # Save
-    c.SaveAs("%s.pdf" % (variable))
-    c.SaveAs("%s.png" % (variable))
+    if variable == "svd" or variable == "nsv":
+        c.SetLogy()
+        c.SaveAs("%s.pdf" % (variable))
+        c.SaveAs("%s.png" % (variable))
+    else:
+        c.SaveAs("%s.pdf" % (variable))
+        c.SaveAs("%s.png" % (variable))
 
 # Loop over all variable names and make a plot for each
 if __name__ == "__main__":
