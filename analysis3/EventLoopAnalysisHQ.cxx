@@ -359,7 +359,8 @@ public :
   virtual void     Loop();
   virtual Bool_t   Notify();
   virtual void     Show(Long64_t entry = -1);
-  virtual float deltaR(float eta1, float phi1, float eta2, float phi2);
+  virtual float    deltaR(float eta1, float phi1, float eta2, float phi2);
+  virtual void     Show(string filtter);
   void analysis();
   bool MinimalSelection();
 
@@ -868,6 +869,7 @@ bool EventLoopAnalysisTemplate::MinimalSelection()
 
 }//------MinimalSelection
 
+//deltaR
 float EventLoopAnalysisTemplate::deltaR(float eta1, float phi1, float eta2, float phi2) {
   float deta = eta1 - eta2;
   float dphi = std::abs(phi1 - phi2);
@@ -876,6 +878,8 @@ float EventLoopAnalysisTemplate::deltaR(float eta1, float phi1, float eta2, floa
   return deta * deta + dphi * dphi;
 }
 
+//Histogra
+void EventLoopAnalysisTemplate::analysis()
 
 //-----------------------------------------------------------------
 int main()

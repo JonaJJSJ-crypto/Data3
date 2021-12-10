@@ -58,6 +58,11 @@ TH1F* LW200SecVec_num = new TH1F("LW200SecVec_num","Secvec Number of mergeable v
 TH1F* LW200SecVec_dR = new TH1F("LW200SecVec_dR","Secvec Seed track dR",100,0,1);
 TH1F* LW200SecVec_dR1 = new TH1F("LW200SecVec_dR1","Secvec Aux track 1 dR",100,0,1);
 TH1F* LW200SecVec_dR2 = new TH1F("LW200SecVec_dR2","Secvec Aux track 2 dR",100,0,1);
+TH2F* LW200SecVec_XYGen;
+TH2F* LW200SecVec_XYSignal;
+TH2F* LW200SecVec_XY;
+//TH2F* LW200SecVec_XY = new TH2F("LW200SecVec_XY","SecVec XY Distribution",20,-10,10,20,-10,10);
+
 const std::string samplesBasePath = "";
 
 
@@ -82,6 +87,7 @@ public :
   TTree          *tevents;
   TTree          *ttrigger;
   TTree          *telectrons;
+  TTree          *tvertex;
   TTree          *tphotons;
   TTree          *tGenPart;
   TTree          *tTrack;
@@ -103,6 +109,9 @@ public :
   UInt_t          luminosityBlock;
   ULong64_t	      event;
   std::map<std::string, int> *triggermap;
+  vector<float>   *PV_x;
+  vector<float>   *PV_y;
+  vector<float>   *PV_z;
   vector<float>   *electron_pt;
   vector<float>   *electron_eta;
   vector<float>   *electron_phi;
@@ -151,11 +160,17 @@ public :
   vector<float>   *trigobj_py;
   vector<float>   *trigobj_phi;
   vector<float>   *trigobj_eta;
+  vector<float>   *Bsp_x;
+  vector<float>   *Bsp_y;
+  vector<float>   *Bsp_z;
 
   TBranch        *b_run;   //!
   TBranch        *b_luminosityBlock;   //!
   TBranch        *b_event;   //!
   TBranch        *b_triggermap;   //!
+  TBranch        *b_PV_x;   //!
+  TBranch        *b_PV_y;   //!
+  TBranch        *b_PV_z;   //!
   TBranch        *b_electron_pt;
   TBranch        *b_electron_eta;
   TBranch        *b_electron_phi;
@@ -204,6 +219,9 @@ public :
   TBranch        *b_trigobj_py;
   TBranch        *b_trigobj_eta;
   TBranch        *b_trigobj_phi;
+  TBranch        *b_Bsp_x;
+  TBranch        *b_Bsp_y;
+  TBranch        *b_Bsp_z;
 
   EventLoopAnalysisTemplate(TString filename, TString labeltag, Float_t theweight);
   virtual ~EventLoopAnalysisTemplate();
@@ -262,10 +280,12 @@ EventLoopAnalysisTemplate::EventLoopAnalysisTemplate(TString thefile, TString th
    tGenPart = (TTree*)f->Get("mygenparticle/Events");
    tjets = (TTree*)f->Get("myjets/Events");
    ttrigobjs = (TTree*)f->Get("mytrigEvent/Events");
+   tvertex = (TTree*)f->Get("mypvertex/Events");
    //Make friends so we can have access to friends variables
    //we may not use all of the available information
    //it is just an example
    tree->AddFriend(tevents);
+   tree->AddFriend(tvertex);
    tree->AddFriend(telectrons);
    tree->AddFriend(tGenPart);
    tree->AddFriend(tjets);
@@ -315,6 +335,12 @@ void EventLoopAnalysisTemplate::Init(TTree *tree)
 
    // Set object pointer
    triggermap =0;
+   PV_x = 0;
+   PV_y = 0;
+   PV_z = 0;
+   Bsp_x = 0;
+   Bsp_y = 0;
+   Bsp_z = 0;
    electron_pt=0;
    electron_eta=0;
    electron_phi=0;
@@ -381,6 +407,12 @@ void EventLoopAnalysisTemplate::Init(TTree *tree)
    fChain->SetBranchAddress("luminosityBlock", &luminosityBlock, &b_luminosityBlock);
    fChain->SetBranchAddress("event", &event, &b_event);
    fChain->SetBranchAddress("triggermap",&triggermap,&b_triggermap);
+   fChain->SetBranchAddress("PV_x", &PV_x, &b_PV_x);
+   fChain->SetBranchAddress("PV_y", &PV_y, &b_PV_y);
+   fChain->SetBranchAddress("PV_z", &PV_z, &b_PV_z);
+   fChain->SetBranchAddress("Bsp_x", &Bsp_x, &b_Bsp_x);
+   fChain->SetBranchAddress("Bsp_y", &Bsp_y, &b_Bsp_y);
+   fChain->SetBranchAddress("Bsp_z", &Bsp_z, &b_Bsp_z);
    fChain->SetBranchAddress("electron_pt",&electron_pt,&b_electron_pt);
    fChain->SetBranchAddress("electron_eta",&electron_eta,&b_electron_eta);
    fChain->SetBranchAddress("electron_phi",&electron_phi,&b_electron_phi);
@@ -456,11 +488,14 @@ void EventLoopAnalysisTemplate::Loop()
 {
   if (fChain == 0) return;
 
-  Long64_t nentries = fChain->GetEntriesFast();
+  //Long64_t nentries = fChain->GetEntriesFast();
 
   Long64_t Elecount=0;
   Long64_t Secveccount=0;
+  Long64_t SignalCount=0;
   Triggcount=0;
+
+
 
   Long64_t nbytes = 0, nb = 0;
   for (Long64_t jentry=0; jentry<100;jentry++) {
@@ -469,6 +504,61 @@ void EventLoopAnalysisTemplate::Loop()
       cout<<"Processed "<<jentry<<" events out of "<<100<<endl;
       cout<<"number of Secvec: "<< secvec_posx->size() << endl;
     //  }
+    if(jentry==15) {
+      //Float_t Xpos[secvec_phi->size()];
+      //Float_t Ypos[secvec_phi->size()];
+      //Float_t W[secvec_phi->size()];
+      double Bx,By,Tx,Ty,DRele;
+      for(size_t x=0; x<GenPart_vx->size(); x++){
+        if(abs(GenPart_pdgId->at(x))==556){
+          Bx=GenPart_vx->at(x)-0.03;
+          By=GenPart_vy->at(x)-0.03;
+          Tx=GenPart_vx->at(x)+0.03;
+          Ty=GenPart_vy->at(x)+0.03;
+        }
+      }
+      LW200SecVec_XYGen = new TH2F("LW200SecVec_XYGen","SecVec XY Gen Distribution",200,Bx,Tx,200,By,Ty);
+      LW200SecVec_XYSignal = new TH2F("LW200SecVec_XYSignal","SecVec XY Signal Distribution",200,Bx,Tx,200,By,Ty);
+      LW200SecVec_XY = new TH2F("LW200SecVec_XY","SecVec XY Distribution",200,Bx,Tx,200,By,Ty);
+
+      //TGraphErrors* myPlot = new TGraphErrors(secvec_posx->size(),secvec_posx,secvec_posy,secvec_poserrorx,secvec_poserrory);
+      for(size_t x=0; x<secvec_posx->size(); x++){
+        LW200SecVec_XY->Fill(secvec_posx->at(x),secvec_posy->at(x));
+        LW200SecVec_XY->Fill(Bsp_x->at(0),Bsp_y->at(0));
+      }
+      for(size_t x=0; x<GenPart_vx->size(); x++){
+        if(abs(GenPart_pdgId->at(x))==11 && abs(GenPart_mompdgId->at(x))==556){
+          cout<<"SV: "<<GenPart_vx->at(x)<<' '<<GenPart_vy->at(x)<<endl;
+          LW200SecVec_XYGen->Fill(GenPart_vx->at(x),GenPart_vy->at(x),100);
+        }
+        if(abs(GenPart_pdgId->at(x))==556){
+          cout<<"PV: "<<GenPart_vx->at(0)<< ' '<<GenPart_vy->at(0)<<endl;
+          LW200SecVec_XYGen->Fill(GenPart_vx->at(x),GenPart_vy->at(x),100);
+        }
+        if(abs(GenPart_pdgId->at(x))==11 && abs(GenPart_mompdgId->at(x))==556){
+          for (size_t i = 0; i < electron_pt->size(); i++) {
+            if( genelec_DRscore->at(i)<0.1 && genelec_pt->at(i)==GenPart_pt->at(x) ){
+              for(size_t j=0; j<secvec_eta->size(); j++){
+                DRele=deltaR(electron_eta->at(i),electron_phi->at(i),secvec_eta->at(j),secvec_phi->at(j));
+                if(DRele<0.1) {
+                  LW200SecVec_XYSignal->Fill(secvec_posx->at(x),secvec_posy->at(x));
+                  LW200SecVec_XYSignal->Fill(Bsp_x->at(0),Bsp_y->at(0));
+                  SignalCount++;
+                }
+              }
+            }
+          }
+        }
+      }
+      //LW200SecVec_XY->FillN(secvec_phi->size(),Xpos,Ypos,W,1);
+
+
+      TFile* XYfile = new TFile("XYSecVec.root","RECREATE");
+      LW200SecVec_XYGen->Write();
+      LW200SecVec_XYSignal->Write();
+      LW200SecVec_XY->Write();
+      XYfile->Close();
+    }
     if(electron_pt->size()==0)Elecount++;//cout<<"Load the current event "<<jentry<<" 0 ele"<<'\n';
     if(electron_pt->size()==1)Elecount++;//cout<<"Load the current event "<<jentry<<" 1 ele"<<'\n';
     Long64_t ientry = LoadTree(jentry);
@@ -483,6 +573,7 @@ void EventLoopAnalysisTemplate::Loop()
   cout<<"Number Ele "<<Elecount<<endl;
   cout<<"Triggcount "<<Triggcount<<endl;
   cout<<"Secvec count "<<Secveccount<<endl;
+  cout<<"Signal count "<<SignalCount<<endl;
 
 
 }
@@ -851,6 +942,7 @@ int main()
   LW200SecVec_dR->Write();
   LW200SecVec_dR1->Write();
   LW200SecVec_dR2->Write();
+  //LW200SecVec_XY->Write();
 
   hfile->Close();
 
