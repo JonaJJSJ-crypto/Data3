@@ -488,7 +488,7 @@ void EventLoopAnalysisTemplate::Loop()
 {
   if (fChain == 0) return;
 
-  //Long64_t nentries = fChain->GetEntriesFast();
+  Long64_t nentries = fChain->GetEntriesFast();
 
   Long64_t Elecount=0;
   Long64_t Secveccount=0;
@@ -498,13 +498,13 @@ void EventLoopAnalysisTemplate::Loop()
 
 
   Long64_t nbytes = 0, nb = 0;
-  for (Long64_t jentry=0; jentry<100;jentry++) {
+  for (Long64_t jentry=0; jentry<nentries;jentry++) {
     //Just an informative printout
-    //if(jentry%10000 == 0) {
+    /*if(jentry%10000 == 0) {
       cout<<"Processed "<<jentry<<" events out of "<<100<<endl;
       cout<<"number of Secvec: "<< secvec_posx->size() << endl;
-    //  }
-    if(jentry==15) {
+    }*/
+    if(jentry==1412) {
       //Float_t Xpos[secvec_phi->size()];
       //Float_t Ypos[secvec_phi->size()];
       //Float_t W[secvec_phi->size()];
@@ -541,7 +541,7 @@ void EventLoopAnalysisTemplate::Loop()
               for(size_t j=0; j<secvec_eta->size(); j++){
                 DRele=deltaR(electron_eta->at(i),electron_phi->at(i),secvec_eta->at(j),secvec_phi->at(j));
                 if(DRele<0.1) {
-                  LW200SecVec_XYSignal->Fill(secvec_posx->at(x),secvec_posy->at(x));
+                  LW200SecVec_XYSignal->Fill(secvec_posx->at(j),secvec_posy->at(j));
                   LW200SecVec_XYSignal->Fill(Bsp_x->at(0),Bsp_y->at(0));
                   SignalCount++;
                 }
@@ -558,6 +558,7 @@ void EventLoopAnalysisTemplate::Loop()
       LW200SecVec_XYSignal->Write();
       LW200SecVec_XY->Write();
       XYfile->Close();
+      analysis();
     }
     if(electron_pt->size()==0)Elecount++;//cout<<"Load the current event "<<jentry<<" 0 ele"<<'\n';
     if(electron_pt->size()==1)Elecount++;//cout<<"Load the current event "<<jentry<<" 1 ele"<<'\n';
@@ -566,9 +567,7 @@ void EventLoopAnalysisTemplate::Loop()
     if (ientry < 0) break;
     nb = fChain->GetEntry(jentry);   nbytes += nb;
 
-    analysis();
     Secveccount+=secvec_posx->size();
-
   }
   cout<<"Number Ele "<<Elecount<<endl;
   cout<<"Triggcount "<<Triggcount<<endl;
