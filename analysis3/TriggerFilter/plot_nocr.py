@@ -13,7 +13,15 @@ labels = {
         "JetMass": "DiJets invariant mass",
         "LWMass": "LW invariant mass",
         "nsv": "Number od secondary vertices",
-        "svd": "Secondary vertex displacement"
+        "svd": "Secondary vertex displacement",
+        "Elept": "Electron Tranversal momentum",
+        "DieledR": "Di electron delta R",
+        "LWdR": "DiJet+electron delta R",
+        "DiJetdR": "DiJet delta R",
+        "BJetPt": "Most energetic jet tranversal momentum",
+        "SBJetPt": "Most energetic jet transversal momentum",
+        "NJet": "Number of Jets",
+        "NEle": "Number of Electrons"
         #"eta_2": "Tau #eta",
         #"m_vis": "Visible di-tau mass / GeV",
         }
@@ -28,7 +36,7 @@ colors = {
         "ZLL": ROOT.TColor.GetColor(248, 206, 104),
         "WW" : ROOT.TColor.GetColor(100, 192, 232),
         "WZ" : ROOT.TColor.GetColor(500, 150, 104),
-        "ttZ" : ROOT.TColor.GetColor(238, 286, 134),
+        "TTZ" : ROOT.TColor.GetColor(238, 286, 134),
         #"ZLL": ROOT.TColor.GetColor(100, 192, 232),
         #"ZTT": ROOT.TColor.GetColor(248, 206, 104),
         }
@@ -106,27 +114,27 @@ def main(variable):
 
     # Simulation
     #ggH = getHistogram(tfile, "ggH", variable)
-    LW200 = getHistogram(tfile, "LW200", variable)
+    LW200 = getHistogram(tfile, "TF_LW200", variable)
 
-    W = getHistogram(tfile, "W1J", variable)
-    W2J = getHistogram(tfile, "W2J", variable)
-    W3J = getHistogram(tfile, "W3J", variable)
+    W = getHistogram(tfile, "TF_W1J", variable)
+    W2J = getHistogram(tfile, "TF_W2J", variable)
+    W3J = getHistogram(tfile, "TF_W3J", variable)
     W.Add(W2J)
     W.Add(W3J)
 
-    TT = getHistogram(tfile, "TT", variable)
+    TT = getHistogram(tfile, "TF_TT", variable)
 
-    ZLL = getHistogram(tfile, "ZLL", variable)
+    ZLL = getHistogram(tfile, "TF_ZLL", variable)
 
-    WW = getHistogram(tfile, "WW", variable)
+    WW = getHistogram(tfile, "TF_WW", variable)
 
-    WZ = getHistogram(tfile, "WZ", variable)
+    WZ = getHistogram(tfile, "TF_WZ", variable)
 
-    ttZ = getHistogram(tfile, "ttZ", variable)
+    TTZ = getHistogram(tfile, "TF_TTZ", variable)
 
     # Data
-    data = getHistogram(tfile, "dataRunB", variable)
-    dataRunC = getHistogram(tfile, "dataRunC", variable)
+    data = getHistogram(tfile, "TF_dataRunB", variable)
+    dataRunC = getHistogram(tfile, "TF_dataRunC", variable)
     data.Add(dataRunC)
 
     # Data-driven QCD estimation
@@ -164,7 +172,7 @@ def main(variable):
         #x.SetLineWidth(3)
 
 
-    for x, l in [(TT, "TT"), (ZLL, "ZLL"), (W, "W"),(WW, "WW"), (WZ, "WZ"), (ttZ, "ttZ")]:
+    for x, l in [(TT, "TT"), (ZLL, "ZLL"), (W, "W"),(WW, "WW"), (WZ, "WZ"), (TTZ, "TTZ")]:
         x.SetLineWidth(0)
         x.SetFillColor(colors[l])
     #ZLL.SetLineWidth(0)
@@ -173,7 +181,7 @@ def main(variable):
 
     stack = ROOT.THStack("", "")
 #    for x in [QCD, TT, W, ZLL]:
-    for x in [TT, W, ZLL, WW, WZ, ttZ]:
+    for x in [TT, W, ZLL, WW, WZ, TTZ]:
         stack.Add(x)
     #stack.Add(ZLL)
 
@@ -185,7 +193,7 @@ def main(variable):
         title = labels[name]
     else:
         title = name
-    stack.GetXaxis().SetTitle(title)
+    stack.GetXaxis().SetTitle("title;lenght [cm];Arb.Units")
     stack.GetYaxis().SetTitle("N_{Events}")
     stack.SetMaximum(max(stack.GetMaximum(), data.GetMaximum()) * 1.4)
     stack.SetMinimum(1.0)
@@ -200,7 +208,7 @@ def main(variable):
     legend.SetNColumns(2)
     legend.AddEntry(WW, "WW", "f")
     legend.AddEntry(WZ, "WZ", "f")
-    legend.AddEntry(ttZ, "t#bar{t}Z", "f")
+    legend.AddEntry(TTZ, "t#bar{t}Z", "f")
     legend.AddEntry(ZLL, "Z#rightarrowll", "f")
     legend.AddEntry(W, "W+jets", "f")
     legend.AddEntry(TT, "t#bar{t}", "f")

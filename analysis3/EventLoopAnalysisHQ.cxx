@@ -360,7 +360,7 @@ public :
   virtual Bool_t   Notify();
   virtual void     Show(Long64_t entry = -1);
   virtual float    deltaR(float eta1, float phi1, float eta2, float phi2);
-  virtual void     Show(string filtter);
+  //virtual void     Show(string filtter);
   void analysis();
   bool MinimalSelection();
 
@@ -878,8 +878,8 @@ float EventLoopAnalysisTemplate::deltaR(float eta1, float phi1, float eta2, floa
   return deta * deta + dphi * dphi;
 }
 
-//Histogra
-void EventLoopAnalysisTemplate::analysis()
+//Hist
+//void EventLoopAnalysisTemplate::Hist()
 
 //-----------------------------------------------------------------
 int main()
