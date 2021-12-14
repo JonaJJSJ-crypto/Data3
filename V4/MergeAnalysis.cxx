@@ -58,6 +58,9 @@ TH1F* LW200SecVec_num = new TH1F("LW200SecVec_num","Secvec Number of mergeable v
 TH1F* LW200SecVec_dR = new TH1F("LW200SecVec_dR","Secvec Seed track dR",100,0,1);
 TH1F* LW200SecVec_dR1 = new TH1F("LW200SecVec_dR1","Secvec Aux track 1 dR",100,0,1);
 TH1F* LW200SecVec_dR2 = new TH1F("LW200SecVec_dR2","Secvec Aux track 2 dR",100,0,1);
+TH1F* LW200SecVec_TrkHQ= new TH1F("LW200SecVec_TrkHQ","Signal electrons quality",3,-1,2);
+TH1F* LW200SecVec_HQElept= new TH1F("LW200SecVec_HQElept","HQ electrons pt",100,0,200);
+TH1F* LW200SecVec_HQTrkpt= new TH1F("LW200SecVec_HQTrkpt","HQ electrontrack pt",100,0,200);
 TH2F* LW200SecVec_XYGen;
 TH2F* LW200SecVec_XYSignal;
 TH2F* LW200SecVec_XY;
@@ -68,7 +71,7 @@ const std::string samplesBasePath = "";
 
 //book example histograms for specific variables
 //copy them in the constructor if you add more
-const int nhists = 9;
+const int nhists = 12;
 const int Minpt = 14;
 
 //Histograms for signal region
@@ -120,6 +123,7 @@ public :
   vector<bool>   *electron_isLoose;
   vector<bool>   *electron_isMedium;
   vector<bool>   *electron_isTight;
+  vector<int>   *trk_isHQ;
   vector<float>   *genelec_pt;
   vector<float>   *genelec_DRscore;
   //vector<float>   *electron_Bsecvec;
@@ -212,6 +216,7 @@ public :
   TBranch        *b_GenPart_vy;   //!
   TBranch        *b_GenPart_vz;   //!
   TBranch        *b_jet_pt;
+  TBranch        *b_trk_isHQ;
   TBranch        *b_trigobj_e;
   TBranch        *b_trigobj_pt;
   TBranch        *b_trigobj_pz;
@@ -255,6 +260,9 @@ EventLoopAnalysisTemplate::EventLoopAnalysisTemplate(TString thefile, TString th
   hists[6]=LW200SecVec_dR;
   hists[7]=LW200SecVec_dR1;
   hists[8]=LW200SecVec_dR2;
+  hists[9]=LW200SecVec_TrkHQ;
+  hists[10]=LW200SecVec_HQElept;
+  hists[11]=LW200SecVec_HQTrkpt;
   /*hists[1]=LW200electron_pt;
   hists[2]=LW200electron_eta;
   hists[3]=LW200SGenele_num;
@@ -351,6 +359,7 @@ void EventLoopAnalysisTemplate::Init(TTree *tree)
    electron_isTight=0;
    genelec_pt=0;
    genelec_DRscore=0;
+   trk_isHQ = 0;
    //electron_Bsecvec=0;
    //secvec_deltaR=0;
    //secvec_disp=0;
@@ -460,6 +469,7 @@ void EventLoopAnalysisTemplate::Init(TTree *tree)
    fChain->SetBranchAddress("trigobj_e",&trigobj_e,&b_trigobj_e);
    fChain->SetBranchAddress("trigobj_eta",&trigobj_eta,&b_trigobj_eta);
    fChain->SetBranchAddress("trigobj_phi",&trigobj_phi,&b_trigobj_phi);
+   fChain->SetBranchAddress("trk_isHQ",&trk_isHQ,&b_trk_isHQ);
 
    Notify();
 }
@@ -500,10 +510,10 @@ void EventLoopAnalysisTemplate::Loop()
   Long64_t nbytes = 0, nb = 0;
   for (Long64_t jentry=0; jentry<nentries;jentry++) {
     //Just an informative printout
-    /*if(jentry%10000 == 0) {
-      cout<<"Processed "<<jentry<<" events out of "<<100<<endl;
+    if(jentry%10000 == 0) {
+      cout<<"Processed "<<jentry<<" events out of "<<nentries<<endl;
       cout<<"number of Secvec: "<< secvec_posx->size() << endl;
-    }*/
+    }
     if(jentry==1412) {
       //Float_t Xpos[secvec_phi->size()];
       //Float_t Ypos[secvec_phi->size()];
@@ -558,14 +568,17 @@ void EventLoopAnalysisTemplate::Loop()
       LW200SecVec_XYSignal->Write();
       LW200SecVec_XY->Write();
       XYfile->Close();
-      analysis();
+
     }
+
     if(electron_pt->size()==0)Elecount++;//cout<<"Load the current event "<<jentry<<" 0 ele"<<'\n';
     if(electron_pt->size()==1)Elecount++;//cout<<"Load the current event "<<jentry<<" 1 ele"<<'\n';
     Long64_t ientry = LoadTree(jentry);
     //cout<<ientry<<endl;
     if (ientry < 0) break;
     nb = fChain->GetEntry(jentry);   nbytes += nb;
+
+    analysis();
 
     Secveccount+=secvec_posx->size();
   }
@@ -591,7 +604,7 @@ void EventLoopAnalysisTemplate::analysis()
 
 
   //Secvec secvecstudy
-  float dx,dy,dz,SVdR,SVdR1,SVdR2,dist,maxx,maxy,maxz;
+  /*float dx,dy,dz,SVdR,SVdR1,SVdR2,dist,maxx,maxy,maxz;
   size_t SVCount=0;
   for(size_t x=0; x<secvec_posx->size(); x++){
     for(size_t y=x+1; y<secvec_posx->size(); y++){
@@ -631,7 +644,23 @@ void EventLoopAnalysisTemplate::analysis()
       else hists[0]->Fill(0);
     }
   }
-  hists[2]->Fill(SVCount);
+  hists[2]->Fill(SVCount);*/
+
+  //checking electrons HQ.
+  for(size_t x=0; x<electron_pt->size(); x++){
+    for(size_t y=0; y<GenPart_pt->size(); y++){
+      if(abs(GenPart_pdgId->at(y))==11 && abs(GenPart_mompdgId->at(y))==556){
+        if(genelec_DRscore->at(x)<0.1 && genelec_pt->at(x)==GenPart_pt->at(y)){
+          hists[9]->Fill(trk_isHQ->at(x));
+          if(trk_isHQ->at(x)==1){
+            hists[10]->Fill(electron_pt->at(x));
+            //hists[11]->Fill(trk_pt->at(x));
+          }
+
+        }
+      }
+    }
+  }
 
 //Filling Electrons pt
   //if(electron_pt->size()!=electron_Bsecvec->size())cout<<"aqui\n";
@@ -941,6 +970,9 @@ int main()
   LW200SecVec_dR->Write();
   LW200SecVec_dR1->Write();
   LW200SecVec_dR2->Write();
+  LW200SecVec_TrkHQ->Write();
+  LW200SecVec_HQElept->Write();
+  LW200SecVec_HQTrkpt->Write();
   //LW200SecVec_XY->Write();
 
   hfile->Close();
