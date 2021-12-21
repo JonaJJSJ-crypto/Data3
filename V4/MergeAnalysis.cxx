@@ -441,12 +441,12 @@ void EventLoopAnalysisTemplate::Init(TTree *tree)
    fChain->SetBranchAddress("secvec_poserrorx",&secvec_poserrorx,&b_secvec_poserrorx);
    fChain->SetBranchAddress("secvec_poserrory",&secvec_poserrory,&b_secvec_poserrory);
    fChain->SetBranchAddress("secvec_poserrorz",&secvec_poserrorz,&b_secvec_poserrorz);
-   fChain->SetBranchAddress("secvec_phi",&secvec_phi,&b_secvec_phi);
+   /*fChain->SetBranchAddress("secvec_phi",&secvec_phi,&b_secvec_phi);
    fChain->SetBranchAddress("secvec_eta",&secvec_eta,&b_secvec_eta);
    fChain->SetBranchAddress("secvec_phi1",&secvec_phi1,&b_secvec_phi1);
    fChain->SetBranchAddress("secvec_eta1",&secvec_eta1,&b_secvec_eta1);
    fChain->SetBranchAddress("secvec_phi2",&secvec_phi2,&b_secvec_phi2);
-   fChain->SetBranchAddress("secvec_eta2",&secvec_eta2,&b_secvec_eta2);
+   fChain->SetBranchAddress("secvec_eta2",&secvec_eta2,&b_secvec_eta2);*/
    fChain->SetBranchAddress("GenPart_pt",&GenPart_pt,&b_GenPart_pt);
    fChain->SetBranchAddress("GenPart_eta",&GenPart_eta,&b_GenPart_eta);
    fChain->SetBranchAddress("GenPart_phi",&GenPart_phi,&b_GenPart_phi);
@@ -510,15 +510,17 @@ void EventLoopAnalysisTemplate::Loop()
   Long64_t nbytes = 0, nb = 0;
   for (Long64_t jentry=0; jentry<nentries;jentry++) {
     //Just an informative printout
-    if(jentry%10000 == 0) {
+    if(jentry%1 == 0) {
       cout<<"Processed "<<jentry<<" events out of "<<nentries<<endl;
       cout<<"number of Secvec: "<< secvec_posx->size() << endl;
     }
-    if(jentry==1412) {
+    //cout<<"flag\n";
+    if(jentry==19) {
+      //cout<<"flag2\n";
       //Float_t Xpos[secvec_phi->size()];
       //Float_t Ypos[secvec_phi->size()];
       //Float_t W[secvec_phi->size()];
-      double Bx,By,Tx,Ty,DRele;
+      double Bx,By,Tx,Ty;//DRele;
       for(size_t x=0; x<GenPart_vx->size(); x++){
         if(abs(GenPart_pdgId->at(x))==556){
           Bx=GenPart_vx->at(x)-0.03;
@@ -527,20 +529,24 @@ void EventLoopAnalysisTemplate::Loop()
           Ty=GenPart_vy->at(x)+0.03;
         }
       }
+      //cout<<"flag\n";
       LW200SecVec_XYGen = new TH2F("LW200SecVec_XYGen","SecVec XY Gen Distribution",200,Bx,Tx,200,By,Ty);
       LW200SecVec_XYSignal = new TH2F("LW200SecVec_XYSignal","SecVec XY Signal Distribution",200,Bx,Tx,200,By,Ty);
       LW200SecVec_XY = new TH2F("LW200SecVec_XY","SecVec XY Distribution",200,Bx,Tx,200,By,Ty);
 
       //TGraphErrors* myPlot = new TGraphErrors(secvec_posx->size(),secvec_posx,secvec_posy,secvec_poserrorx,secvec_poserrory);
       for(size_t x=0; x<secvec_posx->size(); x++){
-        LW200SecVec_XY->Fill(secvec_posx->at(x),secvec_posy->at(x));
-        LW200SecVec_XY->Fill(Bsp_x->at(0),Bsp_y->at(0));
+        LW200SecVec_XY->Fill(secvec_posx->at(x),secvec_posy->at(x),5);
+        LW200SecVec_XY->Fill(Bsp_x->at(0),Bsp_y->at(0),5);
       }
+      //gen secvec impresion
       for(size_t x=0; x<GenPart_vx->size(); x++){
         if(abs(GenPart_pdgId->at(x))==11 && abs(GenPart_mompdgId->at(x))==556){
-          cout<<"SV: "<<GenPart_vx->at(x)<<' '<<GenPart_vy->at(x)<<endl;
+          //cout<<"SV: "<<GenPart_vx->at(x)<<' '<<GenPart_vy->at(x)<<endl;
+          cout<<"SV: "<<GenPart_vx->at(x)<< ' '<<GenPart_vy->at(x)<<endl;
           LW200SecVec_XYGen->Fill(GenPart_vx->at(x),GenPart_vy->at(x),100);
         }
+        //primary vertex
         if(abs(GenPart_pdgId->at(x))==556){
           cout<<"PV: "<<GenPart_vx->at(0)<< ' '<<GenPart_vy->at(0)<<endl;
           LW200SecVec_XYGen->Fill(GenPart_vx->at(x),GenPart_vy->at(x),100);
@@ -548,13 +554,13 @@ void EventLoopAnalysisTemplate::Loop()
         if(abs(GenPart_pdgId->at(x))==11 && abs(GenPart_mompdgId->at(x))==556){
           for (size_t i = 0; i < electron_pt->size(); i++) {
             if( genelec_DRscore->at(i)<0.1 && genelec_pt->at(i)==GenPart_pt->at(x) ){
-              for(size_t j=0; j<secvec_eta->size(); j++){
-                DRele=deltaR(electron_eta->at(i),electron_phi->at(i),secvec_eta->at(j),secvec_phi->at(j));
-                if(DRele<0.1) {
-                  LW200SecVec_XYSignal->Fill(secvec_posx->at(j),secvec_posy->at(j));
-                  LW200SecVec_XYSignal->Fill(Bsp_x->at(0),Bsp_y->at(0));
+              for(size_t j=0; j<secvec_posx->size(); j++){
+                //DRele=deltaR(electron_eta->at(i),electron_phi->at(i),secvec_eta->at(j),secvec_phi->at(j));
+                //if(DRele<0.1) {
+                  LW200SecVec_XYSignal->Fill(secvec_posx->at(j),secvec_posy->at(j),5);
+                  LW200SecVec_XYSignal->Fill(Bsp_x->at(0),Bsp_y->at(0),5);
                   SignalCount++;
-                }
+                //}
               }
             }
           }
@@ -570,16 +576,19 @@ void EventLoopAnalysisTemplate::Loop()
       XYfile->Close();
 
     }
-
+    //cout<<"flag2\n";
     if(electron_pt->size()==0)Elecount++;//cout<<"Load the current event "<<jentry<<" 0 ele"<<'\n';
     if(electron_pt->size()==1)Elecount++;//cout<<"Load the current event "<<jentry<<" 1 ele"<<'\n';
     Long64_t ientry = LoadTree(jentry);
     //cout<<ientry<<endl;
+    //cout<<"flag3\n";
     if (ientry < 0) break;
     nb = fChain->GetEntry(jentry);   nbytes += nb;
 
-    analysis();
+    //cout<<"flag4\n";
 
+    analysis();
+    //cout<<"flag5\n";
     Secveccount+=secvec_posx->size();
   }
   cout<<"Number Ele "<<Elecount<<endl;
@@ -647,7 +656,7 @@ void EventLoopAnalysisTemplate::analysis()
   hists[2]->Fill(SVCount);*/
 
   //checking electrons HQ.
-  for(size_t x=0; x<electron_pt->size(); x++){
+  /*for(size_t x=0; x<electron_pt->size(); x++){
     for(size_t y=0; y<GenPart_pt->size(); y++){
       if(abs(GenPart_pdgId->at(y))==11 && abs(GenPart_mompdgId->at(y))==556){
         if(genelec_DRscore->at(x)<0.1 && genelec_pt->at(x)==GenPart_pt->at(y)){
@@ -660,7 +669,7 @@ void EventLoopAnalysisTemplate::analysis()
         }
       }
     }
-  }
+  }*/
 
 //Filling Electrons pt
   //if(electron_pt->size()!=electron_Bsecvec->size())cout<<"aqui\n";
@@ -910,7 +919,7 @@ int main()
 
 
   map<string, pair<string,float> > sampleNames;
-  sampleNames.insert(make_pair("LWSM200DnR",make_pair("LW200",1)));
+  sampleNames.insert(make_pair("myoutput_20",make_pair("LW200",1)));
 
 
 

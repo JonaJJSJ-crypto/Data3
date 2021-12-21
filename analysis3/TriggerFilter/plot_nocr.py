@@ -9,19 +9,58 @@ ROOT.gROOT.SetBatch(True)
 
 # Declare a human-readable label for each variable
 labels = {
-        "npv": "Number of primary vertices",
-        "JetMass": "DiJets invariant mass",
-        "LWMass": "LW invariant mass",
-        "nsv": "Number od secondary vertices",
-        "svd": "Secondary vertex displacement",
-        "Elept": "Electron Tranversal momentum",
-        "DieledR": "Di electron delta R",
-        "LWdR": "DiJet+electron delta R",
-        "DiJetdR": "DiJet delta R",
-        "BJetPt": "Most energetic jet tranversal momentum",
-        "SBJetPt": "Most energetic jet transversal momentum",
-        "NJet": "Number of Jets",
-        "NEle": "Number of Electrons"
+        "NF_npv": "NF Number of primary vertices",
+        "NF_JetMass": "NF DiJets invariant mass",
+        "NF_LWMass": "NF LW invariant mass",
+        "NF_nsv": "NF Number od secondary vertices",
+        "NF_svd": "NF Secondary vertex displacement",
+        "NF_Elept": "NF Electron Tranversal momentum",
+        "NF_DieledR": "NF Di electron delta R",
+        "NF_LWdR": "NF DiJet+electron delta R",
+        "NF_DiJetdR": "NF DiJet delta R",
+        "NF_BJetPt": "NF Most energetic jet tranversal momentum",
+        "NF_SBJetPt": "NF Most energetic jet transversal momentum",
+        "NF_NJet": "NF Number of Jets",
+        "NF_NEle": "NF Number of Electrons",
+        "TF_npv": "TF Number of primary vertices",
+        "TF_JetMass": "TF DiJets invariant mass",
+        "TF_LWMass": "TF LW invariant mass",
+        "TF_nsv": "TF Number od secondary vertices",
+        "TF_svd": "TF Secondary vertex displacement",
+        "TF_Elept": "TF Electron Tranversal momentum",
+        "TF_DieledR": "TF Di electron delta R",
+        "TF_LWdR": "TF DiJet+electron delta R",
+        "TF_BJetPt": "TF Most energetic jet tranversal momentum",
+        "TF_SBJetPt": "TF Most energetic jet transversal momentum",
+        "TF_NJet": "TF Number of Jets",
+        "TF_NEle": "TF Number of Electrons",
+        "TO_npv": "TO Number of primary vertices",
+        "TO_JetMass": "TO DiJets invariant mass",
+        "TO_LWMass": "TO LW invariant mass",
+        "TO_nsv": "TO Number od secondary vertices",
+        "TO_svd": "TO Secondary vertex displacement",
+        "TO_Elept": "TO Electron Tranversal momentum",
+        "TO_DieledR": "TO Di electron delta R",
+        "TO_LWdR": "TO DiJet+electron delta R",
+        "TO_DiJetdR": "TO DiJet delta R",
+        "TO_BJetPt": "TO Most energetic jet tranversal momentum",
+        "TO_SBJetPt": "TO Most energetic jet transversal momentum",
+        "TO_NJet": "TO Number of Jets",
+        "TO_NEle": "TO Number of Electrons",
+        "HQ_npv": "HQ Number of primary vertices",
+        "HQ_JetMass": "HQ DiJets invariant mass",
+        "HQ_LWMass": "HQ LW invariant mass",
+        "HQ_nsv": "HQ Number od secondary vertices",
+        "HQ_svd": "HQ Secondary vertex displacement",
+        "HQ_Elept": "HQ Electron Tranversal momentum",
+        "HQ_DieledR": "HQ Di electron delta R",
+        "HQ_LWdR": "HQ DiJet+electron delta R",
+        "HQ_DiJetdR": "HQ DiJet delta R",
+        "HQ_BJetPt": "HQ Most energetic jet tranversal momentum",
+        "HQ_SBJetPt": "HQ Most energetic jet transversal momentum",
+        "HQ_NJet": "HQ Number of Jets",
+        "HQ_NEle": "HQ Number of Electrons",
+
         #"eta_2": "Tau #eta",
         #"m_vis": "Visible di-tau mass / GeV",
         }
@@ -114,27 +153,27 @@ def main(variable):
 
     # Simulation
     #ggH = getHistogram(tfile, "ggH", variable)
-    LW200 = getHistogram(tfile, "TF_LW200", variable)
+    LW200 = getHistogram(tfile, "LW200", variable)
 
-    W = getHistogram(tfile, "TF_W1J", variable)
-    W2J = getHistogram(tfile, "TF_W2J", variable)
-    W3J = getHistogram(tfile, "TF_W3J", variable)
+    W = getHistogram(tfile, "W1J", variable)
+    W2J = getHistogram(tfile, "W2J", variable)
+    W3J = getHistogram(tfile, "W3J", variable)
     W.Add(W2J)
     W.Add(W3J)
 
-    TT = getHistogram(tfile, "TF_TT", variable)
+    TT = getHistogram(tfile, "TT", variable)
 
-    ZLL = getHistogram(tfile, "TF_ZLL", variable)
+    ZLL = getHistogram(tfile, "ZLL", variable)
 
-    WW = getHistogram(tfile, "TF_WW", variable)
+    WW = getHistogram(tfile, "WW", variable)
 
-    WZ = getHistogram(tfile, "TF_WZ", variable)
+    WZ = getHistogram(tfile, "WZ", variable)
 
-    TTZ = getHistogram(tfile, "TF_TTZ", variable)
+    TTZ = getHistogram(tfile, "TTZ", variable)
 
     # Data
-    data = getHistogram(tfile, "TF_dataRunB", variable)
-    dataRunC = getHistogram(tfile, "TF_dataRunC", variable)
+    data = getHistogram(tfile, "dataRunB", variable)
+    dataRunC = getHistogram(tfile, "dataRunC", variable)
     data.Add(dataRunC)
 
     # Data-driven QCD estimation
@@ -197,6 +236,7 @@ def main(variable):
     stack.GetYaxis().SetTitle("N_{Events}")
     stack.SetMaximum(max(stack.GetMaximum(), data.GetMaximum()) * 1.4)
     stack.SetMinimum(1.0)
+    print(title)
 
     #ggH.Draw("HIST SAME")
     LW200.Draw("HIST SAME")

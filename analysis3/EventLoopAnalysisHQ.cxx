@@ -591,23 +591,6 @@ void EventLoopAnalysisTemplate::Init(TTree *tree)
    fChain->SetBranchAddress("PV_y", &PV_y, &b_PV_y);
    fChain->SetBranchAddress("PV_z", &PV_z, &b_PV_z);
    fChain->SetBranchAddress("triggermap",&triggermap,&b_triggermap);
-   fChain->SetBranchAddress("muon_pt", &muon_pt, &b_muon_pt);
-   fChain->SetBranchAddress("muon_eta", &muon_eta, &b_muon_eta);
-   fChain->SetBranchAddress("muon_phi", &muon_phi, &b_muon_phi);
-   fChain->SetBranchAddress("muon_ch", &muon_ch, &b_muon_ch);
-   fChain->SetBranchAddress("muon_tightid", &muon_tightid, &b_muon_tightid);
-   fChain->SetBranchAddress("muon_pfreliso03all", &muon_pfreliso03all, &b_muon_pfreliso03all);
-   fChain->SetBranchAddress("muon_mass", &muon_mass, &b_muon_mass);
-   fChain->SetBranchAddress("tau_pt", &tau_pt, &b_tau_pt);
-   fChain->SetBranchAddress("tau_eta", &tau_eta, &b_tau_eta);
-   fChain->SetBranchAddress("tau_phi", &tau_phi, &b_tau_phi);
-   fChain->SetBranchAddress("tau_ch", &tau_ch, &b_tau_ch);
-   fChain->SetBranchAddress("tau_iddecaymode", &tau_iddecaymode, &b_tau_iddecaymode);
-   fChain->SetBranchAddress("tau_idisotight", &tau_idisotight, &b_tau_idisotight);
-   fChain->SetBranchAddress("tau_idantieletight", &tau_idantieletight, &b_tau_idantieletight);
-   fChain->SetBranchAddress("tau_idantimutight", &tau_idantimutight, &b_tau_idantimutight);
-   fChain->SetBranchAddress("tau_reliso_all", &tau_reliso_all, &b_tau_reliso_all);
-   fChain->SetBranchAddress("tau_mass", &tau_mass, &b_tau_mass);
    fChain->SetBranchAddress("met_pt", &met_pt, &b_met_pt);
    fChain->SetBranchAddress("met_phi", &met_phi, &b_met_phi);
    fChain->SetBranchAddress("corr_jet_pt",&corr_jet_pt,&b_corr_jet_pt);
@@ -680,7 +663,8 @@ void EventLoopAnalysisTemplate::Loop()
     //cout<<"Load the current event"<<endl;
     Long64_t ientry = LoadTree(jentry);
     if (ientry < 0) break;
-    nb = fChain->GetEntry(jentry);   nbytes += nb;
+    nb = fChain->GetEntry(jentry);
+    nbytes += nb;
 
     analysis();
 
