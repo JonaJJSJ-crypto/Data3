@@ -515,18 +515,23 @@ void EventLoopAnalysisTemplate::Loop()
       cout<<"number of Secvec: "<< secvec_posx->size() << endl;
     }
     //cout<<"flag\n";
-    if(jentry==19) {
+    if(jentry==173) {
       //cout<<"flag2\n";
       //Float_t Xpos[secvec_phi->size()];
       //Float_t Ypos[secvec_phi->size()];
       //Float_t W[secvec_phi->size()];
-      double Bx,By,Tx,Ty;//DRele;
+      double Bx,By,Tx,Ty,Bx2,By2,Tx2,Ty2;//DRele;
       for(size_t x=0; x<GenPart_vx->size(); x++){
         if(abs(GenPart_pdgId->at(x))==556){
           Bx=GenPart_vx->at(x)-0.03;
           By=GenPart_vy->at(x)-0.03;
           Tx=GenPart_vx->at(x)+0.03;
           Ty=GenPart_vy->at(x)+0.03;
+
+          Bx2=GenPart_vx->at(x)-0.005;
+          By2=GenPart_vy->at(x)-0.005;
+          Tx2=GenPart_vx->at(x)+0.005;
+          Ty2=GenPart_vy->at(x)+0.005;
         }
       }
       //cout<<"flag\n";
@@ -557,7 +562,9 @@ void EventLoopAnalysisTemplate::Loop()
               for(size_t j=0; j<secvec_posx->size(); j++){
                 //DRele=deltaR(electron_eta->at(i),electron_phi->at(i),secvec_eta->at(j),secvec_phi->at(j));
                 //if(DRele<0.1) {
-                  LW200SecVec_XYSignal->Fill(secvec_posx->at(j),secvec_posy->at(j),5);
+                  LW200SecVec_XYSignal->Fill(secvec_posx->at(j)-secvec_poserrorx->at(j),secvec_posy->at(j)-secvec_poserrory->at(j),5);
+                  cout<<secvec_posx->at(j)<<' '<<secvec_posy->at(j)<<endl;
+                  cout<<secvec_posx->at(j)-secvec_poserrorx->at(j)<<' '<<secvec_posy->at(j)-secvec_poserrory->at(j)<<"\n\n";
                   LW200SecVec_XYSignal->Fill(Bsp_x->at(0),Bsp_y->at(0),5);
                   SignalCount++;
                 //}
@@ -919,7 +926,7 @@ int main()
 
 
   map<string, pair<string,float> > sampleNames;
-  sampleNames.insert(make_pair("myoutput_20",make_pair("LW200",1)));
+  sampleNames.insert(make_pair("myoutput_200",make_pair("LW200",1)));
 
 
 
