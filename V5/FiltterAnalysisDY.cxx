@@ -14,7 +14,7 @@
 //
 //
 // Compile me with:
-// g++ -std=c++11 -g -O3 -Wall -Wextra -o FiltterAnalysis FiltterAnalysis.cxx $(root-config --cflags --libs)
+// g++ -std=c++11 -g -O3 -Wall -Wextra -o FiltterAnalysisDY FiltterAnalysisDY.cxx $(root-config --cflags --libs)
 /////////////////////////////////////////////////////////////////////
 
 //Include ROOT classes
@@ -38,52 +38,73 @@
 using namespace std;
 
 
+bool sortbysec(const pair<float,float> &a,
+              const pair<float,float> &b)
+{
+    return (a.second < b.second);
+}
+
+
 /*
  * Base path to local filesystem or to EOS containing the datasets
  */
 //const std::string samplesBasePath = "root://eospublic.cern.ch//eos/opendata/cms/upload/od-workshop/ws2021/";
-TH1F* LW200electron_num = new TH1F("LW200electron_num","number of events with elec/phot pt>20GeV",10,0,10);
-TH1F* LW200electron_pt = new TH1F("LW200electron_pt","Electrons pt for missing trigg",100,0,200);
-TH1F* LW200electron_eta = new TH1F("LW200electron_eta","Electrons eta for missing trigg",100,-5,5);
-TH1F* LW200photon_num = new TH1F("Photon_number","Number of photons pt>17GeV",10,0,10);
-TH1F* LW200photon_pt = new TH1F("Photon_pt","Photon transverse momentum pt>17GeV",100,0,200);
-TH1F* LW200photon_eta = new TH1F("Photon_eta","Photon pseudorapidity pt>17GeV",100,-5,5);
-TH1F* LW200SGenele_num = new TH1F("LW200SGenele_num","Number of signal gen-electrons per event (pt<15GeV)",3,0,3);
-TH1F* LW200SGenele_pt = new TH1F("LW200SGenele_pt","Signal Genele pt ",100,0,200);
-TH1F* LW200SGenele_eta = new TH1F("LW200SGenele_eta","Signal Genele eta",100,-5,5);
-TH1F* LW200Genphot_num = new TH1F("Genphot_num","Number of gen-photon pt>17GeV",50,0,100);
-TH1F* LW200Genphot_pt = new TH1F("Genphot_pt","Gen-photon transverse momentumpt pt>17GeV",100,0,200);
-TH1F* LW200Genphot_eta = new TH1F("Genphot_eta","Gen-photon pseudorapidity pt>17GeV",100,-5,5);
-TH1F* LW200Genelec_num = new TH1F("LW200Genelec_num","number of gen-electrons",50,0,100);
-TH1F* LW200Genelec_pt = new TH1F("LW200Genelec_pt","Genelec pt",100,0,200);
-TH1F* LW200Genelec_eta = new TH1F("LW200Genelec_eta","Genelec eta",100,-5,5);
-TH1F* LW200GenWdau_pt = new TH1F("LW200GenWdau_pt","GensWdau pt for missing trigg",100,0,200);
-TH1F* LW200GenWdau_eta = new TH1F("LW200GenWdau_eta","GensWdau eta for missing trigg",100,-5,5);
-TH1F* LW200Helec_num = new TH1F("High_electron_number","Number of Second most energetic electron pt>15GeV",3,0,3);
-TH1F* LW200Helec_pt = new TH1F("High_electron_pt","Second most energetic electron transverse momentum pt>15GeV",100,0,200);
-TH1F* LW200Helec_eta = new TH1F("High_electron_eta","Second most energetic electron pseudorapidity pt>15GeV",100,-5,5);
-TH1F* LW200Track_num = new TH1F("Tracks_number","Number of tracks pt>15GeV",50,0,100);
-TH1F* LW200Track_pt = new TH1F("Tracks_pt","Tracks transverse momentum pt>15GeV",100,0,200);
-TH1F* LW200Track_eta = new TH1F("Tracks_eta","Tracks pseudorapidity pt>15GeV",100,-5,5);
-TH1F* LW200Htrk_num = new TH1F("High_track_number","Number of Second most energetic track pt>15GeV",3,0,3);
-TH1F* LW200Htrk_pt = new TH1F("High_track_pt","Second most energetic track transverse momentum pt>15GeV",100,0,200);
-TH1F* LW200Htrk_eta = new TH1F("High_track_eta","Second most energetic track pseudorapidity pt>15GeV",100,-5,5);
-TH1F* LW200jet_mass = new TH1F("LW200DiJet_Invmass","Invariant mass from DiJets ",800,0,400);
-TH1F* LW200LW_mass = new TH1F("LW200LW_Invmass","Invariant mass from LW",800,0,400);
-TH1F* LW200Corrjet_mass = new TH1F("LW200DiCorrJet_Invmass","Invariant mass from corrected DiJets ",800,0,400);
-TH1F* LW200Sjet_mass = new TH1F("LW200SDiJet_Invmass","Invariant mass from Signal DiJets ",800,0,400);
-TH1F* LW200Genjet_mass = new TH1F("LW200GenDiJet_Invmass","Invariant mass from Gen DiJets ",800,0,400);
-TH1F* LW200RecoEle_mass = new TH1F("LW200RecoDiEle_Invmass","Invariant mass from Reco DiElec",800,0,400);
-TH1F* LW200jet_massfilter = new TH1F("LW200DiJet_Invmass_filter","Events with DiJets invariant mass ",2,0,2);
-TH1F* LW200Sjet_massfilter = new TH1F("LW200SDiJet_Invmass_filter","Events with Signal DiJets invariant mass ",2,0,2);
-TH1F* LW200Genjet_massfilter = new TH1F("LW200DiGenJet_Invmass_filter","Events with Gen DiJets invariant mass ",2,0,2);
-TH1F* LW200Wdau_deltaR = new TH1F("LW200Wdau_deltaR","DeltaR for Z daughters",201,0,20);
+TH1F* DYelectron_num = new TH1F("DYelectron_num","number of events with elec/phot pt>20GeV",10,0,10);
+TH1F* DYelectron_pt = new TH1F("DYelectron_pt","Electrons pt for missing trigg",100,0,200);
+TH1F* DYelectron_eta = new TH1F("DYelectron_eta","Electrons eta for missing trigg",100,-5,5);
+TH1F* DYphoton_num = new TH1F("Photon_number","Number of photons pt>17GeV",10,0,10);
+TH1F* DYphoton_pt = new TH1F("Photon_pt","Photon transverse momentum pt>17GeV",100,0,200);
+TH1F* DYphoton_eta = new TH1F("Photon_eta","Photon pseudorapidity pt>17GeV",100,-5,5);
+TH1F* DYSGenele_num = new TH1F("DYSGenele_num","Number of signal gen-electrons per event (pt<15GeV)",3,0,3);
+TH1F* DYSGenele_pt = new TH1F("DYSGenele_pt","Signal Genele pt ",100,0,200);
+TH1F* DYSGenele_eta = new TH1F("DYSGenele_eta","Signal Genele eta",100,-5,5);
+TH1F* DYGenphot_num = new TH1F("Genphot_num","Number of gen-photon pt>17GeV",50,0,100);
+TH1F* DYGenphot_pt = new TH1F("Genphot_pt","Gen-photon transverse momentumpt pt>17GeV",100,0,200);
+TH1F* DYGenphot_eta = new TH1F("Genphot_eta","Gen-photon pseudorapidity pt>17GeV",100,-5,5);
+TH1F* DYGenelec_num = new TH1F("DYGenelec_num","number of gen-electrons",50,0,100);
+TH1F* DYGenelec_pt = new TH1F("DYGenelec_pt","Genelec pt",100,0,200);
+TH1F* DYGenelec_eta = new TH1F("DYGenelec_eta","Genelec eta",100,-5,5);
+TH1F* DYGenWdau_pt = new TH1F("DYGenWdau_pt","GensWdau pt for missing trigg",100,0,200);
+TH1F* DYGenWdau_eta = new TH1F("DYGenWdau_eta","GensWdau eta for missing trigg",100,-5,5);
+TH1F* DYHelec_num = new TH1F("High_electron_number","Number of Second most energetic electron pt>15GeV",3,0,3);
+TH1F* DYHelec_pt = new TH1F("High_electron_pt","Second most energetic electron transverse momentum pt>15GeV",100,0,200);
+TH1F* DYHelec_eta = new TH1F("High_electron_eta","Second most energetic electron pseudorapidity pt>15GeV",100,-5,5);
+TH1F* DYTrack_num = new TH1F("Tracks_number","Number of tracks pt>15GeV",50,0,100);
+TH1F* DYTrack_pt = new TH1F("Tracks_pt","Tracks transverse momentum pt>15GeV",100,0,200);
+TH1F* DYTrack_eta = new TH1F("Tracks_eta","Tracks pseudorapidity pt>15GeV",100,-5,5);
+TH1F* DYHtrk_num = new TH1F("High_track_number","Number of Second most energetic track pt>15GeV",3,0,3);
+TH1F* DYHtrk_pt = new TH1F("High_track_pt","Second most energetic track transverse momentum pt>15GeV",100,0,200);
+TH1F* DYHtrk_eta = new TH1F("High_track_eta","Second most energetic track pseudorapidity pt>15GeV",100,-5,5);
+TH1F* DYjet_mass = new TH1F("DYDiJet_Invmass","Invariant mass from DiJets ",800,0,400);
+TH1F* DYLW_mass = new TH1F("DYLW_Invmass","Invariant mass from LW",800,0,400);
+TH1F* DYCorrjet_mass = new TH1F("DYDiCorrJet_Invmass","Invariant mass from corrected DiJets ",800,0,400);
+TH1F* DYSjet_mass = new TH1F("DYSDiJet_Invmass","Invariant mass from Signal DiJets ",800,0,400);
+TH1F* DYGenjet_mass = new TH1F("DYGenDiJet_Invmass","Invariant mass from Gen DiJets ",800,0,400);
+TH1F* DYRecoEle_mass = new TH1F("DYRecoDiEle_Invmass","Invariant mass from Reco DiElec",800,0,400);
+TH1F* DYjet_massfilter = new TH1F("DYDiJet_Invmass_filter","Events with DiJets invariant mass ",2,0,2);
+TH1F* DYSjet_massfilter = new TH1F("DYSDiJet_Invmass_filter","Events with Signal DiJets invariant mass ",2,0,2);
+TH1F* DYGenjet_massfilter = new TH1F("DYDiGenJet_Invmass_filter","Events with Gen DiJets invariant mass ",2,0,2);
+TH1F* DYWdau_deltaR = new TH1F("DYWdau_deltaR","DeltaR for Z daughters",201,0,20);
 
-TH1F* LW200jet_pt = new TH1F("LW200jet_pt","Jet pt distribution;Pt[GeV];",100,0,200);
-TH1F* LW200jet_eta = new TH1F("LW200jet_eta","Jet pseudorapidity",100,-5,5);
-TH1F* LW200Genjet_pt = new TH1F("LW200Genjet_pt","Gen Jet pt distribution;Pt[GeV];",100,0,200);
-TH1F* LW200Genjet_eta = new TH1F("LW200Genjet_eta","Gen Jet pseudorapidity",100,-5,5);
-//TH1F* LW200EleBsecvec = new TH1F("Electron best match","Best matched secondary vertex displacement",100,0,0.1);
+TH1F* DYjet_pt = new TH1F("DYjet_pt","Jet pt distribution;Pt[GeV];",100,0,200);
+TH1F* DYjet_eta = new TH1F("DYjet_eta","Jet pseudorapidity",100,-5,5);
+TH1F* DYGenjet_pt = new TH1F("DYGenjet_pt","Gen Jet pt distribution;Pt[GeV];",100,0,200);
+TH1F* DYGenjet_eta = new TH1F("DYGenjet_eta","Gen Jet pseudorapidity",100,-5,5);
+//TH1F* DYEleBsecvec = new TH1F("Electron best match","Best matched secondary vertex displacement",100,0,0.1);
+TH1F* DY4Jets_pt = new TH1F("DY4Jets_pt","4 most energetic jets pt;Transversal Momentum[GeV];",100,0,200);
+TH1F* DY4Jets_eta = new TH1F("DY4Jets_eta","4 most energetic jets eta;Pseudorapidity;",100,-5,5);
+TH1F* DY4Jets_DR = new TH1F("DY4Jets_DR","4 most energetic jets deltaR;DeltaR;",100,0,5);
+TH1F* DYEleJet_DR1 = new TH1F("DYEleJet_DR1","Electron DR 1 to the closest energetic jet DeltaR;DeltaR;",100,0,3);
+TH1F* DYEleJet_DR2 = new TH1F("DYEleJet_DR2","Electron DR 2 to the closest energetic jet DeltaR;DeltaR;",100,0,3);
+TH1F* DYEleJet_DRdiff = new TH1F("DYEleJet_DRdiff","Electron DR diff to the closest energetic jet DeltaR;DeltaR;",100,0,3);
+TH1F* DYGen_EleJet_DR1 = new TH1F("DYGen_EleJet_DR1","Electron DR 1 to the closest energetic jet Gen DeltaR;DeltaR;",100,0,3);
+TH1F* DYGen_EleJet_DR2 = new TH1F("DYGen_EleJet_DR2","Electron DR 2 to the closest energetic jet Gen DeltaR;DeltaR;",100,0,3);
+TH1F* DYGen_EleJet_DRdiff = new TH1F("DYGen_EleJet_DRdiff","Electron DR diff to the closest energetic jet Gen DeltaR;DeltaR;",100,0,3);
+TH1F* DYDiJet_DR = new TH1F("DYDiJet_DR","Pair of most energetic jets DR;DeltaR;",100,0,100);
+TH1F* DYSecVec_bydist = new TH1F("DYSecVec_bydist","Most energetic electron secondary vertex by distance;diatance[mm];",100,0,1);
+TH1F* DYSecVec_bysigma = new TH1F("DYSecVec_bysigma","Most energetic electron secondary vertex by uncertainty;diatance[mm];",100,0,1);
+TH1F* DY4Jet_event = new TH1F("DY4Jet_event","Events with more than 4 jets;Boolean;",2,0,2);
+
 const std::string samplesBasePath = "";
 
 
@@ -114,6 +135,7 @@ public :
   TTree          *tGenPart;
   TTree          *tTrack;
   TTree          *tJet;
+  TTree          *tVertex;
 
 
   Int_t           fCurrent; //!current Tree number in a TChain
@@ -160,7 +182,11 @@ public :
   vector<float>   *photon_pt;
   vector<float>   *photon_eta;
   vector<float>   *GenPart_pt;
+  vector<float>   *GenPart_px;
+  vector<float>   *GenPart_py;
+  vector<float>   *GenPart_pz;
   vector<float>   *GenPart_eta;
+  vector<float>   *GenPart_phi;
   vector<float>   *GenPart_mass;
   vector<float>   *GenPart_pdgId;
   vector<float>   *GenPart_mompdgId;
@@ -176,6 +202,18 @@ public :
   /*vector<float>   *electron_Bsecvec;
   vector<float>   *secvec_deltaR;
   vector<float>   *secvec_disp;*/
+  vector<float>   *secvec_posx;
+  vector<float>   *secvec_posy;
+  vector<float>   *secvec_posz;
+  vector<float>   *secvec_poserrorx;
+  vector<float>   *secvec_poserrory;
+  vector<float>   *secvec_poserrorz;
+  vector<float>   *secvec_eleTag;
+  vector<float>   *secvec_normchi2;
+  vector<float>   *Bsp_x;
+  vector<float>   *Bsp_y;
+  vector<float>   *Bsp_z;
+
 
   TBranch        *b_run;   //!
   TBranch        *b_luminosityBlock;   //!
@@ -211,7 +249,11 @@ public :
   TBranch        *b_photon_pt;
   TBranch        *b_photon_eta;
   TBranch        *b_GenPart_pt;
+  TBranch        *b_GenPart_px;
+  TBranch        *b_GenPart_py;
+  TBranch        *b_GenPart_pz;
   TBranch        *b_GenPart_eta;
+  TBranch        *b_GenPart_phi;
   TBranch        *b_GenPart_mass;
   TBranch        *b_GenPart_pdgId;
   TBranch        *b_GenPart_mompdgId;
@@ -227,6 +269,18 @@ public :
   /*TBranch        *b_electron_Bsecvec;
   TBranch        *b_secvec_deltaR;
   TBranch        *b_secvec_disp;*/
+  TBranch    *b_secvec_posx;
+  TBranch    *b_secvec_posy;
+  TBranch    *b_secvec_posz;
+  TBranch    *b_secvec_poserrorx;
+  TBranch    *b_secvec_poserrory;
+  TBranch    *b_secvec_poserrorz;
+  TBranch    *b_secvec_eleTag;
+  TBranch    *b_secvec_normchi2;
+  TBranch    *b_Bsp_x;
+  TBranch    *b_Bsp_y;
+  TBranch    *b_Bsp_z;
+
 
 
   EventLoopAnalysisTemplate(TString filename, TString labeltag, Float_t theweight);
@@ -239,7 +293,7 @@ public :
   virtual void     Show(Long64_t entry = -1);
   virtual float deltaR(float eta1, float phi1, float eta2, float phi2);
   void analysis();
-  Float_t MinimalSelection(Int_t entry);
+  bool MinimalSelection();
 
 };
 
@@ -252,23 +306,23 @@ EventLoopAnalysisTemplate::EventLoopAnalysisTemplate(TString thefile, TString th
   labeltag = thelabel;
   theweight = sampleweight;
 
-  hists[0]=LW200electron_num;
-  hists[1]=LW200electron_pt;
-  hists[2]=LW200electron_eta;
-  hists[3]=LW200photon_num;
-  hists[4]=LW200photon_pt;
-  hists[5]=LW200photon_eta;
-  hists[6]=LW200SGenele_num;
-  hists[7]=LW200SGenele_pt;
-  hists[8]=LW200SGenele_eta;
-  hists[9]=LW200Genphot_num;
-  hists[10]=LW200Genphot_pt;
-  hists[11]=LW200Genphot_eta;
-  hists[12]=LW200GenWdau_pt;
-  hists[13]=LW200GenWdau_eta;
-  hists[14]=LW200Genelec_num;
-  hists[15]=LW200Genelec_pt;
-  hists[16]=LW200Genelec_eta;
+  hists[0]=DYelectron_num;
+  hists[1]=DYelectron_pt;
+  hists[2]=DYelectron_eta;
+  hists[3]=DYphoton_num;
+  hists[4]=DYphoton_pt;
+  hists[5]=DYphoton_eta;
+  hists[6]=DYSGenele_num;
+  hists[7]=DYSGenele_pt;
+  hists[8]=DYSGenele_eta;
+  hists[9]=DYGenphot_num;
+  hists[10]=DYGenphot_pt;
+  hists[11]=DYGenphot_eta;
+  hists[12]=DYGenWdau_pt;
+  hists[13]=DYGenWdau_eta;
+  hists[14]=DYGenelec_num;
+  hists[15]=DYGenelec_pt;
+  hists[16]=DYGenelec_eta;
 
 // if parameter tree is not specified (or zero), connect the file
 // used to generate this class and read the Tree.
@@ -283,6 +337,7 @@ EventLoopAnalysisTemplate::EventLoopAnalysisTemplate(TString thefile, TString th
    tGenPart = (TTree*)f->Get("mygenparticle/Events");
    tTrack = (TTree*)f->Get("mytracks/Events");
    tJet = (TTree*)f->Get("myjets/Events");
+   tVertex = (TTree*)f->Get("mypvertex/Events");
    //Make friends so we can have access to friends variables
    //we may not use all of the available information
    //it is just an example
@@ -292,6 +347,7 @@ EventLoopAnalysisTemplate::EventLoopAnalysisTemplate(TString thefile, TString th
    tree->AddFriend(tGenPart);
    tree->AddFriend(tTrack);
    tree->AddFriend(tJet);
+   tree->AddFriend(tVertex);
    Init(tree);
 }
 
@@ -367,7 +423,11 @@ void EventLoopAnalysisTemplate::Init(TTree *tree)
    photon_pt=0;
    photon_eta=0;
    GenPart_pt=0;
+   GenPart_px=0;
+   GenPart_py=0;
+   GenPart_pz=0;
    GenPart_eta=0;
+   GenPart_phi=0;
    GenPart_mass=0;
    GenPart_pdgId=0;
    GenPart_mompdgId=0;
@@ -383,6 +443,17 @@ void EventLoopAnalysisTemplate::Init(TTree *tree)
    /*electron_Bsecvec=0;
    secvec_deltaR=0;
    secvec_disp=0;*/
+   secvec_posx=0;
+   secvec_posy=0;
+   secvec_posz=0;
+   secvec_poserrorx=0;
+   secvec_poserrory=0;
+   secvec_poserrorz=0;
+   secvec_eleTag=0;
+   secvec_normchi2=0;
+   Bsp_x=0;
+   Bsp_y=0;
+   Bsp_z=0;
 
    // Set branch addresses and branch pointers
    if (!tree) return;
@@ -408,7 +479,11 @@ void EventLoopAnalysisTemplate::Init(TTree *tree)
    fChain->SetBranchAddress("photon_pt",&photon_pt,&b_photon_pt);
    fChain->SetBranchAddress("photon_eta",&photon_eta,&b_photon_eta);
    fChain->SetBranchAddress("GenPart_pt",&GenPart_pt,&b_GenPart_pt);
+   fChain->SetBranchAddress("GenPart_px",&GenPart_px,&b_GenPart_px);
+   fChain->SetBranchAddress("GenPart_py",&GenPart_py,&b_GenPart_py);
+   fChain->SetBranchAddress("GenPart_pz",&GenPart_pz,&b_GenPart_pz);
    fChain->SetBranchAddress("GenPart_eta",&GenPart_eta,&b_GenPart_eta);
+   fChain->SetBranchAddress("GenPart_phi",&GenPart_phi,&b_GenPart_phi);
    fChain->SetBranchAddress("GenPart_mass",&GenPart_mass,&b_GenPart_mass);
    fChain->SetBranchAddress("GenPart_pdgId",&GenPart_pdgId,&b_GenPart_pdgId);
    fChain->SetBranchAddress("GenPart_mompdgId",&GenPart_mompdgId,&b_GenPart_mompdgId);
@@ -442,6 +517,18 @@ void EventLoopAnalysisTemplate::Init(TTree *tree)
    /*fChain->SetBranchAddress("electron_Bsecvec",&electron_Bsecvec,&b_electron_Bsecvec);
    fChain->SetBranchAddress("secvec_deltaR",&secvec_deltaR,&b_secvec_deltaR);
    fChain->SetBranchAddress("secvec_disp",&secvec_disp,&b_secvec_disp);*/
+   fChain->SetBranchAddress("secvec_posx",&secvec_posx,&b_secvec_posx);
+   fChain->SetBranchAddress("secvec_posy",&secvec_posy,&b_secvec_posy);
+   fChain->SetBranchAddress("secvec_posz",&secvec_posz,&b_secvec_posz);
+   fChain->SetBranchAddress("secvec_poserrorx",&secvec_poserrorx,&b_secvec_poserrorx);
+   fChain->SetBranchAddress("secvec_poserrory",&secvec_poserrory,&b_secvec_poserrory);
+   fChain->SetBranchAddress("secvec_poserrorz",&secvec_poserrorz,&b_secvec_poserrorz);
+   fChain->SetBranchAddress("secvec_eleTag",&secvec_eleTag,&b_secvec_eleTag);
+   fChain->SetBranchAddress("secvec_normchi2",&secvec_normchi2,&b_secvec_normchi2);
+   fChain->SetBranchAddress("Bsp_x",&Bsp_x,&b_Bsp_x);
+   fChain->SetBranchAddress("Bsp_y",&Bsp_y,&b_Bsp_y);
+   fChain->SetBranchAddress("Bsp_z",&Bsp_z,&b_Bsp_z);
+
 
    Notify();
 }
@@ -513,6 +600,10 @@ void EventLoopAnalysisTemplate::analysis()
   //fill histograms for signal region
   //Int_t histsize = sizeof(hists)/sizeof(hists[0]);
   //Float_t pstmp;
+
+  ///////////////////////4jet event check/////////////
+  if (jet_pt->size()>=4) DY4Jet_event->Fill(1);
+  else DY4Jet_event->Fill(0);
 //Filling Electrons pt
   vector <pair<float,float>> vect;
   int Hcount=0;
@@ -528,30 +619,30 @@ void EventLoopAnalysisTemplate::analysis()
     sort(vect.begin(),vect.end());
     /*if(vect[vect.size()-1].first>Minpt){
       Hcount++;
-      LW200Helec_pt->Fill(vect[vect.size()-1].first);
-      LW200Helec_eta->Fill(vect[vect.size()-1].second);
+      DYHelec_pt->Fill(vect[vect.size()-1].first);
+      DYHelec_eta->Fill(vect[vect.size()-1].second);
     }*/
     if(vect.size()>=2){
       if(vect[vect.size()-2].first>Minpt){
-        LW200Helec_pt->Fill(vect[vect.size()-2].first);
-        LW200Helec_eta->Fill(vect[vect.size()-2].second);
+        DYHelec_pt->Fill(vect[vect.size()-2].first);
+        DYHelec_eta->Fill(vect[vect.size()-2].second);
         Hcount++;
       }
     }
   }
-  LW200Helec_num->Fill(Hcount);
+  DYHelec_num->Fill(Hcount);
   vect.clear();
   Hcount=0;
 
   /////Jet pt info
   for(size_t x=0; x<jet_pt->size();x++){
-    LW200jet_pt->Fill(jet_pt->at(x));
-    LW200jet_eta->Fill(jet_eta->at(x));
+    DYjet_pt->Fill(jet_pt->at(x));
+    DYjet_eta->Fill(jet_eta->at(x));
   }
   for(size_t x=0; x<GenDau_pt->size();x++){
     if(GenDau_mompdgId->at(x)==23){
-      LW200Genjet_pt->Fill(GenDau_pt->at(x));
-      LW200Genjet_eta->Fill(GenDau_eta->at(x));
+      DYGenjet_pt->Fill(GenDau_pt->at(x));
+      DYGenjet_eta->Fill(GenDau_eta->at(x));
     }
   }
 
@@ -561,27 +652,27 @@ void EventLoopAnalysisTemplate::analysis()
     for (size_t i = 0; i < track_pt->size(); i++) {
       if (track_pt->at(i)>Minpt && track_chi2->at(i)<1) {
         ntrk++;
-        LW200Track_pt->Fill(track_pt->at(i));
-        LW200Track_eta->Fill(track_eta->at(i));
+        DYTrack_pt->Fill(track_pt->at(i));
+        DYTrack_eta->Fill(track_eta->at(i));
       }
       vect.push_back(make_pair(track_pt->at(i),track_eta->at(i)));
     }
     sort(vect.begin(),vect.end());
     /*if(vect[vect.size()-1].first>Minpt){
       Hcount++;
-      LW200Htrk_pt->Fill(vect[vect.size()-1].first);
-      LW200Htrk_eta->Fill(vect[vect.size()-1].second);
+      DYHtrk_pt->Fill(vect[vect.size()-1].first);
+      DYHtrk_eta->Fill(vect[vect.size()-1].second);
     }*/
     if(vect.size()>=2){
       if(vect[vect.size()-2].first>Minpt){
-        LW200Htrk_pt->Fill(vect[vect.size()-2].first);
-        LW200Htrk_eta->Fill(vect[vect.size()-2].second);
+        DYHtrk_pt->Fill(vect[vect.size()-2].first);
+        DYHtrk_eta->Fill(vect[vect.size()-2].second);
         Hcount++;
       }
     }
   }
-  LW200Track_num->Fill(ntrk);
-  LW200Htrk_num->Fill(Hcount);
+  DYTrack_num->Fill(ntrk);
+  DYHtrk_num->Fill(Hcount);
   //Filling photons pt
   int nphot=0;
   if(photon_pt->size()!=0){
@@ -702,13 +793,13 @@ void EventLoopAnalysisTemplate::analysis()
         m=sqrt( e*e - px*px - py*py - pz*pz );
         if(m>MinZm && m<MaxZm){
           zcount++;
-          LW200jet_mass->Fill(m);
+          DYjet_mass->Fill(m);
         }
       }
     }
   }
-  if(zcount>=1) LW200jet_massfilter->Fill(1);
-  else LW200jet_massfilter->Fill(0);
+  if(zcount>=1) DYjet_massfilter->Fill(1);
+  else DYjet_massfilter->Fill(0);
 //correctedJetMass
   float corr_pt;
   for(size_t i=0; i < jet_mass->size(); i++){
@@ -725,7 +816,7 @@ void EventLoopAnalysisTemplate::analysis()
         m=sqrt( e*e - px*px - py*py - pz*pz );
 
         if(m>MinZm && m<MaxZm){
-          LW200Corrjet_mass->Fill(m);
+          DYCorrjet_mass->Fill(m);
         }
       }
     }
@@ -778,12 +869,12 @@ if(gjet_DRscore.size()>1){
             py=py+electron_py->at(k);
             pz=pz+electron_pz->at(k);
             Mlw=sqrt( e*e - px*px - py*py - pz*pz );
-            LW200LW_mass->Fill(Mlw);
+            DYLW_mass->Fill(Mlw);
           }
 
           if(m>MinZm && m<MaxZm){
             zcount++;
-            LW200Sjet_mass->Fill(m);
+            DYSjet_mass->Fill(m);
           }
         }
       }
@@ -791,8 +882,8 @@ if(gjet_DRscore.size()>1){
   }
 }
 
-  if(zcount>=1) LW200Sjet_massfilter->Fill(1);
-  else LW200Sjet_massfilter->Fill(0);
+  if(zcount>=1) DYSjet_massfilter->Fill(1);
+  else DYSjet_massfilter->Fill(0);
 /////////////////////////Generated Inva Mass/////////////////////////////////
   zcount=0;
   for (size_t i = 0; i < GenDau_pt->size(); i++) {
@@ -801,8 +892,8 @@ if(gjet_DRscore.size()>1){
         && abs(GenDau_pdgId->at(i))!=24 && abs(GenDau_pdgId->at(j))!=24){
         if(i!=j){
           float drWdau=deltaR(GenDau_eta->at(i),GenDau_phi->at(i),GenDau_eta->at(j),GenDau_phi->at(j));
-          LW200Wdau_deltaR->Fill(drWdau);
-          //LW200Wdau_deltaR->Fill(GenDau_pdgId->at(i));
+          DYWdau_deltaR->Fill(drWdau);
+          //DYWdau_deltaR->Fill(GenDau_pdgId->at(i));
           float e1=sqrt(GenDau_mass->at(i)*GenDau_mass->at(i)+GenDau_pt->at(i)*GenDau_pt->at(i)+GenDau_pz->at(i)*GenDau_pz->at(i));
           float e2=sqrt(GenDau_mass->at(j)*GenDau_mass->at(j)+GenDau_pt->at(j)*GenDau_pt->at(j)+GenDau_pz->at(j)*GenDau_pz->at(j));
           px=GenDau_px->at(i)+GenDau_px->at(j);
@@ -811,11 +902,11 @@ if(gjet_DRscore.size()>1){
           e=e1+e2;
           m=sqrt( e*e - px*px - py*py - pz*pz );
           //cout<<GenDau_pdgId->at(i)<<' '<<GenDau_pdgId->at(j)<<' '<<m<<endl;
-          LW200Genjet_mass->Fill(m);
+          DYGenjet_mass->Fill(m);
           if(GenDau_pdgId->at(i)==11 && GenDau_pdgId->at(j)==-11){
             //zcount++;
             //float drWdau=deltaR(GenDau_eta->at(i),GenDau_phi->at(i),GenDau_eta->at(j),GenDau_phi->at(j));
-            //LW200Wdau_deltaR->Fill(drWdau);
+            //DYWdau_deltaR->Fill(drWdau);
             /*float e1=sqrt(GenDau_mass->at(i)*GenDau_mass->at(i)+GenDau_pt->at(i)*GenDau_pt->at(i)+GenDau_pz->at(i)*GenDau_pz->at(i));
             float e2=sqrt(GenDau_mass->at(j)*GenDau_mass->at(j)+GenDau_pt->at(j)*GenDau_pt->at(j)+GenDau_pz->at(j)*GenDau_pz->at(j));
             px=GenDau_px->at(i)+GenDau_px->at(j);
@@ -823,7 +914,7 @@ if(gjet_DRscore.size()>1){
             pz=GenDau_pz->at(i)+GenDau_pz->at(j);
             e=e1+e2;
             m=sqrt( e*e - px*px - py*py - pz*pz );
-            LW200Genjet_mass->Fill(m);*/
+            DYGenjet_mass->Fill(m);*/
 
             for (size_t k = 0; k < electron_pt->size(); k++) {
               for (size_t l = 0; l < electron_pt->size(); l++) {
@@ -834,7 +925,7 @@ if(gjet_DRscore.size()>1){
                     pz=electron_pz->at(k)+electron_pz->at(l);
                     e =electron_e->at(k) +electron_e->at(l);
                     m=sqrt( e*e - px*px - py*py - pz*pz );
-                    LW200RecoEle_mass->Fill(m);
+                    DYRecoEle_mass->Fill(m);
                   }
                 }
               }
@@ -844,11 +935,127 @@ if(gjet_DRscore.size()>1){
       }
     }
   }
-  if(zcount>=1) LW200Genjet_massfilter->Fill(1);
-  else LW200Genjet_massfilter->Fill(0);
+  if(zcount>=1) DYGenjet_massfilter->Fill(1);
+  else DYGenjet_massfilter->Fill(0);
   //////////////////////Reco Electron Inv Mass/////////////////////////////
 
+
+
   //////////////////////Jet and Ele DR analysis/////////////
+  vector<pair <float,size_t> > JetPtTemp;
+  vector<float> JetDRTemp;
+  vector<pair <float,size_t> > ElePtTemp;
+  vector<float> EleDRTemp;
+
+  for (size_t i = 0; i < electron_pt->size(); i++) {ElePtTemp.push_back(make_pair(electron_pt->at(i),i));}
+  sort(ElePtTemp.begin(),ElePtTemp.end());
+
+  if(corr_jet_pt->size()>4 && ElePtTemp.size()>1 && ElePtTemp.back().first>40 && ElePtTemp.end()[-2].first>25){
+    ElePtTemp.clear();
+    JetPtTemp.clear();
+    for(size_t x=0; x<corr_jet_pt->size(); x++ ){JetPtTemp.push_back(make_pair(corr_jet_pt->at(x),x));}
+    sort(JetPtTemp.begin(), JetPtTemp.end());
+    float DiJetDR=deltaR(jet_eta->at(JetPtTemp.back().second),jet_phi->at(JetPtTemp.back().second),jet_eta->at(JetPtTemp.end()[-2].second),jet_phi->at(JetPtTemp.end()[-2].second));
+    DYDiJet_DR->Fill(DiJetDR);
+
+    for (size_t i = 0; i < electron_pt->size(); i++) {
+      if(i==ElePtTemp.back().second || i==ElePtTemp.end()[-2].second){
+        for(size_t x=0; x<corr_jet_pt->size(); x++){
+          if(x==JetPtTemp.back().second||x==JetPtTemp.end()[-2].second||x==JetPtTemp.end()[-3].second||x==JetPtTemp.end()[-4].second){
+            EleDRTemp.push_back(deltaR(jet_eta->at(x),jet_phi->at(x),electron_eta->at(i),electron_phi->at(i)));
+          }
+        }
+        sort(EleDRTemp.begin(),EleDRTemp.end());
+        DYEleJet_DR1->Fill(EleDRTemp.front());
+        DYEleJet_DR2->Fill(EleDRTemp.at(1));
+        DYEleJet_DRdiff->Fill(abs(EleDRTemp.at(1)-EleDRTemp.front()));
+      }
+    }
+    for(size_t x=0; x<corr_jet_pt->size(); x++){
+      if(x==JetPtTemp.back().second||x==JetPtTemp.end()[-2].second||x==JetPtTemp.end()[-3].second||x==JetPtTemp.end()[-4].second){
+        DY4Jets_pt->Fill(corr_jet_pt->at(x));
+        DY4Jets_eta->Fill(jet_eta->at(x));
+        for(size_t y=x+1; y<corr_jet_pt->size(); y++){
+          if(y==JetPtTemp.back().second||y==JetPtTemp.end()[-2].second||y==JetPtTemp.end()[-3].second||y==JetPtTemp.end()[-4].second){
+            JetDRTemp.push_back(deltaR(jet_eta->at(x),jet_phi->at(x),jet_eta->at(y),jet_phi->at(y)));
+
+          }
+        }
+        sort(JetDRTemp.begin(),JetDRTemp.end());
+        DY4Jets_DR->Fill(JetDRTemp.front());
+      }
+    }
+
+  }
+
+  /*vector<float> GenEleDRTemp;
+  float Zx,Zy,Zz;
+  for (size_t x = 0; x < GenPart_pt->size(); x++) {
+
+    if(GenPart_mompdgId->at(x)==556){
+      if(GenPart_pdgId->at(x)==23){
+        Zx=GenPart_px->at(x);
+        Zy=GenPart_py->at(x);
+        Zz=GenPart_pz->at(x);
+      }
+    }
+  }
+  vector<pair<float, size_t>> vZx;
+  vector<pair<float, size_t>> vZy;
+  vector<pair<float, size_t>> vZz;
+  for (size_t y = 0; y < GenDau_pt->size(); y++) {
+    if(GenDau_mompdgId->at(y)==23){
+      vZx.push_back(make_pair(GenDau_px->at(y),y));
+      vZy.push_back(make_pair(GenDau_py->at(y),y));
+      vZz.push_back(make_pair(GenDau_pz->at(y),y));
+    }
+  }
+  size_t iZ1, iZ2;
+  for(size_t x=0; x<vZx.size(); x++){
+    for(size_t y=x+1; y<vZy.size(); y++){
+      if((vZx.at(x).first+vZx.at(y).first)==Zx &&(vZy.at(x).first+vZy.at(y).first)==Zy && (vZz.at(x).first+vZz.at(y).first)==Zz){
+        iZ1=vZx.at(x).second;
+        iZ2=vZx.at(y).second;
+      }
+    }
+  }
+  for (size_t x = 0; x < GenPart_pt->size(); x++) {
+
+    if(GenPart_mompdgId->at(x)==556 && GenPart_pdgId->at(x)==11){
+      GenEleDRTemp.push_back(deltaR(GenPart_eta->at(x),GenPart_phi->at(x),GenDau_eta->at(iZ1),GenDau_phi->at(iZ1)));
+      GenEleDRTemp.push_back(deltaR(GenPart_eta->at(x),GenPart_phi->at(x),GenDau_eta->at(iZ2),GenDau_phi->at(iZ2)));
+    }
+  }
+
+  sort(GenEleDRTemp.begin(),GenEleDRTemp.end());
+  DYGen_EleJet_DR1->Fill(GenEleDRTemp.front());
+  DYGen_EleJet_DR2->Fill(GenEleDRTemp.at(1));
+  DYGen_EleJet_DRdiff->Fill(abs(GenEleDRTemp.at(1)-GenEleDRTemp.front()));*/
+
+
+    //if(GenPart_mompdgId->at(x)==-556 &&GenPart_pdgId->at(x)==-11){}
+    vector<pair<float,float>> dist;
+    float dx,dy,dz,sigma;
+    if(MinimalSelection()){
+      for(size_t x=0; x<secvec_posx->size(); x++){
+        if(secvec_eleTag->at(x)==ElePtTemp.back().second){
+          dx=secvec_posx->at(x)-Bsp_x->at(0);
+          dy=secvec_posy->at(x)-Bsp_y->at(0);
+          dz=secvec_posz->at(x)-Bsp_z->at(0);
+          sigma=sqrt(secvec_poserrorx->at(x)*secvec_poserrorx->at(x)+secvec_poserrory->at(x)*secvec_poserrory->at(x)+secvec_poserrorz->at(x)*secvec_poserrorz->at(x));
+          dist.push_back(make_pair(sqrtf(dx*dx+dy*dy+dz*dz),sigma));
+        }
+      }
+      if(dist.size()>0){
+        sort(dist.begin(),dist.end());
+        DYSecVec_bydist->Fill(dist.back().first);
+
+        sort(dist.begin(), dist.end(), sortbysec);
+        DYSecVec_bysigma->Fill(dist.back().first);
+      }
+
+
+    }
 
 
 
@@ -863,27 +1070,25 @@ if(gjet_DRscore.size()>1){
  * Perform a selection on the minimal requirements of an event
  */
 //-----------------------------------------------------------------
-Float_t EventLoopAnalysisTemplate::MinimalSelection(Int_t entry)
+bool EventLoopAnalysisTemplate::MinimalSelection()
 {
 //-----------------------------------------------------------------
 
- //cout<<"Applying minimal selection"<<endl;
-  Float_t isTrigger = 0;
+//cout<<"Applying minimal selection"<<endl;
+ bool isTrigger = false;
 
-  //Check trigger and acceptance bit
-  for (map<string, int>::iterator it=triggermap->begin();it!=triggermap->end();it++){
-    //for (size_t i = 0; i < 6; i++) {
+ //Check trigger and acceptance bit
+ for(size_t x=0; x<4; x++){
+   for (map<string, int>::iterator it=triggermap->begin();it!=triggermap->end();it++){
+     if(it->first.find(triggerRequest[x])!=string::npos &&
+        it->second!=0){
+    //cout<<it->first<<"  "<<it->second<<endl;
+       isTrigger = true;
+     }
+   }
+ }
 
-      if(it->first.find(triggerRequest[entry])!=string::npos){
-        isTrigger = it->second;
-        //if(isTrigger!=1)cout<<it->first<<"  "<<it->second<<endl;
-      }
-    //}
-
-  }
-
-
-  return isTrigger;
+ return isTrigger;
 
 }//------MinimalSelection
 
@@ -894,6 +1099,8 @@ float EventLoopAnalysisTemplate::deltaR(float eta1, float phi1, float eta2, floa
     dphi -= (2 * 3.14159);
   return deta * deta + dphi * dphi;
 }
+
+
 
 
 //-----------------------------------------------------------------
@@ -916,7 +1123,7 @@ int main()
 
 
   map<string, pair<string,float> > sampleNames;
-  sampleNames.insert(make_pair("LWSM200DnR",make_pair("LW200",1)));
+  sampleNames.insert(make_pair("DYJetsToLL",make_pair("DY",1)));
 
 
 
@@ -945,49 +1152,62 @@ int main()
     time.Print();
   }
 
-  TFile* hfile = new TFile("FiltterAnalysis.root","RECREATE");
+  TFile* hfile = new TFile("FiltterAnalysisDY.root","RECREATE");
 
   //Save signal region histos
-  LW200electron_num->Write();
-  LW200electron_pt->Write();
-  LW200electron_eta->Write();
-  LW200photon_num->Write();
-  LW200photon_pt->Write();
-  LW200photon_eta->Write();
-  LW200SGenele_num->Write();
-  LW200SGenele_pt->Write();
-  LW200SGenele_eta->Write();
-  LW200Genphot_num->Write();
-  LW200Genphot_pt->Write();
-  LW200Genphot_eta->Write();
-  LW200GenWdau_pt->Write();
-  LW200GenWdau_eta->Write();
-  LW200Genelec_num->Write();
-  LW200Genelec_pt->Write();
-  LW200Genelec_eta->Write();
-  LW200Helec_pt->Write();
-  LW200Helec_eta->Write();
-  LW200Helec_num->Write();
-  LW200Track_pt->Write();
-  LW200Track_eta->Write();
-  LW200Track_num->Write();
-  LW200Htrk_pt->Write();
-  LW200Htrk_eta->Write();
-  LW200Htrk_num->Write();
-  LW200jet_mass->Write();
-  LW200Corrjet_mass->Write();
-  LW200Sjet_mass->Write();
-  LW200Genjet_mass->Write();
-  LW200jet_massfilter->Write();
-  LW200Sjet_massfilter->Write();
-  LW200Genjet_massfilter->Write();
-  LW200LW_mass->Write();
-  LW200RecoEle_mass->Write();
-  LW200Wdau_deltaR->Write();
-  LW200jet_pt->Write();
-  LW200jet_eta->Write();
-  LW200Genjet_pt->Write();
-  LW200Genjet_eta->Write();
+  DYelectron_num->Write();
+  DYelectron_pt->Write();
+  DYelectron_eta->Write();
+  DYphoton_num->Write();
+  DYphoton_pt->Write();
+  DYphoton_eta->Write();
+  DYSGenele_num->Write();
+  DYSGenele_pt->Write();
+  DYSGenele_eta->Write();
+  DYGenphot_num->Write();
+  DYGenphot_pt->Write();
+  DYGenphot_eta->Write();
+  DYGenWdau_pt->Write();
+  DYGenWdau_eta->Write();
+  DYGenelec_num->Write();
+  DYGenelec_pt->Write();
+  DYGenelec_eta->Write();
+  DYHelec_pt->Write();
+  DYHelec_eta->Write();
+  DYHelec_num->Write();
+  DYTrack_pt->Write();
+  DYTrack_eta->Write();
+  DYTrack_num->Write();
+  DYHtrk_pt->Write();
+  DYHtrk_eta->Write();
+  DYHtrk_num->Write();
+  DYjet_mass->Write();
+  DYCorrjet_mass->Write();
+  DYSjet_mass->Write();
+  DYGenjet_mass->Write();
+  DYjet_massfilter->Write();
+  DYSjet_massfilter->Write();
+  DYGenjet_massfilter->Write();
+  DYLW_mass->Write();
+  DYRecoEle_mass->Write();
+  DYWdau_deltaR->Write();
+  DYjet_pt->Write();
+  DYjet_eta->Write();
+  DYGenjet_pt->Write();
+  DYGenjet_eta->Write();
+  DY4Jets_DR->Write();
+  DY4Jets_pt->Write();
+  DY4Jets_eta->Write();
+  DYEleJet_DR1->Write();
+  DYEleJet_DR2->Write();
+  DYEleJet_DRdiff->Write();
+  DYGen_EleJet_DR1->Write();
+  DYGen_EleJet_DR2->Write();
+  DYGen_EleJet_DRdiff->Write();
+  DYDiJet_DR->Write();
+  DYSecVec_bydist->Write();
+  DYSecVec_bysigma->Write();
+  DY4Jet_event->Write();
 
   hfile->Close();
 

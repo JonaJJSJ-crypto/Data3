@@ -84,6 +84,10 @@ TH1F* LW200jet_eta = new TH1F("LW200jet_eta","Jet pseudorapidity",100,-5,5);
 TH1F* LW200Genjet_pt = new TH1F("LW200Genjet_pt","Gen Jet pt distribution;Pt[GeV];",100,0,200);
 TH1F* LW200Genjet_eta = new TH1F("LW200Genjet_eta","Gen Jet pseudorapidity",100,-5,5);
 //TH1F* LW200EleBsecvec = new TH1F("Electron best match","Best matched secondary vertex displacement",100,0,0.1);
+TH1F* LW2004Jets_pt = new TH1F("LW2004Jets_pt","4 most energetic jets pt;Transversal Momentum[GeV];",100,0,200);
+TH1F* LW2004Jets_eta = new TH1F("LW2004Jets_eta","4 most energetic jets eta;Pseudorapidity;",100,-5,5);
+TH1F* LW2004Jets_DR = new TH1F("LW2004Jets_DR","4 most energetic jets deltaR;DeltaR;",100,0,5);
+
 const std::string samplesBasePath = "";
 
 
@@ -849,6 +853,24 @@ if(gjet_DRscore.size()>1){
   //////////////////////Reco Electron Inv Mass/////////////////////////////
 
   //////////////////////Jet and Ele DR analysis/////////////
+  vector<pair <float,size_t> > JetPtTemp;
+  if(corr_jet_pt->size()>4){
+    for(size_t x=0; x<corr_jet_pt->size(); x++ ){JetPtTemp.push_back(make_pair(corr_jet_pt->at(x),x));}
+    sort(JetPtTemp.begin(), JetPtTemp.end());
+    for(size_t x=0; x<corr_jet_pt->size(); x++){
+      if(x==JetPtTemp.back().second||x==JetPtTemp.end()[-2].second||x==JetPtTemp.end()[-3].second||x==JetPtTemp.end()[-4].second){
+        LW2004Jets_pt->Fill(corr_jet_pt->at(x));
+        LW2004Jets_eta->Fill(jet_eta->at(x));
+        for(size_t y=0; y<x+1; y++){
+          if(y==JetPtTemp.back().second||y==JetPtTemp.end()[-2].second||y==JetPtTemp.end()[-3].second||y==JetPtTemp.end()[-4].second){
+            float JetsdR= deltaR(jet_eta->at(x),jet_phi->at(x),jet_eta->at(y),jet_phi->at(y));
+            LW2004Jets_DR->Fill(JetsdR);
+          }
+        }
+      }
+    }
+
+  }
 
 
 
@@ -988,6 +1010,9 @@ int main()
   LW200jet_eta->Write();
   LW200Genjet_pt->Write();
   LW200Genjet_eta->Write();
+  LW2004Jets_DR->Write();
+  LW2004Jets_pt->Write();
+  LW2004Jets_eta->Write();
 
   hfile->Close();
 

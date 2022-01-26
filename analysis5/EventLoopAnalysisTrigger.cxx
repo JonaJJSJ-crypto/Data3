@@ -64,15 +64,15 @@ TH1F* NF_W2J_npv = new TH1F("NF_W2J_npv","NF Number of primary vertices",25,5,30
 
 TH1F* NF_W1J_npv = new TH1F("NF_W1J_npv","NF Number of primary vertices",25,5,30);
 
-TH1F* NF_TTZ_npv = new TH1F("NF_TTZ_npv","NF Number of primary vertices",25,5,30);
+//TH1F* //NF_TTZ_npv = new TH1F("//NF_TTZ_npv","NF Number of primary vertices",25,5,30);
 
-TH1F* NF_WW_npv = new TH1F("NF_WW_npv","NF Number of primary vertices",25,5,30);
+//TH1F* //NF_WW_npv = new TH1F("//NF_WW_npv","NF Number of primary vertices",25,5,30);
 
-TH1F* NF_WZ_npv = new TH1F("NF_WZ_npv","NF Number of primary vertices",25,5,30);
+//TH1F* //NF_WZ_npv = new TH1F("//NF_WZ_npv","NF Number of primary vertices",25,5,30);
 
 TH1F* NF_LW200_npv = new TH1F("NF_LW200_npv","NF Number of primary vertices",25,5,30);
 
-////TH1F* NF_LW300_npv = new TH1F("NF_LW300_npv","NF Number of primary vertices",25,5,30);
+////TH1F* //NF_LW300_npv = new TH1F("//NF_LW300_npv","NF Number of primary vertices",25,5,30);
 
 //TH1F* NF_LW400_npv = new TH1F("NF_LW400_npv","NF Number of primary vertices",25,5,30);
 
@@ -92,15 +92,15 @@ TH1F* NF_W2J_nsv = new TH1F("NF_W2J_nsv","NF Number of secondary vertices",20,0,
 
 TH1F* NF_W1J_nsv = new TH1F("NF_W1J_nsv","NF Number of secondary vertices",20,0,2000);
 
-TH1F* NF_TTZ_nsv = new TH1F("NF_TTZ_nsv","NF Number of secondary vertices",20,0,2000);
+//TH1F* //NF_TTZ_nsv = new TH1F("//NF_TTZ_nsv","NF Number of secondary vertices",20,0,2000);
 
-TH1F* NF_WW_nsv = new TH1F("NF_WW_nsv","NF Number of secondary vertices",20,0,2000);
+//TH1F* //NF_WW_nsv = new TH1F("//NF_WW_nsv","NF Number of secondary vertices",20,0,2000);
 
-TH1F* NF_WZ_nsv = new TH1F("NF_WZ_nsv","NF Number of secondary vertices",20,0,2000);
+//TH1F* //NF_WZ_nsv = new TH1F("//NF_WZ_nsv","NF Number of secondary vertices",20,0,2000);
 
 TH1F* NF_LW200_nsv = new TH1F("NF_LW200_nsv","NF Number of secondary vertices",20,0,2000);
 
-////TH1F* NF_LW300_nsv = new TH1F("NF_LW300_nsv","NF Number of secondary vertices",20,0,2000);
+////TH1F* //NF_LW300_nsv = new TH1F("//NF_LW300_nsv","NF Number of secondary vertices",20,0,2000);
 
 //TH1F* NF_LW400_nsv = new TH1F("NF_LW400_nsv","NF Number of secondary vertices",20,0,2000);
 
@@ -120,15 +120,15 @@ TH1F* NF_W2J_svd = new TH1F("NF_W2J_svd","NF secondary vertex displacement",100,
 
 TH1F* NF_W1J_svd = new TH1F("NF_W1J_svd","NF secondary vertex displacement",100,0,1);
 
-TH1F* NF_TTZ_svd = new TH1F("NF_TTZ_svd","NF secondary vertex displacement",100,0,1);
+//TH1F* //NF_TTZ_svd = new TH1F("//NF_TTZ_svd","NF secondary vertex displacement",100,0,1);
 
-TH1F* NF_WW_svd = new TH1F("NF_WW_svd","NF secondary vertex displacement",100,0,1);
+//TH1F* //NF_WW_svd = new TH1F("//NF_WW_svd","NF secondary vertex displacement",100,0,1);
 
-TH1F* NF_WZ_svd = new TH1F("NF_WZ_svd","NF secondary vertex displacement",100,0,1);
+//TH1F* //NF_WZ_svd = new TH1F("//NF_WZ_svd","NF secondary vertex displacement",100,0,1);
 
 TH1F* NF_LW200_svd = new TH1F("NF_LW200_svd","NF secondary vertex displacement",100,0,1);
 
-////TH1F* NF_LW300_svd = new TH1F("NF_LW300_svd","NF secondary vertex displacement",100,0,1);
+////TH1F* //NF_LW300_svd = new TH1F("//NF_LW300_svd","NF secondary vertex displacement",100,0,1);
 
 //TH1F* NF_LW400_svd = new TH1F("NF_LW400_svd","NF secondary vertex displacement",100,0,1);
 
@@ -148,15 +148,15 @@ TH1F* NF_W2J_JetMass = new TH1F("NF_W2J_JetMass","NF Invariant mass from DiJets"
 
 TH1F* NF_W1J_JetMass = new TH1F("NF_W1J_JetMass","NF Invariant mass from DiJets",100,0,400);
 
-TH1F* NF_TTZ_JetMass = new TH1F("NF_TTZ_JetMass","NF Invariant mass from DiJets",100,0,400);
+//TH1F* //NF_TTZ_JetMass = new TH1F("//NF_TTZ_JetMass","NF Invariant mass from DiJets",100,0,400);
 
-TH1F* NF_WW_JetMass = new TH1F("NF_WW_JetMass","NF Invariant mass from DiJets",100,0,400);
+//TH1F* //NF_WW_JetMass = new TH1F("//NF_WW_JetMass","NF Invariant mass from DiJets",100,0,400);
 
-TH1F* NF_WZ_JetMass = new TH1F("NF_WZ_JetMass","NF Invariant mass from DiJets",100,0,400);
+//TH1F* //NF_WZ_JetMass = new TH1F("//NF_WZ_JetMass","NF Invariant mass from DiJets",100,0,400);
 
 TH1F* NF_LW200_JetMass = new TH1F("NF_LW200_JetMass","NF Invariant mass from DiJets",100,0,400);
 
-////TH1F* NF_LW300_JetMass = new TH1F("NF_LW300_JetMass","NF Invariant mass from DiJets",100,0,400);
+////TH1F* //NF_LW300_JetMass = new TH1F("//NF_LW300_JetMass","NF Invariant mass from DiJets",100,0,400);
 
 //TH1F* NF_LW400_JetMass = new TH1F("NF_LW400_JetMass","NF Invariant mass from DiJets",100,0,400);
 
@@ -176,15 +176,15 @@ TH1F* NF_W2J_LWMass = new TH1F("NF_W2J_LWMass","NF Invariant mass from LW",100,0
 
 TH1F* NF_W1J_LWMass = new TH1F("NF_W1J_LWMass","NF Invariant mass from LW",100,0,400);
 
-TH1F* NF_TTZ_LWMass = new TH1F("NF_TTZ_LWMass","NF Invariant mass from LW",100,0,400);
+//TH1F* //NF_TTZ_LWMass = new TH1F("//NF_TTZ_LWMass","NF Invariant mass from LW",100,0,400);
 
-TH1F* NF_WW_LWMass = new TH1F("NF_WW_LWMass","NF Invariant mass from LW",100,0,400);
+//TH1F* //NF_WW_LWMass = new TH1F("//NF_WW_LWMass","NF Invariant mass from LW",100,0,400);
 
-TH1F* NF_WZ_LWMass = new TH1F("NF_WZ_LWMass","NF Invariant mass from LW",100,0,400);
+//TH1F* //NF_WZ_LWMass = new TH1F("//NF_WZ_LWMass","NF Invariant mass from LW",100,0,400);
 
 TH1F* NF_LW200_LWMass = new TH1F("NF_LW200_LWMass","NF Invariant mass from LW",100,0,400);
 
-////TH1F* NF_LW300_LWMass = new TH1F("NF_LW300_LWMass","NF Invariant mass from LW",100,0,400);
+////TH1F* //NF_LW300_LWMass = new TH1F("//NF_LW300_LWMass","NF Invariant mass from LW",100,0,400);
 
 //TH1F* NF_LW400_LWMass = new TH1F("NF_LW400_LWMass","NF Invariant mass from LW",100,0,400);
 
@@ -204,15 +204,15 @@ TH1F* NF_W2J_Elept = new TH1F("NF_W2J_Elept","NF Electron pt distribution",100,0
 
 TH1F* NF_W1J_Elept = new TH1F("NF_W1J_Elept","NF Electron pt distribution",100,0,200);
 
-TH1F* NF_TTZ_Elept = new TH1F("NF_TTZ_Elept","NF Electron pt distribution",100,0,200);
+//TH1F* //NF_TTZ_Elept = new TH1F("//NF_TTZ_Elept","NF Electron pt distribution",100,0,200);
 
-TH1F* NF_WW_Elept = new TH1F("NF_WW_Elept","NF Electron pt distribution",100,0,200);
+//TH1F* //NF_WW_Elept = new TH1F("//NF_WW_Elept","NF Electron pt distribution",100,0,200);
 
-TH1F* NF_WZ_Elept = new TH1F("NF_WZ_Elept","NF Electron pt distribution",100,0,200);
+//TH1F* //NF_WZ_Elept = new TH1F("//NF_WZ_Elept","NF Electron pt distribution",100,0,200);
 
 TH1F* NF_LW200_Elept = new TH1F("NF_LW200_Elept","NF Electron pt distribution",100,0,200);
 
-////TH1F* NF_LW300_Elept = new TH1F("NF_LW300_Elept","NF Electron pt distribution",100,0,200);
+////TH1F* //NF_LW300_Elept = new TH1F("//NF_LW300_Elept","NF Electron pt distribution",100,0,200);
 
 //TH1F* NF_LW400_Elept = new TH1F("NF_LW400_Elept","NF Electron pt distribution",100,0,200);
 
@@ -232,15 +232,15 @@ TH1F* NF_W2J_DieledR = new TH1F("NF_W2J_DieledR","NF delta R separation between 
 
 TH1F* NF_W1J_DieledR = new TH1F("NF_W1J_DieledR","NF delta R separation between electrons",100,0,8);
 
-TH1F* NF_TTZ_DieledR = new TH1F("NF_TTZ_DieledR","NF delta R separation between electrons",100,0,8);
+//TH1F* //NF_TTZ_DieledR = new TH1F("//NF_TTZ_DieledR","NF delta R separation between electrons",100,0,8);
 
-TH1F* NF_WW_DieledR = new TH1F("NF_WW_DieledR","NF delta R separation between electrons",100,0,8);
+//TH1F* //NF_WW_DieledR = new TH1F("//NF_WW_DieledR","NF delta R separation between electrons",100,0,8);
 
-TH1F* NF_WZ_DieledR = new TH1F("NF_WZ_DieledR","NF delta R separation between electrons",100,0,8);
+//TH1F* //NF_WZ_DieledR = new TH1F("//NF_WZ_DieledR","NF delta R separation between electrons",100,0,8);
 
 TH1F* NF_LW200_DieledR = new TH1F("NF_LW200_DieledR","NF delta R separation between electrons",100,0,8);
 
-////TH1F* NF_LW300_DieledR = new TH1F("NF_LW300_DieledR","NF delta R separation between electrons",100,0,8);
+////TH1F* //NF_LW300_DieledR = new TH1F("//NF_LW300_DieledR","NF delta R separation between electrons",100,0,8);
 
 //TH1F* NF_LW400_DieledR = new TH1F("NF_LW400_DieledR","NF delta R separation between electrons",100,0,8);
 
@@ -260,15 +260,15 @@ TH1F* NF_W2J_LWdR = new TH1F("NF_W2J_LWdR","NF delta R separation between electr
 
 TH1F* NF_W1J_LWdR = new TH1F("NF_W1J_LWdR","NF delta R separation between electrons and jets",100,0,8);
 
-TH1F* NF_TTZ_LWdR = new TH1F("NF_TTZ_LWdR","NF delta R separation between electrons and jets",100,0,8);
+//TH1F* //NF_TTZ_LWdR = new TH1F("//NF_TTZ_LWdR","NF delta R separation between electrons and jets",100,0,8);
 
-TH1F* NF_WW_LWdR = new TH1F("NF_WW_LWdR","NF delta R separation between electrons and jets",100,0,8);
+//TH1F* //NF_WW_LWdR = new TH1F("//NF_WW_LWdR","NF delta R separation between electrons and jets",100,0,8);
 
-TH1F* NF_WZ_LWdR = new TH1F("NF_WZ_LWdR","NF delta R separation between electrons and jets",100,0,8);
+//TH1F* //NF_WZ_LWdR = new TH1F("//NF_WZ_LWdR","NF delta R separation between electrons and jets",100,0,8);
 
 TH1F* NF_LW200_LWdR = new TH1F("NF_LW200_LWdR","NF delta R separation between electrons and jets",100,0,8);
 
-////TH1F* NF_LW300_LWdR = new TH1F("NF_LW300_LWdR","NF delta R separation between electrons and jets",100,0,8);
+////TH1F* //NF_LW300_LWdR = new TH1F("//NF_LW300_LWdR","NF delta R separation between electrons and jets",100,0,8);
 
 //TH1F* NF_LW400_LWdR = new TH1F("NF_LW400_LWdR","NF delta R separation between electrons and jets",100,0,8);
 
@@ -288,15 +288,15 @@ TH1F* NF_W2J_DiJetdR = new TH1F("NF_W2J_DiJetdR","NF delta R separation between 
 
 TH1F* NF_W1J_DiJetdR = new TH1F("NF_W1J_DiJetdR","NF delta R separation between Jet Candidates",100,0,8);
 
-TH1F* NF_TTZ_DiJetdR = new TH1F("NF_TTZ_DiJetdR","NF delta R separation between Jet Candidates",100,0,8);
+//TH1F* //NF_TTZ_DiJetdR = new TH1F("//NF_TTZ_DiJetdR","NF delta R separation between Jet Candidates",100,0,8);
 
-TH1F* NF_WW_DiJetdR = new TH1F("NF_WW_DiJetdR","NF delta R separation between Jet Candidates",100,0,8);
+//TH1F* //NF_WW_DiJetdR = new TH1F("//NF_WW_DiJetdR","NF delta R separation between Jet Candidates",100,0,8);
 
-TH1F* NF_WZ_DiJetdR = new TH1F("NF_WZ_DiJetdR","NF delta R separation between Jet Candidates",100,0,8);
+//TH1F* //NF_WZ_DiJetdR = new TH1F("//NF_WZ_DiJetdR","NF delta R separation between Jet Candidates",100,0,8);
 
 TH1F* NF_LW200_DiJetdR = new TH1F("NF_LW200_DiJetdR","NF delta R separation between Jet Candidates",100,0,8);
 
-////TH1F* NF_LW300_DiJetdR = new TH1F("NF_LW300_DiJetdR","NF delta R separation between Jet Candidates",100,0,8);
+////TH1F* //NF_LW300_DiJetdR = new TH1F("//NF_LW300_DiJetdR","NF delta R separation between Jet Candidates",100,0,8);
 
 //TH1F* NF_LW400_DiJetdR = new TH1F("NF_LW400_DiJetdR","NF delta R separation between Jet Candidates",100,0,8);
 
@@ -316,15 +316,15 @@ TH1F* NF_W2J_BJetPt = new TH1F("NF_W2J_BJetPt","NF Most energetic Jet pt",100,0,
 
 TH1F* NF_W1J_BJetPt = new TH1F("NF_W1J_BJetPt","NF Most energetic Jet pt",100,0,250);
 
-TH1F* NF_TTZ_BJetPt = new TH1F("NF_TTZ_BJetPt","NF Most energetic Jet pt",100,0,250);
+//TH1F* //NF_TTZ_BJetPt = new TH1F("//NF_TTZ_BJetPt","NF Most energetic Jet pt",100,0,250);
 
-TH1F* NF_WW_BJetPt = new TH1F("NF_WW_BJetPt","NF Most energetic Jet pt",100,0,250);
+//TH1F* //NF_WW_BJetPt = new TH1F("//NF_WW_BJetPt","NF Most energetic Jet pt",100,0,250);
 
-TH1F* NF_WZ_BJetPt = new TH1F("NF_WZ_BJetPt","NF Most energetic Jet pt",100,0,250);
+//TH1F* //NF_WZ_BJetPt = new TH1F("//NF_WZ_BJetPt","NF Most energetic Jet pt",100,0,250);
 
 TH1F* NF_LW200_BJetPt = new TH1F("NF_LW200_BJetPt","NF Most energetic Jet pt",100,0,250);
 
-//TH1F* NF_LW300_BJetPt = new TH1F("NF_LW300_BJetPt","NF Most energetic Jet pt",100,0,250);
+//TH1F* //NF_LW300_BJetPt = new TH1F("//NF_LW300_BJetPt","NF Most energetic Jet pt",100,0,250);
 
 //TH1F* NF_LW400_BJetPt = new TH1F("NF_LW400_BJetPt","NF Most energetic Jet pt",100,0,250);
 
@@ -344,15 +344,15 @@ TH1F* NF_W2J_SBJetPt = new TH1F("NF_W2J_SBJetPt","Second NF Most energetic Jet p
 
 TH1F* NF_W1J_SBJetPt = new TH1F("NF_W1J_SBJetPt","Second NF Most energetic Jet pt",100,0,250);
 
-TH1F* NF_TTZ_SBJetPt = new TH1F("NF_TTZ_SBJetPt","Second NF Most energetic Jet pt",100,0,250);
+//TH1F* //NF_TTZ_SBJetPt = new TH1F("//NF_TTZ_SBJetPt","Second NF Most energetic Jet pt",100,0,250);
 
-TH1F* NF_WW_SBJetPt = new TH1F("NF_WW_SBJetPt","Second NF Most energetic Jet pt",100,0,250);
+//TH1F* //NF_WW_SBJetPt = new TH1F("//NF_WW_SBJetPt","Second NF Most energetic Jet pt",100,0,250);
 
-TH1F* NF_WZ_SBJetPt = new TH1F("NF_WZ_SBJetPt","Second NF Most energetic Jet pt",100,0,250);
+//TH1F* //NF_WZ_SBJetPt = new TH1F("//NF_WZ_SBJetPt","Second NF Most energetic Jet pt",100,0,250);
 
 TH1F* NF_LW200_SBJetPt = new TH1F("NF_LW200_SBJetPt","Second NF Most energetic Jet pt",100,0,250);
 
-//TH1F* NF_LW300_SBJetPt = new TH1F("NF_LW300_SBJetPt","Second NF Most energetic Jet pt",100,0,250);
+//TH1F* //NF_LW300_SBJetPt = new TH1F("//NF_LW300_SBJetPt","Second NF Most energetic Jet pt",100,0,250);
 
 //TH1F* NF_LW400_SBJetPt = new TH1F("NF_LW400_SBJetPt","Second NF Most energetic Jet pt",100,0,250);
 
@@ -372,15 +372,15 @@ TH1F* NF_W2J_NJet = new TH1F("NF_W2J_NJet","NF Number of Jets",20,0,20);
 
 TH1F* NF_W1J_NJet = new TH1F("NF_W1J_NJet","NF Number of Jets",20,0,20);
 
-TH1F* NF_TTZ_NJet = new TH1F("NF_TTZ_NJet","NF Number of Jets",20,0,20);
+//TH1F* //NF_TTZ_NJet = new TH1F("//NF_TTZ_NJet","NF Number of Jets",20,0,20);
 
-TH1F* NF_WW_NJet = new TH1F("NF_WW_NJet","NF Number of Jets",20,0,20);
+//TH1F* //NF_WW_NJet = new TH1F("//NF_WW_NJet","NF Number of Jets",20,0,20);
 
-TH1F* NF_WZ_NJet = new TH1F("NF_WZ_NJet","NF Number of Jets",20,0,20);
+//TH1F* //NF_WZ_NJet = new TH1F("//NF_WZ_NJet","NF Number of Jets",20,0,20);
 
 TH1F* NF_LW200_NJet = new TH1F("NF_LW200_NJet","NF Number of Jets",20,0,20);
 
-//TH1F* NF_LW300_NJet = new TH1F("NF_LW300_NJet","NF Number of Jets",20,0,20);
+//TH1F* //NF_LW300_NJet = new TH1F("//NF_LW300_NJet","NF Number of Jets",20,0,20);
 
 //TH1F* NF_LW400_NJet = new TH1F("NF_LW400_NJet","NF Number of Jets",20,0,20);
 
@@ -400,15 +400,15 @@ TH1F* NF_W2J_NEle = new TH1F("NF_W2J_NEle","NF Number of electrons",20,0,20);
 
 TH1F* NF_W1J_NEle = new TH1F("NF_W1J_NEle","NF Number of electrons",20,0,20);
 
-TH1F* NF_TTZ_NEle = new TH1F("NF_TTZ_NEle","NF Number of electrons",20,0,20);
+//TH1F* //NF_TTZ_NEle = new TH1F("//NF_TTZ_NEle","NF Number of electrons",20,0,20);
 
-TH1F* NF_WW_NEle = new TH1F("NF_WW_NEle","NF Number of electrons",20,0,20);
+//TH1F* //NF_WW_NEle = new TH1F("//NF_WW_NEle","NF Number of electrons",20,0,20);
 
-TH1F* NF_WZ_NEle = new TH1F("NF_WZ_NEle","NF Number of electrons",20,0,20);
+//TH1F* //NF_WZ_NEle = new TH1F("//NF_WZ_NEle","NF Number of electrons",20,0,20);
 
 TH1F* NF_LW200_NEle = new TH1F("NF_LW200_NEle","NF Number of electrons",20,0,20);
 
-//TH1F* NF_LW300_NEle = new TH1F("NF_LW300_NEle","NF Number of electrons",20,0,20);
+//TH1F* //NF_LW300_NEle = new TH1F("//NF_LW300_NEle","NF Number of electrons",20,0,20);
 
 //TH1F* NF_LW400_NEle = new TH1F("NF_LW400_NEle","NF Number of electrons",20,0,20);
 
@@ -429,15 +429,15 @@ TH1F* TF_W2J_npv = new TH1F("TF_W2J_npv","TF Number of primary vertices",25,5,30
 
 TH1F* TF_W1J_npv = new TH1F("TF_W1J_npv","TF Number of primary vertices",25,5,30);
 
-TH1F* TF_TTZ_npv = new TH1F("TF_TTZ_npv","TF Number of primary vertices",25,5,30);
+//TH1F* //TF_TTZ_npv = new TH1F("//TF_TTZ_npv","TF Number of primary vertices",25,5,30);
 
-TH1F* TF_WW_npv = new TH1F("TF_WW_npv","TF Number of primary vertices",25,5,30);
+//TH1F* //TF_WW_npv = new TH1F("//TF_WW_npv","TF Number of primary vertices",25,5,30);
 
-TH1F* TF_WZ_npv = new TH1F("TF_WZ_npv","TF Number of primary vertices",25,5,30);
+//TH1F* //TF_WZ_npv = new TH1F("//TF_WZ_npv","TF Number of primary vertices",25,5,30);
 
 TH1F* TF_LW200_npv = new TH1F("TF_LW200_npv","TF Number of primary vertices",25,5,30);
 
-//TH1F* TF_LW300_npv = new TH1F("TF_LW300_npv","TF Number of primary vertices",25,5,30);
+//TH1F* //TF_LW300_npv = new TH1F("//TF_LW300_npv","TF Number of primary vertices",25,5,30);
 
 //TH1F* TF_LW400_npv = new TH1F("TF_LW400_npv","TF Number of primary vertices",25,5,30);
 
@@ -457,15 +457,15 @@ TH1F* TF_W2J_nsv = new TH1F("TF_W2J_nsv","TF Number of secondary vertices",20,0,
 
 TH1F* TF_W1J_nsv = new TH1F("TF_W1J_nsv","TF Number of secondary vertices",20,0,2000);
 
-TH1F* TF_TTZ_nsv = new TH1F("TF_TTZ_nsv","TF Number of secondary vertices",20,0,2000);
+//TH1F* //TF_TTZ_nsv = new TH1F("//TF_TTZ_nsv","TF Number of secondary vertices",20,0,2000);
 
-TH1F* TF_WW_nsv = new TH1F("TF_WW_nsv","TF Number of secondary vertices",20,0,2000);
+//TH1F* //TF_WW_nsv = new TH1F("//TF_WW_nsv","TF Number of secondary vertices",20,0,2000);
 
-TH1F* TF_WZ_nsv = new TH1F("TF_WZ_nsv","TF Number of secondary vertices",20,0,2000);
+//TH1F* //TF_WZ_nsv = new TH1F("//TF_WZ_nsv","TF Number of secondary vertices",20,0,2000);
 
 TH1F* TF_LW200_nsv = new TH1F("TF_LW200_nsv","TF Number of secondary vertices",20,0,2000);
 
-//TH1F* TF_LW300_nsv = new TH1F("TF_LW300_nsv","TF Number of secondary vertices",20,0,2000);
+//TH1F* //TF_LW300_nsv = new TH1F("//TF_LW300_nsv","TF Number of secondary vertices",20,0,2000);
 
 //TH1F* TF_LW400_nsv = new TH1F("TF_LW400_nsv","TF Number of secondary vertices",20,0,2000);
 
@@ -485,15 +485,15 @@ TH1F* TF_W2J_svd = new TH1F("TF_W2J_svd","TF secondary vertex displacement",100,
 
 TH1F* TF_W1J_svd = new TH1F("TF_W1J_svd","TF secondary vertex displacement",100,0,1);
 
-TH1F* TF_TTZ_svd = new TH1F("TF_TTZ_svd","TF secondary vertex displacement",100,0,1);
+//TH1F* //TF_TTZ_svd = new TH1F("//TF_TTZ_svd","TF secondary vertex displacement",100,0,1);
 
-TH1F* TF_WW_svd = new TH1F("TF_WW_svd","TF secondary vertex displacement",100,0,1);
+//TH1F* //TF_WW_svd = new TH1F("//TF_WW_svd","TF secondary vertex displacement",100,0,1);
 
-TH1F* TF_WZ_svd = new TH1F("TF_WZ_svd","TF secondary vertex displacement",100,0,1);
+//TH1F* //TF_WZ_svd = new TH1F("//TF_WZ_svd","TF secondary vertex displacement",100,0,1);
 
 TH1F* TF_LW200_svd = new TH1F("TF_LW200_svd","TF secondary vertex displacement",100,0,1);
 
-//TH1F* TF_LW300_svd = new TH1F("TF_LW300_svd","TF secondary vertex displacement",100,0,1);
+//TH1F* //TF_LW300_svd = new TH1F("//TF_LW300_svd","TF secondary vertex displacement",100,0,1);
 
 //TH1F* TF_LW400_svd = new TH1F("TF_LW400_svd","TF secondary vertex displacement",100,0,1);
 
@@ -513,15 +513,15 @@ TH1F* TF_W2J_JetMass = new TH1F("TF_W2J_JetMass","TF Invariant mass from DiJets"
 
 TH1F* TF_W1J_JetMass = new TH1F("TF_W1J_JetMass","TF Invariant mass from DiJets",100,0,400);
 
-TH1F* TF_TTZ_JetMass = new TH1F("TF_TTZ_JetMass","TF Invariant mass from DiJets",100,0,400);
+//TH1F* //TF_TTZ_JetMass = new TH1F("//TF_TTZ_JetMass","TF Invariant mass from DiJets",100,0,400);
 
-TH1F* TF_WW_JetMass = new TH1F("TF_WW_JetMass","TF Invariant mass from DiJets",100,0,400);
+//TH1F* //TF_WW_JetMass = new TH1F("//TF_WW_JetMass","TF Invariant mass from DiJets",100,0,400);
 
-TH1F* TF_WZ_JetMass = new TH1F("TF_WZ_JetMass","TF Invariant mass from DiJets",100,0,400);
+//TH1F* //TF_WZ_JetMass = new TH1F("//TF_WZ_JetMass","TF Invariant mass from DiJets",100,0,400);
 
 TH1F* TF_LW200_JetMass = new TH1F("TF_LW200_JetMass","TF Invariant mass from DiJets",100,0,400);
 
-//TH1F* TF_LW300_JetMass = new TH1F("TF_LW300_JetMass","TF Invariant mass from DiJets",100,0,400);
+//TH1F* //TF_LW300_JetMass = new TH1F("//TF_LW300_JetMass","TF Invariant mass from DiJets",100,0,400);
 
 //TH1F* TF_LW400_JetMass = new TH1F("TF_LW400_JetMass","TF Invariant mass from DiJets",100,0,400);
 
@@ -541,15 +541,15 @@ TH1F* TF_W2J_LWMass = new TH1F("TF_W2J_LWMass","TF Invariant mass from LW",100,0
 
 TH1F* TF_W1J_LWMass = new TH1F("TF_W1J_LWMass","TF Invariant mass from LW",100,0,400);
 
-TH1F* TF_TTZ_LWMass = new TH1F("TF_TTZ_LWMass","TF Invariant mass from LW",100,0,400);
+//TH1F* //TF_TTZ_LWMass = new TH1F("//TF_TTZ_LWMass","TF Invariant mass from LW",100,0,400);
 
-TH1F* TF_WW_LWMass = new TH1F("TF_WW_LWMass","TF Invariant mass from LW",100,0,400);
+//TH1F* //TF_WW_LWMass = new TH1F("//TF_WW_LWMass","TF Invariant mass from LW",100,0,400);
 
-TH1F* TF_WZ_LWMass = new TH1F("TF_WZ_LWMass","TF Invariant mass from LW",100,0,400);
+//TH1F* //TF_WZ_LWMass = new TH1F("//TF_WZ_LWMass","TF Invariant mass from LW",100,0,400);
 
 TH1F* TF_LW200_LWMass = new TH1F("TF_LW200_LWMass","TF Invariant mass from LW",100,0,400);
 
-//TH1F* TF_LW300_LWMass = new TH1F("TF_LW300_LWMass","TF Invariant mass from LW",100,0,400);
+//TH1F* //TF_LW300_LWMass = new TH1F("//TF_LW300_LWMass","TF Invariant mass from LW",100,0,400);
 
 //TH1F* TF_LW400_LWMass = new TH1F("TF_LW400_LWMass","TF Invariant mass from LW",100,0,400);
 
@@ -569,15 +569,15 @@ TH1F* TF_W2J_Elept = new TH1F("TF_W2J_Elept","TF Electron pt distribution",100,0
 
 TH1F* TF_W1J_Elept = new TH1F("TF_W1J_Elept","TF Electron pt distribution",100,0,200);
 
-TH1F* TF_TTZ_Elept = new TH1F("TF_TTZ_Elept","TF Electron pt distribution",100,0,200);
+//TH1F* //TF_TTZ_Elept = new TH1F("//TF_TTZ_Elept","TF Electron pt distribution",100,0,200);
 
-TH1F* TF_WW_Elept = new TH1F("TF_WW_Elept","TF Electron pt distribution",100,0,200);
+//TH1F* //TF_WW_Elept = new TH1F("//TF_WW_Elept","TF Electron pt distribution",100,0,200);
 
-TH1F* TF_WZ_Elept = new TH1F("TF_WZ_Elept","TF Electron pt distribution",100,0,200);
+//TH1F* //TF_WZ_Elept = new TH1F("//TF_WZ_Elept","TF Electron pt distribution",100,0,200);
 
 TH1F* TF_LW200_Elept = new TH1F("TF_LW200_Elept","TF Electron pt distribution",100,0,200);
 
-//TH1F* TF_LW300_Elept = new TH1F("TF_LW300_Elept","TF Electron pt distribution",100,0,200);
+//TH1F* //TF_LW300_Elept = new TH1F("//TF_LW300_Elept","TF Electron pt distribution",100,0,200);
 
 //TH1F* TF_LW400_Elept = new TH1F("TF_LW400_Elept","TF Electron pt distribution",100,0,200);
 
@@ -597,15 +597,15 @@ TH1F* TF_W2J_DieledR = new TH1F("TF_W2J_DieledR","TF delta R separation between 
 
 TH1F* TF_W1J_DieledR = new TH1F("TF_W1J_DieledR","TF delta R separation between electrons",100,0,8);
 
-TH1F* TF_TTZ_DieledR = new TH1F("TF_TTZ_DieledR","TF delta R separation between electrons",100,0,8);
+//TH1F* //TF_TTZ_DieledR = new TH1F("//TF_TTZ_DieledR","TF delta R separation between electrons",100,0,8);
 
-TH1F* TF_WW_DieledR = new TH1F("TF_WW_DieledR","TF delta R separation between electrons",100,0,8);
+//TH1F* //TF_WW_DieledR = new TH1F("//TF_WW_DieledR","TF delta R separation between electrons",100,0,8);
 
-TH1F* TF_WZ_DieledR = new TH1F("TF_WZ_DieledR","TF delta R separation between electrons",100,0,8);
+//TH1F* //TF_WZ_DieledR = new TH1F("//TF_WZ_DieledR","TF delta R separation between electrons",100,0,8);
 
 TH1F* TF_LW200_DieledR = new TH1F("TF_LW200_DieledR","TF delta R separation between electrons",100,0,8);
 
-//TH1F* TF_LW300_DieledR = new TH1F("TF_LW300_DieledR","TF delta R separation between electrons",100,0,8);
+//TH1F* //TF_LW300_DieledR = new TH1F("//TF_LW300_DieledR","TF delta R separation between electrons",100,0,8);
 
 //TH1F* TF_LW400_DieledR = new TH1F("TF_LW400_DieledR","TF delta R separation between electrons",100,0,8);
 
@@ -625,15 +625,15 @@ TH1F* TF_W2J_LWdR = new TH1F("TF_W2J_LWdR","TF delta R separation between electr
 
 TH1F* TF_W1J_LWdR = new TH1F("TF_W1J_LWdR","TF delta R separation between electrons and jets",100,0,8);
 
-TH1F* TF_TTZ_LWdR = new TH1F("TF_TTZ_LWdR","TF delta R separation between electrons and jets",100,0,8);
+//TH1F* //TF_TTZ_LWdR = new TH1F("//TF_TTZ_LWdR","TF delta R separation between electrons and jets",100,0,8);
 
-TH1F* TF_WW_LWdR = new TH1F("TF_WW_LWdR","TF delta R separation between electrons and jets",100,0,8);
+//TH1F* //TF_WW_LWdR = new TH1F("//TF_WW_LWdR","TF delta R separation between electrons and jets",100,0,8);
 
-TH1F* TF_WZ_LWdR = new TH1F("TF_WZ_LWdR","TF delta R separation between electrons and jets",100,0,8);
+//TH1F* //TF_WZ_LWdR = new TH1F("//TF_WZ_LWdR","TF delta R separation between electrons and jets",100,0,8);
 
 TH1F* TF_LW200_LWdR = new TH1F("TF_LW200_LWdR","TF delta R separation between electrons and jets",100,0,8);
 
-//TH1F* TF_LW300_LWdR = new TH1F("TF_LW300_LWdR","TF delta R separation between electrons and jets",100,0,8);
+//TH1F* //TF_LW300_LWdR = new TH1F("//TF_LW300_LWdR","TF delta R separation between electrons and jets",100,0,8);
 
 //TH1F* TF_LW400_LWdR = new TH1F("TF_LW400_LWdR","TF delta R separation between electrons and jets",100,0,8);
 
@@ -653,15 +653,15 @@ TH1F* TF_W2J_DiJetdR = new TH1F("TF_W2J_DiJetdR","TF delta R separation between 
 
 TH1F* TF_W1J_DiJetdR = new TH1F("TF_W1J_DiJetdR","TF delta R separation between Jet Candidates",100,0,8);
 
-TH1F* TF_TTZ_DiJetdR = new TH1F("TF_TTZ_DiJetdR","TF delta R separation between Jet Candidates",100,0,8);
+//TH1F* //TF_TTZ_DiJetdR = new TH1F("//TF_TTZ_DiJetdR","TF delta R separation between Jet Candidates",100,0,8);
 
-TH1F* TF_WW_DiJetdR = new TH1F("TF_WW_DiJetdR","TF delta R separation between Jet Candidates",100,0,8);
+//TH1F* //TF_WW_DiJetdR = new TH1F("//TF_WW_DiJetdR","TF delta R separation between Jet Candidates",100,0,8);
 
-TH1F* TF_WZ_DiJetdR = new TH1F("TF_WZ_DiJetdR","TF delta R separation between Jet Candidates",100,0,8);
+//TH1F* //TF_WZ_DiJetdR = new TH1F("//TF_WZ_DiJetdR","TF delta R separation between Jet Candidates",100,0,8);
 
 TH1F* TF_LW200_DiJetdR = new TH1F("TF_LW200_DiJetdR","TF delta R separation between Jet Candidates",100,0,8);
 
-//TH1F* TF_LW300_DiJetdR = new TH1F("TF_LW300_DiJetdR","TF delta R separation between Jet Candidates",100,0,8);
+//TH1F* //TF_LW300_DiJetdR = new TH1F("//TF_LW300_DiJetdR","TF delta R separation between Jet Candidates",100,0,8);
 
 //TH1F* TF_LW400_DiJetdR = new TH1F("TF_LW400_DiJetdR","TF delta R separation between Jet Candidates",100,0,8);
 
@@ -681,15 +681,15 @@ TH1F* TF_W2J_BJetPt = new TH1F("TF_W2J_BJetPt","TF Most energetic Jet pt",100,0,
 
 TH1F* TF_W1J_BJetPt = new TH1F("TF_W1J_BJetPt","TF Most energetic Jet pt",100,0,250);
 
-TH1F* TF_TTZ_BJetPt = new TH1F("TF_TTZ_BJetPt","TF Most energetic Jet pt",100,0,250);
+//TH1F* //TF_TTZ_BJetPt = new TH1F("//TF_TTZ_BJetPt","TF Most energetic Jet pt",100,0,250);
 
-TH1F* TF_WW_BJetPt = new TH1F("TF_WW_BJetPt","TF Most energetic Jet pt",100,0,250);
+//TH1F* //TF_WW_BJetPt = new TH1F("//TF_WW_BJetPt","TF Most energetic Jet pt",100,0,250);
 
-TH1F* TF_WZ_BJetPt = new TH1F("TF_WZ_BJetPt","TF Most energetic Jet pt",100,0,250);
+//TH1F* //TF_WZ_BJetPt = new TH1F("//TF_WZ_BJetPt","TF Most energetic Jet pt",100,0,250);
 
 TH1F* TF_LW200_BJetPt = new TH1F("TF_LW200_BJetPt","TF Most energetic Jet pt",100,0,250);
 
-//TH1F* TF_LW300_BJetPt = new TH1F("TF_LW300_BJetPt","TF Most energetic Jet pt",100,0,250);
+//TH1F* //TF_LW300_BJetPt = new TH1F("//TF_LW300_BJetPt","TF Most energetic Jet pt",100,0,250);
 
 //TH1F* TF_LW400_BJetPt = new TH1F("TF_LW400_BJetPt","TF Most energetic Jet pt",100,0,250);
 
@@ -709,15 +709,15 @@ TH1F* TF_W2J_SBJetPt = new TH1F("TF_W2J_SBJetPt","Second TF Most energetic Jet p
 
 TH1F* TF_W1J_SBJetPt = new TH1F("TF_W1J_SBJetPt","Second TF Most energetic Jet pt",100,0,250);
 
-TH1F* TF_TTZ_SBJetPt = new TH1F("TF_TTZ_SBJetPt","Second TF Most energetic Jet pt",100,0,250);
+//TH1F* //TF_TTZ_SBJetPt = new TH1F("//TF_TTZ_SBJetPt","Second TF Most energetic Jet pt",100,0,250);
 
-TH1F* TF_WW_SBJetPt = new TH1F("TF_WW_SBJetPt","Second TF Most energetic Jet pt",100,0,250);
+//TH1F* //TF_WW_SBJetPt = new TH1F("//TF_WW_SBJetPt","Second TF Most energetic Jet pt",100,0,250);
 
-TH1F* TF_WZ_SBJetPt = new TH1F("TF_WZ_SBJetPt","Second TF Most energetic Jet pt",100,0,250);
+//TH1F* //TF_WZ_SBJetPt = new TH1F("//TF_WZ_SBJetPt","Second TF Most energetic Jet pt",100,0,250);
 
 TH1F* TF_LW200_SBJetPt = new TH1F("TF_LW200_SBJetPt","Second TF Most energetic Jet pt",100,0,250);
 
-//TH1F* TF_LW300_SBJetPt = new TH1F("TF_LW300_SBJetPt","Second TF Most energetic Jet pt",100,0,250);
+//TH1F* //TF_LW300_SBJetPt = new TH1F("//TF_LW300_SBJetPt","Second TF Most energetic Jet pt",100,0,250);
 
 //TH1F* TF_LW400_SBJetPt = new TH1F("TF_LW400_SBJetPt","Second TF Most energetic Jet pt",100,0,250);
 
@@ -737,15 +737,15 @@ TH1F* TF_W2J_NJet = new TH1F("TF_W2J_NJet","TF Number of Jets",20,0,20);
 
 TH1F* TF_W1J_NJet = new TH1F("TF_W1J_NJet","TF Number of Jets",20,0,20);
 
-TH1F* TF_TTZ_NJet = new TH1F("TF_TTZ_NJet","TF Number of Jets",20,0,20);
+//TH1F* //TF_TTZ_NJet = new TH1F("//TF_TTZ_NJet","TF Number of Jets",20,0,20);
 
-TH1F* TF_WW_NJet = new TH1F("TF_WW_NJet","TF Number of Jets",20,0,20);
+//TH1F* //TF_WW_NJet = new TH1F("//TF_WW_NJet","TF Number of Jets",20,0,20);
 
-TH1F* TF_WZ_NJet = new TH1F("TF_WZ_NJet","TF Number of Jets",20,0,20);
+//TH1F* //TF_WZ_NJet = new TH1F("//TF_WZ_NJet","TF Number of Jets",20,0,20);
 
 TH1F* TF_LW200_NJet = new TH1F("TF_LW200_NJet","TF Number of Jets",20,0,20);
 
-//TH1F* TF_LW300_NJet = new TH1F("TF_LW300_NJet","TF Number of Jets",20,0,20);
+//TH1F* //TF_LW300_NJet = new TH1F("//TF_LW300_NJet","TF Number of Jets",20,0,20);
 
 //TH1F* TF_LW400_NJet = new TH1F("TF_LW400_NJet","TF Number of Jets",20,0,20);
 
@@ -765,15 +765,15 @@ TH1F* TF_W2J_NEle = new TH1F("TF_W2J_NEle","TF Number of electrons",20,0,20);
 
 TH1F* TF_W1J_NEle = new TH1F("TF_W1J_NEle","TF Number of electrons",20,0,20);
 
-TH1F* TF_TTZ_NEle = new TH1F("TF_TTZ_NEle","TF Number of electrons",20,0,20);
+//TH1F* //TF_TTZ_NEle = new TH1F("//TF_TTZ_NEle","TF Number of electrons",20,0,20);
 
-TH1F* TF_WW_NEle = new TH1F("TF_WW_NEle","TF Number of electrons",20,0,20);
+//TH1F* //TF_WW_NEle = new TH1F("//TF_WW_NEle","TF Number of electrons",20,0,20);
 
-TH1F* TF_WZ_NEle = new TH1F("TF_WZ_NEle","TF Number of electrons",20,0,20);
+//TH1F* //TF_WZ_NEle = new TH1F("//TF_WZ_NEle","TF Number of electrons",20,0,20);
 
 TH1F* TF_LW200_NEle = new TH1F("TF_LW200_NEle","TF Number of electrons",20,0,20);
 
-//TH1F* TF_LW300_NEle = new TH1F("TF_LW300_NEle","TF Number of electrons",20,0,20);
+//TH1F* //TF_LW300_NEle = new TH1F("//TF_LW300_NEle","TF Number of electrons",20,0,20);
 
 //TH1F* TF_LW400_NEle = new TH1F("TF_LW400_NEle","TF Number of electrons",20,0,20);
 
@@ -794,15 +794,15 @@ TH1F* TO_W2J_npv = new TH1F("TO_W2J_npv","TO Number of primary vertices",25,5,30
 
 TH1F* TO_W1J_npv = new TH1F("TO_W1J_npv","TO Number of primary vertices",25,5,30);
 
-TH1F* TO_TTZ_npv = new TH1F("TO_TTZ_npv","TO Number of primary vertices",25,5,30);
+//TH1F* //TO_TTZ_npv = new TH1F("//TO_TTZ_npv","TO Number of primary vertices",25,5,30);
 
-TH1F* TO_WW_npv = new TH1F("TO_WW_npv","TO Number of primary vertices",25,5,30);
+//TH1F* //TO_WW_npv = new TH1F("//TO_WW_npv","TO Number of primary vertices",25,5,30);
 
-TH1F* TO_WZ_npv = new TH1F("TO_WZ_npv","TO Number of primary vertices",25,5,30);
+//TH1F* TO_WZ_npv = new TH1F("////TO_WZ_npv","TO Number of primary vertices",25,5,30);
 
 TH1F* TO_LW200_npv = new TH1F("TO_LW200_npv","TO Number of primary vertices",25,5,30);
 
-//TH1F* TO_LW300_npv = new TH1F("TO_LW300_npv","TO Number of primary vertices",25,5,30);
+//TH1F* //TO_LW300_npv = new TH1F("//TO_LW300_npv","TO Number of primary vertices",25,5,30);
 
 //TH1F* TO_LW400_npv = new TH1F("TO_LW400_npv","TO Number of primary vertices",25,5,30);
 
@@ -822,15 +822,15 @@ TH1F* TO_W2J_nsv = new TH1F("TO_W2J_nsv","TO Number of secondary vertices",20,0,
 
 TH1F* TO_W1J_nsv = new TH1F("TO_W1J_nsv","TO Number of secondary vertices",20,0,2000);
 
-TH1F* TO_TTZ_nsv = new TH1F("TO_TTZ_nsv","TO Number of secondary vertices",20,0,2000);
+//TH1F* //TO_TTZ_nsv = new TH1F("//TO_TTZ_nsv","TO Number of secondary vertices",20,0,2000);
 
-TH1F* TO_WW_nsv = new TH1F("TO_WW_nsv","TO Number of secondary vertices",20,0,2000);
+//TH1F* //TO_WW_nsv = new TH1F("//TO_WW_nsv","TO Number of secondary vertices",20,0,2000);
 
-TH1F* TO_WZ_nsv = new TH1F("TO_WZ_nsv","TO Number of secondary vertices",20,0,2000);
+//TH1F* TO_WZ_nsv = new TH1F("////TO_WZ_nsv","TO Number of secondary vertices",20,0,2000);
 
 TH1F* TO_LW200_nsv = new TH1F("TO_LW200_nsv","TO Number of secondary vertices",20,0,2000);
 
-//TH1F* TO_LW300_nsv = new TH1F("TO_LW300_nsv","TO Number of secondary vertices",20,0,2000);
+//TH1F* //TO_LW300_nsv = new TH1F("//TO_LW300_nsv","TO Number of secondary vertices",20,0,2000);
 
 //TH1F* TO_LW400_nsv = new TH1F("TO_LW400_nsv","TO Number of secondary vertices",20,0,2000);
 
@@ -850,15 +850,15 @@ TH1F* TO_W2J_svd = new TH1F("TO_W2J_svd","TO secondary vertex displacement",100,
 
 TH1F* TO_W1J_svd = new TH1F("TO_W1J_svd","TO secondary vertex displacement",100,0,1);
 
-TH1F* TO_TTZ_svd = new TH1F("TO_TTZ_svd","TO secondary vertex displacement",100,0,1);
+//TH1F* //TO_TTZ_svd = new TH1F("//TO_TTZ_svd","TO secondary vertex displacement",100,0,1);
 
-TH1F* TO_WW_svd = new TH1F("TO_WW_svd","TO secondary vertex displacement",100,0,1);
+//TH1F* //TO_WW_svd = new TH1F("//TO_WW_svd","TO secondary vertex displacement",100,0,1);
 
-TH1F* TO_WZ_svd = new TH1F("TO_WZ_svd","TO secondary vertex displacement",100,0,1);
+//TH1F* TO_WZ_svd = new TH1F("////TO_WZ_svd","TO secondary vertex displacement",100,0,1);
 
 TH1F* TO_LW200_svd = new TH1F("TO_LW200_svd","TO secondary vertex displacement",100,0,1);
 
-//TH1F* TO_LW300_svd = new TH1F("TO_LW300_svd","TO secondary vertex displacement",100,0,1);
+//TH1F* //TO_LW300_svd = new TH1F("//TO_LW300_svd","TO secondary vertex displacement",100,0,1);
 
 //TH1F* TO_LW400_svd = new TH1F("TO_LW400_svd","TO secondary vertex displacement",100,0,1);
 
@@ -878,15 +878,15 @@ TH1F* TO_W2J_JetMass = new TH1F("TO_W2J_JetMass","TO Invariant mass from DiJets"
 
 TH1F* TO_W1J_JetMass = new TH1F("TO_W1J_JetMass","TO Invariant mass from DiJets",100,0,400);
 
-TH1F* TO_TTZ_JetMass = new TH1F("TO_TTZ_JetMass","TO Invariant mass from DiJets",100,0,400);
+//TH1F* //TO_TTZ_JetMass = new TH1F("//TO_TTZ_JetMass","TO Invariant mass from DiJets",100,0,400);
 
-TH1F* TO_WW_JetMass = new TH1F("TO_WW_JetMass","TO Invariant mass from DiJets",100,0,400);
+//TH1F* //TO_WW_JetMass = new TH1F("//TO_WW_JetMass","TO Invariant mass from DiJets",100,0,400);
 
-TH1F* TO_WZ_JetMass = new TH1F("TO_WZ_JetMass","TO Invariant mass from DiJets",100,0,400);
+//TH1F* TO_WZ_JetMass = new TH1F("////TO_WZ_JetMass","TO Invariant mass from DiJets",100,0,400);
 
 TH1F* TO_LW200_JetMass = new TH1F("TO_LW200_JetMass","TO Invariant mass from DiJets",100,0,400);
 
-//TH1F* TO_LW300_JetMass = new TH1F("TO_LW300_JetMass","TO Invariant mass from DiJets",100,0,400);
+//TH1F* //TO_LW300_JetMass = new TH1F("//TO_LW300_JetMass","TO Invariant mass from DiJets",100,0,400);
 
 //TH1F* TO_LW400_JetMass = new TH1F("TO_LW400_JetMass","TO Invariant mass from DiJets",100,0,400);
 
@@ -906,15 +906,15 @@ TH1F* TO_W2J_LWMass = new TH1F("TO_W2J_LWMass","TO Invariant mass from LW",100,0
 
 TH1F* TO_W1J_LWMass = new TH1F("TO_W1J_LWMass","TO Invariant mass from LW",100,0,400);
 
-TH1F* TO_TTZ_LWMass = new TH1F("TO_TTZ_LWMass","TO Invariant mass from LW",100,0,400);
+//TH1F* //TO_TTZ_LWMass = new TH1F("//TO_TTZ_LWMass","TO Invariant mass from LW",100,0,400);
 
-TH1F* TO_WW_LWMass = new TH1F("TO_WW_LWMass","TO Invariant mass from LW",100,0,400);
+//TH1F* //TO_WW_LWMass = new TH1F("//TO_WW_LWMass","TO Invariant mass from LW",100,0,400);
 
-TH1F* TO_WZ_LWMass = new TH1F("TO_WZ_LWMass","TO Invariant mass from LW",100,0,400);
+//TH1F* TO_WZ_LWMass = new TH1F("////TO_WZ_LWMass","TO Invariant mass from LW",100,0,400);
 
 TH1F* TO_LW200_LWMass = new TH1F("TO_LW200_LWMass","TO Invariant mass from LW",100,0,400);
 
-//TH1F* TO_LW300_LWMass = new TH1F("TO_LW300_LWMass","TO Invariant mass from LW",100,0,400);
+//TH1F* //TO_LW300_LWMass = new TH1F("//TO_LW300_LWMass","TO Invariant mass from LW",100,0,400);
 
 //TH1F* TO_LW400_LWMass = new TH1F("TO_LW400_LWMass","TO Invariant mass from LW",100,0,400);
 
@@ -934,15 +934,15 @@ TH1F* TO_W2J_Elept = new TH1F("TO_W2J_Elept","TO Electron pt distribution",100,0
 
 TH1F* TO_W1J_Elept = new TH1F("TO_W1J_Elept","TO Electron pt distribution",100,0,200);
 
-TH1F* TO_TTZ_Elept = new TH1F("TO_TTZ_Elept","TO Electron pt distribution",100,0,200);
+//TH1F* //TO_TTZ_Elept = new TH1F("//TO_TTZ_Elept","TO Electron pt distribution",100,0,200);
 
-TH1F* TO_WW_Elept = new TH1F("TO_WW_Elept","TO Electron pt distribution",100,0,200);
+//TH1F* //TO_WW_Elept = new TH1F("//TO_WW_Elept","TO Electron pt distribution",100,0,200);
 
-TH1F* TO_WZ_Elept = new TH1F("TO_WZ_Elept","TO Electron pt distribution",100,0,200);
+//TH1F* TO_WZ_Elept = new TH1F("////TO_WZ_Elept","TO Electron pt distribution",100,0,200);
 
 TH1F* TO_LW200_Elept = new TH1F("TO_LW200_Elept","TO Electron pt distribution",100,0,200);
 
-//TH1F* TO_LW300_Elept = new TH1F("TO_LW300_Elept","TO Electron pt distribution",100,0,200);
+//TH1F* //TO_LW300_Elept = new TH1F("//TO_LW300_Elept","TO Electron pt distribution",100,0,200);
 
 //TH1F* TO_LW400_Elept = new TH1F("TO_LW400_Elept","TO Electron pt distribution",100,0,200);
 
@@ -962,15 +962,15 @@ TH1F* TO_W2J_DieledR = new TH1F("TO_W2J_DieledR","TO delta R separation between 
 
 TH1F* TO_W1J_DieledR = new TH1F("TO_W1J_DieledR","TO delta R separation between electrons",100,0,8);
 
-TH1F* TO_TTZ_DieledR = new TH1F("TO_TTZ_DieledR","TO delta R separation between electrons",100,0,8);
+//TH1F* //TO_TTZ_DieledR = new TH1F("//TO_TTZ_DieledR","TO delta R separation between electrons",100,0,8);
 
-TH1F* TO_WW_DieledR = new TH1F("TO_WW_DieledR","TO delta R separation between electrons",100,0,8);
+//TH1F* //TO_WW_DieledR = new TH1F("//TO_WW_DieledR","TO delta R separation between electrons",100,0,8);
 
-TH1F* TO_WZ_DieledR = new TH1F("TO_WZ_DieledR","TO delta R separation between electrons",100,0,8);
+//TH1F* TO_WZ_DieledR = new TH1F("////TO_WZ_DieledR","TO delta R separation between electrons",100,0,8);
 
 TH1F* TO_LW200_DieledR = new TH1F("TO_LW200_DieledR","TO delta R separation between electrons",100,0,8);
 
-//TH1F* TO_LW300_DieledR = new TH1F("TO_LW300_DieledR","TO delta R separation between electrons",100,0,8);
+//TH1F* //TO_LW300_DieledR = new TH1F("//TO_LW300_DieledR","TO delta R separation between electrons",100,0,8);
 
 //TH1F* TO_LW400_DieledR = new TH1F("TO_LW400_DieledR","TO delta R separation between electrons",100,0,8);
 
@@ -990,15 +990,15 @@ TH1F* TO_W2J_LWdR = new TH1F("TO_W2J_LWdR","TO delta R separation between electr
 
 TH1F* TO_W1J_LWdR = new TH1F("TO_W1J_LWdR","TO delta R separation between electrons and jets",100,0,8);
 
-TH1F* TO_TTZ_LWdR = new TH1F("TO_TTZ_LWdR","TO delta R separation between electrons and jets",100,0,8);
+//TH1F* //TO_TTZ_LWdR = new TH1F("//TO_TTZ_LWdR","TO delta R separation between electrons and jets",100,0,8);
 
-TH1F* TO_WW_LWdR = new TH1F("TO_WW_LWdR","TO delta R separation between electrons and jets",100,0,8);
+//TH1F* //TO_WW_LWdR = new TH1F("//TO_WW_LWdR","TO delta R separation between electrons and jets",100,0,8);
 
-TH1F* TO_WZ_LWdR = new TH1F("TO_WZ_LWdR","TO delta R separation between electrons and jets",100,0,8);
+//TH1F* TO_WZ_LWdR = new TH1F("////TO_WZ_LWdR","TO delta R separation between electrons and jets",100,0,8);
 
 TH1F* TO_LW200_LWdR = new TH1F("TO_LW200_LWdR","TO delta R separation between electrons and jets",100,0,8);
 
-//TH1F* TO_LW300_LWdR = new TH1F("TO_LW300_LWdR","TO delta R separation between electrons and jets",100,0,8);
+//TH1F* //TO_LW300_LWdR = new TH1F("//TO_LW300_LWdR","TO delta R separation between electrons and jets",100,0,8);
 
 //TH1F* TO_LW400_LWdR = new TH1F("TO_LW400_LWdR","TO delta R separation between electrons and jets",100,0,8);
 
@@ -1018,15 +1018,15 @@ TH1F* TO_W2J_DiJetdR = new TH1F("TO_W2J_DiJetdR","TO delta R separation between 
 
 TH1F* TO_W1J_DiJetdR = new TH1F("TO_W1J_DiJetdR","TO delta R separation between Jet Candidates",100,0,8);
 
-TH1F* TO_TTZ_DiJetdR = new TH1F("TO_TTZ_DiJetdR","TO delta R separation between Jet Candidates",100,0,8);
+//TH1F* //TO_TTZ_DiJetdR = new TH1F("//TO_TTZ_DiJetdR","TO delta R separation between Jet Candidates",100,0,8);
 
-TH1F* TO_WW_DiJetdR = new TH1F("TO_WW_DiJetdR","TO delta R separation between Jet Candidates",100,0,8);
+//TH1F* //TO_WW_DiJetdR = new TH1F("//TO_WW_DiJetdR","TO delta R separation between Jet Candidates",100,0,8);
 
-TH1F* TO_WZ_DiJetdR = new TH1F("TO_WZ_DiJetdR","TO delta R separation between Jet Candidates",100,0,8);
+//TH1F* TO_WZ_DiJetdR = new TH1F("////TO_WZ_DiJetdR","TO delta R separation between Jet Candidates",100,0,8);
 
 TH1F* TO_LW200_DiJetdR = new TH1F("TO_LW200_DiJetdR","TO delta R separation between Jet Candidates",100,0,8);
 
-//TH1F* TO_LW300_DiJetdR = new TH1F("TO_LW300_DiJetdR","TO delta R separation between Jet Candidates",100,0,8);
+//TH1F* //TO_LW300_DiJetdR = new TH1F("//TO_LW300_DiJetdR","TO delta R separation between Jet Candidates",100,0,8);
 
 //TH1F* TO_LW400_DiJetdR = new TH1F("TO_LW400_DiJetdR","TO delta R separation between Jet Candidates",100,0,8);
 
@@ -1046,15 +1046,15 @@ TH1F* TO_W2J_BJetPt = new TH1F("TO_W2J_BJetPt","TO Most energetic Jet pt",100,0,
 
 TH1F* TO_W1J_BJetPt = new TH1F("TO_W1J_BJetPt","TO Most energetic Jet pt",100,0,250);
 
-TH1F* TO_TTZ_BJetPt = new TH1F("TO_TTZ_BJetPt","TO Most energetic Jet pt",100,0,250);
+//TH1F* //TO_TTZ_BJetPt = new TH1F("//TO_TTZ_BJetPt","TO Most energetic Jet pt",100,0,250);
 
-TH1F* TO_WW_BJetPt = new TH1F("TO_WW_BJetPt","TO Most energetic Jet pt",100,0,250);
+//TH1F* //TO_WW_BJetPt = new TH1F("//TO_WW_BJetPt","TO Most energetic Jet pt",100,0,250);
 
-TH1F* TO_WZ_BJetPt = new TH1F("TO_WZ_BJetPt","TO Most energetic Jet pt",100,0,250);
+//TH1F* TO_WZ_BJetPt = new TH1F("////TO_WZ_BJetPt","TO Most energetic Jet pt",100,0,250);
 
 TH1F* TO_LW200_BJetPt = new TH1F("TO_LW200_BJetPt","TO Most energetic Jet pt",100,0,250);
 
-//TH1F* TO_LW300_BJetPt = new TH1F("TO_LW300_BJetPt","TO Most energetic Jet pt",100,0,250);
+//TH1F* //TO_LW300_BJetPt = new TH1F("//TO_LW300_BJetPt","TO Most energetic Jet pt",100,0,250);
 
 //TH1F* TO_LW400_BJetPt = new TH1F("TO_LW400_BJetPt","TO Most energetic Jet pt",100,0,250);
 
@@ -1074,15 +1074,15 @@ TH1F* TO_W2J_SBJetPt = new TH1F("TO_W2J_SBJetPt","Second TO Most energetic Jet p
 
 TH1F* TO_W1J_SBJetPt = new TH1F("TO_W1J_SBJetPt","Second TO Most energetic Jet pt",100,0,250);
 
-TH1F* TO_TTZ_SBJetPt = new TH1F("TO_TTZ_SBJetPt","Second TO Most energetic Jet pt",100,0,250);
+//TH1F* //TO_TTZ_SBJetPt = new TH1F("//TO_TTZ_SBJetPt","Second TO Most energetic Jet pt",100,0,250);
 
-TH1F* TO_WW_SBJetPt = new TH1F("TO_WW_SBJetPt","Second TO Most energetic Jet pt",100,0,250);
+//TH1F* //TO_WW_SBJetPt = new TH1F("//TO_WW_SBJetPt","Second TO Most energetic Jet pt",100,0,250);
 
-TH1F* TO_WZ_SBJetPt = new TH1F("TO_WZ_SBJetPt","Second TO Most energetic Jet pt",100,0,250);
+//TH1F* TO_WZ_SBJetPt = new TH1F("////TO_WZ_SBJetPt","Second TO Most energetic Jet pt",100,0,250);
 
 TH1F* TO_LW200_SBJetPt = new TH1F("TO_LW200_SBJetPt","Second TO Most energetic Jet pt",100,0,250);
 
-//TH1F* TO_LW300_SBJetPt = new TH1F("TO_LW300_SBJetPt","Second TO Most energetic Jet pt",100,0,250);
+//TH1F* //TO_LW300_SBJetPt = new TH1F("//TO_LW300_SBJetPt","Second TO Most energetic Jet pt",100,0,250);
 
 //TH1F* TO_LW400_SBJetPt = new TH1F("TO_LW400_SBJetPt","Second TO Most energetic Jet pt",100,0,250);
 
@@ -1102,15 +1102,15 @@ TH1F* TO_W2J_NJet = new TH1F("TO_W2J_NJet","TO Number of Jets",20,0,20);
 
 TH1F* TO_W1J_NJet = new TH1F("TO_W1J_NJet","TO Number of Jets",20,0,20);
 
-TH1F* TO_TTZ_NJet = new TH1F("TO_TTZ_NJet","TO Number of Jets",20,0,20);
+//TH1F* //TO_TTZ_NJet = new TH1F("//TO_TTZ_NJet","TO Number of Jets",20,0,20);
 
-TH1F* TO_WW_NJet = new TH1F("TO_WW_NJet","TO Number of Jets",20,0,20);
+//TH1F* //TO_WW_NJet = new TH1F("//TO_WW_NJet","TO Number of Jets",20,0,20);
 
-TH1F* TO_WZ_NJet = new TH1F("TO_WZ_NJet","TO Number of Jets",20,0,20);
+//TH1F* TO_WZ_NJet = new TH1F("////TO_WZ_NJet","TO Number of Jets",20,0,20);
 
 TH1F* TO_LW200_NJet = new TH1F("TO_LW200_NJet","TO Number of Jets",20,0,20);
 
-//TH1F* TO_LW300_NJet = new TH1F("TO_LW300_NJet","TO Number of Jets",20,0,20);
+//TH1F* //TO_LW300_NJet = new TH1F("//TO_LW300_NJet","TO Number of Jets",20,0,20);
 
 //TH1F* TO_LW400_NJet = new TH1F("TO_LW400_NJet","TO Number of Jets",20,0,20);
 
@@ -1130,15 +1130,15 @@ TH1F* TO_W2J_NEle = new TH1F("TO_W2J_NEle","TO Number of electrons",20,0,20);
 
 TH1F* TO_W1J_NEle = new TH1F("TO_W1J_NEle","TO Number of electrons",20,0,20);
 
-TH1F* TO_TTZ_NEle = new TH1F("TO_TTZ_NEle","TO Number of electrons",20,0,20);
+//TH1F* //TO_TTZ_NEle = new TH1F("//TO_TTZ_NEle","TO Number of electrons",20,0,20);
 
-TH1F* TO_WW_NEle = new TH1F("TO_WW_NEle","TO Number of electrons",20,0,20);
+//TH1F* //TO_WW_NEle = new TH1F("//TO_WW_NEle","TO Number of electrons",20,0,20);
 
-TH1F* TO_WZ_NEle = new TH1F("TO_WZ_NEle","TO Number of electrons",20,0,20);
+//TH1F* TO_WZ_NEle = new TH1F("////TO_WZ_NEle","TO Number of electrons",20,0,20);
 
 TH1F* TO_LW200_NEle = new TH1F("TO_LW200_NEle","TO Number of electrons",20,0,20);
 
-//TH1F* TO_LW300_NEle = new TH1F("TO_LW300_NEle","TO Number of electrons",20,0,20);
+//TH1F* //TO_LW300_NEle = new TH1F("//TO_LW300_NEle","TO Number of electrons",20,0,20);
 
 //TH1F* TO_LW400_NEle = new TH1F("TO_LW400_NEle","TO Number of electrons",20,0,20);
 
@@ -1160,15 +1160,15 @@ TH1F* HQ_W2J_npv = new TH1F("HQ_W2J_npv","HQ Number of primary vertices",25,5,30
 
 TH1F* HQ_W1J_npv = new TH1F("HQ_W1J_npv","HQ Number of primary vertices",25,5,30);
 
-TH1F* HQ_TTZ_npv = new TH1F("HQ_TTZ_npv","HQ Number of primary vertices",25,5,30);
+//TH1F* ////HQ_TTZ_npv = new TH1F("////HQ_TTZ_npv","HQ Number of primary vertices",25,5,30);
 
-TH1F* HQ_WW_npv = new TH1F("HQ_WW_npv","HQ Number of primary vertices",25,5,30);
+//TH1F* //HQ_WW_npv = new TH1F("//HQ_WW_npv","HQ Number of primary vertices",25,5,30);
 
-TH1F* HQ_WZ_npv = new TH1F("HQ_WZ_npv","HQ Number of primary vertices",25,5,30);
+//TH1F* //HQ_WZ_npv = new TH1F("//HQ_WZ_npv","HQ Number of primary vertices",25,5,30);
 
 TH1F* HQ_LW200_npv = new TH1F("HQ_LW200_npv","HQ Number of primary vertices",25,5,30);
 
-//TH1F* HQ_LW300_npv = new TH1F("HQ_LW300_npv","HQ Number of primary vertices",25,5,30);
+//TH1F* //HQ_LW300_npv = new TH1F("//HQ_LW300_npv","HQ Number of primary vertices",25,5,30);
 
 //TH1F* HQ_LW400_npv = new TH1F("HQ_LW400_npv","HQ Number of primary vertices",25,5,30);
 
@@ -1188,15 +1188,15 @@ TH1F* HQ_W2J_nsv = new TH1F("HQ_W2J_nsv","HQ Number of secondary vertices",20,0,
 
 TH1F* HQ_W1J_nsv = new TH1F("HQ_W1J_nsv","HQ Number of secondary vertices",20,0,2000);
 
-TH1F* HQ_TTZ_nsv = new TH1F("HQ_TTZ_nsv","HQ Number of secondary vertices",20,0,2000);
+//TH1F* ////HQ_TTZ_nsv = new TH1F("////HQ_TTZ_nsv","HQ Number of secondary vertices",20,0,2000);
 
-TH1F* HQ_WW_nsv = new TH1F("HQ_WW_nsv","HQ Number of secondary vertices",20,0,2000);
+//TH1F* //HQ_WW_nsv = new TH1F("//HQ_WW_nsv","HQ Number of secondary vertices",20,0,2000);
 
-TH1F* HQ_WZ_nsv = new TH1F("HQ_WZ_nsv","HQ Number of secondary vertices",20,0,2000);
+//TH1F* //HQ_WZ_nsv = new TH1F("//HQ_WZ_nsv","HQ Number of secondary vertices",20,0,2000);
 
 TH1F* HQ_LW200_nsv = new TH1F("HQ_LW200_nsv","HQ Number of secondary vertices",20,0,2000);
 
-//TH1F* HQ_LW300_nsv = new TH1F("HQ_LW300_nsv","HQ Number of secondary vertices",20,0,2000);
+//TH1F* //HQ_LW300_nsv = new TH1F("//HQ_LW300_nsv","HQ Number of secondary vertices",20,0,2000);
 
 //TH1F* HQ_LW400_nsv = new TH1F("HQ_LW400_nsv","HQ Number of secondary vertices",20,0,2000);
 
@@ -1216,15 +1216,15 @@ TH1F* HQ_W2J_svd = new TH1F("HQ_W2J_svd","HQ secondary vertex displacement",100,
 
 TH1F* HQ_W1J_svd = new TH1F("HQ_W1J_svd","HQ secondary vertex displacement",100,0,1);
 
-TH1F* HQ_TTZ_svd = new TH1F("HQ_TTZ_svd","HQ secondary vertex displacement",100,0,1);
+//TH1F* ////HQ_TTZ_svd = new TH1F("////HQ_TTZ_svd","HQ secondary vertex displacement",100,0,1);
 
-TH1F* HQ_WW_svd = new TH1F("HQ_WW_svd","HQ secondary vertex displacement",100,0,1);
+//TH1F* //HQ_WW_svd = new TH1F("//HQ_WW_svd","HQ secondary vertex displacement",100,0,1);
 
-TH1F* HQ_WZ_svd = new TH1F("HQ_WZ_svd","HQ secondary vertex displacement",100,0,1);
+//TH1F* //HQ_WZ_svd = new TH1F("//HQ_WZ_svd","HQ secondary vertex displacement",100,0,1);
 
 TH1F* HQ_LW200_svd = new TH1F("HQ_LW200_svd","HQ secondary vertex displacement",100,0,1);
 
-//TH1F* HQ_LW300_svd = new TH1F("HQ_LW300_svd","HQ secondary vertex displacement",100,0,1);
+//TH1F* //HQ_LW300_svd = new TH1F("//HQ_LW300_svd","HQ secondary vertex displacement",100,0,1);
 
 //TH1F* HQ_LW400_svd = new TH1F("HQ_LW400_svd","HQ secondary vertex displacement",100,0,1);
 
@@ -1244,15 +1244,15 @@ TH1F* HQ_W2J_JetMass = new TH1F("HQ_W2J_JetMass","HQ Invariant mass from DiJets"
 
 TH1F* HQ_W1J_JetMass = new TH1F("HQ_W1J_JetMass","HQ Invariant mass from DiJets",100,0,400);
 
-TH1F* HQ_TTZ_JetMass = new TH1F("HQ_TTZ_JetMass","HQ Invariant mass from DiJets",100,0,400);
+//TH1F* ////HQ_TTZ_JetMass = new TH1F("////HQ_TTZ_JetMass","HQ Invariant mass from DiJets",100,0,400);
 
-TH1F* HQ_WW_JetMass = new TH1F("HQ_WW_JetMass","HQ Invariant mass from DiJets",100,0,400);
+//TH1F* //HQ_WW_JetMass = new TH1F("//HQ_WW_JetMass","HQ Invariant mass from DiJets",100,0,400);
 
-TH1F* HQ_WZ_JetMass = new TH1F("HQ_WZ_JetMass","HQ Invariant mass from DiJets",100,0,400);
+//TH1F* //HQ_WZ_JetMass = new TH1F("//HQ_WZ_JetMass","HQ Invariant mass from DiJets",100,0,400);
 
 TH1F* HQ_LW200_JetMass = new TH1F("HQ_LW200_JetMass","HQ Invariant mass from DiJets",100,0,400);
 
-//TH1F* HQ_LW300_JetMass = new TH1F("HQ_LW300_JetMass","HQ Invariant mass from DiJets",100,0,400);
+//TH1F* //HQ_LW300_JetMass = new TH1F("//HQ_LW300_JetMass","HQ Invariant mass from DiJets",100,0,400);
 
 //TH1F* HQ_LW400_JetMass = new TH1F("HQ_LW400_JetMass","HQ Invariant mass from DiJets",100,0,400);
 
@@ -1272,15 +1272,15 @@ TH1F* HQ_W2J_LWMass = new TH1F("HQ_W2J_LWMass","HQ Invariant mass from LW",100,0
 
 TH1F* HQ_W1J_LWMass = new TH1F("HQ_W1J_LWMass","HQ Invariant mass from LW",100,0,400);
 
-TH1F* HQ_TTZ_LWMass = new TH1F("HQ_TTZ_LWMass","HQ Invariant mass from LW",100,0,400);
+//TH1F* ////HQ_TTZ_LWMass = new TH1F("////HQ_TTZ_LWMass","HQ Invariant mass from LW",100,0,400);
 
-TH1F* HQ_WW_LWMass = new TH1F("HQ_WW_LWMass","HQ Invariant mass from LW",100,0,400);
+//TH1F* //HQ_WW_LWMass = new TH1F("//HQ_WW_LWMass","HQ Invariant mass from LW",100,0,400);
 
-TH1F* HQ_WZ_LWMass = new TH1F("HQ_WZ_LWMass","HQ Invariant mass from LW",100,0,400);
+//TH1F* //HQ_WZ_LWMass = new TH1F("//HQ_WZ_LWMass","HQ Invariant mass from LW",100,0,400);
 
 TH1F* HQ_LW200_LWMass = new TH1F("HQ_LW200_LWMass","HQ Invariant mass from LW",100,0,400);
 
-//TH1F* HQ_LW300_LWMass = new TH1F("HQ_LW300_LWMass","HQ Invariant mass from LW",100,0,400);
+//TH1F* //HQ_LW300_LWMass = new TH1F("//HQ_LW300_LWMass","HQ Invariant mass from LW",100,0,400);
 
 //TH1F* HQ_LW400_LWMass = new TH1F("HQ_LW400_LWMass","HQ Invariant mass from LW",100,0,400);
 
@@ -1300,15 +1300,15 @@ TH1F* HQ_W2J_Elept = new TH1F("HQ_W2J_Elept","HQ Electron pt distribution",100,0
 
 TH1F* HQ_W1J_Elept = new TH1F("HQ_W1J_Elept","HQ Electron pt distribution",100,0,200);
 
-TH1F* HQ_TTZ_Elept = new TH1F("HQ_TTZ_Elept","HQ Electron pt distribution",100,0,200);
+//TH1F* ////HQ_TTZ_Elept = new TH1F("////HQ_TTZ_Elept","HQ Electron pt distribution",100,0,200);
 
-TH1F* HQ_WW_Elept = new TH1F("HQ_WW_Elept","HQ Electron pt distribution",100,0,200);
+//TH1F* //HQ_WW_Elept = new TH1F("//HQ_WW_Elept","HQ Electron pt distribution",100,0,200);
 
-TH1F* HQ_WZ_Elept = new TH1F("HQ_WZ_Elept","HQ Electron pt distribution",100,0,200);
+//TH1F* //HQ_WZ_Elept = new TH1F("//HQ_WZ_Elept","HQ Electron pt distribution",100,0,200);
 
 TH1F* HQ_LW200_Elept = new TH1F("HQ_LW200_Elept","HQ Electron pt distribution",100,0,200);
 
-//TH1F* HQ_LW300_Elept = new TH1F("HQ_LW300_Elept","HQ Electron pt distribution",100,0,200);
+//TH1F* //HQ_LW300_Elept = new TH1F("//HQ_LW300_Elept","HQ Electron pt distribution",100,0,200);
 
 //TH1F* HQ_LW400_Elept = new TH1F("HQ_LW400_Elept","HQ Electron pt distribution",100,0,200);
 
@@ -1328,15 +1328,15 @@ TH1F* HQ_W2J_DieledR = new TH1F("HQ_W2J_DieledR","HQ delta R separation between 
 
 TH1F* HQ_W1J_DieledR = new TH1F("HQ_W1J_DieledR","HQ delta R separation between electrons",100,0,8);
 
-TH1F* HQ_TTZ_DieledR = new TH1F("HQ_TTZ_DieledR","HQ delta R separation between electrons",100,0,8);
+//TH1F* ////HQ_TTZ_DieledR = new TH1F("////HQ_TTZ_DieledR","HQ delta R separation between electrons",100,0,8);
 
-TH1F* HQ_WW_DieledR = new TH1F("HQ_WW_DieledR","HQ delta R separation between electrons",100,0,8);
+//TH1F* //HQ_WW_DieledR = new TH1F("//HQ_WW_DieledR","HQ delta R separation between electrons",100,0,8);
 
-TH1F* HQ_WZ_DieledR = new TH1F("HQ_WZ_DieledR","HQ delta R separation between electrons",100,0,8);
+//TH1F* //HQ_WZ_DieledR = new TH1F("//HQ_WZ_DieledR","HQ delta R separation between electrons",100,0,8);
 
 TH1F* HQ_LW200_DieledR = new TH1F("HQ_LW200_DieledR","HQ delta R separation between electrons",100,0,8);
 
-//TH1F* HQ_LW300_DieledR = new TH1F("HQ_LW300_DieledR","HQ delta R separation between electrons",100,0,8);
+//TH1F* //HQ_LW300_DieledR = new TH1F("//HQ_LW300_DieledR","HQ delta R separation between electrons",100,0,8);
 
 //TH1F* HQ_LW400_DieledR = new TH1F("HQ_LW400_DieledR","HQ delta R separation between electrons",100,0,8);
 
@@ -1356,15 +1356,15 @@ TH1F* HQ_W2J_LWdR = new TH1F("HQ_W2J_LWdR","HQ delta R separation between electr
 
 TH1F* HQ_W1J_LWdR = new TH1F("HQ_W1J_LWdR","HQ delta R separation between electrons and jets",100,0,8);
 
-TH1F* HQ_TTZ_LWdR = new TH1F("HQ_TTZ_LWdR","HQ delta R separation between electrons and jets",100,0,8);
+//TH1F* ////HQ_TTZ_LWdR = new TH1F("////HQ_TTZ_LWdR","HQ delta R separation between electrons and jets",100,0,8);
 
-TH1F* HQ_WW_LWdR = new TH1F("HQ_WW_LWdR","HQ delta R separation between electrons and jets",100,0,8);
+//TH1F* //HQ_WW_LWdR = new TH1F("//HQ_WW_LWdR","HQ delta R separation between electrons and jets",100,0,8);
 
-TH1F* HQ_WZ_LWdR = new TH1F("HQ_WZ_LWdR","HQ delta R separation between electrons and jets",100,0,8);
+//TH1F* //HQ_WZ_LWdR = new TH1F("//HQ_WZ_LWdR","HQ delta R separation between electrons and jets",100,0,8);
 
 TH1F* HQ_LW200_LWdR = new TH1F("HQ_LW200_LWdR","HQ delta R separation between electrons and jets",100,0,8);
 
-//TH1F* HQ_LW300_LWdR = new TH1F("HQ_LW300_LWdR","HQ delta R separation between electrons and jets",100,0,8);
+//TH1F* //HQ_LW300_LWdR = new TH1F("//HQ_LW300_LWdR","HQ delta R separation between electrons and jets",100,0,8);
 
 //TH1F* HQ_LW400_LWdR = new TH1F("HQ_LW400_LWdR","HQ delta R separation between electrons and jets",100,0,8);
 
@@ -1384,15 +1384,15 @@ TH1F* HQ_W2J_DiJetdR = new TH1F("HQ_W2J_DiJetdR","HQ delta R separation between 
 
 TH1F* HQ_W1J_DiJetdR = new TH1F("HQ_W1J_DiJetdR","HQ delta R separation between Jet Candidates",100,0,8);
 
-TH1F* HQ_TTZ_DiJetdR = new TH1F("HQ_TTZ_DiJetdR","HQ delta R separation between Jet Candidates",100,0,8);
+//TH1F* ////HQ_TTZ_DiJetdR = new TH1F("////HQ_TTZ_DiJetdR","HQ delta R separation between Jet Candidates",100,0,8);
 
-TH1F* HQ_WW_DiJetdR = new TH1F("HQ_WW_DiJetdR","HQ delta R separation between Jet Candidates",100,0,8);
+//TH1F* //HQ_WW_DiJetdR = new TH1F("//HQ_WW_DiJetdR","HQ delta R separation between Jet Candidates",100,0,8);
 
-TH1F* HQ_WZ_DiJetdR = new TH1F("HQ_WZ_DiJetdR","HQ delta R separation between Jet Candidates",100,0,8);
+//TH1F* //HQ_WZ_DiJetdR = new TH1F("//HQ_WZ_DiJetdR","HQ delta R separation between Jet Candidates",100,0,8);
 
 TH1F* HQ_LW200_DiJetdR = new TH1F("HQ_LW200_DiJetdR","HQ delta R separation between Jet Candidates",100,0,8);
 
-//TH1F* HQ_LW300_DiJetdR = new TH1F("HQ_LW300_DiJetdR","HQ delta R separation between Jet Candidates",100,0,8);
+//TH1F* //HQ_LW300_DiJetdR = new TH1F("//HQ_LW300_DiJetdR","HQ delta R separation between Jet Candidates",100,0,8);
 
 //TH1F* HQ_LW400_DiJetdR = new TH1F("HQ_LW400_DiJetdR","HQ delta R separation between Jet Candidates",100,0,8);
 
@@ -1412,15 +1412,15 @@ TH1F* HQ_W2J_BJetPt = new TH1F("HQ_W2J_BJetPt","HQ Most energetic Jet pt",100,0,
 
 TH1F* HQ_W1J_BJetPt = new TH1F("HQ_W1J_BJetPt","HQ Most energetic Jet pt",100,0,250);
 
-TH1F* HQ_TTZ_BJetPt = new TH1F("HQ_TTZ_BJetPt","HQ Most energetic Jet pt",100,0,250);
+//TH1F* ////HQ_TTZ_BJetPt = new TH1F("////HQ_TTZ_BJetPt","HQ Most energetic Jet pt",100,0,250);
 
-TH1F* HQ_WW_BJetPt = new TH1F("HQ_WW_BJetPt","HQ Most energetic Jet pt",100,0,250);
+//TH1F* //HQ_WW_BJetPt = new TH1F("//HQ_WW_BJetPt","HQ Most energetic Jet pt",100,0,250);
 
-TH1F* HQ_WZ_BJetPt = new TH1F("HQ_WZ_BJetPt","HQ Most energetic Jet pt",100,0,250);
+//TH1F* //HQ_WZ_BJetPt = new TH1F("//HQ_WZ_BJetPt","HQ Most energetic Jet pt",100,0,250);
 
 TH1F* HQ_LW200_BJetPt = new TH1F("HQ_LW200_BJetPt","HQ Most energetic Jet pt",100,0,250);
 
-//TH1F* HQ_LW300_BJetPt = new TH1F("HQ_LW300_BJetPt","HQ Most energetic Jet pt",100,0,250);
+//TH1F* //HQ_LW300_BJetPt = new TH1F("//HQ_LW300_BJetPt","HQ Most energetic Jet pt",100,0,250);
 
 //TH1F* HQ_LW400_BJetPt = new TH1F("HQ_LW400_BJetPt","HQ Most energetic Jet pt",100,0,250);
 
@@ -1440,15 +1440,15 @@ TH1F* HQ_W2J_SBJetPt = new TH1F("HQ_W2J_SBJetPt","Second HQ Most energetic Jet p
 
 TH1F* HQ_W1J_SBJetPt = new TH1F("HQ_W1J_SBJetPt","Second HQ Most energetic Jet pt",100,0,250);
 
-TH1F* HQ_TTZ_SBJetPt = new TH1F("HQ_TTZ_SBJetPt","Second HQ Most energetic Jet pt",100,0,250);
+//TH1F* ////HQ_TTZ_SBJetPt = new TH1F("////HQ_TTZ_SBJetPt","Second HQ Most energetic Jet pt",100,0,250);
 
-TH1F* HQ_WW_SBJetPt = new TH1F("HQ_WW_SBJetPt","Second HQ Most energetic Jet pt",100,0,250);
+//TH1F* //HQ_WW_SBJetPt = new TH1F("//HQ_WW_SBJetPt","Second HQ Most energetic Jet pt",100,0,250);
 
-TH1F* HQ_WZ_SBJetPt = new TH1F("HQ_WZ_SBJetPt","Second HQ Most energetic Jet pt",100,0,250);
+//TH1F* //HQ_WZ_SBJetPt = new TH1F("//HQ_WZ_SBJetPt","Second HQ Most energetic Jet pt",100,0,250);
 
 TH1F* HQ_LW200_SBJetPt = new TH1F("HQ_LW200_SBJetPt","Second HQ Most energetic Jet pt",100,0,250);
 
-//TH1F* HQ_LW300_SBJetPt = new TH1F("HQ_LW300_SBJetPt","Second HQ Most energetic Jet pt",100,0,250);
+//TH1F* //HQ_LW300_SBJetPt = new TH1F("//HQ_LW300_SBJetPt","Second HQ Most energetic Jet pt",100,0,250);
 
 //TH1F* HQ_LW400_SBJetPt = new TH1F("HQ_LW400_SBJetPt","Second HQ Most energetic Jet pt",100,0,250);
 
@@ -1468,15 +1468,15 @@ TH1F* HQ_W2J_NJet = new TH1F("HQ_W2J_NJet","HQ Number of Jets",20,0,20);
 
 TH1F* HQ_W1J_NJet = new TH1F("HQ_W1J_NJet","HQ Number of Jets",20,0,20);
 
-TH1F* HQ_TTZ_NJet = new TH1F("HQ_TTZ_NJet","HQ Number of Jets",20,0,20);
+//TH1F* ////HQ_TTZ_NJet = new TH1F("////HQ_TTZ_NJet","HQ Number of Jets",20,0,20);
 
-TH1F* HQ_WW_NJet = new TH1F("HQ_WW_NJet","HQ Number of Jets",20,0,20);
+//TH1F* //HQ_WW_NJet = new TH1F("//HQ_WW_NJet","HQ Number of Jets",20,0,20);
 
-TH1F* HQ_WZ_NJet = new TH1F("HQ_WZ_NJet","HQ Number of Jets",20,0,20);
+//TH1F* //HQ_WZ_NJet = new TH1F("//HQ_WZ_NJet","HQ Number of Jets",20,0,20);
 
 TH1F* HQ_LW200_NJet = new TH1F("HQ_LW200_NJet","HQ Number of Jets",20,0,20);
 
-//TH1F* HQ_LW300_NJet = new TH1F("HQ_LW300_NJet","HQ Number of Jets",20,0,20);
+//TH1F* //HQ_LW300_NJet = new TH1F("//HQ_LW300_NJet","HQ Number of Jets",20,0,20);
 
 //TH1F* HQ_LW400_NJet = new TH1F("HQ_LW400_NJet","HQ Number of Jets",20,0,20);
 
@@ -1496,15 +1496,15 @@ TH1F* HQ_W2J_NEle = new TH1F("HQ_W2J_NEle","HQ Number of electrons",20,0,20);
 
 TH1F* HQ_W1J_NEle = new TH1F("HQ_W1J_NEle","HQ Number of electrons",20,0,20);
 
-TH1F* HQ_TTZ_NEle = new TH1F("HQ_TTZ_NEle","HQ Number of electrons",20,0,20);
+//TH1F* ////HQ_TTZ_NEle = new TH1F("////HQ_TTZ_NEle","HQ Number of electrons",20,0,20);
 
-TH1F* HQ_WW_NEle = new TH1F("HQ_WW_NEle","HQ Number of electrons",20,0,20);
+//TH1F* //HQ_WW_NEle = new TH1F("//HQ_WW_NEle","HQ Number of electrons",20,0,20);
 
-TH1F* HQ_WZ_NEle = new TH1F("HQ_WZ_NEle","HQ Number of electrons",20,0,20);
+//TH1F* //HQ_WZ_NEle = new TH1F("//HQ_WZ_NEle","HQ Number of electrons",20,0,20);
 
 TH1F* HQ_LW200_NEle = new TH1F("HQ_LW200_NEle","HQ Number of electrons",20,0,20);
 
-//TH1F* HQ_LW300_NEle = new TH1F("HQ_LW300_NEle","HQ Number of electrons",20,0,20);
+//TH1F* //HQ_LW300_NEle = new TH1F("//HQ_LW300_NEle","HQ Number of electrons",20,0,20);
 
 //TH1F* HQ_LW400_NEle = new TH1F("HQ_LW400_NEle","HQ Number of electrons",20,0,20);
 
@@ -1525,11 +1525,11 @@ TH1F* SG_W2J_npv = new TH1F("SG_W2J_npv","SG Number of primary vertices",25,5,30
 
 TH1F* SG_W1J_npv = new TH1F("SG_W1J_npv","SG Number of primary vertices",25,5,30);
 
-TH1F* SG_TTZ_npv = new TH1F("SG_TTZ_npv","SG Number of primary vertices",25,5,30);
+//TH1F* SG_TTZ_npv = new TH1F("SG_TTZ_npv","SG Number of primary vertices",25,5,30);
 
-TH1F* SG_WW_npv = new TH1F("SG_WW_npv","SG Number of primary vertices",25,5,30);
+//TH1F* SG_WW_npv = new TH1F("SG_WW_npv","SG Number of primary vertices",25,5,30);
 
-TH1F* SG_WZ_npv = new TH1F("SG_WZ_npv","SG Number of primary vertices",25,5,30);
+//TH1F* SG_WZ_npv = new TH1F("SG_WZ_npv","SG Number of primary vertices",25,5,30);
 
 TH1F* SG_LW200_npv = new TH1F("SG_LW200_npv","SG Number of primary vertices",25,5,30);
 
@@ -1553,11 +1553,11 @@ TH1F* SG_W2J_nsv = new TH1F("SG_W2J_nsv","SG Number of secondary vertices",20,0,
 
 TH1F* SG_W1J_nsv = new TH1F("SG_W1J_nsv","SG Number of secondary vertices",20,0,2000);
 
-TH1F* SG_TTZ_nsv = new TH1F("SG_TTZ_nsv","SG Number of secondary vertices",20,0,2000);
+//TH1F* SG_TTZ_nsv = new TH1F("SG_TTZ_nsv","SG Number of secondary vertices",20,0,2000);
 
-TH1F* SG_WW_nsv = new TH1F("SG_WW_nsv","SG Number of secondary vertices",20,0,2000);
+//TH1F* SG_WW_nsv = new TH1F("SG_WW_nsv","SG Number of secondary vertices",20,0,2000);
 
-TH1F* SG_WZ_nsv = new TH1F("SG_WZ_nsv","SG Number of secondary vertices",20,0,2000);
+//TH1F* SG_WZ_nsv = new TH1F("SG_WZ_nsv","SG Number of secondary vertices",20,0,2000);
 
 TH1F* SG_LW200_nsv = new TH1F("SG_LW200_nsv","SG Number of secondary vertices",20,0,2000);
 
@@ -1581,11 +1581,11 @@ TH1F* SG_W2J_svd = new TH1F("SG_W2J_svd","SG secondary vertex displacement",100,
 
 TH1F* SG_W1J_svd = new TH1F("SG_W1J_svd","SG secondary vertex displacement",100,0,1);
 
-TH1F* SG_TTZ_svd = new TH1F("SG_TTZ_svd","SG secondary vertex displacement",100,0,1);
+//TH1F* SG_TTZ_svd = new TH1F("SG_TTZ_svd","SG secondary vertex displacement",100,0,1);
 
-TH1F* SG_WW_svd = new TH1F("SG_WW_svd","SG secondary vertex displacement",100,0,1);
+//TH1F* SG_WW_svd = new TH1F("SG_WW_svd","SG secondary vertex displacement",100,0,1);
 
-TH1F* SG_WZ_svd = new TH1F("SG_WZ_svd","SG secondary vertex displacement",100,0,1);
+//TH1F* SG_WZ_svd = new TH1F("SG_WZ_svd","SG secondary vertex displacement",100,0,1);
 
 TH1F* SG_LW200_svd = new TH1F("SG_LW200_svd","SG secondary vertex displacement",100,0,1);
 
@@ -1609,11 +1609,11 @@ TH1F* SG_W2J_JetMass = new TH1F("SG_W2J_JetMass","SG Invariant mass from DiJets"
 
 TH1F* SG_W1J_JetMass = new TH1F("SG_W1J_JetMass","SG Invariant mass from DiJets",100,0,400);
 
-TH1F* SG_TTZ_JetMass = new TH1F("SG_TTZ_JetMass","SG Invariant mass from DiJets",100,0,400);
+//TH1F* SG_TTZ_JetMass = new TH1F("SG_TTZ_JetMass","SG Invariant mass from DiJets",100,0,400);
 
-TH1F* SG_WW_JetMass = new TH1F("SG_WW_JetMass","SG Invariant mass from DiJets",100,0,400);
+//TH1F* SG_WW_JetMass = new TH1F("SG_WW_JetMass","SG Invariant mass from DiJets",100,0,400);
 
-TH1F* SG_WZ_JetMass = new TH1F("SG_WZ_JetMass","SG Invariant mass from DiJets",100,0,400);
+//TH1F* SG_WZ_JetMass = new TH1F("SG_WZ_JetMass","SG Invariant mass from DiJets",100,0,400);
 
 TH1F* SG_LW200_JetMass = new TH1F("SG_LW200_JetMass","SG Invariant mass from DiJets",100,0,400);
 
@@ -1637,11 +1637,11 @@ TH1F* SG_W2J_LWMass = new TH1F("SG_W2J_LWMass","SG Invariant mass from LW",100,0
 
 TH1F* SG_W1J_LWMass = new TH1F("SG_W1J_LWMass","SG Invariant mass from LW",100,0,400);
 
-TH1F* SG_TTZ_LWMass = new TH1F("SG_TTZ_LWMass","SG Invariant mass from LW",100,0,400);
+//TH1F* SG_TTZ_LWMass = new TH1F("SG_TTZ_LWMass","SG Invariant mass from LW",100,0,400);
 
-TH1F* SG_WW_LWMass = new TH1F("SG_WW_LWMass","SG Invariant mass from LW",100,0,400);
+//TH1F* SG_WW_LWMass = new TH1F("SG_WW_LWMass","SG Invariant mass from LW",100,0,400);
 
-TH1F* SG_WZ_LWMass = new TH1F("SG_WZ_LWMass","SG Invariant mass from LW",100,0,400);
+//TH1F* SG_WZ_LWMass = new TH1F("SG_WZ_LWMass","SG Invariant mass from LW",100,0,400);
 
 TH1F* SG_LW200_LWMass = new TH1F("SG_LW200_LWMass","SG Invariant mass from LW",100,0,400);
 
@@ -1665,11 +1665,11 @@ TH1F* SG_W2J_Elept = new TH1F("SG_W2J_Elept","SG Electron pt distribution",100,0
 
 TH1F* SG_W1J_Elept = new TH1F("SG_W1J_Elept","SG Electron pt distribution",100,0,200);
 
-TH1F* SG_TTZ_Elept = new TH1F("SG_TTZ_Elept","SG Electron pt distribution",100,0,200);
+//TH1F* SG_TTZ_Elept = new TH1F("SG_TTZ_Elept","SG Electron pt distribution",100,0,200);
 
-TH1F* SG_WW_Elept = new TH1F("SG_WW_Elept","SG Electron pt distribution",100,0,200);
+//TH1F* SG_WW_Elept = new TH1F("SG_WW_Elept","SG Electron pt distribution",100,0,200);
 
-TH1F* SG_WZ_Elept = new TH1F("SG_WZ_Elept","SG Electron pt distribution",100,0,200);
+//TH1F* SG_WZ_Elept = new TH1F("SG_WZ_Elept","SG Electron pt distribution",100,0,200);
 
 TH1F* SG_LW200_Elept = new TH1F("SG_LW200_Elept","SG Electron pt distribution",100,0,200);
 
@@ -1693,11 +1693,11 @@ TH1F* SG_W2J_DieledR = new TH1F("SG_W2J_DieledR","SG delta R separation between 
 
 TH1F* SG_W1J_DieledR = new TH1F("SG_W1J_DieledR","SG delta R separation between electrons",100,0,8);
 
-TH1F* SG_TTZ_DieledR = new TH1F("SG_TTZ_DieledR","SG delta R separation between electrons",100,0,8);
+//TH1F* SG_TTZ_DieledR = new TH1F("SG_TTZ_DieledR","SG delta R separation between electrons",100,0,8);
 
-TH1F* SG_WW_DieledR = new TH1F("SG_WW_DieledR","SG delta R separation between electrons",100,0,8);
+//TH1F* SG_WW_DieledR = new TH1F("SG_WW_DieledR","SG delta R separation between electrons",100,0,8);
 
-TH1F* SG_WZ_DieledR = new TH1F("SG_WZ_DieledR","SG delta R separation between electrons",100,0,8);
+//TH1F* SG_WZ_DieledR = new TH1F("SG_WZ_DieledR","SG delta R separation between electrons",100,0,8);
 
 TH1F* SG_LW200_DieledR = new TH1F("SG_LW200_DieledR","SG delta R separation between electrons",100,0,8);
 
@@ -1721,11 +1721,11 @@ TH1F* SG_W2J_LWdR = new TH1F("SG_W2J_LWdR","SG delta R separation between electr
 
 TH1F* SG_W1J_LWdR = new TH1F("SG_W1J_LWdR","SG delta R separation between electrons and jets",100,0,8);
 
-TH1F* SG_TTZ_LWdR = new TH1F("SG_TTZ_LWdR","SG delta R separation between electrons and jets",100,0,8);
+//TH1F* SG_TTZ_LWdR = new TH1F("SG_TTZ_LWdR","SG delta R separation between electrons and jets",100,0,8);
 
-TH1F* SG_WW_LWdR = new TH1F("SG_WW_LWdR","SG delta R separation between electrons and jets",100,0,8);
+//TH1F* SG_WW_LWdR = new TH1F("SG_WW_LWdR","SG delta R separation between electrons and jets",100,0,8);
 
-TH1F* SG_WZ_LWdR = new TH1F("SG_WZ_LWdR","SG delta R separation between electrons and jets",100,0,8);
+//TH1F* SG_WZ_LWdR = new TH1F("SG_WZ_LWdR","SG delta R separation between electrons and jets",100,0,8);
 
 TH1F* SG_LW200_LWdR = new TH1F("SG_LW200_LWdR","SG delta R separation between electrons and jets",100,0,8);
 
@@ -1749,11 +1749,11 @@ TH1F* SG_W2J_DiJetdR = new TH1F("SG_W2J_DiJetdR","SG delta R separation between 
 
 TH1F* SG_W1J_DiJetdR = new TH1F("SG_W1J_DiJetdR","SG delta R separation between Jet Candidates",100,0,8);
 
-TH1F* SG_TTZ_DiJetdR = new TH1F("SG_TTZ_DiJetdR","SG delta R separation between Jet Candidates",100,0,8);
+//TH1F* SG_TTZ_DiJetdR = new TH1F("SG_TTZ_DiJetdR","SG delta R separation between Jet Candidates",100,0,8);
 
-TH1F* SG_WW_DiJetdR = new TH1F("SG_WW_DiJetdR","SG delta R separation between Jet Candidates",100,0,8);
+//TH1F* SG_WW_DiJetdR = new TH1F("SG_WW_DiJetdR","SG delta R separation between Jet Candidates",100,0,8);
 
-TH1F* SG_WZ_DiJetdR = new TH1F("SG_WZ_DiJetdR","SG delta R separation between Jet Candidates",100,0,8);
+//TH1F* SG_WZ_DiJetdR = new TH1F("SG_WZ_DiJetdR","SG delta R separation between Jet Candidates",100,0,8);
 
 TH1F* SG_LW200_DiJetdR = new TH1F("SG_LW200_DiJetdR","SG delta R separation between Jet Candidates",100,0,8);
 
@@ -1777,11 +1777,11 @@ TH1F* SG_W2J_BJetPt = new TH1F("SG_W2J_BJetPt","SG Most energetic Jet pt",100,0,
 
 TH1F* SG_W1J_BJetPt = new TH1F("SG_W1J_BJetPt","SG Most energetic Jet pt",100,0,250);
 
-TH1F* SG_TTZ_BJetPt = new TH1F("SG_TTZ_BJetPt","SG Most energetic Jet pt",100,0,250);
+//TH1F* SG_TTZ_BJetPt = new TH1F("SG_TTZ_BJetPt","SG Most energetic Jet pt",100,0,250);
 
-TH1F* SG_WW_BJetPt = new TH1F("SG_WW_BJetPt","SG Most energetic Jet pt",100,0,250);
+//TH1F* SG_WW_BJetPt = new TH1F("SG_WW_BJetPt","SG Most energetic Jet pt",100,0,250);
 
-TH1F* SG_WZ_BJetPt = new TH1F("SG_WZ_BJetPt","SG Most energetic Jet pt",100,0,250);
+//TH1F* SG_WZ_BJetPt = new TH1F("SG_WZ_BJetPt","SG Most energetic Jet pt",100,0,250);
 
 TH1F* SG_LW200_BJetPt = new TH1F("SG_LW200_BJetPt","SG Most energetic Jet pt",100,0,250);
 
@@ -1805,11 +1805,11 @@ TH1F* SG_W2J_SBJetPt = new TH1F("SG_W2J_SBJetPt","Second SG Most energetic Jet p
 
 TH1F* SG_W1J_SBJetPt = new TH1F("SG_W1J_SBJetPt","Second SG Most energetic Jet pt",100,0,250);
 
-TH1F* SG_TTZ_SBJetPt = new TH1F("SG_TTZ_SBJetPt","Second SG Most energetic Jet pt",100,0,250);
+//TH1F* SG_TTZ_SBJetPt = new TH1F("SG_TTZ_SBJetPt","Second SG Most energetic Jet pt",100,0,250);
 
-TH1F* SG_WW_SBJetPt = new TH1F("SG_WW_SBJetPt","Second SG Most energetic Jet pt",100,0,250);
+//TH1F* SG_WW_SBJetPt = new TH1F("SG_WW_SBJetPt","Second SG Most energetic Jet pt",100,0,250);
 
-TH1F* SG_WZ_SBJetPt = new TH1F("SG_WZ_SBJetPt","Second SG Most energetic Jet pt",100,0,250);
+//TH1F* SG_WZ_SBJetPt = new TH1F("SG_WZ_SBJetPt","Second SG Most energetic Jet pt",100,0,250);
 
 TH1F* SG_LW200_SBJetPt = new TH1F("SG_LW200_SBJetPt","Second SG Most energetic Jet pt",100,0,250);
 
@@ -1833,11 +1833,11 @@ TH1F* SG_W2J_NJet = new TH1F("SG_W2J_NJet","SG Number of Jets",20,0,20);
 
 TH1F* SG_W1J_NJet = new TH1F("SG_W1J_NJet","SG Number of Jets",20,0,20);
 
-TH1F* SG_TTZ_NJet = new TH1F("SG_TTZ_NJet","SG Number of Jets",20,0,20);
+//TH1F* SG_TTZ_NJet = new TH1F("SG_TTZ_NJet","SG Number of Jets",20,0,20);
 
-TH1F* SG_WW_NJet = new TH1F("SG_WW_NJet","SG Number of Jets",20,0,20);
+//TH1F* SG_WW_NJet = new TH1F("SG_WW_NJet","SG Number of Jets",20,0,20);
 
-TH1F* SG_WZ_NJet = new TH1F("SG_WZ_NJet","SG Number of Jets",20,0,20);
+//TH1F* SG_WZ_NJet = new TH1F("SG_WZ_NJet","SG Number of Jets",20,0,20);
 
 TH1F* SG_LW200_NJet = new TH1F("SG_LW200_NJet","SG Number of Jets",20,0,20);
 
@@ -1861,11 +1861,11 @@ TH1F* SG_W2J_NEle = new TH1F("SG_W2J_NEle","SG Number of electrons",20,0,20);
 
 TH1F* SG_W1J_NEle = new TH1F("SG_W1J_NEle","SG Number of electrons",20,0,20);
 
-TH1F* SG_TTZ_NEle = new TH1F("SG_TTZ_NEle","SG Number of electrons",20,0,20);
+//TH1F* SG_TTZ_NEle = new TH1F("SG_TTZ_NEle","SG Number of electrons",20,0,20);
 
-TH1F* SG_WW_NEle = new TH1F("SG_WW_NEle","SG Number of electrons",20,0,20);
+//TH1F* SG_WW_NEle = new TH1F("SG_WW_NEle","SG Number of electrons",20,0,20);
 
-TH1F* SG_WZ_NEle = new TH1F("SG_WZ_NEle","SG Number of electrons",20,0,20);
+//TH1F* SG_WZ_NEle = new TH1F("SG_WZ_NEle","SG Number of electrons",20,0,20);
 
 TH1F* SG_LW200_NEle = new TH1F("SG_LW200_NEle","SG Number of electrons",20,0,20);
 
@@ -1905,7 +1905,8 @@ public :
   Float_t          theweight;
 
   //array to keep histograms to be written and easily loop over them
-  TH1F            *hists[nhists];
+  //TH1F            *hists[nhists];
+  std::vector<TH1F*> hists;
 
   // Declaration of example leaf types
   Int_t           run;
@@ -2061,737 +2062,920 @@ EventLoopAnalysisTemplate::EventLoopAnalysisTemplate(TString thefile, TString th
 
 
   //Load histograms for signal region
-  hists[0] = NF_dataRunB_npv;
-  hists[1] = NF_dataRunC_npv;
-  hists[2] = NF_ZLL_npv;
-  hists[3] = NF_TT_npv;
-  hists[4] = NF_W3J_npv;
-  hists[5] = NF_W2J_npv;
-  hists[6] = NF_W1J_npv;
-  hists[21] = NF_LW200_npv;
-  hists[7] = NF_dataRunB_JetMass;
-  hists[8] = NF_dataRunC_JetMass;
-  hists[9] = NF_ZLL_JetMass;
-  hists[10] = NF_TT_JetMass;
-  hists[11] = NF_W3J_JetMass;
-  hists[12] = NF_W2J_JetMass;
-  hists[13] = NF_W1J_JetMass;
-  hists[22] = NF_LW200_JetMass;
-  hists[14] = NF_dataRunB_LWMass;
-  hists[15] = NF_dataRunC_LWMass;
-  hists[16] = NF_ZLL_LWMass;
-  hists[17] = NF_TT_LWMass;
-  hists[18] = NF_W3J_LWMass;
-  hists[19] = NF_W2J_LWMass;
-  hists[20] = NF_W1J_LWMass;
-  hists[23] = NF_LW200_LWMass;
-  hists[24] = NF_WW_npv;
-  hists[25] = NF_WZ_npv;
-  hists[26] = NF_TTZ_npv;
-  hists[27] = NF_WW_JetMass;
-  hists[28] = NF_WZ_JetMass;
-  hists[29] = NF_TTZ_JetMass;
-  hists[30] = NF_WW_LWMass;
-  hists[31] = NF_WZ_LWMass;
-  hists[32] = NF_TTZ_LWMass;
-  hists[33] = NF_LW300_LWMass;
-  //hists[34] = NF_LW400_LWMass;
-  //hists[35] = NF_LW500_LWMass;
-  hists[34] = NF_LW300_JetMass;
-  //hists[37] = NF_LW400_JetMass;
-  //hists[38] = NF_LW500_JetMass;
-  hists[35] = NF_LW300_npv;
-  //hists[40] = NF_LW400_npv;
-  //hists[41] = NF_LW500_npv;
-  hists[36] = NF_dataRunB_nsv;
-  hists[37] = NF_dataRunC_nsv;
-  hists[38] = NF_ZLL_nsv;
-  hists[39] = NF_TT_nsv;
-  hists[40] = NF_W3J_nsv;
-  hists[41] = NF_W2J_nsv;
-  hists[42] = NF_W1J_nsv;
-  hists[43] = NF_WW_nsv;
-  hists[44] = NF_WZ_nsv;
-  hists[45] = NF_TTZ_nsv;
-  hists[46] = NF_LW200_nsv;
-  hists[47] = NF_LW200_nsv;
-  //hists[40] = NF_LW400_nsv;
-  //hists[41] = NF_LW500_nsv;
-  hists[48] = NF_dataRunB_svd;
-  hists[49] = NF_dataRunC_svd;
-  hists[50] = NF_ZLL_svd;
-  hists[51] = NF_TT_svd;
-  hists[52] = NF_W3J_svd;
-  hists[53] = NF_W2J_svd;
-  hists[54] = NF_W1J_svd;
-  hists[55] = NF_WW_svd;
-  hists[56] = NF_WZ_svd;
-  hists[57] = NF_TTZ_svd;
-  hists[58] = NF_LW200_svd;
-  hists[59] = NF_LW200_svd;
-  //hists[40] = NF_LW400_svd;
-  //hists[41] = NF_LW500_svd;
-  hists[60] = NF_dataRunB_Elept;
-  hists[61] = NF_dataRunC_Elept;
-  hists[62] = NF_ZLL_Elept;
-  hists[63] = NF_TT_Elept;
-  hists[64] = NF_W3J_Elept;
-  hists[65] = NF_W2J_Elept;
-  hists[66] = NF_W1J_Elept;
-  hists[67] = NF_WW_Elept;
-  hists[68] = NF_WZ_Elept;
-  hists[69] = NF_TTZ_Elept;
-  hists[70] = NF_LW200_Elept;
-  hists[71] = NF_LW200_Elept;
-  //hists[40] = NF_LW400_svd;
-  //hists[41] = NF_LW500_svd;
-  hists[72] = NF_dataRunB_DieledR;
-  hists[73] = NF_dataRunC_DieledR;
-  hists[74] = NF_ZLL_DieledR;
-  hists[75] = NF_TT_DieledR;
-  hists[76] = NF_W3J_DieledR;
-  hists[77] = NF_W2J_DieledR;
-  hists[78] = NF_W1J_DieledR;
-  hists[79] = NF_WW_DieledR;
-  hists[80] = NF_WZ_DieledR;
-  hists[81] = NF_TTZ_DieledR;
-  hists[82] = NF_LW200_DieledR;
-  hists[83] = NF_LW200_DieledR;
-  //hists[40] = NF_LW400_svd;
-  //hists[41] = NF_LW500_svd;
-  hists[84] = NF_dataRunB_LWdR;
-  hists[85] = NF_dataRunC_LWdR;
-  hists[86] = NF_ZLL_LWdR;
-  hists[87] = NF_TT_LWdR;
-  hists[88] = NF_W3J_LWdR;
-  hists[89] = NF_W2J_LWdR;
-  hists[90] = NF_W1J_LWdR;
-  hists[91] = NF_WW_LWdR;
-  hists[92] = NF_WZ_LWdR;
-  hists[93] = NF_TTZ_LWdR;
-  hists[94] = NF_LW200_LWdR;
-  hists[95] = NF_LW200_LWdR;
-  //hists[40] = NF_LW400_svd;
-  //hists[41] = NF_LW500_svd;
-  hists[96] = NF_dataRunB_DiJetdR;
-  hists[97] = NF_dataRunC_DiJetdR;
-  hists[98] = NF_ZLL_DiJetdR;
-  hists[99] = NF_TT_DiJetdR;
-  hists[100] = NF_W3J_DiJetdR;
-  hists[101] = NF_W2J_DiJetdR;
-  hists[102] = NF_W1J_DiJetdR;
-  hists[103] = NF_WW_DiJetdR;
-  hists[104] = NF_WZ_DiJetdR;
-  hists[105] = NF_TTZ_DiJetdR;
-  hists[106] = NF_LW200_DiJetdR;
-  hists[107] = NF_LW200_DiJetdR;
-  //hists[40] = NF_LW400_svd;
-  //hists[41] = NF_LW500_svd;
-  hists[108] = NF_dataRunB_BJetPt;
-  hists[109] = NF_dataRunC_BJetPt;
-  hists[110] = NF_ZLL_BJetPt;
-  hists[111] = NF_TT_BJetPt;
-  hists[112] = NF_W3J_BJetPt;
-  hists[113] = NF_W2J_BJetPt;
-  hists[114] = NF_W1J_BJetPt;
-  hists[115] = NF_WW_BJetPt;
-  hists[116] = NF_WZ_BJetPt;
-  hists[117] = NF_TTZ_BJetPt;
-  hists[118] = NF_LW200_BJetPt;
-  hists[119] = NF_LW200_BJetPt;
-  //hists[40] = NF_LW400_svd;
-  //hists[41] = NF_LW500_svd;
-  hists[120] = NF_dataRunB_SBJetPt;
-  hists[121] = NF_dataRunC_SBJetPt;
-  hists[122] = NF_ZLL_SBJetPt;
-  hists[123] = NF_TT_SBJetPt;
-  hists[124] = NF_W3J_SBJetPt;
-  hists[125] = NF_W2J_SBJetPt;
-  hists[126] = NF_W1J_SBJetPt;
-  hists[127] = NF_WW_SBJetPt;
-  hists[128] = NF_WZ_SBJetPt;
-  hists[129] = NF_TTZ_SBJetPt;
-  hists[130] = NF_LW200_SBJetPt;
-  hists[131] = NF_LW200_SBJetPt;
-  //hists[40] = NF_LW400_svd;
-  //hists[41] = NF_LW500_svd;
-  hists[132] = NF_dataRunB_NJet;
-  hists[133] = NF_dataRunC_NJet;
-  hists[134] = NF_ZLL_NJet;
-  hists[135] = NF_TT_NJet;
-  hists[136] = NF_W3J_NJet;
-  hists[137] = NF_W2J_NJet;
-  hists[138] = NF_W1J_NJet;
-  hists[139] = NF_WW_NJet;
-  hists[140] = NF_WZ_NJet;
-  hists[141] = NF_TTZ_NJet;
-  hists[142] = NF_LW200_NJet;
-  hists[143] = NF_LW200_NJet;
-  //hists[40] = NF_LW400_svd;
-  //hists[41] = NF_LW500_svd;
-  hists[144] = NF_dataRunB_NEle;
-  hists[145] = NF_dataRunC_NEle;
-  hists[146] = NF_ZLL_NEle;
-  hists[147] = NF_TT_NEle;
-  hists[148] = NF_W3J_NEle;
-  hists[149] = NF_W2J_NEle;
-  hists[150] = NF_W1J_NEle;
-  hists[151] = NF_WW_NEle;
-  hists[152] = NF_WZ_NEle;
-  hists[153] = NF_TTZ_NEle;
-  hists[154] = NF_LW200_NEle;
-  hists[155] = NF_LW200_NEle;
-  //hists[40] = NF_LW400_svd;
-  //hists[41] = NF_LW500_svd;
+  hists.push_back(NF_dataRunB_npv);
+  hists.push_back(NF_dataRunC_npv);
+  hists.push_back(NF_ZLL_npv);
+  hists.push_back(NF_TT_npv);
+  hists.push_back(NF_W3J_npv);
+  hists.push_back(NF_W2J_npv);
+  hists.push_back(NF_W1J_npv);
+  hists.push_back(NF_LW200_npv);
+  hists.push_back(NF_dataRunB_JetMass);
+  hists.push_back(NF_dataRunC_JetMass);
+  hists.push_back(NF_ZLL_JetMass);
+  hists.push_back(NF_TT_JetMass);
+  hists.push_back(NF_W3J_JetMass);
+  hists.push_back(NF_W2J_JetMass);
+  hists.push_back(NF_W1J_JetMass);
+  hists.push_back(NF_LW200_JetMass);
+  hists.push_back(NF_dataRunB_LWMass);
+  hists.push_back(NF_dataRunC_LWMass);
+  hists.push_back(NF_ZLL_LWMass);
+  hists.push_back(NF_TT_LWMass);
+  hists.push_back(NF_W3J_LWMass);
+  hists.push_back(NF_W2J_LWMass);
+  hists.push_back(NF_W1J_LWMass);
+  hists.push_back(NF_LW200_LWMass);
+  //hists.push_back(//NF_WW_npv);
+  //hists.push_back(//NF_WZ_npv);
+  //hists.push_back(//NF_TTZ_npv);
+  //hists.push_back(//NF_WW_JetMass);
+  //hists.push_back(//NF_WZ_JetMass);
+  //hists.push_back(//NF_TTZ_JetMass);
+  //hists.push_back(//NF_WW_LWMass);
+  //hists.push_back(//NF_WZ_LWMass);
+  //hists.push_back(//NF_TTZ_LWMass);
+  //hists.push_back(//NF_LW300_LWMass);
+  //hists.push_back(NF_LW400_LWMass);
+  //hists.push_back(NF_LW500_LWMass);
+  //hists.push_back(//NF_LW300_JetMass);
+  //hists.push_back(NF_LW400_JetMass);
+  //hists.push_back(NF_LW500_JetMass);
+  //hists.push_back(//NF_LW300_npv);
+  //hists.push_back(NF_LW400_npv);
+  //hists.push_back(NF_LW500_npv);
+  hists.push_back(NF_dataRunB_nsv);
+  hists.push_back(NF_dataRunC_nsv);
+  hists.push_back(NF_ZLL_nsv);
+  hists.push_back(NF_TT_nsv);
+  hists.push_back(NF_W3J_nsv);
+  hists.push_back(NF_W2J_nsv);
+  hists.push_back(NF_W1J_nsv);
+  //hists.push_back(//NF_WW_nsv);
+  //hists.push_back(//NF_WZ_nsv);
+  //hists.push_back(//NF_TTZ_nsv);
+  hists.push_back(NF_LW200_nsv);
+  hists.push_back(NF_LW200_nsv);
+  //hists.push_back(NF_LW400_nsv);
+  //hists.push_back(NF_LW500_nsv);
+  hists.push_back(NF_dataRunB_svd);
+  hists.push_back(NF_dataRunC_svd);
+  hists.push_back(NF_ZLL_svd);
+  hists.push_back(NF_TT_svd);
+  hists.push_back(NF_W3J_svd);
+  hists.push_back(NF_W2J_svd);
+  hists.push_back(NF_W1J_svd);
+  //hists.push_back(//NF_WW_svd);
+  //hists.push_back(//NF_WZ_svd);
+  //hists.push_back(//NF_TTZ_svd);
+  hists.push_back(NF_LW200_svd);
+  hists.push_back(NF_LW200_svd);
+  //hists.push_back(NF_LW400_svd);
+  //hists.push_back(NF_LW500_svd);
+  hists.push_back(NF_dataRunB_Elept);
+  hists.push_back(NF_dataRunC_Elept);
+  hists.push_back(NF_ZLL_Elept);
+  hists.push_back(NF_TT_Elept);
+  hists.push_back(NF_W3J_Elept);
+  hists.push_back(NF_W2J_Elept);
+  hists.push_back(NF_W1J_Elept);
+  //hists.push_back(//NF_WW_Elept);
+  //hists.push_back(//NF_WZ_Elept);
+  //hists.push_back(//NF_TTZ_Elept);
+  hists.push_back(NF_LW200_Elept);
+  hists.push_back(NF_LW200_Elept);
+  //hists.push_back(NF_LW400_svd);
+  //hists.push_back(NF_LW500_svd);
+  hists.push_back(NF_dataRunB_DieledR);
+  hists.push_back(NF_dataRunC_DieledR);
+  hists.push_back(NF_ZLL_DieledR);
+  hists.push_back(NF_TT_DieledR);
+  hists.push_back(NF_W3J_DieledR);
+  hists.push_back(NF_W2J_DieledR);
+  hists.push_back(NF_W1J_DieledR);
+  //hists.push_back(//NF_WW_DieledR);
+  //hists.push_back(//NF_WZ_DieledR);
+  //hists.push_back(//NF_TTZ_DieledR);
+  hists.push_back(NF_LW200_DieledR);
+  hists.push_back(NF_LW200_DieledR);
+  //hists.push_back(NF_LW400_svd);
+  //hists.push_back(NF_LW500_svd);
+  hists.push_back(NF_dataRunB_LWdR);
+  hists.push_back(NF_dataRunC_LWdR);
+  hists.push_back(NF_ZLL_LWdR);
+  hists.push_back(NF_TT_LWdR);
+  hists.push_back(NF_W3J_LWdR);
+  hists.push_back(NF_W2J_LWdR);
+  hists.push_back(NF_W1J_LWdR);
+  //hists.push_back(//NF_WW_LWdR);
+  //hists.push_back(//NF_WZ_LWdR);
+  //hists.push_back(//NF_TTZ_LWdR);
+  hists.push_back(NF_LW200_LWdR);
+  hists.push_back(NF_LW200_LWdR);
+  //hists.push_back(NF_LW400_svd);
+  //hists.push_back(NF_LW500_svd);
+  hists.push_back(NF_dataRunB_DiJetdR);
+  hists.push_back(NF_dataRunC_DiJetdR);
+  hists.push_back(NF_ZLL_DiJetdR);
+  hists.push_back(NF_TT_DiJetdR);
+  hists.push_back(NF_W3J_DiJetdR);
+  hists.push_back(NF_W2J_DiJetdR);
+  hists.push_back(NF_W1J_DiJetdR);
+  //hists.push_back(//NF_WW_DiJetdR);
+  //hists.push_back(//NF_WZ_DiJetdR);
+  //hists.push_back(//NF_TTZ_DiJetdR);
+  hists.push_back(NF_LW200_DiJetdR);
+  hists.push_back(NF_LW200_DiJetdR);
+  //hists.push_back(NF_LW400_svd);
+  //hists.push_back(NF_LW500_svd);
+  hists.push_back(NF_dataRunB_BJetPt);
+  hists.push_back(NF_dataRunC_BJetPt);
+  hists.push_back(NF_ZLL_BJetPt);
+  hists.push_back(NF_TT_BJetPt);
+  hists.push_back(NF_W3J_BJetPt);
+  hists.push_back(NF_W2J_BJetPt);
+  hists.push_back(NF_W1J_BJetPt);
+  //hists.push_back(//NF_WW_BJetPt);
+  //hists.push_back(//NF_WZ_BJetPt);
+  //hists.push_back(//NF_TTZ_BJetPt);
+  hists.push_back(NF_LW200_BJetPt);
+  hists.push_back(NF_LW200_BJetPt);
+  //hists.push_back(NF_LW400_svd);
+  //hists.push_back(NF_LW500_svd);
+  hists.push_back(NF_dataRunB_SBJetPt);
+  hists.push_back(NF_dataRunC_SBJetPt);
+  hists.push_back(NF_ZLL_SBJetPt);
+  hists.push_back(NF_TT_SBJetPt);
+  hists.push_back(NF_W3J_SBJetPt);
+  hists.push_back(NF_W2J_SBJetPt);
+  hists.push_back(NF_W1J_SBJetPt);
+  //hists.push_back(//NF_WW_SBJetPt);
+  //hists.push_back(//NF_WZ_SBJetPt);
+  //hists.push_back(//NF_TTZ_SBJetPt);
+  hists.push_back(NF_LW200_SBJetPt);
+  hists.push_back(NF_LW200_SBJetPt);
+  //hists.push_back(NF_LW400_svd);
+  //hists.push_back(NF_LW500_svd);
+  hists.push_back(NF_dataRunB_NJet);
+  hists.push_back(NF_dataRunC_NJet);
+  hists.push_back(NF_ZLL_NJet);
+  hists.push_back(NF_TT_NJet);
+  hists.push_back(NF_W3J_NJet);
+  hists.push_back(NF_W2J_NJet);
+  hists.push_back(NF_W1J_NJet);
+  //hists.push_back(//NF_WW_NJet);
+  //hists.push_back(//NF_WZ_NJet);
+  //hists.push_back(//NF_TTZ_NJet);
+  hists.push_back(NF_LW200_NJet);
+  hists.push_back(NF_LW200_NJet);
+  //hists.push_back(NF_LW400_svd);
+  //hists.push_back(NF_LW500_svd);
+  hists.push_back(NF_dataRunB_NEle);
+  hists.push_back(NF_dataRunC_NEle);
+  hists.push_back(NF_ZLL_NEle);
+  hists.push_back(NF_TT_NEle);
+  hists.push_back(NF_W3J_NEle);
+  hists.push_back(NF_W2J_NEle);
+  hists.push_back(NF_W1J_NEle);
+  //hists.push_back(//NF_WW_NEle);
+  //hists.push_back(//NF_WZ_NEle);
+  //hists.push_back(//NF_TTZ_NEle);
+  hists.push_back(NF_LW200_NEle);
+  hists.push_back(NF_LW200_NEle);
+  //hists.push_back(NF_LW400_svd);
+  //hists.push_back(NF_LW500_svd);
 
-  hists[156] = TF_dataRunB_npv;
-  hists[157] = TF_dataRunC_npv;
-  hists[158] = TF_ZLL_npv;
-  hists[159] = TF_TT_npv;
-  hists[160] = TF_W3J_npv;
-  hists[161] = TF_W2J_npv;
-  hists[162] = TF_W1J_npv;
-  hists[163] = TF_LW200_npv;
-  hists[164] = TF_dataRunB_JetMass;
-  hists[165] = TF_dataRunC_JetMass;
-  hists[166] = TF_ZLL_JetMass;
-  hists[167] = TF_TT_JetMass;
-  hists[168] = TF_W3J_JetMass;
-  hists[169] = TF_W2J_JetMass;
-  hists[170] = TF_W1J_JetMass;
-  hists[171] = TF_LW200_JetMass;
-  hists[172] = TF_dataRunB_LWMass;
-  hists[173] = TF_dataRunC_LWMass;
-  hists[174] = TF_ZLL_LWMass;
-  hists[175] = TF_TT_LWMass;
-  hists[176] = TF_W3J_LWMass;
-  hists[177] = TF_W2J_LWMass;
-  hists[178] = TF_W1J_LWMass;
-  hists[179] = TF_LW200_LWMass;
-  hists[180] = TF_WW_npv;
-  hists[181] = TF_WZ_npv;
-  hists[182] = TF_TTZ_npv;
-  hists[183] = TF_WW_JetMass;
-  hists[184] = TF_WZ_JetMass;
-  hists[185] = TF_TTZ_JetMass;
-  hists[186] = TF_WW_LWMass;
-  hists[187] = TF_WZ_LWMass;
-  hists[188] = TF_TTZ_LWMass;
-  hists[189] = TF_LW300_LWMass;
-  //hists[34] = TF_LW400_LWMass;
-  //hists[35] = TF_LW500_LWMass;
-  hists[190] = TF_LW300_JetMass;
-  //hists[37] = TF_LW400_JetMass;
-  //hists[38] = TF_LW500_JetMass;
-  hists[191] = TF_LW300_npv;
-  //hists[40] = TF_LW400_npv;
-  //hists[41] = TF_LW500_npv;
-  hists[192] = TF_dataRunB_nsv;
-  hists[193] = TF_dataRunC_nsv;
-  hists[194] = TF_ZLL_nsv;
-  hists[195] = TF_TT_nsv;
-  hists[196] = TF_W3J_nsv;
-  hists[197] = TF_W2J_nsv;
-  hists[198] = TF_W1J_nsv;
-  hists[199] = TF_WW_nsv;
-  hists[200] = TF_WZ_nsv;
-  hists[201] = TF_TTZ_nsv;
-  hists[202] = TF_LW200_nsv;
-  hists[203] = TF_LW200_nsv;
-  //hists[40] = TF_LW400_nsv;
-  //hists[41] = TF_LW500_nsv;
-  hists[204] = TF_dataRunB_svd;
-  hists[205] = TF_dataRunC_svd;
-  hists[206] = TF_ZLL_svd;
-  hists[207] = TF_TT_svd;
-  hists[208] = TF_W3J_svd;
-  hists[209] = TF_W2J_svd;
-  hists[210] = TF_W1J_svd;
-  hists[211] = TF_WW_svd;
-  hists[212] = TF_WZ_svd;
-  hists[213] = TF_TTZ_svd;
-  hists[214] = TF_LW200_svd;
-  hists[215] = TF_LW200_svd;
-  //hists[40] = TF_LW400_svd;
-  //hists[41] = TF_LW500_svd;
-  hists[216] = TF_dataRunB_Elept;
-  hists[217] = TF_dataRunC_Elept;
-  hists[218] = TF_ZLL_Elept;
-  hists[219] = TF_TT_Elept;
-  hists[220] = TF_W3J_Elept;
-  hists[221] = TF_W2J_Elept;
-  hists[222] = TF_W1J_Elept;
-  hists[223] = TF_WW_Elept;
-  hists[224] = TF_WZ_Elept;
-  hists[225] = TF_TTZ_Elept;
-  hists[226] = TF_LW200_Elept;
-  hists[227] = TF_LW200_Elept;
-  //hists[40] = TF_LW400_svd;
-  //hists[41] = TF_LW500_svd;
-  hists[228] = TF_dataRunB_DieledR;
-  hists[229] = TF_dataRunC_DieledR;
-  hists[230] = TF_ZLL_DieledR;
-  hists[231] = TF_TT_DieledR;
-  hists[232] = TF_W3J_DieledR;
-  hists[233] = TF_W2J_DieledR;
-  hists[234] = TF_W1J_DieledR;
-  hists[235] = TF_WW_DieledR;
-  hists[236] = TF_WZ_DieledR;
-  hists[237] = TF_TTZ_DieledR;
-  hists[238] = TF_LW200_DieledR;
-  hists[239] = TF_LW200_DieledR;
-  //hists[40] = TF_LW400_svd;
-  //hists[41] = TF_LW500_svd;
-  hists[240] = TF_dataRunB_LWdR;
-  hists[241] = TF_dataRunC_LWdR;
-  hists[242] = TF_ZLL_LWdR;
-  hists[243] = TF_TT_LWdR;
-  hists[244] = TF_W3J_LWdR;
-  hists[245] = TF_W2J_LWdR;
-  hists[246] = TF_W1J_LWdR;
-  hists[247] = TF_WW_LWdR;
-  hists[248] = TF_WZ_LWdR;
-  hists[249] = TF_TTZ_LWdR;
-  hists[250] = TF_LW200_LWdR;
-  hists[251] = TF_LW200_LWdR;
-  //hists[40] = TF_LW400_svd;
-  //hists[41] = TF_LW500_svd;
-  hists[252] = TF_dataRunB_DiJetdR;
-  hists[253] = TF_dataRunC_DiJetdR;
-  hists[254] = TF_ZLL_DiJetdR;
-  hists[255] = TF_TT_DiJetdR;
-  hists[256] = TF_W3J_DiJetdR;
-  hists[257] = TF_W2J_DiJetdR;
-  hists[258] = TF_W1J_DiJetdR;
-  hists[259] = TF_WW_DiJetdR;
-  hists[260] = TF_WZ_DiJetdR;
-  hists[261] = TF_TTZ_DiJetdR;
-  hists[262] = TF_LW200_DiJetdR;
-  hists[263] = TF_LW200_DiJetdR;
-  //hists[40] = TF_LW400_svd;
-  //hists[41] = TF_LW500_svd;
-  hists[264] = TF_dataRunB_BJetPt;
-  hists[265] = TF_dataRunC_BJetPt;
-  hists[266] = TF_ZLL_BJetPt;
-  hists[267] = TF_TT_BJetPt;
-  hists[268] = TF_W3J_BJetPt;
-  hists[269] = TF_W2J_BJetPt;
-  hists[270] = TF_W1J_BJetPt;
-  hists[271] = TF_WW_BJetPt;
-  hists[272] = TF_WZ_BJetPt;
-  hists[273] = TF_TTZ_BJetPt;
-  hists[274] = TF_LW200_BJetPt;
-  hists[275] = TF_LW200_BJetPt;
-  //hists[40] = TF_LW400_svd;
-  //hists[41] = TF_LW500_svd;
-  hists[276] = TF_dataRunB_SBJetPt;
-  hists[277] = TF_dataRunC_SBJetPt;
-  hists[278] = TF_ZLL_SBJetPt;
-  hists[279] = TF_TT_SBJetPt;
-  hists[280] = TF_W3J_SBJetPt;
-  hists[281] = TF_W2J_SBJetPt;
-  hists[282] = TF_W1J_SBJetPt;
-  hists[283] = TF_WW_SBJetPt;
-  hists[284] = TF_WZ_SBJetPt;
-  hists[285] = TF_TTZ_SBJetPt;
-  hists[286] = TF_LW200_SBJetPt;
-  hists[287] = TF_LW200_SBJetPt;
-  //hists[40] = TF_LW400_svd;
-  //hists[41] = TF_LW500_svd;
-  hists[288] = TF_dataRunB_NJet;
-  hists[289] = TF_dataRunC_NJet;
-  hists[290] = TF_ZLL_NJet;
-  hists[291] = TF_TT_NJet;
-  hists[292] = TF_W3J_NJet;
-  hists[293] = TF_W2J_NJet;
-  hists[294] = TF_W1J_NJet;
-  hists[295] = TF_WW_NJet;
-  hists[296] = TF_WZ_NJet;
-  hists[297] = TF_TTZ_NJet;
-  hists[298] = TF_LW200_NJet;
-  hists[299] = TF_LW200_NJet;
-  //hists[40] = TF_LW400_svd;
-  //hists[41] = TF_LW500_svd;
-  hists[300] = TF_dataRunB_NEle;
-  hists[301] = TF_dataRunC_NEle;
-  hists[302] = TF_ZLL_NEle;
-  hists[303] = TF_TT_NEle;
-  hists[304] = TF_W3J_NEle;
-  hists[305] = TF_W2J_NEle;
-  hists[306] = TF_W1J_NEle;
-  hists[307] = TF_WW_NEle;
-  hists[308] = TF_WZ_NEle;
-  hists[309] = TF_TTZ_NEle;
-  hists[310] = TF_LW200_NEle;
-  hists[311] = TF_LW200_NEle;
-  //hists[40] = TF_LW400_svd;
-  //hists[41] = TF_LW500_svd;
+  hists.push_back(TF_dataRunB_npv);
+  hists.push_back(TF_dataRunC_npv);
+  hists.push_back(TF_ZLL_npv);
+  hists.push_back(TF_TT_npv);
+  hists.push_back(TF_W3J_npv);
+  hists.push_back(TF_W2J_npv);
+  hists.push_back(TF_W1J_npv);
+  hists.push_back(TF_LW200_npv);
+  hists.push_back(TF_dataRunB_JetMass);
+  hists.push_back(TF_dataRunC_JetMass);
+  hists.push_back(TF_ZLL_JetMass);
+  hists.push_back(TF_TT_JetMass);
+  hists.push_back(TF_W3J_JetMass);
+  hists.push_back(TF_W2J_JetMass);
+  hists.push_back(TF_W1J_JetMass);
+  hists.push_back(TF_LW200_JetMass);
+  hists.push_back(TF_dataRunB_LWMass);
+  hists.push_back(TF_dataRunC_LWMass);
+  hists.push_back(TF_ZLL_LWMass);
+  hists.push_back(TF_TT_LWMass);
+  hists.push_back(TF_W3J_LWMass);
+  hists.push_back(TF_W2J_LWMass);
+  hists.push_back(TF_W1J_LWMass);
+  hists.push_back(TF_LW200_LWMass);
+  //hists.push_back(//TF_WW_npv);
+  //hists.push_back(//TF_WZ_npv);
+  //hists.push_back(//TF_TTZ_npv);
+  //hists.push_back(//TF_WW_JetMass);
+  //hists.push_back(//TF_WZ_JetMass);
+  //hists.push_back(//TF_TTZ_JetMass);
+  //hists.push_back(//TF_WW_LWMass);
+  //hists.push_back(//TF_WZ_LWMass);
+  //hists.push_back(//TF_TTZ_LWMass);
+  //hists.push_back(//TF_LW300_LWMass);
+  //hists.push_back(TF_LW400_LWMass);
+  //hists.push_back(TF_LW500_LWMass);
+  //hists.push_back(//TF_LW300_JetMass);
+  //hists.push_back(TF_LW400_JetMass);
+  //hists.push_back(TF_LW500_JetMass);
+  //hists.push_back(//TF_LW300_npv);
+  //hists.push_back(TF_LW400_npv);
+  //hists.push_back(TF_LW500_npv);
+  hists.push_back(TF_dataRunB_nsv);
+  hists.push_back(TF_dataRunC_nsv);
+  hists.push_back(TF_ZLL_nsv);
+  hists.push_back(TF_TT_nsv);
+  hists.push_back(TF_W3J_nsv);
+  hists.push_back(TF_W2J_nsv);
+  hists.push_back(TF_W1J_nsv);
+  //hists.push_back(//TF_WW_nsv);
+  //hists.push_back(//TF_WZ_nsv);
+  //hists.push_back(//TF_TTZ_nsv);
+  hists.push_back(TF_LW200_nsv);
+  hists.push_back(TF_LW200_nsv);
+  //hists.push_back(TF_LW400_nsv);
+  //hists.push_back(TF_LW500_nsv);
+  hists.push_back(TF_dataRunB_svd);
+  hists.push_back(TF_dataRunC_svd);
+  hists.push_back(TF_ZLL_svd);
+  hists.push_back(TF_TT_svd);
+  hists.push_back(TF_W3J_svd);
+  hists.push_back(TF_W2J_svd);
+  hists.push_back(TF_W1J_svd);
+  //hists.push_back(//TF_WW_svd);
+  //hists.push_back(//TF_WZ_svd);
+  //hists.push_back(//TF_TTZ_svd);
+  hists.push_back(TF_LW200_svd);
+  hists.push_back(TF_LW200_svd);
+  //hists.push_back(TF_LW400_svd);
+  //hists.push_back(TF_LW500_svd);
+  hists.push_back(TF_dataRunB_Elept);
+  hists.push_back(TF_dataRunC_Elept);
+  hists.push_back(TF_ZLL_Elept);
+  hists.push_back(TF_TT_Elept);
+  hists.push_back(TF_W3J_Elept);
+  hists.push_back(TF_W2J_Elept);
+  hists.push_back(TF_W1J_Elept);
+  //hists.push_back(//TF_WW_Elept);
+  //hists.push_back(//TF_WZ_Elept);
+  //hists.push_back(//TF_TTZ_Elept);
+  hists.push_back(TF_LW200_Elept);
+  hists.push_back(TF_LW200_Elept);
+  //hists.push_back(TF_LW400_svd);
+  //hists.push_back(TF_LW500_svd);
+  hists.push_back(TF_dataRunB_DieledR);
+  hists.push_back(TF_dataRunC_DieledR);
+  hists.push_back(TF_ZLL_DieledR);
+  hists.push_back(TF_TT_DieledR);
+  hists.push_back(TF_W3J_DieledR);
+  hists.push_back(TF_W2J_DieledR);
+  hists.push_back(TF_W1J_DieledR);
+  //hists.push_back(//TF_WW_DieledR);
+  //hists.push_back(//TF_WZ_DieledR);
+  //hists.push_back(//TF_TTZ_DieledR);
+  hists.push_back(TF_LW200_DieledR);
+  hists.push_back(TF_LW200_DieledR);
+  //hists.push_back(TF_LW400_svd);
+  //hists.push_back(TF_LW500_svd);
+  hists.push_back(TF_dataRunB_LWdR);
+  hists.push_back(TF_dataRunC_LWdR);
+  hists.push_back(TF_ZLL_LWdR);
+  hists.push_back(TF_TT_LWdR);
+  hists.push_back(TF_W3J_LWdR);
+  hists.push_back(TF_W2J_LWdR);
+  hists.push_back(TF_W1J_LWdR);
+  //hists.push_back(//TF_WW_LWdR);
+  //hists.push_back(//TF_WZ_LWdR);
+  //hists.push_back(//TF_TTZ_LWdR);
+  hists.push_back(TF_LW200_LWdR);
+  hists.push_back(TF_LW200_LWdR);
+  //hists.push_back(TF_LW400_svd);
+  //hists.push_back(TF_LW500_svd);
+  hists.push_back(TF_dataRunB_DiJetdR);
+  hists.push_back(TF_dataRunC_DiJetdR);
+  hists.push_back(TF_ZLL_DiJetdR);
+  hists.push_back(TF_TT_DiJetdR);
+  hists.push_back(TF_W3J_DiJetdR);
+  hists.push_back(TF_W2J_DiJetdR);
+  hists.push_back(TF_W1J_DiJetdR);
+  //hists.push_back(//TF_WW_DiJetdR);
+  //hists.push_back(//TF_WZ_DiJetdR);
+  //hists.push_back(//TF_TTZ_DiJetdR);
+  hists.push_back(TF_LW200_DiJetdR);
+  hists.push_back(TF_LW200_DiJetdR);
+  //hists.push_back(TF_LW400_svd);
+  //hists.push_back(TF_LW500_svd);
+  hists.push_back(TF_dataRunB_BJetPt);
+  hists.push_back(TF_dataRunC_BJetPt);
+  hists.push_back(TF_ZLL_BJetPt);
+  hists.push_back(TF_TT_BJetPt);
+  hists.push_back(TF_W3J_BJetPt);
+  hists.push_back(TF_W2J_BJetPt);
+  hists.push_back(TF_W1J_BJetPt);
+  //hists.push_back(//TF_WW_BJetPt);
+  //hists.push_back(//TF_WZ_BJetPt);
+  //hists.push_back(//TF_TTZ_BJetPt);
+  hists.push_back(TF_LW200_BJetPt);
+  hists.push_back(TF_LW200_BJetPt);
+  //hists.push_back(TF_LW400_svd);
+  //hists.push_back(TF_LW500_svd);
+  hists.push_back(TF_dataRunB_SBJetPt);
+  hists.push_back(TF_dataRunC_SBJetPt);
+  hists.push_back(TF_ZLL_SBJetPt);
+  hists.push_back(TF_TT_SBJetPt);
+  hists.push_back(TF_W3J_SBJetPt);
+  hists.push_back(TF_W2J_SBJetPt);
+  hists.push_back(TF_W1J_SBJetPt);
+  //hists.push_back(//TF_WW_SBJetPt);
+  //hists.push_back(//TF_WZ_SBJetPt);
+  //hists.push_back(//TF_TTZ_SBJetPt);
+  hists.push_back(TF_LW200_SBJetPt);
+  hists.push_back(TF_LW200_SBJetPt);
+  //hists.push_back(TF_LW400_svd);
+  //hists.push_back(TF_LW500_svd);
+  hists.push_back(TF_dataRunB_NJet);
+  hists.push_back(TF_dataRunC_NJet);
+  hists.push_back(TF_ZLL_NJet);
+  hists.push_back(TF_TT_NJet);
+  hists.push_back(TF_W3J_NJet);
+  hists.push_back(TF_W2J_NJet);
+  hists.push_back(TF_W1J_NJet);
+  //hists.push_back(//TF_WW_NJet);
+  //hists.push_back(//TF_WZ_NJet);
+  //hists.push_back(//TF_TTZ_NJet);
+  hists.push_back(TF_LW200_NJet);
+  hists.push_back(TF_LW200_NJet);
+  //hists.push_back(TF_LW400_svd);
+  //hists.push_back(TF_LW500_svd);
+  hists.push_back(TF_dataRunB_NEle);
+  hists.push_back(TF_dataRunC_NEle);
+  hists.push_back(TF_ZLL_NEle);
+  hists.push_back(TF_TT_NEle);
+  hists.push_back(TF_W3J_NEle);
+  hists.push_back(TF_W2J_NEle);
+  hists.push_back(TF_W1J_NEle);
+  //hists.push_back(//TF_WW_NEle);
+  //hists.push_back(//TF_WZ_NEle);
+  //hists.push_back(//TF_TTZ_NEle);
+  hists.push_back(TF_LW200_NEle);
+  hists.push_back(TF_LW200_NEle);
+  //hists.push_back(TF_LW400_svd);
+  //hists.push_back(TF_LW500_svd);
 
-  hists[312] = TO_dataRunB_npv;
-  hists[313] = TO_dataRunC_npv;
-  hists[314] = TO_ZLL_npv;
-  hists[315] = TO_TT_npv;
-  hists[316] = TO_W3J_npv;
-  hists[317] = TO_W2J_npv;
-  hists[318] = TO_W1J_npv;
-  hists[319] = TO_LW200_npv;
-  hists[320] = TO_dataRunB_JetMass;
-  hists[321] = TO_dataRunC_JetMass;
-  hists[322] = TO_ZLL_JetMass;
-  hists[323] = TO_TT_JetMass;
-  hists[324] = TO_W3J_JetMass;
-  hists[325] = TO_W2J_JetMass;
-  hists[326] = TO_W1J_JetMass;
-  hists[327] = TO_LW200_JetMass;
-  hists[328] = TO_dataRunB_LWMass;
-  hists[329] = TO_dataRunC_LWMass;
-  hists[330] = TO_ZLL_LWMass;
-  hists[331] = TO_TT_LWMass;
-  hists[332] = TO_W3J_LWMass;
-  hists[333] = TO_W2J_LWMass;
-  hists[334] = TO_W1J_LWMass;
-  hists[335] = TO_LW200_LWMass;
-  hists[336] = TO_WW_npv;
-  hists[337] = TO_WZ_npv;
-  hists[338] = TO_TTZ_npv;
-  hists[339] = TO_WW_JetMass;
-  hists[340] = TO_WZ_JetMass;
-  hists[341] = TO_TTZ_JetMass;
-  hists[342] = TO_WW_LWMass;
-  hists[343] = TO_WZ_LWMass;
-  hists[344] = TO_TTZ_LWMass;
-  hists[345] = TO_LW300_LWMass;
-  //hists[34] = TO_LW400_LWMass;
-  //hists[35] = TO_LW500_LWMass;
-  hists[346] = TO_LW300_JetMass;
-  //hists[37] = TO_LW400_JetMass;
-  //hists[38] = TO_LW500_JetMass;
-  hists[347] = TO_LW300_npv;
-  //hists[40] = TO_LW400_npv;
-  //hists[41] = TO_LW500_npv;
-  hists[348] = TO_dataRunB_nsv;
-  hists[349] = TO_dataRunC_nsv;
-  hists[350] = TO_ZLL_nsv;
-  hists[351] = TO_TT_nsv;
-  hists[352] = TO_W3J_nsv;
-  hists[353] = TO_W2J_nsv;
-  hists[354] = TO_W1J_nsv;
-  hists[355] = TO_WW_nsv;
-  hists[356] = TO_WZ_nsv;
-  hists[357] = TO_TTZ_nsv;
-  hists[358] = TO_LW200_nsv;
-  hists[359] = TO_LW200_nsv;
-  //hists[40] = TO_LW400_nsv;
-  //hists[41] = TO_LW500_nsv;
-  hists[360] = TO_dataRunB_svd;
-  hists[361] = TO_dataRunC_svd;
-  hists[362] = TO_ZLL_svd;
-  hists[363] = TO_TT_svd;
-  hists[364] = TO_W3J_svd;
-  hists[365] = TO_W2J_svd;
-  hists[366] = TO_W1J_svd;
-  hists[367] = TO_WW_svd;
-  hists[368] = TO_WZ_svd;
-  hists[369] = TO_TTZ_svd;
-  hists[370] = TO_LW200_svd;
-  hists[371] = TO_LW200_svd;
-  //hists[40] = TO_LW400_svd;
-  //hists[41] = TO_LW500_svd;
-  hists[372] = TO_dataRunB_Elept;
-  hists[373] = TO_dataRunC_Elept;
-  hists[374] = TO_ZLL_Elept;
-  hists[375] = TO_TT_Elept;
-  hists[376] = TO_W3J_Elept;
-  hists[377] = TO_W2J_Elept;
-  hists[378] = TO_W1J_Elept;
-  hists[379] = TO_WW_Elept;
-  hists[380] = TO_WZ_Elept;
-  hists[381] = TO_TTZ_Elept;
-  hists[382] = TO_LW200_Elept;
-  hists[383] = TO_LW200_Elept;
-  //hists[40] = TO_LW400_svd;
-  //hists[41] = TO_LW500_svd;
-  hists[384] = TO_dataRunB_DieledR;
-  hists[385] = TO_dataRunC_DieledR;
-  hists[386] = TO_ZLL_DieledR;
-  hists[387] = TO_TT_DieledR;
-  hists[388] = TO_W3J_DieledR;
-  hists[389] = TO_W2J_DieledR;
-  hists[390] = TO_W1J_DieledR;
-  hists[391] = TO_WW_DieledR;
-  hists[392] = TO_WZ_DieledR;
-  hists[393] = TO_TTZ_DieledR;
-  hists[394] = TO_LW200_DieledR;
-  hists[395] = TO_LW200_DieledR;
-  //hists[40] = TO_LW400_svd;
-  //hists[41] = TO_LW500_svd;
-  hists[396] = TO_dataRunB_LWdR;
-  hists[397] = TO_dataRunC_LWdR;
-  hists[398] = TO_ZLL_LWdR;
-  hists[399] = TO_TT_LWdR;
-  hists[400] = TO_W3J_LWdR;
-  hists[401] = TO_W2J_LWdR;
-  hists[402] = TO_W1J_LWdR;
-  hists[403] = TO_WW_LWdR;
-  hists[404] = TO_WZ_LWdR;
-  hists[405] = TO_TTZ_LWdR;
-  hists[406] = TO_LW200_LWdR;
-  hists[407] = TO_LW200_LWdR;
-  //hists[40] = TO_LW400_svd;
-  //hists[41] = TO_LW500_svd;
-  hists[408] = TO_dataRunB_DiJetdR;
-  hists[409] = TO_dataRunC_DiJetdR;
-  hists[410] = TO_ZLL_DiJetdR;
-  hists[411] = TO_TT_DiJetdR;
-  hists[412] = TO_W3J_DiJetdR;
-  hists[413] = TO_W2J_DiJetdR;
-  hists[414] = TO_W1J_DiJetdR;
-  hists[415] = TO_WW_DiJetdR;
-  hists[416] = TO_WZ_DiJetdR;
-  hists[417] = TO_TTZ_DiJetdR;
-  hists[418] = TO_LW200_DiJetdR;
-  hists[419] = TO_LW200_DiJetdR;
-  //hists[40] = TO_LW400_svd;
-  //hists[41] = TO_LW500_svd;
-  hists[420] = TO_dataRunB_BJetPt;
-  hists[421] = TO_dataRunC_BJetPt;
-  hists[422] = TO_ZLL_BJetPt;
-  hists[423] = TO_TT_BJetPt;
-  hists[424] = TO_W3J_BJetPt;
-  hists[425] = TO_W2J_BJetPt;
-  hists[426] = TO_W1J_BJetPt;
-  hists[427] = TO_WW_BJetPt;
-  hists[428] = TO_WZ_BJetPt;
-  hists[429] = TO_TTZ_BJetPt;
-  hists[430] = TO_LW200_BJetPt;
-  hists[431] = TO_LW200_BJetPt;
-  //hists[40] = TO_LW400_svd;
-  //hists[41] = TO_LW500_svd;
-  hists[432] = TO_dataRunB_SBJetPt;
-  hists[433] = TO_dataRunC_SBJetPt;
-  hists[434] = TO_ZLL_SBJetPt;
-  hists[435] = TO_TT_SBJetPt;
-  hists[436] = TO_W3J_SBJetPt;
-  hists[437] = TO_W2J_SBJetPt;
-  hists[438] = TO_W1J_SBJetPt;
-  hists[439] = TO_WW_SBJetPt;
-  hists[440] = TO_WZ_SBJetPt;
-  hists[441] = TO_TTZ_SBJetPt;
-  hists[442] = TO_LW200_SBJetPt;
-  hists[443] = TO_LW200_SBJetPt;
-  //hists[40] = TO_LW400_svd;
-  //hists[41] = TO_LW500_svd;
-  hists[444] = TO_dataRunB_NJet;
-  hists[445] = TO_dataRunC_NJet;
-  hists[446] = TO_ZLL_NJet;
-  hists[447] = TO_TT_NJet;
-  hists[448] = TO_W3J_NJet;
-  hists[449] = TO_W2J_NJet;
-  hists[450] = TO_W1J_NJet;
-  hists[451] = TO_WW_NJet;
-  hists[452] = TO_WZ_NJet;
-  hists[453] = TO_TTZ_NJet;
-  hists[454] = TO_LW200_NJet;
-  hists[455] = TO_LW200_NJet;
-  //hists[40] = TO_LW400_svd;
-  //hists[41] = TO_LW500_svd;
-  hists[456] = TO_dataRunB_NEle;
-  hists[457] = TO_dataRunC_NEle;
-  hists[458] = TO_ZLL_NEle;
-  hists[459] = TO_TT_NEle;
-  hists[460] = TO_W3J_NEle;
-  hists[461] = TO_W2J_NEle;
-  hists[462] = TO_W1J_NEle;
-  hists[463] = TO_WW_NEle;
-  hists[464] = TO_WZ_NEle;
-  hists[465] = TO_TTZ_NEle;
-  hists[466] = TO_LW200_NEle;
-  hists[467] = TO_LW200_NEle;
-  //hists[40] = TO_LW400_svd;
-  //hists[41] = TO_LW500_svd;
+  hists.push_back(TO_dataRunB_npv);
+  hists.push_back(TO_dataRunC_npv);
+  hists.push_back(TO_ZLL_npv);
+  hists.push_back(TO_TT_npv);
+  hists.push_back(TO_W3J_npv);
+  hists.push_back(TO_W2J_npv);
+  hists.push_back(TO_W1J_npv);
+  hists.push_back(TO_LW200_npv);
+  hists.push_back(TO_dataRunB_JetMass);
+  hists.push_back(TO_dataRunC_JetMass);
+  hists.push_back(TO_ZLL_JetMass);
+  hists.push_back(TO_TT_JetMass);
+  hists.push_back(TO_W3J_JetMass);
+  hists.push_back(TO_W2J_JetMass);
+  hists.push_back(TO_W1J_JetMass);
+  hists.push_back(TO_LW200_JetMass);
+  hists.push_back(TO_dataRunB_LWMass);
+  hists.push_back(TO_dataRunC_LWMass);
+  hists.push_back(TO_ZLL_LWMass);
+  hists.push_back(TO_TT_LWMass);
+  hists.push_back(TO_W3J_LWMass);
+  hists.push_back(TO_W2J_LWMass);
+  hists.push_back(TO_W1J_LWMass);
+  hists.push_back(TO_LW200_LWMass);
+  //hists.push_back(//TO_WW_npv);
+  //hists.push_back(////TO_WZ_npv);
+  //hists.push_back(//TO_TTZ_npv);
+  //hists.push_back(//TO_WW_JetMass);
+  //hists.push_back(////TO_WZ_JetMass);
+  //hists.push_back(//TO_TTZ_JetMass);
+  //hists.push_back(//TO_WW_LWMass);
+  //hists.push_back(////TO_WZ_LWMass);
+  //hists.push_back(//TO_TTZ_LWMass);
+  //hists.push_back(//TO_LW300_LWMass);
+  //hists.push_back(TO_LW400_LWMass);
+  //hists.push_back(TO_LW500_LWMass);
+  //hists.push_back(//TO_LW300_JetMass);
+  //hists.push_back(TO_LW400_JetMass);
+  //hists.push_back(TO_LW500_JetMass);
+  //hists.push_back(//TO_LW300_npv);
+  //hists.push_back(TO_LW400_npv);
+  //hists.push_back(TO_LW500_npv);
+  hists.push_back(TO_dataRunB_nsv);
+  hists.push_back(TO_dataRunC_nsv);
+  hists.push_back(TO_ZLL_nsv);
+  hists.push_back(TO_TT_nsv);
+  hists.push_back(TO_W3J_nsv);
+  hists.push_back(TO_W2J_nsv);
+  hists.push_back(TO_W1J_nsv);
+  //hists.push_back(//TO_WW_nsv);
+  //hists.push_back(////TO_WZ_nsv);
+  //hists.push_back(//TO_TTZ_nsv);
+  hists.push_back(TO_LW200_nsv);
+  //hists.push_back(TO_LW200_nsv);
+  //hists.push_back(TO_LW400_nsv);
+  //hists.push_back(TO_LW500_nsv);
+  hists.push_back(TO_dataRunB_svd);
+  hists.push_back(TO_dataRunC_svd);
+  hists.push_back(TO_ZLL_svd);
+  hists.push_back(TO_TT_svd);
+  hists.push_back(TO_W3J_svd);
+  hists.push_back(TO_W2J_svd);
+  hists.push_back(TO_W1J_svd);
+  //hists.push_back(//TO_WW_svd);
+  //hists.push_back(////TO_WZ_svd);
+  //hists.push_back(//TO_TTZ_svd);
+  hists.push_back(TO_LW200_svd);
+  //hists.push_back(TO_LW200_svd);
+  //hists.push_back(TO_LW400_svd);
+  //hists.push_back(TO_LW500_svd);
+  hists.push_back(TO_dataRunB_Elept);
+  hists.push_back(TO_dataRunC_Elept);
+  hists.push_back(TO_ZLL_Elept);
+  hists.push_back(TO_TT_Elept);
+  hists.push_back(TO_W3J_Elept);
+  hists.push_back(TO_W2J_Elept);
+  hists.push_back(TO_W1J_Elept);
+  //hists.push_back(//TO_WW_Elept);
+  //hists.push_back(////TO_WZ_Elept);
+  //hists.push_back(//TO_TTZ_Elept);
+  hists.push_back(TO_LW200_Elept);
+  //hists.push_back(TO_LW200_Elept);
+  //hists.push_back(TO_LW400_svd);
+  //hists.push_back(TO_LW500_svd);
+  hists.push_back(TO_dataRunB_DieledR);
+  hists.push_back(TO_dataRunC_DieledR);
+  hists.push_back(TO_ZLL_DieledR);
+  hists.push_back(TO_TT_DieledR);
+  hists.push_back(TO_W3J_DieledR);
+  hists.push_back(TO_W2J_DieledR);
+  hists.push_back(TO_W1J_DieledR);
+  //hists.push_back(//TO_WW_DieledR);
+  //hists.push_back(////TO_WZ_DieledR);
+  //hists.push_back(//TO_TTZ_DieledR);
+  hists.push_back(TO_LW200_DieledR);
+  //hists.push_back(TO_LW200_DieledR);
+  //hists.push_back(TO_LW400_svd);
+  //hists.push_back(TO_LW500_svd);
+  hists.push_back(TO_dataRunB_LWdR);
+  hists.push_back(TO_dataRunC_LWdR);
+  hists.push_back(TO_ZLL_LWdR);
+  hists.push_back(TO_TT_LWdR);
+  hists.push_back(TO_W3J_LWdR);
+  hists.push_back(TO_W2J_LWdR);
+  hists.push_back(TO_W1J_LWdR);
+  //hists.push_back(//TO_WW_LWdR);
+  //hists.push_back(////TO_WZ_LWdR);
+  //hists.push_back(//TO_TTZ_LWdR);
+  hists.push_back(TO_LW200_LWdR);
+  //hists.push_back(TO_LW200_LWdR);
+  //hists.push_back(TO_LW400_svd);
+  //hists.push_back(TO_LW500_svd);
+  hists.push_back(TO_dataRunB_DiJetdR);
+  hists.push_back(TO_dataRunC_DiJetdR);
+  hists.push_back(TO_ZLL_DiJetdR);
+  hists.push_back(TO_TT_DiJetdR);
+  hists.push_back(TO_W3J_DiJetdR);
+  hists.push_back(TO_W2J_DiJetdR);
+  hists.push_back(TO_W1J_DiJetdR);
+  //hists.push_back(//TO_WW_DiJetdR);
+  //hists.push_back(////TO_WZ_DiJetdR);
+  //hists.push_back(//TO_TTZ_DiJetdR);
+  hists.push_back(TO_LW200_DiJetdR);
+  //hists.push_back(TO_LW200_DiJetdR);
+  //hists.push_back(TO_LW400_svd);
+  //hists.push_back(TO_LW500_svd);
+  hists.push_back(TO_dataRunB_BJetPt);
+  hists.push_back(TO_dataRunC_BJetPt);
+  hists.push_back(TO_ZLL_BJetPt);
+  hists.push_back(TO_TT_BJetPt);
+  hists.push_back(TO_W3J_BJetPt);
+  hists.push_back(TO_W2J_BJetPt);
+  hists.push_back(TO_W1J_BJetPt);
+  //hists.push_back(//TO_WW_BJetPt);
+  //hists.push_back(////TO_WZ_BJetPt);
+  //hists.push_back(//TO_TTZ_BJetPt);
+  hists.push_back(TO_LW200_BJetPt);
+  //hists.push_back(TO_LW200_BJetPt);
+  //hists.push_back(TO_LW400_svd);
+  //hists.push_back(TO_LW500_svd);
+  hists.push_back(TO_dataRunB_SBJetPt);
+  hists.push_back(TO_dataRunC_SBJetPt);
+  hists.push_back(TO_ZLL_SBJetPt);
+  hists.push_back(TO_TT_SBJetPt);
+  hists.push_back(TO_W3J_SBJetPt);
+  hists.push_back(TO_W2J_SBJetPt);
+  hists.push_back(TO_W1J_SBJetPt);
+  //hists.push_back(//TO_WW_SBJetPt);
+  //hists.push_back(////TO_WZ_SBJetPt);
+  //hists.push_back(//TO_TTZ_SBJetPt);
+  hists.push_back(TO_LW200_SBJetPt);
+  //hists.push_back(TO_LW200_SBJetPt);
+  //hists.push_back(TO_LW400_svd);
+  //hists.push_back(TO_LW500_svd);
+  hists.push_back(TO_dataRunB_NJet);
+  hists.push_back(TO_dataRunC_NJet);
+  hists.push_back(TO_ZLL_NJet);
+  hists.push_back(TO_TT_NJet);
+  hists.push_back(TO_W3J_NJet);
+  hists.push_back(TO_W2J_NJet);
+  hists.push_back(TO_W1J_NJet);
+  //hists.push_back(//TO_WW_NJet);
+  //hists.push_back(////TO_WZ_NJet);
+  //hists.push_back(//TO_TTZ_NJet);
+  hists.push_back(TO_LW200_NJet);
+  //hists.push_back(TO_LW200_NJet);
+  //hists.push_back(TO_LW400_svd);
+  //hists.push_back(TO_LW500_svd);
+  hists.push_back(TO_dataRunB_NEle);
+  hists.push_back(TO_dataRunC_NEle);
+  hists.push_back(TO_ZLL_NEle);
+  hists.push_back(TO_TT_NEle);
+  hists.push_back(TO_W3J_NEle);
+  hists.push_back(TO_W2J_NEle);
+  hists.push_back(TO_W1J_NEle);
+  //hists.push_back(//TO_WW_NEle);
+  //hists.push_back(////TO_WZ_NEle);
+  //hists.push_back(//TO_TTZ_NEle);
+  hists.push_back(TO_LW200_NEle);
+  //hists.push_back(TO_LW200_NEle);
+  //hists.push_back(TO_LW400_svd);
+  //hists.push_back(TO_LW500_svd);
 
-  hists[468] = HQ_dataRunB_npv;
-  hists[469] = HQ_dataRunC_npv;
-  hists[470] = HQ_ZLL_npv;
-  hists[471] = HQ_TT_npv;
-  hists[472] = HQ_W3J_npv;
-  hists[473] = HQ_W2J_npv;
-  hists[474] = HQ_W1J_npv;
-  hists[475] = HQ_LW200_npv;
-  hists[476] = HQ_dataRunB_JetMass;
-  hists[477] = HQ_dataRunC_JetMass;
-  hists[478] = HQ_ZLL_JetMass;
-  hists[479] = HQ_TT_JetMass;
-  hists[480] = HQ_W3J_JetMass;
-  hists[481] = HQ_W2J_JetMass;
-  hists[482] = HQ_W1J_JetMass;
-  hists[483] = HQ_LW200_JetMass;
-  hists[484] = HQ_dataRunB_LWMass;
-  hists[485] = HQ_dataRunC_LWMass;
-  hists[486] = HQ_ZLL_LWMass;
-  hists[487] = HQ_TT_LWMass;
-  hists[488] = HQ_W3J_LWMass;
-  hists[489] = HQ_W2J_LWMass;
-  hists[490] = HQ_W1J_LWMass;
-  hists[491] = HQ_LW200_LWMass;
-  hists[492] = HQ_WW_npv;
-  hists[493] = HQ_WZ_npv;
-  hists[494] = HQ_TTZ_npv;
-  hists[495] = HQ_WW_JetMass;
-  hists[496] = HQ_WZ_JetMass;
-  hists[497] = HQ_TTZ_JetMass;
-  hists[498] = HQ_WW_LWMass;
-  hists[499] = HQ_WZ_LWMass;
-  hists[500] = HQ_TTZ_LWMass;
-  hists[501] = HQ_LW300_LWMass;
-  //hists[34] = HQ_LW400_LWMass;
-  //hists[35] = HQ_LW500_LWMass;
-  hists[502] = HQ_LW300_JetMass;
-  //hists[37] = HQ_LW400_JetMass;
-  //hists[38] = HQ_LW500_JetMass;
-  hists[503] = HQ_LW300_npv;
-  //hists[40] = HQ_LW400_npv;
-  //hists[41] = HQ_LW500_npv;
-  hists[504] = HQ_dataRunB_nsv;
-  hists[505] = HQ_dataRunC_nsv;
-  hists[506] = HQ_ZLL_nsv;
-  hists[507] = HQ_TT_nsv;
-  hists[508] = HQ_W3J_nsv;
-  hists[509] = HQ_W2J_nsv;
-  hists[510] = HQ_W1J_nsv;
-  hists[511] = HQ_WW_nsv;
-  hists[512] = HQ_WZ_nsv;
-  hists[513] = HQ_TTZ_nsv;
-  hists[514] = HQ_LW200_nsv;
-  hists[515] = HQ_LW200_nsv;
-  //hists[40] = HQ_LW400_nsv;
-  //hists[41] = HQ_LW500_nsv;
-  hists[516] = HQ_dataRunB_svd;
-  hists[517] = HQ_dataRunC_svd;
-  hists[518] = HQ_ZLL_svd;
-  hists[519] = HQ_TT_svd;
-  hists[520] = HQ_W3J_svd;
-  hists[521] = HQ_W2J_svd;
-  hists[522] = HQ_W1J_svd;
-  hists[523] = HQ_WW_svd;
-  hists[524] = HQ_WZ_svd;
-  hists[525] = HQ_TTZ_svd;
-  hists[526] = HQ_LW200_svd;
-  hists[527] = HQ_LW200_svd;
-  //hists[40] = HQ_LW400_svd;
-  //hists[41] = HQ_LW500_svd;
-  hists[528] = HQ_dataRunB_Elept;
-  hists[529] = HQ_dataRunC_Elept;
-  hists[530] = HQ_ZLL_Elept;
-  hists[531] = HQ_TT_Elept;
-  hists[532] = HQ_W3J_Elept;
-  hists[533] = HQ_W2J_Elept;
-  hists[534] = HQ_W1J_Elept;
-  hists[535] = HQ_WW_Elept;
-  hists[536] = HQ_WZ_Elept;
-  hists[537] = HQ_TTZ_Elept;
-  hists[538] = HQ_LW200_Elept;
-  hists[539] = HQ_LW200_Elept;
-  //hists[40] = HQ_LW400_svd;
-  //hists[41] = HQ_LW500_svd;
-  hists[540] = HQ_dataRunB_DieledR;
-  hists[541] = HQ_dataRunC_DieledR;
-  hists[542] = HQ_ZLL_DieledR;
-  hists[543] = HQ_TT_DieledR;
-  hists[544] = HQ_W3J_DieledR;
-  hists[545] = HQ_W2J_DieledR;
-  hists[546] = HQ_W1J_DieledR;
-  hists[547] = HQ_WW_DieledR;
-  hists[548] = HQ_WZ_DieledR;
-  hists[549] = HQ_TTZ_DieledR;
-  hists[550] = HQ_LW200_DieledR;
-  hists[551] = HQ_LW200_DieledR;
-  //hists[40] = HQ_LW400_svd;
-  //hists[41] = HQ_LW500_svd;
-  hists[552] = HQ_dataRunB_LWdR;
-  hists[553] = HQ_dataRunC_LWdR;
-  hists[554] = HQ_ZLL_LWdR;
-  hists[555] = HQ_TT_LWdR;
-  hists[556] = HQ_W3J_LWdR;
-  hists[557] = HQ_W2J_LWdR;
-  hists[558] = HQ_W1J_LWdR;
-  hists[559] = HQ_WW_LWdR;
-  hists[560] = HQ_WZ_LWdR;
-  hists[561] = HQ_TTZ_LWdR;
-  hists[562] = HQ_LW200_LWdR;
-  hists[563] = HQ_LW200_LWdR;
-  //hists[40] = HQ_LW400_svd;
-  //hists[41] = HQ_LW500_svd;
-  hists[564] = HQ_dataRunB_DiJetdR;
-  hists[565] = HQ_dataRunC_DiJetdR;
-  hists[566] = HQ_ZLL_DiJetdR;
-  hists[567] = HQ_TT_DiJetdR;
-  hists[568] = HQ_W3J_DiJetdR;
-  hists[569] = HQ_W2J_DiJetdR;
-  hists[570] = HQ_W1J_DiJetdR;
-  hists[571] = HQ_WW_DiJetdR;
-  hists[572] = HQ_WZ_DiJetdR;
-  hists[573] = HQ_TTZ_DiJetdR;
-  hists[574] = HQ_LW200_DiJetdR;
-  hists[575] = HQ_LW200_DiJetdR;
-  //hists[40] = HQ_LW400_svd;
-  //hists[41] = HQ_LW500_svd;
-  hists[576] = HQ_dataRunB_BJetPt;
-  hists[577] = HQ_dataRunC_BJetPt;
-  hists[578] = HQ_ZLL_BJetPt;
-  hists[579] = HQ_TT_BJetPt;
-  hists[580] = HQ_W3J_BJetPt;
-  hists[581] = HQ_W2J_BJetPt;
-  hists[582] = HQ_W1J_BJetPt;
-  hists[583] = HQ_WW_BJetPt;
-  hists[584] = HQ_WZ_BJetPt;
-  hists[585] = HQ_TTZ_BJetPt;
-  hists[586] = HQ_LW200_BJetPt;
-  hists[587] = HQ_LW200_BJetPt;
-  //hists[40] = HQ_LW400_svd;
-  //hists[41] = HQ_LW500_svd;
-  hists[588] = HQ_dataRunB_SBJetPt;
-  hists[589] = HQ_dataRunC_SBJetPt;
-  hists[590] = HQ_ZLL_SBJetPt;
-  hists[591] = HQ_TT_SBJetPt;
-  hists[592] = HQ_W3J_SBJetPt;
-  hists[593] = HQ_W2J_SBJetPt;
-  hists[594] = HQ_W1J_SBJetPt;
-  hists[595] = HQ_WW_SBJetPt;
-  hists[596] = HQ_WZ_SBJetPt;
-  hists[597] = HQ_TTZ_SBJetPt;
-  hists[598] = HQ_LW200_SBJetPt;
-  hists[599] = HQ_LW200_SBJetPt;
-  //hists[40] = HQ_LW400_svd;
-  //hists[41] = HQ_LW500_svd;
-  hists[600] = HQ_dataRunB_NJet;
-  hists[601] = HQ_dataRunC_NJet;
-  hists[602] = HQ_ZLL_NJet;
-  hists[603] = HQ_TT_NJet;
-  hists[604] = HQ_W3J_NJet;
-  hists[605] = HQ_W2J_NJet;
-  hists[606] = HQ_W1J_NJet;
-  hists[607] = HQ_WW_NJet;
-  hists[608] = HQ_WZ_NJet;
-  hists[609] = HQ_TTZ_NJet;
-  hists[610] = HQ_LW200_NJet;
-  hists[611] = HQ_LW200_NJet;
-  //hists[40] = HQ_LW400_svd;
-  //hists[41] = HQ_LW500_svd;
-  hists[612] = HQ_dataRunB_NEle;
-  hists[613] = HQ_dataRunC_NEle;
-  hists[614] = HQ_ZLL_NEle;
-  hists[615] = HQ_TT_NEle;
-  hists[616] = HQ_W3J_NEle;
-  hists[617] = HQ_W2J_NEle;
-  hists[618] = HQ_W1J_NEle;
-  hists[619] = HQ_WW_NEle;
-  hists[620] = HQ_WZ_NEle;
-  hists[621] = HQ_TTZ_NEle;
-  hists[622] = HQ_LW200_NEle;
-  hists[623] = HQ_LW200_NEle;
-  //hists[40] = HQ_LW400_svd;
-  //hists[41] = HQ_LW500_svd;
+  hists.push_back(HQ_dataRunB_npv);
+  hists.push_back(HQ_dataRunC_npv);
+  hists.push_back(HQ_ZLL_npv);
+  hists.push_back(HQ_TT_npv);
+  hists.push_back(HQ_W3J_npv);
+  hists.push_back(HQ_W2J_npv);
+  hists.push_back(HQ_W1J_npv);
+  hists.push_back(HQ_LW200_npv);
+  hists.push_back(HQ_dataRunB_JetMass);
+  hists.push_back(HQ_dataRunC_JetMass);
+  hists.push_back(HQ_ZLL_JetMass);
+  hists.push_back(HQ_TT_JetMass);
+  hists.push_back(HQ_W3J_JetMass);
+  hists.push_back(HQ_W2J_JetMass);
+  hists.push_back(HQ_W1J_JetMass);
+  hists.push_back(HQ_LW200_JetMass);
+  hists.push_back(HQ_dataRunB_LWMass);
+  hists.push_back(HQ_dataRunC_LWMass);
+  hists.push_back(HQ_ZLL_LWMass);
+  hists.push_back(HQ_TT_LWMass);
+  hists.push_back(HQ_W3J_LWMass);
+  hists.push_back(HQ_W2J_LWMass);
+  hists.push_back(HQ_W1J_LWMass);
+  hists.push_back(HQ_LW200_LWMass);
+  //hists.push_back(//HQ_WW_npv);
+  //hists.push_back(//HQ_WZ_npv);
+  //hists.push_back(////HQ_TTZ_npv);
+  //hists.push_back(//HQ_WW_JetMass);
+  //hists.push_back(//HQ_WZ_JetMass);
+  //hists.push_back(////HQ_TTZ_JetMass);
+  //hists.push_back(//HQ_WW_LWMass);
+  //hists.push_back(//HQ_WZ_LWMass);
+  //hists.push_back(////HQ_TTZ_LWMass);
+  //hists.push_back(//HQ_LW300_LWMass);
+  //hists.push_back(HQ_LW400_LWMass);
+  //hists.push_back(HQ_LW500_LWMass);
+  //hists.push_back(//HQ_LW300_JetMass);
+  //hists.push_back(HQ_LW400_JetMass);
+  //hists.push_back(HQ_LW500_JetMass);
+  //hists.push_back(//HQ_LW300_npv);
+  //hists.push_back(HQ_LW400_npv);
+  //hists.push_back(HQ_LW500_npv);
+  hists.push_back(HQ_dataRunB_nsv);
+  hists.push_back(HQ_dataRunC_nsv);
+  hists.push_back(HQ_ZLL_nsv);
+  hists.push_back(HQ_TT_nsv);
+  hists.push_back(HQ_W3J_nsv);
+  hists.push_back(HQ_W2J_nsv);
+  hists.push_back(HQ_W1J_nsv);
+  //hists.push_back(//HQ_WW_nsv);
+  //hists.push_back(//HQ_WZ_nsv);
+  //hists.push_back(////HQ_TTZ_nsv);
+  hists.push_back(HQ_LW200_nsv);
+  //hists.push_back(HQ_LW200_nsv);
+  //hists.push_back(HQ_LW400_nsv);
+  //hists.push_back(HQ_LW500_nsv);
+  hists.push_back(HQ_dataRunB_svd);
+  hists.push_back(HQ_dataRunC_svd);
+  hists.push_back(HQ_ZLL_svd);
+  hists.push_back(HQ_TT_svd);
+  hists.push_back(HQ_W3J_svd);
+  hists.push_back(HQ_W2J_svd);
+  hists.push_back(HQ_W1J_svd);
+  //hists.push_back(//HQ_WW_svd);
+  //hists.push_back(//HQ_WZ_svd);
+  //hists.push_back(////HQ_TTZ_svd);
+  hists.push_back(HQ_LW200_svd);
+  //hists.push_back(HQ_LW200_svd);
+  //hists.push_back(HQ_LW400_svd);
+  //hists.push_back(HQ_LW500_svd);
+  hists.push_back(HQ_dataRunB_Elept);
+  hists.push_back(HQ_dataRunC_Elept);
+  hists.push_back(HQ_ZLL_Elept);
+  hists.push_back(HQ_TT_Elept);
+  hists.push_back(HQ_W3J_Elept);
+  hists.push_back(HQ_W2J_Elept);
+  hists.push_back(HQ_W1J_Elept);
+  //hists.push_back(//HQ_WW_Elept);
+  //hists.push_back(//HQ_WZ_Elept);
+  //hists.push_back(////HQ_TTZ_Elept);
+  hists.push_back(HQ_LW200_Elept);
+  //hists.push_back(HQ_LW200_Elept);
+  //hists.push_back(HQ_LW400_svd);
+  //hists.push_back(HQ_LW500_svd);
+  hists.push_back(HQ_dataRunB_DieledR);
+  hists.push_back(HQ_dataRunC_DieledR);
+  hists.push_back(HQ_ZLL_DieledR);
+  hists.push_back(HQ_TT_DieledR);
+  hists.push_back(HQ_W3J_DieledR);
+  hists.push_back(HQ_W2J_DieledR);
+  hists.push_back(HQ_W1J_DieledR);
+  //hists.push_back(//HQ_WW_DieledR);
+  //hists.push_back(//HQ_WZ_DieledR);
+  //hists.push_back(////HQ_TTZ_DieledR);
+  hists.push_back(HQ_LW200_DieledR);
+  //hists.push_back(HQ_LW200_DieledR);
+  //hists.push_back(HQ_LW400_svd);
+  //hists.push_back(HQ_LW500_svd);
+  hists.push_back(HQ_dataRunB_LWdR);
+  hists.push_back(HQ_dataRunC_LWdR);
+  hists.push_back(HQ_ZLL_LWdR);
+  hists.push_back(HQ_TT_LWdR);
+  hists.push_back(HQ_W3J_LWdR);
+  hists.push_back(HQ_W2J_LWdR);
+  hists.push_back(HQ_W1J_LWdR);
+  //hists.push_back(//HQ_WW_LWdR);
+  //hists.push_back(//HQ_WZ_LWdR);
+  //hists.push_back(////HQ_TTZ_LWdR);
+  hists.push_back(HQ_LW200_LWdR);
+  //hists.push_back(HQ_LW200_LWdR);
+  //hists.push_back(HQ_LW400_svd);
+  //hists.push_back(HQ_LW500_svd);
+  hists.push_back(HQ_dataRunB_DiJetdR);
+  hists.push_back(HQ_dataRunC_DiJetdR);
+  hists.push_back(HQ_ZLL_DiJetdR);
+  hists.push_back(HQ_TT_DiJetdR);
+  hists.push_back(HQ_W3J_DiJetdR);
+  hists.push_back(HQ_W2J_DiJetdR);
+  hists.push_back(HQ_W1J_DiJetdR);
+  //hists.push_back(//HQ_WW_DiJetdR);
+  //hists.push_back(//HQ_WZ_DiJetdR);
+  //hists.push_back(////HQ_TTZ_DiJetdR);
+  hists.push_back(HQ_LW200_DiJetdR);
+  //hists.push_back(HQ_LW200_DiJetdR);
+  //hists.push_back(HQ_LW400_svd);
+  //hists.push_back(HQ_LW500_svd);
+  hists.push_back(HQ_dataRunB_BJetPt);
+  hists.push_back(HQ_dataRunC_BJetPt);
+  hists.push_back(HQ_ZLL_BJetPt);
+  hists.push_back(HQ_TT_BJetPt);
+  hists.push_back(HQ_W3J_BJetPt);
+  hists.push_back(HQ_W2J_BJetPt);
+  hists.push_back(HQ_W1J_BJetPt);
+  //hists.push_back(//HQ_WW_BJetPt);
+  //hists.push_back(//HQ_WZ_BJetPt);
+  //hists.push_back(////HQ_TTZ_BJetPt);
+  hists.push_back(HQ_LW200_BJetPt);
+  //hists.push_back(HQ_LW200_BJetPt);
+  //hists.push_back(HQ_LW400_svd);
+  //hists.push_back(HQ_LW500_svd);
+  hists.push_back(HQ_dataRunB_SBJetPt);
+  hists.push_back(HQ_dataRunC_SBJetPt);
+  hists.push_back(HQ_ZLL_SBJetPt);
+  hists.push_back(HQ_TT_SBJetPt);
+  hists.push_back(HQ_W3J_SBJetPt);
+  hists.push_back(HQ_W2J_SBJetPt);
+  hists.push_back(HQ_W1J_SBJetPt);
+  //hists.push_back(//HQ_WW_SBJetPt);
+  //hists.push_back(//HQ_WZ_SBJetPt);
+  //hists.push_back(////HQ_TTZ_SBJetPt);
+  hists.push_back(HQ_LW200_SBJetPt);
+  //hists.push_back(HQ_LW200_SBJetPt);
+  //hists.push_back(HQ_LW400_svd);
+  //hists.push_back(HQ_LW500_svd);
+  hists.push_back(HQ_dataRunB_NJet);
+  hists.push_back(HQ_dataRunC_NJet);
+  hists.push_back(HQ_ZLL_NJet);
+  hists.push_back(HQ_TT_NJet);
+  hists.push_back(HQ_W3J_NJet);
+  hists.push_back(HQ_W2J_NJet);
+  hists.push_back(HQ_W1J_NJet);
+  //hists.push_back(//HQ_WW_NJet);
+  //hists.push_back(//HQ_WZ_NJet);
+  //hists.push_back(////HQ_TTZ_NJet);
+  hists.push_back(HQ_LW200_NJet);
+  //hists.push_back(HQ_LW200_NJet);
+  //hists.push_back(HQ_LW400_svd);
+  //hists.push_back(HQ_LW500_svd);
+  hists.push_back(HQ_dataRunB_NEle);
+  hists.push_back(HQ_dataRunC_NEle);
+  hists.push_back(HQ_ZLL_NEle);
+  hists.push_back(HQ_TT_NEle);
+  hists.push_back(HQ_W3J_NEle);
+  hists.push_back(HQ_W2J_NEle);
+  hists.push_back(HQ_W1J_NEle);
+  //hists.push_back(//HQ_WW_NEle);
+  //hists.push_back(//HQ_WZ_NEle);
+  //hists.push_back(////HQ_TTZ_NEle);
+  hists.push_back(HQ_LW200_NEle);
+  //hists.push_back(HQ_LW200_NEle);
+  //hists.push_back(HQ_LW400_svd);
+  //hists.push_back(HQ_LW500_svd);
+
+  hists.push_back(SG_dataRunB_npv);
+  hists.push_back(SG_dataRunC_npv);
+  hists.push_back(SG_ZLL_npv);
+  hists.push_back(SG_TT_npv);
+  hists.push_back(SG_W3J_npv);
+  hists.push_back(SG_W2J_npv);
+  hists.push_back(SG_W1J_npv);
+  hists.push_back(SG_LW200_npv);
+  hists.push_back(SG_dataRunB_JetMass);
+  hists.push_back(SG_dataRunC_JetMass);
+  hists.push_back(SG_ZLL_JetMass);
+  hists.push_back(SG_TT_JetMass);
+  hists.push_back(SG_W3J_JetMass);
+  hists.push_back(SG_W2J_JetMass);
+  hists.push_back(SG_W1J_JetMass);
+  hists.push_back(SG_LW200_JetMass);
+  hists.push_back(SG_dataRunB_LWMass);
+  hists.push_back(SG_dataRunC_LWMass);
+  hists.push_back(SG_ZLL_LWMass);
+  hists.push_back(SG_TT_LWMass);
+  hists.push_back(SG_W3J_LWMass);
+  hists.push_back(SG_W2J_LWMass);
+  hists.push_back(SG_W1J_LWMass);
+  hists.push_back(SG_LW200_LWMass);
+  //hists.push_back(SG_WW_npv);
+  //hists.push_back(SG_WZ_npv);
+  //hists.push_back(SG_TTZ_npv);
+  //hists.push_back(SG_WW_JetMass);
+  //hists.push_back(SG_WZ_JetMass);
+  //hists.push_back(SG_TTZ_JetMass);
+  //hists.push_back(SG_WW_LWMass);
+  //hists.push_back(SG_WZ_LWMass);
+  //hists.push_back(SG_TTZ_LWMass);
+  //hists.push_back(//HQ_LW300_LWMass);
+  //hists.push_back(SG_LW400_LWMass);
+  //hists.push_back(SG_LW500_LWMass);
+  //hists.push_back(//HQ_LW300_JetMass);
+  //hists.push_back(SG_LW400_JetMass);
+  //hists.push_back(SG_LW500_JetMass);
+  //hists.push_back(//HQ_LW300_npv);
+  //hists.push_back(SG_LW400_npv);
+  //hists.push_back(SG_LW500_npv);
+  hists.push_back(SG_dataRunB_nsv);
+  hists.push_back(SG_dataRunC_nsv);
+  hists.push_back(SG_ZLL_nsv);
+  hists.push_back(SG_TT_nsv);
+  hists.push_back(SG_W3J_nsv);
+  hists.push_back(SG_W2J_nsv);
+  hists.push_back(SG_W1J_nsv);
+  //hists.push_back(SG_WW_nsv);
+  //hists.push_back(SG_WZ_nsv);
+  //hists.push_back(SG_TTZ_nsv);
+  hists.push_back(SG_LW200_nsv);
+  //hists.push_back(SG_LW200_nsv);
+  //hists.push_back(SG_LW400_nsv);
+  //hists.push_back(SG_LW500_nsv);
+  hists.push_back(SG_dataRunB_svd);
+  hists.push_back(SG_dataRunC_svd);
+  hists.push_back(SG_ZLL_svd);
+  hists.push_back(SG_TT_svd);
+  hists.push_back(SG_W3J_svd);
+  hists.push_back(SG_W2J_svd);
+  hists.push_back(SG_W1J_svd);
+  //hists.push_back(SG_WW_svd);
+  //hists.push_back(SG_WZ_svd);
+  //hists.push_back(SG_TTZ_svd);
+  hists.push_back(SG_LW200_svd);
+  //hists.push_back(SG_LW200_svd);
+  //hists.push_back(SG_LW400_svd);
+  //hists.push_back(SG_LW500_svd);
+  hists.push_back(SG_dataRunB_Elept);
+  hists.push_back(SG_dataRunC_Elept);
+  hists.push_back(SG_ZLL_Elept);
+  hists.push_back(SG_TT_Elept);
+  hists.push_back(SG_W3J_Elept);
+  hists.push_back(SG_W2J_Elept);
+  hists.push_back(SG_W1J_Elept);
+  //hists.push_back(SG_WW_Elept);
+  //hists.push_back(SG_WZ_Elept);
+  //hists.push_back(SG_TTZ_Elept);
+  hists.push_back(SG_LW200_Elept);
+  //hists.push_back(SG_LW200_Elept);
+  //hists.push_back(SG_LW400_svd);
+  //hists.push_back(SG_LW500_svd);
+  hists.push_back(SG_dataRunB_DieledR);
+  hists.push_back(SG_dataRunC_DieledR);
+  hists.push_back(SG_ZLL_DieledR);
+  hists.push_back(SG_TT_DieledR);
+  hists.push_back(SG_W3J_DieledR);
+  hists.push_back(SG_W2J_DieledR);
+  hists.push_back(SG_W1J_DieledR);
+  //hists.push_back(SG_WW_DieledR);
+  //hists.push_back(SG_WZ_DieledR);
+  //hists.push_back(SG_TTZ_DieledR);
+  hists.push_back(SG_LW200_DieledR);
+  //hists.push_back(SG_LW200_DieledR);
+  //hists.push_back(SG_LW400_svd);
+  //hists.push_back(SG_LW500_svd);
+  hists.push_back(SG_dataRunB_LWdR);
+  hists.push_back(SG_dataRunC_LWdR);
+  hists.push_back(SG_ZLL_LWdR);
+  hists.push_back(SG_TT_LWdR);
+  hists.push_back(SG_W3J_LWdR);
+  hists.push_back(SG_W2J_LWdR);
+  hists.push_back(SG_W1J_LWdR);
+  //hists.push_back(SG_WW_LWdR);
+  //hists.push_back(SG_WZ_LWdR);
+  //hists.push_back(SG_TTZ_LWdR);
+  hists.push_back(SG_LW200_LWdR);
+  //hists.push_back(SG_LW200_LWdR);
+  //hists.push_back(SG_LW400_svd);
+  //hists.push_back(SG_LW500_svd);
+  hists.push_back(SG_dataRunB_DiJetdR);
+  hists.push_back(SG_dataRunC_DiJetdR);
+  hists.push_back(SG_ZLL_DiJetdR);
+  hists.push_back(SG_TT_DiJetdR);
+  hists.push_back(SG_W3J_DiJetdR);
+  hists.push_back(SG_W2J_DiJetdR);
+  hists.push_back(SG_W1J_DiJetdR);
+  //hists.push_back(SG_WW_DiJetdR);
+  //hists.push_back(SG_WZ_DiJetdR);
+  //hists.push_back(SG_TTZ_DiJetdR);
+  hists.push_back(SG_LW200_DiJetdR);
+  //hists.push_back(SG_LW200_DiJetdR);
+  //hists.push_back(SG_LW400_svd);
+  //hists.push_back(SG_LW500_svd);
+  hists.push_back(SG_dataRunB_BJetPt);
+  hists.push_back(SG_dataRunC_BJetPt);
+  hists.push_back(SG_ZLL_BJetPt);
+  hists.push_back(SG_TT_BJetPt);
+  hists.push_back(SG_W3J_BJetPt);
+  hists.push_back(SG_W2J_BJetPt);
+  hists.push_back(SG_W1J_BJetPt);
+  //hists.push_back(SG_WW_BJetPt);
+  //hists.push_back(SG_WZ_BJetPt);
+  //hists.push_back(SG_TTZ_BJetPt);
+  hists.push_back(SG_LW200_BJetPt);
+  //hists.push_back(SG_LW200_BJetPt);
+  //hists.push_back(SG_LW400_svd);
+  //hists.push_back(SG_LW500_svd);
+  hists.push_back(SG_dataRunB_SBJetPt);
+  hists.push_back(SG_dataRunC_SBJetPt);
+  hists.push_back(SG_ZLL_SBJetPt);
+  hists.push_back(SG_TT_SBJetPt);
+  hists.push_back(SG_W3J_SBJetPt);
+  hists.push_back(SG_W2J_SBJetPt);
+  hists.push_back(SG_W1J_SBJetPt);
+  //hists.push_back(SG_WW_SBJetPt);
+  //hists.push_back(SG_WZ_SBJetPt);
+  //hists.push_back(SG_TTZ_SBJetPt);
+  hists.push_back(SG_LW200_SBJetPt);
+  //hists.push_back(SG_LW200_SBJetPt);
+  //hists.push_back(SG_LW400_svd);
+  //hists.push_back(SG_LW500_svd);
+  hists.push_back(SG_dataRunB_NJet);
+  hists.push_back(SG_dataRunC_NJet);
+  hists.push_back(SG_ZLL_NJet);
+  hists.push_back(SG_TT_NJet);
+  hists.push_back(SG_W3J_NJet);
+  hists.push_back(SG_W2J_NJet);
+  hists.push_back(SG_W1J_NJet);
+  //hists.push_back(SG_WW_NJet);
+  //hists.push_back(SG_WZ_NJet);
+  //hists.push_back(SG_TTZ_NJet);
+  hists.push_back(SG_LW200_NJet);
+  //hists.push_back(SG_LW200_NJet);
+  //hists.push_back(SG_LW400_svd);
+  //hists.push_back(SG_LW500_svd);
+  hists.push_back(SG_dataRunB_NEle);
+  hists.push_back(SG_dataRunC_NEle);
+  hists.push_back(SG_ZLL_NEle);
+  hists.push_back(SG_TT_NEle);
+  hists.push_back(SG_W3J_NEle);
+  hists.push_back(SG_W2J_NEle);
+  hists.push_back(SG_W1J_NEle);
+  //hists.push_back(SG_WW_NEle);
+  //hists.push_back(SG_WZ_NEle);
+  //hists.push_back(SG_TTZ_NEle);
+  hists.push_back(SG_LW200_NEle);
+  //hists.push_back(SG_LW200_NEle);
+  //hists.push_back(SG_LW400_svd);
+  //hists.push_back(SG_LW500_svd);
 
 
 // if parameter tree is not specified (or zero), connect the file
@@ -3141,8 +3325,8 @@ bool EventLoopAnalysisTemplate::MinimalSelection()
 ///////////////////////Histograms////////////////////////
 void EventLoopAnalysisTemplate::histograms(string cut) {
   Int_t histsize = sizeof(hists)/sizeof(hists[0]);
-  for (Int_t j=0;j<histsize;++j){
-    TString histname = TString(hists[j]->GetName());
+  for (Int_t j=0;j<hists.size();++j){
+    TString histname = TString(hists.at(j)->GetName());
     TString thecut = histname(0,histname.First("_"));
     histname = histname(histname.First("_")+1,histname.Sizeof());
     TString thelabel = histname(0,histname.First("_"));
@@ -3153,13 +3337,13 @@ void EventLoopAnalysisTemplate::histograms(string cut) {
       //primary vertices
       //cout<<"npv\n";
       if(thevar == "npv"){
-	       hists[j]->Fill(PV_npvs,theweight);
+	       hists.at(j)->Fill(PV_npvs,theweight);
       }
 
       /*//secondary Vertices
       //cout<<"nsv\n";
       if(thevar == "nsv"){
-	       hists[j]->Fill(numbersecvec,theweight);
+	       hists.at(j)->Fill(numbersecvec,theweight);
       }
 
       //NF secondary vertex displacements
@@ -3171,7 +3355,7 @@ void EventLoopAnalysisTemplate::histograms(string cut) {
           dy=PV_y->at(0)-secvec_posy->at(i);
           dz=PV_z->at(0)-secvec_posz->at(i);
           disp=sqrt( dx*dx + dy*dy + dz*dz );
-          hists[j]->Fill(disp,theweight);
+          hists.at(j)->Fill(disp,theweight);
         }
       }*/
       //JetMass
@@ -3193,7 +3377,7 @@ void EventLoopAnalysisTemplate::histograms(string cut) {
               e=jet_e->at(i)*corr1+jet_e->at(k)*corr2;
               m=sqrt( e*e - px*px - py*py - pz*pz );
 
-              hists[j]->Fill(m,theweight);
+              hists.at(j)->Fill(m,theweight);
             }
           }
         }
@@ -3217,7 +3401,7 @@ void EventLoopAnalysisTemplate::histograms(string cut) {
                 e=jet_e->at(i)*corr1+jet_e->at(k)*corr2+electron_e->at(l);
                 m=sqrt( e*e - px*px - py*py - pz*pz );
 
-                hists[j]->Fill(m,theweight);
+                hists.at(j)->Fill(m,theweight);
               }
             }
           }
@@ -3226,7 +3410,7 @@ void EventLoopAnalysisTemplate::histograms(string cut) {
       //cout<<"Elept\n";
       if(thevar == "Elept"){
         for(size_t l=0; l < electron_e->size(); l++){
-          hists[j]->Fill(electron_pt->at(l),theweight);
+          hists.at(j)->Fill(electron_pt->at(l),theweight);
         }
       }
       //cout<<"DieledR\n";
@@ -3234,7 +3418,7 @@ void EventLoopAnalysisTemplate::histograms(string cut) {
         for(size_t l=0; l < electron_e->size(); l++){
           for(size_t k=l+1; k < electron_e->size(); k++){
             float dieledR= deltaR(electron_eta->at(l),electron_phi->at(l),electron_eta->at(k),electron_phi->at(k));
-            hists[j]->Fill(dieledR,theweight);
+            hists.at(j)->Fill(dieledR,theweight);
           }
         }
       }
@@ -3243,7 +3427,7 @@ void EventLoopAnalysisTemplate::histograms(string cut) {
         for(size_t l=0; l < electron_e->size(); l++){
           for(size_t k=0; k < jet_e->size(); k++){
             float LWdR= deltaR(electron_eta->at(l),electron_phi->at(l),jet_eta->at(k),jet_phi->at(k));
-            hists[j]->Fill(LWdR,theweight);
+            hists.at(j)->Fill(LWdR,theweight);
           }
         }
       }
@@ -3252,7 +3436,7 @@ void EventLoopAnalysisTemplate::histograms(string cut) {
         for(size_t l=0; l < jet_e->size(); l++){
           for(size_t k=l+1; k < jet_e->size(); k++){
             float DiJetdR= deltaR(jet_eta->at(l),jet_phi->at(l),jet_eta->at(k),jet_phi->at(k));
-            hists[j]->Fill(DiJetdR,theweight);
+            hists.at(j)->Fill(DiJetdR,theweight);
           }
         }
       }
@@ -3260,20 +3444,20 @@ void EventLoopAnalysisTemplate::histograms(string cut) {
       //cout<<"BJetPt\n";
       if(thevar == "BJetPt"){
 
-        if(corr_jet_pt->size()>0) hists[j]->Fill(corr_jet_pt->at(0),theweight);
+        if(corr_jet_pt->size()>0) hists.at(j)->Fill(corr_jet_pt->at(0),theweight);
 
       }
       //cout<<"SBJetPT\n";
       if(thevar == "SBJetPt"){
-        if(corr_jet_pt->size()>1)hists[j]->Fill(corr_jet_pt->at(1),theweight);
+        if(corr_jet_pt->size()>1)hists.at(j)->Fill(corr_jet_pt->at(1),theweight);
       }
       //cout<<"NJet\n";
       if(thevar == "NJet"){
-        hists[j]->Fill(jet_e->size(),theweight);
+        hists.at(j)->Fill(jet_e->size(),theweight);
       }
       //cout<<"NEle\n";
       if(thevar == "NEle"){
-        hists[j]->Fill(electron_e->size(),theweight);
+        hists.at(j)->Fill(electron_e->size(),theweight);
       }
     }
   }
@@ -3316,27 +3500,27 @@ int main()
   const float TT_w = 225.2 / 6423106.0 * integratedLuminosity;
   const float ZLL_w = 3503.7 / 30458871.0 * integratedLuminosity;
   const float LW200_w = 0.0059 / 150000 * integratedLuminosity;
-  const float LW300_w = 0.00096 / 150000 * integratedLuminosity;
+  //const float LW300_w = 0.00096 / 150000 * integratedLuminosity;
   //const float LW400_w = 0.00023 / 150000 * integratedLuminosity;
   //const float LW500_w = 0.00006 / 150000 * integratedLuminosity;
-  const float WW_w = 5.824 / 1933120 * integratedLuminosity;
-  const float WZ_w = 2.207 / 3215990 * integratedLuminosity;
-  const float TTZ_w = 0.175 / 787495 * integratedLuminosity;
+  //const float WW_w = 5.824 / 1933120 * integratedLuminosity;
+  //const float WZ_w = 2.207 / 3215990 * integratedLuminosity;
+  //const float TTZ_w = 0.175 / 787495 * integratedLuminosity;
   const float dataRunB_w = 1.0;
   const float dataRunC_w = 1.0;
 
 
   map<string, pair<string,float> > sampleNames;
-  sampleNames.insert(make_pair("WWJetsTo2L2Nu",make_pair("WW",WW_w)));
-  sampleNames.insert(make_pair("WZJetsTo2L2Q",make_pair("WZ",WZ_w)));
-  sampleNames.insert(make_pair("ttbarZ",make_pair("TTZ",TTZ_w)));
+  //sampleNames.insert(make_pair("WWJetsTo2L2Nu",make_pair("WW",WW_w)));
+  //sampleNames.insert(make_pair("WZJetsTo2L2Q",make_pair("WZ",WZ_w)));
+  //sampleNames.insert(make_pair("ttbarZ",make_pair("TTZ",TTZ_w)));
   sampleNames.insert(make_pair("W1JetsToLNu",make_pair("W1J",W1J_w)));
   sampleNames.insert(make_pair("W2JetsToLNu",make_pair("W2J",W2J_w)));
   sampleNames.insert(make_pair("W3JetsToLNu",make_pair("W3J",W3J_w)));
   sampleNames.insert(make_pair("TTbar",make_pair("TT",TT_w)));
   sampleNames.insert(make_pair("DYJetsToLL",make_pair("ZLL",ZLL_w)));
   sampleNames.insert(make_pair("LWSM200DnR",make_pair("LW200",LW200_w)));
-  sampleNames.insert(make_pair("LWSM300DnR",make_pair("LW300",LW300_w)));
+  //sampleNames.insert(make_pair("LWSM300DnR",make_pair("LW300",LW300_w)));
   //sampleNames.insert(make_pair("LWSM400DnR",make_pair("LW400",LW400_w)));
   //sampleNames.insert(make_pair("LWSM500DnR",make_pair("LW500",LW500_w)));
   sampleNames.insert(make_pair("Run2012B_DoublePhoton",make_pair("dataRunB",dataRunB_w)));
@@ -3379,11 +3563,11 @@ int main()
   NF_W3J_npv->Write();
   NF_W2J_npv->Write();
   NF_W1J_npv->Write();
-  NF_WW_npv->Write();
-  NF_WZ_npv->Write();
-  NF_TTZ_npv->Write();
+  //NF_WW_npv->Write();
+  //NF_WZ_npv->Write();
+  //NF_TTZ_npv->Write();
   NF_LW200_npv->Write();
-  NF_LW300_npv->Write();
+  //NF_LW300_npv->Write();
   //NF_LW400_npv->Write();
   //NF_LW500_npv->Write();
   NF_dataRunB_JetMass->Write();
@@ -3393,11 +3577,11 @@ int main()
   NF_W3J_JetMass->Write();
   NF_W2J_JetMass->Write();
   NF_W1J_JetMass->Write();
-  NF_WW_JetMass->Write();
-  NF_WZ_JetMass->Write();
-  NF_TTZ_JetMass->Write();
+  //NF_WW_JetMass->Write();
+  //NF_WZ_JetMass->Write();
+  //NF_TTZ_JetMass->Write();
   NF_LW200_JetMass->Write();
-  NF_LW300_JetMass->Write();
+  //NF_LW300_JetMass->Write();
   //NF_LW400_JetMass->Write();
   //NF_LW500_JetMass->Write();
   NF_dataRunB_LWMass->Write();
@@ -3407,11 +3591,11 @@ int main()
   NF_W3J_LWMass->Write();
   NF_W2J_LWMass->Write();
   NF_W1J_LWMass->Write();
-  NF_WW_LWMass->Write();
-  NF_WZ_LWMass->Write();
-  NF_TTZ_LWMass->Write();
+  //NF_WW_LWMass->Write();
+  //NF_WZ_LWMass->Write();
+  //NF_TTZ_LWMass->Write();
   NF_LW200_LWMass->Write();
-  NF_LW300_LWMass->Write();
+  //NF_LW300_LWMass->Write();
   //NF_LW400_LWMass->Write();
   //NF_LW500_LWMass->Write();
   NF_dataRunB_nsv->Write();
@@ -3421,11 +3605,11 @@ int main()
   NF_W3J_nsv->Write();
   NF_W2J_nsv->Write();
   NF_W1J_nsv->Write();
-  NF_WW_nsv->Write();
-  NF_WZ_nsv->Write();
-  NF_TTZ_nsv->Write();
+  //NF_WW_nsv->Write();
+  //NF_WZ_nsv->Write();
+  //NF_TTZ_nsv->Write();
   NF_LW200_nsv->Write();
-  NF_LW300_nsv->Write();
+  //NF_LW300_nsv->Write();
   //NF_LW400_nsv->Write();
   //NF_LW500_nsv->Write();
   NF_dataRunB_svd->Write();
@@ -3435,11 +3619,11 @@ int main()
   NF_W3J_svd->Write();
   NF_W2J_svd->Write();
   NF_W1J_svd->Write();
-  NF_WW_svd->Write();
-  NF_WZ_svd->Write();
-  NF_TTZ_svd->Write();
+  //NF_WW_svd->Write();
+  //NF_WZ_svd->Write();
+  //NF_TTZ_svd->Write();
   NF_LW200_svd->Write();
-  NF_LW300_svd->Write();
+  //NF_LW300_svd->Write();
   //NF_LW400_svd->Write();
   //NF_LW500_svd->Write();
   NF_dataRunB_Elept->Write();
@@ -3449,11 +3633,11 @@ int main()
   NF_W3J_Elept->Write();
   NF_W2J_Elept->Write();
   NF_W1J_Elept->Write();
-  NF_WW_Elept->Write();
-  NF_WZ_Elept->Write();
-  NF_TTZ_Elept->Write();
+  //NF_WW_Elept->Write();
+  //NF_WZ_Elept->Write();
+  //NF_TTZ_Elept->Write();
   NF_LW200_Elept->Write();
-  NF_LW300_Elept->Write();
+  //NF_LW300_Elept->Write();
   //NF_LW400_Elept->Write();
   //NF_LW500_Elept->Write();
   NF_dataRunB_DieledR->Write();
@@ -3463,11 +3647,11 @@ int main()
   NF_W3J_DieledR->Write();
   NF_W2J_DieledR->Write();
   NF_W1J_DieledR->Write();
-  NF_WW_DieledR->Write();
-  NF_WZ_DieledR->Write();
-  NF_TTZ_DieledR->Write();
+  //NF_WW_DieledR->Write();
+  //NF_WZ_DieledR->Write();
+  //NF_TTZ_DieledR->Write();
   NF_LW200_DieledR->Write();
-  NF_LW300_DieledR->Write();
+  //NF_LW300_DieledR->Write();
   //NF_LW400_DieledR->Write();
   //NF_LW500_DieledR->Write();
   NF_dataRunB_LWdR->Write();
@@ -3477,11 +3661,11 @@ int main()
   NF_W3J_LWdR->Write();
   NF_W2J_LWdR->Write();
   NF_W1J_LWdR->Write();
-  NF_WW_LWdR->Write();
-  NF_WZ_LWdR->Write();
-  NF_TTZ_LWdR->Write();
+  //NF_WW_LWdR->Write();
+  //NF_WZ_LWdR->Write();
+  //NF_TTZ_LWdR->Write();
   NF_LW200_LWdR->Write();
-  NF_LW300_LWdR->Write();
+  //NF_LW300_LWdR->Write();
   //NF_LW400_LWdR->Write();
   //NF_LW500_LWdR->Write();
   NF_dataRunB_DiJetdR->Write();
@@ -3491,11 +3675,11 @@ int main()
   NF_W3J_DiJetdR->Write();
   NF_W2J_DiJetdR->Write();
   NF_W1J_DiJetdR->Write();
-  NF_WW_DiJetdR->Write();
-  NF_WZ_DiJetdR->Write();
-  NF_TTZ_DiJetdR->Write();
+  //NF_WW_DiJetdR->Write();
+  //NF_WZ_DiJetdR->Write();
+  //NF_TTZ_DiJetdR->Write();
   NF_LW200_DiJetdR->Write();
-  NF_LW300_DiJetdR->Write();
+  //NF_LW300_DiJetdR->Write();
   //NF_LW400_DiJetdR->Write();
   //NF_LW500_DiJetdR->Write();
   NF_dataRunB_BJetPt->Write();
@@ -3505,11 +3689,11 @@ int main()
   NF_W3J_BJetPt->Write();
   NF_W2J_BJetPt->Write();
   NF_W1J_BJetPt->Write();
-  NF_WW_BJetPt->Write();
-  NF_WZ_BJetPt->Write();
-  NF_TTZ_BJetPt->Write();
+  //NF_WW_BJetPt->Write();
+  //NF_WZ_BJetPt->Write();
+  //NF_TTZ_BJetPt->Write();
   NF_LW200_BJetPt->Write();
-  NF_LW300_BJetPt->Write();
+  //NF_LW300_BJetPt->Write();
   //NF_LW400_BJetPt->Write();
   //NF_LW500_BJetPt->Write();
   NF_dataRunB_SBJetPt->Write();
@@ -3519,11 +3703,11 @@ int main()
   NF_W3J_SBJetPt->Write();
   NF_W2J_SBJetPt->Write();
   NF_W1J_SBJetPt->Write();
-  NF_WW_SBJetPt->Write();
-  NF_WZ_SBJetPt->Write();
-  NF_TTZ_SBJetPt->Write();
+  //NF_WW_SBJetPt->Write();
+  //NF_WZ_SBJetPt->Write();
+  //NF_TTZ_SBJetPt->Write();
   NF_LW200_SBJetPt->Write();
-  NF_LW300_SBJetPt->Write();
+  //NF_LW300_SBJetPt->Write();
   //NF_LW400_SBJetPt->Write();
   //NF_LW500_SBJetPt->Write();
   NF_dataRunB_NJet->Write();
@@ -3533,11 +3717,11 @@ int main()
   NF_W3J_NJet->Write();
   NF_W2J_NJet->Write();
   NF_W1J_NJet->Write();
-  NF_WW_NJet->Write();
-  NF_WZ_NJet->Write();
-  NF_TTZ_NJet->Write();
+  //NF_WW_NJet->Write();
+  //NF_WZ_NJet->Write();
+  //NF_TTZ_NJet->Write();
   NF_LW200_NJet->Write();
-  NF_LW300_NJet->Write();
+  //NF_LW300_NJet->Write();
   //NF_LW400_NJet->Write();
   //NF_LW500_NJet->Write();
   NF_dataRunB_NEle->Write();
@@ -3547,11 +3731,11 @@ int main()
   NF_W3J_NEle->Write();
   NF_W2J_NEle->Write();
   NF_W1J_NEle->Write();
-  NF_WW_NEle->Write();
-  NF_WZ_NEle->Write();
-  NF_TTZ_NEle->Write();
+  //NF_WW_NEle->Write();
+  //NF_WZ_NEle->Write();
+  //NF_TTZ_NEle->Write();
   NF_LW200_NEle->Write();
-  NF_LW300_NEle->Write();
+  //NF_LW300_NEle->Write();
   //NF_LW400_NEle->Write();
   //NF_LW500_NEle->Write();
 
@@ -3562,11 +3746,11 @@ int main()
   TF_W3J_npv->Write();
   TF_W2J_npv->Write();
   TF_W1J_npv->Write();
-  TF_WW_npv->Write();
-  TF_WZ_npv->Write();
-  TF_TTZ_npv->Write();
+  //TF_WW_npv->Write();
+  //TF_WZ_npv->Write();
+  //TF_TTZ_npv->Write();
   TF_LW200_npv->Write();
-  TF_LW300_npv->Write();
+  //TF_LW300_npv->Write();
   //TF_LW400_npv->Write();
   //TF_LW500_npv->Write();
   TF_dataRunB_JetMass->Write();
@@ -3576,11 +3760,11 @@ int main()
   TF_W3J_JetMass->Write();
   TF_W2J_JetMass->Write();
   TF_W1J_JetMass->Write();
-  TF_WW_JetMass->Write();
-  TF_WZ_JetMass->Write();
-  TF_TTZ_JetMass->Write();
+  //TF_WW_JetMass->Write();
+  //TF_WZ_JetMass->Write();
+  //TF_TTZ_JetMass->Write();
   TF_LW200_JetMass->Write();
-  TF_LW300_JetMass->Write();
+  //TF_LW300_JetMass->Write();
   //TF_LW400_JetMass->Write();
   //TF_LW500_JetMass->Write();
   TF_dataRunB_LWMass->Write();
@@ -3590,11 +3774,11 @@ int main()
   TF_W3J_LWMass->Write();
   TF_W2J_LWMass->Write();
   TF_W1J_LWMass->Write();
-  TF_WW_LWMass->Write();
-  TF_WZ_LWMass->Write();
-  TF_TTZ_LWMass->Write();
+  //TF_WW_LWMass->Write();
+  //TF_WZ_LWMass->Write();
+  //TF_TTZ_LWMass->Write();
   TF_LW200_LWMass->Write();
-  TF_LW300_LWMass->Write();
+  //TF_LW300_LWMass->Write();
   //TF_LW400_LWMass->Write();
   //TF_LW500_LWMass->Write();
   TF_dataRunB_nsv->Write();
@@ -3604,11 +3788,11 @@ int main()
   TF_W3J_nsv->Write();
   TF_W2J_nsv->Write();
   TF_W1J_nsv->Write();
-  TF_WW_nsv->Write();
-  TF_WZ_nsv->Write();
-  TF_TTZ_nsv->Write();
+  //TF_WW_nsv->Write();
+  //TF_WZ_nsv->Write();
+  //TF_TTZ_nsv->Write();
   TF_LW200_nsv->Write();
-  TF_LW300_nsv->Write();
+  //TF_LW300_nsv->Write();
   //TF_LW400_nsv->Write();
   //TF_LW500_nsv->Write();
   TF_dataRunB_svd->Write();
@@ -3618,11 +3802,11 @@ int main()
   TF_W3J_svd->Write();
   TF_W2J_svd->Write();
   TF_W1J_svd->Write();
-  TF_WW_svd->Write();
-  TF_WZ_svd->Write();
-  TF_TTZ_svd->Write();
+  //TF_WW_svd->Write();
+  //TF_WZ_svd->Write();
+  //TF_TTZ_svd->Write();
   TF_LW200_svd->Write();
-  TF_LW300_svd->Write();
+  //TF_LW300_svd->Write();
   //TF_LW400_svd->Write();
   //TF_LW500_svd->Write();
   TF_dataRunB_Elept->Write();
@@ -3632,11 +3816,11 @@ int main()
   TF_W3J_Elept->Write();
   TF_W2J_Elept->Write();
   TF_W1J_Elept->Write();
-  TF_WW_Elept->Write();
-  TF_WZ_Elept->Write();
-  TF_TTZ_Elept->Write();
+  //TF_WW_Elept->Write();
+  //TF_WZ_Elept->Write();
+  //TF_TTZ_Elept->Write();
   TF_LW200_Elept->Write();
-  TF_LW300_Elept->Write();
+  //TF_LW300_Elept->Write();
   //TF_LW400_Elept->Write();
   //TF_LW500_Elept->Write();
   TF_dataRunB_DieledR->Write();
@@ -3646,11 +3830,11 @@ int main()
   TF_W3J_DieledR->Write();
   TF_W2J_DieledR->Write();
   TF_W1J_DieledR->Write();
-  TF_WW_DieledR->Write();
-  TF_WZ_DieledR->Write();
-  TF_TTZ_DieledR->Write();
+  //TF_WW_DieledR->Write();
+  //TF_WZ_DieledR->Write();
+  //TF_TTZ_DieledR->Write();
   TF_LW200_DieledR->Write();
-  TF_LW300_DieledR->Write();
+  //TF_LW300_DieledR->Write();
   //TF_LW400_DieledR->Write();
   //TF_LW500_DieledR->Write();
   TF_dataRunB_LWdR->Write();
@@ -3660,11 +3844,11 @@ int main()
   TF_W3J_LWdR->Write();
   TF_W2J_LWdR->Write();
   TF_W1J_LWdR->Write();
-  TF_WW_LWdR->Write();
-  TF_WZ_LWdR->Write();
-  TF_TTZ_LWdR->Write();
+  //TF_WW_LWdR->Write();
+  //TF_WZ_LWdR->Write();
+  //TF_TTZ_LWdR->Write();
   TF_LW200_LWdR->Write();
-  TF_LW300_LWdR->Write();
+  //TF_LW300_LWdR->Write();
   //TF_LW400_LWdR->Write();
   //TF_LW500_LWdR->Write();
   TF_dataRunB_DiJetdR->Write();
@@ -3674,11 +3858,11 @@ int main()
   TF_W3J_DiJetdR->Write();
   TF_W2J_DiJetdR->Write();
   TF_W1J_DiJetdR->Write();
-  TF_WW_DiJetdR->Write();
-  TF_WZ_DiJetdR->Write();
-  TF_TTZ_DiJetdR->Write();
+  //TF_WW_DiJetdR->Write();
+  //TF_WZ_DiJetdR->Write();
+  //TF_TTZ_DiJetdR->Write();
   TF_LW200_DiJetdR->Write();
-  TF_LW300_DiJetdR->Write();
+  //TF_LW300_DiJetdR->Write();
   //TF_LW400_DiJetdR->Write();
   //TF_LW500_DiJetdR->Write();
   TF_dataRunB_BJetPt->Write();
@@ -3688,11 +3872,11 @@ int main()
   TF_W3J_BJetPt->Write();
   TF_W2J_BJetPt->Write();
   TF_W1J_BJetPt->Write();
-  TF_WW_BJetPt->Write();
-  TF_WZ_BJetPt->Write();
-  TF_TTZ_BJetPt->Write();
+  //TF_WW_BJetPt->Write();
+  //TF_WZ_BJetPt->Write();
+  //TF_TTZ_BJetPt->Write();
   TF_LW200_BJetPt->Write();
-  TF_LW300_BJetPt->Write();
+  //TF_LW300_BJetPt->Write();
   //TF_LW400_BJetPt->Write();
   //TF_LW500_BJetPt->Write();
   TF_dataRunB_SBJetPt->Write();
@@ -3702,11 +3886,11 @@ int main()
   TF_W3J_SBJetPt->Write();
   TF_W2J_SBJetPt->Write();
   TF_W1J_SBJetPt->Write();
-  TF_WW_SBJetPt->Write();
-  TF_WZ_SBJetPt->Write();
-  TF_TTZ_SBJetPt->Write();
+  //TF_WW_SBJetPt->Write();
+  //TF_WZ_SBJetPt->Write();
+  //TF_TTZ_SBJetPt->Write();
   TF_LW200_SBJetPt->Write();
-  TF_LW300_SBJetPt->Write();
+  //TF_LW300_SBJetPt->Write();
   //TF_LW400_SBJetPt->Write();
   //TF_LW500_SBJetPt->Write();
   TF_dataRunB_NJet->Write();
@@ -3716,11 +3900,11 @@ int main()
   TF_W3J_NJet->Write();
   TF_W2J_NJet->Write();
   TF_W1J_NJet->Write();
-  TF_WW_NJet->Write();
-  TF_WZ_NJet->Write();
-  TF_TTZ_NJet->Write();
+  //TF_WW_NJet->Write();
+  //TF_WZ_NJet->Write();
+  //TF_TTZ_NJet->Write();
   TF_LW200_NJet->Write();
-  TF_LW300_NJet->Write();
+  //TF_LW300_NJet->Write();
   //TF_LW400_NJet->Write();
   //TF_LW500_NJet->Write();
   TF_dataRunB_NEle->Write();
@@ -3730,11 +3914,11 @@ int main()
   TF_W3J_NEle->Write();
   TF_W2J_NEle->Write();
   TF_W1J_NEle->Write();
-  TF_WW_NEle->Write();
-  TF_WZ_NEle->Write();
-  TF_TTZ_NEle->Write();
+  //TF_WW_NEle->Write();
+  //TF_WZ_NEle->Write();
+  //TF_TTZ_NEle->Write();
   TF_LW200_NEle->Write();
-  TF_LW300_NEle->Write();
+  //TF_LW300_NEle->Write();
   //TF_LW400_NEle->Write();
   //TF_LW500_NEle->Write();
 
@@ -3745,11 +3929,11 @@ int main()
   TO_W3J_npv->Write();
   TO_W2J_npv->Write();
   TO_W1J_npv->Write();
-  TO_WW_npv->Write();
-  TO_WZ_npv->Write();
-  TO_TTZ_npv->Write();
+  //TO_WW_npv->Write();
+  ////TO_WZ_npv->Write();
+  //TO_TTZ_npv->Write();
   TO_LW200_npv->Write();
-  TO_LW300_npv->Write();
+  //TO_LW300_npv->Write();
   //TO_LW400_npv->Write();
   //TO_LW500_npv->Write();
   TO_dataRunB_JetMass->Write();
@@ -3759,11 +3943,11 @@ int main()
   TO_W3J_JetMass->Write();
   TO_W2J_JetMass->Write();
   TO_W1J_JetMass->Write();
-  TO_WW_JetMass->Write();
-  TO_WZ_JetMass->Write();
-  TO_TTZ_JetMass->Write();
+  //TO_WW_JetMass->Write();
+  ////TO_WZ_JetMass->Write();
+  //TO_TTZ_JetMass->Write();
   TO_LW200_JetMass->Write();
-  TO_LW300_JetMass->Write();
+  //TO_LW300_JetMass->Write();
   //TO_LW400_JetMass->Write();
   //TO_LW500_JetMass->Write();
   TO_dataRunB_LWMass->Write();
@@ -3773,11 +3957,11 @@ int main()
   TO_W3J_LWMass->Write();
   TO_W2J_LWMass->Write();
   TO_W1J_LWMass->Write();
-  TO_WW_LWMass->Write();
-  TO_WZ_LWMass->Write();
-  TO_TTZ_LWMass->Write();
+  //TO_WW_LWMass->Write();
+  ////TO_WZ_LWMass->Write();
+  //TO_TTZ_LWMass->Write();
   TO_LW200_LWMass->Write();
-  TO_LW300_LWMass->Write();
+  //TO_LW300_LWMass->Write();
   //TO_LW400_LWMass->Write();
   //TO_LW500_LWMass->Write();
   TO_dataRunB_nsv->Write();
@@ -3787,11 +3971,11 @@ int main()
   TO_W3J_nsv->Write();
   TO_W2J_nsv->Write();
   TO_W1J_nsv->Write();
-  TO_WW_nsv->Write();
-  TO_WZ_nsv->Write();
-  TO_TTZ_nsv->Write();
+  //TO_WW_nsv->Write();
+  ////TO_WZ_nsv->Write();
+  //TO_TTZ_nsv->Write();
   TO_LW200_nsv->Write();
-  TO_LW300_nsv->Write();
+  //TO_LW300_nsv->Write();
   //TO_LW400_nsv->Write();
   //TO_LW500_nsv->Write();
   TO_dataRunB_svd->Write();
@@ -3801,11 +3985,11 @@ int main()
   TO_W3J_svd->Write();
   TO_W2J_svd->Write();
   TO_W1J_svd->Write();
-  TO_WW_svd->Write();
-  TO_WZ_svd->Write();
-  TO_TTZ_svd->Write();
+  //TO_WW_svd->Write();
+  ////TO_WZ_svd->Write();
+  //TO_TTZ_svd->Write();
   TO_LW200_svd->Write();
-  TO_LW300_svd->Write();
+  //TO_LW300_svd->Write();
   //TO_LW400_svd->Write();
   //TO_LW500_svd->Write();
   TO_dataRunB_Elept->Write();
@@ -3815,11 +3999,11 @@ int main()
   TO_W3J_Elept->Write();
   TO_W2J_Elept->Write();
   TO_W1J_Elept->Write();
-  TO_WW_Elept->Write();
-  TO_WZ_Elept->Write();
-  TO_TTZ_Elept->Write();
+  //TO_WW_Elept->Write();
+  ////TO_WZ_Elept->Write();
+  //TO_TTZ_Elept->Write();
   TO_LW200_Elept->Write();
-  TO_LW300_Elept->Write();
+  //TO_LW300_Elept->Write();
   //TO_LW400_Elept->Write();
   //TO_LW500_Elept->Write();
   TO_dataRunB_DieledR->Write();
@@ -3829,11 +4013,11 @@ int main()
   TO_W3J_DieledR->Write();
   TO_W2J_DieledR->Write();
   TO_W1J_DieledR->Write();
-  TO_WW_DieledR->Write();
-  TO_WZ_DieledR->Write();
-  TO_TTZ_DieledR->Write();
+  //TO_WW_DieledR->Write();
+  ////TO_WZ_DieledR->Write();
+  //TO_TTZ_DieledR->Write();
   TO_LW200_DieledR->Write();
-  TO_LW300_DieledR->Write();
+  //TO_LW300_DieledR->Write();
   //TO_LW400_DieledR->Write();
   //TO_LW500_DieledR->Write();
   TO_dataRunB_LWdR->Write();
@@ -3843,11 +4027,11 @@ int main()
   TO_W3J_LWdR->Write();
   TO_W2J_LWdR->Write();
   TO_W1J_LWdR->Write();
-  TO_WW_LWdR->Write();
-  TO_WZ_LWdR->Write();
-  TO_TTZ_LWdR->Write();
+  //TO_WW_LWdR->Write();
+  ////TO_WZ_LWdR->Write();
+  //TO_TTZ_LWdR->Write();
   TO_LW200_LWdR->Write();
-  TO_LW300_LWdR->Write();
+  //TO_LW300_LWdR->Write();
   //TO_LW400_LWdR->Write();
   //TO_LW500_LWdR->Write();
   TO_dataRunB_DiJetdR->Write();
@@ -3857,11 +4041,11 @@ int main()
   TO_W3J_DiJetdR->Write();
   TO_W2J_DiJetdR->Write();
   TO_W1J_DiJetdR->Write();
-  TO_WW_DiJetdR->Write();
-  TO_WZ_DiJetdR->Write();
-  TO_TTZ_DiJetdR->Write();
+  //TO_WW_DiJetdR->Write();
+  ////TO_WZ_DiJetdR->Write();
+  //TO_TTZ_DiJetdR->Write();
   TO_LW200_DiJetdR->Write();
-  TO_LW300_DiJetdR->Write();
+  //TO_LW300_DiJetdR->Write();
   //TO_LW400_DiJetdR->Write();
   //TO_LW500_DiJetdR->Write();
   TO_dataRunB_BJetPt->Write();
@@ -3871,11 +4055,11 @@ int main()
   TO_W3J_BJetPt->Write();
   TO_W2J_BJetPt->Write();
   TO_W1J_BJetPt->Write();
-  TO_WW_BJetPt->Write();
-  TO_WZ_BJetPt->Write();
-  TO_TTZ_BJetPt->Write();
+  //TO_WW_BJetPt->Write();
+  ////TO_WZ_BJetPt->Write();
+  //TO_TTZ_BJetPt->Write();
   TO_LW200_BJetPt->Write();
-  TO_LW300_BJetPt->Write();
+  //TO_LW300_BJetPt->Write();
   //TO_LW400_BJetPt->Write();
   //TO_LW500_BJetPt->Write();
   TO_dataRunB_SBJetPt->Write();
@@ -3885,11 +4069,11 @@ int main()
   TO_W3J_SBJetPt->Write();
   TO_W2J_SBJetPt->Write();
   TO_W1J_SBJetPt->Write();
-  TO_WW_SBJetPt->Write();
-  TO_WZ_SBJetPt->Write();
-  TO_TTZ_SBJetPt->Write();
+  //TO_WW_SBJetPt->Write();
+  ////TO_WZ_SBJetPt->Write();
+  //TO_TTZ_SBJetPt->Write();
   TO_LW200_SBJetPt->Write();
-  TO_LW300_SBJetPt->Write();
+  //TO_LW300_SBJetPt->Write();
   //TO_LW400_SBJetPt->Write();
   //TO_LW500_SBJetPt->Write();
   TO_dataRunB_NJet->Write();
@@ -3899,11 +4083,11 @@ int main()
   TO_W3J_NJet->Write();
   TO_W2J_NJet->Write();
   TO_W1J_NJet->Write();
-  TO_WW_NJet->Write();
-  TO_WZ_NJet->Write();
-  TO_TTZ_NJet->Write();
+  //TO_WW_NJet->Write();
+  ////TO_WZ_NJet->Write();
+  //TO_TTZ_NJet->Write();
   TO_LW200_NJet->Write();
-  TO_LW300_NJet->Write();
+  //TO_LW300_NJet->Write();
   //TO_LW400_NJet->Write();
   //TO_LW500_NJet->Write();
   TO_dataRunB_NEle->Write();
@@ -3913,11 +4097,11 @@ int main()
   TO_W3J_NEle->Write();
   TO_W2J_NEle->Write();
   TO_W1J_NEle->Write();
-  TO_WW_NEle->Write();
-  TO_WZ_NEle->Write();
-  TO_TTZ_NEle->Write();
+  //TO_WW_NEle->Write();
+  ////TO_WZ_NEle->Write();
+  //TO_TTZ_NEle->Write();
   TO_LW200_NEle->Write();
-  TO_LW300_NEle->Write();
+  //TO_LW300_NEle->Write();
   //TO_LW400_NEle->Write();
   //TO_LW500_NEle->Write();
 
@@ -3928,11 +4112,11 @@ int main()
   HQ_W3J_npv->Write();
   HQ_W2J_npv->Write();
   HQ_W1J_npv->Write();
-  HQ_WW_npv->Write();
-  HQ_WZ_npv->Write();
-  HQ_TTZ_npv->Write();
+  //HQ_WW_npv->Write();
+  //HQ_WZ_npv->Write();
+  ////HQ_TTZ_npv->Write();
   HQ_LW200_npv->Write();
-  HQ_LW300_npv->Write();
+  //HQ_LW300_npv->Write();
   //HQ_LW400_npv->Write();
   //HQ_LW500_npv->Write();
   HQ_dataRunB_JetMass->Write();
@@ -3942,11 +4126,11 @@ int main()
   HQ_W3J_JetMass->Write();
   HQ_W2J_JetMass->Write();
   HQ_W1J_JetMass->Write();
-  HQ_WW_JetMass->Write();
-  HQ_WZ_JetMass->Write();
-  HQ_TTZ_JetMass->Write();
+  //HQ_WW_JetMass->Write();
+  //HQ_WZ_JetMass->Write();
+  ////HQ_TTZ_JetMass->Write();
   HQ_LW200_JetMass->Write();
-  HQ_LW300_JetMass->Write();
+  //HQ_LW300_JetMass->Write();
   //HQ_LW400_JetMass->Write();
   //HQ_LW500_JetMass->Write();
   HQ_dataRunB_LWMass->Write();
@@ -3956,11 +4140,11 @@ int main()
   HQ_W3J_LWMass->Write();
   HQ_W2J_LWMass->Write();
   HQ_W1J_LWMass->Write();
-  HQ_WW_LWMass->Write();
-  HQ_WZ_LWMass->Write();
-  HQ_TTZ_LWMass->Write();
+  //HQ_WW_LWMass->Write();
+  //HQ_WZ_LWMass->Write();
+  ////HQ_TTZ_LWMass->Write();
   HQ_LW200_LWMass->Write();
-  HQ_LW300_LWMass->Write();
+  //HQ_LW300_LWMass->Write();
   //HQ_LW400_LWMass->Write();
   //HQ_LW500_LWMass->Write();
   HQ_dataRunB_nsv->Write();
@@ -3970,11 +4154,11 @@ int main()
   HQ_W3J_nsv->Write();
   HQ_W2J_nsv->Write();
   HQ_W1J_nsv->Write();
-  HQ_WW_nsv->Write();
-  HQ_WZ_nsv->Write();
-  HQ_TTZ_nsv->Write();
+  //HQ_WW_nsv->Write();
+  //HQ_WZ_nsv->Write();
+  ////HQ_TTZ_nsv->Write();
   HQ_LW200_nsv->Write();
-  HQ_LW300_nsv->Write();
+  //HQ_LW300_nsv->Write();
   //HQ_LW400_nsv->Write();
   //HQ_LW500_nsv->Write();
   HQ_dataRunB_svd->Write();
@@ -3984,11 +4168,11 @@ int main()
   HQ_W3J_svd->Write();
   HQ_W2J_svd->Write();
   HQ_W1J_svd->Write();
-  HQ_WW_svd->Write();
-  HQ_WZ_svd->Write();
-  HQ_TTZ_svd->Write();
+  //HQ_WW_svd->Write();
+  //HQ_WZ_svd->Write();
+  ////HQ_TTZ_svd->Write();
   HQ_LW200_svd->Write();
-  HQ_LW300_svd->Write();
+  //HQ_LW300_svd->Write();
   //HQ_LW400_svd->Write();
   //HQ_LW500_svd->Write();
   HQ_dataRunB_Elept->Write();
@@ -3998,11 +4182,11 @@ int main()
   HQ_W3J_Elept->Write();
   HQ_W2J_Elept->Write();
   HQ_W1J_Elept->Write();
-  HQ_WW_Elept->Write();
-  HQ_WZ_Elept->Write();
-  HQ_TTZ_Elept->Write();
+  //HQ_WW_Elept->Write();
+  //HQ_WZ_Elept->Write();
+  ////HQ_TTZ_Elept->Write();
   HQ_LW200_Elept->Write();
-  HQ_LW300_Elept->Write();
+  //HQ_LW300_Elept->Write();
   //HQ_LW400_Elept->Write();
   //HQ_LW500_Elept->Write();
   HQ_dataRunB_DieledR->Write();
@@ -4012,11 +4196,11 @@ int main()
   HQ_W3J_DieledR->Write();
   HQ_W2J_DieledR->Write();
   HQ_W1J_DieledR->Write();
-  HQ_WW_DieledR->Write();
-  HQ_WZ_DieledR->Write();
-  HQ_TTZ_DieledR->Write();
+  //HQ_WW_DieledR->Write();
+  //HQ_WZ_DieledR->Write();
+  ////HQ_TTZ_DieledR->Write();
   HQ_LW200_DieledR->Write();
-  HQ_LW300_DieledR->Write();
+  //HQ_LW300_DieledR->Write();
   //HQ_LW400_DieledR->Write();
   //HQ_LW500_DieledR->Write();
   HQ_dataRunB_LWdR->Write();
@@ -4026,11 +4210,11 @@ int main()
   HQ_W3J_LWdR->Write();
   HQ_W2J_LWdR->Write();
   HQ_W1J_LWdR->Write();
-  HQ_WW_LWdR->Write();
-  HQ_WZ_LWdR->Write();
-  HQ_TTZ_LWdR->Write();
+  //HQ_WW_LWdR->Write();
+  //HQ_WZ_LWdR->Write();
+  ////HQ_TTZ_LWdR->Write();
   HQ_LW200_LWdR->Write();
-  HQ_LW300_LWdR->Write();
+  //HQ_LW300_LWdR->Write();
   //HQ_LW400_LWdR->Write();
   //HQ_LW500_LWdR->Write();
   HQ_dataRunB_DiJetdR->Write();
@@ -4040,11 +4224,11 @@ int main()
   HQ_W3J_DiJetdR->Write();
   HQ_W2J_DiJetdR->Write();
   HQ_W1J_DiJetdR->Write();
-  HQ_WW_DiJetdR->Write();
-  HQ_WZ_DiJetdR->Write();
-  HQ_TTZ_DiJetdR->Write();
+  //HQ_WW_DiJetdR->Write();
+  //HQ_WZ_DiJetdR->Write();
+  ////HQ_TTZ_DiJetdR->Write();
   HQ_LW200_DiJetdR->Write();
-  HQ_LW300_DiJetdR->Write();
+  //HQ_LW300_DiJetdR->Write();
   //HQ_LW400_DiJetdR->Write();
   //HQ_LW500_DiJetdR->Write();
   HQ_dataRunB_BJetPt->Write();
@@ -4054,11 +4238,11 @@ int main()
   HQ_W3J_BJetPt->Write();
   HQ_W2J_BJetPt->Write();
   HQ_W1J_BJetPt->Write();
-  HQ_WW_BJetPt->Write();
-  HQ_WZ_BJetPt->Write();
-  HQ_TTZ_BJetPt->Write();
+  //HQ_WW_BJetPt->Write();
+  //HQ_WZ_BJetPt->Write();
+  ////HQ_TTZ_BJetPt->Write();
   HQ_LW200_BJetPt->Write();
-  HQ_LW300_BJetPt->Write();
+  //HQ_LW300_BJetPt->Write();
   //HQ_LW400_BJetPt->Write();
   //HQ_LW500_BJetPt->Write();
   HQ_dataRunB_SBJetPt->Write();
@@ -4068,11 +4252,11 @@ int main()
   HQ_W3J_SBJetPt->Write();
   HQ_W2J_SBJetPt->Write();
   HQ_W1J_SBJetPt->Write();
-  HQ_WW_SBJetPt->Write();
-  HQ_WZ_SBJetPt->Write();
-  HQ_TTZ_SBJetPt->Write();
+  //HQ_WW_SBJetPt->Write();
+  //HQ_WZ_SBJetPt->Write();
+  ////HQ_TTZ_SBJetPt->Write();
   HQ_LW200_SBJetPt->Write();
-  HQ_LW300_SBJetPt->Write();
+  //HQ_LW300_SBJetPt->Write();
   //HQ_LW400_SBJetPt->Write();
   //HQ_LW500_SBJetPt->Write();
   HQ_dataRunB_NJet->Write();
@@ -4082,11 +4266,11 @@ int main()
   HQ_W3J_NJet->Write();
   HQ_W2J_NJet->Write();
   HQ_W1J_NJet->Write();
-  HQ_WW_NJet->Write();
-  HQ_WZ_NJet->Write();
-  HQ_TTZ_NJet->Write();
+  //HQ_WW_NJet->Write();
+  //HQ_WZ_NJet->Write();
+  ////HQ_TTZ_NJet->Write();
   HQ_LW200_NJet->Write();
-  HQ_LW300_NJet->Write();
+  //HQ_LW300_NJet->Write();
   //HQ_LW400_NJet->Write();
   //HQ_LW500_NJet->Write();
   HQ_dataRunB_NEle->Write();
@@ -4096,13 +4280,196 @@ int main()
   HQ_W3J_NEle->Write();
   HQ_W2J_NEle->Write();
   HQ_W1J_NEle->Write();
-  HQ_WW_NEle->Write();
-  HQ_WZ_NEle->Write();
-  HQ_TTZ_NEle->Write();
+  //HQ_WW_NEle->Write();
+  //HQ_WZ_NEle->Write();
+  ////HQ_TTZ_NEle->Write();
   HQ_LW200_NEle->Write();
-  HQ_LW300_NEle->Write();
+  //HQ_LW300_NEle->Write();
   //HQ_LW400_NEle->Write();
   //HQ_LW500_NEle->Write();
+
+  SG_dataRunB_npv->Write();
+  SG_dataRunC_npv->Write();
+  SG_ZLL_npv->Write();
+  SG_TT_npv->Write();
+  SG_W3J_npv->Write();
+  SG_W2J_npv->Write();
+  SG_W1J_npv->Write();
+  //SG_WW_npv->Write();
+  //SG_WZ_npv->Write();
+  //SG_TTZ_npv->Write();
+  SG_LW200_npv->Write();
+  //SG_LW300_npv->Write();
+  //SG_LW400_npv->Write();
+  //SG_LW500_npv->Write();
+  SG_dataRunB_JetMass->Write();
+  SG_dataRunC_JetMass->Write();
+  SG_ZLL_JetMass->Write();
+  SG_TT_JetMass->Write();
+  SG_W3J_JetMass->Write();
+  SG_W2J_JetMass->Write();
+  SG_W1J_JetMass->Write();
+  //SG_WW_JetMass->Write();
+  //SG_WZ_JetMass->Write();
+  //SG_TTZ_JetMass->Write();
+  SG_LW200_JetMass->Write();
+  //SG_LW300_JetMass->Write();
+  //SG_LW400_JetMass->Write();
+  //SG_LW500_JetMass->Write();
+  SG_dataRunB_LWMass->Write();
+  SG_dataRunC_LWMass->Write();
+  SG_ZLL_LWMass->Write();
+  SG_TT_LWMass->Write();
+  SG_W3J_LWMass->Write();
+  SG_W2J_LWMass->Write();
+  SG_W1J_LWMass->Write();
+  //SG_WW_LWMass->Write();
+  //SG_WZ_LWMass->Write();
+  //SG_TTZ_LWMass->Write();
+  SG_LW200_LWMass->Write();
+  //SG_LW300_LWMass->Write();
+  //SG_LW400_LWMass->Write();
+  //SG_LW500_LWMass->Write();
+  SG_dataRunB_nsv->Write();
+  SG_dataRunC_nsv->Write();
+  SG_ZLL_nsv->Write();
+  SG_TT_nsv->Write();
+  SG_W3J_nsv->Write();
+  SG_W2J_nsv->Write();
+  SG_W1J_nsv->Write();
+  //SG_WW_nsv->Write();
+  //SG_WZ_nsv->Write();
+  //SG_TTZ_nsv->Write();
+  SG_LW200_nsv->Write();
+  //SG_LW300_nsv->Write();
+  //SG_LW400_nsv->Write();
+  //SG_LW500_nsv->Write();
+  SG_dataRunB_svd->Write();
+  SG_dataRunC_svd->Write();
+  SG_ZLL_svd->Write();
+  SG_TT_svd->Write();
+  SG_W3J_svd->Write();
+  SG_W2J_svd->Write();
+  SG_W1J_svd->Write();
+  //SG_WW_svd->Write();
+  //SG_WZ_svd->Write();
+  //SG_TTZ_svd->Write();
+  SG_LW200_svd->Write();
+  //SG_LW300_svd->Write();
+  //SG_LW400_svd->Write();
+  //SG_LW500_svd->Write();
+  SG_dataRunB_Elept->Write();
+  SG_dataRunC_Elept->Write();
+  SG_ZLL_Elept->Write();
+  SG_TT_Elept->Write();
+  SG_W3J_Elept->Write();
+  SG_W2J_Elept->Write();
+  SG_W1J_Elept->Write();
+  //SG_WW_Elept->Write();
+  //SG_WZ_Elept->Write();
+  //SG_TTZ_Elept->Write();
+  SG_LW200_Elept->Write();
+  //SG_LW300_Elept->Write();
+  //SG_LW400_Elept->Write();
+  //SG_LW500_Elept->Write();
+  SG_dataRunB_DieledR->Write();
+  SG_dataRunC_DieledR->Write();
+  SG_ZLL_DieledR->Write();
+  SG_TT_DieledR->Write();
+  SG_W3J_DieledR->Write();
+  SG_W2J_DieledR->Write();
+  SG_W1J_DieledR->Write();
+  //SG_WW_DieledR->Write();
+  //SG_WZ_DieledR->Write();
+  //SG_TTZ_DieledR->Write();
+  SG_LW200_DieledR->Write();
+  //SG_LW300_DieledR->Write();
+  //SG_LW400_DieledR->Write();
+  //SG_LW500_DieledR->Write();
+  SG_dataRunB_LWdR->Write();
+  SG_dataRunC_LWdR->Write();
+  SG_ZLL_LWdR->Write();
+  SG_TT_LWdR->Write();
+  SG_W3J_LWdR->Write();
+  SG_W2J_LWdR->Write();
+  SG_W1J_LWdR->Write();
+  //SG_WW_LWdR->Write();
+  //SG_WZ_LWdR->Write();
+  //SG_TTZ_LWdR->Write();
+  SG_LW200_LWdR->Write();
+  //SG_LW300_LWdR->Write();
+  //SG_LW400_LWdR->Write();
+  //SG_LW500_LWdR->Write();
+  SG_dataRunB_DiJetdR->Write();
+  SG_dataRunC_DiJetdR->Write();
+  SG_ZLL_DiJetdR->Write();
+  SG_TT_DiJetdR->Write();
+  SG_W3J_DiJetdR->Write();
+  SG_W2J_DiJetdR->Write();
+  SG_W1J_DiJetdR->Write();
+  //SG_WW_DiJetdR->Write();
+  //SG_WZ_DiJetdR->Write();
+  //SG_TTZ_DiJetdR->Write();
+  SG_LW200_DiJetdR->Write();
+  //SG_LW300_DiJetdR->Write();
+  //SG_LW400_DiJetdR->Write();
+  //SG_LW500_DiJetdR->Write();
+  SG_dataRunB_BJetPt->Write();
+  SG_dataRunC_BJetPt->Write();
+  SG_ZLL_BJetPt->Write();
+  SG_TT_BJetPt->Write();
+  SG_W3J_BJetPt->Write();
+  SG_W2J_BJetPt->Write();
+  SG_W1J_BJetPt->Write();
+  //SG_WW_BJetPt->Write();
+  //SG_WZ_BJetPt->Write();
+  //SG_TTZ_BJetPt->Write();
+  SG_LW200_BJetPt->Write();
+  //SG_LW300_BJetPt->Write();
+  //SG_LW400_BJetPt->Write();
+  //SG_LW500_BJetPt->Write();
+  SG_dataRunB_SBJetPt->Write();
+  SG_dataRunC_SBJetPt->Write();
+  SG_ZLL_SBJetPt->Write();
+  SG_TT_SBJetPt->Write();
+  SG_W3J_SBJetPt->Write();
+  SG_W2J_SBJetPt->Write();
+  SG_W1J_SBJetPt->Write();
+  //SG_WW_SBJetPt->Write();
+  //SG_WZ_SBJetPt->Write();
+  //SG_TTZ_SBJetPt->Write();
+  SG_LW200_SBJetPt->Write();
+  //SG_LW300_SBJetPt->Write();
+  //SG_LW400_SBJetPt->Write();
+  //SG_LW500_SBJetPt->Write();
+  SG_dataRunB_NJet->Write();
+  SG_dataRunC_NJet->Write();
+  SG_ZLL_NJet->Write();
+  SG_TT_NJet->Write();
+  SG_W3J_NJet->Write();
+  SG_W2J_NJet->Write();
+  SG_W1J_NJet->Write();
+  //SG_WW_NJet->Write();
+  //SG_WZ_NJet->Write();
+  //SG_TTZ_NJet->Write();
+  SG_LW200_NJet->Write();
+  //SG_LW300_NJet->Write();
+  //SG_LW400_NJet->Write();
+  //SG_LW500_NJet->Write();
+  SG_dataRunB_NEle->Write();
+  SG_dataRunC_NEle->Write();
+  SG_ZLL_NEle->Write();
+  SG_TT_NEle->Write();
+  SG_W3J_NEle->Write();
+  SG_W2J_NEle->Write();
+  SG_W1J_NEle->Write();
+  //SG_WW_NEle->Write();
+  //SG_WZ_NEle->Write();
+  //SG_TTZ_NEle->Write();
+  SG_LW200_NEle->Write();
+  //SG_LW300_NEle->Write();
+  //SG_LW400_NEle->Write();
+  //SG_LW500_NEle->Write();
 
   hfile->Close();
 

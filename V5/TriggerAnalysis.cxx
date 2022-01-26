@@ -14,7 +14,7 @@
 //
 //
 // Compile me with:
-// g++ -std=c++11 -g -O3 -Wall -Wextra -o DYTriggerAnalysis TriggerAnalysis.cxx $(root-config --cflags --libs)
+// g++ -std=c++11 -g -O3 -Wall -Wextra -o LW200TriggerAnalysis TriggerAnalysis.cxx $(root-config --cflags --libs)
 /////////////////////////////////////////////////////////////////////
 
 //Include ROOT classes
@@ -44,29 +44,31 @@ using namespace std;
  * Base path to local filesystem or to EOS containing the datasets
  */
 //const std::string samplesBasePath = "root://eospublic.cern.ch//eos/opendata/cms/upload/od-workshop/ws2021/";
-TH1F* DYtriggps_1 = new TH1F("LWtrigg1","HLT_Photon36_CaloId10_Iso50_Photon22_CaloId10_Iso50",2,0,2);
-TH1F* DYtriggps_2 = new TH1F("LWtrigg2","HLT_Photon36_CaloId10_Iso50_Photon22_R9Id85",2,0,2);
-TH1F* DYtriggps_3 = new TH1F("LWtrigg3","HLT_Photon36_R9Id85_Photon22_CaloId10_Iso50",2,0,2);
-TH1F* DYtriggps_4 = new TH1F("LWtrigg4","HLT_Photon36_R9Id85_Photon22_R9Id85",2,0,2);
-TH1F* DYtriggps_5 = new TH1F("LWtrigg5","HLT_Photon36_Photon22",2,0,2);
-TH1F* DYtriggps_6 = new TH1F("LWtrigg6","HLT_Photon26_Photon18",2,0,2);
-TH1F* DYelectron_num = new TH1F("DYelectron_num","number of electrons for missing trigg",10,0,10);
-TH1F* DYelectron_pt = new TH1F("DYelectron_pt","Electrons pt for missing trigg",100,0,200);
-TH1F* DYelectron_eta = new TH1F("DYelectron_eta","Electrons eta for missing trigg",100,-3,3);
-TH1F* DYphoton_num = new TH1F("DYphoton_num","number of photons for missing trigg",10,0,10);
-TH1F* DYphoton_pt = new TH1F("DYphoton_pt","photons pt for missing trigg",100,0,200);
-TH1F* DYphoton_eta = new TH1F("DYphoton_eta","photons eta for missing trigg",100,-3,3);
-TH1F* DYPassTrigg = new TH1F("DYPassTrigg","Booleano trigger passed Event",2,0,2);
-TH1F* DYMele_pt = new TH1F("DYMele_pt","Most energetic electron pt;Pt[GeV];",100,0,200);
-TH1F* DYSele_pt = new TH1F("DYSele_pt","Second most energetic electron pt;Pt[GeV];",100,0,200);
-TH1F* DYMTobj_pt = new TH1F("DYMTobj_pt","Most energetic trigger object pt;Pt[GeV];",100,0,200);
-TH1F* DYSTobj_pt = new TH1F("DYSTobj_pt","Second most energetic trigger object pt;Pt[GeV];",100,0,200);
-TH1F* DYMTobj_ele_dR = new TH1F("DYMTobj_ele_dR","Trigger object and Most energ. electron deltaR distribution",100,0,4);
-TH1F* DYSTobj_ele_dR = new TH1F("DYSTobj_ele_dR","Trigger object and Second most energ. electron deltaR distribution",100,0,4);
-TGraph* DYTO_ele_ptr = new TGraph();
-TGraph* DYTO_phot_ptr = new TGraph();
-TGraph*  DY40Ele = new TGraph();
-TGraph*  DY40GenEle = new TGraph();
+TH1F* LW200triggps_1 = new TH1F("LWtrigg1","HLT_Photon36_CaloId10_Iso50_Photon22_CaloId10_Iso50",2,0,2);
+TH1F* LW200triggps_2 = new TH1F("LWtrigg2","HLT_Photon36_CaloId10_Iso50_Photon22_R9Id85",2,0,2);
+TH1F* LW200triggps_3 = new TH1F("LWtrigg3","HLT_Photon36_R9Id85_Photon22_CaloId10_Iso50",2,0,2);
+TH1F* LW200triggps_4 = new TH1F("LWtrigg4","HLT_Photon36_R9Id85_Photon22_R9Id85",2,0,2);
+TH1F* LW200triggps_5 = new TH1F("LWtrigg5","HLT_Photon36_Photon22",2,0,2);
+TH1F* LW200triggps_6 = new TH1F("LWtrigg6","HLT_Photon26_Photon18",2,0,2);
+TH1F* LW200electron_num = new TH1F("LW200electron_num","number of electrons for missing trigg",10,0,10);
+TH1F* LW200electron_pt = new TH1F("LW200electron_pt","Electrons pt for missing trigg",100,0,200);
+TH1F* LW200electron_eta = new TH1F("LW200electron_eta","Electrons eta for missing trigg",100,-3,3);
+TH1F* LW200photon_num = new TH1F("LW200photon_num","number of photons for missing trigg",10,0,10);
+TH1F* LW200photon_pt = new TH1F("LW200photon_pt","photons pt for missing trigg",100,0,200);
+TH1F* LW200photon_eta = new TH1F("LW200photon_eta","photons eta for missing trigg",100,-3,3);
+TH1F* LW200PassTrigg = new TH1F("LW200PassTrigg","Booleano trigger passed Event",2,0,2);
+TH1F* LW200Mele_pt = new TH1F("LW200Mele_pt","Most energetic electron pt;Pt[GeV];",100,0,200);
+TH1F* LW200Sele_pt = new TH1F("LW200Sele_pt","Second most energetic electron pt;Pt[GeV];",100,0,200);
+TH1F* LW200MTobj_pt = new TH1F("LW200MTobj_pt","Most energetic trigger object pt;Pt[GeV];",100,0,200);
+TH1F* LW200STobj_pt = new TH1F("LW200STobj_pt","Second most energetic trigger object pt;Pt[GeV];",100,0,200);
+TH1F* LW200MTobj_ele_dR = new TH1F("LW200MTobj_ele_dR","Trigger object and Most energ. electron deltaR distribution",100,0,4);
+TH1F* LW200STobj_ele_dR = new TH1F("LW200STobj_ele_dR","Trigger object and Second most energ. electron deltaR distribution",100,0,4);
+TGraph* LW200TO_ele_ptr = new TGraph();
+TGraph* LW200TO_phot_ptr = new TGraph();
+TGraph*  LW20040Ele = new TGraph();
+TGraph*  LW20040GenEle = new TGraph();
+TH1F* divM;
+TH1F* divS;
 const std::string samplesBasePath = "";
 
 
@@ -188,18 +190,18 @@ EventLoopAnalysisTemplate::EventLoopAnalysisTemplate(TString thefile, TString th
   labeltag = thelabel;
   theweight = sampleweight;
 
-  hists[0]=DYtriggps_1;
-  hists[1]=DYtriggps_2;
-  hists[2]=DYtriggps_3;
-  hists[3]=DYtriggps_4;
-  hists[4]=DYtriggps_5;
-  hists[5]=DYtriggps_6;
-  hists[6]=DYelectron_num;
-  hists[7]=DYelectron_pt;
-  hists[8]=DYelectron_eta;
-  hists[9]=DYphoton_num;
-  hists[10]=DYphoton_pt;
-  hists[11]=DYphoton_eta;
+  hists[0]=LW200triggps_1;
+  hists[1]=LW200triggps_2;
+  hists[2]=LW200triggps_3;
+  hists[3]=LW200triggps_4;
+  hists[4]=LW200triggps_5;
+  hists[5]=LW200triggps_6;
+  hists[6]=LW200electron_num;
+  hists[7]=LW200electron_pt;
+  hists[8]=LW200electron_eta;
+  hists[9]=LW200photon_num;
+  hists[10]=LW200photon_pt;
+  hists[11]=LW200photon_eta;
 
 // if parameter tree is not specified (or zero), connect the file
 // used to generate this class and read the Tree.
@@ -382,13 +384,13 @@ void EventLoopAnalysisTemplate::Loop()
       if (ElePtTemp.back()>40 && ElePtTemp.end()[-2]>25 ){
         if (pstmp==1)EventCount++;
         else EventDiscount++;
-        DYPassTrigg->Fill(pstmp);
+        LW200PassTrigg->Fill(pstmp);
       }
     }
-    ////////////////////////////Triger object check study//////////////////////////////////////////
+    ////////////////////////////Triger object check stuLW200//////////////////////////////////////////
     vector<float> GenPtTemp;
     GenPtTemp.clear();
-    for(size_t x=0; x<GenPart_pt->size(); x++){if(abs(GenPart_pdgId->at(x))==11 && abs(GenPart_mompdgId->at(x))==556) GenPtTemp.push_back(GenPart_pt->at(x));}
+    for(size_t x=0; x<GenPart_pt->size(); x++){if(abs(GenPart_pdgId->at(x))==11 ) GenPtTemp.push_back(GenPart_pt->at(x));}
     //vector<float> ElePtTemp;
     ElePtTemp.clear();
     for (size_t i = 0; i < electron_pt->size(); i++) {ElePtTemp.push_back(electron_pt->at(i));}
@@ -398,7 +400,7 @@ void EventLoopAnalysisTemplate::Loop()
       for (size_t x = 0; x < electron_pt->size(); x++){
         float saveTODR=100;
         float savePT=0;
-        if(electron_pt->at(x)==ElePtTemp.back() && electron_eta->at(x)<1.44 && electron_iso->at(x)<50 && trk_isHQ->at(x)==1){
+        if(electron_pt->at(x)==ElePtTemp.back() && electron_eta->at(x)<1.44 && electron_iso->at(x)<50){//&& trk_isHQ->at(x)==1){
           for(size_t y=0; y<trigobj_pt->size(); y++){
             float tmpDR=deltaR(electron_eta->at(x), electron_phi->at(x), trigobj_eta->at(y), trigobj_phi->at(y));
             if(saveTODR>tmpDR){
@@ -408,7 +410,7 @@ void EventLoopAnalysisTemplate::Loop()
           if(saveTODR<0.1) SignalCount++;
           else if(saveTODR>=0.1) SignalDiscount++;
         }
-        else if(electron_pt->at(x)==ElePtTemp.end()[-2] && electron_eta->at(x)<1.44) && electron_iso->at(x)<50 && trk_isHQ->at(x)==1){
+        else if(electron_pt->at(x)==ElePtTemp.end()[-2] && electron_eta->at(x)<1.44 && electron_iso->at(x)<50){// && trk_isHQ->at(x)==1){
           for(size_t y=0; y<trigobj_pt->size(); y++){
             float tmpDR=deltaR(electron_eta->at(x), electron_phi->at(x), trigobj_eta->at(y), trigobj_phi->at(y));
             if(saveTODR>tmpDR){
@@ -422,7 +424,7 @@ void EventLoopAnalysisTemplate::Loop()
     }
 
 
-
+    //if(electron_pt->size()!=electron_iso->size() || electron_pt->size()!=trk_isHQ->size()) cout <<electron_pt->size()<<' '<<electron_iso->size()<<' '<<trk_isHQ->size()<<endl;
     Long64_t ientry = LoadTree(jentry);
     //cout<<ientry<<endl;
     if (ientry < 0) break;
@@ -430,7 +432,18 @@ void EventLoopAnalysisTemplate::Loop()
 
     analysis();
 
+
   }
+  divM= new TH1F(*LW200MTobj_pt);
+  divM->Divide(LW200Mele_pt);
+  divS= new TH1F(*LW200STobj_pt);
+  divS->Divide(LW200Sele_pt);
+
+  TFile* TurnOn = new TFile("TurnOn.root","RECREATE");
+  divM->Write();
+  divS->Write();
+  TurnOn->Close();
+
   cout<<"Number Ele "<<Elecount<<endl;
   cout<<"Triggcount "<<Triggcount<<endl;
   cout<<"EventCount "<<EventDiscount/EventCount<< ' '<<EventCount<<' '<<EventDiscount<<endl;
@@ -460,7 +473,7 @@ void EventLoopAnalysisTemplate::analysis()
   if(electron_pt->size()>0){
     for (size_t x = 0; x < electron_pt->size(); x++) {ElePtTemp.push_back(electron_pt->at(x));}
     sort(ElePtTemp.begin(),ElePtTemp.end());
-    if (ElePtTemp.back()>40) DYPassTrigg->Fill(pstmp);
+    if (ElePtTemp.back()>40) LW200PassTrigg->Fill(pstmp);
   }
 
   for (Int_t j=0;j<6;++j){
@@ -480,8 +493,8 @@ void EventLoopAnalysisTemplate::analysis()
         if( GenPtTemp.back() == GenPart_pt->at(x) && abs(GenPart_pdgId->at(x))==11 ){
           for (size_t i = 0; i < electron_pt->size(); i++) {
             if( genelec_DRscore->at(i)<0.1 && genelec_pt->at(i)==GenPart_pt->at(x) ){
-              if(GenPart_pt->at(x)/electron_pt->at(i)<1) DY40GenEle->AddPoint(GenPart_pt->at(x),pstmp*GenPart_pt->at(x)/electron_pt->at(i));
-              else DY40GenEle->AddPoint( GenPart_pt->at(x),pstmp*electron_pt->at(i)/GenPart_pt->at(x) );
+              if(GenPart_pt->at(x)/electron_pt->at(i)<1) LW20040GenEle->AddPoint(GenPart_pt->at(x),pstmp*GenPart_pt->at(x)/electron_pt->at(i));
+              else LW20040GenEle->AddPoint( GenPart_pt->at(x),pstmp*electron_pt->at(i)/GenPart_pt->at(x) );
             }
           }
         }
@@ -495,13 +508,13 @@ void EventLoopAnalysisTemplate::analysis()
     if(electron_pt->size()>1 && trigobj_pt->size()>1){
       for (size_t x = 0; x < electron_pt->size(); x++) {ElePtTemp.push_back(electron_pt->at(x));}
       sort(ElePtTemp.begin(),ElePtTemp.end());
-      DYMele_pt->Fill(ElePtTemp.back());
-      DYSele_pt->Fill(ElePtTemp.end()[-2]);
+      LW200Mele_pt->Fill(ElePtTemp.back());
+      LW200Sele_pt->Fill(ElePtTemp.end()[-2]);
       for(size_t y=0; y<trigobj_pt->size(); y++){ToPtTemp.push_back(trigobj_pt->at(y));}
       sort(ToPtTemp.begin(),ToPtTemp.end());
-      DYMTobj_pt->Fill(ToPtTemp.back());
-      DYSTobj_pt->Fill(ToPtTemp.end()[-2]);
-      if (ElePtTemp.back()>40) DYPassTrigg->Fill(pstmp);
+      LW200MTobj_pt->Fill(ToPtTemp.back());
+      LW200STobj_pt->Fill(ToPtTemp.end()[-2]);
+      if (ElePtTemp.back()>40) LW200PassTrigg->Fill(pstmp);
       for (size_t x = 0; x < electron_pt->size(); x++) {
         if( electron_pt->at(x)==ElePtTemp.back() ){
           float saveEleDR=100;
@@ -514,12 +527,12 @@ void EventLoopAnalysisTemplate::analysis()
             }
             //cout<<"TrigObj: "<<deltaR(electron_eta->at(x), electron_phi->at(x), trigobj_eta->at(y), trigobj_phi->at(y) )<<endl;
           }
-          DYMTobj_ele_dR->Fill(saveEleDR);
+          LW200MTobj_ele_dR->Fill(saveEleDR);
           //cout<<"SaveDR: "<<saveEleDR<<endl;
           if( saveEleDR<0.1){
             //cout<<" valid ele \n";
-            if(electron_pt->at(x)/TrigObjpt<1) DY40Ele->AddPoint(electron_pt->at(x),pstmp*electron_pt->at(x)/TrigObjpt);
-            else DY40Ele->AddPoint(electron_pt->at(x),pstmp*TrigObjpt/electron_pt->at(x));
+            if(electron_pt->at(x)/TrigObjpt<1) LW20040Ele->AddPoint(electron_pt->at(x),pstmp*electron_pt->at(x)/TrigObjpt);
+            else LW20040Ele->AddPoint(electron_pt->at(x),pstmp*TrigObjpt/electron_pt->at(x));
           }
         }
         if( electron_pt->at(x)==ElePtTemp.end()[-2] ){
@@ -533,7 +546,7 @@ void EventLoopAnalysisTemplate::analysis()
             }
             //cout<<"TrigObj: "<<deltaR(electron_eta->at(x), electron_phi->at(x), trigobj_eta->at(y), trigobj_phi->at(y) )<<endl;
           }
-          DYSTobj_ele_dR->Fill(saveEleDR);
+          LW200STobj_ele_dR->Fill(saveEleDR);
         }
       }
     }
@@ -573,8 +586,8 @@ void EventLoopAnalysisTemplate::analysis()
         }
       }
       if(saveTODR<0.1){
-        if(savePT/trigobj_pt->at(y)<1)DYTO_ele_ptr->AddPoint(trigobj_pt->at(y),savePT/trigobj_pt->at(y));
-        else DYTO_ele_ptr->AddPoint(trigobj_pt->at(y),trigobj_pt->at(y)/savePT);
+        if(savePT/trigobj_pt->at(y)<1)LW200TO_ele_ptr->AddPoint(trigobj_pt->at(y),savePT/trigobj_pt->at(y));
+        else LW200TO_ele_ptr->AddPoint(trigobj_pt->at(y),trigobj_pt->at(y)/savePT);
       }
       saveTODR=100;
       savePT=0;
@@ -586,8 +599,8 @@ void EventLoopAnalysisTemplate::analysis()
         }
       }
       if(saveTODR<0.1){
-        if(savePT/trigobj_pt->at(y)<1)DYTO_phot_ptr->AddPoint(trigobj_pt->at(y),savePT/trigobj_pt->at(y));
-        else DYTO_phot_ptr->AddPoint(trigobj_pt->at(y),trigobj_pt->at(y)/savePT);
+        if(savePT/trigobj_pt->at(y)<1)LW200TO_phot_ptr->AddPoint(trigobj_pt->at(y),savePT/trigobj_pt->at(y));
+        else LW200TO_phot_ptr->AddPoint(trigobj_pt->at(y),trigobj_pt->at(y)/savePT);
       }
     }
   }
@@ -656,7 +669,7 @@ int main()
 
 
   map<string, pair<string,float> > sampleNames;
-  sampleNames.insert(make_pair("DYJetsToLL",make_pair("DY",1)));
+  sampleNames.insert(make_pair("LWSM200DnR",make_pair("LW200",1)));
 
 
 
@@ -685,32 +698,32 @@ int main()
     time.Print();
   }
 
-  TFile* hfile = new TFile("DYTrig.root","RECREATE");
+  TFile* hfile = new TFile("LW200Trig.root","RECREATE");
 
   //Save signal region histos
-  DYtriggps_1->Write();
-  DYtriggps_2->Write();
-  DYtriggps_3->Write();
-  DYtriggps_4->Write();
-  DYtriggps_5->Write();
-  DYtriggps_6->Write();
-  DYelectron_num->Write();
-  DYelectron_pt->Write();
-  DYelectron_eta->Write();
-  DYphoton_num->Write();
-  DYphoton_pt->Write();
-  DYphoton_eta->Write();
-  DYPassTrigg->Write();
-  DYMele_pt->Write();
-  DYSele_pt->Write();
-  DYMTobj_pt->Write();
-  DYSTobj_pt->Write();
-  DYMTobj_ele_dR->Write();
-  DYSTobj_ele_dR->Write();
-  DYTO_ele_ptr->Write();
-  DYTO_phot_ptr->Write();
-  DY40GenEle->Write();
-  DY40Ele->Write();
+  LW200triggps_1->Write();
+  LW200triggps_2->Write();
+  LW200triggps_3->Write();
+  LW200triggps_4->Write();
+  LW200triggps_5->Write();
+  LW200triggps_6->Write();
+  LW200electron_num->Write();
+  LW200electron_pt->Write();
+  LW200electron_eta->Write();
+  LW200photon_num->Write();
+  LW200photon_pt->Write();
+  LW200photon_eta->Write();
+  LW200PassTrigg->Write();
+  LW200Mele_pt->Write();
+  LW200Sele_pt->Write();
+  LW200MTobj_pt->Write();
+  LW200STobj_pt->Write();
+  LW200MTobj_ele_dR->Write();
+  LW200STobj_ele_dR->Write();
+  LW200TO_ele_ptr->Write();
+  LW200TO_phot_ptr->Write();
+  LW20040GenEle->Write();
+  LW20040Ele->Write();
 
 
   hfile->Close();

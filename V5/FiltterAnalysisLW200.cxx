@@ -14,7 +14,7 @@
 //
 //
 // Compile me with:
-// g++ -std=c++11 -g -O3 -Wall -Wextra -o FiltterAnalysis FiltterAnalysis.cxx $(root-config --cflags --libs)
+// g++ -std=c++11 -g -O3 -Wall -Wextra -o FiltterAnalysisLW200 FiltterAnalysisLW200.cxx $(root-config --cflags --libs)
 /////////////////////////////////////////////////////////////////////
 
 //Include ROOT classes
@@ -36,6 +36,13 @@
 #include <bits/stdc++.h>
 
 using namespace std;
+
+
+bool sortbysec(const pair<float,float> &a,
+              const pair<float,float> &b)
+{
+    return (a.second < b.second);
+}
 
 
 /*
@@ -84,6 +91,28 @@ TH1F* LW200jet_eta = new TH1F("LW200jet_eta","Jet pseudorapidity",100,-5,5);
 TH1F* LW200Genjet_pt = new TH1F("LW200Genjet_pt","Gen Jet pt distribution;Pt[GeV];",100,0,200);
 TH1F* LW200Genjet_eta = new TH1F("LW200Genjet_eta","Gen Jet pseudorapidity",100,-5,5);
 //TH1F* LW200EleBsecvec = new TH1F("Electron best match","Best matched secondary vertex displacement",100,0,0.1);
+TH1F* LW2004Jets_pt = new TH1F("LW2004Jets_pt","4 most energetic jets pt;Transversal Momentum[GeV];",100,0,200);
+TH1F* LW2004Jets_eta = new TH1F("LW2004Jets_eta","4 most energetic jets eta;Pseudorapidity;",100,-5,5);
+TH1F* LW2004Jets_DR = new TH1F("LW2004Jets_DR","4 most energetic jets deltaR;DeltaR;",100,0,5);
+TH1F* LW200EleJet_DR1 = new TH1F("LW200EleJet_DR1","Electron DR 1 to the closest energetic jet DeltaR;DeltaR;",100,0,3);
+TH1F* LW200EleJet_DR2 = new TH1F("LW200EleJet_DR2","Electron DR 2 to the closest energetic jet DeltaR;DeltaR;",100,0,3);
+TH1F* LW200EleJet_DRdiff = new TH1F("LW200EleJet_DRdiff","Electron DR diff to the closest energetic jet DeltaR;DeltaR;",100,0,3);
+TH1F* LW200Gen_EleJet_DR1 = new TH1F("LW200Gen_EleJet_DR1","Electron DR 1 to the closest energetic jet Gen DeltaR;DeltaR;",100,0,3);
+TH1F* LW200Gen_EleJet_DR2 = new TH1F("LW200Gen_EleJet_DR2","Electron DR 2 to the closest energetic jet Gen DeltaR;DeltaR;",100,0,3);
+TH1F* LW200Gen_EleJet_DRdiff = new TH1F("LW200Gen_EleJet_DRdiff","Electron DR diff to the closest energetic jet Gen DeltaR;DeltaR;",100,0,3);
+TH1F* LW200DiJet_DR = new TH1F("LW200DiJet_DR","Pair of most energetic jets DR;DeltaR;",100,0,100);
+TH1F* LW200SecVec_bydist = new TH1F("LW200SecVec_bydist","Most energetic electron secondary vertex by distance;diatance[mm];",100,0,1);
+TH1F* LW200SecVec_bysigma = new TH1F("LW200SecVec_bysigma","Most energetic electron secondary vertex by uncertainty;diatance[mm];",100,0,1);
+TH1F* LW200SecVec_Gen = new TH1F("LW200SecVec_Gen","Most energetic gen-electron;diatance[mm];",100,0,1);
+TH1F* LW200GenZ_pt = new TH1F("LW200GenZ_pt","Generated Z bosons pt;Transversal momentum[GeV];",100,0,200);
+TH1F* LW200GenLW_pt = new TH1F("LW200GenLW_pt","Generated LW electron pt;Transversal momentum[GeV];",100,0,300);
+TH1F* LW200GenZ_ele_dR = new TH1F("LW200GenZ_ele_dR","Generated Z-Ele DeltaR;DeltaR;",100,0,5);
+TH1F* LW200LW_dR = new TH1F("LW200LW_dR","LW-LW deltaR;DeltaR;",100,0,25);
+TH1F* LW200GenZ_dR = new TH1F("LW200GenZ_dR","Generated Z-Z DeltaR;DeltaR;",100,0,25);
+TH1F* LW200GenZ_LW_dR = new TH1F("LW200GenZ_LW_dR","Generated Z-LW DeltaR;DeltaR;",100,0,5);
+
+
+
 const std::string samplesBasePath = "";
 
 
@@ -114,6 +143,7 @@ public :
   TTree          *tGenPart;
   TTree          *tTrack;
   TTree          *tJet;
+  TTree          *tVertex;
 
 
   Int_t           fCurrent; //!current Tree number in a TChain
@@ -160,7 +190,14 @@ public :
   vector<float>   *photon_pt;
   vector<float>   *photon_eta;
   vector<float>   *GenPart_pt;
+  vector<float>   *GenPart_px;
+  vector<float>   *GenPart_py;
+  vector<float>   *GenPart_pz;
+  vector<float>   *GenPart_vx;
+  vector<float>   *GenPart_vy;
+  vector<float>   *GenPart_vz;
   vector<float>   *GenPart_eta;
+  vector<float>   *GenPart_phi;
   vector<float>   *GenPart_mass;
   vector<float>   *GenPart_pdgId;
   vector<float>   *GenPart_mompdgId;
@@ -176,6 +213,18 @@ public :
   /*vector<float>   *electron_Bsecvec;
   vector<float>   *secvec_deltaR;
   vector<float>   *secvec_disp;*/
+  vector<float>   *secvec_posx;
+  vector<float>   *secvec_posy;
+  vector<float>   *secvec_posz;
+  vector<float>   *secvec_poserrorx;
+  vector<float>   *secvec_poserrory;
+  vector<float>   *secvec_poserrorz;
+  vector<float>   *secvec_eleTag;
+  vector<float>   *secvec_normchi2;
+  vector<float>   *Bsp_x;
+  vector<float>   *Bsp_y;
+  vector<float>   *Bsp_z;
+
 
   TBranch        *b_run;   //!
   TBranch        *b_luminosityBlock;   //!
@@ -211,7 +260,14 @@ public :
   TBranch        *b_photon_pt;
   TBranch        *b_photon_eta;
   TBranch        *b_GenPart_pt;
+  TBranch        *b_GenPart_px;
+  TBranch        *b_GenPart_py;
+  TBranch        *b_GenPart_pz;
+  TBranch        *b_GenPart_vx;
+  TBranch        *b_GenPart_vy;
+  TBranch        *b_GenPart_vz;
   TBranch        *b_GenPart_eta;
+  TBranch        *b_GenPart_phi;
   TBranch        *b_GenPart_mass;
   TBranch        *b_GenPart_pdgId;
   TBranch        *b_GenPart_mompdgId;
@@ -227,6 +283,18 @@ public :
   /*TBranch        *b_electron_Bsecvec;
   TBranch        *b_secvec_deltaR;
   TBranch        *b_secvec_disp;*/
+  TBranch    *b_secvec_posx;
+  TBranch    *b_secvec_posy;
+  TBranch    *b_secvec_posz;
+  TBranch    *b_secvec_poserrorx;
+  TBranch    *b_secvec_poserrory;
+  TBranch    *b_secvec_poserrorz;
+  TBranch    *b_secvec_eleTag;
+  TBranch    *b_secvec_normchi2;
+  TBranch    *b_Bsp_x;
+  TBranch    *b_Bsp_y;
+  TBranch    *b_Bsp_z;
+
 
 
   EventLoopAnalysisTemplate(TString filename, TString labeltag, Float_t theweight);
@@ -239,7 +307,7 @@ public :
   virtual void     Show(Long64_t entry = -1);
   virtual float deltaR(float eta1, float phi1, float eta2, float phi2);
   void analysis();
-  Float_t MinimalSelection(Int_t entry);
+  bool MinimalSelection();
 
 };
 
@@ -283,6 +351,7 @@ EventLoopAnalysisTemplate::EventLoopAnalysisTemplate(TString thefile, TString th
    tGenPart = (TTree*)f->Get("mygenparticle/Events");
    tTrack = (TTree*)f->Get("mytracks/Events");
    tJet = (TTree*)f->Get("myjets/Events");
+   tVertex = (TTree*)f->Get("mypvertex/Events");
    //Make friends so we can have access to friends variables
    //we may not use all of the available information
    //it is just an example
@@ -292,6 +361,7 @@ EventLoopAnalysisTemplate::EventLoopAnalysisTemplate(TString thefile, TString th
    tree->AddFriend(tGenPart);
    tree->AddFriend(tTrack);
    tree->AddFriend(tJet);
+   tree->AddFriend(tVertex);
    Init(tree);
 }
 
@@ -367,7 +437,14 @@ void EventLoopAnalysisTemplate::Init(TTree *tree)
    photon_pt=0;
    photon_eta=0;
    GenPart_pt=0;
+   GenPart_px=0;
+   GenPart_py=0;
+   GenPart_pz=0;
+   GenPart_vx=0;
+   GenPart_vy=0;
+   GenPart_vz=0;
    GenPart_eta=0;
+   GenPart_phi=0;
    GenPart_mass=0;
    GenPart_pdgId=0;
    GenPart_mompdgId=0;
@@ -383,6 +460,17 @@ void EventLoopAnalysisTemplate::Init(TTree *tree)
    /*electron_Bsecvec=0;
    secvec_deltaR=0;
    secvec_disp=0;*/
+   secvec_posx=0;
+   secvec_posy=0;
+   secvec_posz=0;
+   secvec_poserrorx=0;
+   secvec_poserrory=0;
+   secvec_poserrorz=0;
+   secvec_eleTag=0;
+   secvec_normchi2=0;
+   Bsp_x=0;
+   Bsp_y=0;
+   Bsp_z=0;
 
    // Set branch addresses and branch pointers
    if (!tree) return;
@@ -408,7 +496,14 @@ void EventLoopAnalysisTemplate::Init(TTree *tree)
    fChain->SetBranchAddress("photon_pt",&photon_pt,&b_photon_pt);
    fChain->SetBranchAddress("photon_eta",&photon_eta,&b_photon_eta);
    fChain->SetBranchAddress("GenPart_pt",&GenPart_pt,&b_GenPart_pt);
+   fChain->SetBranchAddress("GenPart_px",&GenPart_px,&b_GenPart_px);
+   fChain->SetBranchAddress("GenPart_py",&GenPart_py,&b_GenPart_py);
+   fChain->SetBranchAddress("GenPart_pz",&GenPart_pz,&b_GenPart_pz);
+   fChain->SetBranchAddress("GenPart_vx",&GenPart_vx,&b_GenPart_vx);
+   fChain->SetBranchAddress("GenPart_vy",&GenPart_vy,&b_GenPart_vy);
+   fChain->SetBranchAddress("GenPart_vz",&GenPart_vz,&b_GenPart_vz);
    fChain->SetBranchAddress("GenPart_eta",&GenPart_eta,&b_GenPart_eta);
+   fChain->SetBranchAddress("GenPart_phi",&GenPart_phi,&b_GenPart_phi);
    fChain->SetBranchAddress("GenPart_mass",&GenPart_mass,&b_GenPart_mass);
    fChain->SetBranchAddress("GenPart_pdgId",&GenPart_pdgId,&b_GenPart_pdgId);
    fChain->SetBranchAddress("GenPart_mompdgId",&GenPart_mompdgId,&b_GenPart_mompdgId);
@@ -442,6 +537,18 @@ void EventLoopAnalysisTemplate::Init(TTree *tree)
    /*fChain->SetBranchAddress("electron_Bsecvec",&electron_Bsecvec,&b_electron_Bsecvec);
    fChain->SetBranchAddress("secvec_deltaR",&secvec_deltaR,&b_secvec_deltaR);
    fChain->SetBranchAddress("secvec_disp",&secvec_disp,&b_secvec_disp);*/
+   fChain->SetBranchAddress("secvec_posx",&secvec_posx,&b_secvec_posx);
+   fChain->SetBranchAddress("secvec_posy",&secvec_posy,&b_secvec_posy);
+   fChain->SetBranchAddress("secvec_posz",&secvec_posz,&b_secvec_posz);
+   fChain->SetBranchAddress("secvec_poserrorx",&secvec_poserrorx,&b_secvec_poserrorx);
+   fChain->SetBranchAddress("secvec_poserrory",&secvec_poserrory,&b_secvec_poserrory);
+   fChain->SetBranchAddress("secvec_poserrorz",&secvec_poserrorz,&b_secvec_poserrorz);
+   fChain->SetBranchAddress("secvec_eleTag",&secvec_eleTag,&b_secvec_eleTag);
+   fChain->SetBranchAddress("secvec_normchi2",&secvec_normchi2,&b_secvec_normchi2);
+   fChain->SetBranchAddress("Bsp_x",&Bsp_x,&b_Bsp_x);
+   fChain->SetBranchAddress("Bsp_y",&Bsp_y,&b_Bsp_y);
+   fChain->SetBranchAddress("Bsp_z",&Bsp_z,&b_Bsp_z);
+
 
    Notify();
 }
@@ -848,7 +955,189 @@ if(gjet_DRscore.size()>1){
   else LW200Genjet_massfilter->Fill(0);
   //////////////////////Reco Electron Inv Mass/////////////////////////////
 
+
+
   //////////////////////Jet and Ele DR analysis/////////////
+  vector<pair <float,size_t> > JetPtTemp;
+  vector<float> JetDRTemp;
+  vector<pair <float,size_t> > ElePtTemp;
+  vector<float> EleDRTemp;
+
+  for (size_t i = 0; i < electron_pt->size(); i++) {ElePtTemp.push_back(make_pair(electron_pt->at(i),i));}
+  sort(ElePtTemp.begin(),ElePtTemp.end());
+
+  if(corr_jet_pt->size()>4 && ElePtTemp.size()>1 && ElePtTemp.back().first>40 && ElePtTemp.end()[-2].first>25){
+    ElePtTemp.clear();
+    JetPtTemp.clear();
+    for(size_t x=0; x<corr_jet_pt->size(); x++ ){JetPtTemp.push_back(make_pair(corr_jet_pt->at(x),x));}
+    sort(JetPtTemp.begin(), JetPtTemp.end());
+    float DiJetDR=deltaR(jet_eta->at(JetPtTemp.back().second),jet_phi->at(JetPtTemp.back().second),jet_eta->at(JetPtTemp.end()[-2].second),jet_phi->at(JetPtTemp.end()[-2].second));
+    LW200DiJet_DR->Fill(DiJetDR);
+
+    for (size_t i = 0; i < electron_pt->size(); i++) {
+      if(i==ElePtTemp.back().second || i==ElePtTemp.end()[-2].second){
+        for(size_t x=0; x<corr_jet_pt->size(); x++){
+          if(x==JetPtTemp.back().second||x==JetPtTemp.end()[-2].second||x==JetPtTemp.end()[-3].second||x==JetPtTemp.end()[-4].second){
+            EleDRTemp.push_back(deltaR(jet_eta->at(x),jet_phi->at(x),electron_eta->at(i),electron_phi->at(i)));
+          }
+        }
+        sort(EleDRTemp.begin(),EleDRTemp.end());
+        LW200EleJet_DR1->Fill(EleDRTemp.front());
+        LW200EleJet_DR2->Fill(EleDRTemp.at(1));
+        LW200EleJet_DRdiff->Fill(abs(EleDRTemp.at(1)-EleDRTemp.front()));
+      }
+    }
+    for(size_t x=0; x<corr_jet_pt->size(); x++){
+      if(x==JetPtTemp.back().second||x==JetPtTemp.end()[-2].second||x==JetPtTemp.end()[-3].second||x==JetPtTemp.end()[-4].second){
+        LW2004Jets_pt->Fill(corr_jet_pt->at(x));
+        LW2004Jets_eta->Fill(jet_eta->at(x));
+        for(size_t y=x+1; y<corr_jet_pt->size(); y++){
+          if(y==JetPtTemp.back().second||y==JetPtTemp.end()[-2].second||y==JetPtTemp.end()[-3].second||y==JetPtTemp.end()[-4].second){
+            JetDRTemp.push_back(deltaR(jet_eta->at(x),jet_phi->at(x),jet_eta->at(y),jet_phi->at(y)));
+
+          }
+        }
+        sort(JetDRTemp.begin(),JetDRTemp.end());
+        LW2004Jets_DR->Fill(JetDRTemp.front());
+      }
+    }
+
+  }
+
+  ///////////////lw_pt y Z_pt/////////////////////
+  for(size_t i=0; i<GenPart_pt->size(); i++){
+    if(GenPart_pdgId->at(i)==23 && abs(GenPart_mompdgId->at(i))==556){
+      LW200GenZ_pt->Fill(GenPart_pt->at(i));
+    }
+    if(abs(GenPart_pdgId->at(i))==556){
+      LW200GenLW_pt->Fill(GenPart_pt->at(i));
+    }
+  }
+  ////////////////////dR Z-Ele///////////////////
+  for(size_t i=0; i<GenDau_pt->size();i++){
+    if(GenDau_mompdgId->at(i)==556){
+      for(size_t j=0; j<GenDau_pt->size();j++){
+        if(GenDau_mompdgId->at(j)==556){
+          if(GenDau_pdgId->at(i)==11 && GenDau_pdgId->at(j)==23){
+            LW200GenZ_ele_dR->Fill(deltaR(GenDau_eta->at(i),GenDau_phi->at(i),GenDau_eta->at(j),GenDau_phi->at(j)));
+          }
+        }
+      }
+    }
+  }
+  /////////////////////////////////DRZ-Z
+  for(size_t i=0; i<GenDau_pt->size();i++){
+    if(GenDau_mompdgId->at(i)==556 && GenDau_pdgId->at(i)==23){
+      for(size_t j=0; j<GenDau_pt->size();j++){
+        if(GenDau_mompdgId->at(j)==-556 && GenDau_pdgId->at(j)==23){
+          LW200GenZ_dR->Fill(deltaR(GenDau_eta->at(i),GenDau_phi->at(i),GenDau_eta->at(j),GenDau_phi->at(j)));
+        }
+      }
+    }
+  }
+  for(size_t i=0; i<GenPart_pt->size();i++){
+    if(GenPart_pdgId->at(i)==556){
+      for(size_t j=0; j<GenPart_pt->size();j++){
+        if(GenPart_pdgId->at(j)==-556){
+          LW200LW_dR->Fill(deltaR(GenPart_eta->at(i),GenPart_phi->at(i),GenPart_eta->at(j),GenPart_phi->at(j)));
+        }
+      }
+    }
+  }
+  for(size_t i=0; i<GenPart_pt->size();i++){
+    if(GenPart_pdgId->at(i)==556){
+      for(size_t j=0; j<GenPart_pt->size();j++){
+        if(GenPart_mompdgId->at(j)==556 && GenPart_pdgId->at(j)==23){
+          LW200GenZ_LW_dR->Fill(deltaR(GenPart_eta->at(i),GenPart_phi->at(i),GenPart_eta->at(j),GenPart_phi->at(j)));
+        }
+      }
+    }
+  }
+
+  /*vector<float> GenEleDRTemp;
+  float Zx,Zy,Zz;
+  for (size_t x = 0; x < GenPart_pt->size(); x++) {
+
+    if(GenPart_mompdgId->at(x)==556){
+      if(GenPart_pdgId->at(x)==23){
+        Zx=GenPart_px->at(x);
+        Zy=GenPart_py->at(x);
+        Zz=GenPart_pz->at(x);
+      }
+    }
+  }
+  vector<pair<float, size_t>> vZx;
+  vector<pair<float, size_t>> vZy;
+  vector<pair<float, size_t>> vZz;
+  for (size_t y = 0; y < GenDau_pt->size(); y++) {
+    if(GenDau_mompdgId->at(y)==23){
+      vZx.push_back(make_pair(GenDau_px->at(y),y));
+      vZy.push_back(make_pair(GenDau_py->at(y),y));
+      vZz.push_back(make_pair(GenDau_pz->at(y),y));
+    }
+  }
+  size_t iZ1, iZ2;
+  for(size_t x=0; x<vZx.size(); x++){
+    for(size_t y=x+1; y<vZy.size(); y++){
+      if((vZx.at(x).first+vZx.at(y).first)==Zx &&(vZy.at(x).first+vZy.at(y).first)==Zy && (vZz.at(x).first+vZz.at(y).first)==Zz){
+        iZ1=vZx.at(x).second;
+        iZ2=vZx.at(y).second;
+      }
+    }
+  }
+  for (size_t x = 0; x < GenPart_pt->size(); x++) {
+
+    if(GenPart_mompdgId->at(x)==556 && GenPart_pdgId->at(x)==11){
+      GenEleDRTemp.push_back(deltaR(GenPart_eta->at(x),GenPart_phi->at(x),GenDau_eta->at(iZ1),GenDau_phi->at(iZ1)));
+      GenEleDRTemp.push_back(deltaR(GenPart_eta->at(x),GenPart_phi->at(x),GenDau_eta->at(iZ2),GenDau_phi->at(iZ2)));
+    }
+  }
+
+  sort(GenEleDRTemp.begin(),GenEleDRTemp.end());
+  LW200Gen_EleJet_DR1->Fill(GenEleDRTemp.front());
+  LW200Gen_EleJet_DR2->Fill(GenEleDRTemp.at(1));
+  LW200Gen_EleJet_DRdiff->Fill(abs(GenEleDRTemp.at(1)-GenEleDRTemp.front()));*/
+
+
+    //if(GenPart_mompdgId->at(x)==-556 &&GenPart_pdgId->at(x)==-11){}
+    vector<pair<float,float>> dist;
+    float dx,dy,dz,sigma;
+    float vx,vy,vz;
+    if(MinimalSelection()){
+      for(size_t x=0; x<secvec_posx->size(); x++){
+        if(secvec_eleTag->at(x)==ElePtTemp.back().second){
+          dx=secvec_posx->at(x)-Bsp_x->at(0);
+          dy=secvec_posy->at(x)-Bsp_y->at(0);
+          dz=secvec_posz->at(x)-Bsp_z->at(0);
+          sigma=sqrt(secvec_poserrorx->at(x)*secvec_poserrorx->at(x)+secvec_poserrory->at(x)*secvec_poserrory->at(x)+secvec_poserrorz->at(x)*secvec_poserrorz->at(x));
+          dist.push_back(make_pair(sqrtf(dx*dx+dy*dy+dz*dz),sigma));
+        }
+          for(size_t y=0; y<GenPart_pt->size(); y++){
+            if(abs(GenPart_pdgId->at(y))==556){
+              vx=GenPart_vx->at(y);
+              vy=GenPart_vy->at(y);
+              vz=GenPart_vz->at(y);
+            }
+          }
+          for(size_t y=0; y<GenPart_pt->size(); y++){
+            if( abs(GenPart_pdgId->at(y))==11){// && abs(GenPart_mompdgId->at(y))==556 ){// && GenPart_pt->at(y)==electron_pt->at(secvec_eleTag->at(x)) ){
+              dx=GenPart_px->at(y)-vx;
+              dy=GenPart_py->at(y)-vy;
+              dz=GenPart_pz->at(y)-vz;
+              LW200SecVec_Gen->Fill(sqrtf(dx*dx+dy*dy+dz*dz));
+            }
+          }
+      }
+      if(dist.size()>0){
+        sort(dist.begin(),dist.end());
+        LW200SecVec_bydist->Fill(dist.back().first);
+
+        sort(dist.begin(), dist.end(), sortbysec);
+        LW200SecVec_bysigma->Fill(dist.back().first);
+      }
+
+
+    }
 
 
 
@@ -863,27 +1152,25 @@ if(gjet_DRscore.size()>1){
  * Perform a selection on the minimal requirements of an event
  */
 //-----------------------------------------------------------------
-Float_t EventLoopAnalysisTemplate::MinimalSelection(Int_t entry)
+bool EventLoopAnalysisTemplate::MinimalSelection()
 {
 //-----------------------------------------------------------------
 
- //cout<<"Applying minimal selection"<<endl;
-  Float_t isTrigger = 0;
+//cout<<"Applying minimal selection"<<endl;
+ bool isTrigger = false;
 
-  //Check trigger and acceptance bit
-  for (map<string, int>::iterator it=triggermap->begin();it!=triggermap->end();it++){
-    //for (size_t i = 0; i < 6; i++) {
+ //Check trigger and acceptance bit
+ for(size_t x=0; x<4; x++){
+   for (map<string, int>::iterator it=triggermap->begin();it!=triggermap->end();it++){
+     if(it->first.find(triggerRequest[x])!=string::npos &&
+        it->second!=0){
+    //cout<<it->first<<"  "<<it->second<<endl;
+       isTrigger = true;
+     }
+   }
+ }
 
-      if(it->first.find(triggerRequest[entry])!=string::npos){
-        isTrigger = it->second;
-        //if(isTrigger!=1)cout<<it->first<<"  "<<it->second<<endl;
-      }
-    //}
-
-  }
-
-
-  return isTrigger;
+ return isTrigger;
 
 }//------MinimalSelection
 
@@ -894,6 +1181,8 @@ float EventLoopAnalysisTemplate::deltaR(float eta1, float phi1, float eta2, floa
     dphi -= (2 * 3.14159);
   return deta * deta + dphi * dphi;
 }
+
+
 
 
 //-----------------------------------------------------------------
@@ -945,7 +1234,7 @@ int main()
     time.Print();
   }
 
-  TFile* hfile = new TFile("FiltterAnalysis.root","RECREATE");
+  TFile* hfile = new TFile("FiltterAnalysisLW200.root","RECREATE");
 
   //Save signal region histos
   LW200electron_num->Write();
@@ -988,6 +1277,26 @@ int main()
   LW200jet_eta->Write();
   LW200Genjet_pt->Write();
   LW200Genjet_eta->Write();
+  LW2004Jets_DR->Write();
+  LW2004Jets_pt->Write();
+  LW2004Jets_eta->Write();
+  LW200EleJet_DR1->Write();
+  LW200EleJet_DR2->Write();
+  LW200EleJet_DRdiff->Write();
+  LW200Gen_EleJet_DR1->Write();
+  LW200Gen_EleJet_DR2->Write();
+  LW200Gen_EleJet_DRdiff->Write();
+  LW200DiJet_DR->Write();
+  LW200SecVec_bydist->Write();
+  LW200SecVec_bysigma->Write();
+  LW200SecVec_Gen->Write();
+  LW200GenZ_pt->Write();
+  LW200GenLW_pt->Write();
+  LW200GenZ_ele_dR->Write();
+  LW200GenZ_LW_dR->Write();
+  LW200GenZ_dR->Write();
+  LW200LW_dR->Write();
+
 
   hfile->Close();
 
