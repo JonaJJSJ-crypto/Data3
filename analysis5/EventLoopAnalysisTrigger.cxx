@@ -1952,6 +1952,7 @@ public :
   vector<float>   *ChargedHF;
   vector<float>   *ChargedMult;
   vector<float>   *electron_e;
+  vector<float>   *electron_ch;
   vector<float>   *electron_pt;
   vector<float>   *electron_pz;
   vector<float>   *electron_px;
@@ -2018,6 +2019,7 @@ public :
   TBranch        *b_ChargedHF;
   TBranch        *b_ChargedMult;
   TBranch        *b_electron_e;
+  TBranch        *b_electron_ch;
   TBranch        *b_electron_pt;
   TBranch        *b_electron_pz;
   TBranch        *b_electron_px;
@@ -3085,6 +3087,7 @@ void EventLoopAnalysisTemplate::Init(TTree *tree)
    ChargedHF = 0;
    ChargedMult = 0;
    electron_e = 0;
+   electron_ch = 0;
    electron_pt = 0;
    electron_px = 0;
    electron_py = 0;
@@ -3144,6 +3147,7 @@ void EventLoopAnalysisTemplate::Init(TTree *tree)
    fChain->SetBranchAddress("electron_phi",&electron_phi,&b_electron_phi);
    fChain->SetBranchAddress("electron_eta",&electron_eta,&b_electron_eta);
    fChain->SetBranchAddress("electron_e",&electron_e,&b_electron_e);
+   fChain->SetBranchAddress("electron_ch",&electron_ch,&b_electron_ch);
    fChain->SetBranchAddress("trk_isHQ",&trk_isHQ,&b_trk_isHQ);
    fChain->SetBranchAddress("trigobj_px",&trigobj_px,&b_trigobj_px);
    fChain->SetBranchAddress("trigobj_py",&trigobj_py,&b_trigobj_py);
@@ -3292,6 +3296,44 @@ void EventLoopAnalysisTemplate::analysis()
   if(hqcount<2) return;
 
   histograms("HQ");
+
+  /////////Signal selection//////////////////
+
+  vector<pair<float,size_t>> ElecPtTemp;
+  vector<pair<float,size_t>> PosiPtTemp;
+  vector<pair<float,size_t>> JetPtTemp;
+  vector<float> EleDRTemp;
+  float DRdiff1=0;
+  float DRdiff2=0;
+
+  for (size_t i = 0; i < electron_pt->size(); i++) {
+    if(electron_ch->at(i)==1) ElecPtTemp.push_back(make_pair(electron_pt->at(i),i));
+    else if(electron_ch->at(i)==-1) PosiPtTemp.push_back(make_pair(electron_pt->at(i),i));
+  }
+  if(ElecPtTemp.size()>0 && PosiPtTemp.size()>0 && jet_pt->size()>=4){
+    sort(ElecPtTemp.begin(),ElecPtTemp.end());
+    sort(PosiPtTemp.begin(),PosiPtTemp.end());
+    if( (ElecPtTemp.back().first>25 && PosiPtTemp.back().first>40) || (ElecPtTemp.back().first>40 && PosiPtTemp.back().first>25) ){
+      for(size_t x=0; x<jet_pt->size(); x++){ JetPtTemp.push_back(make_pair(corr_jet_pt->at(x),x)); }
+      sort(JetPtTemp.begin(),JetPtTemp.end());
+      for (size_t i = 0; i < electron_pt->size(); i++) {
+        if(i==ElecPtTemp.back().second || i==PosiPtTemp.back().second){
+          for(size_t x=0; x<corr_jet_pt->size(); x++){
+            if(x==JetPtTemp.back().second||x==JetPtTemp.end()[-2].second||x==JetPtTemp.end()[-3].second||x==JetPtTemp.end()[-4].second){
+              EleDRTemp.push_back(deltaR(jet_eta->at(x),jet_phi->at(x),electron_eta->at(i),electron_phi->at(i)));
+            }
+          }
+          sort(EleDRTemp.begin(),EleDRTemp.end());
+          if(electron_ch->at(i)==1) DRdiff1=abs(EleDRTemp.at(1)-EleDRTemp.front());
+          else if(electron_ch->at(i)==1) DRdiff2=abs(EleDRTemp.at(1)-EleDRTemp.front());
+        }
+      }
+    }
+  }
+
+  if(DRdiff1<0.2 && DRdiff2<0.2) return;
+
+   histograms("SG");
 
 
 }//------analysis()
