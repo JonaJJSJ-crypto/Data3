@@ -92,11 +92,23 @@ TH1F* LW200GenZdau_pt = new TH1F("LW200GenZdau_pt","Zdaugthers pt distribution;t
 TH1F* LW200RecoZdau_pt = new TH1F("LW200recoZdau_pt","Zdaugthers matched jets pt distribution;transversal momentum[GeV];",100,0,200);
 TH1F* LW200RecoZdau_corr_pt = new TH1F("LW200recoZdau_corr_pt","Zdaugthers matched jets corrected pt distribution;transversal momentum[GeV];",100,0,200);
 TH1F* LW200Genjet_eta = new TH1F("LW200Genjet_eta","Gen Jet pseudorapidity",100,-5,5);
-//TH1F* LW200EleBsecvec = new TH1F("Electron best match","Best matched secondary vertex displacement",100,0,0.1);
 TH1F* LW2004Jets_pt = new TH1F("LW2004Jets_pt","4 most energetic jets pt;Transversal Momentum[GeV];",100,0,200);
 TH1F* LW2004GenJets_pt = new TH1F("LW2004GenJets_pt","4 most energetic matched gen jets pt;Transversal Momentum[GeV];",100,0,200);
 TH1F* LW2004CorrJets_pt = new TH1F("LW2004CorrJets_pt","4 most energetic jets correccted pt;Transversal Momentum[GeV];",100,0,200);
 TH1F* LW2004Jets_eta = new TH1F("LW2004Jets_eta","4 most energetic jets eta;Pseudorapidity;",100,-5,5);
+
+TH1F* LW200W_jet_pt = new TH1F("LW200W_jet_pt","Jet pt distribution AR;Pt[GeV];",100,0,400);
+TH1F* LW200W_jet_eta = new TH1F("LW200W_jet_eta","Jet pseudorapidity AR;pseudorapidity",100,-5,5);
+TH1F* LW200W_GenZdau_pt = new TH1F("LW200W_GenZdau_pt","Zdaugthers pt distribution  AR;transversal momentum[GeV];",100,0,400);
+TH1F* LW200W_RecoZdau_pt = new TH1F("LW200W_recoZdau_pt","Zdaugthers matched jets pt distribution AR;transversal momentum[GeV];",100,0,400);
+TH1F* LW200W_RecoZdau_corr_pt = new TH1F("LW200W_recoZdau_corr_pt","Zdaugthers matched jets corrected pt distribution AR;transversal momentum[GeV];",100,0,400);
+TH1F* LW200W_Genjet_eta = new TH1F("LW200W_Genjet_eta","Gen Jet pseudorapidity AR;pseudorapidity",100,-5,5);
+TH1F* LW200W_4Jets_pt = new TH1F("LW200W_4Jets_pt","4 most energetic jets pt AR;Transversal Momentum[GeV];",100,0,400);
+TH1F* LW200W_4GenJets_pt = new TH1F("LW200W_4GenJets_pt","4 most energetic matched gen jets pt AR;Transversal Momentum[GeV];",100,0,400);
+TH1F* LW200W_4CorrJets_pt = new TH1F("LW200W_4CorrJets_pt","4 most energetic jets correccted pt AR;Transversal Momentum[GeV];",100,0,400);
+TH1F* LW200W_4Jets_eta = new TH1F("LW200W_4Jets_eta","4 most energetic jets eta;Pseudorapidity AR;pseudorapidity;",100,-5,5);
+
+
 TH1F* LW2004Jets_DR = new TH1F("LW2004Jets_DR","4 most energetic jets deltaR;DeltaR;",100,0,5);
 TH1F* LW200EleJet_DR1 = new TH1F("LW200EleJet_DR1","Electron DR 1 to the closest energetic jet DeltaR;DeltaR;",100,0,3);
 TH1F* LW200EleJet_DR2 = new TH1F("LW200EleJet_DR2","Electron DR 2 to the closest energetic jet DeltaR;DeltaR;",100,0,3);
@@ -105,15 +117,40 @@ TH1F* LW200Gen_EleJet_DR1 = new TH1F("LW200Gen_EleJet_DR1","Electron DR 1 to the
 TH1F* LW200Gen_EleJet_DR2 = new TH1F("LW200Gen_EleJet_DR2","Electron DR 2 to the closest energetic jet Gen DeltaR;DeltaR;",100,0,3);
 TH1F* LW200Gen_EleJet_DRdiff = new TH1F("LW200Gen_EleJet_DRdiff","Electron DR diff to the closest energetic jet Gen DeltaR;DeltaR;",100,0,3);
 TH1F* LW200DiJet_DR = new TH1F("LW200DiJet_DR","Pair of most energetic jets DR;DeltaR;",100,0,100);
-TH1F* LW200SecVec_bydist = new TH1F("LW200SecVec_bydist","Most energetic electron secondary vertex by distance;diatance[mm];",100,0,1);
-TH1F* LW200SecVec_bysigma = new TH1F("LW200SecVec_bysigma","Most energetic electron secondary vertex by uncertainty;diatance[mm];",100,0,1);
-TH1F* LW200SecVec_Gen = new TH1F("LW200SecVec_Gen","Most energetic gen-electron;diatance[mm];",100,0,1);
+
+TH1F* LW200SecVec_bydist = new TH1F("LW200SecVec_bydist","Most energetic electron secondary vertex by distance;diatance[mm];",100,0,0.2);
+TH1F* LW200SecVec_bysigma = new TH1F("LW200SecVec_bysigma","Most energetic electron secondary vertex by uncertainty;diatance[mm];",100,0,0.2);
+TH1F* LW200SecVec_Gen = new TH1F("LW200SecVec_Gen","Most energetic gen-electron;diatance[mm];",100,0,0.2);
+TH1F* LW200SecVec_dist = new TH1F("LW200SecVec_dist","Secvec displacement distribution;diatance[mm];",100,0,0.2);
+TH1F* LW200SecVec_sigma = new TH1F("LW200SecVec_sigma","Secvec sigma distribution;diatance[mm];",100,0,0.01);
+TH1F* LW200SecVec_MatchEle_dist = new TH1F("LW200SecVec_MatchEle_dist","Secvec for match Gen electron displacement;diatance[mm];",100,0,0.2);
+TH1F* LW200SecVec_Chi2 = new TH1F("LW200SecVec_Chi2","Secvec chi2;Chi2;",100,0,5);
+
+TH1F* LW200Esecvec_bydist = new TH1F("LW200Esecvec_bydist","Most energetic electron secondary vertex by distance;diatance[mm];",100,0,0.2);
+TH1F* LW200Esecvec_bysigma = new TH1F("LW200Esecvec_bysigma","Most energetic electron secondary vertex by uncertainty;diatance[mm];",100,0,0.2);
+TH1F* LW200Esecvec_Gen = new TH1F("LW200Esecvec_Gen","Most energetic gen-electron;diatance[mm];",100,0,0.2);
+TH1F* LW200Esecvec_dist = new TH1F("LW200Esecvec_dist","Secvec displacement distribution;diatance[mm];",100,0,0.2);
+TH1F* LW200Esecvec_sigma = new TH1F("LW200Esecvec_sigma","Secvec sigma distribution;diatance[mm];",100,0,0.01);
+TH1F* LW200Esecvec_MatchEle_dist = new TH1F("LW200EsecvecMatchEle_dist","Secvec for match Gen electron displacement;diatance[mm];",100,0,0.2);
+TH1F* LW200Esecvec_Chi2 = new TH1F("LW200Esecvec_Chi2","Secvec chi2;Chi2;",100,0,5);
+
 TH1F* LW200GenZ_pt = new TH1F("LW200GenZ_pt","Generated Z bosons pt;Transversal momentum[GeV];",100,0,200);
 TH1F* LW200GenLW_pt = new TH1F("LW200GenLW_pt","Generated LW electron pt;Transversal momentum[GeV];",100,0,300);
 TH1F* LW200GenZ_ele_dR = new TH1F("LW200GenZ_ele_dR","Generated Z-Ele DeltaR;DeltaR;",100,0,5);
 TH1F* LW200LW_dR = new TH1F("LW200LW_dR","LW-LW deltaR;DeltaR;",100,0,25);
 TH1F* LW200GenZ_dR = new TH1F("LW200GenZ_dR","Generated Z-Z DeltaR;DeltaR;",100,0,25);
 TH1F* LW200GenZ_LW_dR = new TH1F("LW200GenZ_LW_dR","Generated Z-LW DeltaR;DeltaR;",100,0,5);
+TH2F* LW200BJet_GenJet_pt = new TH2F("LW200BJet_GenJet_pt","Most energetic Jet vs Matched Gen jet pt;Reco_pt[GeV];Gen_pt[GeV]",100,0,600,100,0,600);
+TH2F* LW200BJet_GenJet_corr_pt = new TH2F("LW200BJet_GenJet_corr_pt","Most energetic Jet vs Matched Gen jet corrected pt;Reco_corr_pt[GeV];Gen_pt[GeV]",100,0,600,100,0,600);
+////////////////strange region for bad fitted Jets
+TH1F* LW200W_GenZ_pt = new TH1F("LW200W_GenZ_pt","Generated Z bosons pt AR;Transversal momentum[GeV];",100,0,400);
+TH1F* LW200W_GenLW_pt = new TH1F("LW200W_GenLW_pt","Generated LW electron pt AR;Transversal momentum[GeV];",100,0,300);
+TH1F* LW200W_GenZ_ele_dR = new TH1F("LW200W_GenZ_ele_dR","Generated Z-Ele DeltaR AR;DeltaR;",100,0,5);
+TH1F* LW200W_LW_dR = new TH1F("LW200W_LW_dR","LW-LW deltaR AR;DeltaR;",100,0,25);
+TH1F* LW200W_GenZ_dR = new TH1F("LW200W_GenZ_dR","Generated Z-Z DeltaR AR;DeltaR;",100,0,25);
+TH1F* LW200W_GenZ_LW_dR = new TH1F("LW200W_GenZ_LW_dR","Generated Z-LW DeltaR AR;DeltaR;",100,0,5);
+TH2F* LW200W_BJet_GenJet_pt = new TH2F("LW200W_BJet_GenJet_pt","Most energetic Jet vs Matched Gen jet pt AR;Reco_pt[GeV];Gen_pt[GeV]",100,0,600,100,0,600);
+TH2F* LW200W_BJet_GenJet_corr_pt = new TH2F("LW200W_BJet_GenJet_corr_pt","Most energetic Jet vs Matched Gen jet corrected pt AR;Reco_corr_pt[GeV];Gen_pt[GeV]",100,0,600,100,0,600);
 
 
 
@@ -225,9 +262,17 @@ public :
   vector<float>   *secvec_poserrorz;
   vector<float>   *secvec_eleTag;
   vector<float>   *secvec_normchi2;
-  vector<float>   *Bsp_x;
-  vector<float>   *Bsp_y;
-  vector<float>   *Bsp_z;
+  vector<float>   *Esecvec_posx;
+  vector<float>   *Esecvec_posy;
+  vector<float>   *Esecvec_posz;
+  vector<float>   *Esecvec_poserrorx;
+  vector<float>   *Esecvec_poserrory;
+  vector<float>   *Esecvec_poserrorz;
+  vector<float>   *Esecvec_eleTag;
+  vector<float>   *Esecvec_normchi2;
+  vector<float>   *PV_x;
+  vector<float>   *PV_y;
+  vector<float>   *PV_z;
 
 
   TBranch        *b_run;   //!
@@ -295,9 +340,17 @@ public :
   TBranch    *b_secvec_poserrorz;
   TBranch    *b_secvec_eleTag;
   TBranch    *b_secvec_normchi2;
-  TBranch    *b_Bsp_x;
-  TBranch    *b_Bsp_y;
-  TBranch    *b_Bsp_z;
+  TBranch    *b_Esecvec_posx;
+  TBranch    *b_Esecvec_posy;
+  TBranch    *b_Esecvec_posz;
+  TBranch    *b_Esecvec_poserrorx;
+  TBranch    *b_Esecvec_poserrory;
+  TBranch    *b_Esecvec_poserrorz;
+  TBranch    *b_Esecvec_eleTag;
+  TBranch    *b_Esecvec_normchi2;
+  TBranch    *b_PV_x;
+  TBranch    *b_PV_y;
+  TBranch    *b_PV_z;
 
 
 
@@ -472,9 +525,17 @@ void EventLoopAnalysisTemplate::Init(TTree *tree)
    secvec_poserrorz=0;
    secvec_eleTag=0;
    secvec_normchi2=0;
-   Bsp_x=0;
-   Bsp_y=0;
-   Bsp_z=0;
+   Esecvec_posx=0;
+   Esecvec_posy=0;
+   Esecvec_posz=0;
+   Esecvec_poserrorx=0;
+   Esecvec_poserrory=0;
+   Esecvec_poserrorz=0;
+   Esecvec_eleTag=0;
+   Esecvec_normchi2=0;
+   PV_x=0;
+   PV_y=0;
+   PV_z=0;
 
    // Set branch addresses and branch pointers
    if (!tree) return;
@@ -549,9 +610,17 @@ void EventLoopAnalysisTemplate::Init(TTree *tree)
    fChain->SetBranchAddress("secvec_poserrorz",&secvec_poserrorz,&b_secvec_poserrorz);
    fChain->SetBranchAddress("secvec_eleTag",&secvec_eleTag,&b_secvec_eleTag);
    fChain->SetBranchAddress("secvec_normchi2",&secvec_normchi2,&b_secvec_normchi2);
-   fChain->SetBranchAddress("Bsp_x",&Bsp_x,&b_Bsp_x);
-   fChain->SetBranchAddress("Bsp_y",&Bsp_y,&b_Bsp_y);
-   fChain->SetBranchAddress("Bsp_z",&Bsp_z,&b_Bsp_z);
+   fChain->SetBranchAddress("Esecvec_posx",&Esecvec_posx,&b_Esecvec_posx);
+   fChain->SetBranchAddress("Esecvec_posy",&Esecvec_posy,&b_Esecvec_posy);
+   fChain->SetBranchAddress("Esecvec_posz",&Esecvec_posz,&b_Esecvec_posz);
+   fChain->SetBranchAddress("Esecvec_poserrorx",&Esecvec_poserrorx,&b_Esecvec_poserrorx);
+   fChain->SetBranchAddress("Esecvec_poserrory",&Esecvec_poserrory,&b_Esecvec_poserrory);
+   fChain->SetBranchAddress("Esecvec_poserrorz",&Esecvec_poserrorz,&b_Esecvec_poserrorz);
+   fChain->SetBranchAddress("Esecvec_eleTag",&Esecvec_eleTag,&b_Esecvec_eleTag);
+   fChain->SetBranchAddress("Esecvec_normchi2",&Esecvec_normchi2,&b_Esecvec_normchi2);
+   fChain->SetBranchAddress("PV_x",&PV_x,&b_PV_x);
+   fChain->SetBranchAddress("PV_y",&PV_y,&b_PV_y);
+   fChain->SetBranchAddress("PV_z",&PV_z,&b_PV_z);
 
 
    Notify();
@@ -658,15 +727,26 @@ void EventLoopAnalysisTemplate::analysis()
   for(size_t x=0; x<jet_pt->size();x++){
     LW200jet_pt->Fill(jet_pt->at(x));
     LW200jet_eta->Fill(jet_eta->at(x));
+    if(jet_pt->at(x)>200 && genjet_pt->at(x)<100){
+      LW200W_jet_pt->Fill(jet_pt->at(x));
+      LW200W_jet_eta->Fill(jet_eta->at(x));
+    }
   }
   for(size_t x=0; x<GenDau_pt->size();x++){
     if(GenDau_mompdgId->at(x)==23){
       LW200GenZdau_pt->Fill(GenDau_pt->at(x));
       LW200Genjet_eta->Fill(GenDau_eta->at(x));
+
       for(size_t y=0; y<corr_jet_pt->size(); y++){
         if(genjet_DRscore->at(y)<0.5 && genjet_pt->at(y)==GenDau_pt->at(x)){
           LW200RecoZdau_pt->Fill(jet_pt->at(y));
           LW200RecoZdau_corr_pt->Fill(corr_jet_pt->at(y));
+          if(jet_pt->at(y)>200 && genjet_pt->at(y)<100){
+            LW200W_GenZdau_pt->Fill(GenDau_pt->at(x));
+            LW200W_Genjet_eta->Fill(GenDau_eta->at(x));
+            LW200W_RecoZdau_pt->Fill(jet_pt->at(y));
+            LW200W_RecoZdau_corr_pt->Fill(corr_jet_pt->at(y));
+          }
         }
       }
     }
@@ -965,6 +1045,8 @@ if(gjet_DRscore.size()>1){
   else LW200Genjet_massfilter->Fill(0);
   //////////////////////Reco Electron Inv Mass/////////////////////////////
 
+  //////////////////////////////////Strange matched jet region analysis////////////////
+
 
 
   //////////////////////Jet and Ele DR analysis/////////////
@@ -984,6 +1066,19 @@ if(gjet_DRscore.size()>1){
     float DiJetDR=deltaR(jet_eta->at(JetPtTemp.back().second),jet_phi->at(JetPtTemp.back().second),jet_eta->at(JetPtTemp.end()[-2].second),jet_phi->at(JetPtTemp.end()[-2].second));
     LW200DiJet_DR->Fill(DiJetDR);
 
+    if(genjet_DRscore->at(JetPtTemp.back().second)<0.1){
+      LW200BJet_GenJet_pt->Fill(jet_pt->at(JetPtTemp.back().second),genjet_pt->at(JetPtTemp.back().second));
+      if(jet_pt->at(JetPtTemp.back().second)>200 && genjet_pt->at(JetPtTemp.back().second)<100){
+        LW200W_BJet_GenJet_pt->Fill(jet_pt->at(JetPtTemp.back().second),genjet_pt->at(JetPtTemp.back().second));
+      }
+    }
+    if(genjet_DRscore->at(JetPtTemp.back().second)<0.1){
+      if(jet_pt->at(JetPtTemp.back().second)>200 && genjet_pt->at(JetPtTemp.back().second)<100){
+        LW200W_BJet_GenJet_corr_pt->Fill(corr_jet_pt->at(JetPtTemp.back().second),genjet_pt->at(JetPtTemp.back().second));
+      }
+      LW200BJet_GenJet_corr_pt->Fill(corr_jet_pt->at(JetPtTemp.back().second),genjet_pt->at(JetPtTemp.back().second));
+    }
+
     for (size_t i = 0; i < electron_pt->size(); i++) {
       if(i==ElePtTemp.back().second || i==ElePtTemp.end()[-2].second){
         for(size_t x=0; x<corr_jet_pt->size(); x++){
@@ -1002,6 +1097,11 @@ if(gjet_DRscore.size()>1){
         LW2004Jets_pt->Fill(jet_pt->at(x));
         LW2004CorrJets_pt->Fill(corr_jet_pt->at(x));
         LW2004Jets_eta->Fill(jet_eta->at(x));
+        if(corr_jet_pt->at(x)>200 && genjet_pt->at(x) <100){
+          LW200W_4Jets_pt->Fill(jet_pt->at(x));
+          LW200W_4CorrJets_pt->Fill(corr_jet_pt->at(x));
+          LW200W_4Jets_eta->Fill(jet_eta->at(x));
+        }
         for(size_t y=x+1; y<corr_jet_pt->size(); y++){
           if(y==JetPtTemp.back().second||y==JetPtTemp.end()[-2].second||y==JetPtTemp.end()[-3].second||y==JetPtTemp.end()[-4].second){
             JetDRTemp.push_back(deltaR(jet_eta->at(x),jet_phi->at(x),jet_eta->at(y),jet_phi->at(y)));
@@ -1014,6 +1114,9 @@ if(gjet_DRscore.size()>1){
 
         if(genjet_DRscore->at(x)<0.5){
           LW2004GenJets_pt->Fill(genjet_pt->at(x));
+          if(jet_pt->at(x)>200 && genjet_pt->at(x)<100){
+            LW200W_4GenJets_pt->Fill(genjet_pt->at(x));
+          }
         }
       }
     }
@@ -1024,6 +1127,7 @@ if(gjet_DRscore.size()>1){
   for(size_t i=0; i<GenPart_pt->size(); i++){
     if(GenPart_pdgId->at(i)==23 && abs(GenPart_mompdgId->at(i))==556){
       LW200GenZ_pt->Fill(GenPart_pt->at(i));
+      if(GenPart_pt->at(i)<200) LW200W_GenZ_pt->Fill(GenPart_pt->at(i));
     }
     if(abs(GenPart_pdgId->at(i))==556){
       LW200GenLW_pt->Fill(GenPart_pt->at(i));
@@ -1036,6 +1140,7 @@ if(gjet_DRscore.size()>1){
         if(GenDau_mompdgId->at(j)==556){
           if(GenDau_pdgId->at(i)==11 && GenDau_pdgId->at(j)==23){
             LW200GenZ_ele_dR->Fill(deltaR(GenDau_eta->at(i),GenDau_phi->at(i),GenDau_eta->at(j),GenDau_phi->at(j)));
+            if(GenDau_pt->at(j)<200) LW200W_GenZ_ele_dR->Fill(deltaR(GenDau_eta->at(i),GenDau_phi->at(i),GenDau_eta->at(j),GenDau_phi->at(j)));
           }
         }
       }
@@ -1047,6 +1152,7 @@ if(gjet_DRscore.size()>1){
       for(size_t j=0; j<GenDau_pt->size();j++){
         if(GenDau_mompdgId->at(j)==-556 && GenDau_pdgId->at(j)==23){
           LW200GenZ_dR->Fill(deltaR(GenDau_eta->at(i),GenDau_phi->at(i),GenDau_eta->at(j),GenDau_phi->at(j)));
+          if(GenDau_pt->at(j)<200) LW200W_GenZ_dR->Fill(deltaR(GenDau_eta->at(i),GenDau_phi->at(i),GenDau_eta->at(j),GenDau_phi->at(j)));
         }
       }
     }
@@ -1065,6 +1171,7 @@ if(gjet_DRscore.size()>1){
       for(size_t j=0; j<GenPart_pt->size();j++){
         if(GenPart_mompdgId->at(j)==556 && GenPart_pdgId->at(j)==23){
           LW200GenZ_LW_dR->Fill(deltaR(GenPart_eta->at(i),GenPart_phi->at(i),GenPart_eta->at(j),GenPart_phi->at(j)));
+          if(GenPart_pt->at(j)<200) LW200W_GenZ_LW_dR->Fill(deltaR(GenPart_eta->at(i),GenPart_phi->at(i),GenPart_eta->at(j),GenPart_phi->at(j)));
         }
       }
     }
@@ -1117,33 +1224,65 @@ if(gjet_DRscore.size()>1){
 
     //if(GenPart_mompdgId->at(x)==-556 &&GenPart_pdgId->at(x)==-11){}
     vector<pair<float,float>> dist;
+    dist.clear();
     float dx,dy,dz,sigma;
     float vx,vy,vz;
     if(MinimalSelection()){
+      /////////////////GenPart vertices///////////////////////////
+      for(size_t y=0; y<GenPart_pt->size(); y++){
+        if(abs(GenPart_pdgId->at(y))==556){
+          vx=GenPart_vx->at(y);
+          vy=GenPart_vy->at(y);
+          vz=GenPart_vz->at(y);
+        }
+      }
+      for(size_t y=0; y<GenPart_pt->size(); y++){
+        if( abs(GenPart_pdgId->at(y))==11 && abs(GenPart_mompdgId->at(y))==556 ){// && GenPart_pt->at(y)==electron_pt->at(secvec_eleTag->at(x)) ){
+          dx=GenPart_vx->at(y)-vx;
+          dy=GenPart_vy->at(y)-vy;
+          dz=GenPart_vz->at(y)-vz;
+          LW200SecVec_Gen->Fill(sqrt(dx*dx+dy*dy+dz*dz));
+        }
+      }
+      /////////////////////////////Electron secvec/////////////////////////
+      vector<size_t> MatchEleTag;
+      MatchEleTag.clear();
+      for(size_t y=0; y<electron_pt->size();y++){
+        if(genelec_DRscore->at(y)<0.1){
+          for(size_t k=0; k<GenPart_pt->size(); k++){
+            if(abs(GenPart_pdgId->at(k))==11 && abs(GenPart_mompdgId->at(k))==556 && GenPart_pt->at(k)==genelec_pt->at(y)){
+              MatchEleTag.push_back(y);
+            }
+          }
+        }
+      }
       for(size_t x=0; x<secvec_posx->size(); x++){
         if(secvec_eleTag->at(x)==ElePtTemp.back().second){
-          dx=secvec_posx->at(x)-Bsp_x->at(0);
-          dy=secvec_posy->at(x)-Bsp_y->at(0);
-          dz=secvec_posz->at(x)-Bsp_z->at(0);
+          dx=secvec_posx->at(x)-PV_x->at(0);
+          dy=secvec_posy->at(x)-PV_y->at(0);
+          dz=secvec_posz->at(x)-PV_z->at(0);
           sigma=sqrt(secvec_poserrorx->at(x)*secvec_poserrorx->at(x)+secvec_poserrory->at(x)*secvec_poserrory->at(x)+secvec_poserrorz->at(x)*secvec_poserrorz->at(x));
-          dist.push_back(make_pair(sqrtf(dx*dx+dy*dy+dz*dz),sigma));
+          dist.push_back(make_pair(sqrt(dx*dx+dy*dy+dz*dz)/secvec_normchi2->at(x),sigma));
         }
-          for(size_t y=0; y<GenPart_pt->size(); y++){
-            if(abs(GenPart_pdgId->at(y))==556){
-              vx=GenPart_vx->at(y);
-              vy=GenPart_vy->at(y);
-              vz=GenPart_vz->at(y);
+        dx=secvec_posx->at(x)-PV_x->at(0);
+        dy=secvec_posy->at(x)-PV_y->at(0);
+        dz=secvec_posz->at(x)-PV_z->at(0);
+        LW200SecVec_dist->Fill(sqrt(dx*dx+dy*dy+dz*dz)/secvec_normchi2->at(x));
+        LW200SecVec_sigma->Fill(sigma);
+        LW200SecVec_Chi2->Fill(secvec_normchi2->at(x));
+
+        if(MatchEleTag.size()>0){
+          for(size_t y=0; y<MatchEleTag.size(); y++){
+            if(secvec_eleTag->at(x)==MatchEleTag.at(y)){
+              dx=secvec_posx->at(x)-PV_x->at(0);
+              dy=secvec_posy->at(x)-PV_y->at(0);
+              dz=secvec_posz->at(x)-PV_z->at(0);
+              LW200SecVec_MatchEle_dist->Fill(sqrt(dx*dx+dy*dy+dz*dz)/secvec_normchi2->at(x));
             }
           }
-          for(size_t y=0; y<GenPart_pt->size(); y++){
-            if( abs(GenPart_pdgId->at(y))==11){// && abs(GenPart_mompdgId->at(y))==556 ){// && GenPart_pt->at(y)==electron_pt->at(secvec_eleTag->at(x)) ){
-              dx=GenPart_px->at(y)-vx;
-              dy=GenPart_py->at(y)-vy;
-              dz=GenPart_pz->at(y)-vz;
-              LW200SecVec_Gen->Fill(sqrtf(dx*dx+dy*dy+dz*dz));
-            }
-          }
+        }
       }
+
       if(dist.size()>0){
         sort(dist.begin(),dist.end());
         LW200SecVec_bydist->Fill(dist.back().first);
@@ -1154,6 +1293,57 @@ if(gjet_DRscore.size()>1){
 
 
     }
+
+    dist.clear();
+
+    if(MinimalSelection()){
+      vector<size_t> MatchEleTag;
+      MatchEleTag.clear();
+      for(size_t y=0; y<electron_pt->size();y++){
+        if(genelec_DRscore->at(y)<0.1){
+          for(size_t k=0; k<GenPart_pt->size(); k++){
+            if(abs(GenPart_pdgId->at(k))==11 && abs(GenPart_mompdgId->at(k))==556 && GenPart_pt->at(k)==genelec_pt->at(y)){
+              MatchEleTag.push_back(y);
+            }
+          }
+        }
+      }
+      for(size_t x=0; x<Esecvec_posx->size(); x++){
+        if(Esecvec_eleTag->at(x)==ElePtTemp.back().second){
+          dx=Esecvec_posx->at(x)-PV_x->at(0);
+          dy=Esecvec_posy->at(x)-PV_y->at(0);
+          dz=Esecvec_posz->at(x)-PV_z->at(0);
+          sigma=sqrt(Esecvec_poserrorx->at(x)*Esecvec_poserrorx->at(x)+Esecvec_poserrory->at(x)*Esecvec_poserrory->at(x)+Esecvec_poserrorz->at(x)*Esecvec_poserrorz->at(x));
+          dist.push_back(make_pair(sqrt(dx*dx+dy*dy+dz*dz),sigma));
+        }
+        dx=Esecvec_posx->at(x)-PV_x->at(0);
+        dy=Esecvec_posy->at(x)-PV_y->at(0);
+        dz=Esecvec_posz->at(x)-PV_z->at(0);
+        LW200Esecvec_dist->Fill(sqrt(dx*dx+dy*dy+dz*dz));
+        LW200Esecvec_sigma->Fill(sigma);
+        LW200Esecvec_Chi2->Fill(Esecvec_normchi2->at(x));
+
+        if(MatchEleTag.size()>0){
+          for(size_t y=0; y<MatchEleTag.size(); y++){
+            if(Esecvec_eleTag->at(x)==MatchEleTag.at(y)){
+              dx=Esecvec_posx->at(x)-PV_x->at(0);
+              dy=Esecvec_posy->at(x)-PV_y->at(0);
+              dz=Esecvec_posz->at(x)-PV_z->at(0);
+              LW200Esecvec_MatchEle_dist->Fill(sqrt(dx*dx+dy*dy+dz*dz));
+            }
+          }
+        }
+      }
+      if(dist.size()>0){
+        sort(dist.begin(),dist.end());
+        LW200Esecvec_bydist->Fill(dist.back().first);
+
+        sort(dist.begin(), dist.end(), sortbysec);
+        LW200Esecvec_bysigma->Fill(dist.back().first);
+      }
+    }
+
+
 
 
 
@@ -1289,6 +1479,7 @@ int main()
   LW200LW_mass->Write();
   LW200RecoEle_mass->Write();
   LW200Wdau_deltaR->Write();
+
   LW200jet_pt->Write();
   LW200jet_eta->Write();
   LW200GenZdau_pt->Write();
@@ -1300,6 +1491,18 @@ int main()
   LW2004GenJets_pt->Write();
   LW2004CorrJets_pt->Write();
   LW2004Jets_eta->Write();
+
+  LW200W_jet_pt->Write();
+  LW200W_jet_eta->Write();
+  LW200W_GenZdau_pt->Write();
+  LW200W_RecoZdau_pt->Write();
+  LW200W_RecoZdau_corr_pt->Write();
+  LW200W_Genjet_eta->Write();
+  LW200W_4Jets_pt->Write();
+  LW200W_4GenJets_pt->Write();
+  LW200W_4CorrJets_pt->Write();
+  LW200W_4Jets_eta->Write();
+
   LW200EleJet_DR1->Write();
   LW200EleJet_DR2->Write();
   LW200EleJet_DRdiff->Write();
@@ -1307,15 +1510,38 @@ int main()
   LW200Gen_EleJet_DR2->Write();
   LW200Gen_EleJet_DRdiff->Write();
   LW200DiJet_DR->Write();
+  LW200SecVec_dist->Write();
+  LW200SecVec_sigma->Write();
+  LW200SecVec_Chi2->Write();
+  LW200SecVec_MatchEle_dist->Write();
   LW200SecVec_bydist->Write();
   LW200SecVec_bysigma->Write();
   LW200SecVec_Gen->Write();
+  LW200Esecvec_dist->Write();
+  LW200Esecvec_sigma->Write();
+  LW200Esecvec_Chi2->Write();
+  LW200Esecvec_MatchEle_dist->Write();
+  LW200Esecvec_bydist->Write();
+  LW200Esecvec_bysigma->Write();
+  LW200Esecvec_Gen->Write();
+
   LW200GenZ_pt->Write();
   LW200GenLW_pt->Write();
   LW200GenZ_ele_dR->Write();
   LW200GenZ_LW_dR->Write();
   LW200GenZ_dR->Write();
   LW200LW_dR->Write();
+  LW200BJet_GenJet_pt->Write();
+  LW200BJet_GenJet_corr_pt->Write();
+
+  LW200W_GenZ_pt->Write();
+  LW200W_GenLW_pt->Write();
+  LW200W_GenZ_ele_dR->Write();
+  LW200W_GenZ_LW_dR->Write();
+  LW200W_GenZ_dR->Write();
+  LW200W_LW_dR->Write();
+  LW200W_BJet_GenJet_pt->Write();
+  LW200W_BJet_GenJet_corr_pt->Write();
 
 
   hfile->Close();

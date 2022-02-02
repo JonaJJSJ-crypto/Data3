@@ -78,61 +78,61 @@ TH1F* NF_LW200_npv = new TH1F("NF_LW200_npv","NF Number of primary vertices",25,
 
 //TH1F* NF_LW500_npv = new TH1F("NF_LW500_npv","NF Number of primary vertices",25,5,30);
 
-TH1F* NF_dataRunB_nsv = new TH1F("NF_dataRunB_nsv","NF Number of secondary vertices",20,0,2000);
+TH1F* NF_dataRunB_nsv = new TH1F("NF_dataRunB_nsv","NF Number of secondary vertices",20,0,10);
 
-TH1F* NF_dataRunC_nsv  = new TH1F("NF_dataRunC_nsv","NF Number of secondary vertices",20,0,2000);
+TH1F* NF_dataRunC_nsv  = new TH1F("NF_dataRunC_nsv","NF Number of secondary vertices",20,0,10);
 
-TH1F* NF_ZLL_nsv = new TH1F("NF_ZLL_nsv","NF Number of secondary vertices",20,0,2000);
+TH1F* NF_ZLL_nsv = new TH1F("NF_ZLL_nsv","NF Number of secondary vertices",20,0,10);
 
-TH1F* NF_TT_nsv = new TH1F("NF_TT_nsv","NF Number of secondary vertices",20,0,2000);
+TH1F* NF_TT_nsv = new TH1F("NF_TT_nsv","NF Number of secondary vertices",20,0,10);
 
-TH1F* NF_W3J_nsv = new TH1F("NF_W3J_nsv","NF Number of secondary vertices",20,0,2000);
+TH1F* NF_W3J_nsv = new TH1F("NF_W3J_nsv","NF Number of secondary vertices",20,0,10);
 
-TH1F* NF_W2J_nsv = new TH1F("NF_W2J_nsv","NF Number of secondary vertices",20,0,2000);
+TH1F* NF_W2J_nsv = new TH1F("NF_W2J_nsv","NF Number of secondary vertices",20,0,10);
 
-TH1F* NF_W1J_nsv = new TH1F("NF_W1J_nsv","NF Number of secondary vertices",20,0,2000);
+TH1F* NF_W1J_nsv = new TH1F("NF_W1J_nsv","NF Number of secondary vertices",20,0,10);
 
-//TH1F* //NF_TTZ_nsv = new TH1F("//NF_TTZ_nsv","NF Number of secondary vertices",20,0,2000);
+//TH1F* //NF_TTZ_nsv = new TH1F("//NF_TTZ_nsv","NF Number of secondary vertices",20,0,10);
 
-//TH1F* //NF_WW_nsv = new TH1F("//NF_WW_nsv","NF Number of secondary vertices",20,0,2000);
+//TH1F* //NF_WW_nsv = new TH1F("//NF_WW_nsv","NF Number of secondary vertices",20,0,10);
 
-//TH1F* //NF_WZ_nsv = new TH1F("//NF_WZ_nsv","NF Number of secondary vertices",20,0,2000);
+//TH1F* //NF_WZ_nsv = new TH1F("//NF_WZ_nsv","NF Number of secondary vertices",20,0,10);
 
-TH1F* NF_LW200_nsv = new TH1F("NF_LW200_nsv","NF Number of secondary vertices",20,0,2000);
+TH1F* NF_LW200_nsv = new TH1F("NF_LW200_nsv","NF Number of secondary vertices",20,0,10);
 
-////TH1F* //NF_LW300_nsv = new TH1F("//NF_LW300_nsv","NF Number of secondary vertices",20,0,2000);
+////TH1F* //NF_LW300_nsv = new TH1F("//NF_LW300_nsv","NF Number of secondary vertices",20,0,10);
 
-//TH1F* NF_LW400_nsv = new TH1F("NF_LW400_nsv","NF Number of secondary vertices",20,0,2000);
+//TH1F* NF_LW400_nsv = new TH1F("NF_LW400_nsv","NF Number of secondary vertices",20,0,10);
 
-//TH1F* NF_LW500_nsv = new TH1F("NF_LW500_nsv","NF Number of secondary vertices",20,0,2000);
+//TH1F* NF_LW500_nsv = new TH1F("NF_LW500_nsv","NF Number of secondary vertices",20,0,10);
 
-TH1F* NF_dataRunB_svd = new TH1F("NF_dataRunB_svd","NF secondary vertex displacement",100,0,1);
+TH1F* NF_dataRunB_svd = new TH1F("NF_dataRunB_svd","NF secondary vertex displacement",100,0,0.2);
 
-TH1F* NF_dataRunC_svd  = new TH1F("NF_dataRunC_svd","NF secondary vertex displacement",100,0,1);
+TH1F* NF_dataRunC_svd  = new TH1F("NF_dataRunC_svd","NF secondary vertex displacement",100,0,0.2);
 
-TH1F* NF_ZLL_svd = new TH1F("NF_ZLL_svd","NF secondary vertex displacement",100,0,1);
+TH1F* NF_ZLL_svd = new TH1F("NF_ZLL_svd","NF secondary vertex displacement",100,0,0.2);
 
-TH1F* NF_TT_svd = new TH1F("NF_TT_svd","NF secondary vertex displacement",100,0,1);
+TH1F* NF_TT_svd = new TH1F("NF_TT_svd","NF secondary vertex displacement",100,0,0.2);
 
-TH1F* NF_W3J_svd = new TH1F("NF_W3J_svd","NF secondary vertex displacement",100,0,1);
+TH1F* NF_W3J_svd = new TH1F("NF_W3J_svd","NF secondary vertex displacement",100,0,0.2);
 
-TH1F* NF_W2J_svd = new TH1F("NF_W2J_svd","NF secondary vertex displacement",100,0,1);
+TH1F* NF_W2J_svd = new TH1F("NF_W2J_svd","NF secondary vertex displacement",100,0,0.2);
 
-TH1F* NF_W1J_svd = new TH1F("NF_W1J_svd","NF secondary vertex displacement",100,0,1);
+TH1F* NF_W1J_svd = new TH1F("NF_W1J_svd","NF secondary vertex displacement",100,0,0.2);
 
-//TH1F* //NF_TTZ_svd = new TH1F("//NF_TTZ_svd","NF secondary vertex displacement",100,0,1);
+//TH1F* //NF_TTZ_svd = new TH1F("//NF_TTZ_svd","NF secondary vertex displacement",100,0,0.2);
 
-//TH1F* //NF_WW_svd = new TH1F("//NF_WW_svd","NF secondary vertex displacement",100,0,1);
+//TH1F* //NF_WW_svd = new TH1F("//NF_WW_svd","NF secondary vertex displacement",100,0,0.2);
 
-//TH1F* //NF_WZ_svd = new TH1F("//NF_WZ_svd","NF secondary vertex displacement",100,0,1);
+//TH1F* //NF_WZ_svd = new TH1F("//NF_WZ_svd","NF secondary vertex displacement",100,0,0.2);
 
-TH1F* NF_LW200_svd = new TH1F("NF_LW200_svd","NF secondary vertex displacement",100,0,1);
+TH1F* NF_LW200_svd = new TH1F("NF_LW200_svd","NF secondary vertex displacement",100,0,0.2);
 
-////TH1F* //NF_LW300_svd = new TH1F("//NF_LW300_svd","NF secondary vertex displacement",100,0,1);
+////TH1F* //NF_LW300_svd = new TH1F("//NF_LW300_svd","NF secondary vertex displacement",100,0,0.2);
 
-//TH1F* NF_LW400_svd = new TH1F("NF_LW400_svd","NF secondary vertex displacement",100,0,1);
+//TH1F* NF_LW400_svd = new TH1F("NF_LW400_svd","NF secondary vertex displacement",100,0,0.2);
 
-//TH1F* NF_LW500_svd = new TH1F("NF_LW500_svd","NF secondary vertex displacement",100,0,1);
+//TH1F* NF_LW500_svd = new TH1F("NF_LW500_svd","NF secondary vertex displacement",100,0,0.2);
 
 TH1F* NF_dataRunB_JetMass = new TH1F("NF_dataRunB_JetMass","NF Invariant mass from DiJets",100,0,400);
 
@@ -443,61 +443,61 @@ TH1F* TF_LW200_npv = new TH1F("TF_LW200_npv","TF Number of primary vertices",25,
 
 //TH1F* TF_LW500_npv = new TH1F("TF_LW500_npv","TF Number of primary vertices",25,5,30);
 
-TH1F* TF_dataRunB_nsv = new TH1F("TF_dataRunB_nsv","TF Number of secondary vertices",20,0,2000);
+TH1F* TF_dataRunB_nsv = new TH1F("TF_dataRunB_nsv","TF Number of secondary vertices",20,0,10);
 
-TH1F* TF_dataRunC_nsv  = new TH1F("TF_dataRunC_nsv","TF Number of secondary vertices",20,0,2000);
+TH1F* TF_dataRunC_nsv  = new TH1F("TF_dataRunC_nsv","TF Number of secondary vertices",20,0,10);
 
-TH1F* TF_ZLL_nsv = new TH1F("TF_ZLL_nsv","TF Number of secondary vertices",20,0,2000);
+TH1F* TF_ZLL_nsv = new TH1F("TF_ZLL_nsv","TF Number of secondary vertices",20,0,10);
 
-TH1F* TF_TT_nsv = new TH1F("TF_TT_nsv","TF Number of secondary vertices",20,0,2000);
+TH1F* TF_TT_nsv = new TH1F("TF_TT_nsv","TF Number of secondary vertices",20,0,10);
 
-TH1F* TF_W3J_nsv = new TH1F("TF_W3J_nsv","TF Number of secondary vertices",20,0,2000);
+TH1F* TF_W3J_nsv = new TH1F("TF_W3J_nsv","TF Number of secondary vertices",20,0,10);
 
-TH1F* TF_W2J_nsv = new TH1F("TF_W2J_nsv","TF Number of secondary vertices",20,0,2000);
+TH1F* TF_W2J_nsv = new TH1F("TF_W2J_nsv","TF Number of secondary vertices",20,0,10);
 
-TH1F* TF_W1J_nsv = new TH1F("TF_W1J_nsv","TF Number of secondary vertices",20,0,2000);
+TH1F* TF_W1J_nsv = new TH1F("TF_W1J_nsv","TF Number of secondary vertices",20,0,10);
 
-//TH1F* //TF_TTZ_nsv = new TH1F("//TF_TTZ_nsv","TF Number of secondary vertices",20,0,2000);
+//TH1F* //TF_TTZ_nsv = new TH1F("//TF_TTZ_nsv","TF Number of secondary vertices",20,0,10);
 
-//TH1F* //TF_WW_nsv = new TH1F("//TF_WW_nsv","TF Number of secondary vertices",20,0,2000);
+//TH1F* //TF_WW_nsv = new TH1F("//TF_WW_nsv","TF Number of secondary vertices",20,0,10);
 
-//TH1F* //TF_WZ_nsv = new TH1F("//TF_WZ_nsv","TF Number of secondary vertices",20,0,2000);
+//TH1F* //TF_WZ_nsv = new TH1F("//TF_WZ_nsv","TF Number of secondary vertices",20,0,10);
 
-TH1F* TF_LW200_nsv = new TH1F("TF_LW200_nsv","TF Number of secondary vertices",20,0,2000);
+TH1F* TF_LW200_nsv = new TH1F("TF_LW200_nsv","TF Number of secondary vertices",20,0,10);
 
-//TH1F* //TF_LW300_nsv = new TH1F("//TF_LW300_nsv","TF Number of secondary vertices",20,0,2000);
+//TH1F* //TF_LW300_nsv = new TH1F("//TF_LW300_nsv","TF Number of secondary vertices",20,0,10);
 
-//TH1F* TF_LW400_nsv = new TH1F("TF_LW400_nsv","TF Number of secondary vertices",20,0,2000);
+//TH1F* TF_LW400_nsv = new TH1F("TF_LW400_nsv","TF Number of secondary vertices",20,0,10);
 
-//TH1F* TF_LW500_nsv = new TH1F("TF_LW500_nsv","TF Number of secondary vertices",20,0,2000);
+//TH1F* TF_LW500_nsv = new TH1F("TF_LW500_nsv","TF Number of secondary vertices",20,0,10);
 
-TH1F* TF_dataRunB_svd = new TH1F("TF_dataRunB_svd","TF secondary vertex displacement",100,0,1);
+TH1F* TF_dataRunB_svd = new TH1F("TF_dataRunB_svd","TF secondary vertex displacement",100,0,0.2);
 
-TH1F* TF_dataRunC_svd  = new TH1F("TF_dataRunC_svd","TF secondary vertex displacement",100,0,1);
+TH1F* TF_dataRunC_svd  = new TH1F("TF_dataRunC_svd","TF secondary vertex displacement",100,0,0.2);
 
-TH1F* TF_ZLL_svd = new TH1F("TF_ZLL_svd","TF secondary vertex displacement",100,0,1);
+TH1F* TF_ZLL_svd = new TH1F("TF_ZLL_svd","TF secondary vertex displacement",100,0,0.2);
 
-TH1F* TF_TT_svd = new TH1F("TF_TT_svd","TF secondary vertex displacement",100,0,1);
+TH1F* TF_TT_svd = new TH1F("TF_TT_svd","TF secondary vertex displacement",100,0,0.2);
 
-TH1F* TF_W3J_svd = new TH1F("TF_W3J_svd","TF secondary vertex displacement",100,0,1);
+TH1F* TF_W3J_svd = new TH1F("TF_W3J_svd","TF secondary vertex displacement",100,0,0.2);
 
-TH1F* TF_W2J_svd = new TH1F("TF_W2J_svd","TF secondary vertex displacement",100,0,1);
+TH1F* TF_W2J_svd = new TH1F("TF_W2J_svd","TF secondary vertex displacement",100,0,0.2);
 
-TH1F* TF_W1J_svd = new TH1F("TF_W1J_svd","TF secondary vertex displacement",100,0,1);
+TH1F* TF_W1J_svd = new TH1F("TF_W1J_svd","TF secondary vertex displacement",100,0,0.2);
 
-//TH1F* //TF_TTZ_svd = new TH1F("//TF_TTZ_svd","TF secondary vertex displacement",100,0,1);
+//TH1F* //TF_TTZ_svd = new TH1F("//TF_TTZ_svd","TF secondary vertex displacement",100,0,0.2);
 
-//TH1F* //TF_WW_svd = new TH1F("//TF_WW_svd","TF secondary vertex displacement",100,0,1);
+//TH1F* //TF_WW_svd = new TH1F("//TF_WW_svd","TF secondary vertex displacement",100,0,0.2);
 
-//TH1F* //TF_WZ_svd = new TH1F("//TF_WZ_svd","TF secondary vertex displacement",100,0,1);
+//TH1F* //TF_WZ_svd = new TH1F("//TF_WZ_svd","TF secondary vertex displacement",100,0,0.2);
 
-TH1F* TF_LW200_svd = new TH1F("TF_LW200_svd","TF secondary vertex displacement",100,0,1);
+TH1F* TF_LW200_svd = new TH1F("TF_LW200_svd","TF secondary vertex displacement",100,0,0.2);
 
-//TH1F* //TF_LW300_svd = new TH1F("//TF_LW300_svd","TF secondary vertex displacement",100,0,1);
+//TH1F* //TF_LW300_svd = new TH1F("//TF_LW300_svd","TF secondary vertex displacement",100,0,0.2);
 
-//TH1F* TF_LW400_svd = new TH1F("TF_LW400_svd","TF secondary vertex displacement",100,0,1);
+//TH1F* TF_LW400_svd = new TH1F("TF_LW400_svd","TF secondary vertex displacement",100,0,0.2);
 
-//TH1F* TF_LW500_svd = new TH1F("TF_LW500_svd","TF secondary vertex displacement",100,0,1);
+//TH1F* TF_LW500_svd = new TH1F("TF_LW500_svd","TF secondary vertex displacement",100,0,0.2);
 
 TH1F* TF_dataRunB_JetMass = new TH1F("TF_dataRunB_JetMass","TF Invariant mass from DiJets",100,0,400);
 
@@ -808,61 +808,61 @@ TH1F* TO_LW200_npv = new TH1F("TO_LW200_npv","TO Number of primary vertices",25,
 
 //TH1F* TO_LW500_npv = new TH1F("TO_LW500_npv","TO Number of primary vertices",25,5,30);
 
-TH1F* TO_dataRunB_nsv = new TH1F("TO_dataRunB_nsv","TO Number of secondary vertices",20,0,2000);
+TH1F* TO_dataRunB_nsv = new TH1F("TO_dataRunB_nsv","TO Number of secondary vertices",20,0,10);
 
-TH1F* TO_dataRunC_nsv  = new TH1F("TO_dataRunC_nsv","TO Number of secondary vertices",20,0,2000);
+TH1F* TO_dataRunC_nsv  = new TH1F("TO_dataRunC_nsv","TO Number of secondary vertices",20,0,10);
 
-TH1F* TO_ZLL_nsv = new TH1F("TO_ZLL_nsv","TO Number of secondary vertices",20,0,2000);
+TH1F* TO_ZLL_nsv = new TH1F("TO_ZLL_nsv","TO Number of secondary vertices",20,0,10);
 
-TH1F* TO_TT_nsv = new TH1F("TO_TT_nsv","TO Number of secondary vertices",20,0,2000);
+TH1F* TO_TT_nsv = new TH1F("TO_TT_nsv","TO Number of secondary vertices",20,0,10);
 
-TH1F* TO_W3J_nsv = new TH1F("TO_W3J_nsv","TO Number of secondary vertices",20,0,2000);
+TH1F* TO_W3J_nsv = new TH1F("TO_W3J_nsv","TO Number of secondary vertices",20,0,10);
 
-TH1F* TO_W2J_nsv = new TH1F("TO_W2J_nsv","TO Number of secondary vertices",20,0,2000);
+TH1F* TO_W2J_nsv = new TH1F("TO_W2J_nsv","TO Number of secondary vertices",20,0,10);
 
-TH1F* TO_W1J_nsv = new TH1F("TO_W1J_nsv","TO Number of secondary vertices",20,0,2000);
+TH1F* TO_W1J_nsv = new TH1F("TO_W1J_nsv","TO Number of secondary vertices",20,0,10);
 
-//TH1F* //TO_TTZ_nsv = new TH1F("//TO_TTZ_nsv","TO Number of secondary vertices",20,0,2000);
+//TH1F* //TO_TTZ_nsv = new TH1F("//TO_TTZ_nsv","TO Number of secondary vertices",20,0,10);
 
-//TH1F* //TO_WW_nsv = new TH1F("//TO_WW_nsv","TO Number of secondary vertices",20,0,2000);
+//TH1F* //TO_WW_nsv = new TH1F("//TO_WW_nsv","TO Number of secondary vertices",20,0,10);
 
-//TH1F* TO_WZ_nsv = new TH1F("////TO_WZ_nsv","TO Number of secondary vertices",20,0,2000);
+//TH1F* TO_WZ_nsv = new TH1F("////TO_WZ_nsv","TO Number of secondary vertices",20,0,10);
 
-TH1F* TO_LW200_nsv = new TH1F("TO_LW200_nsv","TO Number of secondary vertices",20,0,2000);
+TH1F* TO_LW200_nsv = new TH1F("TO_LW200_nsv","TO Number of secondary vertices",20,0,10);
 
-//TH1F* //TO_LW300_nsv = new TH1F("//TO_LW300_nsv","TO Number of secondary vertices",20,0,2000);
+//TH1F* //TO_LW300_nsv = new TH1F("//TO_LW300_nsv","TO Number of secondary vertices",20,0,10);
 
-//TH1F* TO_LW400_nsv = new TH1F("TO_LW400_nsv","TO Number of secondary vertices",20,0,2000);
+//TH1F* TO_LW400_nsv = new TH1F("TO_LW400_nsv","TO Number of secondary vertices",20,0,10);
 
-//TH1F* TO_LW500_nsv = new TH1F("TO_LW500_nsv","TO Number of secondary vertices",20,0,2000);
+//TH1F* TO_LW500_nsv = new TH1F("TO_LW500_nsv","TO Number of secondary vertices",20,0,10);
 
-TH1F* TO_dataRunB_svd = new TH1F("TO_dataRunB_svd","TO secondary vertex displacement",100,0,1);
+TH1F* TO_dataRunB_svd = new TH1F("TO_dataRunB_svd","TO secondary vertex displacement",100,0,0.2);
 
-TH1F* TO_dataRunC_svd  = new TH1F("TO_dataRunC_svd","TO secondary vertex displacement",100,0,1);
+TH1F* TO_dataRunC_svd  = new TH1F("TO_dataRunC_svd","TO secondary vertex displacement",100,0,0.2);
 
-TH1F* TO_ZLL_svd = new TH1F("TO_ZLL_svd","TO secondary vertex displacement",100,0,1);
+TH1F* TO_ZLL_svd = new TH1F("TO_ZLL_svd","TO secondary vertex displacement",100,0,0.2);
 
-TH1F* TO_TT_svd = new TH1F("TO_TT_svd","TO secondary vertex displacement",100,0,1);
+TH1F* TO_TT_svd = new TH1F("TO_TT_svd","TO secondary vertex displacement",100,0,0.2);
 
-TH1F* TO_W3J_svd = new TH1F("TO_W3J_svd","TO secondary vertex displacement",100,0,1);
+TH1F* TO_W3J_svd = new TH1F("TO_W3J_svd","TO secondary vertex displacement",100,0,0.2);
 
-TH1F* TO_W2J_svd = new TH1F("TO_W2J_svd","TO secondary vertex displacement",100,0,1);
+TH1F* TO_W2J_svd = new TH1F("TO_W2J_svd","TO secondary vertex displacement",100,0,0.2);
 
-TH1F* TO_W1J_svd = new TH1F("TO_W1J_svd","TO secondary vertex displacement",100,0,1);
+TH1F* TO_W1J_svd = new TH1F("TO_W1J_svd","TO secondary vertex displacement",100,0,0.2);
 
-//TH1F* //TO_TTZ_svd = new TH1F("//TO_TTZ_svd","TO secondary vertex displacement",100,0,1);
+//TH1F* //TO_TTZ_svd = new TH1F("//TO_TTZ_svd","TO secondary vertex displacement",100,0,0.2);
 
-//TH1F* //TO_WW_svd = new TH1F("//TO_WW_svd","TO secondary vertex displacement",100,0,1);
+//TH1F* //TO_WW_svd = new TH1F("//TO_WW_svd","TO secondary vertex displacement",100,0,0.2);
 
-//TH1F* TO_WZ_svd = new TH1F("////TO_WZ_svd","TO secondary vertex displacement",100,0,1);
+//TH1F* TO_WZ_svd = new TH1F("////TO_WZ_svd","TO secondary vertex displacement",100,0,0.2);
 
-TH1F* TO_LW200_svd = new TH1F("TO_LW200_svd","TO secondary vertex displacement",100,0,1);
+TH1F* TO_LW200_svd = new TH1F("TO_LW200_svd","TO secondary vertex displacement",100,0,0.2);
 
-//TH1F* //TO_LW300_svd = new TH1F("//TO_LW300_svd","TO secondary vertex displacement",100,0,1);
+//TH1F* //TO_LW300_svd = new TH1F("//TO_LW300_svd","TO secondary vertex displacement",100,0,0.2);
 
-//TH1F* TO_LW400_svd = new TH1F("TO_LW400_svd","TO secondary vertex displacement",100,0,1);
+//TH1F* TO_LW400_svd = new TH1F("TO_LW400_svd","TO secondary vertex displacement",100,0,0.2);
 
-//TH1F* TO_LW500_svd = new TH1F("TO_LW500_svd","TO secondary vertex displacement",100,0,1);
+//TH1F* TO_LW500_svd = new TH1F("TO_LW500_svd","TO secondary vertex displacement",100,0,0.2);
 
 TH1F* TO_dataRunB_JetMass = new TH1F("TO_dataRunB_JetMass","TO Invariant mass from DiJets",100,0,400);
 
@@ -1174,61 +1174,61 @@ TH1F* HQ_LW200_npv = new TH1F("HQ_LW200_npv","HQ Number of primary vertices",25,
 
 //TH1F* HQ_LW500_npv = new TH1F("HQ_LW500_npv","HQ Number of primary vertices",25,5,30);
 
-TH1F* HQ_dataRunB_nsv = new TH1F("HQ_dataRunB_nsv","HQ Number of secondary vertices",20,0,2000);
+TH1F* HQ_dataRunB_nsv = new TH1F("HQ_dataRunB_nsv","HQ Number of secondary vertices",20,0,10);
 
-TH1F* HQ_dataRunC_nsv  = new TH1F("HQ_dataRunC_nsv","HQ Number of secondary vertices",20,0,2000);
+TH1F* HQ_dataRunC_nsv  = new TH1F("HQ_dataRunC_nsv","HQ Number of secondary vertices",20,0,10);
 
-TH1F* HQ_ZLL_nsv = new TH1F("HQ_ZLL_nsv","HQ Number of secondary vertices",20,0,2000);
+TH1F* HQ_ZLL_nsv = new TH1F("HQ_ZLL_nsv","HQ Number of secondary vertices",20,0,10);
 
-TH1F* HQ_TT_nsv = new TH1F("HQ_TT_nsv","HQ Number of secondary vertices",20,0,2000);
+TH1F* HQ_TT_nsv = new TH1F("HQ_TT_nsv","HQ Number of secondary vertices",20,0,10);
 
-TH1F* HQ_W3J_nsv = new TH1F("HQ_W3J_nsv","HQ Number of secondary vertices",20,0,2000);
+TH1F* HQ_W3J_nsv = new TH1F("HQ_W3J_nsv","HQ Number of secondary vertices",20,0,10);
 
-TH1F* HQ_W2J_nsv = new TH1F("HQ_W2J_nsv","HQ Number of secondary vertices",20,0,2000);
+TH1F* HQ_W2J_nsv = new TH1F("HQ_W2J_nsv","HQ Number of secondary vertices",20,0,10);
 
-TH1F* HQ_W1J_nsv = new TH1F("HQ_W1J_nsv","HQ Number of secondary vertices",20,0,2000);
+TH1F* HQ_W1J_nsv = new TH1F("HQ_W1J_nsv","HQ Number of secondary vertices",20,0,10);
 
-//TH1F* ////HQ_TTZ_nsv = new TH1F("////HQ_TTZ_nsv","HQ Number of secondary vertices",20,0,2000);
+//TH1F* ////HQ_TTZ_nsv = new TH1F("////HQ_TTZ_nsv","HQ Number of secondary vertices",20,0,10);
 
-//TH1F* //HQ_WW_nsv = new TH1F("//HQ_WW_nsv","HQ Number of secondary vertices",20,0,2000);
+//TH1F* //HQ_WW_nsv = new TH1F("//HQ_WW_nsv","HQ Number of secondary vertices",20,0,10);
 
-//TH1F* //HQ_WZ_nsv = new TH1F("//HQ_WZ_nsv","HQ Number of secondary vertices",20,0,2000);
+//TH1F* //HQ_WZ_nsv = new TH1F("//HQ_WZ_nsv","HQ Number of secondary vertices",20,0,10);
 
-TH1F* HQ_LW200_nsv = new TH1F("HQ_LW200_nsv","HQ Number of secondary vertices",20,0,2000);
+TH1F* HQ_LW200_nsv = new TH1F("HQ_LW200_nsv","HQ Number of secondary vertices",20,0,10);
 
-//TH1F* //HQ_LW300_nsv = new TH1F("//HQ_LW300_nsv","HQ Number of secondary vertices",20,0,2000);
+//TH1F* //HQ_LW300_nsv = new TH1F("//HQ_LW300_nsv","HQ Number of secondary vertices",20,0,10);
 
-//TH1F* HQ_LW400_nsv = new TH1F("HQ_LW400_nsv","HQ Number of secondary vertices",20,0,2000);
+//TH1F* HQ_LW400_nsv = new TH1F("HQ_LW400_nsv","HQ Number of secondary vertices",20,0,10);
 
-//TH1F* HQ_LW500_nsv = new TH1F("HQ_LW500_nsv","HQ Number of secondary vertices",20,0,2000);
+//TH1F* HQ_LW500_nsv = new TH1F("HQ_LW500_nsv","HQ Number of secondary vertices",20,0,10);
 
-TH1F* HQ_dataRunB_svd = new TH1F("HQ_dataRunB_svd","HQ secondary vertex displacement",100,0,1);
+TH1F* HQ_dataRunB_svd = new TH1F("HQ_dataRunB_svd","HQ secondary vertex displacement",100,0,0.2);
 
-TH1F* HQ_dataRunC_svd  = new TH1F("HQ_dataRunC_svd","HQ secondary vertex displacement",100,0,1);
+TH1F* HQ_dataRunC_svd  = new TH1F("HQ_dataRunC_svd","HQ secondary vertex displacement",100,0,0.2);
 
-TH1F* HQ_ZLL_svd = new TH1F("HQ_ZLL_svd","HQ secondary vertex displacement",100,0,1);
+TH1F* HQ_ZLL_svd = new TH1F("HQ_ZLL_svd","HQ secondary vertex displacement",100,0,0.2);
 
-TH1F* HQ_TT_svd = new TH1F("HQ_TT_svd","HQ secondary vertex displacement",100,0,1);
+TH1F* HQ_TT_svd = new TH1F("HQ_TT_svd","HQ secondary vertex displacement",100,0,0.2);
 
-TH1F* HQ_W3J_svd = new TH1F("HQ_W3J_svd","HQ secondary vertex displacement",100,0,1);
+TH1F* HQ_W3J_svd = new TH1F("HQ_W3J_svd","HQ secondary vertex displacement",100,0,0.2);
 
-TH1F* HQ_W2J_svd = new TH1F("HQ_W2J_svd","HQ secondary vertex displacement",100,0,1);
+TH1F* HQ_W2J_svd = new TH1F("HQ_W2J_svd","HQ secondary vertex displacement",100,0,0.2);
 
-TH1F* HQ_W1J_svd = new TH1F("HQ_W1J_svd","HQ secondary vertex displacement",100,0,1);
+TH1F* HQ_W1J_svd = new TH1F("HQ_W1J_svd","HQ secondary vertex displacement",100,0,0.2);
 
-//TH1F* ////HQ_TTZ_svd = new TH1F("////HQ_TTZ_svd","HQ secondary vertex displacement",100,0,1);
+//TH1F* ////HQ_TTZ_svd = new TH1F("////HQ_TTZ_svd","HQ secondary vertex displacement",100,0,0.2);
 
-//TH1F* //HQ_WW_svd = new TH1F("//HQ_WW_svd","HQ secondary vertex displacement",100,0,1);
+//TH1F* //HQ_WW_svd = new TH1F("//HQ_WW_svd","HQ secondary vertex displacement",100,0,0.2);
 
-//TH1F* //HQ_WZ_svd = new TH1F("//HQ_WZ_svd","HQ secondary vertex displacement",100,0,1);
+//TH1F* //HQ_WZ_svd = new TH1F("//HQ_WZ_svd","HQ secondary vertex displacement",100,0,0.2);
 
-TH1F* HQ_LW200_svd = new TH1F("HQ_LW200_svd","HQ secondary vertex displacement",100,0,1);
+TH1F* HQ_LW200_svd = new TH1F("HQ_LW200_svd","HQ secondary vertex displacement",100,0,0.2);
 
-//TH1F* //HQ_LW300_svd = new TH1F("//HQ_LW300_svd","HQ secondary vertex displacement",100,0,1);
+//TH1F* //HQ_LW300_svd = new TH1F("//HQ_LW300_svd","HQ secondary vertex displacement",100,0,0.2);
 
-//TH1F* HQ_LW400_svd = new TH1F("HQ_LW400_svd","HQ secondary vertex displacement",100,0,1);
+//TH1F* HQ_LW400_svd = new TH1F("HQ_LW400_svd","HQ secondary vertex displacement",100,0,0.2);
 
-//TH1F* HQ_LW500_svd = new TH1F("HQ_LW500_svd","HQ secondary vertex displacement",100,0,1);
+//TH1F* HQ_LW500_svd = new TH1F("HQ_LW500_svd","HQ secondary vertex displacement",100,0,0.2);
 
 TH1F* HQ_dataRunB_JetMass = new TH1F("HQ_dataRunB_JetMass","HQ Invariant mass from DiJets",100,0,400);
 
@@ -1539,61 +1539,61 @@ TH1F* SG_LW200_npv = new TH1F("SG_LW200_npv","SG Number of primary vertices",25,
 
 //TH1F* SG_LW500_npv = new TH1F("SG_LW500_npv","SG Number of primary vertices",25,5,30);
 
-TH1F* SG_dataRunB_nsv = new TH1F("SG_dataRunB_nsv","SG Number of secondary vertices",20,0,2000);
+TH1F* SG_dataRunB_nsv = new TH1F("SG_dataRunB_nsv","SG Number of secondary vertices",20,0,10);
 
-TH1F* SG_dataRunC_nsv  = new TH1F("SG_dataRunC_nsv","SG Number of secondary vertices",20,0,2000);
+TH1F* SG_dataRunC_nsv  = new TH1F("SG_dataRunC_nsv","SG Number of secondary vertices",20,0,10);
 
-TH1F* SG_ZLL_nsv = new TH1F("SG_ZLL_nsv","SG Number of secondary vertices",20,0,2000);
+TH1F* SG_ZLL_nsv = new TH1F("SG_ZLL_nsv","SG Number of secondary vertices",20,0,10);
 
-TH1F* SG_TT_nsv = new TH1F("SG_TT_nsv","SG Number of secondary vertices",20,0,2000);
+TH1F* SG_TT_nsv = new TH1F("SG_TT_nsv","SG Number of secondary vertices",20,0,10);
 
-TH1F* SG_W3J_nsv = new TH1F("SG_W3J_nsv","SG Number of secondary vertices",20,0,2000);
+TH1F* SG_W3J_nsv = new TH1F("SG_W3J_nsv","SG Number of secondary vertices",20,0,10);
 
-TH1F* SG_W2J_nsv = new TH1F("SG_W2J_nsv","SG Number of secondary vertices",20,0,2000);
+TH1F* SG_W2J_nsv = new TH1F("SG_W2J_nsv","SG Number of secondary vertices",20,0,10);
 
-TH1F* SG_W1J_nsv = new TH1F("SG_W1J_nsv","SG Number of secondary vertices",20,0,2000);
+TH1F* SG_W1J_nsv = new TH1F("SG_W1J_nsv","SG Number of secondary vertices",20,0,10);
 
-//TH1F* SG_TTZ_nsv = new TH1F("SG_TTZ_nsv","SG Number of secondary vertices",20,0,2000);
+//TH1F* SG_TTZ_nsv = new TH1F("SG_TTZ_nsv","SG Number of secondary vertices",20,0,10);
 
-//TH1F* SG_WW_nsv = new TH1F("SG_WW_nsv","SG Number of secondary vertices",20,0,2000);
+//TH1F* SG_WW_nsv = new TH1F("SG_WW_nsv","SG Number of secondary vertices",20,0,10);
 
-//TH1F* SG_WZ_nsv = new TH1F("SG_WZ_nsv","SG Number of secondary vertices",20,0,2000);
+//TH1F* SG_WZ_nsv = new TH1F("SG_WZ_nsv","SG Number of secondary vertices",20,0,10);
 
-TH1F* SG_LW200_nsv = new TH1F("SG_LW200_nsv","SG Number of secondary vertices",20,0,2000);
+TH1F* SG_LW200_nsv = new TH1F("SG_LW200_nsv","SG Number of secondary vertices",20,0,10);
 
-//TH1F* SG_LW300_nsv = new TH1F("SG_LW300_nsv","SG Number of secondary vertices",20,0,2000);
+//TH1F* SG_LW300_nsv = new TH1F("SG_LW300_nsv","SG Number of secondary vertices",20,0,10);
 
-//TH1F* SG_LW400_nsv = new TH1F("SG_LW400_nsv","SG Number of secondary vertices",20,0,2000);
+//TH1F* SG_LW400_nsv = new TH1F("SG_LW400_nsv","SG Number of secondary vertices",20,0,10);
 
-//TH1F* SG_LW500_nsv = new TH1F("SG_LW500_nsv","SG Number of secondary vertices",20,0,2000);
+//TH1F* SG_LW500_nsv = new TH1F("SG_LW500_nsv","SG Number of secondary vertices",20,0,10);
 
-TH1F* SG_dataRunB_svd = new TH1F("SG_dataRunB_svd","SG secondary vertex displacement",100,0,1);
+TH1F* SG_dataRunB_svd = new TH1F("SG_dataRunB_svd","SG secondary vertex displacement",100,0,0.2);
 
-TH1F* SG_dataRunC_svd  = new TH1F("SG_dataRunC_svd","SG secondary vertex displacement",100,0,1);
+TH1F* SG_dataRunC_svd  = new TH1F("SG_dataRunC_svd","SG secondary vertex displacement",100,0,0.2);
 
-TH1F* SG_ZLL_svd = new TH1F("SG_ZLL_svd","SG secondary vertex displacement",100,0,1);
+TH1F* SG_ZLL_svd = new TH1F("SG_ZLL_svd","SG secondary vertex displacement",100,0,0.2);
 
-TH1F* SG_TT_svd = new TH1F("SG_TT_svd","SG secondary vertex displacement",100,0,1);
+TH1F* SG_TT_svd = new TH1F("SG_TT_svd","SG secondary vertex displacement",100,0,0.2);
 
-TH1F* SG_W3J_svd = new TH1F("SG_W3J_svd","SG secondary vertex displacement",100,0,1);
+TH1F* SG_W3J_svd = new TH1F("SG_W3J_svd","SG secondary vertex displacement",100,0,0.2);
 
-TH1F* SG_W2J_svd = new TH1F("SG_W2J_svd","SG secondary vertex displacement",100,0,1);
+TH1F* SG_W2J_svd = new TH1F("SG_W2J_svd","SG secondary vertex displacement",100,0,0.2);
 
-TH1F* SG_W1J_svd = new TH1F("SG_W1J_svd","SG secondary vertex displacement",100,0,1);
+TH1F* SG_W1J_svd = new TH1F("SG_W1J_svd","SG secondary vertex displacement",100,0,0.2);
 
-//TH1F* SG_TTZ_svd = new TH1F("SG_TTZ_svd","SG secondary vertex displacement",100,0,1);
+//TH1F* SG_TTZ_svd = new TH1F("SG_TTZ_svd","SG secondary vertex displacement",100,0,0.2);
 
-//TH1F* SG_WW_svd = new TH1F("SG_WW_svd","SG secondary vertex displacement",100,0,1);
+//TH1F* SG_WW_svd = new TH1F("SG_WW_svd","SG secondary vertex displacement",100,0,0.2);
 
-//TH1F* SG_WZ_svd = new TH1F("SG_WZ_svd","SG secondary vertex displacement",100,0,1);
+//TH1F* SG_WZ_svd = new TH1F("SG_WZ_svd","SG secondary vertex displacement",100,0,0.2);
 
-TH1F* SG_LW200_svd = new TH1F("SG_LW200_svd","SG secondary vertex displacement",100,0,1);
+TH1F* SG_LW200_svd = new TH1F("SG_LW200_svd","SG secondary vertex displacement",100,0,0.2);
 
-//TH1F* SG_LW300_svd = new TH1F("SG_LW300_svd","SG secondary vertex displacement",100,0,1);
+//TH1F* SG_LW300_svd = new TH1F("SG_LW300_svd","SG secondary vertex displacement",100,0,0.2);
 
-//TH1F* SG_LW400_svd = new TH1F("SG_LW400_svd","SG secondary vertex displacement",100,0,1);
+//TH1F* SG_LW400_svd = new TH1F("SG_LW400_svd","SG secondary vertex displacement",100,0,0.2);
 
-//TH1F* SG_LW500_svd = new TH1F("SG_LW500_svd","SG secondary vertex displacement",100,0,1);
+//TH1F* SG_LW500_svd = new TH1F("SG_LW500_svd","SG secondary vertex displacement",100,0,0.2);
 
 TH1F* SG_dataRunB_JetMass = new TH1F("SG_dataRunB_JetMass","SG Invariant mass from DiJets",100,0,400);
 
@@ -1875,6 +1875,371 @@ TH1F* SG_LW200_NEle = new TH1F("SG_LW200_NEle","SG Number of electrons",20,0,20)
 
 //TH1F* SG_LW500_NEle = new TH1F("SG_LW500_NEle","SG Number of electrons",20,0,20);
 
+//////////////////////////////////////DR cut ////////////////////////////////////////
+TH1F* DRC_dataRunB_npv = new TH1F("DRC_dataRunB_npv","DRC Number of primary vertices",25,5,30);
+
+TH1F* DRC_dataRunC_npv  = new TH1F("DRC_dataRunC_npv","DRC Number of primary vertices",25,5,30);
+
+TH1F* DRC_ZLL_npv = new TH1F("DRC_ZLL_npv","DRC Number of primary vertices",25,5,30);
+
+TH1F* DRC_TT_npv = new TH1F("DRC_TT_npv","DRC Number of primary vertices",25,5,30);
+
+TH1F* DRC_W3J_npv = new TH1F("DRC_W3J_npv","DRC Number of primary vertices",25,5,30);
+
+TH1F* DRC_W2J_npv = new TH1F("DRC_W2J_npv","DRC Number of primary vertices",25,5,30);
+
+TH1F* DRC_W1J_npv = new TH1F("DRC_W1J_npv","DRC Number of primary vertices",25,5,30);
+
+//TH1F* DRC_TTZ_npv = new TH1F("DRC_TTZ_npv","DRC Number of primary vertices",25,5,30);
+
+//TH1F* DRC_WW_npv = new TH1F("DRC_WW_npv","DRC Number of primary vertices",25,5,30);
+
+//TH1F* DRC_WZ_npv = new TH1F("DRC_WZ_npv","DRC Number of primary vertices",25,5,30);
+
+TH1F* DRC_LW200_npv = new TH1F("DRC_LW200_npv","DRC Number of primary vertices",25,5,30);
+
+//TH1F* DRC_LW300_npv = new TH1F("DRC_LW300_npv","DRC Number of primary vertices",25,5,30);
+
+//TH1F* DRC_LW400_npv = new TH1F("DRC_LW400_npv","DRC Number of primary vertices",25,5,30);
+
+//TH1F* DRC_LW500_npv = new TH1F("DRC_LW500_npv","DRC Number of primary vertices",25,5,30);
+
+TH1F* DRC_dataRunB_nsv = new TH1F("DRC_dataRunB_nsv","DRC Number of secondary vertices",20,0,10);
+
+TH1F* DRC_dataRunC_nsv  = new TH1F("DRC_dataRunC_nsv","DRC Number of secondary vertices",20,0,10);
+
+TH1F* DRC_ZLL_nsv = new TH1F("DRC_ZLL_nsv","DRC Number of secondary vertices",20,0,10);
+
+TH1F* DRC_TT_nsv = new TH1F("DRC_TT_nsv","DRC Number of secondary vertices",20,0,10);
+
+TH1F* DRC_W3J_nsv = new TH1F("DRC_W3J_nsv","DRC Number of secondary vertices",20,0,10);
+
+TH1F* DRC_W2J_nsv = new TH1F("DRC_W2J_nsv","DRC Number of secondary vertices",20,0,10);
+
+TH1F* DRC_W1J_nsv = new TH1F("DRC_W1J_nsv","DRC Number of secondary vertices",20,0,10);
+
+//TH1F* DRC_TTZ_nsv = new TH1F("DRC_TTZ_nsv","DRC Number of secondary vertices",20,0,10);
+
+//TH1F* DRC_WW_nsv = new TH1F("DRC_WW_nsv","DRC Number of secondary vertices",20,0,10);
+
+//TH1F* DRC_WZ_nsv = new TH1F("DRC_WZ_nsv","DRC Number of secondary vertices",20,0,10);
+
+TH1F* DRC_LW200_nsv = new TH1F("DRC_LW200_nsv","DRC Number of secondary vertices",20,0,10);
+
+//TH1F* DRC_LW300_nsv = new TH1F("DRC_LW300_nsv","DRC Number of secondary vertices",20,0,10);
+
+//TH1F* DRC_LW400_nsv = new TH1F("DRC_LW400_nsv","DRC Number of secondary vertices",20,0,10);
+
+//TH1F* DRC_LW500_nsv = new TH1F("DRC_LW500_nsv","DRC Number of secondary vertices",20,0,10);
+
+TH1F* DRC_dataRunB_svd = new TH1F("DRC_dataRunB_svd","DRC secondary vertex displacement",100,0,0.2);
+
+TH1F* DRC_dataRunC_svd  = new TH1F("DRC_dataRunC_svd","DRC secondary vertex displacement",100,0,0.2);
+
+TH1F* DRC_ZLL_svd = new TH1F("DRC_ZLL_svd","DRC secondary vertex displacement",100,0,0.2);
+
+TH1F* DRC_TT_svd = new TH1F("DRC_TT_svd","DRC secondary vertex displacement",100,0,0.2);
+
+TH1F* DRC_W3J_svd = new TH1F("DRC_W3J_svd","DRC secondary vertex displacement",100,0,0.2);
+
+TH1F* DRC_W2J_svd = new TH1F("DRC_W2J_svd","DRC secondary vertex displacement",100,0,0.2);
+
+TH1F* DRC_W1J_svd = new TH1F("DRC_W1J_svd","DRC secondary vertex displacement",100,0,0.2);
+
+//TH1F* DRC_TTZ_svd = new TH1F("DRC_TTZ_svd","DRC secondary vertex displacement",100,0,0.2);
+
+//TH1F* DRC_WW_svd = new TH1F("DRC_WW_svd","DRC secondary vertex displacement",100,0,0.2);
+
+//TH1F* DRC_WZ_svd = new TH1F("DRC_WZ_svd","DRC secondary vertex displacement",100,0,0.2);
+
+TH1F* DRC_LW200_svd = new TH1F("DRC_LW200_svd","DRC secondary vertex displacement",100,0,0.2);
+
+//TH1F* DRC_LW300_svd = new TH1F("DRC_LW300_svd","DRC secondary vertex displacement",100,0,0.2);
+
+//TH1F* DRC_LW400_svd = new TH1F("DRC_LW400_svd","DRC secondary vertex displacement",100,0,0.2);
+
+//TH1F* DRC_LW500_svd = new TH1F("DRC_LW500_svd","DRC secondary vertex displacement",100,0,0.2);
+
+TH1F* DRC_dataRunB_JetMass = new TH1F("DRC_dataRunB_JetMass","DRC Invariant mass from DiJets",100,0,400);
+
+TH1F* DRC_dataRunC_JetMass  = new TH1F("DRC_dataRunC_JetMass","DRC Invariant mass from DiJets",100,0,400);
+
+TH1F* DRC_ZLL_JetMass = new TH1F("DRC_ZLL_JetMass","DRC Invariant mass from DiJets",100,0,400);
+
+TH1F* DRC_TT_JetMass = new TH1F("DRC_TT_JetMass","DRC Invariant mass from DiJets",100,0,400);
+
+TH1F* DRC_W3J_JetMass = new TH1F("DRC_W3J_JetMass","DRC Invariant mass from DiJets",100,0,400);
+
+TH1F* DRC_W2J_JetMass = new TH1F("DRC_W2J_JetMass","DRC Invariant mass from DiJets",100,0,400);
+
+TH1F* DRC_W1J_JetMass = new TH1F("DRC_W1J_JetMass","DRC Invariant mass from DiJets",100,0,400);
+
+//TH1F* DRC_TTZ_JetMass = new TH1F("DRC_TTZ_JetMass","DRC Invariant mass from DiJets",100,0,400);
+
+//TH1F* DRC_WW_JetMass = new TH1F("DRC_WW_JetMass","DRC Invariant mass from DiJets",100,0,400);
+
+//TH1F* DRC_WZ_JetMass = new TH1F("DRC_WZ_JetMass","DRC Invariant mass from DiJets",100,0,400);
+
+TH1F* DRC_LW200_JetMass = new TH1F("DRC_LW200_JetMass","DRC Invariant mass from DiJets",100,0,400);
+
+//TH1F* DRC_LW300_JetMass = new TH1F("DRC_LW300_JetMass","DRC Invariant mass from DiJets",100,0,400);
+
+//TH1F* DRC_LW400_JetMass = new TH1F("DRC_LW400_JetMass","DRC Invariant mass from DiJets",100,0,400);
+
+//TH1F* DRC_LW500_JetMass = new TH1F("DRC_LW500_JetMass","DRC Invariant mass from DiJets",100,0,400);
+
+TH1F* DRC_dataRunB_LWMass = new TH1F("DRC_dataRunB_LWMass","DRC Invariant mass from LW",100,0,400);
+
+TH1F* DRC_dataRunC_LWMass  = new TH1F("DRC_dataRunC_LWMass","DRC Invariant mass from LW",100,0,400);
+
+TH1F* DRC_ZLL_LWMass = new TH1F("DRC_ZLL_LWMass","DRC Invariant mass from LW",100,0,400);
+
+TH1F* DRC_TT_LWMass = new TH1F("DRC_TT_LWMass","DRC Invariant mass from LW",100,0,400);
+
+TH1F* DRC_W3J_LWMass = new TH1F("DRC_W3J_LWMass","DRC Invariant mass from LW",100,0,400);
+
+TH1F* DRC_W2J_LWMass = new TH1F("DRC_W2J_LWMass","DRC Invariant mass from LW",100,0,400);
+
+TH1F* DRC_W1J_LWMass = new TH1F("DRC_W1J_LWMass","DRC Invariant mass from LW",100,0,400);
+
+//TH1F* DRC_TTZ_LWMass = new TH1F("DRC_TTZ_LWMass","DRC Invariant mass from LW",100,0,400);
+
+//TH1F* DRC_WW_LWMass = new TH1F("DRC_WW_LWMass","DRC Invariant mass from LW",100,0,400);
+
+//TH1F* DRC_WZ_LWMass = new TH1F("DRC_WZ_LWMass","DRC Invariant mass from LW",100,0,400);
+
+TH1F* DRC_LW200_LWMass = new TH1F("DRC_LW200_LWMass","DRC Invariant mass from LW",100,0,400);
+
+//TH1F* DRC_LW300_LWMass = new TH1F("DRC_LW300_LWMass","DRC Invariant mass from LW",100,0,400);
+
+//TH1F* DRC_LW400_LWMass = new TH1F("DRC_LW400_LWMass","DRC Invariant mass from LW",100,0,400);
+
+//TH1F* DRC_LW500_LWMass = new TH1F("DRC_LW500_LWMass","DRC Invariant mass from LW",100,0,400);
+
+TH1F* DRC_dataRunB_Elept = new TH1F("DRC_dataRunB_Elept","DRC Electron pt distribution",100,0,200);
+
+TH1F* DRC_dataRunC_Elept  = new TH1F("DRC_dataRunC_Elept","DRC Electron pt distribution",100,0,200);
+
+TH1F* DRC_ZLL_Elept = new TH1F("DRC_ZLL_Elept","DRC Electron pt distribution",100,0,200);
+
+TH1F* DRC_TT_Elept = new TH1F("DRC_TT_Elept","DRC Electron pt distribution",100,0,200);
+
+TH1F* DRC_W3J_Elept = new TH1F("DRC_W3J_Elept","DRC Electron pt distribution",100,0,200);
+
+TH1F* DRC_W2J_Elept = new TH1F("DRC_W2J_Elept","DRC Electron pt distribution",100,0,200);
+
+TH1F* DRC_W1J_Elept = new TH1F("DRC_W1J_Elept","DRC Electron pt distribution",100,0,200);
+
+//TH1F* DRC_TTZ_Elept = new TH1F("DRC_TTZ_Elept","DRC Electron pt distribution",100,0,200);
+
+//TH1F* DRC_WW_Elept = new TH1F("DRC_WW_Elept","DRC Electron pt distribution",100,0,200);
+
+//TH1F* DRC_WZ_Elept = new TH1F("DRC_WZ_Elept","DRC Electron pt distribution",100,0,200);
+
+TH1F* DRC_LW200_Elept = new TH1F("DRC_LW200_Elept","DRC Electron pt distribution",100,0,200);
+
+//TH1F* DRC_LW300_Elept = new TH1F("DRC_LW300_Elept","DRC Electron pt distribution",100,0,200);
+
+//TH1F* DRC_LW400_Elept = new TH1F("DRC_LW400_Elept","DRC Electron pt distribution",100,0,200);
+
+//TH1F* DRC_LW500_Elept = new TH1F("DRC_LW500_Elept","DRC Electron pt distribution",100,0,200);
+
+TH1F* DRC_dataRunB_DieledR = new TH1F("DRC_dataRunB_DieledR","DRC delta R separation between electrons",100,0,8);
+
+TH1F* DRC_dataRunC_DieledR  = new TH1F("DRC_dataRunC_DieledR","DRC delta R separation between electrons",100,0,8);
+
+TH1F* DRC_ZLL_DieledR = new TH1F("DRC_ZLL_DieledR","DRC delta R separation between electrons",100,0,8);
+
+TH1F* DRC_TT_DieledR = new TH1F("DRC_TT_DieledR","DRC delta R separation between electrons",100,0,8);
+
+TH1F* DRC_W3J_DieledR = new TH1F("DRC_W3J_DieledR","DRC delta R separation between electrons",100,0,8);
+
+TH1F* DRC_W2J_DieledR = new TH1F("DRC_W2J_DieledR","DRC delta R separation between electrons",100,0,8);
+
+TH1F* DRC_W1J_DieledR = new TH1F("DRC_W1J_DieledR","DRC delta R separation between electrons",100,0,8);
+
+//TH1F* DRC_TTZ_DieledR = new TH1F("DRC_TTZ_DieledR","DRC delta R separation between electrons",100,0,8);
+
+//TH1F* DRC_WW_DieledR = new TH1F("DRC_WW_DieledR","DRC delta R separation between electrons",100,0,8);
+
+//TH1F* DRC_WZ_DieledR = new TH1F("DRC_WZ_DieledR","DRC delta R separation between electrons",100,0,8);
+
+TH1F* DRC_LW200_DieledR = new TH1F("DRC_LW200_DieledR","DRC delta R separation between electrons",100,0,8);
+
+//TH1F* DRC_LW300_DieledR = new TH1F("DRC_LW300_DieledR","DRC delta R separation between electrons",100,0,8);
+
+//TH1F* DRC_LW400_DieledR = new TH1F("DRC_LW400_DieledR","DRC delta R separation between electrons",100,0,8);
+
+//TH1F* DRC_LW500_DieledR = new TH1F("DRC_LW500_DieledR","DRC delta R separation between electrons",100,0,8);
+
+TH1F* DRC_dataRunB_LWdR = new TH1F("DRC_dataRunB_LWdR","DRC delta R separation between electrons and jets",100,0,8);
+
+TH1F* DRC_dataRunC_LWdR  = new TH1F("DRC_dataRunC_LWdR","DRC delta R separation between electrons and jets",100,0,8);
+
+TH1F* DRC_ZLL_LWdR = new TH1F("DRC_ZLL_LWdR","DRC delta R separation between electrons and jets",100,0,8);
+
+TH1F* DRC_TT_LWdR = new TH1F("DRC_TT_LWdR","DRC delta R separation between electrons and jets",100,0,8);
+
+TH1F* DRC_W3J_LWdR = new TH1F("DRC_W3J_LWdR","DRC delta R separation between electrons and jets",100,0,8);
+
+TH1F* DRC_W2J_LWdR = new TH1F("DRC_W2J_LWdR","DRC delta R separation between electrons and jets",100,0,8);
+
+TH1F* DRC_W1J_LWdR = new TH1F("DRC_W1J_LWdR","DRC delta R separation between electrons and jets",100,0,8);
+
+//TH1F* DRC_TTZ_LWdR = new TH1F("DRC_TTZ_LWdR","DRC delta R separation between electrons and jets",100,0,8);
+
+//TH1F* DRC_WW_LWdR = new TH1F("DRC_WW_LWdR","DRC delta R separation between electrons and jets",100,0,8);
+
+//TH1F* DRC_WZ_LWdR = new TH1F("DRC_WZ_LWdR","DRC delta R separation between electrons and jets",100,0,8);
+
+TH1F* DRC_LW200_LWdR = new TH1F("DRC_LW200_LWdR","DRC delta R separation between electrons and jets",100,0,8);
+
+//TH1F* DRC_LW300_LWdR = new TH1F("DRC_LW300_LWdR","DRC delta R separation between electrons and jets",100,0,8);
+
+//TH1F* DRC_LW400_LWdR = new TH1F("DRC_LW400_LWdR","DRC delta R separation between electrons and jets",100,0,8);
+
+//TH1F* DRC_LW500_LWdR = new TH1F("DRC_LW500_LWdR","DRC delta R separation between electrons and jets",100,0,8);
+
+TH1F* DRC_dataRunB_DiJetdR = new TH1F("DRC_dataRunB_DiJetdR","DRC delta R separation between Jet Candidates",100,0,8);
+
+TH1F* DRC_dataRunC_DiJetdR  = new TH1F("DRC_dataRunC_DiJetdR","DRC delta R separation between Jet Candidates",100,0,8);
+
+TH1F* DRC_ZLL_DiJetdR = new TH1F("DRC_ZLL_DiJetdR","DRC delta R separation between Jet Candidates",100,0,8);
+
+TH1F* DRC_TT_DiJetdR = new TH1F("DRC_TT_DiJetdR","DRC delta R separation between Jet Candidates",100,0,8);
+
+TH1F* DRC_W3J_DiJetdR = new TH1F("DRC_W3J_DiJetdR","DRC delta R separation between Jet Candidates",100,0,8);
+
+TH1F* DRC_W2J_DiJetdR = new TH1F("DRC_W2J_DiJetdR","DRC delta R separation between Jet Candidates",100,0,8);
+
+TH1F* DRC_W1J_DiJetdR = new TH1F("DRC_W1J_DiJetdR","DRC delta R separation between Jet Candidates",100,0,8);
+
+//TH1F* DRC_TTZ_DiJetdR = new TH1F("DRC_TTZ_DiJetdR","DRC delta R separation between Jet Candidates",100,0,8);
+
+//TH1F* DRC_WW_DiJetdR = new TH1F("DRC_WW_DiJetdR","DRC delta R separation between Jet Candidates",100,0,8);
+
+//TH1F* DRC_WZ_DiJetdR = new TH1F("DRC_WZ_DiJetdR","DRC delta R separation between Jet Candidates",100,0,8);
+
+TH1F* DRC_LW200_DiJetdR = new TH1F("DRC_LW200_DiJetdR","DRC delta R separation between Jet Candidates",100,0,8);
+
+//TH1F* DRC_LW300_DiJetdR = new TH1F("DRC_LW300_DiJetdR","DRC delta R separation between Jet Candidates",100,0,8);
+
+//TH1F* DRC_LW400_DiJetdR = new TH1F("DRC_LW400_DiJetdR","DRC delta R separation between Jet Candidates",100,0,8);
+
+//TH1F* DRC_LW500_DiJetdR = new TH1F("DRC_LW500_DiJetdR","DRC delta R separation between Jet Candidates",100,0,8);
+
+TH1F* DRC_dataRunB_BJetPt = new TH1F("DRC_dataRunB_BJetPt","DRC Most energetic Jet pt",100,0,250);
+
+TH1F* DRC_dataRunC_BJetPt  = new TH1F("DRC_dataRunC_BJetPt","DRC Most energetic Jet pt",100,0,250);
+
+TH1F* DRC_ZLL_BJetPt = new TH1F("DRC_ZLL_BJetPt","DRC Most energetic Jet pt",100,0,250);
+
+TH1F* DRC_TT_BJetPt = new TH1F("DRC_TT_BJetPt","DRC Most energetic Jet pt",100,0,250);
+
+TH1F* DRC_W3J_BJetPt = new TH1F("DRC_W3J_BJetPt","DRC Most energetic Jet pt",100,0,250);
+
+TH1F* DRC_W2J_BJetPt = new TH1F("DRC_W2J_BJetPt","DRC Most energetic Jet pt",100,0,250);
+
+TH1F* DRC_W1J_BJetPt = new TH1F("DRC_W1J_BJetPt","DRC Most energetic Jet pt",100,0,250);
+
+//TH1F* DRC_TTZ_BJetPt = new TH1F("DRC_TTZ_BJetPt","DRC Most energetic Jet pt",100,0,250);
+
+//TH1F* DRC_WW_BJetPt = new TH1F("DRC_WW_BJetPt","DRC Most energetic Jet pt",100,0,250);
+
+//TH1F* DRC_WZ_BJetPt = new TH1F("DRC_WZ_BJetPt","DRC Most energetic Jet pt",100,0,250);
+
+TH1F* DRC_LW200_BJetPt = new TH1F("DRC_LW200_BJetPt","DRC Most energetic Jet pt",100,0,250);
+
+//TH1F* DRC_LW300_BJetPt = new TH1F("DRC_LW300_BJetPt","DRC Most energetic Jet pt",100,0,250);
+
+//TH1F* DRC_LW400_BJetPt = new TH1F("DRC_LW400_BJetPt","DRC Most energetic Jet pt",100,0,250);
+
+//TH1F* DRC_LW500_BJetPt = new TH1F("DRC_LW500_BJetPt","DRC Most energetic Jet pt",100,0,250);
+
+TH1F* DRC_dataRunB_SBJetPt = new TH1F("DRC_dataRunB_SBJetPt","Second DRC Most energetic Jet pt",100,0,250);
+
+TH1F* DRC_dataRunC_SBJetPt  = new TH1F("DRC_dataRunC_SBJetPt","Second DRC Most energetic Jet pt",100,0,250);
+
+TH1F* DRC_ZLL_SBJetPt = new TH1F("DRC_ZLL_SBJetPt","Second DRC Most energetic Jet pt",100,0,250);
+
+TH1F* DRC_TT_SBJetPt = new TH1F("DRC_TT_SBJetPt","Second DRC Most energetic Jet pt",100,0,250);
+
+TH1F* DRC_W3J_SBJetPt = new TH1F("DRC_W3J_SBJetPt","Second DRC Most energetic Jet pt",100,0,250);
+
+TH1F* DRC_W2J_SBJetPt = new TH1F("DRC_W2J_SBJetPt","Second DRC Most energetic Jet pt",100,0,250);
+
+TH1F* DRC_W1J_SBJetPt = new TH1F("DRC_W1J_SBJetPt","Second DRC Most energetic Jet pt",100,0,250);
+
+//TH1F* DRC_TTZ_SBJetPt = new TH1F("DRC_TTZ_SBJetPt","Second DRC Most energetic Jet pt",100,0,250);
+
+//TH1F* DRC_WW_SBJetPt = new TH1F("DRC_WW_SBJetPt","Second DRC Most energetic Jet pt",100,0,250);
+
+//TH1F* DRC_WZ_SBJetPt = new TH1F("DRC_WZ_SBJetPt","Second DRC Most energetic Jet pt",100,0,250);
+
+TH1F* DRC_LW200_SBJetPt = new TH1F("DRC_LW200_SBJetPt","Second DRC Most energetic Jet pt",100,0,250);
+
+//TH1F* DRC_LW300_SBJetPt = new TH1F("DRC_LW300_SBJetPt","Second DRC Most energetic Jet pt",100,0,250);
+
+//TH1F* DRC_LW400_SBJetPt = new TH1F("DRC_LW400_SBJetPt","Second DRC Most energetic Jet pt",100,0,250);
+
+//TH1F* DRC_LW500_SBJetPt = new TH1F("DRC_LW500_SBJetPt","Second DRC Most energetic Jet pt",100,0,250);
+
+TH1F* DRC_dataRunB_NJet = new TH1F("DRC_dataRunB_NJet","DRC Number of Jets",20,0,20);
+
+TH1F* DRC_dataRunC_NJet  = new TH1F("DRC_dataRunC_NJet","DRC Number of Jets",20,0,20);
+
+TH1F* DRC_ZLL_NJet = new TH1F("DRC_ZLL_NJet","DRC Number of Jets",20,0,20);
+
+TH1F* DRC_TT_NJet = new TH1F("DRC_TT_NJet","DRC Number of Jets",20,0,20);
+
+TH1F* DRC_W3J_NJet = new TH1F("DRC_W3J_NJet","DRC Number of Jets",20,0,20);
+
+TH1F* DRC_W2J_NJet = new TH1F("DRC_W2J_NJet","DRC Number of Jets",20,0,20);
+
+TH1F* DRC_W1J_NJet = new TH1F("DRC_W1J_NJet","DRC Number of Jets",20,0,20);
+
+//TH1F* DRC_TTZ_NJet = new TH1F("DRC_TTZ_NJet","DRC Number of Jets",20,0,20);
+
+//TH1F* DRC_WW_NJet = new TH1F("DRC_WW_NJet","DRC Number of Jets",20,0,20);
+
+//TH1F* DRC_WZ_NJet = new TH1F("DRC_WZ_NJet","DRC Number of Jets",20,0,20);
+
+TH1F* DRC_LW200_NJet = new TH1F("DRC_LW200_NJet","DRC Number of Jets",20,0,20);
+
+//TH1F* DRC_LW300_NJet = new TH1F("DRC_LW300_NJet","DRC Number of Jets",20,0,20);
+
+//TH1F* DRC_LW400_NJet = new TH1F("DRC_LW400_NJet","DRC Number of Jets",20,0,20);
+
+//TH1F* DRC_LW500_NJet = new TH1F("DRC_LW500_NJet","DRC Number of Jets",20,0,20);
+
+TH1F* DRC_dataRunB_NEle = new TH1F("DRC_dataRunB_NEle","DRC Number of electrons",20,0,20);
+
+TH1F* DRC_dataRunC_NEle  = new TH1F("DRC_dataRunC_NEle","DRC Number of electrons",20,0,20);
+
+TH1F* DRC_ZLL_NEle = new TH1F("DRC_ZLL_NEle","DRC Number of electrons",20,0,20);
+
+TH1F* DRC_TT_NEle = new TH1F("DRC_TT_NEle","DRC Number of electrons",20,0,20);
+
+TH1F* DRC_W3J_NEle = new TH1F("DRC_W3J_NEle","DRC Number of electrons",20,0,20);
+
+TH1F* DRC_W2J_NEle = new TH1F("DRC_W2J_NEle","DRC Number of electrons",20,0,20);
+
+TH1F* DRC_W1J_NEle = new TH1F("DRC_W1J_NEle","DRC Number of electrons",20,0,20);
+
+//TH1F* DRC_TTZ_NEle = new TH1F("DRC_TTZ_NEle","DRC Number of electrons",20,0,20);
+
+//TH1F* DRC_WW_NEle = new TH1F("DRC_WW_NEle","DRC Number of electrons",20,0,20);
+
+//TH1F* DRC_WZ_NEle = new TH1F("DRC_WZ_NEle","DRC Number of electrons",20,0,20);
+
+TH1F* DRC_LW200_NEle = new TH1F("DRC_LW200_NEle","DRC Number of electrons",20,0,20);
+
+//TH1F* DRC_LW300_NEle = new TH1F("DRC_LW300_NEle","DRC Number of electrons",20,0,20);
+
+//TH1F* DRC_LW400_NEle = new TH1F("DRC_LW400_NEle","DRC Number of electrons",20,0,20);
+
+//TH1F* DRC_LW500_NEle = new TH1F("DRC_LW500_NEle","DRC Number of electrons",20,0,20);
+
 //Requiered trigger
 //string triggerRequest = "HLT_Photon36_CaloId10_Iso50_Photon22_CaloId10_Iso50";
 string triggerRequest[] = {"HLT_Photon36_CaloId10_Iso50_Photon22_CaloId10_Iso50",
@@ -1970,6 +2335,14 @@ public :
   vector<float>   *secvec_posx;
   vector<float>   *secvec_posy;
   vector<float>   *secvec_posz;
+  vector<float>   *secvec_poserrorx;
+  vector<float>   *secvec_poserrory;
+  vector<float>   *secvec_poserrorz;
+  vector<float>   *secvec_eleTag;
+  vector<float>   *secvec_normchi2;
+  vector<float>   *Bsp_x;
+  vector<float>   *Bsp_y;
+  vector<float>   *Bsp_z;
   Float_t         met_pt;
   Float_t         met_phi;
 
@@ -2034,9 +2407,17 @@ public :
   TBranch        *b_trigobj_py;
   TBranch        *b_trigobj_eta;
   TBranch        *b_trigobj_phi;
-  TBranch        *b_secvec_posx;
-  TBranch        *b_secvec_posy;
-  TBranch        *b_secvec_posz;
+  TBranch    *b_secvec_posx;
+  TBranch    *b_secvec_posy;
+  TBranch    *b_secvec_posz;
+  TBranch    *b_secvec_poserrorx;
+  TBranch    *b_secvec_poserrory;
+  TBranch    *b_secvec_poserrorz;
+  TBranch    *b_secvec_eleTag;
+  TBranch    *b_secvec_normchi2;
+  TBranch    *b_Bsp_x;
+  TBranch    *b_Bsp_y;
+  TBranch    *b_Bsp_z;
 
   EventLoopAnalysisTemplate(TString filename, TString labeltag, Float_t theweight);
   virtual ~EventLoopAnalysisTemplate();
@@ -2979,6 +3360,189 @@ EventLoopAnalysisTemplate::EventLoopAnalysisTemplate(TString thefile, TString th
   //hists.push_back(SG_LW400_svd);
   //hists.push_back(SG_LW500_svd);
 
+  hists.push_back(DRC_dataRunB_npv);
+  hists.push_back(DRC_dataRunC_npv);
+  hists.push_back(DRC_ZLL_npv);
+  hists.push_back(DRC_TT_npv);
+  hists.push_back(DRC_W3J_npv);
+  hists.push_back(DRC_W2J_npv);
+  hists.push_back(DRC_W1J_npv);
+  hists.push_back(DRC_LW200_npv);
+  hists.push_back(DRC_dataRunB_JetMass);
+  hists.push_back(DRC_dataRunC_JetMass);
+  hists.push_back(DRC_ZLL_JetMass);
+  hists.push_back(DRC_TT_JetMass);
+  hists.push_back(DRC_W3J_JetMass);
+  hists.push_back(DRC_W2J_JetMass);
+  hists.push_back(DRC_W1J_JetMass);
+  hists.push_back(DRC_LW200_JetMass);
+  hists.push_back(DRC_dataRunB_LWMass);
+  hists.push_back(DRC_dataRunC_LWMass);
+  hists.push_back(DRC_ZLL_LWMass);
+  hists.push_back(DRC_TT_LWMass);
+  hists.push_back(DRC_W3J_LWMass);
+  hists.push_back(DRC_W2J_LWMass);
+  hists.push_back(DRC_W1J_LWMass);
+  hists.push_back(DRC_LW200_LWMass);
+  //hists.push_back(DRC_WW_npv);
+  //hists.push_back(DRC_WZ_npv);
+  //hists.push_back(DRC_TTZ_npv);
+  //hists.push_back(DRC_WW_JetMass);
+  //hists.push_back(DRC_WZ_JetMass);
+  //hists.push_back(DRC_TTZ_JetMass);
+  //hists.push_back(DRC_WW_LWMass);
+  //hists.push_back(DRC_WZ_LWMass);
+  //hists.push_back(DRC_TTZ_LWMass);
+  //hists.push_back(//HQ_LW300_LWMass);
+  //hists.push_back(DRC_LW400_LWMass);
+  //hists.push_back(DRC_LW500_LWMass);
+  //hists.push_back(//HQ_LW300_JetMass);
+  //hists.push_back(DRC_LW400_JetMass);
+  //hists.push_back(DRC_LW500_JetMass);
+  //hists.push_back(//HQ_LW300_npv);
+  //hists.push_back(DRC_LW400_npv);
+  //hists.push_back(DRC_LW500_npv);
+  hists.push_back(DRC_dataRunB_nsv);
+  hists.push_back(DRC_dataRunC_nsv);
+  hists.push_back(DRC_ZLL_nsv);
+  hists.push_back(DRC_TT_nsv);
+  hists.push_back(DRC_W3J_nsv);
+  hists.push_back(DRC_W2J_nsv);
+  hists.push_back(DRC_W1J_nsv);
+  //hists.push_back(DRC_WW_nsv);
+  //hists.push_back(DRC_WZ_nsv);
+  //hists.push_back(DRC_TTZ_nsv);
+  hists.push_back(DRC_LW200_nsv);
+  //hists.push_back(DRC_LW200_nsv);
+  //hists.push_back(DRC_LW400_nsv);
+  //hists.push_back(DRC_LW500_nsv);
+  hists.push_back(DRC_dataRunB_svd);
+  hists.push_back(DRC_dataRunC_svd);
+  hists.push_back(DRC_ZLL_svd);
+  hists.push_back(DRC_TT_svd);
+  hists.push_back(DRC_W3J_svd);
+  hists.push_back(DRC_W2J_svd);
+  hists.push_back(DRC_W1J_svd);
+  //hists.push_back(DRC_WW_svd);
+  //hists.push_back(DRC_WZ_svd);
+  //hists.push_back(DRC_TTZ_svd);
+  hists.push_back(DRC_LW200_svd);
+  //hists.push_back(DRC_LW200_svd);
+  //hists.push_back(DRC_LW400_svd);
+  //hists.push_back(DRC_LW500_svd);
+  hists.push_back(DRC_dataRunB_Elept);
+  hists.push_back(DRC_dataRunC_Elept);
+  hists.push_back(DRC_ZLL_Elept);
+  hists.push_back(DRC_TT_Elept);
+  hists.push_back(DRC_W3J_Elept);
+  hists.push_back(DRC_W2J_Elept);
+  hists.push_back(DRC_W1J_Elept);
+  //hists.push_back(DRC_WW_Elept);
+  //hists.push_back(DRC_WZ_Elept);
+  //hists.push_back(DRC_TTZ_Elept);
+  hists.push_back(DRC_LW200_Elept);
+  //hists.push_back(DRC_LW200_Elept);
+  //hists.push_back(DRC_LW400_svd);
+  //hists.push_back(DRC_LW500_svd);
+  hists.push_back(DRC_dataRunB_DieledR);
+  hists.push_back(DRC_dataRunC_DieledR);
+  hists.push_back(DRC_ZLL_DieledR);
+  hists.push_back(DRC_TT_DieledR);
+  hists.push_back(DRC_W3J_DieledR);
+  hists.push_back(DRC_W2J_DieledR);
+  hists.push_back(DRC_W1J_DieledR);
+  //hists.push_back(DRC_WW_DieledR);
+  //hists.push_back(DRC_WZ_DieledR);
+  //hists.push_back(DRC_TTZ_DieledR);
+  hists.push_back(DRC_LW200_DieledR);
+  //hists.push_back(DRC_LW200_DieledR);
+  //hists.push_back(DRC_LW400_svd);
+  //hists.push_back(DRC_LW500_svd);
+  hists.push_back(DRC_dataRunB_LWdR);
+  hists.push_back(DRC_dataRunC_LWdR);
+  hists.push_back(DRC_ZLL_LWdR);
+  hists.push_back(DRC_TT_LWdR);
+  hists.push_back(DRC_W3J_LWdR);
+  hists.push_back(DRC_W2J_LWdR);
+  hists.push_back(DRC_W1J_LWdR);
+  //hists.push_back(DRC_WW_LWdR);
+  //hists.push_back(DRC_WZ_LWdR);
+  //hists.push_back(DRC_TTZ_LWdR);
+  hists.push_back(DRC_LW200_LWdR);
+  //hists.push_back(DRC_LW200_LWdR);
+  //hists.push_back(DRC_LW400_svd);
+  //hists.push_back(DRC_LW500_svd);
+  hists.push_back(DRC_dataRunB_DiJetdR);
+  hists.push_back(DRC_dataRunC_DiJetdR);
+  hists.push_back(DRC_ZLL_DiJetdR);
+  hists.push_back(DRC_TT_DiJetdR);
+  hists.push_back(DRC_W3J_DiJetdR);
+  hists.push_back(DRC_W2J_DiJetdR);
+  hists.push_back(DRC_W1J_DiJetdR);
+  //hists.push_back(DRC_WW_DiJetdR);
+  //hists.push_back(DRC_WZ_DiJetdR);
+  //hists.push_back(DRC_TTZ_DiJetdR);
+  hists.push_back(DRC_LW200_DiJetdR);
+  //hists.push_back(DRC_LW200_DiJetdR);
+  //hists.push_back(DRC_LW400_svd);
+  //hists.push_back(DRC_LW500_svd);
+  hists.push_back(DRC_dataRunB_BJetPt);
+  hists.push_back(DRC_dataRunC_BJetPt);
+  hists.push_back(DRC_ZLL_BJetPt);
+  hists.push_back(DRC_TT_BJetPt);
+  hists.push_back(DRC_W3J_BJetPt);
+  hists.push_back(DRC_W2J_BJetPt);
+  hists.push_back(DRC_W1J_BJetPt);
+  //hists.push_back(DRC_WW_BJetPt);
+  //hists.push_back(DRC_WZ_BJetPt);
+  //hists.push_back(DRC_TTZ_BJetPt);
+  hists.push_back(DRC_LW200_BJetPt);
+  //hists.push_back(DRC_LW200_BJetPt);
+  //hists.push_back(DRC_LW400_svd);
+  //hists.push_back(DRC_LW500_svd);
+  hists.push_back(DRC_dataRunB_SBJetPt);
+  hists.push_back(DRC_dataRunC_SBJetPt);
+  hists.push_back(DRC_ZLL_SBJetPt);
+  hists.push_back(DRC_TT_SBJetPt);
+  hists.push_back(DRC_W3J_SBJetPt);
+  hists.push_back(DRC_W2J_SBJetPt);
+  hists.push_back(DRC_W1J_SBJetPt);
+  //hists.push_back(DRC_WW_SBJetPt);
+  //hists.push_back(DRC_WZ_SBJetPt);
+  //hists.push_back(DRC_TTZ_SBJetPt);
+  hists.push_back(DRC_LW200_SBJetPt);
+  //hists.push_back(DRC_LW200_SBJetPt);
+  //hists.push_back(DRC_LW400_svd);
+  //hists.push_back(DRC_LW500_svd);
+  hists.push_back(DRC_dataRunB_NJet);
+  hists.push_back(DRC_dataRunC_NJet);
+  hists.push_back(DRC_ZLL_NJet);
+  hists.push_back(DRC_TT_NJet);
+  hists.push_back(DRC_W3J_NJet);
+  hists.push_back(DRC_W2J_NJet);
+  hists.push_back(DRC_W1J_NJet);
+  //hists.push_back(DRC_WW_NJet);
+  //hists.push_back(DRC_WZ_NJet);
+  //hists.push_back(DRC_TTZ_NJet);
+  hists.push_back(DRC_LW200_NJet);
+  //hists.push_back(DRC_LW200_NJet);
+  //hists.push_back(DRC_LW400_svd);
+  //hists.push_back(DRC_LW500_svd);
+  hists.push_back(DRC_dataRunB_NEle);
+  hists.push_back(DRC_dataRunC_NEle);
+  hists.push_back(DRC_ZLL_NEle);
+  hists.push_back(DRC_TT_NEle);
+  hists.push_back(DRC_W3J_NEle);
+  hists.push_back(DRC_W2J_NEle);
+  hists.push_back(DRC_W1J_NEle);
+  //hists.push_back(DRC_WW_NEle);
+  //hists.push_back(DRC_WZ_NEle);
+  //hists.push_back(DRC_TTZ_NEle);
+  hists.push_back(DRC_LW200_NEle);
+  //hists.push_back(DRC_LW200_NEle);
+  //hists.push_back(DRC_LW400_svd);
+  //hists.push_back(DRC_LW500_svd);
+
 
 // if parameter tree is not specified (or zero), connect the file
 // used to generate this class and read the Tree.
@@ -3102,9 +3666,17 @@ void EventLoopAnalysisTemplate::Init(TTree *tree)
    trigobj_pz = 0;
    trigobj_eta = 0;
    trigobj_phi = 0;
-   secvec_posx = 0;
-   secvec_posy = 0;
-   secvec_posz = 0;
+   secvec_posx=0;
+   secvec_posy=0;
+   secvec_posz=0;
+   secvec_poserrorx=0;
+   secvec_poserrory=0;
+   secvec_poserrorz=0;
+   secvec_eleTag=0;
+   secvec_normchi2=0;
+   Bsp_x=0;
+   Bsp_y=0;
+   Bsp_z=0;
 
    // Set branch addresses and branch pointers
    if (!tree) return;
@@ -3158,6 +3730,14 @@ void EventLoopAnalysisTemplate::Init(TTree *tree)
    fChain->SetBranchAddress("secvec_posx",&secvec_posx,&b_secvec_posx);
    fChain->SetBranchAddress("secvec_posy",&secvec_posy,&b_secvec_posy);
    fChain->SetBranchAddress("secvec_posz",&secvec_posz,&b_secvec_posz);
+   fChain->SetBranchAddress("secvec_poserrorx",&secvec_poserrorx,&b_secvec_poserrorx);
+   fChain->SetBranchAddress("secvec_poserrory",&secvec_poserrory,&b_secvec_poserrory);
+   fChain->SetBranchAddress("secvec_poserrorz",&secvec_poserrorz,&b_secvec_poserrorz);
+   fChain->SetBranchAddress("secvec_eleTag",&secvec_eleTag,&b_secvec_eleTag);
+   fChain->SetBranchAddress("secvec_normchi2",&secvec_normchi2,&b_secvec_normchi2);
+   fChain->SetBranchAddress("Bsp_x",&Bsp_x,&b_Bsp_x);
+   fChain->SetBranchAddress("Bsp_y",&Bsp_y,&b_Bsp_y);
+   fChain->SetBranchAddress("Bsp_z",&Bsp_z,&b_Bsp_z);
 
    Notify();
 }
@@ -3297,14 +3877,46 @@ void EventLoopAnalysisTemplate::analysis()
 
   histograms("HQ");
 
-  /////////Signal selection//////////////////
-
+///////////////////////////////////////DRcut selection//////////////////////
   vector<pair<float,size_t>> ElecPtTemp;
   vector<pair<float,size_t>> PosiPtTemp;
   vector<pair<float,size_t>> JetPtTemp;
   vector<float> EleDRTemp;
+  ElecPtTemp.clear();
+  PosiPtTemp.clear();
+  JetPtTemp.clear();
+  EleDRTemp.clear();
   float DRdiff1=0;
   float DRdiff2=0;
+  bool Neutralcheck=false;
+
+  for (size_t i = 0; i < electron_pt->size(); i++) {ElecPtTemp.push_back(make_pair(electron_pt->at(i),i));}
+  sort(ElecPtTemp.begin(),ElecPtTemp.end());
+
+  for(size_t x=0; x<jet_pt->size(); x++){ JetPtTemp.push_back(make_pair(corr_jet_pt->at(x),x)); }
+  sort(JetPtTemp.begin(),JetPtTemp.end());
+
+  for (size_t i = 0; i < electron_pt->size(); i++) {
+    if(i==ElecPtTemp.back().second || i==ElecPtTemp.end()[-2].second){
+      for(size_t x=0; x<corr_jet_pt->size(); x++){
+        if(x==JetPtTemp.back().second||x==JetPtTemp.end()[-2].second||x==JetPtTemp.end()[-3].second||x==JetPtTemp.end()[-4].second){
+          EleDRTemp.push_back(deltaR(jet_eta->at(x),jet_phi->at(x),electron_eta->at(i),electron_phi->at(i)));
+        }
+      }
+      sort(EleDRTemp.begin(),EleDRTemp.end());
+      if(i==ElecPtTemp.back().second) DRdiff1=abs(EleDRTemp.at(1)-EleDRTemp.front());
+      if(i==ElecPtTemp.end()[-2].second) DRdiff2=abs(EleDRTemp.at(1)-EleDRTemp.front());
+    }
+  }
+
+  if(DRdiff1<0.2 && DRdiff2<0.2) return;
+ histograms("DRC");
+
+  /////////Signal selection//////////////////
+  ElecPtTemp.clear();
+  PosiPtTemp.clear();
+  JetPtTemp.clear();
+  EleDRTemp.clear();
 
   for (size_t i = 0; i < electron_pt->size(); i++) {
     if(electron_ch->at(i)==1) ElecPtTemp.push_back(make_pair(electron_pt->at(i),i));
@@ -3314,26 +3926,14 @@ void EventLoopAnalysisTemplate::analysis()
     sort(ElecPtTemp.begin(),ElecPtTemp.end());
     sort(PosiPtTemp.begin(),PosiPtTemp.end());
     if( (ElecPtTemp.back().first>25 && PosiPtTemp.back().first>40) || (ElecPtTemp.back().first>40 && PosiPtTemp.back().first>25) ){
-      for(size_t x=0; x<jet_pt->size(); x++){ JetPtTemp.push_back(make_pair(corr_jet_pt->at(x),x)); }
-      sort(JetPtTemp.begin(),JetPtTemp.end());
-      for (size_t i = 0; i < electron_pt->size(); i++) {
-        if(i==ElecPtTemp.back().second || i==PosiPtTemp.back().second){
-          for(size_t x=0; x<corr_jet_pt->size(); x++){
-            if(x==JetPtTemp.back().second||x==JetPtTemp.end()[-2].second||x==JetPtTemp.end()[-3].second||x==JetPtTemp.end()[-4].second){
-              EleDRTemp.push_back(deltaR(jet_eta->at(x),jet_phi->at(x),electron_eta->at(i),electron_phi->at(i)));
-            }
-          }
-          sort(EleDRTemp.begin(),EleDRTemp.end());
-          if(electron_ch->at(i)==1) DRdiff1=abs(EleDRTemp.at(1)-EleDRTemp.front());
-          else if(electron_ch->at(i)==1) DRdiff2=abs(EleDRTemp.at(1)-EleDRTemp.front());
-        }
-      }
+      Neutralcheck=true;
     }
   }
 
-  if(DRdiff1<0.2 && DRdiff2<0.2) return;
-
+  //if(DRdiff1<0.2 && DRdiff2<0.2) return;
+  if(!Neutralcheck) return;
    histograms("SG");
+
 
 
 }//------analysis()
@@ -3382,7 +3982,7 @@ void EventLoopAnalysisTemplate::histograms(string cut) {
 	       hists.at(j)->Fill(PV_npvs,theweight);
       }
 
-      /*//secondary Vertices
+      //secondary Vertices
       //cout<<"nsv\n";
       if(thevar == "nsv"){
 	       hists.at(j)->Fill(numbersecvec,theweight);
@@ -3393,13 +3993,15 @@ void EventLoopAnalysisTemplate::histograms(string cut) {
       if(thevar == "svd"){
         float dx,dy,dz,disp;
         for (size_t i = 0; i < secvec_posx->size(); i++) {
-          dx=PV_x->at(0)-secvec_posx->at(i);
-          dy=PV_y->at(0)-secvec_posy->at(i);
-          dz=PV_z->at(0)-secvec_posz->at(i);
-          disp=sqrt( dx*dx + dy*dy + dz*dz );
-          hists.at(j)->Fill(disp,theweight);
+          if(secvec_eleTag->at(i)!=-1){
+            dx=PV_x->at(0)-secvec_posx->at(i);
+            dy=PV_y->at(0)-secvec_posy->at(i);
+            dz=PV_z->at(0)-secvec_posz->at(i);
+            disp=sqrt( dx*dx + dy*dy + dz*dz );
+            hists.at(j)->Fill(disp,theweight);
+          }
         }
-      }*/
+      }
       //JetMass
       //cout<<"JetMass\n";
       if(thevar == "JetMass"){
@@ -4512,6 +5114,189 @@ int main()
   //SG_LW300_NEle->Write();
   //SG_LW400_NEle->Write();
   //SG_LW500_NEle->Write();
+
+  DRC_dataRunB_npv->Write();
+  DRC_dataRunC_npv->Write();
+  DRC_ZLL_npv->Write();
+  DRC_TT_npv->Write();
+  DRC_W3J_npv->Write();
+  DRC_W2J_npv->Write();
+  DRC_W1J_npv->Write();
+  //DRC_WW_npv->Write();
+  //DRC_WZ_npv->Write();
+  //DRC_TTZ_npv->Write();
+  DRC_LW200_npv->Write();
+  //DRC_LW300_npv->Write();
+  //DRC_LW400_npv->Write();
+  //DRC_LW500_npv->Write();
+  DRC_dataRunB_JetMass->Write();
+  DRC_dataRunC_JetMass->Write();
+  DRC_ZLL_JetMass->Write();
+  DRC_TT_JetMass->Write();
+  DRC_W3J_JetMass->Write();
+  DRC_W2J_JetMass->Write();
+  DRC_W1J_JetMass->Write();
+  //DRC_WW_JetMass->Write();
+  //DRC_WZ_JetMass->Write();
+  //DRC_TTZ_JetMass->Write();
+  DRC_LW200_JetMass->Write();
+  //DRC_LW300_JetMass->Write();
+  //DRC_LW400_JetMass->Write();
+  //DRC_LW500_JetMass->Write();
+  DRC_dataRunB_LWMass->Write();
+  DRC_dataRunC_LWMass->Write();
+  DRC_ZLL_LWMass->Write();
+  DRC_TT_LWMass->Write();
+  DRC_W3J_LWMass->Write();
+  DRC_W2J_LWMass->Write();
+  DRC_W1J_LWMass->Write();
+  //DRC_WW_LWMass->Write();
+  //DRC_WZ_LWMass->Write();
+  //DRC_TTZ_LWMass->Write();
+  DRC_LW200_LWMass->Write();
+  //DRC_LW300_LWMass->Write();
+  //DRC_LW400_LWMass->Write();
+  //DRC_LW500_LWMass->Write();
+  DRC_dataRunB_nsv->Write();
+  DRC_dataRunC_nsv->Write();
+  DRC_ZLL_nsv->Write();
+  DRC_TT_nsv->Write();
+  DRC_W3J_nsv->Write();
+  DRC_W2J_nsv->Write();
+  DRC_W1J_nsv->Write();
+  //DRC_WW_nsv->Write();
+  //DRC_WZ_nsv->Write();
+  //DRC_TTZ_nsv->Write();
+  DRC_LW200_nsv->Write();
+  //DRC_LW300_nsv->Write();
+  //DRC_LW400_nsv->Write();
+  //DRC_LW500_nsv->Write();
+  DRC_dataRunB_svd->Write();
+  DRC_dataRunC_svd->Write();
+  DRC_ZLL_svd->Write();
+  DRC_TT_svd->Write();
+  DRC_W3J_svd->Write();
+  DRC_W2J_svd->Write();
+  DRC_W1J_svd->Write();
+  //DRC_WW_svd->Write();
+  //DRC_WZ_svd->Write();
+  //DRC_TTZ_svd->Write();
+  DRC_LW200_svd->Write();
+  //DRC_LW300_svd->Write();
+  //DRC_LW400_svd->Write();
+  //DRC_LW500_svd->Write();
+  DRC_dataRunB_Elept->Write();
+  DRC_dataRunC_Elept->Write();
+  DRC_ZLL_Elept->Write();
+  DRC_TT_Elept->Write();
+  DRC_W3J_Elept->Write();
+  DRC_W2J_Elept->Write();
+  DRC_W1J_Elept->Write();
+  //DRC_WW_Elept->Write();
+  //DRC_WZ_Elept->Write();
+  //DRC_TTZ_Elept->Write();
+  DRC_LW200_Elept->Write();
+  //DRC_LW300_Elept->Write();
+  //DRC_LW400_Elept->Write();
+  //DRC_LW500_Elept->Write();
+  DRC_dataRunB_DieledR->Write();
+  DRC_dataRunC_DieledR->Write();
+  DRC_ZLL_DieledR->Write();
+  DRC_TT_DieledR->Write();
+  DRC_W3J_DieledR->Write();
+  DRC_W2J_DieledR->Write();
+  DRC_W1J_DieledR->Write();
+  //DRC_WW_DieledR->Write();
+  //DRC_WZ_DieledR->Write();
+  //DRC_TTZ_DieledR->Write();
+  DRC_LW200_DieledR->Write();
+  //DRC_LW300_DieledR->Write();
+  //DRC_LW400_DieledR->Write();
+  //DRC_LW500_DieledR->Write();
+  DRC_dataRunB_LWdR->Write();
+  DRC_dataRunC_LWdR->Write();
+  DRC_ZLL_LWdR->Write();
+  DRC_TT_LWdR->Write();
+  DRC_W3J_LWdR->Write();
+  DRC_W2J_LWdR->Write();
+  DRC_W1J_LWdR->Write();
+  //DRC_WW_LWdR->Write();
+  //DRC_WZ_LWdR->Write();
+  //DRC_TTZ_LWdR->Write();
+  DRC_LW200_LWdR->Write();
+  //DRC_LW300_LWdR->Write();
+  //DRC_LW400_LWdR->Write();
+  //DRC_LW500_LWdR->Write();
+  DRC_dataRunB_DiJetdR->Write();
+  DRC_dataRunC_DiJetdR->Write();
+  DRC_ZLL_DiJetdR->Write();
+  DRC_TT_DiJetdR->Write();
+  DRC_W3J_DiJetdR->Write();
+  DRC_W2J_DiJetdR->Write();
+  DRC_W1J_DiJetdR->Write();
+  //DRC_WW_DiJetdR->Write();
+  //DRC_WZ_DiJetdR->Write();
+  //DRC_TTZ_DiJetdR->Write();
+  DRC_LW200_DiJetdR->Write();
+  //DRC_LW300_DiJetdR->Write();
+  //DRC_LW400_DiJetdR->Write();
+  //DRC_LW500_DiJetdR->Write();
+  DRC_dataRunB_BJetPt->Write();
+  DRC_dataRunC_BJetPt->Write();
+  DRC_ZLL_BJetPt->Write();
+  DRC_TT_BJetPt->Write();
+  DRC_W3J_BJetPt->Write();
+  DRC_W2J_BJetPt->Write();
+  DRC_W1J_BJetPt->Write();
+  //DRC_WW_BJetPt->Write();
+  //DRC_WZ_BJetPt->Write();
+  //DRC_TTZ_BJetPt->Write();
+  DRC_LW200_BJetPt->Write();
+  //DRC_LW300_BJetPt->Write();
+  //DRC_LW400_BJetPt->Write();
+  //DRC_LW500_BJetPt->Write();
+  DRC_dataRunB_SBJetPt->Write();
+  DRC_dataRunC_SBJetPt->Write();
+  DRC_ZLL_SBJetPt->Write();
+  DRC_TT_SBJetPt->Write();
+  DRC_W3J_SBJetPt->Write();
+  DRC_W2J_SBJetPt->Write();
+  DRC_W1J_SBJetPt->Write();
+  //DRC_WW_SBJetPt->Write();
+  //DRC_WZ_SBJetPt->Write();
+  //DRC_TTZ_SBJetPt->Write();
+  DRC_LW200_SBJetPt->Write();
+  //DRC_LW300_SBJetPt->Write();
+  //DRC_LW400_SBJetPt->Write();
+  //DRC_LW500_SBJetPt->Write();
+  DRC_dataRunB_NJet->Write();
+  DRC_dataRunC_NJet->Write();
+  DRC_ZLL_NJet->Write();
+  DRC_TT_NJet->Write();
+  DRC_W3J_NJet->Write();
+  DRC_W2J_NJet->Write();
+  DRC_W1J_NJet->Write();
+  //DRC_WW_NJet->Write();
+  //DRC_WZ_NJet->Write();
+  //DRC_TTZ_NJet->Write();
+  DRC_LW200_NJet->Write();
+  //DRC_LW300_NJet->Write();
+  //DRC_LW400_NJet->Write();
+  //DRC_LW500_NJet->Write();
+  DRC_dataRunB_NEle->Write();
+  DRC_dataRunC_NEle->Write();
+  DRC_ZLL_NEle->Write();
+  DRC_TT_NEle->Write();
+  DRC_W3J_NEle->Write();
+  DRC_W2J_NEle->Write();
+  DRC_W1J_NEle->Write();
+  //DRC_WW_NEle->Write();
+  //DRC_WZ_NEle->Write();
+  //DRC_TTZ_NEle->Write();
+  DRC_LW200_NEle->Write();
+  //DRC_LW300_NEle->Write();
+  //DRC_LW400_NEle->Write();
+  //DRC_LW500_NEle->Write();
 
   hfile->Close();
 
