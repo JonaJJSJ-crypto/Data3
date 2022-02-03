@@ -4203,7 +4203,7 @@ int main()
     time.Print();
   }
 
-  TFile* hfile = new TFile("TriggerFilter/histogramsTrigg.root","RECREATE");
+  TFile* hfile = new TFile("Histograms/histograms.root","RECREATE");
 
   //Save signal region histos
   NF_dataRunB_npv->Write();
