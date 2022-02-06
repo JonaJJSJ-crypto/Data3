@@ -22,6 +22,12 @@ labels = {
         "SBJetPt": "Most energetic jet transversal momentum",
         "NJet": "Number of Jets",
         "NEle": "Number of Electrons",
+        "BSd": "Secondary vertex Distance to Bsp",
+        "EleJet1DR": "Electron closest Jet DR",
+        "EleJet2DR": "Electron second closest Jet DR",
+        "JetJet1DR": "Jet closest Jet DR",
+        "JetJet2DR": "Jet second closest Jet DR",
+        "JetJetFDR": "Jet further Jet DR",
         #"eta_2": "Tau #eta",
         #"m_vis": "Visible di-tau mass / GeV",
         }
@@ -57,7 +63,7 @@ def getHistogram(tfile, name, variable, tag=""):
 # The major part of the code below is dedicated to define a nice-looking layout.
 # The full version of this analysis continas the estimation of QCD background
 def main(variable):
-    tfile = ROOT.TFile("histogramsTrigg.root", "READ")
+    tfile = ROOT.TFile("histograms.root", "READ")
 
     # Styles
     ROOT.gStyle.SetOptStat(0)

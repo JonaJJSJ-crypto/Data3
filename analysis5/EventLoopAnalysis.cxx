@@ -2240,6 +2240,1015 @@ TH1F* DRC_LW200_NEle = new TH1F("DRC_LW200_NEle","DRC Number of electrons",20,0,
 
 //TH1F* DRC_LW500_NEle = new TH1F("DRC_LW500_NEle","DRC Number of electrons",20,0,20);
 
+TH1F* DRC_dataRunB_BSd = new TH1F("DRC_dataRunB_BSd","DRC Beam spot distance",20,0,20);
+
+TH1F* DRC_dataRunC_BSd  = new TH1F("DRC_dataRunC_BSd","DRC Beam spot distance",20,0,20);
+
+TH1F* DRC_ZLL_BSd = new TH1F("DRC_ZLL_BSd","DRC Beam spot distance",20,0,20);
+
+TH1F* DRC_TT_BSd = new TH1F("DRC_TT_BSd","DRC Beam spot distance",20,0,20);
+
+TH1F* DRC_W3J_BSd = new TH1F("DRC_W3J_BSd","DRC Beam spot distance",20,0,20);
+
+TH1F* DRC_W2J_BSd = new TH1F("DRC_W2J_BSd","DRC Beam spot distance",20,0,20);
+
+TH1F* DRC_W1J_BSd = new TH1F("DRC_W1J_BSd","DRC Beam spot distance",20,0,20);
+
+//TH1F* DRC_TTZ_BSd = new TH1F("DRC_TTZ_BSd","DRC Beam spot distance",20,0,20);
+
+//TH1F* DRC_WW_BSd = new TH1F("DRC_WW_BSd","DRC Beam spot distance",20,0,20);
+
+//TH1F* DRC_WZ_BSd = new TH1F("DRC_WZ_BSd","DRC Beam spot distance",20,0,20);
+
+TH1F* DRC_LW200_BSd = new TH1F("DRC_LW200_BSd","DRC Beam spot distance",20,0,20);
+
+//TH1F* DRC_LW300_BSd = new TH1F("DRC_LW300_BSd","DRC Beam spot distance",20,0,20);
+
+//TH1F* DRC_LW400_BSd = new TH1F("DRC_LW400_BSd","DRC Beam spot distance",20,0,20);
+
+//TH1F* DRC_LW500_BSd = new TH1F("DRC_LW500_BSd","DRC Beam spot distance",20,0,20);
+
+TH1F* DRC_dataRunB_EleJet1DR = new TH1F("DRC_dataRunB_EleJet1DR","DRC Electron first Jet DeltaR distance",20,0,25);
+
+TH1F* DRC_dataRunC_EleJet1DR  = new TH1F("DRC_dataRunC_EleJet1DR","DRC Electron first Jet DeltaR distance",20,0,25);
+
+TH1F* DRC_ZLL_EleJet1DR = new TH1F("DRC_ZLL_EleJet1DR","DRC Electron first Jet DeltaR distance",20,0,25);
+
+TH1F* DRC_TT_EleJet1DR = new TH1F("DRC_TT_EleJet1DR","DRC Electron first Jet DeltaR distance",20,0,25);
+
+TH1F* DRC_W3J_EleJet1DR = new TH1F("DRC_W3J_EleJet1DR","DRC Electron first Jet DeltaR distance",20,0,25);
+
+TH1F* DRC_W2J_EleJet1DR = new TH1F("DRC_W2J_EleJet1DR","DRC Electron first Jet DeltaR distance",20,0,25);
+
+TH1F* DRC_W1J_EleJet1DR = new TH1F("DRC_W1J_EleJet1DR","DRC Electron first Jet DeltaR distance",20,0,25);
+
+//TH1F* DRC_TTZ_EleJet1DR = new TH1F("DRC_TTZ_EleJet1DR","DRC Electron first Jet DeltaR distance",20,0,25);
+
+//TH1F* DRC_WW_EleJet1DR = new TH1F("DRC_WW_EleJet1DR","DRC Electron first Jet DeltaR distance",20,0,25);
+
+//TH1F* DRC_WZ_EleJet1DR = new TH1F("DRC_WZ_EleJet1DR","DRC Electron first Jet DeltaR distance",20,0,25);
+
+TH1F* DRC_LW200_EleJet1DR = new TH1F("DRC_LW200_EleJet1DR","DRC Electron first Jet DeltaR distance",20,0,25);
+
+//TH1F* DRC_LW300_EleJet1DR = new TH1F("DRC_LW300_EleJet1DR","DRC Electron first Jet DeltaR distance",20,0,25);
+
+//TH1F* DRC_LW400_EleJet1DR = new TH1F("DRC_LW400_EleJet1DR","DRC Electron first Jet DeltaR distance",20,0,25);
+
+//TH1F* DRC_LW500_EleJet1DR = new TH1F("DRC_LW500_EleJet1DR","DRC Electron first Jet DeltaR distance",20,0,25);
+
+TH1F* DRC_dataRunB_EleJet2DR = new TH1F("DRC_dataRunB_EleJet2DR","DRC Electron second Jet DeltaR distance",20,0,25);
+
+TH1F* DRC_dataRunC_EleJet2DR  = new TH1F("DRC_dataRunC_EleJet2DR","DRC Electron second Jet DeltaR distance",20,0,25);
+
+TH1F* DRC_ZLL_EleJet2DR = new TH1F("DRC_ZLL_EleJet2DR","DRC Electron second Jet DeltaR distance",20,0,25);
+
+TH1F* DRC_TT_EleJet2DR = new TH1F("DRC_TT_EleJet2DR","DRC Electron second Jet DeltaR distance",20,0,25);
+
+TH1F* DRC_W3J_EleJet2DR = new TH1F("DRC_W3J_EleJet2DR","DRC Electron second Jet DeltaR distance",20,0,25);
+
+TH1F* DRC_W2J_EleJet2DR = new TH1F("DRC_W2J_EleJet2DR","DRC Electron second Jet DeltaR distance",20,0,25);
+
+TH1F* DRC_W1J_EleJet2DR = new TH1F("DRC_W1J_EleJet2DR","DRC Electron second Jet DeltaR distance",20,0,25);
+
+//TH1F* DRC_TTZ_EleJet2DR = new TH1F("DRC_TTZ_EleJet2DR","DRC Electron second Jet DeltaR distance",20,0,25);
+
+//TH1F* DRC_WW_EleJet2DR = new TH1F("DRC_WW_EleJet2DR","DRC Electron second Jet DeltaR distance",20,0,25);
+
+//TH1F* DRC_WZ_EleJet2DR = new TH1F("DRC_WZ_EleJet2DR","DRC Electron second Jet DeltaR distance",20,0,25);
+
+TH1F* DRC_LW200_EleJet2DR = new TH1F("DRC_LW200_EleJet2DR","DRC Electron second Jet DeltaR distance",20,0,25);
+
+//TH1F* DRC_LW300_EleJet2DR = new TH1F("DRC_LW300_EleJet2DR","DRC Electron second Jet DeltaR distance",20,0,25);
+
+//TH1F* DRC_LW400_EleJet2DR = new TH1F("DRC_LW400_EleJet2DR","DRC Electron second Jet DeltaR distance",20,0,25);
+
+//TH1F* DRC_LW500_EleJet2DR = new TH1F("DRC_LW500_EleJet2DR","DRC Electron second Jet DeltaR distance",20,0,25);
+
+TH1F* DRC_dataRunB_JetJet1DR = new TH1F("DRC_dataRunB_JetJet1DR","DRC Jet first Jet DeltaR distance",20,0,25);
+
+TH1F* DRC_dataRunC_JetJet1DR  = new TH1F("DRC_dataRunC_JetJet1DR","DRC Jet first Jet DeltaR distance",20,0,25);
+
+TH1F* DRC_ZLL_JetJet1DR = new TH1F("DRC_ZLL_JetJet1DR","DRC Jet first Jet DeltaR distance",20,0,25);
+
+TH1F* DRC_TT_JetJet1DR = new TH1F("DRC_TT_JetJet1DR","DRC Jet first Jet DeltaR distance",20,0,25);
+
+TH1F* DRC_W3J_JetJet1DR = new TH1F("DRC_W3J_JetJet1DR","DRC Jet first Jet DeltaR distance",20,0,25);
+
+TH1F* DRC_W2J_JetJet1DR = new TH1F("DRC_W2J_JetJet1DR","DRC Jet first Jet DeltaR distance",20,0,25);
+
+TH1F* DRC_W1J_JetJet1DR = new TH1F("DRC_W1J_JetJet1DR","DRC Jet first Jet DeltaR distance",20,0,25);
+
+//TH1F* DRC_TTZ_JetJet1DR = new TH1F("DRC_TTZ_JetJet1DR","DRC Jet first Jet DeltaR distance",20,0,25);
+
+//TH1F* DRC_WW_JetJet1DR = new TH1F("DRC_WW_JetJet1DR","DRC Jet first Jet DeltaR distance",20,0,25);
+
+//TH1F* DRC_WZ_JetJet1DR = new TH1F("DRC_WZ_JetJet1DR","DRC Jet first Jet DeltaR distance",20,0,25);
+
+TH1F* DRC_LW200_JetJet1DR = new TH1F("DRC_LW200_JetJet1DR","DRC Jet first Jet DeltaR distance",20,0,25);
+
+//TH1F* DRC_LW300_JetJet1DR = new TH1F("DRC_LW300_JetJet1DR","DRC Jet first Jet DeltaR distance",20,0,25);
+
+//TH1F* DRC_LW400_JetJet1DR = new TH1F("DRC_LW400_JetJet1DR","DRC Jet first Jet DeltaR distance",20,0,25);
+
+//TH1F* DRC_LW500_JetJet1DR = new TH1F("DRC_LW500_JetJet1DR","DRC Jet first Jet DeltaR distance",20,0,25);
+
+TH1F* DRC_dataRunB_JetJet2DR = new TH1F("DRC_dataRunB_JetJet2DR","DRC Jet further Jet DeltaR distance",20,0,25);
+
+TH1F* DRC_dataRunC_JetJet2DR  = new TH1F("DRC_dataRunC_JetJet2DR","DRC Jet further Jet DeltaR distance",20,0,25);
+
+TH1F* DRC_ZLL_JetJet2DR = new TH1F("DRC_ZLL_JetJet2DR","DRC Jet further Jet DeltaR distance",20,0,25);
+
+TH1F* DRC_TT_JetJet2DR = new TH1F("DRC_TT_JetJet2DR","DRC Jet further Jet DeltaR distance",20,0,25);
+
+TH1F* DRC_W3J_JetJet2DR = new TH1F("DRC_W3J_JetJet2DR","DRC Jet further Jet DeltaR distance",20,0,25);
+
+TH1F* DRC_W2J_JetJet2DR = new TH1F("DRC_W2J_JetJet2DR","DRC Jet further Jet DeltaR distance",20,0,25);
+
+TH1F* DRC_W1J_JetJet2DR = new TH1F("DRC_W1J_JetJet2DR","DRC Jet further Jet DeltaR distance",20,0,25);
+
+//TH1F* DRC_TTZ_JetJet2DR = new TH1F("DRC_TTZ_JetJet2DR","DRC Jet further Jet DeltaR distance",20,0,25);
+
+//TH1F* DRC_WW_JetJet2DR = new TH1F("DRC_WW_JetJet2DR","DRC Jet further Jet DeltaR distance",20,0,25);
+
+//TH1F* DRC_WZ_JetJet2DR = new TH1F("DRC_WZ_JetJet2DR","DRC Jet further Jet DeltaR distance",20,0,25);
+
+TH1F* DRC_LW200_JetJet2DR = new TH1F("DRC_LW200_JetJet2DR","DRC Jet further Jet DeltaR distance",20,0,25);
+
+//TH1F* DRC_LW300_JetJet2DR = new TH1F("DRC_LW300_JetJet2DR","DRC Jet further Jet DeltaR distance",20,0,25);
+
+//TH1F* DRC_LW400_JetJet2DR = new TH1F("DRC_LW400_JetJet2DR","DRC Jet further Jet DeltaR distance",20,0,25);
+
+//TH1F* DRC_LW500_JetJet2DR = new TH1F("DRC_LW500_JetJet2DR","DRC Jet further Jet DeltaR distance",20,0,25);
+
+TH1F* DRC_dataRunB_JetJetFDR = new TH1F("DRC_dataRunB_JetJetFDR","DRC Jet further Jet DeltaR distance",20,0,25);
+
+TH1F* DRC_dataRunC_JetJetFDR  = new TH1F("DRC_dataRunC_JetJetFDR","DRC Jet further Jet DeltaR distance",20,0,25);
+
+TH1F* DRC_ZLL_JetJetFDR = new TH1F("DRC_ZLL_JetJetFDR","DRC Jet further Jet DeltaR distance",20,0,25);
+
+TH1F* DRC_TT_JetJetFDR = new TH1F("DRC_TT_JetJetFDR","DRC Jet further Jet DeltaR distance",20,0,25);
+
+TH1F* DRC_W3J_JetJetFDR = new TH1F("DRC_W3J_JetJetFDR","DRC Jet further Jet DeltaR distance",20,0,25);
+
+TH1F* DRC_W2J_JetJetFDR = new TH1F("DRC_W2J_JetJetFDR","DRC Jet further Jet DeltaR distance",20,0,25);
+
+TH1F* DRC_W1J_JetJetFDR = new TH1F("DRC_W1J_JetJetFDR","DRC Jet further Jet DeltaR distance",20,0,25);
+
+//TH1F* DRC_TTZ_JetJetFDR = new TH1F("DRC_TTZ_JetJetFDR","DRC Jet further Jet DeltaR distance",20,0,25);
+
+//TH1F* DRC_WW_JetJetFDR = new TH1F("DRC_WW_JetJetFDR","DRC Jet further Jet DeltaR distance",20,0,25);
+
+//TH1F* DRC_WZ_JetJetFDR = new TH1F("DRC_WZ_JetJetFDR","DRC Jet further Jet DeltaR distance",20,0,25);
+
+TH1F* DRC_LW200_JetJetFDR = new TH1F("DRC_LW200_JetJetFDR","DRC Jet further Jet DeltaR distance",20,0,25);
+
+//TH1F* DRC_LW300_JetJetFDR = new TH1F("DRC_LW300_JetJetFDR","DRC Jet further Jet DeltaR distance",20,0,25);
+
+//TH1F* DRC_LW400_JetJetFDR = new TH1F("DRC_LW400_JetJetFDR","DRC Jet further Jet DeltaR distance",20,0,25);
+
+//TH1F* DRC_LW500_JetJetFDR = new TH1F("DRC_LW500_JetJetFDR","DRC Jet further Jet DeltaR distance",20,0,25);
+
+TH1F* NF_dataRunB_BSd = new TH1F("NF_dataRunB_BSd","NF Beam spot distance",20,0,20);
+
+TH1F* NF_dataRunC_BSd  = new TH1F("NF_dataRunC_BSd","NF Beam spot distance",20,0,20);
+
+TH1F* NF_ZLL_BSd = new TH1F("NF_ZLL_BSd","NF Beam spot distance",20,0,20);
+
+TH1F* NF_TT_BSd = new TH1F("NF_TT_BSd","NF Beam spot distance",20,0,20);
+
+TH1F* NF_W3J_BSd = new TH1F("NF_W3J_BSd","NF Beam spot distance",20,0,20);
+
+TH1F* NF_W2J_BSd = new TH1F("NF_W2J_BSd","NF Beam spot distance",20,0,20);
+
+TH1F* NF_W1J_BSd = new TH1F("NF_W1J_BSd","NF Beam spot distance",20,0,20);
+
+//TH1F* NF_TTZ_BSd = new TH1F("NF_TTZ_BSd","NF Beam spot distance",20,0,20);
+
+//TH1F* NF_WW_BSd = new TH1F("NF_WW_BSd","NF Beam spot distance",20,0,20);
+
+//TH1F* NF_WZ_BSd = new TH1F("NF_WZ_BSd","NF Beam spot distance",20,0,20);
+
+TH1F* NF_LW200_BSd = new TH1F("NF_LW200_BSd","NF Beam spot distance",20,0,20);
+
+//TH1F* NF_LW300_BSd = new TH1F("NF_LW300_BSd","NF Beam spot distance",20,0,20);
+
+//TH1F* NF_LW400_BSd = new TH1F("NF_LW400_BSd","NF Beam spot distance",20,0,20);
+
+//TH1F* NF_LW500_BSd = new TH1F("NF_LW500_BSd","NF Beam spot distance",20,0,20);
+
+TH1F* NF_dataRunB_EleJet1DR = new TH1F("NF_dataRunB_EleJet1DR","NF Electron first Jet DeltaR distance",20,0,25);
+
+TH1F* NF_dataRunC_EleJet1DR  = new TH1F("NF_dataRunC_EleJet1DR","NF Electron first Jet DeltaR distance",20,0,25);
+
+TH1F* NF_ZLL_EleJet1DR = new TH1F("NF_ZLL_EleJet1DR","NF Electron first Jet DeltaR distance",20,0,25);
+
+TH1F* NF_TT_EleJet1DR = new TH1F("NF_TT_EleJet1DR","NF Electron first Jet DeltaR distance",20,0,25);
+
+TH1F* NF_W3J_EleJet1DR = new TH1F("NF_W3J_EleJet1DR","NF Electron first Jet DeltaR distance",20,0,25);
+
+TH1F* NF_W2J_EleJet1DR = new TH1F("NF_W2J_EleJet1DR","NF Electron first Jet DeltaR distance",20,0,25);
+
+TH1F* NF_W1J_EleJet1DR = new TH1F("NF_W1J_EleJet1DR","NF Electron first Jet DeltaR distance",20,0,25);
+
+//TH1F* NF_TTZ_EleJet1DR = new TH1F("NF_TTZ_EleJet1DR","NF Electron first Jet DeltaR distance",20,0,25);
+
+//TH1F* NF_WW_EleJet1DR = new TH1F("NF_WW_EleJet1DR","NF Electron first Jet DeltaR distance",20,0,25);
+
+//TH1F* NF_WZ_EleJet1DR = new TH1F("NF_WZ_EleJet1DR","NF Electron first Jet DeltaR distance",20,0,25);
+
+TH1F* NF_LW200_EleJet1DR = new TH1F("NF_LW200_EleJet1DR","NF Electron first Jet DeltaR distance",20,0,25);
+
+//TH1F* NF_LW300_EleJet1DR = new TH1F("NF_LW300_EleJet1DR","NF Electron first Jet DeltaR distance",20,0,25);
+
+//TH1F* NF_LW400_EleJet1DR = new TH1F("NF_LW400_EleJet1DR","NF Electron first Jet DeltaR distance",20,0,25);
+
+//TH1F* NF_LW500_EleJet1DR = new TH1F("NF_LW500_EleJet1DR","NF Electron first Jet DeltaR distance",20,0,25);
+
+TH1F* NF_dataRunB_EleJet2DR = new TH1F("NF_dataRunB_EleJet2DR","NF Electron second Jet DeltaR distance",20,0,25);
+
+TH1F* NF_dataRunC_EleJet2DR  = new TH1F("NF_dataRunC_EleJet2DR","NF Electron second Jet DeltaR distance",20,0,25);
+
+TH1F* NF_ZLL_EleJet2DR = new TH1F("NF_ZLL_EleJet2DR","NF Electron second Jet DeltaR distance",20,0,25);
+
+TH1F* NF_TT_EleJet2DR = new TH1F("NF_TT_EleJet2DR","NF Electron second Jet DeltaR distance",20,0,25);
+
+TH1F* NF_W3J_EleJet2DR = new TH1F("NF_W3J_EleJet2DR","NF Electron second Jet DeltaR distance",20,0,25);
+
+TH1F* NF_W2J_EleJet2DR = new TH1F("NF_W2J_EleJet2DR","NF Electron second Jet DeltaR distance",20,0,25);
+
+TH1F* NF_W1J_EleJet2DR = new TH1F("NF_W1J_EleJet2DR","NF Electron second Jet DeltaR distance",20,0,25);
+
+//TH1F* NF_TTZ_EleJet2DR = new TH1F("NF_TTZ_EleJet2DR","NF Electron second Jet DeltaR distance",20,0,25);
+
+//TH1F* NF_WW_EleJet2DR = new TH1F("NF_WW_EleJet2DR","NF Electron second Jet DeltaR distance",20,0,25);
+
+//TH1F* NF_WZ_EleJet2DR = new TH1F("NF_WZ_EleJet2DR","NF Electron second Jet DeltaR distance",20,0,25);
+
+TH1F* NF_LW200_EleJet2DR = new TH1F("NF_LW200_EleJet2DR","NF Electron second Jet DeltaR distance",20,0,25);
+
+//TH1F* NF_LW300_EleJet2DR = new TH1F("NF_LW300_EleJet2DR","NF Electron second Jet DeltaR distance",20,0,25);
+
+//TH1F* NF_LW400_EleJet2DR = new TH1F("NF_LW400_EleJet2DR","NF Electron second Jet DeltaR distance",20,0,25);
+
+//TH1F* NF_LW500_EleJet2DR = new TH1F("NF_LW500_EleJet2DR","NF Electron second Jet DeltaR distance",20,0,25);
+
+TH1F* NF_dataRunB_JetJet1DR = new TH1F("NF_dataRunB_JetJet1DR","NF Jet first Jet DeltaR distance",20,0,25);
+
+TH1F* NF_dataRunC_JetJet1DR  = new TH1F("NF_dataRunC_JetJet1DR","NF Jet first Jet DeltaR distance",20,0,25);
+
+TH1F* NF_ZLL_JetJet1DR = new TH1F("NF_ZLL_JetJet1DR","NF Jet first Jet DeltaR distance",20,0,25);
+
+TH1F* NF_TT_JetJet1DR = new TH1F("NF_TT_JetJet1DR","NF Jet first Jet DeltaR distance",20,0,25);
+
+TH1F* NF_W3J_JetJet1DR = new TH1F("NF_W3J_JetJet1DR","NF Jet first Jet DeltaR distance",20,0,25);
+
+TH1F* NF_W2J_JetJet1DR = new TH1F("NF_W2J_JetJet1DR","NF Jet first Jet DeltaR distance",20,0,25);
+
+TH1F* NF_W1J_JetJet1DR = new TH1F("NF_W1J_JetJet1DR","NF Jet first Jet DeltaR distance",20,0,25);
+
+//TH1F* NF_TTZ_JetJet1DR = new TH1F("NF_TTZ_JetJet1DR","NF Jet first Jet DeltaR distance",20,0,25);
+
+//TH1F* NF_WW_JetJet1DR = new TH1F("NF_WW_JetJet1DR","NF Jet first Jet DeltaR distance",20,0,25);
+
+//TH1F* NF_WZ_JetJet1DR = new TH1F("NF_WZ_JetJet1DR","NF Jet first Jet DeltaR distance",20,0,25);
+
+TH1F* NF_LW200_JetJet1DR = new TH1F("NF_LW200_JetJet1DR","NF Jet first Jet DeltaR distance",20,0,25);
+
+//TH1F* NF_LW300_JetJet1DR = new TH1F("NF_LW300_JetJet1DR","NF Jet first Jet DeltaR distance",20,0,25);
+
+//TH1F* NF_LW400_JetJet1DR = new TH1F("NF_LW400_JetJet1DR","NF Jet first Jet DeltaR distance",20,0,25);
+
+//TH1F* NF_LW500_JetJet1DR = new TH1F("NF_LW500_JetJet1DR","NF Jet first Jet DeltaR distance",20,0,25);
+
+TH1F* NF_dataRunB_JetJet2DR = new TH1F("NF_dataRunB_JetJet2DR","NF Jet further Jet DeltaR distance",20,0,25);
+
+TH1F* NF_dataRunC_JetJet2DR  = new TH1F("NF_dataRunC_JetJet2DR","NF Jet further Jet DeltaR distance",20,0,25);
+
+TH1F* NF_ZLL_JetJet2DR = new TH1F("NF_ZLL_JetJet2DR","NF Jet further Jet DeltaR distance",20,0,25);
+
+TH1F* NF_TT_JetJet2DR = new TH1F("NF_TT_JetJet2DR","NF Jet further Jet DeltaR distance",20,0,25);
+
+TH1F* NF_W3J_JetJet2DR = new TH1F("NF_W3J_JetJet2DR","NF Jet further Jet DeltaR distance",20,0,25);
+
+TH1F* NF_W2J_JetJet2DR = new TH1F("NF_W2J_JetJet2DR","NF Jet further Jet DeltaR distance",20,0,25);
+
+TH1F* NF_W1J_JetJet2DR = new TH1F("NF_W1J_JetJet2DR","NF Jet further Jet DeltaR distance",20,0,25);
+
+//TH1F* NF_TTZ_JetJet2DR = new TH1F("NF_TTZ_JetJet2DR","NF Jet further Jet DeltaR distance",20,0,25);
+
+//TH1F* NF_WW_JetJet2DR = new TH1F("NF_WW_JetJet2DR","NF Jet further Jet DeltaR distance",20,0,25);
+
+//TH1F* NF_WZ_JetJet2DR = new TH1F("NF_WZ_JetJet2DR","NF Jet further Jet DeltaR distance",20,0,25);
+
+TH1F* NF_LW200_JetJet2DR = new TH1F("NF_LW200_JetJet2DR","NF Jet further Jet DeltaR distance",20,0,25);
+
+//TH1F* NF_LW300_JetJet2DR = new TH1F("NF_LW300_JetJet2DR","NF Jet further Jet DeltaR distance",20,0,25);
+
+//TH1F* NF_LW400_JetJet2DR = new TH1F("NF_LW400_JetJet2DR","NF Jet further Jet DeltaR distance",20,0,25);
+
+//TH1F* NF_LW500_JetJet2DR = new TH1F("NF_LW500_JetJet2DR","NF Jet further Jet DeltaR distance",20,0,25);
+
+TH1F* NF_dataRunB_JetJetFDR = new TH1F("NF_dataRunB_JetJetFDR","NF Jet further Jet DeltaR distance",20,0,25);
+
+TH1F* NF_dataRunC_JetJetFDR  = new TH1F("NF_dataRunC_JetJetFDR","NF Jet further Jet DeltaR distance",20,0,25);
+
+TH1F* NF_ZLL_JetJetFDR = new TH1F("NF_ZLL_JetJetFDR","NF Jet further Jet DeltaR distance",20,0,25);
+
+TH1F* NF_TT_JetJetFDR = new TH1F("NF_TT_JetJetFDR","NF Jet further Jet DeltaR distance",20,0,25);
+
+TH1F* NF_W3J_JetJetFDR = new TH1F("NF_W3J_JetJetFDR","NF Jet further Jet DeltaR distance",20,0,25);
+
+TH1F* NF_W2J_JetJetFDR = new TH1F("NF_W2J_JetJetFDR","NF Jet further Jet DeltaR distance",20,0,25);
+
+TH1F* NF_W1J_JetJetFDR = new TH1F("NF_W1J_JetJetFDR","NF Jet further Jet DeltaR distance",20,0,25);
+
+//TH1F* NF_TTZ_JetJetFDR = new TH1F("NF_TTZ_JetJetFDR","NF Jet further Jet DeltaR distance",20,0,25);
+
+//TH1F* NF_WW_JetJetFDR = new TH1F("NF_WW_JetJetFDR","NF Jet further Jet DeltaR distance",20,0,25);
+
+//TH1F* NF_WZ_JetJetFDR = new TH1F("NF_WZ_JetJetFDR","NF Jet further Jet DeltaR distance",20,0,25);
+
+TH1F* NF_LW200_JetJetFDR = new TH1F("NF_LW200_JetJetFDR","NF Jet further Jet DeltaR distance",20,0,25);
+
+//TH1F* NF_LW300_JetJetFDR = new TH1F("NF_LW300_JetJetFDR","NF Jet further Jet DeltaR distance",20,0,25);
+
+//TH1F* NF_LW400_JetJetFDR = new TH1F("NF_LW400_JetJetFDR","NF Jet further Jet DeltaR distance",20,0,25);
+
+//TH1F* NF_LW500_JetJetFDR = new TH1F("NF_LW500_JetJetFDR","NF Jet further Jet DeltaR distance",20,0,25);
+
+
+TH1F* TF_dataRunB_BSd = new TH1F("TF_dataRunB_BSd","TF Beam spot distance",20,0,20);
+
+TH1F* TF_dataRunC_BSd  = new TH1F("TF_dataRunC_BSd","TF Beam spot distance",20,0,20);
+
+TH1F* TF_ZLL_BSd = new TH1F("TF_ZLL_BSd","TF Beam spot distance",20,0,20);
+
+TH1F* TF_TT_BSd = new TH1F("TF_TT_BSd","TF Beam spot distance",20,0,20);
+
+TH1F* TF_W3J_BSd = new TH1F("TF_W3J_BSd","TF Beam spot distance",20,0,20);
+
+TH1F* TF_W2J_BSd = new TH1F("TF_W2J_BSd","TF Beam spot distance",20,0,20);
+
+TH1F* TF_W1J_BSd = new TH1F("TF_W1J_BSd","TF Beam spot distance",20,0,20);
+
+//TH1F* TF_TTZ_BSd = new TH1F("TF_TTZ_BSd","TF Beam spot distance",20,0,20);
+
+//TH1F* TF_WW_BSd = new TH1F("TF_WW_BSd","TF Beam spot distance",20,0,20);
+
+//TH1F* TF_WZ_BSd = new TH1F("TF_WZ_BSd","TF Beam spot distance",20,0,20);
+
+TH1F* TF_LW200_BSd = new TH1F("TF_LW200_BSd","TF Beam spot distance",20,0,20);
+
+//TH1F* TF_LW300_BSd = new TH1F("TF_LW300_BSd","TF Beam spot distance",20,0,20);
+
+//TH1F* TF_LW400_BSd = new TH1F("TF_LW400_BSd","TF Beam spot distance",20,0,20);
+
+//TH1F* TF_LW500_BSd = new TH1F("TF_LW500_BSd","TF Beam spot distance",20,0,20);
+
+TH1F* TF_dataRunB_EleJet1DR = new TH1F("TF_dataRunB_EleJet1DR","TF Electron first Jet DeltaR distance",20,0,25);
+
+TH1F* TF_dataRunC_EleJet1DR  = new TH1F("TF_dataRunC_EleJet1DR","TF Electron first Jet DeltaR distance",20,0,25);
+
+TH1F* TF_ZLL_EleJet1DR = new TH1F("TF_ZLL_EleJet1DR","TF Electron first Jet DeltaR distance",20,0,25);
+
+TH1F* TF_TT_EleJet1DR = new TH1F("TF_TT_EleJet1DR","TF Electron first Jet DeltaR distance",20,0,25);
+
+TH1F* TF_W3J_EleJet1DR = new TH1F("TF_W3J_EleJet1DR","TF Electron first Jet DeltaR distance",20,0,25);
+
+TH1F* TF_W2J_EleJet1DR = new TH1F("TF_W2J_EleJet1DR","TF Electron first Jet DeltaR distance",20,0,25);
+
+TH1F* TF_W1J_EleJet1DR = new TH1F("TF_W1J_EleJet1DR","TF Electron first Jet DeltaR distance",20,0,25);
+
+//TH1F* TF_TTZ_EleJet1DR = new TH1F("TF_TTZ_EleJet1DR","TF Electron first Jet DeltaR distance",20,0,25);
+
+//TH1F* TF_WW_EleJet1DR = new TH1F("TF_WW_EleJet1DR","TF Electron first Jet DeltaR distance",20,0,25);
+
+//TH1F* TF_WZ_EleJet1DR = new TH1F("TF_WZ_EleJet1DR","TF Electron first Jet DeltaR distance",20,0,25);
+
+TH1F* TF_LW200_EleJet1DR = new TH1F("TF_LW200_EleJet1DR","TF Electron first Jet DeltaR distance",20,0,25);
+
+//TH1F* TF_LW300_EleJet1DR = new TH1F("TF_LW300_EleJet1DR","TF Electron first Jet DeltaR distance",20,0,25);
+
+//TH1F* TF_LW400_EleJet1DR = new TH1F("TF_LW400_EleJet1DR","TF Electron first Jet DeltaR distance",20,0,25);
+
+//TH1F* TF_LW500_EleJet1DR = new TH1F("TF_LW500_EleJet1DR","TF Electron first Jet DeltaR distance",20,0,25);
+
+TH1F* TF_dataRunB_EleJet2DR = new TH1F("TF_dataRunB_EleJet2DR","TF Electron second Jet DeltaR distance",20,0,25);
+
+TH1F* TF_dataRunC_EleJet2DR  = new TH1F("TF_dataRunC_EleJet2DR","TF Electron second Jet DeltaR distance",20,0,25);
+
+TH1F* TF_ZLL_EleJet2DR = new TH1F("TF_ZLL_EleJet2DR","TF Electron second Jet DeltaR distance",20,0,25);
+
+TH1F* TF_TT_EleJet2DR = new TH1F("TF_TT_EleJet2DR","TF Electron second Jet DeltaR distance",20,0,25);
+
+TH1F* TF_W3J_EleJet2DR = new TH1F("TF_W3J_EleJet2DR","TF Electron second Jet DeltaR distance",20,0,25);
+
+TH1F* TF_W2J_EleJet2DR = new TH1F("TF_W2J_EleJet2DR","TF Electron second Jet DeltaR distance",20,0,25);
+
+TH1F* TF_W1J_EleJet2DR = new TH1F("TF_W1J_EleJet2DR","TF Electron second Jet DeltaR distance",20,0,25);
+
+//TH1F* TF_TTZ_EleJet2DR = new TH1F("TF_TTZ_EleJet2DR","TF Electron second Jet DeltaR distance",20,0,25);
+
+//TH1F* TF_WW_EleJet2DR = new TH1F("TF_WW_EleJet2DR","TF Electron second Jet DeltaR distance",20,0,25);
+
+//TH1F* TF_WZ_EleJet2DR = new TH1F("TF_WZ_EleJet2DR","TF Electron second Jet DeltaR distance",20,0,25);
+
+TH1F* TF_LW200_EleJet2DR = new TH1F("TF_LW200_EleJet2DR","TF Electron second Jet DeltaR distance",20,0,25);
+
+//TH1F* TF_LW300_EleJet2DR = new TH1F("TF_LW300_EleJet2DR","TF Electron second Jet DeltaR distance",20,0,25);
+
+//TH1F* TF_LW400_EleJet2DR = new TH1F("TF_LW400_EleJet2DR","TF Electron second Jet DeltaR distance",20,0,25);
+
+//TH1F* TF_LW500_EleJet2DR = new TH1F("TF_LW500_EleJet2DR","TF Electron second Jet DeltaR distance",20,0,25);
+
+TH1F* TF_dataRunB_JetJet1DR = new TH1F("TF_dataRunB_JetJet1DR","TF Jet first Jet DeltaR distance",20,0,25);
+
+TH1F* TF_dataRunC_JetJet1DR  = new TH1F("TF_dataRunC_JetJet1DR","TF Jet first Jet DeltaR distance",20,0,25);
+
+TH1F* TF_ZLL_JetJet1DR = new TH1F("TF_ZLL_JetJet1DR","TF Jet first Jet DeltaR distance",20,0,25);
+
+TH1F* TF_TT_JetJet1DR = new TH1F("TF_TT_JetJet1DR","TF Jet first Jet DeltaR distance",20,0,25);
+
+TH1F* TF_W3J_JetJet1DR = new TH1F("TF_W3J_JetJet1DR","TF Jet first Jet DeltaR distance",20,0,25);
+
+TH1F* TF_W2J_JetJet1DR = new TH1F("TF_W2J_JetJet1DR","TF Jet first Jet DeltaR distance",20,0,25);
+
+TH1F* TF_W1J_JetJet1DR = new TH1F("TF_W1J_JetJet1DR","TF Jet first Jet DeltaR distance",20,0,25);
+
+//TH1F* TF_TTZ_JetJet1DR = new TH1F("TF_TTZ_JetJet1DR","TF Jet first Jet DeltaR distance",20,0,25);
+
+//TH1F* TF_WW_JetJet1DR = new TH1F("TF_WW_JetJet1DR","TF Jet first Jet DeltaR distance",20,0,25);
+
+//TH1F* TF_WZ_JetJet1DR = new TH1F("TF_WZ_JetJet1DR","TF Jet first Jet DeltaR distance",20,0,25);
+
+TH1F* TF_LW200_JetJet1DR = new TH1F("TF_LW200_JetJet1DR","TF Jet first Jet DeltaR distance",20,0,25);
+
+//TH1F* TF_LW300_JetJet1DR = new TH1F("TF_LW300_JetJet1DR","TF Jet first Jet DeltaR distance",20,0,25);
+
+//TH1F* TF_LW400_JetJet1DR = new TH1F("TF_LW400_JetJet1DR","TF Jet first Jet DeltaR distance",20,0,25);
+
+//TH1F* TF_LW500_JetJet1DR = new TH1F("TF_LW500_JetJet1DR","TF Jet first Jet DeltaR distance",20,0,25);
+
+TH1F* TF_dataRunB_JetJet2DR = new TH1F("TF_dataRunB_JetJet2DR","TF Jet further Jet DeltaR distance",20,0,25);
+
+TH1F* TF_dataRunC_JetJet2DR  = new TH1F("TF_dataRunC_JetJet2DR","TF Jet further Jet DeltaR distance",20,0,25);
+
+TH1F* TF_ZLL_JetJet2DR = new TH1F("TF_ZLL_JetJet2DR","TF Jet further Jet DeltaR distance",20,0,25);
+
+TH1F* TF_TT_JetJet2DR = new TH1F("TF_TT_JetJet2DR","TF Jet further Jet DeltaR distance",20,0,25);
+
+TH1F* TF_W3J_JetJet2DR = new TH1F("TF_W3J_JetJet2DR","TF Jet further Jet DeltaR distance",20,0,25);
+
+TH1F* TF_W2J_JetJet2DR = new TH1F("TF_W2J_JetJet2DR","TF Jet further Jet DeltaR distance",20,0,25);
+
+TH1F* TF_W1J_JetJet2DR = new TH1F("TF_W1J_JetJet2DR","TF Jet further Jet DeltaR distance",20,0,25);
+
+//TH1F* TF_TTZ_JetJet2DR = new TH1F("TF_TTZ_JetJet2DR","TF Jet further Jet DeltaR distance",20,0,25);
+
+//TH1F* TF_WW_JetJet2DR = new TH1F("TF_WW_JetJet2DR","TF Jet further Jet DeltaR distance",20,0,25);
+
+//TH1F* TF_WZ_JetJet2DR = new TH1F("TF_WZ_JetJet2DR","TF Jet further Jet DeltaR distance",20,0,25);
+
+TH1F* TF_LW200_JetJet2DR = new TH1F("TF_LW200_JetJet2DR","TF Jet further Jet DeltaR distance",20,0,25);
+
+//TH1F* TF_LW300_JetJet2DR = new TH1F("TF_LW300_JetJet2DR","TF Jet further Jet DeltaR distance",20,0,25);
+
+//TH1F* TF_LW400_JetJet2DR = new TH1F("TF_LW400_JetJet2DR","TF Jet further Jet DeltaR distance",20,0,25);
+
+//TH1F* TF_LW500_JetJet2DR = new TH1F("TF_LW500_JetJet2DR","TF Jet further Jet DeltaR distance",20,0,25);
+
+TH1F* TF_dataRunB_JetJetFDR = new TH1F("TF_dataRunB_JetJetFDR","TF Jet further Jet DeltaR distance",20,0,25);
+
+TH1F* TF_dataRunC_JetJetFDR  = new TH1F("TF_dataRunC_JetJetFDR","TF Jet further Jet DeltaR distance",20,0,25);
+
+TH1F* TF_ZLL_JetJetFDR = new TH1F("TF_ZLL_JetJetFDR","TF Jet further Jet DeltaR distance",20,0,25);
+
+TH1F* TF_TT_JetJetFDR = new TH1F("TF_TT_JetJetFDR","TF Jet further Jet DeltaR distance",20,0,25);
+
+TH1F* TF_W3J_JetJetFDR = new TH1F("TF_W3J_JetJetFDR","TF Jet further Jet DeltaR distance",20,0,25);
+
+TH1F* TF_W2J_JetJetFDR = new TH1F("TF_W2J_JetJetFDR","TF Jet further Jet DeltaR distance",20,0,25);
+
+TH1F* TF_W1J_JetJetFDR = new TH1F("TF_W1J_JetJetFDR","TF Jet further Jet DeltaR distance",20,0,25);
+
+//TH1F* TF_TTZ_JetJetFDR = new TH1F("TF_TTZ_JetJetFDR","TF Jet further Jet DeltaR distance",20,0,25);
+
+//TH1F* TF_WW_JetJetFDR = new TH1F("TF_WW_JetJetFDR","TF Jet further Jet DeltaR distance",20,0,25);
+
+//TH1F* TF_WZ_JetJetFDR = new TH1F("TF_WZ_JetJetFDR","TF Jet further Jet DeltaR distance",20,0,25);
+
+TH1F* TF_LW200_JetJetFDR = new TH1F("TF_LW200_JetJetFDR","TF Jet further Jet DeltaR distance",20,0,25);
+
+//TH1F* TF_LW300_JetJetFDR = new TH1F("TF_LW300_JetJetFDR","TF Jet further Jet DeltaR distance",20,0,25);
+
+//TH1F* TF_LW400_JetJetFDR = new TH1F("TF_LW400_JetJetFDR","TF Jet further Jet DeltaR distance",20,0,25);
+
+//TH1F* TF_LW500_JetJetFDR = new TH1F("TF_LW500_JetJetFDR","TF Jet further Jet DeltaR distance",20,0,25);
+
+TH1F* TO_dataRunB_BSd = new TH1F("TO_dataRunB_BSd","TO Beam spot distance",20,0,20);
+
+TH1F* TO_dataRunC_BSd  = new TH1F("TO_dataRunC_BSd","TO Beam spot distance",20,0,20);
+
+TH1F* TO_ZLL_BSd = new TH1F("TO_ZLL_BSd","TO Beam spot distance",20,0,20);
+
+TH1F* TO_TT_BSd = new TH1F("TO_TT_BSd","TO Beam spot distance",20,0,20);
+
+TH1F* TO_W3J_BSd = new TH1F("TO_W3J_BSd","TO Beam spot distance",20,0,20);
+
+TH1F* TO_W2J_BSd = new TH1F("TO_W2J_BSd","TO Beam spot distance",20,0,20);
+
+TH1F* TO_W1J_BSd = new TH1F("TO_W1J_BSd","TO Beam spot distance",20,0,20);
+
+//TH1F* TO_TTZ_BSd = new TH1F("TO_TTZ_BSd","TO Beam spot distance",20,0,20);
+
+//TH1F* TO_WW_BSd = new TH1F("TO_WW_BSd","TO Beam spot distance",20,0,20);
+
+//TH1F* TO_WZ_BSd = new TH1F("TO_WZ_BSd","TO Beam spot distance",20,0,20);
+
+TH1F* TO_LW200_BSd = new TH1F("TO_LW200_BSd","TO Beam spot distance",20,0,20);
+
+//TH1F* TO_LW300_BSd = new TH1F("TO_LW300_BSd","TO Beam spot distance",20,0,20);
+
+//TH1F* TO_LW400_BSd = new TH1F("TO_LW400_BSd","TO Beam spot distance",20,0,20);
+
+//TH1F* TO_LW500_BSd = new TH1F("TO_LW500_BSd","TO Beam spot distance",20,0,20);
+
+TH1F* TO_dataRunB_EleJet1DR = new TH1F("TO_dataRunB_EleJet1DR","TO Electron first Jet DeltaR distance",20,0,25);
+
+TH1F* TO_dataRunC_EleJet1DR  = new TH1F("TO_dataRunC_EleJet1DR","TO Electron first Jet DeltaR distance",20,0,25);
+
+TH1F* TO_ZLL_EleJet1DR = new TH1F("TO_ZLL_EleJet1DR","TO Electron first Jet DeltaR distance",20,0,25);
+
+TH1F* TO_TT_EleJet1DR = new TH1F("TO_TT_EleJet1DR","TO Electron first Jet DeltaR distance",20,0,25);
+
+TH1F* TO_W3J_EleJet1DR = new TH1F("TO_W3J_EleJet1DR","TO Electron first Jet DeltaR distance",20,0,25);
+
+TH1F* TO_W2J_EleJet1DR = new TH1F("TO_W2J_EleJet1DR","TO Electron first Jet DeltaR distance",20,0,25);
+
+TH1F* TO_W1J_EleJet1DR = new TH1F("TO_W1J_EleJet1DR","TO Electron first Jet DeltaR distance",20,0,25);
+
+//TH1F* TO_TTZ_EleJet1DR = new TH1F("TO_TTZ_EleJet1DR","TO Electron first Jet DeltaR distance",20,0,25);
+
+//TH1F* TO_WW_EleJet1DR = new TH1F("TO_WW_EleJet1DR","TO Electron first Jet DeltaR distance",20,0,25);
+
+//TH1F* TO_WZ_EleJet1DR = new TH1F("TO_WZ_EleJet1DR","TO Electron first Jet DeltaR distance",20,0,25);
+
+TH1F* TO_LW200_EleJet1DR = new TH1F("TO_LW200_EleJet1DR","TO Electron first Jet DeltaR distance",20,0,25);
+
+//TH1F* TO_LW300_EleJet1DR = new TH1F("TO_LW300_EleJet1DR","TO Electron first Jet DeltaR distance",20,0,25);
+
+//TH1F* TO_LW400_EleJet1DR = new TH1F("TO_LW400_EleJet1DR","TO Electron first Jet DeltaR distance",20,0,25);
+
+//TH1F* TO_LW500_EleJet1DR = new TH1F("TO_LW500_EleJet1DR","TO Electron first Jet DeltaR distance",20,0,25);
+
+TH1F* TO_dataRunB_EleJet2DR = new TH1F("TO_dataRunB_EleJet2DR","TO Electron second Jet DeltaR distance",20,0,25);
+
+TH1F* TO_dataRunC_EleJet2DR  = new TH1F("TO_dataRunC_EleJet2DR","TO Electron second Jet DeltaR distance",20,0,25);
+
+TH1F* TO_ZLL_EleJet2DR = new TH1F("TO_ZLL_EleJet2DR","TO Electron second Jet DeltaR distance",20,0,25);
+
+TH1F* TO_TT_EleJet2DR = new TH1F("TO_TT_EleJet2DR","TO Electron second Jet DeltaR distance",20,0,25);
+
+TH1F* TO_W3J_EleJet2DR = new TH1F("TO_W3J_EleJet2DR","TO Electron second Jet DeltaR distance",20,0,25);
+
+TH1F* TO_W2J_EleJet2DR = new TH1F("TO_W2J_EleJet2DR","TO Electron second Jet DeltaR distance",20,0,25);
+
+TH1F* TO_W1J_EleJet2DR = new TH1F("TO_W1J_EleJet2DR","TO Electron second Jet DeltaR distance",20,0,25);
+
+//TH1F* TO_TTZ_EleJet2DR = new TH1F("TO_TTZ_EleJet2DR","TO Electron second Jet DeltaR distance",20,0,25);
+
+//TH1F* TO_WW_EleJet2DR = new TH1F("TO_WW_EleJet2DR","TO Electron second Jet DeltaR distance",20,0,25);
+
+//TH1F* TO_WZ_EleJet2DR = new TH1F("TO_WZ_EleJet2DR","TO Electron second Jet DeltaR distance",20,0,25);
+
+TH1F* TO_LW200_EleJet2DR = new TH1F("TO_LW200_EleJet2DR","TO Electron second Jet DeltaR distance",20,0,25);
+
+//TH1F* TO_LW300_EleJet2DR = new TH1F("TO_LW300_EleJet2DR","TO Electron second Jet DeltaR distance",20,0,25);
+
+//TH1F* TO_LW400_EleJet2DR = new TH1F("TO_LW400_EleJet2DR","TO Electron second Jet DeltaR distance",20,0,25);
+
+//TH1F* TO_LW500_EleJet2DR = new TH1F("TO_LW500_EleJet2DR","TO Electron second Jet DeltaR distance",20,0,25);
+
+TH1F* TO_dataRunB_JetJet1DR = new TH1F("TO_dataRunB_JetJet1DR","TO Jet first Jet DeltaR distance",20,0,25);
+
+TH1F* TO_dataRunC_JetJet1DR  = new TH1F("TO_dataRunC_JetJet1DR","TO Jet first Jet DeltaR distance",20,0,25);
+
+TH1F* TO_ZLL_JetJet1DR = new TH1F("TO_ZLL_JetJet1DR","TO Jet first Jet DeltaR distance",20,0,25);
+
+TH1F* TO_TT_JetJet1DR = new TH1F("TO_TT_JetJet1DR","TO Jet first Jet DeltaR distance",20,0,25);
+
+TH1F* TO_W3J_JetJet1DR = new TH1F("TO_W3J_JetJet1DR","TO Jet first Jet DeltaR distance",20,0,25);
+
+TH1F* TO_W2J_JetJet1DR = new TH1F("TO_W2J_JetJet1DR","TO Jet first Jet DeltaR distance",20,0,25);
+
+TH1F* TO_W1J_JetJet1DR = new TH1F("TO_W1J_JetJet1DR","TO Jet first Jet DeltaR distance",20,0,25);
+
+//TH1F* TO_TTZ_JetJet1DR = new TH1F("TO_TTZ_JetJet1DR","TO Jet first Jet DeltaR distance",20,0,25);
+
+//TH1F* TO_WW_JetJet1DR = new TH1F("TO_WW_JetJet1DR","TO Jet first Jet DeltaR distance",20,0,25);
+
+//TH1F* TO_WZ_JetJet1DR = new TH1F("TO_WZ_JetJet1DR","TO Jet first Jet DeltaR distance",20,0,25);
+
+TH1F* TO_LW200_JetJet1DR = new TH1F("TO_LW200_JetJet1DR","TO Jet first Jet DeltaR distance",20,0,25);
+
+//TH1F* TO_LW300_JetJet1DR = new TH1F("TO_LW300_JetJet1DR","TO Jet first Jet DeltaR distance",20,0,25);
+
+//TH1F* TO_LW400_JetJet1DR = new TH1F("TO_LW400_JetJet1DR","TO Jet first Jet DeltaR distance",20,0,25);
+
+//TH1F* TO_LW500_JetJet1DR = new TH1F("TO_LW500_JetJet1DR","TO Jet first Jet DeltaR distance",20,0,25);
+
+TH1F* TO_dataRunB_JetJet2DR = new TH1F("TO_dataRunB_JetJet2DR","TO Jet further Jet DeltaR distance",20,0,25);
+
+TH1F* TO_dataRunC_JetJet2DR  = new TH1F("TO_dataRunC_JetJet2DR","TO Jet further Jet DeltaR distance",20,0,25);
+
+TH1F* TO_ZLL_JetJet2DR = new TH1F("TO_ZLL_JetJet2DR","TO Jet further Jet DeltaR distance",20,0,25);
+
+TH1F* TO_TT_JetJet2DR = new TH1F("TO_TT_JetJet2DR","TO Jet further Jet DeltaR distance",20,0,25);
+
+TH1F* TO_W3J_JetJet2DR = new TH1F("TO_W3J_JetJet2DR","TO Jet further Jet DeltaR distance",20,0,25);
+
+TH1F* TO_W2J_JetJet2DR = new TH1F("TO_W2J_JetJet2DR","TO Jet further Jet DeltaR distance",20,0,25);
+
+TH1F* TO_W1J_JetJet2DR = new TH1F("TO_W1J_JetJet2DR","TO Jet further Jet DeltaR distance",20,0,25);
+
+//TH1F* TO_TTZ_JetJet2DR = new TH1F("TO_TTZ_JetJet2DR","TO Jet further Jet DeltaR distance",20,0,25);
+
+//TH1F* TO_WW_JetJet2DR = new TH1F("TO_WW_JetJet2DR","TO Jet further Jet DeltaR distance",20,0,25);
+
+//TH1F* TO_WZ_JetJet2DR = new TH1F("TO_WZ_JetJet2DR","TO Jet further Jet DeltaR distance",20,0,25);
+
+TH1F* TO_LW200_JetJet2DR = new TH1F("TO_LW200_JetJet2DR","TO Jet further Jet DeltaR distance",20,0,25);
+
+//TH1F* TO_LW300_JetJet2DR = new TH1F("TO_LW300_JetJet2DR","TO Jet further Jet DeltaR distance",20,0,25);
+
+//TH1F* TO_LW400_JetJet2DR = new TH1F("TO_LW400_JetJet2DR","TO Jet further Jet DeltaR distance",20,0,25);
+
+//TH1F* TO_LW500_JetJet2DR = new TH1F("TO_LW500_JetJet2DR","TO Jet further Jet DeltaR distance",20,0,25);
+
+TH1F* TO_dataRunB_JetJetFDR = new TH1F("TO_dataRunB_JetJetFDR","TO Jet further Jet DeltaR distance",20,0,25);
+
+TH1F* TO_dataRunC_JetJetFDR  = new TH1F("TO_dataRunC_JetJetFDR","TO Jet further Jet DeltaR distance",20,0,25);
+
+TH1F* TO_ZLL_JetJetFDR = new TH1F("TO_ZLL_JetJetFDR","TO Jet further Jet DeltaR distance",20,0,25);
+
+TH1F* TO_TT_JetJetFDR = new TH1F("TO_TT_JetJetFDR","TO Jet further Jet DeltaR distance",20,0,25);
+
+TH1F* TO_W3J_JetJetFDR = new TH1F("TO_W3J_JetJetFDR","TO Jet further Jet DeltaR distance",20,0,25);
+
+TH1F* TO_W2J_JetJetFDR = new TH1F("TO_W2J_JetJetFDR","TO Jet further Jet DeltaR distance",20,0,25);
+
+TH1F* TO_W1J_JetJetFDR = new TH1F("TO_W1J_JetJetFDR","TO Jet further Jet DeltaR distance",20,0,25);
+
+//TH1F* TO_TTZ_JetJetFDR = new TH1F("TO_TTZ_JetJetFDR","TO Jet further Jet DeltaR distance",20,0,25);
+
+//TH1F* TO_WW_JetJetFDR = new TH1F("TO_WW_JetJetFDR","TO Jet further Jet DeltaR distance",20,0,25);
+
+//TH1F* TO_WZ_JetJetFDR = new TH1F("TO_WZ_JetJetFDR","TO Jet further Jet DeltaR distance",20,0,25);
+
+TH1F* TO_LW200_JetJetFDR = new TH1F("TO_LW200_JetJetFDR","TO Jet further Jet DeltaR distance",20,0,25);
+
+//TH1F* TO_LW300_JetJetFDR = new TH1F("TO_LW300_JetJetFDR","TO Jet further Jet DeltaR distance",20,0,25);
+
+//TH1F* TO_LW400_JetJetFDR = new TH1F("TO_LW400_JetJetFDR","TO Jet further Jet DeltaR distance",20,0,25);
+
+//TH1F* TO_LW500_JetJetFDR = new TH1F("TO_LW500_JetJetFDR","TO Jet further Jet DeltaR distance",20,0,25);
+
+TH1F* HQ_dataRunB_BSd = new TH1F("HQ_dataRunB_BSd","HQ Beam spot distance",20,0,20);
+
+TH1F* HQ_dataRunC_BSd  = new TH1F("HQ_dataRunC_BSd","HQ Beam spot distance",20,0,20);
+
+TH1F* HQ_ZLL_BSd = new TH1F("HQ_ZLL_BSd","HQ Beam spot distance",20,0,20);
+
+TH1F* HQ_TT_BSd = new TH1F("HQ_TT_BSd","HQ Beam spot distance",20,0,20);
+
+TH1F* HQ_W3J_BSd = new TH1F("HQ_W3J_BSd","HQ Beam spot distance",20,0,20);
+
+TH1F* HQ_W2J_BSd = new TH1F("HQ_W2J_BSd","HQ Beam spot distance",20,0,20);
+
+TH1F* HQ_W1J_BSd = new TH1F("HQ_W1J_BSd","HQ Beam spot distance",20,0,20);
+
+//TH1F* HQ_TTZ_BSd = new TH1F("HQ_TTZ_BSd","HQ Beam spot distance",20,0,20);
+
+//TH1F* HQ_WW_BSd = new TH1F("HQ_WW_BSd","HQ Beam spot distance",20,0,20);
+
+//TH1F* HQ_WZ_BSd = new TH1F("HQ_WZ_BSd","HQ Beam spot distance",20,0,20);
+
+TH1F* HQ_LW200_BSd = new TH1F("HQ_LW200_BSd","HQ Beam spot distance",20,0,20);
+
+//TH1F* HQ_LW300_BSd = new TH1F("HQ_LW300_BSd","HQ Beam spot distance",20,0,20);
+
+//TH1F* HQ_LW400_BSd = new TH1F("HQ_LW400_BSd","HQ Beam spot distance",20,0,20);
+
+//TH1F* HQ_LW500_BSd = new TH1F("HQ_LW500_BSd","HQ Beam spot distance",20,0,20);
+
+TH1F* HQ_dataRunB_EleJet1DR = new TH1F("HQ_dataRunB_EleJet1DR","HQ Electron first Jet DeltaR distance",20,0,25);
+
+TH1F* HQ_dataRunC_EleJet1DR  = new TH1F("HQ_dataRunC_EleJet1DR","HQ Electron first Jet DeltaR distance",20,0,25);
+
+TH1F* HQ_ZLL_EleJet1DR = new TH1F("HQ_ZLL_EleJet1DR","HQ Electron first Jet DeltaR distance",20,0,25);
+
+TH1F* HQ_TT_EleJet1DR = new TH1F("HQ_TT_EleJet1DR","HQ Electron first Jet DeltaR distance",20,0,25);
+
+TH1F* HQ_W3J_EleJet1DR = new TH1F("HQ_W3J_EleJet1DR","HQ Electron first Jet DeltaR distance",20,0,25);
+
+TH1F* HQ_W2J_EleJet1DR = new TH1F("HQ_W2J_EleJet1DR","HQ Electron first Jet DeltaR distance",20,0,25);
+
+TH1F* HQ_W1J_EleJet1DR = new TH1F("HQ_W1J_EleJet1DR","HQ Electron first Jet DeltaR distance",20,0,25);
+
+//TH1F* HQ_TTZ_EleJet1DR = new TH1F("HQ_TTZ_EleJet1DR","HQ Electron first Jet DeltaR distance",20,0,25);
+
+//TH1F* HQ_WW_EleJet1DR = new TH1F("HQ_WW_EleJet1DR","HQ Electron first Jet DeltaR distance",20,0,25);
+
+//TH1F* HQ_WZ_EleJet1DR = new TH1F("HQ_WZ_EleJet1DR","HQ Electron first Jet DeltaR distance",20,0,25);
+
+TH1F* HQ_LW200_EleJet1DR = new TH1F("HQ_LW200_EleJet1DR","HQ Electron first Jet DeltaR distance",20,0,25);
+
+//TH1F* HQ_LW300_EleJet1DR = new TH1F("HQ_LW300_EleJet1DR","HQ Electron first Jet DeltaR distance",20,0,25);
+
+//TH1F* HQ_LW400_EleJet1DR = new TH1F("HQ_LW400_EleJet1DR","HQ Electron first Jet DeltaR distance",20,0,25);
+
+//TH1F* HQ_LW500_EleJet1DR = new TH1F("HQ_LW500_EleJet1DR","HQ Electron first Jet DeltaR distance",20,0,25);
+
+TH1F* HQ_dataRunB_EleJet2DR = new TH1F("HQ_dataRunB_EleJet2DR","HQ Electron second Jet DeltaR distance",20,0,25);
+
+TH1F* HQ_dataRunC_EleJet2DR  = new TH1F("HQ_dataRunC_EleJet2DR","HQ Electron second Jet DeltaR distance",20,0,25);
+
+TH1F* HQ_ZLL_EleJet2DR = new TH1F("HQ_ZLL_EleJet2DR","HQ Electron second Jet DeltaR distance",20,0,25);
+
+TH1F* HQ_TT_EleJet2DR = new TH1F("HQ_TT_EleJet2DR","HQ Electron second Jet DeltaR distance",20,0,25);
+
+TH1F* HQ_W3J_EleJet2DR = new TH1F("HQ_W3J_EleJet2DR","HQ Electron second Jet DeltaR distance",20,0,25);
+
+TH1F* HQ_W2J_EleJet2DR = new TH1F("HQ_W2J_EleJet2DR","HQ Electron second Jet DeltaR distance",20,0,25);
+
+TH1F* HQ_W1J_EleJet2DR = new TH1F("HQ_W1J_EleJet2DR","HQ Electron second Jet DeltaR distance",20,0,25);
+
+//TH1F* HQ_TTZ_EleJet2DR = new TH1F("HQ_TTZ_EleJet2DR","HQ Electron second Jet DeltaR distance",20,0,25);
+
+//TH1F* HQ_WW_EleJet2DR = new TH1F("HQ_WW_EleJet2DR","HQ Electron second Jet DeltaR distance",20,0,25);
+
+//TH1F* HQ_WZ_EleJet2DR = new TH1F("HQ_WZ_EleJet2DR","HQ Electron second Jet DeltaR distance",20,0,25);
+
+TH1F* HQ_LW200_EleJet2DR = new TH1F("HQ_LW200_EleJet2DR","HQ Electron second Jet DeltaR distance",20,0,25);
+
+//TH1F* HQ_LW300_EleJet2DR = new TH1F("HQ_LW300_EleJet2DR","HQ Electron second Jet DeltaR distance",20,0,25);
+
+//TH1F* HQ_LW400_EleJet2DR = new TH1F("HQ_LW400_EleJet2DR","HQ Electron second Jet DeltaR distance",20,0,25);
+
+//TH1F* HQ_LW500_EleJet2DR = new TH1F("HQ_LW500_EleJet2DR","HQ Electron second Jet DeltaR distance",20,0,25);
+
+TH1F* HQ_dataRunB_JetJet1DR = new TH1F("HQ_dataRunB_JetJet1DR","HQ Jet first Jet DeltaR distance",20,0,25);
+
+TH1F* HQ_dataRunC_JetJet1DR  = new TH1F("HQ_dataRunC_JetJet1DR","HQ Jet first Jet DeltaR distance",20,0,25);
+
+TH1F* HQ_ZLL_JetJet1DR = new TH1F("HQ_ZLL_JetJet1DR","HQ Jet first Jet DeltaR distance",20,0,25);
+
+TH1F* HQ_TT_JetJet1DR = new TH1F("HQ_TT_JetJet1DR","HQ Jet first Jet DeltaR distance",20,0,25);
+
+TH1F* HQ_W3J_JetJet1DR = new TH1F("HQ_W3J_JetJet1DR","HQ Jet first Jet DeltaR distance",20,0,25);
+
+TH1F* HQ_W2J_JetJet1DR = new TH1F("HQ_W2J_JetJet1DR","HQ Jet first Jet DeltaR distance",20,0,25);
+
+TH1F* HQ_W1J_JetJet1DR = new TH1F("HQ_W1J_JetJet1DR","HQ Jet first Jet DeltaR distance",20,0,25);
+
+//TH1F* HQ_TTZ_JetJet1DR = new TH1F("HQ_TTZ_JetJet1DR","HQ Jet first Jet DeltaR distance",20,0,25);
+
+//TH1F* HQ_WW_JetJet1DR = new TH1F("HQ_WW_JetJet1DR","HQ Jet first Jet DeltaR distance",20,0,25);
+
+//TH1F* HQ_WZ_JetJet1DR = new TH1F("HQ_WZ_JetJet1DR","HQ Jet first Jet DeltaR distance",20,0,25);
+
+TH1F* HQ_LW200_JetJet1DR = new TH1F("HQ_LW200_JetJet1DR","HQ Jet first Jet DeltaR distance",20,0,25);
+
+//TH1F* HQ_LW300_JetJet1DR = new TH1F("HQ_LW300_JetJet1DR","HQ Jet first Jet DeltaR distance",20,0,25);
+
+//TH1F* HQ_LW400_JetJet1DR = new TH1F("HQ_LW400_JetJet1DR","HQ Jet first Jet DeltaR distance",20,0,25);
+
+//TH1F* HQ_LW500_JetJet1DR = new TH1F("HQ_LW500_JetJet1DR","HQ Jet first Jet DeltaR distance",20,0,25);
+
+TH1F* HQ_dataRunB_JetJet2DR = new TH1F("HQ_dataRunB_JetJet2DR","HQ Jet further Jet DeltaR distance",20,0,25);
+
+TH1F* HQ_dataRunC_JetJet2DR  = new TH1F("HQ_dataRunC_JetJet2DR","HQ Jet further Jet DeltaR distance",20,0,25);
+
+TH1F* HQ_ZLL_JetJet2DR = new TH1F("HQ_ZLL_JetJet2DR","HQ Jet further Jet DeltaR distance",20,0,25);
+
+TH1F* HQ_TT_JetJet2DR = new TH1F("HQ_TT_JetJet2DR","HQ Jet further Jet DeltaR distance",20,0,25);
+
+TH1F* HQ_W3J_JetJet2DR = new TH1F("HQ_W3J_JetJet2DR","HQ Jet further Jet DeltaR distance",20,0,25);
+
+TH1F* HQ_W2J_JetJet2DR = new TH1F("HQ_W2J_JetJet2DR","HQ Jet further Jet DeltaR distance",20,0,25);
+
+TH1F* HQ_W1J_JetJet2DR = new TH1F("HQ_W1J_JetJet2DR","HQ Jet further Jet DeltaR distance",20,0,25);
+
+//TH1F* HQ_TTZ_JetJet2DR = new TH1F("HQ_TTZ_JetJet2DR","HQ Jet further Jet DeltaR distance",20,0,25);
+
+//TH1F* HQ_WW_JetJet2DR = new TH1F("HQ_WW_JetJet2DR","HQ Jet further Jet DeltaR distance",20,0,25);
+
+//TH1F* HQ_WZ_JetJet2DR = new TH1F("HQ_WZ_JetJet2DR","HQ Jet further Jet DeltaR distance",20,0,25);
+
+TH1F* HQ_LW200_JetJet2DR = new TH1F("HQ_LW200_JetJet2DR","HQ Jet further Jet DeltaR distance",20,0,25);
+
+//TH1F* HQ_LW300_JetJet2DR = new TH1F("HQ_LW300_JetJet2DR","HQ Jet further Jet DeltaR distance",20,0,25);
+
+//TH1F* HQ_LW400_JetJet2DR = new TH1F("HQ_LW400_JetJet2DR","HQ Jet further Jet DeltaR distance",20,0,25);
+
+//TH1F* HQ_LW500_JetJet2DR = new TH1F("HQ_LW500_JetJet2DR","HQ Jet further Jet DeltaR distance",20,0,25);
+
+TH1F* HQ_dataRunB_JetJetFDR = new TH1F("HQ_dataRunB_JetJetFDR","HQ Jet further Jet DeltaR distance",20,0,25);
+
+TH1F* HQ_dataRunC_JetJetFDR  = new TH1F("HQ_dataRunC_JetJetFDR","HQ Jet further Jet DeltaR distance",20,0,25);
+
+TH1F* HQ_ZLL_JetJetFDR = new TH1F("HQ_ZLL_JetJetFDR","HQ Jet further Jet DeltaR distance",20,0,25);
+
+TH1F* HQ_TT_JetJetFDR = new TH1F("HQ_TT_JetJetFDR","HQ Jet further Jet DeltaR distance",20,0,25);
+
+TH1F* HQ_W3J_JetJetFDR = new TH1F("HQ_W3J_JetJetFDR","HQ Jet further Jet DeltaR distance",20,0,25);
+
+TH1F* HQ_W2J_JetJetFDR = new TH1F("HQ_W2J_JetJetFDR","HQ Jet further Jet DeltaR distance",20,0,25);
+
+TH1F* HQ_W1J_JetJetFDR = new TH1F("HQ_W1J_JetJetFDR","HQ Jet further Jet DeltaR distance",20,0,25);
+
+//TH1F* HQ_TTZ_JetJetFDR = new TH1F("HQ_TTZ_JetJetFDR","HQ Jet further Jet DeltaR distance",20,0,25);
+
+//TH1F* HQ_WW_JetJetFDR = new TH1F("HQ_WW_JetJetFDR","HQ Jet further Jet DeltaR distance",20,0,25);
+
+//TH1F* HQ_WZ_JetJetFDR = new TH1F("HQ_WZ_JetJetFDR","HQ Jet further Jet DeltaR distance",20,0,25);
+
+TH1F* HQ_LW200_JetJetFDR = new TH1F("HQ_LW200_JetJetFDR","HQ Jet further Jet DeltaR distance",20,0,25);
+
+//TH1F* HQ_LW300_JetJetFDR = new TH1F("HQ_LW300_JetJetFDR","HQ Jet further Jet DeltaR distance",20,0,25);
+
+//TH1F* HQ_LW400_JetJetFDR = new TH1F("HQ_LW400_JetJetFDR","HQ Jet further Jet DeltaR distance",20,0,25);
+
+//TH1F* HQ_LW500_JetJetFDR = new TH1F("HQ_LW500_JetJetFDR","HQ Jet further Jet DeltaR distance",20,0,25);
+
+TH1F* SG_dataRunB_BSd = new TH1F("SG_dataRunB_BSd","SG Beam spot distance",20,0,20);
+
+TH1F* SG_dataRunC_BSd  = new TH1F("SG_dataRunC_BSd","SG Beam spot distance",20,0,20);
+
+TH1F* SG_ZLL_BSd = new TH1F("SG_ZLL_BSd","SG Beam spot distance",20,0,20);
+
+TH1F* SG_TT_BSd = new TH1F("SG_TT_BSd","SG Beam spot distance",20,0,20);
+
+TH1F* SG_W3J_BSd = new TH1F("SG_W3J_BSd","SG Beam spot distance",20,0,20);
+
+TH1F* SG_W2J_BSd = new TH1F("SG_W2J_BSd","SG Beam spot distance",20,0,20);
+
+TH1F* SG_W1J_BSd = new TH1F("SG_W1J_BSd","SG Beam spot distance",20,0,20);
+
+//TH1F* SG_TTZ_BSd = new TH1F("SG_TTZ_BSd","SG Beam spot distance",20,0,20);
+
+//TH1F* SG_WW_BSd = new TH1F("SG_WW_BSd","SG Beam spot distance",20,0,20);
+
+//TH1F* SG_WZ_BSd = new TH1F("SG_WZ_BSd","SG Beam spot distance",20,0,20);
+
+TH1F* SG_LW200_BSd = new TH1F("SG_LW200_BSd","SG Beam spot distance",20,0,20);
+
+//TH1F* SG_LW300_BSd = new TH1F("SG_LW300_BSd","SG Beam spot distance",20,0,20);
+
+//TH1F* SG_LW400_BSd = new TH1F("SG_LW400_BSd","SG Beam spot distance",20,0,20);
+
+//TH1F* SG_LW500_BSd = new TH1F("SG_LW500_BSd","SG Beam spot distance",20,0,20);
+
+TH1F* SG_dataRunB_EleJet1DR = new TH1F("SG_dataRunB_EleJet1DR","SG Electron first Jet DeltaR distance",20,0,25);
+
+TH1F* SG_dataRunC_EleJet1DR  = new TH1F("SG_dataRunC_EleJet1DR","SG Electron first Jet DeltaR distance",20,0,25);
+
+TH1F* SG_ZLL_EleJet1DR = new TH1F("SG_ZLL_EleJet1DR","SG Electron first Jet DeltaR distance",20,0,25);
+
+TH1F* SG_TT_EleJet1DR = new TH1F("SG_TT_EleJet1DR","SG Electron first Jet DeltaR distance",20,0,25);
+
+TH1F* SG_W3J_EleJet1DR = new TH1F("SG_W3J_EleJet1DR","SG Electron first Jet DeltaR distance",20,0,25);
+
+TH1F* SG_W2J_EleJet1DR = new TH1F("SG_W2J_EleJet1DR","SG Electron first Jet DeltaR distance",20,0,25);
+
+TH1F* SG_W1J_EleJet1DR = new TH1F("SG_W1J_EleJet1DR","SG Electron first Jet DeltaR distance",20,0,25);
+
+//TH1F* SG_TTZ_EleJet1DR = new TH1F("SG_TTZ_EleJet1DR","SG Electron first Jet DeltaR distance",20,0,25);
+
+//TH1F* SG_WW_EleJet1DR = new TH1F("SG_WW_EleJet1DR","SG Electron first Jet DeltaR distance",20,0,25);
+
+//TH1F* SG_WZ_EleJet1DR = new TH1F("SG_WZ_EleJet1DR","SG Electron first Jet DeltaR distance",20,0,25);
+
+TH1F* SG_LW200_EleJet1DR = new TH1F("SG_LW200_EleJet1DR","SG Electron first Jet DeltaR distance",20,0,25);
+
+//TH1F* SG_LW300_EleJet1DR = new TH1F("SG_LW300_EleJet1DR","SG Electron first Jet DeltaR distance",20,0,25);
+
+//TH1F* SG_LW400_EleJet1DR = new TH1F("SG_LW400_EleJet1DR","SG Electron first Jet DeltaR distance",20,0,25);
+
+//TH1F* SG_LW500_EleJet1DR = new TH1F("SG_LW500_EleJet1DR","SG Electron first Jet DeltaR distance",20,0,25);
+
+TH1F* SG_dataRunB_EleJet2DR = new TH1F("SG_dataRunB_EleJet2DR","SG Electron second Jet DeltaR distance",20,0,25);
+
+TH1F* SG_dataRunC_EleJet2DR  = new TH1F("SG_dataRunC_EleJet2DR","SG Electron second Jet DeltaR distance",20,0,25);
+
+TH1F* SG_ZLL_EleJet2DR = new TH1F("SG_ZLL_EleJet2DR","SG Electron second Jet DeltaR distance",20,0,25);
+
+TH1F* SG_TT_EleJet2DR = new TH1F("SG_TT_EleJet2DR","SG Electron second Jet DeltaR distance",20,0,25);
+
+TH1F* SG_W3J_EleJet2DR = new TH1F("SG_W3J_EleJet2DR","SG Electron second Jet DeltaR distance",20,0,25);
+
+TH1F* SG_W2J_EleJet2DR = new TH1F("SG_W2J_EleJet2DR","SG Electron second Jet DeltaR distance",20,0,25);
+
+TH1F* SG_W1J_EleJet2DR = new TH1F("SG_W1J_EleJet2DR","SG Electron second Jet DeltaR distance",20,0,25);
+
+//TH1F* SG_TTZ_EleJet2DR = new TH1F("SG_TTZ_EleJet2DR","SG Electron second Jet DeltaR distance",20,0,25);
+
+//TH1F* SG_WW_EleJet2DR = new TH1F("SG_WW_EleJet2DR","SG Electron second Jet DeltaR distance",20,0,25);
+
+//TH1F* SG_WZ_EleJet2DR = new TH1F("SG_WZ_EleJet2DR","SG Electron second Jet DeltaR distance",20,0,25);
+
+TH1F* SG_LW200_EleJet2DR = new TH1F("SG_LW200_EleJet2DR","SG Electron second Jet DeltaR distance",20,0,25);
+
+//TH1F* SG_LW300_EleJet2DR = new TH1F("SG_LW300_EleJet2DR","SG Electron second Jet DeltaR distance",20,0,25);
+
+//TH1F* SG_LW400_EleJet2DR = new TH1F("SG_LW400_EleJet2DR","SG Electron second Jet DeltaR distance",20,0,25);
+
+//TH1F* SG_LW500_EleJet2DR = new TH1F("SG_LW500_EleJet2DR","SG Electron second Jet DeltaR distance",20,0,25);
+
+TH1F* SG_dataRunB_JetJet1DR = new TH1F("SG_dataRunB_JetJet1DR","SG Jet first Jet DeltaR distance",20,0,25);
+
+TH1F* SG_dataRunC_JetJet1DR  = new TH1F("SG_dataRunC_JetJet1DR","SG Jet first Jet DeltaR distance",20,0,25);
+
+TH1F* SG_ZLL_JetJet1DR = new TH1F("SG_ZLL_JetJet1DR","SG Jet first Jet DeltaR distance",20,0,25);
+
+TH1F* SG_TT_JetJet1DR = new TH1F("SG_TT_JetJet1DR","SG Jet first Jet DeltaR distance",20,0,25);
+
+TH1F* SG_W3J_JetJet1DR = new TH1F("SG_W3J_JetJet1DR","SG Jet first Jet DeltaR distance",20,0,25);
+
+TH1F* SG_W2J_JetJet1DR = new TH1F("SG_W2J_JetJet1DR","SG Jet first Jet DeltaR distance",20,0,25);
+
+TH1F* SG_W1J_JetJet1DR = new TH1F("SG_W1J_JetJet1DR","SG Jet first Jet DeltaR distance",20,0,25);
+
+//TH1F* SG_TTZ_JetJet1DR = new TH1F("SG_TTZ_JetJet1DR","SG Jet first Jet DeltaR distance",20,0,25);
+
+//TH1F* SG_WW_JetJet1DR = new TH1F("SG_WW_JetJet1DR","SG Jet first Jet DeltaR distance",20,0,25);
+
+//TH1F* SG_WZ_JetJet1DR = new TH1F("SG_WZ_JetJet1DR","SG Jet first Jet DeltaR distance",20,0,25);
+
+TH1F* SG_LW200_JetJet1DR = new TH1F("SG_LW200_JetJet1DR","SG Jet first Jet DeltaR distance",20,0,25);
+
+//TH1F* SG_LW300_JetJet1DR = new TH1F("SG_LW300_JetJet1DR","SG Jet first Jet DeltaR distance",20,0,25);
+
+//TH1F* SG_LW400_JetJet1DR = new TH1F("SG_LW400_JetJet1DR","SG Jet first Jet DeltaR distance",20,0,25);
+
+//TH1F* SG_LW500_JetJet1DR = new TH1F("SG_LW500_JetJet1DR","SG Jet first Jet DeltaR distance",20,0,25);
+
+TH1F* SG_dataRunB_JetJet2DR = new TH1F("SG_dataRunB_JetJet2DR","SG Jet further Jet DeltaR distance",20,0,25);
+
+TH1F* SG_dataRunC_JetJet2DR  = new TH1F("SG_dataRunC_JetJet2DR","SG Jet further Jet DeltaR distance",20,0,25);
+
+TH1F* SG_ZLL_JetJet2DR = new TH1F("SG_ZLL_JetJet2DR","SG Jet further Jet DeltaR distance",20,0,25);
+
+TH1F* SG_TT_JetJet2DR = new TH1F("SG_TT_JetJet2DR","SG Jet further Jet DeltaR distance",20,0,25);
+
+TH1F* SG_W3J_JetJet2DR = new TH1F("SG_W3J_JetJet2DR","SG Jet further Jet DeltaR distance",20,0,25);
+
+TH1F* SG_W2J_JetJet2DR = new TH1F("SG_W2J_JetJet2DR","SG Jet further Jet DeltaR distance",20,0,25);
+
+TH1F* SG_W1J_JetJet2DR = new TH1F("SG_W1J_JetJet2DR","SG Jet further Jet DeltaR distance",20,0,25);
+
+//TH1F* SG_TTZ_JetJet2DR = new TH1F("SG_TTZ_JetJet2DR","SG Jet further Jet DeltaR distance",20,0,25);
+
+//TH1F* SG_WW_JetJet2DR = new TH1F("SG_WW_JetJet2DR","SG Jet further Jet DeltaR distance",20,0,25);
+
+//TH1F* SG_WZ_JetJet2DR = new TH1F("SG_WZ_JetJet2DR","SG Jet further Jet DeltaR distance",20,0,25);
+
+TH1F* SG_LW200_JetJet2DR = new TH1F("SG_LW200_JetJet2DR","SG Jet further Jet DeltaR distance",20,0,25);
+
+//TH1F* SG_LW300_JetJet2DR = new TH1F("SG_LW300_JetJet2DR","SG Jet further Jet DeltaR distance",20,0,25);
+
+//TH1F* SG_LW400_JetJet2DR = new TH1F("SG_LW400_JetJet2DR","SG Jet further Jet DeltaR distance",20,0,25);
+
+//TH1F* SG_LW500_JetJet2DR = new TH1F("SG_LW500_JetJet2DR","SG Jet further Jet DeltaR distance",20,0,25);
+
+TH1F* SG_dataRunB_JetJetFDR = new TH1F("SG_dataRunB_JetJetFDR","SG Jet further Jet DeltaR distance",20,0,25);
+
+TH1F* SG_dataRunC_JetJetFDR  = new TH1F("SG_dataRunC_JetJetFDR","SG Jet further Jet DeltaR distance",20,0,25);
+
+TH1F* SG_ZLL_JetJetFDR = new TH1F("SG_ZLL_JetJetFDR","SG Jet further Jet DeltaR distance",20,0,25);
+
+TH1F* SG_TT_JetJetFDR = new TH1F("SG_TT_JetJetFDR","SG Jet further Jet DeltaR distance",20,0,25);
+
+TH1F* SG_W3J_JetJetFDR = new TH1F("SG_W3J_JetJetFDR","SG Jet further Jet DeltaR distance",20,0,25);
+
+TH1F* SG_W2J_JetJetFDR = new TH1F("SG_W2J_JetJetFDR","SG Jet further Jet DeltaR distance",20,0,25);
+
+TH1F* SG_W1J_JetJetFDR = new TH1F("SG_W1J_JetJetFDR","SG Jet further Jet DeltaR distance",20,0,25);
+
+//TH1F* SG_TTZ_JetJetFDR = new TH1F("SG_TTZ_JetJetFDR","SG Jet further Jet DeltaR distance",20,0,25);
+
+//TH1F* SG_WW_JetJetFDR = new TH1F("SG_WW_JetJetFDR","SG Jet further Jet DeltaR distance",20,0,25);
+
+//TH1F* SG_WZ_JetJetFDR = new TH1F("SG_WZ_JetJetFDR","SG Jet further Jet DeltaR distance",20,0,25);
+
+TH1F* SG_LW200_JetJetFDR = new TH1F("SG_LW200_JetJetFDR","SG Jet further Jet DeltaR distance",20,0,25);
+
+//TH1F* SG_LW300_JetJetFDR = new TH1F("SG_LW300_JetJetFDR","SG Jet further Jet DeltaR distance",20,0,25);
+
+//TH1F* SG_LW400_JetJetFDR = new TH1F("SG_LW400_JetJetFDR","SG Jet further Jet DeltaR distance",20,0,25);
+
+//TH1F* SG_LW500_JetJetFDR = new TH1F("SG_LW500_JetJetFDR","SG Jet further Jet DeltaR distance",20,0,25);
+
 //Requiered trigger
 //string triggerRequest = "HLT_Photon36_CaloId10_Iso50_Photon22_CaloId10_Iso50";
 string triggerRequest[] = {"HLT_Photon36_CaloId10_Iso50_Photon22_CaloId10_Iso50",
@@ -2461,6 +3470,12 @@ EventLoopAnalysisTemplate::EventLoopAnalysisTemplate(TString thefile, TString th
   hists.push_back(NF_W2J_JetMass);
   hists.push_back(NF_W1J_JetMass);
   hists.push_back(NF_LW200_JetMass);
+  //hists.push_back(//NF_WW_npv);
+  //hists.push_back(//NF_WZ_npv);
+  //hists.push_back(//NF_TTZ_npv);
+  //hists.push_back(//NF_WW_JetMass);
+  //hists.push_back(//NF_WZ_JetMass);
+  //hists.push_back(//NF_TTZ_JetMass);
   hists.push_back(NF_dataRunB_LWMass);
   hists.push_back(NF_dataRunC_LWMass);
   hists.push_back(NF_ZLL_LWMass);
@@ -2469,18 +3484,523 @@ EventLoopAnalysisTemplate::EventLoopAnalysisTemplate(TString thefile, TString th
   hists.push_back(NF_W2J_LWMass);
   hists.push_back(NF_W1J_LWMass);
   hists.push_back(NF_LW200_LWMass);
-  //hists.push_back(//NF_WW_npv);
-  //hists.push_back(//NF_WZ_npv);
-  //hists.push_back(//NF_TTZ_npv);
-  //hists.push_back(//NF_WW_JetMass);
-  //hists.push_back(//NF_WZ_JetMass);
-  //hists.push_back(//NF_TTZ_JetMass);
   //hists.push_back(//NF_WW_LWMass);
   //hists.push_back(//NF_WZ_LWMass);
   //hists.push_back(//NF_TTZ_LWMass);
   //hists.push_back(//NF_LW300_LWMass);
   //hists.push_back(NF_LW400_LWMass);
   //hists.push_back(NF_LW500_LWMass);
+  hists.push_back(NF_dataRunB_BSd);
+  hists.push_back(NF_dataRunC_BSd);
+  hists.push_back(NF_ZLL_BSd);
+  hists.push_back(NF_TT_BSd);
+  hists.push_back(NF_W3J_BSd);
+  hists.push_back(NF_W2J_BSd);
+  hists.push_back(NF_W1J_BSd);
+  hists.push_back(NF_LW200_BSd);
+  //hists.push_back(//NF_WW_BSd);
+  //hists.push_back(//NF_WZ_BSd);
+  //hists.push_back(//NF_TTZ_BSd);
+  //hists.push_back(//NF_LW300_BSd);
+  //hists.push_back(NF_LW400_BSd);
+  //hists.push_back(NF_LW500_BSd);
+  hists.push_back(NF_dataRunB_EleJet1DR);
+  hists.push_back(NF_dataRunC_EleJet1DR);
+  hists.push_back(NF_ZLL_EleJet1DR);
+  hists.push_back(NF_TT_EleJet1DR);
+  hists.push_back(NF_W3J_EleJet1DR);
+  hists.push_back(NF_W2J_EleJet1DR);
+  hists.push_back(NF_W1J_EleJet1DR);
+  hists.push_back(NF_LW200_EleJet1DR);
+  //hists.push_back(//NF_WW_EleJet1DR);
+  //hists.push_back(//NF_WZ_EleJet1DR);
+  //hists.push_back(//NF_TTZ_EleJet1DR);
+  //hists.push_back(//NF_LW300_EleJet1DR);
+  //hists.push_back(NF_LW400_EleJet1DR);
+  //hists.push_back(NF_LW500_EleJet1DR);
+  hists.push_back(NF_dataRunB_EleJet2DR);
+  hists.push_back(NF_dataRunC_EleJet2DR);
+  hists.push_back(NF_ZLL_EleJet2DR);
+  hists.push_back(NF_TT_EleJet2DR);
+  hists.push_back(NF_W3J_EleJet2DR);
+  hists.push_back(NF_W2J_EleJet2DR);
+  hists.push_back(NF_W1J_EleJet2DR);
+  hists.push_back(NF_LW200_EleJet2DR);
+  //hists.push_back(//NF_WW_EleJet2DR);
+  //hists.push_back(//NF_WZ_EleJet2DR);
+  //hists.push_back(//NF_TTZ_EleJet2DR);
+  //hists.push_back(//NF_LW300_EleJet2DR);
+  //hists.push_back(NF_LW400_EleJet2DR);
+  //hists.push_back(NF_LW500_EleJet2DR);
+  hists.push_back(NF_dataRunB_JetJet1DR);
+  hists.push_back(NF_dataRunC_JetJet1DR);
+  hists.push_back(NF_ZLL_JetJet1DR);
+  hists.push_back(NF_TT_JetJet1DR);
+  hists.push_back(NF_W3J_JetJet1DR);
+  hists.push_back(NF_W2J_JetJet1DR);
+  hists.push_back(NF_W1J_JetJet1DR);
+  hists.push_back(NF_LW200_JetJet1DR);
+  //hists.push_back(//NF_WW_JetJet1DR);
+  //hists.push_back(//NF_WZ_JetJet1DR);
+  //hists.push_back(//NF_TTZ_JetJet1DR);
+  //hists.push_back(//NF_LW300_JetJet1DR);
+  //hists.push_back(NF_LW400_JetJet1DR);
+  //hists.push_back(NF_LW500_JetJet1DR);
+  hists.push_back(NF_dataRunB_JetJet2DR);
+  hists.push_back(NF_dataRunC_JetJet2DR);
+  hists.push_back(NF_ZLL_JetJet2DR);
+  hists.push_back(NF_TT_JetJet2DR);
+  hists.push_back(NF_W3J_JetJet2DR);
+  hists.push_back(NF_W2J_JetJet2DR);
+  hists.push_back(NF_W1J_JetJet2DR);
+  hists.push_back(NF_LW200_JetJet2DR);
+  //hists.push_back(//NF_WW_JetJet2DR);
+  //hists.push_back(//NF_WZ_JetJet2DR);
+  //hists.push_back(//NF_TTZ_JetJet2DR);
+  //hists.push_back(//NF_LW300_JetJet2DR);
+  //hists.push_back(NF_LW400_JetJet2DR);
+  //hists.push_back(NF_LW500_JetJet2DR);
+  hists.push_back(NF_dataRunB_JetJetFDR);
+  hists.push_back(NF_dataRunC_JetJetFDR);
+  hists.push_back(NF_ZLL_JetJetFDR);
+  hists.push_back(NF_TT_JetJetFDR);
+  hists.push_back(NF_W3J_JetJetFDR);
+  hists.push_back(NF_W2J_JetJetFDR);
+  hists.push_back(NF_W1J_JetJetFDR);
+  hists.push_back(NF_LW200_JetJetFDR);
+  //hists.push_back(//NF_WW_JetJetFDR);
+  //hists.push_back(//NF_WZ_JetJetFDR);
+  //hists.push_back(//NF_TTZ_JetJetFDR);
+  //hists.push_back(//NF_LW300_JetJetFDR);
+  //hists.push_back(NF_LW400_JetJetFDR);
+  //hists.push_back(NF_LW500_JetJetFDR);
+
+  hists.push_back(TF_dataRunB_BSd);
+  hists.push_back(TF_dataRunC_BSd);
+  hists.push_back(TF_ZLL_BSd);
+  hists.push_back(TF_TT_BSd);
+  hists.push_back(TF_W3J_BSd);
+  hists.push_back(TF_W2J_BSd);
+  hists.push_back(TF_W1J_BSd);
+  hists.push_back(TF_LW200_BSd);
+  //hists.push_back(//TF_WW_BSd);
+  //hists.push_back(//TF_WZ_BSd);
+  //hists.push_back(//TF_TTZ_BSd);
+  //hists.push_back(//TF_LW300_BSd);
+  //hists.push_back(TF_LW400_BSd);
+  //hists.push_back(TF_LW500_BSd);
+  hists.push_back(TF_dataRunB_EleJet1DR);
+  hists.push_back(TF_dataRunC_EleJet1DR);
+  hists.push_back(TF_ZLL_EleJet1DR);
+  hists.push_back(TF_TT_EleJet1DR);
+  hists.push_back(TF_W3J_EleJet1DR);
+  hists.push_back(TF_W2J_EleJet1DR);
+  hists.push_back(TF_W1J_EleJet1DR);
+  hists.push_back(TF_LW200_EleJet1DR);
+  //hists.push_back(//TF_WW_EleJet1DR);
+  //hists.push_back(//TF_WZ_EleJet1DR);
+  //hists.push_back(//TF_TTZ_EleJet1DR);
+  //hists.push_back(//TF_LW300_EleJet1DR);
+  //hists.push_back(TF_LW400_EleJet1DR);
+  //hists.push_back(TF_LW500_EleJet1DR);
+  hists.push_back(TF_dataRunB_EleJet2DR);
+  hists.push_back(TF_dataRunC_EleJet2DR);
+  hists.push_back(TF_ZLL_EleJet2DR);
+  hists.push_back(TF_TT_EleJet2DR);
+  hists.push_back(TF_W3J_EleJet2DR);
+  hists.push_back(TF_W2J_EleJet2DR);
+  hists.push_back(TF_W1J_EleJet2DR);
+  hists.push_back(TF_LW200_EleJet2DR);
+  //hists.push_back(//TF_WW_EleJet2DR);
+  //hists.push_back(//TF_WZ_EleJet2DR);
+  //hists.push_back(//TF_TTZ_EleJet2DR);
+  //hists.push_back(//TF_LW300_EleJet2DR);
+  //hists.push_back(TF_LW400_EleJet2DR);
+  //hists.push_back(TF_LW500_EleJet2DR);
+  hists.push_back(TF_dataRunB_JetJet1DR);
+  hists.push_back(TF_dataRunC_JetJet1DR);
+  hists.push_back(TF_ZLL_JetJet1DR);
+  hists.push_back(TF_TT_JetJet1DR);
+  hists.push_back(TF_W3J_JetJet1DR);
+  hists.push_back(TF_W2J_JetJet1DR);
+  hists.push_back(TF_W1J_JetJet1DR);
+  hists.push_back(TF_LW200_JetJet1DR);
+  //hists.push_back(//TF_WW_JetJet1DR);
+  //hists.push_back(//TF_WZ_JetJet1DR);
+  //hists.push_back(//TF_TTZ_JetJet1DR);
+  //hists.push_back(//TF_LW300_JetJet1DR);
+  //hists.push_back(TF_LW400_JetJet1DR);
+  //hists.push_back(TF_LW500_JetJet1DR);
+  hists.push_back(TF_dataRunB_JetJet2DR);
+  hists.push_back(TF_dataRunC_JetJet2DR);
+  hists.push_back(TF_ZLL_JetJet2DR);
+  hists.push_back(TF_TT_JetJet2DR);
+  hists.push_back(TF_W3J_JetJet2DR);
+  hists.push_back(TF_W2J_JetJet2DR);
+  hists.push_back(TF_W1J_JetJet2DR);
+  hists.push_back(TF_LW200_JetJet2DR);
+  //hists.push_back(//TF_WW_JetJet2DR);
+  //hists.push_back(//TF_WZ_JetJet2DR);
+  //hists.push_back(//TF_TTZ_JetJet2DR);
+  //hists.push_back(//TF_LW300_JetJet2DR);
+  //hists.push_back(TF_LW400_JetJet2DR);
+  //hists.push_back(TF_LW500_JetJet2DR);
+  hists.push_back(TF_dataRunB_JetJetFDR);
+  hists.push_back(TF_dataRunC_JetJetFDR);
+  hists.push_back(TF_ZLL_JetJetFDR);
+  hists.push_back(TF_TT_JetJetFDR);
+  hists.push_back(TF_W3J_JetJetFDR);
+  hists.push_back(TF_W2J_JetJetFDR);
+  hists.push_back(TF_W1J_JetJetFDR);
+  hists.push_back(TF_LW200_JetJetFDR);
+  //hists.push_back(//TF_WW_JetJetFDR);
+  //hists.push_back(//TF_WZ_JetJetFDR);
+  //hists.push_back(//TF_TTZ_JetJetFDR);
+  //hists.push_back(//TF_LW300_JetJetFDR);
+  //hists.push_back(TF_LW400_JetJetFDR);
+  //hists.push_back(TF_LW500_JetJetFDR);
+
+  hists.push_back(TO_dataRunB_BSd);
+  hists.push_back(TO_dataRunC_BSd);
+  hists.push_back(TO_ZLL_BSd);
+  hists.push_back(TO_TT_BSd);
+  hists.push_back(TO_W3J_BSd);
+  hists.push_back(TO_W2J_BSd);
+  hists.push_back(TO_W1J_BSd);
+  hists.push_back(TO_LW200_BSd);
+  //hists.push_back(//TO_WW_BSd);
+  //hists.push_back(//TO_WZ_BSd);
+  //hists.push_back(//TO_TTZ_BSd);
+  //hists.push_back(//TO_LW300_BSd);
+  //hists.push_back(TO_LW400_BSd);
+  //hists.push_back(TO_LW500_BSd);
+  hists.push_back(TO_dataRunB_EleJet1DR);
+  hists.push_back(TO_dataRunC_EleJet1DR);
+  hists.push_back(TO_ZLL_EleJet1DR);
+  hists.push_back(TO_TT_EleJet1DR);
+  hists.push_back(TO_W3J_EleJet1DR);
+  hists.push_back(TO_W2J_EleJet1DR);
+  hists.push_back(TO_W1J_EleJet1DR);
+  hists.push_back(TO_LW200_EleJet1DR);
+  //hists.push_back(//TO_WW_EleJet1DR);
+  //hists.push_back(//TO_WZ_EleJet1DR);
+  //hists.push_back(//TO_TTZ_EleJet1DR);
+  //hists.push_back(//TO_LW300_EleJet1DR);
+  //hists.push_back(TO_LW400_EleJet1DR);
+  //hists.push_back(TO_LW500_EleJet1DR);
+  hists.push_back(TO_dataRunB_EleJet2DR);
+  hists.push_back(TO_dataRunC_EleJet2DR);
+  hists.push_back(TO_ZLL_EleJet2DR);
+  hists.push_back(TO_TT_EleJet2DR);
+  hists.push_back(TO_W3J_EleJet2DR);
+  hists.push_back(TO_W2J_EleJet2DR);
+  hists.push_back(TO_W1J_EleJet2DR);
+  hists.push_back(TO_LW200_EleJet2DR);
+  //hists.push_back(//TO_WW_EleJet2DR);
+  //hists.push_back(//TO_WZ_EleJet2DR);
+  //hists.push_back(//TO_TTZ_EleJet2DR);
+  //hists.push_back(//TO_LW300_EleJet2DR);
+  //hists.push_back(TO_LW400_EleJet2DR);
+  //hists.push_back(TO_LW500_EleJet2DR);
+  hists.push_back(TO_dataRunB_JetJet1DR);
+  hists.push_back(TO_dataRunC_JetJet1DR);
+  hists.push_back(TO_ZLL_JetJet1DR);
+  hists.push_back(TO_TT_JetJet1DR);
+  hists.push_back(TO_W3J_JetJet1DR);
+  hists.push_back(TO_W2J_JetJet1DR);
+  hists.push_back(TO_W1J_JetJet1DR);
+  hists.push_back(TO_LW200_JetJet1DR);
+  //hists.push_back(//TO_WW_JetJet1DR);
+  //hists.push_back(//TO_WZ_JetJet1DR);
+  //hists.push_back(//TO_TTZ_JetJet1DR);
+  //hists.push_back(//TO_LW300_JetJet1DR);
+  //hists.push_back(TO_LW400_JetJet1DR);
+  //hists.push_back(TO_LW500_JetJet1DR);
+  hists.push_back(TO_dataRunB_JetJet2DR);
+  hists.push_back(TO_dataRunC_JetJet2DR);
+  hists.push_back(TO_ZLL_JetJet2DR);
+  hists.push_back(TO_TT_JetJet2DR);
+  hists.push_back(TO_W3J_JetJet2DR);
+  hists.push_back(TO_W2J_JetJet2DR);
+  hists.push_back(TO_W1J_JetJet2DR);
+  hists.push_back(TO_LW200_JetJet2DR);
+  //hists.push_back(//TO_WW_JetJet2DR);
+  //hists.push_back(//TO_WZ_JetJet2DR);
+  //hists.push_back(//TO_TTZ_JetJet2DR);
+  //hists.push_back(//TO_LW300_JetJet2DR);
+  //hists.push_back(TO_LW400_JetJet2DR);
+  //hists.push_back(TO_LW500_JetJet2DR);
+  hists.push_back(TO_dataRunB_JetJetFDR);
+  hists.push_back(TO_dataRunC_JetJetFDR);
+  hists.push_back(TO_ZLL_JetJetFDR);
+  hists.push_back(TO_TT_JetJetFDR);
+  hists.push_back(TO_W3J_JetJetFDR);
+  hists.push_back(TO_W2J_JetJetFDR);
+  hists.push_back(TO_W1J_JetJetFDR);
+  hists.push_back(TO_LW200_JetJetFDR);
+  //hists.push_back(//TO_WW_JetJetFDR);
+  //hists.push_back(//TO_WZ_JetJetFDR);
+  //hists.push_back(//TO_TTZ_JetJetFDR);
+  //hists.push_back(//TO_LW300_JetJetFDR);
+  //hists.push_back(TO_LW400_JetJetFDR);
+  //hists.push_back(TO_LW500_JetJetFDR);
+
+  hists.push_back(HQ_dataRunB_BSd);
+  hists.push_back(HQ_dataRunC_BSd);
+  hists.push_back(HQ_ZLL_BSd);
+  hists.push_back(HQ_TT_BSd);
+  hists.push_back(HQ_W3J_BSd);
+  hists.push_back(HQ_W2J_BSd);
+  hists.push_back(HQ_W1J_BSd);
+  hists.push_back(HQ_LW200_BSd);
+  //hists.push_back(//HQ_WW_BSd);
+  //hists.push_back(//HQ_WZ_BSd);
+  //hists.push_back(//HQ_TTZ_BSd);
+  //hists.push_back(//HQ_LW300_BSd);
+  //hists.push_back(HQ_LW400_BSd);
+  //hists.push_back(HQ_LW500_BSd);
+  hists.push_back(HQ_dataRunB_EleJet1DR);
+  hists.push_back(HQ_dataRunC_EleJet1DR);
+  hists.push_back(HQ_ZLL_EleJet1DR);
+  hists.push_back(HQ_TT_EleJet1DR);
+  hists.push_back(HQ_W3J_EleJet1DR);
+  hists.push_back(HQ_W2J_EleJet1DR);
+  hists.push_back(HQ_W1J_EleJet1DR);
+  hists.push_back(HQ_LW200_EleJet1DR);
+  //hists.push_back(//HQ_WW_EleJet1DR);
+  //hists.push_back(//HQ_WZ_EleJet1DR);
+  //hists.push_back(//HQ_TTZ_EleJet1DR);
+  //hists.push_back(//HQ_LW300_EleJet1DR);
+  //hists.push_back(HQ_LW400_EleJet1DR);
+  //hists.push_back(HQ_LW500_EleJet1DR);
+  hists.push_back(HQ_dataRunB_EleJet2DR);
+  hists.push_back(HQ_dataRunC_EleJet2DR);
+  hists.push_back(HQ_ZLL_EleJet2DR);
+  hists.push_back(HQ_TT_EleJet2DR);
+  hists.push_back(HQ_W3J_EleJet2DR);
+  hists.push_back(HQ_W2J_EleJet2DR);
+  hists.push_back(HQ_W1J_EleJet2DR);
+  hists.push_back(HQ_LW200_EleJet2DR);
+  //hists.push_back(//HQ_WW_EleJet2DR);
+  //hists.push_back(//HQ_WZ_EleJet2DR);
+  //hists.push_back(//HQ_TTZ_EleJet2DR);
+  //hists.push_back(//HQ_LW300_EleJet2DR);
+  //hists.push_back(HQ_LW400_EleJet2DR);
+  //hists.push_back(HQ_LW500_EleJet2DR);
+  hists.push_back(HQ_dataRunB_JetJet1DR);
+  hists.push_back(HQ_dataRunC_JetJet1DR);
+  hists.push_back(HQ_ZLL_JetJet1DR);
+  hists.push_back(HQ_TT_JetJet1DR);
+  hists.push_back(HQ_W3J_JetJet1DR);
+  hists.push_back(HQ_W2J_JetJet1DR);
+  hists.push_back(HQ_W1J_JetJet1DR);
+  hists.push_back(HQ_LW200_JetJet1DR);
+  //hists.push_back(//HQ_WW_JetJet1DR);
+  //hists.push_back(//HQ_WZ_JetJet1DR);
+  //hists.push_back(//HQ_TTZ_JetJet1DR);
+  //hists.push_back(//HQ_LW300_JetJet1DR);
+  //hists.push_back(HQ_LW400_JetJet1DR);
+  //hists.push_back(HQ_LW500_JetJet1DR);
+  hists.push_back(HQ_dataRunB_JetJet2DR);
+  hists.push_back(HQ_dataRunC_JetJet2DR);
+  hists.push_back(HQ_ZLL_JetJet2DR);
+  hists.push_back(HQ_TT_JetJet2DR);
+  hists.push_back(HQ_W3J_JetJet2DR);
+  hists.push_back(HQ_W2J_JetJet2DR);
+  hists.push_back(HQ_W1J_JetJet2DR);
+  hists.push_back(HQ_LW200_JetJet2DR);
+  //hists.push_back(//HQ_WW_JetJet2DR);
+  //hists.push_back(//HQ_WZ_JetJet2DR);
+  //hists.push_back(//HQ_TTZ_JetJet2DR);
+  //hists.push_back(//HQ_LW300_JetJet2DR);
+  //hists.push_back(HQ_LW400_JetJet2DR);
+  //hists.push_back(HQ_LW500_JetJet2DR);
+  hists.push_back(HQ_dataRunB_JetJetFDR);
+  hists.push_back(HQ_dataRunC_JetJetFDR);
+  hists.push_back(HQ_ZLL_JetJetFDR);
+  hists.push_back(HQ_TT_JetJetFDR);
+  hists.push_back(HQ_W3J_JetJetFDR);
+  hists.push_back(HQ_W2J_JetJetFDR);
+  hists.push_back(HQ_W1J_JetJetFDR);
+  hists.push_back(HQ_LW200_JetJetFDR);
+  //hists.push_back(//HQ_WW_JetJetFDR);
+  //hists.push_back(//HQ_WZ_JetJetFDR);
+  //hists.push_back(//HQ_TTZ_JetJetFDR);
+  //hists.push_back(//HQ_LW300_JetJetFDR);
+  //hists.push_back(HQ_LW400_JetJetFDR);
+  //hists.push_back(HQ_LW500_JetJetFDR);
+
+  hists.push_back(DRC_dataRunB_BSd);
+  hists.push_back(DRC_dataRunC_BSd);
+  hists.push_back(DRC_ZLL_BSd);
+  hists.push_back(DRC_TT_BSd);
+  hists.push_back(DRC_W3J_BSd);
+  hists.push_back(DRC_W2J_BSd);
+  hists.push_back(DRC_W1J_BSd);
+  hists.push_back(DRC_LW200_BSd);
+  //hists.push_back(//DRC_WW_BSd);
+  //hists.push_back(//DRC_WZ_BSd);
+  //hists.push_back(//DRC_TTZ_BSd);
+  //hists.push_back(//DRC_LW300_BSd);
+  //hists.push_back(DRC_LW400_BSd);
+  //hists.push_back(DRC_LW500_BSd);
+  hists.push_back(DRC_dataRunB_EleJet1DR);
+  hists.push_back(DRC_dataRunC_EleJet1DR);
+  hists.push_back(DRC_ZLL_EleJet1DR);
+  hists.push_back(DRC_TT_EleJet1DR);
+  hists.push_back(DRC_W3J_EleJet1DR);
+  hists.push_back(DRC_W2J_EleJet1DR);
+  hists.push_back(DRC_W1J_EleJet1DR);
+  hists.push_back(DRC_LW200_EleJet1DR);
+  //hists.push_back(//DRC_WW_EleJet1DR);
+  //hists.push_back(//DRC_WZ_EleJet1DR);
+  //hists.push_back(//DRC_TTZ_EleJet1DR);
+  //hists.push_back(//DRC_LW300_EleJet1DR);
+  //hists.push_back(DRC_LW400_EleJet1DR);
+  //hists.push_back(DRC_LW500_EleJet1DR);
+  hists.push_back(DRC_dataRunB_EleJet2DR);
+  hists.push_back(DRC_dataRunC_EleJet2DR);
+  hists.push_back(DRC_ZLL_EleJet2DR);
+  hists.push_back(DRC_TT_EleJet2DR);
+  hists.push_back(DRC_W3J_EleJet2DR);
+  hists.push_back(DRC_W2J_EleJet2DR);
+  hists.push_back(DRC_W1J_EleJet2DR);
+  hists.push_back(DRC_LW200_EleJet2DR);
+  //hists.push_back(//DRC_WW_EleJet2DR);
+  //hists.push_back(//DRC_WZ_EleJet2DR);
+  //hists.push_back(//DRC_TTZ_EleJet2DR);
+  //hists.push_back(//DRC_LW300_EleJet2DR);
+  //hists.push_back(DRC_LW400_EleJet2DR);
+  //hists.push_back(DRC_LW500_EleJet2DR);
+  hists.push_back(DRC_dataRunB_JetJet1DR);
+  hists.push_back(DRC_dataRunC_JetJet1DR);
+  hists.push_back(DRC_ZLL_JetJet1DR);
+  hists.push_back(DRC_TT_JetJet1DR);
+  hists.push_back(DRC_W3J_JetJet1DR);
+  hists.push_back(DRC_W2J_JetJet1DR);
+  hists.push_back(DRC_W1J_JetJet1DR);
+  hists.push_back(DRC_LW200_JetJet1DR);
+  //hists.push_back(//DRC_WW_JetJet1DR);
+  //hists.push_back(//DRC_WZ_JetJet1DR);
+  //hists.push_back(//DRC_TTZ_JetJet1DR);
+  //hists.push_back(//DRC_LW300_JetJet1DR);
+  //hists.push_back(DRC_LW400_JetJet1DR);
+  //hists.push_back(DRC_LW500_JetJet1DR);
+  hists.push_back(DRC_dataRunB_JetJet2DR);
+  hists.push_back(DRC_dataRunC_JetJet2DR);
+  hists.push_back(DRC_ZLL_JetJet2DR);
+  hists.push_back(DRC_TT_JetJet2DR);
+  hists.push_back(DRC_W3J_JetJet2DR);
+  hists.push_back(DRC_W2J_JetJet2DR);
+  hists.push_back(DRC_W1J_JetJet2DR);
+  hists.push_back(DRC_LW200_JetJet2DR);
+  //hists.push_back(//DRC_WW_JetJet2DR);
+  //hists.push_back(//DRC_WZ_JetJet2DR);
+  //hists.push_back(//DRC_TTZ_JetJet2DR);
+  //hists.push_back(//DRC_LW300_JetJet2DR);
+  //hists.push_back(DRC_LW400_JetJet2DR);
+  //hists.push_back(DRC_LW500_JetJet2DR);
+  hists.push_back(DRC_dataRunB_JetJetFDR);
+  hists.push_back(DRC_dataRunC_JetJetFDR);
+  hists.push_back(DRC_ZLL_JetJetFDR);
+  hists.push_back(DRC_TT_JetJetFDR);
+  hists.push_back(DRC_W3J_JetJetFDR);
+  hists.push_back(DRC_W2J_JetJetFDR);
+  hists.push_back(DRC_W1J_JetJetFDR);
+  hists.push_back(DRC_LW200_JetJetFDR);
+  //hists.push_back(//DRC_WW_JetJetFDR);
+  //hists.push_back(//DRC_WZ_JetJetFDR);
+  //hists.push_back(//DRC_TTZ_JetJetFDR);
+  //hists.push_back(//DRC_LW300_JetJetFDR);
+  //hists.push_back(DRC_LW400_JetJetFDR);
+  //hists.push_back(DRC_LW500_JetJetFDR);
+
+  hists.push_back(SG_dataRunB_BSd);
+  hists.push_back(SG_dataRunC_BSd);
+  hists.push_back(SG_ZLL_BSd);
+  hists.push_back(SG_TT_BSd);
+  hists.push_back(SG_W3J_BSd);
+  hists.push_back(SG_W2J_BSd);
+  hists.push_back(SG_W1J_BSd);
+  hists.push_back(SG_LW200_BSd);
+  //hists.push_back(//SG_WW_BSd);
+  //hists.push_back(//SG_WZ_BSd);
+  //hists.push_back(//SG_TTZ_BSd);
+  //hists.push_back(//SG_LW300_BSd);
+  //hists.push_back(SG_LW400_BSd);
+  //hists.push_back(SG_LW500_BSd);
+  hists.push_back(SG_dataRunB_EleJet1DR);
+  hists.push_back(SG_dataRunC_EleJet1DR);
+  hists.push_back(SG_ZLL_EleJet1DR);
+  hists.push_back(SG_TT_EleJet1DR);
+  hists.push_back(SG_W3J_EleJet1DR);
+  hists.push_back(SG_W2J_EleJet1DR);
+  hists.push_back(SG_W1J_EleJet1DR);
+  hists.push_back(SG_LW200_EleJet1DR);
+  //hists.push_back(//SG_WW_EleJet1DR);
+  //hists.push_back(//SG_WZ_EleJet1DR);
+  //hists.push_back(//SG_TTZ_EleJet1DR);
+  //hists.push_back(//SG_LW300_EleJet1DR);
+  //hists.push_back(SG_LW400_EleJet1DR);
+  //hists.push_back(SG_LW500_EleJet1DR);
+  hists.push_back(SG_dataRunB_EleJet2DR);
+  hists.push_back(SG_dataRunC_EleJet2DR);
+  hists.push_back(SG_ZLL_EleJet2DR);
+  hists.push_back(SG_TT_EleJet2DR);
+  hists.push_back(SG_W3J_EleJet2DR);
+  hists.push_back(SG_W2J_EleJet2DR);
+  hists.push_back(SG_W1J_EleJet2DR);
+  hists.push_back(SG_LW200_EleJet2DR);
+  //hists.push_back(//SG_WW_EleJet2DR);
+  //hists.push_back(//SG_WZ_EleJet2DR);
+  //hists.push_back(//SG_TTZ_EleJet2DR);
+  //hists.push_back(//SG_LW300_EleJet2DR);
+  //hists.push_back(SG_LW400_EleJet2DR);
+  //hists.push_back(SG_LW500_EleJet2DR);
+  hists.push_back(SG_dataRunB_JetJet1DR);
+  hists.push_back(SG_dataRunC_JetJet1DR);
+  hists.push_back(SG_ZLL_JetJet1DR);
+  hists.push_back(SG_TT_JetJet1DR);
+  hists.push_back(SG_W3J_JetJet1DR);
+  hists.push_back(SG_W2J_JetJet1DR);
+  hists.push_back(SG_W1J_JetJet1DR);
+  hists.push_back(SG_LW200_JetJet1DR);
+  //hists.push_back(//SG_WW_JetJet1DR);
+  //hists.push_back(//SG_WZ_JetJet1DR);
+  //hists.push_back(//SG_TTZ_JetJet1DR);
+  //hists.push_back(//SG_LW300_JetJet1DR);
+  //hists.push_back(SG_LW400_JetJet1DR);
+  //hists.push_back(SG_LW500_JetJet1DR);
+  hists.push_back(SG_dataRunB_JetJet2DR);
+  hists.push_back(SG_dataRunC_JetJet2DR);
+  hists.push_back(SG_ZLL_JetJet2DR);
+  hists.push_back(SG_TT_JetJet2DR);
+  hists.push_back(SG_W3J_JetJet2DR);
+  hists.push_back(SG_W2J_JetJet2DR);
+  hists.push_back(SG_W1J_JetJet2DR);
+  hists.push_back(SG_LW200_JetJet2DR);
+  //hists.push_back(//SG_WW_JetJet2DR);
+  //hists.push_back(//SG_WZ_JetJet2DR);
+  //hists.push_back(//SG_TTZ_JetJet2DR);
+  //hists.push_back(//SG_LW300_JetJet2DR);
+  //hists.push_back(SG_LW400_JetJet2DR);
+  //hists.push_back(SG_LW500_JetJet2DR);
+  hists.push_back(SG_dataRunB_JetJetFDR);
+  hists.push_back(SG_dataRunC_JetJetFDR);
+  hists.push_back(SG_ZLL_JetJetFDR);
+  hists.push_back(SG_TT_JetJetFDR);
+  hists.push_back(SG_W3J_JetJetFDR);
+  hists.push_back(SG_W2J_JetJetFDR);
+  hists.push_back(SG_W1J_JetJetFDR);
+  hists.push_back(SG_LW200_JetJetFDR);
+  //hists.push_back(//SG_WW_JetJetFDR);
+  //hists.push_back(//SG_WZ_JetJetFDR);
+  //hists.push_back(//SG_TTZ_JetJetFDR);
+  //hists.push_back(//SG_LW300_JetJetFDR);
+  //hists.push_back(SG_LW400_JetJetFDR);
+  //hists.push_back(SG_LW500_JetJetFDR);
+
+
   //hists.push_back(//NF_LW300_JetMass);
   //hists.push_back(NF_LW400_JetMass);
   //hists.push_back(NF_LW500_JetMass);
@@ -4109,6 +5629,175 @@ void EventLoopAnalysisTemplate::histograms(string cut) {
       if(thevar == "NEle"){
         hists.at(j)->Fill(electron_e->size(),theweight);
       }
+      if(thevar == "BSd"){
+        float dx,dy,dz,disp;
+        for (size_t i = 0; i < secvec_posx->size(); i++) {
+          if(secvec_eleTag->at(i)!=-1){
+            dx=Bsp_x->at(0)-secvec_posx->at(i);
+            dy=Bsp_y->at(0)-secvec_posy->at(i);
+            dz=Bsp_z->at(0)-secvec_posz->at(i);
+            disp=sqrt( dx*dx + dy*dy + dz*dz );
+            hists.at(j)->Fill(disp,theweight);
+          }
+        }
+      }
+      if(thevar == "EleJet1DR"){
+        vector<pair <float,size_t> > JetPtTemp;
+        vector<float> JetDRTemp;
+        vector<pair <float,size_t> > ElePtTemp;
+        vector<float> EleDRTemp;
+
+        for (size_t i = 0; i < electron_pt->size(); i++) {ElePtTemp.push_back(make_pair(electron_pt->at(i),i));}
+        sort(ElePtTemp.begin(),ElePtTemp.end());
+
+        if(corr_jet_pt->size()>4 && ElePtTemp.size()>1 && ElePtTemp.back().first>40 && ElePtTemp.end()[-2].first>25){
+          ElePtTemp.clear();
+          JetPtTemp.clear();
+
+          for(size_t x=0; x<corr_jet_pt->size(); x++ ){JetPtTemp.push_back(make_pair(corr_jet_pt->at(x),x));}
+          sort(JetPtTemp.begin(), JetPtTemp.end());
+
+          for (size_t i = 0; i < electron_pt->size(); i++) {
+            if(i==ElePtTemp.back().second || i==ElePtTemp.end()[-2].second){
+              for(size_t x=0; x<corr_jet_pt->size(); x++){
+                if(x==JetPtTemp.back().second||x==JetPtTemp.end()[-2].second||x==JetPtTemp.end()[-3].second||x==JetPtTemp.end()[-4].second){
+                  EleDRTemp.push_back(deltaR(jet_eta->at(x),jet_phi->at(x),electron_eta->at(i),electron_phi->at(i)));
+                }
+              }
+              sort(EleDRTemp.begin(),EleDRTemp.end());
+              hists.at(j)->Fill(EleDRTemp.front());
+            }
+          }
+        }
+      }
+      if(thevar == "EleJet2DR"){
+        vector<pair <float,size_t> > JetPtTemp;
+        vector<float> JetDRTemp;
+        vector<pair <float,size_t> > ElePtTemp;
+        vector<float> EleDRTemp;
+
+        for (size_t i = 0; i < electron_pt->size(); i++) {ElePtTemp.push_back(make_pair(electron_pt->at(i),i));}
+        sort(ElePtTemp.begin(),ElePtTemp.end());
+
+        if(corr_jet_pt->size()>4 && ElePtTemp.size()>1 && ElePtTemp.back().first>40 && ElePtTemp.end()[-2].first>25){
+          ElePtTemp.clear();
+          JetPtTemp.clear();
+
+          for(size_t x=0; x<corr_jet_pt->size(); x++ ){JetPtTemp.push_back(make_pair(corr_jet_pt->at(x),x));}
+          sort(JetPtTemp.begin(), JetPtTemp.end());
+
+          for (size_t i = 0; i < electron_pt->size(); i++) {
+            if(i==ElePtTemp.back().second || i==ElePtTemp.end()[-2].second){
+              for(size_t x=0; x<corr_jet_pt->size(); x++){
+                if(x==JetPtTemp.back().second||x==JetPtTemp.end()[-2].second||x==JetPtTemp.end()[-3].second||x==JetPtTemp.end()[-4].second){
+                  EleDRTemp.push_back(deltaR(jet_eta->at(x),jet_phi->at(x),electron_eta->at(i),electron_phi->at(i)));
+                }
+              }
+              sort(EleDRTemp.begin(),EleDRTemp.end());
+              hists.at(j)->Fill(EleDRTemp.at(1));
+            }
+          }
+        }
+      }
+
+      if(thevar == "JetJet1DR"){
+        vector<pair <float,size_t> > JetPtTemp;
+        vector<float> JetDRTemp;
+        vector<pair <float,size_t> > ElePtTemp;
+        vector<float> EleDRTemp;
+
+        for (size_t i = 0; i < electron_pt->size(); i++) {ElePtTemp.push_back(make_pair(electron_pt->at(i),i));}
+        sort(ElePtTemp.begin(),ElePtTemp.end());
+
+        if(corr_jet_pt->size()>4 && ElePtTemp.size()>1 && ElePtTemp.back().first>40 && ElePtTemp.end()[-2].first>25){
+          ElePtTemp.clear();
+          JetPtTemp.clear();
+
+          for(size_t x=0; x<corr_jet_pt->size(); x++ ){JetPtTemp.push_back(make_pair(corr_jet_pt->at(x),x));}
+          sort(JetPtTemp.begin(), JetPtTemp.end());
+
+          for(size_t x=0; x<corr_jet_pt->size(); x++){
+            if(x==JetPtTemp.back().second||x==JetPtTemp.end()[-2].second||x==JetPtTemp.end()[-3].second||x==JetPtTemp.end()[-4].second){
+
+              for(size_t y=x+1; y<corr_jet_pt->size(); y++){
+                if(y==JetPtTemp.back().second||y==JetPtTemp.end()[-2].second||y==JetPtTemp.end()[-3].second||y==JetPtTemp.end()[-4].second){
+                  JetDRTemp.push_back(deltaR(jet_eta->at(x),jet_phi->at(x),jet_eta->at(y),jet_phi->at(y)));
+
+                }
+              }
+
+              sort(JetDRTemp.begin(),JetDRTemp.end());
+              hists.at(j)->Fill(JetDRTemp.front());
+            }
+          }
+        }
+      }
+
+      if(thevar == "JetJet2DR"){
+        vector<pair <float,size_t> > JetPtTemp;
+        vector<float> JetDRTemp;
+        vector<pair <float,size_t> > ElePtTemp;
+        vector<float> EleDRTemp;
+
+        for (size_t i = 0; i < electron_pt->size(); i++) {ElePtTemp.push_back(make_pair(electron_pt->at(i),i));}
+        sort(ElePtTemp.begin(),ElePtTemp.end());
+
+        if(corr_jet_pt->size()>4 && ElePtTemp.size()>1 && ElePtTemp.back().first>40 && ElePtTemp.end()[-2].first>25){
+          ElePtTemp.clear();
+          JetPtTemp.clear();
+
+          for(size_t x=0; x<corr_jet_pt->size(); x++ ){JetPtTemp.push_back(make_pair(corr_jet_pt->at(x),x));}
+          sort(JetPtTemp.begin(), JetPtTemp.end());
+
+          for(size_t x=0; x<corr_jet_pt->size(); x++){
+            if(x==JetPtTemp.back().second||x==JetPtTemp.end()[-2].second||x==JetPtTemp.end()[-3].second||x==JetPtTemp.end()[-4].second){
+
+              for(size_t y=x+1; y<corr_jet_pt->size(); y++){
+                if(y==JetPtTemp.back().second||y==JetPtTemp.end()[-2].second||y==JetPtTemp.end()[-3].second||y==JetPtTemp.end()[-4].second){
+                  JetDRTemp.push_back(deltaR(jet_eta->at(x),jet_phi->at(x),jet_eta->at(y),jet_phi->at(y)));
+
+                }
+              }
+
+              sort(JetDRTemp.begin(),JetDRTemp.end());
+              hists.at(j)->Fill(JetDRTemp.at(1));
+            }
+          }
+        }
+      }
+
+      if(thevar == "JetJetFDR"){
+        vector<pair <float,size_t> > JetPtTemp;
+        vector<float> JetDRTemp;
+        vector<pair <float,size_t> > ElePtTemp;
+        vector<float> EleDRTemp;
+
+        for (size_t i = 0; i < electron_pt->size(); i++) {ElePtTemp.push_back(make_pair(electron_pt->at(i),i));}
+        sort(ElePtTemp.begin(),ElePtTemp.end());
+
+        if(corr_jet_pt->size()>4 && ElePtTemp.size()>1 && ElePtTemp.back().first>40 && ElePtTemp.end()[-2].first>25){
+          ElePtTemp.clear();
+          JetPtTemp.clear();
+
+          for(size_t x=0; x<corr_jet_pt->size(); x++ ){JetPtTemp.push_back(make_pair(corr_jet_pt->at(x),x));}
+          sort(JetPtTemp.begin(), JetPtTemp.end());
+
+          for(size_t x=0; x<corr_jet_pt->size(); x++){
+            if(x==JetPtTemp.back().second||x==JetPtTemp.end()[-2].second||x==JetPtTemp.end()[-3].second||x==JetPtTemp.end()[-4].second){
+
+              for(size_t y=x+1; y<corr_jet_pt->size(); y++){
+                if(y==JetPtTemp.back().second||y==JetPtTemp.end()[-2].second||y==JetPtTemp.end()[-3].second||y==JetPtTemp.end()[-4].second){
+                  JetDRTemp.push_back(deltaR(jet_eta->at(x),jet_phi->at(x),jet_eta->at(y),jet_phi->at(y)));
+
+                }
+              }
+
+              sort(JetDRTemp.begin(),JetDRTemp.end());
+              hists.at(j)->Fill(JetDRTemp.back());
+            }
+          }
+        }
+      }
     }
   }
 }////////////////////////histograms/////////////////
@@ -5303,6 +6992,515 @@ int main()
   //DRC_LW300_NEle->Write();
   //DRC_LW400_NEle->Write();
   //DRC_LW500_NEle->Write();
+  NF_dataRunB_BSd->Write();
+  NF_dataRunC_BSd->Write();
+  NF_ZLL_BSd->Write();
+  NF_TT_BSd->Write();
+  NF_W3J_BSd->Write();
+  NF_W2J_BSd->Write();
+  NF_W1J_BSd->Write();
+  NF_LW200_BSd->Write();
+  ////NF_WW_BSd->Write();
+  ////NF_WZ_BSd->Write();
+  ////NF_TTZ_BSd->Write();
+  ////NF_LW300_BSd->Write();
+  //NF_LW400_BSd->Write();
+  //NF_LW500_BSd->Write();
+  NF_dataRunB_EleJet1DR->Write();
+  NF_dataRunC_EleJet1DR->Write();
+  NF_ZLL_EleJet1DR->Write();
+  NF_TT_EleJet1DR->Write();
+  NF_W3J_EleJet1DR->Write();
+  NF_W2J_EleJet1DR->Write();
+  NF_W1J_EleJet1DR->Write();
+  NF_LW200_EleJet1DR->Write();
+  ////NF_WW_EleJet1DR->Write();
+  ////NF_WZ_EleJet1DR->Write();
+  ////NF_TTZ_EleJet1DR->Write();
+  ////NF_LW300_EleJet1DR->Write();
+  //NF_LW400_EleJet1DR->Write();
+  //NF_LW500_EleJet1DR->Write();
+  NF_dataRunB_EleJet2DR->Write();
+  NF_dataRunC_EleJet2DR->Write();
+  NF_ZLL_EleJet2DR->Write();
+  NF_TT_EleJet2DR->Write();
+  NF_W3J_EleJet2DR->Write();
+  NF_W2J_EleJet2DR->Write();
+  NF_W1J_EleJet2DR->Write();
+  NF_LW200_EleJet2DR->Write();
+  ////NF_WW_EleJet2DR->Write();
+  ////NF_WZ_EleJet2DR->Write();
+  ////NF_TTZ_EleJet2DR->Write();
+  ////NF_LW300_EleJet2DR->Write();
+  //NF_LW400_EleJet2DR->Write();
+  //NF_LW500_EleJet2DR->Write();
+  NF_dataRunB_JetJet1DR->Write();
+  NF_dataRunC_JetJet1DR->Write();
+  NF_ZLL_JetJet1DR->Write();
+  NF_TT_JetJet1DR->Write();
+  NF_W3J_JetJet1DR->Write();
+  NF_W2J_JetJet1DR->Write();
+  NF_W1J_JetJet1DR->Write();
+  NF_LW200_JetJet1DR->Write();
+  ////NF_WW_JetJet1DR->Write();
+  ////NF_WZ_JetJet1DR->Write();
+  ////NF_TTZ_JetJet1DR->Write();
+  ////NF_LW300_JetJet1DR->Write();
+  //NF_LW400_JetJet1DR->Write();
+  //NF_LW500_JetJet1DR->Write();
+  NF_dataRunB_JetJet2DR->Write();
+  NF_dataRunC_JetJet2DR->Write();
+  NF_ZLL_JetJet2DR->Write();
+  NF_TT_JetJet2DR->Write();
+  NF_W3J_JetJet2DR->Write();
+  NF_W2J_JetJet2DR->Write();
+  NF_W1J_JetJet2DR->Write();
+  NF_LW200_JetJet2DR->Write();
+  ////NF_WW_JetJet2DR->Write();
+  ////NF_WZ_JetJet2DR->Write();
+  ////NF_TTZ_JetJet2DR->Write();
+  ////NF_LW300_JetJet2DR->Write();
+  //NF_LW400_JetJet2DR->Write();
+  //NF_LW500_JetJet2DR->Write();
+  NF_dataRunB_JetJetFDR->Write();
+  NF_dataRunC_JetJetFDR->Write();
+  NF_ZLL_JetJetFDR->Write();
+  NF_TT_JetJetFDR->Write();
+  NF_W3J_JetJetFDR->Write();
+  NF_W2J_JetJetFDR->Write();
+  NF_W1J_JetJetFDR->Write();
+  NF_LW200_JetJetFDR->Write();
+  ////NF_WW_JetJetFDR->Write();
+  ////NF_WZ_JetJetFDR->Write();
+  ////NF_TTZ_JetJetFDR->Write();
+  ////NF_LW300_JetJetFDR->Write();
+  //NF_LW400_JetJetFDR->Write();
+  //NF_LW500_JetJetFDR->Write();
+
+  TF_dataRunB_BSd->Write();
+  TF_dataRunC_BSd->Write();
+  TF_ZLL_BSd->Write();
+  TF_TT_BSd->Write();
+  TF_W3J_BSd->Write();
+  TF_W2J_BSd->Write();
+  TF_W1J_BSd->Write();
+  TF_LW200_BSd->Write();
+  ////TF_WW_BSd->Write();
+  ////TF_WZ_BSd->Write();
+  ////TF_TTZ_BSd->Write();
+  ////TF_LW300_BSd->Write();
+  //TF_LW400_BSd->Write();
+  //TF_LW500_BSd->Write();
+  TF_dataRunB_EleJet1DR->Write();
+  TF_dataRunC_EleJet1DR->Write();
+  TF_ZLL_EleJet1DR->Write();
+  TF_TT_EleJet1DR->Write();
+  TF_W3J_EleJet1DR->Write();
+  TF_W2J_EleJet1DR->Write();
+  TF_W1J_EleJet1DR->Write();
+  TF_LW200_EleJet1DR->Write();
+  ////TF_WW_EleJet1DR->Write();
+  ////TF_WZ_EleJet1DR->Write();
+  ////TF_TTZ_EleJet1DR->Write();
+  ////TF_LW300_EleJet1DR->Write();
+  //TF_LW400_EleJet1DR->Write();
+  //TF_LW500_EleJet1DR->Write();
+  TF_dataRunB_EleJet2DR->Write();
+  TF_dataRunC_EleJet2DR->Write();
+  TF_ZLL_EleJet2DR->Write();
+  TF_TT_EleJet2DR->Write();
+  TF_W3J_EleJet2DR->Write();
+  TF_W2J_EleJet2DR->Write();
+  TF_W1J_EleJet2DR->Write();
+  TF_LW200_EleJet2DR->Write();
+  ////TF_WW_EleJet2DR->Write();
+  ////TF_WZ_EleJet2DR->Write();
+  ////TF_TTZ_EleJet2DR->Write();
+  ////TF_LW300_EleJet2DR->Write();
+  //TF_LW400_EleJet2DR->Write();
+  //TF_LW500_EleJet2DR->Write();
+  TF_dataRunB_JetJet1DR->Write();
+  TF_dataRunC_JetJet1DR->Write();
+  TF_ZLL_JetJet1DR->Write();
+  TF_TT_JetJet1DR->Write();
+  TF_W3J_JetJet1DR->Write();
+  TF_W2J_JetJet1DR->Write();
+  TF_W1J_JetJet1DR->Write();
+  TF_LW200_JetJet1DR->Write();
+  ////TF_WW_JetJet1DR->Write();
+  ////TF_WZ_JetJet1DR->Write();
+  ////TF_TTZ_JetJet1DR->Write();
+  ////TF_LW300_JetJet1DR->Write();
+  //TF_LW400_JetJet1DR->Write();
+  //TF_LW500_JetJet1DR->Write();
+  TF_dataRunB_JetJet2DR->Write();
+  TF_dataRunC_JetJet2DR->Write();
+  TF_ZLL_JetJet2DR->Write();
+  TF_TT_JetJet2DR->Write();
+  TF_W3J_JetJet2DR->Write();
+  TF_W2J_JetJet2DR->Write();
+  TF_W1J_JetJet2DR->Write();
+  TF_LW200_JetJet2DR->Write();
+  ////TF_WW_JetJet2DR->Write();
+  ////TF_WZ_JetJet2DR->Write();
+  ////TF_TTZ_JetJet2DR->Write();
+  ////TF_LW300_JetJet2DR->Write();
+  //TF_LW400_JetJet2DR->Write();
+  //TF_LW500_JetJet2DR->Write();
+  TF_dataRunB_JetJetFDR->Write();
+  TF_dataRunC_JetJetFDR->Write();
+  TF_ZLL_JetJetFDR->Write();
+  TF_TT_JetJetFDR->Write();
+  TF_W3J_JetJetFDR->Write();
+  TF_W2J_JetJetFDR->Write();
+  TF_W1J_JetJetFDR->Write();
+  TF_LW200_JetJetFDR->Write();
+  ////TF_WW_JetJetFDR->Write();
+  ////TF_WZ_JetJetFDR->Write();
+  ////TF_TTZ_JetJetFDR->Write();
+  ////TF_LW300_JetJetFDR->Write();
+  //TF_LW400_JetJetFDR->Write();
+  //TF_LW500_JetJetFDR->Write();
+
+  TO_dataRunB_BSd->Write();
+  TO_dataRunC_BSd->Write();
+  TO_ZLL_BSd->Write();
+  TO_TT_BSd->Write();
+  TO_W3J_BSd->Write();
+  TO_W2J_BSd->Write();
+  TO_W1J_BSd->Write();
+  TO_LW200_BSd->Write();
+  ////TO_WW_BSd->Write();
+  ////TO_WZ_BSd->Write();
+  ////TO_TTZ_BSd->Write();
+  ////TO_LW300_BSd->Write();
+  //TO_LW400_BSd->Write();
+  //TO_LW500_BSd->Write();
+  TO_dataRunB_EleJet1DR->Write();
+  TO_dataRunC_EleJet1DR->Write();
+  TO_ZLL_EleJet1DR->Write();
+  TO_TT_EleJet1DR->Write();
+  TO_W3J_EleJet1DR->Write();
+  TO_W2J_EleJet1DR->Write();
+  TO_W1J_EleJet1DR->Write();
+  TO_LW200_EleJet1DR->Write();
+  ////TO_WW_EleJet1DR->Write();
+  ////TO_WZ_EleJet1DR->Write();
+  ////TO_TTZ_EleJet1DR->Write();
+  ////TO_LW300_EleJet1DR->Write();
+  //TO_LW400_EleJet1DR->Write();
+  //TO_LW500_EleJet1DR->Write();
+  TO_dataRunB_EleJet2DR->Write();
+  TO_dataRunC_EleJet2DR->Write();
+  TO_ZLL_EleJet2DR->Write();
+  TO_TT_EleJet2DR->Write();
+  TO_W3J_EleJet2DR->Write();
+  TO_W2J_EleJet2DR->Write();
+  TO_W1J_EleJet2DR->Write();
+  TO_LW200_EleJet2DR->Write();
+  ////TO_WW_EleJet2DR->Write();
+  ////TO_WZ_EleJet2DR->Write();
+  ////TO_TTZ_EleJet2DR->Write();
+  ////TO_LW300_EleJet2DR->Write();
+  //TO_LW400_EleJet2DR->Write();
+  //TO_LW500_EleJet2DR->Write();
+  TO_dataRunB_JetJet1DR->Write();
+  TO_dataRunC_JetJet1DR->Write();
+  TO_ZLL_JetJet1DR->Write();
+  TO_TT_JetJet1DR->Write();
+  TO_W3J_JetJet1DR->Write();
+  TO_W2J_JetJet1DR->Write();
+  TO_W1J_JetJet1DR->Write();
+  TO_LW200_JetJet1DR->Write();
+  ////TO_WW_JetJet1DR->Write();
+  ////TO_WZ_JetJet1DR->Write();
+  ////TO_TTZ_JetJet1DR->Write();
+  ////TO_LW300_JetJet1DR->Write();
+  //TO_LW400_JetJet1DR->Write();
+  //TO_LW500_JetJet1DR->Write();
+  TO_dataRunB_JetJet2DR->Write();
+  TO_dataRunC_JetJet2DR->Write();
+  TO_ZLL_JetJet2DR->Write();
+  TO_TT_JetJet2DR->Write();
+  TO_W3J_JetJet2DR->Write();
+  TO_W2J_JetJet2DR->Write();
+  TO_W1J_JetJet2DR->Write();
+  TO_LW200_JetJet2DR->Write();
+  ////TO_WW_JetJet2DR->Write();
+  ////TO_WZ_JetJet2DR->Write();
+  ////TO_TTZ_JetJet2DR->Write();
+  ////TO_LW300_JetJet2DR->Write();
+  //TO_LW400_JetJet2DR->Write();
+  //TO_LW500_JetJet2DR->Write();
+  TO_dataRunB_JetJetFDR->Write();
+  TO_dataRunC_JetJetFDR->Write();
+  TO_ZLL_JetJetFDR->Write();
+  TO_TT_JetJetFDR->Write();
+  TO_W3J_JetJetFDR->Write();
+  TO_W2J_JetJetFDR->Write();
+  TO_W1J_JetJetFDR->Write();
+  TO_LW200_JetJetFDR->Write();
+  ////TO_WW_JetJetFDR->Write();
+  ////TO_WZ_JetJetFDR->Write();
+  ////TO_TTZ_JetJetFDR->Write();
+  ////TO_LW300_JetJetFDR->Write();
+  //TO_LW400_JetJetFDR->Write();
+  //TO_LW500_JetJetFDR->Write();
+
+  HQ_dataRunB_BSd->Write();
+  HQ_dataRunC_BSd->Write();
+  HQ_ZLL_BSd->Write();
+  HQ_TT_BSd->Write();
+  HQ_W3J_BSd->Write();
+  HQ_W2J_BSd->Write();
+  HQ_W1J_BSd->Write();
+  HQ_LW200_BSd->Write();
+  ////HQ_WW_BSd->Write();
+  ////HQ_WZ_BSd->Write();
+  ////HQ_TTZ_BSd->Write();
+  ////HQ_LW300_BSd->Write();
+  //HQ_LW400_BSd->Write();
+  //HQ_LW500_BSd->Write();
+  HQ_dataRunB_EleJet1DR->Write();
+  HQ_dataRunC_EleJet1DR->Write();
+  HQ_ZLL_EleJet1DR->Write();
+  HQ_TT_EleJet1DR->Write();
+  HQ_W3J_EleJet1DR->Write();
+  HQ_W2J_EleJet1DR->Write();
+  HQ_W1J_EleJet1DR->Write();
+  HQ_LW200_EleJet1DR->Write();
+  ////HQ_WW_EleJet1DR->Write();
+  ////HQ_WZ_EleJet1DR->Write();
+  ////HQ_TTZ_EleJet1DR->Write();
+  ////HQ_LW300_EleJet1DR->Write();
+  //HQ_LW400_EleJet1DR->Write();
+  //HQ_LW500_EleJet1DR->Write();
+  HQ_dataRunB_EleJet2DR->Write();
+  HQ_dataRunC_EleJet2DR->Write();
+  HQ_ZLL_EleJet2DR->Write();
+  HQ_TT_EleJet2DR->Write();
+  HQ_W3J_EleJet2DR->Write();
+  HQ_W2J_EleJet2DR->Write();
+  HQ_W1J_EleJet2DR->Write();
+  HQ_LW200_EleJet2DR->Write();
+  ////HQ_WW_EleJet2DR->Write();
+  ////HQ_WZ_EleJet2DR->Write();
+  ////HQ_TTZ_EleJet2DR->Write();
+  ////HQ_LW300_EleJet2DR->Write();
+  //HQ_LW400_EleJet2DR->Write();
+  //HQ_LW500_EleJet2DR->Write();
+  HQ_dataRunB_JetJet1DR->Write();
+  HQ_dataRunC_JetJet1DR->Write();
+  HQ_ZLL_JetJet1DR->Write();
+  HQ_TT_JetJet1DR->Write();
+  HQ_W3J_JetJet1DR->Write();
+  HQ_W2J_JetJet1DR->Write();
+  HQ_W1J_JetJet1DR->Write();
+  HQ_LW200_JetJet1DR->Write();
+  ////HQ_WW_JetJet1DR->Write();
+  ////HQ_WZ_JetJet1DR->Write();
+  ////HQ_TTZ_JetJet1DR->Write();
+  ////HQ_LW300_JetJet1DR->Write();
+  //HQ_LW400_JetJet1DR->Write();
+  //HQ_LW500_JetJet1DR->Write();
+  HQ_dataRunB_JetJet2DR->Write();
+  HQ_dataRunC_JetJet2DR->Write();
+  HQ_ZLL_JetJet2DR->Write();
+  HQ_TT_JetJet2DR->Write();
+  HQ_W3J_JetJet2DR->Write();
+  HQ_W2J_JetJet2DR->Write();
+  HQ_W1J_JetJet2DR->Write();
+  HQ_LW200_JetJet2DR->Write();
+  ////HQ_WW_JetJet2DR->Write();
+  ////HQ_WZ_JetJet2DR->Write();
+  ////HQ_TTZ_JetJet2DR->Write();
+  ////HQ_LW300_JetJet2DR->Write();
+  //HQ_LW400_JetJet2DR->Write();
+  //HQ_LW500_JetJet2DR->Write();
+  HQ_dataRunB_JetJetFDR->Write();
+  HQ_dataRunC_JetJetFDR->Write();
+  HQ_ZLL_JetJetFDR->Write();
+  HQ_TT_JetJetFDR->Write();
+  HQ_W3J_JetJetFDR->Write();
+  HQ_W2J_JetJetFDR->Write();
+  HQ_W1J_JetJetFDR->Write();
+  HQ_LW200_JetJetFDR->Write();
+  ////HQ_WW_JetJetFDR->Write();
+  ////HQ_WZ_JetJetFDR->Write();
+  ////HQ_TTZ_JetJetFDR->Write();
+  ////HQ_LW300_JetJetFDR->Write();
+  //HQ_LW400_JetJetFDR->Write();
+  //HQ_LW500_JetJetFDR->Write();
+
+  DRC_dataRunB_BSd->Write();
+  DRC_dataRunC_BSd->Write();
+  DRC_ZLL_BSd->Write();
+  DRC_TT_BSd->Write();
+  DRC_W3J_BSd->Write();
+  DRC_W2J_BSd->Write();
+  DRC_W1J_BSd->Write();
+  DRC_LW200_BSd->Write();
+  ////DRC_WW_BSd->Write();
+  ////DRC_WZ_BSd->Write();
+  ////DRC_TTZ_BSd->Write();
+  ////DRC_LW300_BSd->Write();
+  //DRC_LW400_BSd->Write();
+  //DRC_LW500_BSd->Write();
+  DRC_dataRunB_EleJet1DR->Write();
+  DRC_dataRunC_EleJet1DR->Write();
+  DRC_ZLL_EleJet1DR->Write();
+  DRC_TT_EleJet1DR->Write();
+  DRC_W3J_EleJet1DR->Write();
+  DRC_W2J_EleJet1DR->Write();
+  DRC_W1J_EleJet1DR->Write();
+  DRC_LW200_EleJet1DR->Write();
+  ////DRC_WW_EleJet1DR->Write();
+  ////DRC_WZ_EleJet1DR->Write();
+  ////DRC_TTZ_EleJet1DR->Write();
+  ////DRC_LW300_EleJet1DR->Write();
+  //DRC_LW400_EleJet1DR->Write();
+  //DRC_LW500_EleJet1DR->Write();
+  DRC_dataRunB_EleJet2DR->Write();
+  DRC_dataRunC_EleJet2DR->Write();
+  DRC_ZLL_EleJet2DR->Write();
+  DRC_TT_EleJet2DR->Write();
+  DRC_W3J_EleJet2DR->Write();
+  DRC_W2J_EleJet2DR->Write();
+  DRC_W1J_EleJet2DR->Write();
+  DRC_LW200_EleJet2DR->Write();
+  ////DRC_WW_EleJet2DR->Write();
+  ////DRC_WZ_EleJet2DR->Write();
+  ////DRC_TTZ_EleJet2DR->Write();
+  ////DRC_LW300_EleJet2DR->Write();
+  //DRC_LW400_EleJet2DR->Write();
+  //DRC_LW500_EleJet2DR->Write();
+  DRC_dataRunB_JetJet1DR->Write();
+  DRC_dataRunC_JetJet1DR->Write();
+  DRC_ZLL_JetJet1DR->Write();
+  DRC_TT_JetJet1DR->Write();
+  DRC_W3J_JetJet1DR->Write();
+  DRC_W2J_JetJet1DR->Write();
+  DRC_W1J_JetJet1DR->Write();
+  DRC_LW200_JetJet1DR->Write();
+  ////DRC_WW_JetJet1DR->Write();
+  ////DRC_WZ_JetJet1DR->Write();
+  ////DRC_TTZ_JetJet1DR->Write();
+  ////DRC_LW300_JetJet1DR->Write();
+  //DRC_LW400_JetJet1DR->Write();
+  //DRC_LW500_JetJet1DR->Write();
+  DRC_dataRunB_JetJet2DR->Write();
+  DRC_dataRunC_JetJet2DR->Write();
+  DRC_ZLL_JetJet2DR->Write();
+  DRC_TT_JetJet2DR->Write();
+  DRC_W3J_JetJet2DR->Write();
+  DRC_W2J_JetJet2DR->Write();
+  DRC_W1J_JetJet2DR->Write();
+  DRC_LW200_JetJet2DR->Write();
+  ////DRC_WW_JetJet2DR->Write();
+  ////DRC_WZ_JetJet2DR->Write();
+  ////DRC_TTZ_JetJet2DR->Write();
+  ////DRC_LW300_JetJet2DR->Write();
+  //DRC_LW400_JetJet2DR->Write();
+  //DRC_LW500_JetJet2DR->Write();
+  DRC_dataRunB_JetJetFDR->Write();
+  DRC_dataRunC_JetJetFDR->Write();
+  DRC_ZLL_JetJetFDR->Write();
+  DRC_TT_JetJetFDR->Write();
+  DRC_W3J_JetJetFDR->Write();
+  DRC_W2J_JetJetFDR->Write();
+  DRC_W1J_JetJetFDR->Write();
+  DRC_LW200_JetJetFDR->Write();
+  ////DRC_WW_JetJetFDR->Write();
+  ////DRC_WZ_JetJetFDR->Write();
+  ////DRC_TTZ_JetJetFDR->Write();
+  ////DRC_LW300_JetJetFDR->Write();
+  //DRC_LW400_JetJetFDR->Write();
+  //DRC_LW500_JetJetFDR->Write();
+
+  SG_dataRunB_BSd->Write();
+  SG_dataRunC_BSd->Write();
+  SG_ZLL_BSd->Write();
+  SG_TT_BSd->Write();
+  SG_W3J_BSd->Write();
+  SG_W2J_BSd->Write();
+  SG_W1J_BSd->Write();
+  SG_LW200_BSd->Write();
+  ////SG_WW_BSd->Write();
+  ////SG_WZ_BSd->Write();
+  ////SG_TTZ_BSd->Write();
+  ////SG_LW300_BSd->Write();
+  //SG_LW400_BSd->Write();
+  //SG_LW500_BSd->Write();
+  SG_dataRunB_EleJet1DR->Write();
+  SG_dataRunC_EleJet1DR->Write();
+  SG_ZLL_EleJet1DR->Write();
+  SG_TT_EleJet1DR->Write();
+  SG_W3J_EleJet1DR->Write();
+  SG_W2J_EleJet1DR->Write();
+  SG_W1J_EleJet1DR->Write();
+  SG_LW200_EleJet1DR->Write();
+  ////SG_WW_EleJet1DR->Write();
+  ////SG_WZ_EleJet1DR->Write();
+  ////SG_TTZ_EleJet1DR->Write();
+  ////SG_LW300_EleJet1DR->Write();
+  //SG_LW400_EleJet1DR->Write();
+  //SG_LW500_EleJet1DR->Write();
+  SG_dataRunB_EleJet2DR->Write();
+  SG_dataRunC_EleJet2DR->Write();
+  SG_ZLL_EleJet2DR->Write();
+  SG_TT_EleJet2DR->Write();
+  SG_W3J_EleJet2DR->Write();
+  SG_W2J_EleJet2DR->Write();
+  SG_W1J_EleJet2DR->Write();
+  SG_LW200_EleJet2DR->Write();
+  ////SG_WW_EleJet2DR->Write();
+  ////SG_WZ_EleJet2DR->Write();
+  ////SG_TTZ_EleJet2DR->Write();
+  ////SG_LW300_EleJet2DR->Write();
+  //SG_LW400_EleJet2DR->Write();
+  //SG_LW500_EleJet2DR->Write();
+  SG_dataRunB_JetJet1DR->Write();
+  SG_dataRunC_JetJet1DR->Write();
+  SG_ZLL_JetJet1DR->Write();
+  SG_TT_JetJet1DR->Write();
+  SG_W3J_JetJet1DR->Write();
+  SG_W2J_JetJet1DR->Write();
+  SG_W1J_JetJet1DR->Write();
+  SG_LW200_JetJet1DR->Write();
+  ////SG_WW_JetJet1DR->Write();
+  ////SG_WZ_JetJet1DR->Write();
+  ////SG_TTZ_JetJet1DR->Write();
+  ////SG_LW300_JetJet1DR->Write();
+  //SG_LW400_JetJet1DR->Write();
+  //SG_LW500_JetJet1DR->Write();
+  SG_dataRunB_JetJet2DR->Write();
+  SG_dataRunC_JetJet2DR->Write();
+  SG_ZLL_JetJet2DR->Write();
+  SG_TT_JetJet2DR->Write();
+  SG_W3J_JetJet2DR->Write();
+  SG_W2J_JetJet2DR->Write();
+  SG_W1J_JetJet2DR->Write();
+  SG_LW200_JetJet2DR->Write();
+  ////SG_WW_JetJet2DR->Write();
+  ////SG_WZ_JetJet2DR->Write();
+  ////SG_TTZ_JetJet2DR->Write();
+  ////SG_LW300_JetJet2DR->Write();
+  //SG_LW400_JetJet2DR->Write();
+  //SG_LW500_JetJet2DR->Write();
+  SG_dataRunB_JetJetFDR->Write();
+  SG_dataRunC_JetJetFDR->Write();
+  SG_ZLL_JetJetFDR->Write();
+  SG_TT_JetJetFDR->Write();
+  SG_W3J_JetJetFDR->Write();
+  SG_W2J_JetJetFDR->Write();
+  SG_W1J_JetJetFDR->Write();
+  SG_LW200_JetJetFDR->Write();
+  ////SG_WW_JetJetFDR->Write();
+  ////SG_WZ_JetJetFDR->Write();
+  ////SG_TTZ_JetJetFDR->Write();
+  ////SG_LW300_JetJetFDR->Write();
+  //SG_LW400_JetJetFDR->Write();
+  //SG_LW500_JetJetFDR->Write();
 
   hfile->Close();
 
