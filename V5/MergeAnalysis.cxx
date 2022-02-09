@@ -67,6 +67,7 @@ TH2F* LW200SecVec_XYSignal2;
 TH2F* LW200SecVec_XYSignal3;
 TH2F* LW200SecVec_XYSignal4;
 TH2F* LW200SecVec_XY;
+TH2F* LW200SecVec_XY_P;
 //TH2F* LW200SecVec_XY = new TH2F("LW200SecVec_XY","SecVec XY Distribution",20,-10,10,20,-10,10);
 
 const std::string samplesBasePath = "";
@@ -138,6 +139,9 @@ public :
   vector<float>   *secvec_poserrory;
   vector<float>   *secvec_posz;
   vector<float>   *secvec_poserrorz;
+  vector<float>   *secvec_px;
+  vector<float>   *secvec_py;
+  vector<float>   *secvec_pz;
   vector<float>   *secvec_eta;
   vector<float>   *secvec_phi;
   vector<float>   *secvec_eta1;
@@ -208,6 +212,9 @@ public :
   TBranch        *b_secvec_posx;
   TBranch        *b_secvec_posy;
   TBranch        *b_secvec_posz;
+  TBranch        *b_secvec_px;
+  TBranch        *b_secvec_py;
+  TBranch        *b_secvec_pz;
   TBranch        *b_secvec_phi;
   TBranch        *b_secvec_eta;
   TBranch        *b_secvec_phi1;
@@ -397,6 +404,9 @@ void EventLoopAnalysisTemplate::Init(TTree *tree)
    secvec_posx=0;
    secvec_posy=0;
    secvec_posz=0;
+   secvec_px=0;
+   secvec_py=0;
+   secvec_pz=0;
    secvec_poserrorx=0;
    secvec_poserrory=0;
    secvec_poserrorz=0;
@@ -483,6 +493,9 @@ void EventLoopAnalysisTemplate::Init(TTree *tree)
    fChain->SetBranchAddress("secvec_posx",&secvec_posx,&b_secvec_posx);
    fChain->SetBranchAddress("secvec_posy",&secvec_posy,&b_secvec_posy);
    fChain->SetBranchAddress("secvec_posz",&secvec_posz,&b_secvec_posz);
+   fChain->SetBranchAddress("secvec_px",&secvec_px,&b_secvec_px);
+   fChain->SetBranchAddress("secvec_py",&secvec_py,&b_secvec_py);
+   fChain->SetBranchAddress("secvec_pz",&secvec_pz,&b_secvec_pz);
    fChain->SetBranchAddress("secvec_poserrorx",&secvec_poserrorx,&b_secvec_poserrorx);
    fChain->SetBranchAddress("secvec_poserrory",&secvec_poserrory,&b_secvec_poserrory);
    fChain->SetBranchAddress("secvec_poserrorz",&secvec_poserrorz,&b_secvec_poserrorz);
@@ -569,7 +582,7 @@ void EventLoopAnalysisTemplate::Loop()
       cout<<"number of E Secvec: "<< Esecvec_posx->size() << endl;
     }
     //cout<<"flag\n";
-    if(jentry==6) {
+    if(jentry==17) {
       //cout<<"flag2\n";
       //Float_t Xpos[secvec_phi->size()];
       //Float_t Ypos[secvec_phi->size()];
@@ -595,14 +608,25 @@ void EventLoopAnalysisTemplate::Loop()
       LW200SecVec_XYSignal3 = new TH2F("LW200SecVec_XYSignal3","SecVec XY Signal Distribution3",200,Bx,Tx,200,By,Ty);
       LW200SecVec_XYSignal4 = new TH2F("LW200SecVec_XYSignal4","SecVec XY Signal Distribution4",200,Bx,Tx,200,By,Ty);
       LW200SecVec_XY = new TH2F("LW200SecVec_XY","SecVec XY Distribution",200,Bx,Tx,200,By,Ty);
+      LW200SecVec_XY_P = new TH2F("LW200SecVec_XY_P","SecVec XY Distribution",200,Bx,Tx,200,By,Ty);
 
       //TGraphErrors* myPlot = new TGraphErrors(secvec_posx->size(),secvec_posx,secvec_posy,secvec_poserrorx,secvec_poserrory);
       for(size_t x=0; x<secvec_posx->size(); x++){
-        if(secvec_eleTag->at(x)!=-1){
+        if(secvec_eleTag->at(x)==0){
+          cout<<"secvec eletag "<<secvec_eleTag->at(x)<<endl;
+          float modulo=sqrt(secvec_px->at(x)*secvec_px->at(x)+secvec_py->at(x)*secvec_py->at(x));
+
+
           LW200SecVec_XY->Fill(secvec_posx->at(x),secvec_posy->at(x),100);
+
+          LW200SecVec_XY_P->Fill(secvec_posx->at(x)+0.01*secvec_px->at(x)/modulo,secvec_posy->at(x)+0.01*secvec_py->at(x)/modulo,50);
+
+
+
         }
       }
       LW200SecVec_XY->Fill(Bsp_x->at(0),Bsp_y->at(0),100);
+      LW200SecVec_XY_P->Fill(Bsp_x->at(0),Bsp_y->at(0),100);
       cout<<"Number of electron: "<< electron_pt->size()<<endl;
       //gen secvec impresion
       for(size_t x=0; x<GenPart_vx->size(); x++){
@@ -666,6 +690,7 @@ void EventLoopAnalysisTemplate::Loop()
       LW200SecVec_XYSignal3->Write();
       LW200SecVec_XYSignal4->Write();
       LW200SecVec_XY->Write();
+      LW200SecVec_XY_P->Write();
       XYfile->Close();
 
     }

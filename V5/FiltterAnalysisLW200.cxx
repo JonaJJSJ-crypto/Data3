@@ -167,6 +167,18 @@ TH1F* LW200EleZdauPT = new TH1F("LW200EleZdauPT","Electron Zdau Total momentum;M
 TH1F* LW200EleSZdauPT = new TH1F("LW200EleSZdauPT","Electron Signal Zdau Total momentum;Momentum[GeV];",100,0,400);
 TH1F* LW200EleSZdau_ptdiff = new TH1F("LW200EleSZdau_ptdiff","Electron Signal Zdau Pt diff;Momentum[GeV];",100,0,0.01);
 
+TH1F* LW200EleDijet_Ppoint = new TH1F("LW200EleDijet_Ppoint","Electron dijet total momentum Secondary vertex point;Ppoint[GeV*mm];",100,-100,100);
+TH1F* LW200EleDijet_PpointS = new TH1F("LW200EleDijet_PpointS","Electron dijet total momentum Secondary vertex point sign;Ppoint sign;",100,-2,2);
+TH1F* LW200EleJetInvM_Ppoint = new TH1F("LW200EleJetInvM_Ppoint","Electron Jet total momentum Secondary vertex point;Ppoint[GeV*mm];",100,-100,100);
+TH1F* LW200EleJetInvM_PpointS = new TH1F("LW200EleJetInvM_PpointS","Electron Jet total momentum Secondary vertex point sign;Ppoint sign;",100,-2,2);
+TH1F* LW200SecVec_Ppoint = new TH1F("LW200SecVec_Ppoint","Secondary vertex total momentum Secondary vertex point;Ppoint[GeV*mm];",100,-100,100);
+TH1F* LW200SecVec_PpointS = new TH1F("LW200SecVec_PpointS","Secondary vertex total momentum Secondary vertex point sign;Ppoint sign;",100,-2,2);
+TH1F* LW200GenSecVec_Ppoint = new TH1F("LW200GenSecVec_Ppoint","Gen Secondary vertex total momentum Secondary vertex point;Ppoint[GeV*mm];",100,-100,100);
+TH1F* LW200GenSecVec_PpointS = new TH1F("LW200GenSecVec_PpointS","Gen Secondary vertex total momentum Secondary vertex point sign;Ppoint sign;",100,-2,2);
+
+
+
+
 
 
 const std::string samplesBasePath = "";
@@ -284,6 +296,9 @@ public :
   vector<float>   *secvec_poserrorx;
   vector<float>   *secvec_poserrory;
   vector<float>   *secvec_poserrorz;
+  vector<float>   *secvec_px;
+  vector<float>   *secvec_py;
+  vector<float>   *secvec_pz;
   vector<float>   *secvec_eleTag;
   vector<float>   *secvec_normchi2;
   vector<float>   *Esecvec_posx;
@@ -371,6 +386,9 @@ public :
   TBranch    *b_secvec_posx;
   TBranch    *b_secvec_posy;
   TBranch    *b_secvec_posz;
+  TBranch    *b_secvec_px;
+  TBranch    *b_secvec_py;
+  TBranch    *b_secvec_pz;
   TBranch    *b_secvec_poserrorx;
   TBranch    *b_secvec_poserrory;
   TBranch    *b_secvec_poserrorz;
@@ -568,6 +586,9 @@ void EventLoopAnalysisTemplate::Init(TTree *tree)
    secvec_posx=0;
    secvec_posy=0;
    secvec_posz=0;
+   secvec_px=0;
+   secvec_py=0;
+   secvec_pz=0;
    secvec_poserrorx=0;
    secvec_poserrory=0;
    secvec_poserrorz=0;
@@ -665,6 +686,9 @@ void EventLoopAnalysisTemplate::Init(TTree *tree)
    fChain->SetBranchAddress("secvec_posx",&secvec_posx,&b_secvec_posx);
    fChain->SetBranchAddress("secvec_posy",&secvec_posy,&b_secvec_posy);
    fChain->SetBranchAddress("secvec_posz",&secvec_posz,&b_secvec_posz);
+   fChain->SetBranchAddress("secvec_px",&secvec_px,&b_secvec_px);
+   fChain->SetBranchAddress("secvec_py",&secvec_py,&b_secvec_py);
+   fChain->SetBranchAddress("secvec_pz",&secvec_pz,&b_secvec_pz);
    fChain->SetBranchAddress("secvec_poserrorx",&secvec_poserrorx,&b_secvec_poserrorx);
    fChain->SetBranchAddress("secvec_poserrory",&secvec_poserrory,&b_secvec_poserrory);
    fChain->SetBranchAddress("secvec_poserrorz",&secvec_poserrorz,&b_secvec_poserrorz);
@@ -1515,6 +1539,120 @@ if(gjet_DRscore.size()>1){
         }
       }
     }
+    ///////////////////////////////secvec displacement direction///////////////////
+    float Vx=0,Vy=0,Vz=0;
+    float Px=0,Py=0,Pz=0;
+    float Ppoint=0;
+
+    vector<pair <float,size_t> > EleJetDRTemp;
+    vector<pair <float,size_t> > EleJetInvMass;
+
+    ElePtTemp.clear();
+    JetPtTemp.clear();
+    EleJetDRTemp.clear();
+    EleJetInvMass.clear();
+
+    for (size_t i = 0; i < electron_pt->size(); i++) {ElePtTemp.push_back(make_pair(electron_pt->at(i),i));}
+    sort(ElePtTemp.begin(),ElePtTemp.end());
+
+    if(corr_jet_pt->size()>4 && ElePtTemp.size()>1 && ElePtTemp.back().first>40 && ElePtTemp.end()[-2].first>25){
+      ElePtTemp.clear();
+      JetPtTemp.clear();
+      EleJetDRTemp.clear();
+      EleJetInvMass.clear();
+
+      for(size_t x=0; x<corr_jet_pt->size(); x++ ){JetPtTemp.push_back(make_pair(corr_jet_pt->at(x),x));}
+      sort(JetPtTemp.begin(), JetPtTemp.end());
+
+      for (size_t i = 0; i < electron_pt->size(); i++) {
+        if(i==ElePtTemp.back().second || i==ElePtTemp.end()[-2].second){
+          for(size_t x=0; x<corr_jet_pt->size(); x++){
+            if(x==JetPtTemp.back().second||x==JetPtTemp.end()[-2].second||x==JetPtTemp.end()[-3].second||x==JetPtTemp.end()[-4].second){
+              EleJetDRTemp.push_back(make_pair(deltaR(jet_eta->at(x),jet_phi->at(x),electron_eta->at(i),electron_phi->at(i)), x));
+              float Etemp=electron_e->at(i) + jet_e->at(x);
+              float Pxtemp=electron_px->at(i)+ jet_px->at(x);
+              float Pytemp=electron_py->at(i)+ jet_py->at(x);
+              float Pztemp=electron_pz->at(i)+ jet_pz->at(x);
+              EleJetInvMass.push_back(make_pair(sqrt(Etemp*Etemp-Pxtemp*Pxtemp-Pytemp*Pytemp-Pztemp*Pztemp),x));
+            }
+          }
+          sort(EleJetDRTemp.begin(),EleJetDRTemp.end());
+          sort(EleJetInvMass.begin(),EleJetInvMass.end());
+
+          for(size_t y=0; y<secvec_posx->size(); y++){
+            if (secvec_eleTag->at(y)==i){
+              Vx=secvec_posx->at(y)-PV_x->at(0);
+              Vy=secvec_posy->at(y)-PV_y->at(0);
+              Vz=secvec_posz->at(y)-PV_z->at(0);
+              Px=electron_px->at(i)+jet_px->at(EleJetDRTemp.front().second)+jet_px->at(EleJetDRTemp.at(1).second);
+              Py=electron_py->at(i)+jet_py->at(EleJetDRTemp.front().second)+jet_py->at(EleJetDRTemp.at(1).second);
+              Pz=electron_pz->at(i)+jet_pz->at(EleJetDRTemp.front().second)+jet_pz->at(EleJetDRTemp.at(1).second);
+              Ppoint= Px*Vx+Py*Vy+Pz*Vz;
+
+              LW200EleDijet_Ppoint->Fill(Ppoint);
+              if(Ppoint>0)LW200EleDijet_PpointS->Fill(1);
+              else if(Ppoint<0) LW200EleDijet_PpointS->Fill(-1);
+
+              Vx=secvec_posx->at(y)-PV_x->at(0);
+              Vy=secvec_posy->at(y)-PV_y->at(0);
+              Vz=secvec_posz->at(y)-PV_z->at(0);
+              Px=electron_px->at(i)+jet_px->at(EleJetInvMass.front().second)+jet_px->at(EleJetInvMass.at(1).second);
+              Py=electron_py->at(i)+jet_py->at(EleJetInvMass.front().second)+jet_py->at(EleJetInvMass.at(1).second);
+              Pz=electron_pz->at(i)+jet_pz->at(EleJetInvMass.front().second)+jet_pz->at(EleJetInvMass.at(1).second);
+              Ppoint= Px*Vx+Py*Vy+Pz*Vz;
+
+              LW200EleJetInvM_Ppoint->Fill(Ppoint);
+              if(Ppoint>0)LW200EleJetInvM_PpointS->Fill(1);
+              else if(Ppoint<0) LW200EleJetInvM_PpointS->Fill(-1);
+
+            }
+
+          }
+        }
+
+      }
+    }
+
+
+    ///////////////New Secvecdisplacement///////
+
+    /*for(size_t x=0; x<secvec_posx->size(); x++){
+      if(secvec_eleTag->at(x)!=-1){
+
+        cout<<secvec_px->at(x)<<' '<<secvec_py->at(x)<<' '<<secvec_pz->at(x)<<endl;
+
+        Vx=secvec_posx->at(x)-PV_x->at(0);
+        Vy=secvec_posy->at(x)-PV_y->at(0);
+        Vz=secvec_posz->at(x)-PV_z->at(0);
+        Ppoint= secvec_px->at(x)*Vx+secvec_py->at(x)*Vy+secvec_pz->at(x)*Vz;
+        LW200SecVec_Ppoint->Fill(Ppoint);
+        if(Ppoint>0)LW200SecVec_PpointS->Fill(1);
+        else if(Ppoint<0) LW200SecVec_PpointS->Fill(-1);
+      }
+    }*/
+
+    float pvx,pvy,pvz,ppx,ppy,ppz;
+    for(size_t x=0; x<GenPart_pt->size(); x++){
+      if(GenPart_pdgId->at(x)==556){
+        pvx=GenPart_vx->at(x);
+        ppx=GenPart_px->at(x);
+        pvy=GenPart_vy->at(x);
+        ppy=GenPart_py->at(x);
+        pvz=GenPart_vz->at(x);
+        ppz=GenPart_pz->at(x);
+      }
+    }
+    for(size_t x=0; x<GenPart_pt->size(); x++){
+      if(GenPart_pdgId->at(x)==23 && GenPart_mompdgId->at(x)==556){
+        Vx=GenPart_vx->at(x)-pvx;
+        Vy=GenPart_vy->at(x)-pvy;
+        Vz=GenPart_vz->at(x)-pvz;
+        Ppoint=ppx*Vx+ppy*Vy+ppz*Vz;
+        LW200GenSecVec_Ppoint->Fill(Ppoint);
+        if(Ppoint>0)LW200GenSecVec_PpointS->Fill(1);
+        else if(Ppoint<0) LW200GenSecVec_PpointS->Fill(-1);
+      }
+    }
 
 
 
@@ -1728,6 +1866,15 @@ int main()
   LW200EleZdauPT->Write();
   LW200EleSZdauPT->Write();
   LW200EleSZdau_ptdiff->Write();
+
+  LW200SecVec_Ppoint->Write();
+  LW200SecVec_PpointS->Write();
+  LW200EleDijet_Ppoint->Write();
+  LW200EleDijet_PpointS->Write();
+  LW200EleJetInvM_Ppoint->Write();
+  LW200EleJetInvM_PpointS->Write();
+  LW200GenSecVec_PpointS->Write();
+  LW200GenSecVec_Ppoint->Write();
 
 
   hfile->Close();
