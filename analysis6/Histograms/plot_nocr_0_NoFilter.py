@@ -165,11 +165,14 @@ def main(variable):
 
     #scale_ggH = 10.0
     #ggH.Scale(scale_ggH)
-    if variable == "svd" or variable == "nsv" or variable == "EleJet1DR" or variable == "EleJet2DR" or variable == "JetJet1DR" or variable == "JetJet2DR" or variable == "JetJetFDR":
+    if variable == "svd" or variable == "nsv":
         scale_LW200 = 100.0
         LW200.Scale(scale_LW200)
+    elif variable == "EleJet1DR" or variable == "EleJet2DR" or variable == "JetJet1DR" or variable == "JetJet2DR" or variable == "JetJetFDR":
+        scale_LW200 = 1.0
+        LW200.Scale(scale_LW200)
     else:
-        scale_LW200 = 1000.0
+        scale_LW200 = 10000.0
         LW200.Scale(scale_LW200)
 
     LW200.SetLineWidth(3)
