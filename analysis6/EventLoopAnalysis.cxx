@@ -414,6 +414,174 @@ TH1F* NF_LW200_NEle = new TH1F("NF_LW200_NEle","NF Number of electrons",20,0,20)
 
 //TH1F* NF_LW500_NEle = new TH1F("NF_LW500_NEle","NF Number of electrons",20,0,20);
 
+TH1F* NF_dataRunB_BSd = new TH1F("NF_dataRunB_BSd","NF Beam spot distance",100,0,0.2);
+
+TH1F* NF_dataRunC_BSd  = new TH1F("NF_dataRunC_BSd","NF Beam spot distance",100,0,0.2);
+
+TH1F* NF_ZLL_BSd = new TH1F("NF_ZLL_BSd","NF Beam spot distance",100,0,0.2);
+
+TH1F* NF_TT_BSd = new TH1F("NF_TT_BSd","NF Beam spot distance",100,0,0.2);
+
+TH1F* NF_W3J_BSd = new TH1F("NF_W3J_BSd","NF Beam spot distance",100,0,0.2);
+
+TH1F* NF_W2J_BSd = new TH1F("NF_W2J_BSd","NF Beam spot distance",100,0,0.2);
+
+TH1F* NF_W1J_BSd = new TH1F("NF_W1J_BSd","NF Beam spot distance",100,0,0.2);
+
+//TH1F* NF_TTZ_BSd = new TH1F("NF_TTZ_BSd","NF Beam spot distance",100,0,0.2);
+
+//TH1F* NF_WW_BSd = new TH1F("NF_WW_BSd","NF Beam spot distance",100,0,0.2);
+
+//TH1F* NF_WZ_BSd = new TH1F("NF_WZ_BSd","NF Beam spot distance",100,0,0.2);
+
+TH1F* NF_LW200_BSd = new TH1F("NF_LW200_BSd","NF Beam spot distance",100,0,0.2);
+
+//TH1F* NF_LW300_BSd = new TH1F("NF_LW300_BSd","NF Beam spot distance",100,0,0.2);
+
+//TH1F* NF_LW400_BSd = new TH1F("NF_LW400_BSd","NF Beam spot distance",100,0,0.2);
+
+//TH1F* NF_LW500_BSd = new TH1F("NF_LW500_BSd","NF Beam spot distance",100,0,0.2);
+
+TH1F* NF_dataRunB_EleJet1DR = new TH1F("NF_dataRunB_EleJet1DR","NF Electron first Jet DeltaR distance",100,0,25);
+
+TH1F* NF_dataRunC_EleJet1DR  = new TH1F("NF_dataRunC_EleJet1DR","NF Electron first Jet DeltaR distance",100,0,25);
+
+TH1F* NF_ZLL_EleJet1DR = new TH1F("NF_ZLL_EleJet1DR","NF Electron first Jet DeltaR distance",100,0,25);
+
+TH1F* NF_TT_EleJet1DR = new TH1F("NF_TT_EleJet1DR","NF Electron first Jet DeltaR distance",100,0,25);
+
+TH1F* NF_W3J_EleJet1DR = new TH1F("NF_W3J_EleJet1DR","NF Electron first Jet DeltaR distance",100,0,25);
+
+TH1F* NF_W2J_EleJet1DR = new TH1F("NF_W2J_EleJet1DR","NF Electron first Jet DeltaR distance",100,0,25);
+
+TH1F* NF_W1J_EleJet1DR = new TH1F("NF_W1J_EleJet1DR","NF Electron first Jet DeltaR distance",100,0,25);
+
+//TH1F* NF_TTZ_EleJet1DR = new TH1F("NF_TTZ_EleJet1DR","NF Electron first Jet DeltaR distance",100,0,25);
+
+//TH1F* NF_WW_EleJet1DR = new TH1F("NF_WW_EleJet1DR","NF Electron first Jet DeltaR distance",100,0,25);
+
+//TH1F* NF_WZ_EleJet1DR = new TH1F("NF_WZ_EleJet1DR","NF Electron first Jet DeltaR distance",100,0,25);
+
+TH1F* NF_LW200_EleJet1DR = new TH1F("NF_LW200_EleJet1DR","NF Electron first Jet DeltaR distance",100,0,25);
+
+//TH1F* NF_LW300_EleJet1DR = new TH1F("NF_LW300_EleJet1DR","NF Electron first Jet DeltaR distance",100,0,25);
+
+//TH1F* NF_LW400_EleJet1DR = new TH1F("NF_LW400_EleJet1DR","NF Electron first Jet DeltaR distance",100,0,25);
+
+//TH1F* NF_LW500_EleJet1DR = new TH1F("NF_LW500_EleJet1DR","NF Electron first Jet DeltaR distance",100,0,25);
+
+TH1F* NF_dataRunB_EleJet2DR = new TH1F("NF_dataRunB_EleJet2DR","NF Electron second Jet DeltaR distance",100,0,25);
+
+TH1F* NF_dataRunC_EleJet2DR  = new TH1F("NF_dataRunC_EleJet2DR","NF Electron second Jet DeltaR distance",100,0,25);
+
+TH1F* NF_ZLL_EleJet2DR = new TH1F("NF_ZLL_EleJet2DR","NF Electron second Jet DeltaR distance",100,0,25);
+
+TH1F* NF_TT_EleJet2DR = new TH1F("NF_TT_EleJet2DR","NF Electron second Jet DeltaR distance",100,0,25);
+
+TH1F* NF_W3J_EleJet2DR = new TH1F("NF_W3J_EleJet2DR","NF Electron second Jet DeltaR distance",100,0,25);
+
+TH1F* NF_W2J_EleJet2DR = new TH1F("NF_W2J_EleJet2DR","NF Electron second Jet DeltaR distance",100,0,25);
+
+TH1F* NF_W1J_EleJet2DR = new TH1F("NF_W1J_EleJet2DR","NF Electron second Jet DeltaR distance",100,0,25);
+
+//TH1F* NF_TTZ_EleJet2DR = new TH1F("NF_TTZ_EleJet2DR","NF Electron second Jet DeltaR distance",100,0,25);
+
+//TH1F* NF_WW_EleJet2DR = new TH1F("NF_WW_EleJet2DR","NF Electron second Jet DeltaR distance",100,0,25);
+
+//TH1F* NF_WZ_EleJet2DR = new TH1F("NF_WZ_EleJet2DR","NF Electron second Jet DeltaR distance",100,0,25);
+
+TH1F* NF_LW200_EleJet2DR = new TH1F("NF_LW200_EleJet2DR","NF Electron second Jet DeltaR distance",100,0,25);
+
+//TH1F* NF_LW300_EleJet2DR = new TH1F("NF_LW300_EleJet2DR","NF Electron second Jet DeltaR distance",100,0,25);
+
+//TH1F* NF_LW400_EleJet2DR = new TH1F("NF_LW400_EleJet2DR","NF Electron second Jet DeltaR distance",100,0,25);
+
+//TH1F* NF_LW500_EleJet2DR = new TH1F("NF_LW500_EleJet2DR","NF Electron second Jet DeltaR distance",100,0,25);
+
+TH1F* NF_dataRunB_JetJet1DR = new TH1F("NF_dataRunB_JetJet1DR","NF Jet first Jet DeltaR distance",100,0,25);
+
+TH1F* NF_dataRunC_JetJet1DR  = new TH1F("NF_dataRunC_JetJet1DR","NF Jet first Jet DeltaR distance",100,0,25);
+
+TH1F* NF_ZLL_JetJet1DR = new TH1F("NF_ZLL_JetJet1DR","NF Jet first Jet DeltaR distance",100,0,25);
+
+TH1F* NF_TT_JetJet1DR = new TH1F("NF_TT_JetJet1DR","NF Jet first Jet DeltaR distance",100,0,25);
+
+TH1F* NF_W3J_JetJet1DR = new TH1F("NF_W3J_JetJet1DR","NF Jet first Jet DeltaR distance",100,0,25);
+
+TH1F* NF_W2J_JetJet1DR = new TH1F("NF_W2J_JetJet1DR","NF Jet first Jet DeltaR distance",100,0,25);
+
+TH1F* NF_W1J_JetJet1DR = new TH1F("NF_W1J_JetJet1DR","NF Jet first Jet DeltaR distance",100,0,25);
+
+//TH1F* NF_TTZ_JetJet1DR = new TH1F("NF_TTZ_JetJet1DR","NF Jet first Jet DeltaR distance",100,0,25);
+
+//TH1F* NF_WW_JetJet1DR = new TH1F("NF_WW_JetJet1DR","NF Jet first Jet DeltaR distance",100,0,25);
+
+//TH1F* NF_WZ_JetJet1DR = new TH1F("NF_WZ_JetJet1DR","NF Jet first Jet DeltaR distance",100,0,25);
+
+TH1F* NF_LW200_JetJet1DR = new TH1F("NF_LW200_JetJet1DR","NF Jet first Jet DeltaR distance",100,0,25);
+
+//TH1F* NF_LW300_JetJet1DR = new TH1F("NF_LW300_JetJet1DR","NF Jet first Jet DeltaR distance",100,0,25);
+
+//TH1F* NF_LW400_JetJet1DR = new TH1F("NF_LW400_JetJet1DR","NF Jet first Jet DeltaR distance",100,0,25);
+
+//TH1F* NF_LW500_JetJet1DR = new TH1F("NF_LW500_JetJet1DR","NF Jet first Jet DeltaR distance",100,0,25);
+
+TH1F* NF_dataRunB_JetJet2DR = new TH1F("NF_dataRunB_JetJet2DR","NF Jet second closest Jet DeltaR distance",100,0,25);
+
+TH1F* NF_dataRunC_JetJet2DR  = new TH1F("NF_dataRunC_JetJet2DR","NF Jet second closest Jet DeltaR distance",100,0,25);
+
+TH1F* NF_ZLL_JetJet2DR = new TH1F("NF_ZLL_JetJet2DR","NF Jet second closest Jet DeltaR distance",100,0,25);
+
+TH1F* NF_TT_JetJet2DR = new TH1F("NF_TT_JetJet2DR","NF Jet second closest Jet DeltaR distance",100,0,25);
+
+TH1F* NF_W3J_JetJet2DR = new TH1F("NF_W3J_JetJet2DR","NF Jet second closest Jet DeltaR distance",100,0,25);
+
+TH1F* NF_W2J_JetJet2DR = new TH1F("NF_W2J_JetJet2DR","NF Jet second closest Jet DeltaR distance",100,0,25);
+
+TH1F* NF_W1J_JetJet2DR = new TH1F("NF_W1J_JetJet2DR","NF Jet second closest Jet DeltaR distance",100,0,25);
+
+//TH1F* NF_TTZ_JetJet2DR = new TH1F("NF_TTZ_JetJet2DR","NF Jet second closest Jet DeltaR distance",100,0,25);
+
+//TH1F* NF_WW_JetJet2DR = new TH1F("NF_WW_JetJet2DR","NF Jet second closest Jet DeltaR distance",100,0,25);
+
+//TH1F* NF_WZ_JetJet2DR = new TH1F("NF_WZ_JetJet2DR","NF Jet second closest Jet DeltaR distance",100,0,25);
+
+TH1F* NF_LW200_JetJet2DR = new TH1F("NF_LW200_JetJet2DR","NF Jet second closest Jet DeltaR distance",100,0,25);
+
+//TH1F* NF_LW300_JetJet2DR = new TH1F("NF_LW300_JetJet2DR","NF Jet second closest Jet DeltaR distance",100,0,25);
+
+//TH1F* NF_LW400_JetJet2DR = new TH1F("NF_LW400_JetJet2DR","NF Jet second closest Jet DeltaR distance",100,0,25);
+
+//TH1F* NF_LW500_JetJet2DR = new TH1F("NF_LW500_JetJet2DR","NF Jet second closest Jet DeltaR distance",100,0,25);
+
+TH1F* NF_dataRunB_JetJetFDR = new TH1F("NF_dataRunB_JetJetFDR","NF Jet further Jet DeltaR distance",100,0,25);
+
+TH1F* NF_dataRunC_JetJetFDR  = new TH1F("NF_dataRunC_JetJetFDR","NF Jet further Jet DeltaR distance",100,0,25);
+
+TH1F* NF_ZLL_JetJetFDR = new TH1F("NF_ZLL_JetJetFDR","NF Jet further Jet DeltaR distance",100,0,25);
+
+TH1F* NF_TT_JetJetFDR = new TH1F("NF_TT_JetJetFDR","NF Jet further Jet DeltaR distance",100,0,25);
+
+TH1F* NF_W3J_JetJetFDR = new TH1F("NF_W3J_JetJetFDR","NF Jet further Jet DeltaR distance",100,0,25);
+
+TH1F* NF_W2J_JetJetFDR = new TH1F("NF_W2J_JetJetFDR","NF Jet further Jet DeltaR distance",100,0,25);
+
+TH1F* NF_W1J_JetJetFDR = new TH1F("NF_W1J_JetJetFDR","NF Jet further Jet DeltaR distance",100,0,25);
+
+//TH1F* NF_TTZ_JetJetFDR = new TH1F("NF_TTZ_JetJetFDR","NF Jet further Jet DeltaR distance",100,0,25);
+
+//TH1F* NF_WW_JetJetFDR = new TH1F("NF_WW_JetJetFDR","NF Jet further Jet DeltaR distance",100,0,25);
+
+//TH1F* NF_WZ_JetJetFDR = new TH1F("NF_WZ_JetJetFDR","NF Jet further Jet DeltaR distance",100,0,25);
+
+TH1F* NF_LW200_JetJetFDR = new TH1F("NF_LW200_JetJetFDR","NF Jet further Jet DeltaR distance",100,0,25);
+
+//TH1F* NF_LW300_JetJetFDR = new TH1F("NF_LW300_JetJetFDR","NF Jet further Jet DeltaR distance",100,0,25);
+
+//TH1F* NF_LW400_JetJetFDR = new TH1F("NF_LW400_JetJetFDR","NF Jet further Jet DeltaR distance",100,0,25);
+
+//TH1F* NF_LW500_JetJetFDR = new TH1F("NF_LW500_JetJetFDR","NF Jet further Jet DeltaR distance",100,0,25);
+
 //////////////////////////////////////Trigg filter
 TH1F* TF_dataRunB_npv = new TH1F("TF_dataRunB_npv","TF Number of primary vertices",25,5,30);
 
@@ -1510,33 +1678,33 @@ TH1F* HQ_LW200_NEle = new TH1F("HQ_LW200_NEle","HQ Number of electrons",20,0,20)
 
 //TH1F* HQ_LW500_NEle = new TH1F("HQ_LW500_NEle","HQ Number of electrons",20,0,20);
 
-TH1F* HQ_dataRunB_BSd = new TH1F("HQ_dataRunB_BSd","HQ Beam spot distance",20,0,0.2);
+TH1F* HQ_dataRunB_BSd = new TH1F("HQ_dataRunB_BSd","HQ Beam spot distance",100,0,0.2);
 
-TH1F* HQ_dataRunC_BSd  = new TH1F("HQ_dataRunC_BSd","HQ Beam spot distance",20,0,0.2);
+TH1F* HQ_dataRunC_BSd  = new TH1F("HQ_dataRunC_BSd","HQ Beam spot distance",100,0,0.2);
 
-TH1F* HQ_ZLL_BSd = new TH1F("HQ_ZLL_BSd","HQ Beam spot distance",20,0,0.2);
+TH1F* HQ_ZLL_BSd = new TH1F("HQ_ZLL_BSd","HQ Beam spot distance",100,0,0.2);
 
-TH1F* HQ_TT_BSd = new TH1F("HQ_TT_BSd","HQ Beam spot distance",20,0,0.2);
+TH1F* HQ_TT_BSd = new TH1F("HQ_TT_BSd","HQ Beam spot distance",100,0,0.2);
 
-TH1F* HQ_W3J_BSd = new TH1F("HQ_W3J_BSd","HQ Beam spot distance",20,0,0.2);
+TH1F* HQ_W3J_BSd = new TH1F("HQ_W3J_BSd","HQ Beam spot distance",100,0,0.2);
 
-TH1F* HQ_W2J_BSd = new TH1F("HQ_W2J_BSd","HQ Beam spot distance",20,0,0.2);
+TH1F* HQ_W2J_BSd = new TH1F("HQ_W2J_BSd","HQ Beam spot distance",100,0,0.2);
 
-TH1F* HQ_W1J_BSd = new TH1F("HQ_W1J_BSd","HQ Beam spot distance",20,0,0.2);
+TH1F* HQ_W1J_BSd = new TH1F("HQ_W1J_BSd","HQ Beam spot distance",100,0,0.2);
 
-//TH1F* HQ_TTZ_BSd = new TH1F("HQ_TTZ_BSd","HQ Beam spot distance",20,0,0.2);
+//TH1F* HQ_TTZ_BSd = new TH1F("HQ_TTZ_BSd","HQ Beam spot distance",100,0,0.2);
 
-//TH1F* HQ_WW_BSd = new TH1F("HQ_WW_BSd","HQ Beam spot distance",20,0,0.2);
+//TH1F* HQ_WW_BSd = new TH1F("HQ_WW_BSd","HQ Beam spot distance",100,0,0.2);
 
-//TH1F* HQ_WZ_BSd = new TH1F("HQ_WZ_BSd","HQ Beam spot distance",20,0,0.2);
+//TH1F* HQ_WZ_BSd = new TH1F("HQ_WZ_BSd","HQ Beam spot distance",100,0,0.2);
 
-TH1F* HQ_LW200_BSd = new TH1F("HQ_LW200_BSd","HQ Beam spot distance",20,0,0.2);
+TH1F* HQ_LW200_BSd = new TH1F("HQ_LW200_BSd","HQ Beam spot distance",100,0,0.2);
 
-//TH1F* HQ_LW300_BSd = new TH1F("HQ_LW300_BSd","HQ Beam spot distance",20,0,0.2);
+//TH1F* HQ_LW300_BSd = new TH1F("HQ_LW300_BSd","HQ Beam spot distance",100,0,0.2);
 
-//TH1F* HQ_LW400_BSd = new TH1F("HQ_LW400_BSd","HQ Beam spot distance",20,0,0.2);
+//TH1F* HQ_LW400_BSd = new TH1F("HQ_LW400_BSd","HQ Beam spot distance",100,0,0.2);
 
-//TH1F* HQ_LW500_BSd = new TH1F("HQ_LW500_BSd","HQ Beam spot distance",20,0,0.2);
+//TH1F* HQ_LW500_BSd = new TH1F("HQ_LW500_BSd","HQ Beam spot distance",100,0,0.2);
 
 TH1F* HQ_dataRunB_EleJet1DR = new TH1F("HQ_dataRunB_EleJet1DR","HQ Electron first Jet DeltaR distance",100,0,25);
 
@@ -2408,33 +2576,33 @@ TH1F* DRC_LW200_NEle = new TH1F("DRC_LW200_NEle","DRC Number of electrons",20,0,
 
 //TH1F* DRC_LW500_NEle = new TH1F("DRC_LW500_NEle","DRC Number of electrons",20,0,20);
 
-TH1F* DRC_dataRunB_BSd = new TH1F("DRC_dataRunB_BSd","DRC Beam spot distance",20,0,0.2);
+TH1F* DRC_dataRunB_BSd = new TH1F("DRC_dataRunB_BSd","DRC Beam spot distance",100,0,0.2);
 
-TH1F* DRC_dataRunC_BSd  = new TH1F("DRC_dataRunC_BSd","DRC Beam spot distance",20,0,0.2);
+TH1F* DRC_dataRunC_BSd  = new TH1F("DRC_dataRunC_BSd","DRC Beam spot distance",100,0,0.2);
 
-TH1F* DRC_ZLL_BSd = new TH1F("DRC_ZLL_BSd","DRC Beam spot distance",20,0,0.2);
+TH1F* DRC_ZLL_BSd = new TH1F("DRC_ZLL_BSd","DRC Beam spot distance",100,0,0.2);
 
-TH1F* DRC_TT_BSd = new TH1F("DRC_TT_BSd","DRC Beam spot distance",20,0,0.2);
+TH1F* DRC_TT_BSd = new TH1F("DRC_TT_BSd","DRC Beam spot distance",100,0,0.2);
 
-TH1F* DRC_W3J_BSd = new TH1F("DRC_W3J_BSd","DRC Beam spot distance",20,0,0.2);
+TH1F* DRC_W3J_BSd = new TH1F("DRC_W3J_BSd","DRC Beam spot distance",100,0,0.2);
 
-TH1F* DRC_W2J_BSd = new TH1F("DRC_W2J_BSd","DRC Beam spot distance",20,0,0.2);
+TH1F* DRC_W2J_BSd = new TH1F("DRC_W2J_BSd","DRC Beam spot distance",100,0,0.2);
 
-TH1F* DRC_W1J_BSd = new TH1F("DRC_W1J_BSd","DRC Beam spot distance",20,0,0.2);
+TH1F* DRC_W1J_BSd = new TH1F("DRC_W1J_BSd","DRC Beam spot distance",100,0,0.2);
 
-//TH1F* DRC_TTZ_BSd = new TH1F("DRC_TTZ_BSd","DRC Beam spot distance",20,0,0.2);
+//TH1F* DRC_TTZ_BSd = new TH1F("DRC_TTZ_BSd","DRC Beam spot distance",100,0,0.2);
 
-//TH1F* DRC_WW_BSd = new TH1F("DRC_WW_BSd","DRC Beam spot distance",20,0,0.2);
+//TH1F* DRC_WW_BSd = new TH1F("DRC_WW_BSd","DRC Beam spot distance",100,0,0.2);
 
-//TH1F* DRC_WZ_BSd = new TH1F("DRC_WZ_BSd","DRC Beam spot distance",20,0,0.2);
+//TH1F* DRC_WZ_BSd = new TH1F("DRC_WZ_BSd","DRC Beam spot distance",100,0,0.2);
 
-TH1F* DRC_LW200_BSd = new TH1F("DRC_LW200_BSd","DRC Beam spot distance",20,0,0.2);
+TH1F* DRC_LW200_BSd = new TH1F("DRC_LW200_BSd","DRC Beam spot distance",100,0,0.2);
 
-//TH1F* DRC_LW300_BSd = new TH1F("DRC_LW300_BSd","DRC Beam spot distance",20,0,0.2);
+//TH1F* DRC_LW300_BSd = new TH1F("DRC_LW300_BSd","DRC Beam spot distance",100,0,0.2);
 
-//TH1F* DRC_LW400_BSd = new TH1F("DRC_LW400_BSd","DRC Beam spot distance",20,0,0.2);
+//TH1F* DRC_LW400_BSd = new TH1F("DRC_LW400_BSd","DRC Beam spot distance",100,0,0.2);
 
-//TH1F* DRC_LW500_BSd = new TH1F("DRC_LW500_BSd","DRC Beam spot distance",20,0,0.2);
+//TH1F* DRC_LW500_BSd = new TH1F("DRC_LW500_BSd","DRC Beam spot distance",100,0,0.2);
 
 TH1F* DRC_dataRunB_EleJet1DR = new TH1F("DRC_dataRunB_EleJet1DR","DRC Electron first Jet DeltaR distance",100,0,25);
 
@@ -2576,202 +2744,36 @@ TH1F* DRC_LW200_JetJetFDR = new TH1F("DRC_LW200_JetJetFDR","DRC Jet further Jet 
 
 //TH1F* DRC_LW500_JetJetFDR = new TH1F("DRC_LW500_JetJetFDR","DRC Jet further Jet DeltaR distance",100,0,25);
 
-TH1F* NF_dataRunB_BSd = new TH1F("NF_dataRunB_BSd","NF Beam spot distance",20,0,0.2);
 
-TH1F* NF_dataRunC_BSd  = new TH1F("NF_dataRunC_BSd","NF Beam spot distance",20,0,0.2);
 
-TH1F* NF_ZLL_BSd = new TH1F("NF_ZLL_BSd","NF Beam spot distance",20,0,0.2);
 
-TH1F* NF_TT_BSd = new TH1F("NF_TT_BSd","NF Beam spot distance",20,0,0.2);
+TH1F* TF_dataRunB_BSd = new TH1F("TF_dataRunB_BSd","TF Beam spot distance",100,0,0.2);
 
-TH1F* NF_W3J_BSd = new TH1F("NF_W3J_BSd","NF Beam spot distance",20,0,0.2);
+TH1F* TF_dataRunC_BSd  = new TH1F("TF_dataRunC_BSd","TF Beam spot distance",100,0,0.2);
 
-TH1F* NF_W2J_BSd = new TH1F("NF_W2J_BSd","NF Beam spot distance",20,0,0.2);
+TH1F* TF_ZLL_BSd = new TH1F("TF_ZLL_BSd","TF Beam spot distance",100,0,0.2);
 
-TH1F* NF_W1J_BSd = new TH1F("NF_W1J_BSd","NF Beam spot distance",20,0,0.2);
+TH1F* TF_TT_BSd = new TH1F("TF_TT_BSd","TF Beam spot distance",100,0,0.2);
 
-//TH1F* NF_TTZ_BSd = new TH1F("NF_TTZ_BSd","NF Beam spot distance",20,0,0.2);
+TH1F* TF_W3J_BSd = new TH1F("TF_W3J_BSd","TF Beam spot distance",100,0,0.2);
 
-//TH1F* NF_WW_BSd = new TH1F("NF_WW_BSd","NF Beam spot distance",20,0,0.2);
+TH1F* TF_W2J_BSd = new TH1F("TF_W2J_BSd","TF Beam spot distance",100,0,0.2);
 
-//TH1F* NF_WZ_BSd = new TH1F("NF_WZ_BSd","NF Beam spot distance",20,0,0.2);
+TH1F* TF_W1J_BSd = new TH1F("TF_W1J_BSd","TF Beam spot distance",100,0,0.2);
 
-TH1F* NF_LW200_BSd = new TH1F("NF_LW200_BSd","NF Beam spot distance",20,0,0.2);
+//TH1F* TF_TTZ_BSd = new TH1F("TF_TTZ_BSd","TF Beam spot distance",100,0,0.2);
 
-//TH1F* NF_LW300_BSd = new TH1F("NF_LW300_BSd","NF Beam spot distance",20,0,0.2);
+//TH1F* TF_WW_BSd = new TH1F("TF_WW_BSd","TF Beam spot distance",100,0,0.2);
 
-//TH1F* NF_LW400_BSd = new TH1F("NF_LW400_BSd","NF Beam spot distance",20,0,0.2);
+//TH1F* TF_WZ_BSd = new TH1F("TF_WZ_BSd","TF Beam spot distance",100,0,0.2);
 
-//TH1F* NF_LW500_BSd = new TH1F("NF_LW500_BSd","NF Beam spot distance",20,0,0.2);
+TH1F* TF_LW200_BSd = new TH1F("TF_LW200_BSd","TF Beam spot distance",100,0,0.2);
 
-TH1F* NF_dataRunB_EleJet1DR = new TH1F("NF_dataRunB_EleJet1DR","NF Electron first Jet DeltaR distance",100,0,25);
+//TH1F* TF_LW300_BSd = new TH1F("TF_LW300_BSd","TF Beam spot distance",100,0,0.2);
 
-TH1F* NF_dataRunC_EleJet1DR  = new TH1F("NF_dataRunC_EleJet1DR","NF Electron first Jet DeltaR distance",100,0,25);
+//TH1F* TF_LW400_BSd = new TH1F("TF_LW400_BSd","TF Beam spot distance",100,0,0.2);
 
-TH1F* NF_ZLL_EleJet1DR = new TH1F("NF_ZLL_EleJet1DR","NF Electron first Jet DeltaR distance",100,0,25);
-
-TH1F* NF_TT_EleJet1DR = new TH1F("NF_TT_EleJet1DR","NF Electron first Jet DeltaR distance",100,0,25);
-
-TH1F* NF_W3J_EleJet1DR = new TH1F("NF_W3J_EleJet1DR","NF Electron first Jet DeltaR distance",100,0,25);
-
-TH1F* NF_W2J_EleJet1DR = new TH1F("NF_W2J_EleJet1DR","NF Electron first Jet DeltaR distance",100,0,25);
-
-TH1F* NF_W1J_EleJet1DR = new TH1F("NF_W1J_EleJet1DR","NF Electron first Jet DeltaR distance",100,0,25);
-
-//TH1F* NF_TTZ_EleJet1DR = new TH1F("NF_TTZ_EleJet1DR","NF Electron first Jet DeltaR distance",100,0,25);
-
-//TH1F* NF_WW_EleJet1DR = new TH1F("NF_WW_EleJet1DR","NF Electron first Jet DeltaR distance",100,0,25);
-
-//TH1F* NF_WZ_EleJet1DR = new TH1F("NF_WZ_EleJet1DR","NF Electron first Jet DeltaR distance",100,0,25);
-
-TH1F* NF_LW200_EleJet1DR = new TH1F("NF_LW200_EleJet1DR","NF Electron first Jet DeltaR distance",100,0,25);
-
-//TH1F* NF_LW300_EleJet1DR = new TH1F("NF_LW300_EleJet1DR","NF Electron first Jet DeltaR distance",100,0,25);
-
-//TH1F* NF_LW400_EleJet1DR = new TH1F("NF_LW400_EleJet1DR","NF Electron first Jet DeltaR distance",100,0,25);
-
-//TH1F* NF_LW500_EleJet1DR = new TH1F("NF_LW500_EleJet1DR","NF Electron first Jet DeltaR distance",100,0,25);
-
-TH1F* NF_dataRunB_EleJet2DR = new TH1F("NF_dataRunB_EleJet2DR","NF Electron second Jet DeltaR distance",100,0,25);
-
-TH1F* NF_dataRunC_EleJet2DR  = new TH1F("NF_dataRunC_EleJet2DR","NF Electron second Jet DeltaR distance",100,0,25);
-
-TH1F* NF_ZLL_EleJet2DR = new TH1F("NF_ZLL_EleJet2DR","NF Electron second Jet DeltaR distance",100,0,25);
-
-TH1F* NF_TT_EleJet2DR = new TH1F("NF_TT_EleJet2DR","NF Electron second Jet DeltaR distance",100,0,25);
-
-TH1F* NF_W3J_EleJet2DR = new TH1F("NF_W3J_EleJet2DR","NF Electron second Jet DeltaR distance",100,0,25);
-
-TH1F* NF_W2J_EleJet2DR = new TH1F("NF_W2J_EleJet2DR","NF Electron second Jet DeltaR distance",100,0,25);
-
-TH1F* NF_W1J_EleJet2DR = new TH1F("NF_W1J_EleJet2DR","NF Electron second Jet DeltaR distance",100,0,25);
-
-//TH1F* NF_TTZ_EleJet2DR = new TH1F("NF_TTZ_EleJet2DR","NF Electron second Jet DeltaR distance",100,0,25);
-
-//TH1F* NF_WW_EleJet2DR = new TH1F("NF_WW_EleJet2DR","NF Electron second Jet DeltaR distance",100,0,25);
-
-//TH1F* NF_WZ_EleJet2DR = new TH1F("NF_WZ_EleJet2DR","NF Electron second Jet DeltaR distance",100,0,25);
-
-TH1F* NF_LW200_EleJet2DR = new TH1F("NF_LW200_EleJet2DR","NF Electron second Jet DeltaR distance",100,0,25);
-
-//TH1F* NF_LW300_EleJet2DR = new TH1F("NF_LW300_EleJet2DR","NF Electron second Jet DeltaR distance",100,0,25);
-
-//TH1F* NF_LW400_EleJet2DR = new TH1F("NF_LW400_EleJet2DR","NF Electron second Jet DeltaR distance",100,0,25);
-
-//TH1F* NF_LW500_EleJet2DR = new TH1F("NF_LW500_EleJet2DR","NF Electron second Jet DeltaR distance",100,0,25);
-
-TH1F* NF_dataRunB_JetJet1DR = new TH1F("NF_dataRunB_JetJet1DR","NF Jet first Jet DeltaR distance",100,0,25);
-
-TH1F* NF_dataRunC_JetJet1DR  = new TH1F("NF_dataRunC_JetJet1DR","NF Jet first Jet DeltaR distance",100,0,25);
-
-TH1F* NF_ZLL_JetJet1DR = new TH1F("NF_ZLL_JetJet1DR","NF Jet first Jet DeltaR distance",100,0,25);
-
-TH1F* NF_TT_JetJet1DR = new TH1F("NF_TT_JetJet1DR","NF Jet first Jet DeltaR distance",100,0,25);
-
-TH1F* NF_W3J_JetJet1DR = new TH1F("NF_W3J_JetJet1DR","NF Jet first Jet DeltaR distance",100,0,25);
-
-TH1F* NF_W2J_JetJet1DR = new TH1F("NF_W2J_JetJet1DR","NF Jet first Jet DeltaR distance",100,0,25);
-
-TH1F* NF_W1J_JetJet1DR = new TH1F("NF_W1J_JetJet1DR","NF Jet first Jet DeltaR distance",100,0,25);
-
-//TH1F* NF_TTZ_JetJet1DR = new TH1F("NF_TTZ_JetJet1DR","NF Jet first Jet DeltaR distance",100,0,25);
-
-//TH1F* NF_WW_JetJet1DR = new TH1F("NF_WW_JetJet1DR","NF Jet first Jet DeltaR distance",100,0,25);
-
-//TH1F* NF_WZ_JetJet1DR = new TH1F("NF_WZ_JetJet1DR","NF Jet first Jet DeltaR distance",100,0,25);
-
-TH1F* NF_LW200_JetJet1DR = new TH1F("NF_LW200_JetJet1DR","NF Jet first Jet DeltaR distance",100,0,25);
-
-//TH1F* NF_LW300_JetJet1DR = new TH1F("NF_LW300_JetJet1DR","NF Jet first Jet DeltaR distance",100,0,25);
-
-//TH1F* NF_LW400_JetJet1DR = new TH1F("NF_LW400_JetJet1DR","NF Jet first Jet DeltaR distance",100,0,25);
-
-//TH1F* NF_LW500_JetJet1DR = new TH1F("NF_LW500_JetJet1DR","NF Jet first Jet DeltaR distance",100,0,25);
-
-TH1F* NF_dataRunB_JetJet2DR = new TH1F("NF_dataRunB_JetJet2DR","NF Jet second closest Jet DeltaR distance",100,0,25);
-
-TH1F* NF_dataRunC_JetJet2DR  = new TH1F("NF_dataRunC_JetJet2DR","NF Jet second closest Jet DeltaR distance",100,0,25);
-
-TH1F* NF_ZLL_JetJet2DR = new TH1F("NF_ZLL_JetJet2DR","NF Jet second closest Jet DeltaR distance",100,0,25);
-
-TH1F* NF_TT_JetJet2DR = new TH1F("NF_TT_JetJet2DR","NF Jet second closest Jet DeltaR distance",100,0,25);
-
-TH1F* NF_W3J_JetJet2DR = new TH1F("NF_W3J_JetJet2DR","NF Jet second closest Jet DeltaR distance",100,0,25);
-
-TH1F* NF_W2J_JetJet2DR = new TH1F("NF_W2J_JetJet2DR","NF Jet second closest Jet DeltaR distance",100,0,25);
-
-TH1F* NF_W1J_JetJet2DR = new TH1F("NF_W1J_JetJet2DR","NF Jet second closest Jet DeltaR distance",100,0,25);
-
-//TH1F* NF_TTZ_JetJet2DR = new TH1F("NF_TTZ_JetJet2DR","NF Jet second closest Jet DeltaR distance",100,0,25);
-
-//TH1F* NF_WW_JetJet2DR = new TH1F("NF_WW_JetJet2DR","NF Jet second closest Jet DeltaR distance",100,0,25);
-
-//TH1F* NF_WZ_JetJet2DR = new TH1F("NF_WZ_JetJet2DR","NF Jet second closest Jet DeltaR distance",100,0,25);
-
-TH1F* NF_LW200_JetJet2DR = new TH1F("NF_LW200_JetJet2DR","NF Jet second closest Jet DeltaR distance",100,0,25);
-
-//TH1F* NF_LW300_JetJet2DR = new TH1F("NF_LW300_JetJet2DR","NF Jet second closest Jet DeltaR distance",100,0,25);
-
-//TH1F* NF_LW400_JetJet2DR = new TH1F("NF_LW400_JetJet2DR","NF Jet second closest Jet DeltaR distance",100,0,25);
-
-//TH1F* NF_LW500_JetJet2DR = new TH1F("NF_LW500_JetJet2DR","NF Jet second closest Jet DeltaR distance",100,0,25);
-
-TH1F* NF_dataRunB_JetJetFDR = new TH1F("NF_dataRunB_JetJetFDR","NF Jet further Jet DeltaR distance",100,0,25);
-
-TH1F* NF_dataRunC_JetJetFDR  = new TH1F("NF_dataRunC_JetJetFDR","NF Jet further Jet DeltaR distance",100,0,25);
-
-TH1F* NF_ZLL_JetJetFDR = new TH1F("NF_ZLL_JetJetFDR","NF Jet further Jet DeltaR distance",100,0,25);
-
-TH1F* NF_TT_JetJetFDR = new TH1F("NF_TT_JetJetFDR","NF Jet further Jet DeltaR distance",100,0,25);
-
-TH1F* NF_W3J_JetJetFDR = new TH1F("NF_W3J_JetJetFDR","NF Jet further Jet DeltaR distance",100,0,25);
-
-TH1F* NF_W2J_JetJetFDR = new TH1F("NF_W2J_JetJetFDR","NF Jet further Jet DeltaR distance",100,0,25);
-
-TH1F* NF_W1J_JetJetFDR = new TH1F("NF_W1J_JetJetFDR","NF Jet further Jet DeltaR distance",100,0,25);
-
-//TH1F* NF_TTZ_JetJetFDR = new TH1F("NF_TTZ_JetJetFDR","NF Jet further Jet DeltaR distance",100,0,25);
-
-//TH1F* NF_WW_JetJetFDR = new TH1F("NF_WW_JetJetFDR","NF Jet further Jet DeltaR distance",100,0,25);
-
-//TH1F* NF_WZ_JetJetFDR = new TH1F("NF_WZ_JetJetFDR","NF Jet further Jet DeltaR distance",100,0,25);
-
-TH1F* NF_LW200_JetJetFDR = new TH1F("NF_LW200_JetJetFDR","NF Jet further Jet DeltaR distance",100,0,25);
-
-//TH1F* NF_LW300_JetJetFDR = new TH1F("NF_LW300_JetJetFDR","NF Jet further Jet DeltaR distance",100,0,25);
-
-//TH1F* NF_LW400_JetJetFDR = new TH1F("NF_LW400_JetJetFDR","NF Jet further Jet DeltaR distance",100,0,25);
-
-//TH1F* NF_LW500_JetJetFDR = new TH1F("NF_LW500_JetJetFDR","NF Jet further Jet DeltaR distance",100,0,25);
-
-
-TH1F* TF_dataRunB_BSd = new TH1F("TF_dataRunB_BSd","TF Beam spot distance",20,0,0.2);
-
-TH1F* TF_dataRunC_BSd  = new TH1F("TF_dataRunC_BSd","TF Beam spot distance",20,0,0.2);
-
-TH1F* TF_ZLL_BSd = new TH1F("TF_ZLL_BSd","TF Beam spot distance",20,0,0.2);
-
-TH1F* TF_TT_BSd = new TH1F("TF_TT_BSd","TF Beam spot distance",20,0,0.2);
-
-TH1F* TF_W3J_BSd = new TH1F("TF_W3J_BSd","TF Beam spot distance",20,0,0.2);
-
-TH1F* TF_W2J_BSd = new TH1F("TF_W2J_BSd","TF Beam spot distance",20,0,0.2);
-
-TH1F* TF_W1J_BSd = new TH1F("TF_W1J_BSd","TF Beam spot distance",20,0,0.2);
-
-//TH1F* TF_TTZ_BSd = new TH1F("TF_TTZ_BSd","TF Beam spot distance",20,0,0.2);
-
-//TH1F* TF_WW_BSd = new TH1F("TF_WW_BSd","TF Beam spot distance",20,0,0.2);
-
-//TH1F* TF_WZ_BSd = new TH1F("TF_WZ_BSd","TF Beam spot distance",20,0,0.2);
-
-TH1F* TF_LW200_BSd = new TH1F("TF_LW200_BSd","TF Beam spot distance",20,0,0.2);
-
-//TH1F* TF_LW300_BSd = new TH1F("TF_LW300_BSd","TF Beam spot distance",20,0,0.2);
-
-//TH1F* TF_LW400_BSd = new TH1F("TF_LW400_BSd","TF Beam spot distance",20,0,0.2);
-
-//TH1F* TF_LW500_BSd = new TH1F("TF_LW500_BSd","TF Beam spot distance",20,0,0.2);
+//TH1F* TF_LW500_BSd = new TH1F("TF_LW500_BSd","TF Beam spot distance",100,0,0.2);
 
 TH1F* TF_dataRunB_EleJet1DR = new TH1F("TF_dataRunB_EleJet1DR","TF Electron first Jet DeltaR distance",100,0,25);
 
@@ -2913,33 +2915,33 @@ TH1F* TF_LW200_JetJetFDR = new TH1F("TF_LW200_JetJetFDR","TF Jet further Jet Del
 
 //TH1F* TF_LW500_JetJetFDR = new TH1F("TF_LW500_JetJetFDR","TF Jet further Jet DeltaR distance",100,0,25);
 
-TH1F* TO_dataRunB_BSd = new TH1F("TO_dataRunB_BSd","TO Beam spot distance",20,0,0.2);
+TH1F* TO_dataRunB_BSd = new TH1F("TO_dataRunB_BSd","TO Beam spot distance",100,0,0.2);
 
-TH1F* TO_dataRunC_BSd  = new TH1F("TO_dataRunC_BSd","TO Beam spot distance",20,0,0.2);
+TH1F* TO_dataRunC_BSd  = new TH1F("TO_dataRunC_BSd","TO Beam spot distance",100,0,0.2);
 
-TH1F* TO_ZLL_BSd = new TH1F("TO_ZLL_BSd","TO Beam spot distance",20,0,0.2);
+TH1F* TO_ZLL_BSd = new TH1F("TO_ZLL_BSd","TO Beam spot distance",100,0,0.2);
 
-TH1F* TO_TT_BSd = new TH1F("TO_TT_BSd","TO Beam spot distance",20,0,0.2);
+TH1F* TO_TT_BSd = new TH1F("TO_TT_BSd","TO Beam spot distance",100,0,0.2);
 
-TH1F* TO_W3J_BSd = new TH1F("TO_W3J_BSd","TO Beam spot distance",20,0,0.2);
+TH1F* TO_W3J_BSd = new TH1F("TO_W3J_BSd","TO Beam spot distance",100,0,0.2);
 
-TH1F* TO_W2J_BSd = new TH1F("TO_W2J_BSd","TO Beam spot distance",20,0,0.2);
+TH1F* TO_W2J_BSd = new TH1F("TO_W2J_BSd","TO Beam spot distance",100,0,0.2);
 
-TH1F* TO_W1J_BSd = new TH1F("TO_W1J_BSd","TO Beam spot distance",20,0,0.2);
+TH1F* TO_W1J_BSd = new TH1F("TO_W1J_BSd","TO Beam spot distance",100,0,0.2);
 
-//TH1F* TO_TTZ_BSd = new TH1F("TO_TTZ_BSd","TO Beam spot distance",20,0,0.2);
+//TH1F* TO_TTZ_BSd = new TH1F("TO_TTZ_BSd","TO Beam spot distance",100,0,0.2);
 
-//TH1F* TO_WW_BSd = new TH1F("TO_WW_BSd","TO Beam spot distance",20,0,0.2);
+//TH1F* TO_WW_BSd = new TH1F("TO_WW_BSd","TO Beam spot distance",100,0,0.2);
 
-//TH1F* TO_WZ_BSd = new TH1F("TO_WZ_BSd","TO Beam spot distance",20,0,0.2);
+//TH1F* TO_WZ_BSd = new TH1F("TO_WZ_BSd","TO Beam spot distance",100,0,0.2);
 
-TH1F* TO_LW200_BSd = new TH1F("TO_LW200_BSd","TO Beam spot distance",20,0,0.2);
+TH1F* TO_LW200_BSd = new TH1F("TO_LW200_BSd","TO Beam spot distance",100,0,0.2);
 
-//TH1F* TO_LW300_BSd = new TH1F("TO_LW300_BSd","TO Beam spot distance",20,0,0.2);
+//TH1F* TO_LW300_BSd = new TH1F("TO_LW300_BSd","TO Beam spot distance",100,0,0.2);
 
-//TH1F* TO_LW400_BSd = new TH1F("TO_LW400_BSd","TO Beam spot distance",20,0,0.2);
+//TH1F* TO_LW400_BSd = new TH1F("TO_LW400_BSd","TO Beam spot distance",100,0,0.2);
 
-//TH1F* TO_LW500_BSd = new TH1F("TO_LW500_BSd","TO Beam spot distance",20,0,0.2);
+//TH1F* TO_LW500_BSd = new TH1F("TO_LW500_BSd","TO Beam spot distance",100,0,0.2);
 
 TH1F* TO_dataRunB_EleJet1DR = new TH1F("TO_dataRunB_EleJet1DR","TO Electron first Jet DeltaR distance",100,0,25);
 
@@ -3081,33 +3083,33 @@ TH1F* TO_LW200_JetJetFDR = new TH1F("TO_LW200_JetJetFDR","TO Jet further Jet Del
 
 //TH1F* TO_LW500_JetJetFDR = new TH1F("TO_LW500_JetJetFDR","TO Jet further Jet DeltaR distance",100,0,25);
 
-TH1F* SG_dataRunB_BSd = new TH1F("SG_dataRunB_BSd","SG Beam spot distance",20,0,0.2);
+TH1F* SG_dataRunB_BSd = new TH1F("SG_dataRunB_BSd","SG Beam spot distance",100,0,0.2);
 
-TH1F* SG_dataRunC_BSd  = new TH1F("SG_dataRunC_BSd","SG Beam spot distance",20,0,0.2);
+TH1F* SG_dataRunC_BSd  = new TH1F("SG_dataRunC_BSd","SG Beam spot distance",100,0,0.2);
 
-TH1F* SG_ZLL_BSd = new TH1F("SG_ZLL_BSd","SG Beam spot distance",20,0,0.2);
+TH1F* SG_ZLL_BSd = new TH1F("SG_ZLL_BSd","SG Beam spot distance",100,0,0.2);
 
-TH1F* SG_TT_BSd = new TH1F("SG_TT_BSd","SG Beam spot distance",20,0,0.2);
+TH1F* SG_TT_BSd = new TH1F("SG_TT_BSd","SG Beam spot distance",100,0,0.2);
 
-TH1F* SG_W3J_BSd = new TH1F("SG_W3J_BSd","SG Beam spot distance",20,0,0.2);
+TH1F* SG_W3J_BSd = new TH1F("SG_W3J_BSd","SG Beam spot distance",100,0,0.2);
 
-TH1F* SG_W2J_BSd = new TH1F("SG_W2J_BSd","SG Beam spot distance",20,0,0.2);
+TH1F* SG_W2J_BSd = new TH1F("SG_W2J_BSd","SG Beam spot distance",100,0,0.2);
 
-TH1F* SG_W1J_BSd = new TH1F("SG_W1J_BSd","SG Beam spot distance",20,0,0.2);
+TH1F* SG_W1J_BSd = new TH1F("SG_W1J_BSd","SG Beam spot distance",100,0,0.2);
 
-//TH1F* SG_TTZ_BSd = new TH1F("SG_TTZ_BSd","SG Beam spot distance",20,0,0.2);
+//TH1F* SG_TTZ_BSd = new TH1F("SG_TTZ_BSd","SG Beam spot distance",100,0,0.2);
 
-//TH1F* SG_WW_BSd = new TH1F("SG_WW_BSd","SG Beam spot distance",20,0,0.2);
+//TH1F* SG_WW_BSd = new TH1F("SG_WW_BSd","SG Beam spot distance",100,0,0.2);
 
-//TH1F* SG_WZ_BSd = new TH1F("SG_WZ_BSd","SG Beam spot distance",20,0,0.2);
+//TH1F* SG_WZ_BSd = new TH1F("SG_WZ_BSd","SG Beam spot distance",100,0,0.2);
 
-TH1F* SG_LW200_BSd = new TH1F("SG_LW200_BSd","SG Beam spot distance",20,0,0.2);
+TH1F* SG_LW200_BSd = new TH1F("SG_LW200_BSd","SG Beam spot distance",100,0,0.2);
 
-//TH1F* SG_LW300_BSd = new TH1F("SG_LW300_BSd","SG Beam spot distance",20,0,0.2);
+//TH1F* SG_LW300_BSd = new TH1F("SG_LW300_BSd","SG Beam spot distance",100,0,0.2);
 
-//TH1F* SG_LW400_BSd = new TH1F("SG_LW400_BSd","SG Beam spot distance",20,0,0.2);
+//TH1F* SG_LW400_BSd = new TH1F("SG_LW400_BSd","SG Beam spot distance",100,0,0.2);
 
-//TH1F* SG_LW500_BSd = new TH1F("SG_LW500_BSd","SG Beam spot distance",20,0,0.2);
+//TH1F* SG_LW500_BSd = new TH1F("SG_LW500_BSd","SG Beam spot distance",100,0,0.2);
 
 TH1F* SG_dataRunB_EleJet1DR = new TH1F("SG_dataRunB_EleJet1DR","SG Electron first Jet DeltaR distance",100,0,25);
 
@@ -3615,33 +3617,33 @@ TH1F* JetS_LW200_NEle = new TH1F("JetS_LW200_NEle","JetS Number of electrons",20
 
 //TH1F* JetS_LW500_NEle = new TH1F("JetS_LW500_NEle","JetS Number of electrons",20,0,20);
 
-TH1F* JetS_dataRunB_BSd = new TH1F("JetS_dataRunB_BSd","JetS Beam spot distance",20,0,0.2);
+TH1F* JetS_dataRunB_BSd = new TH1F("JetS_dataRunB_BSd","JetS Beam spot distance",100,0,0.2);
 
-TH1F* JetS_dataRunC_BSd  = new TH1F("JetS_dataRunC_BSd","JetS Beam spot distance",20,0,0.2);
+TH1F* JetS_dataRunC_BSd  = new TH1F("JetS_dataRunC_BSd","JetS Beam spot distance",100,0,0.2);
 
-TH1F* JetS_ZLL_BSd = new TH1F("JetS_ZLL_BSd","JetS Beam spot distance",20,0,0.2);
+TH1F* JetS_ZLL_BSd = new TH1F("JetS_ZLL_BSd","JetS Beam spot distance",100,0,0.2);
 
-TH1F* JetS_TT_BSd = new TH1F("JetS_TT_BSd","JetS Beam spot distance",20,0,0.2);
+TH1F* JetS_TT_BSd = new TH1F("JetS_TT_BSd","JetS Beam spot distance",100,0,0.2);
 
-TH1F* JetS_W3J_BSd = new TH1F("JetS_W3J_BSd","JetS Beam spot distance",20,0,0.2);
+TH1F* JetS_W3J_BSd = new TH1F("JetS_W3J_BSd","JetS Beam spot distance",100,0,0.2);
 
-TH1F* JetS_W2J_BSd = new TH1F("JetS_W2J_BSd","JetS Beam spot distance",20,0,0.2);
+TH1F* JetS_W2J_BSd = new TH1F("JetS_W2J_BSd","JetS Beam spot distance",100,0,0.2);
 
-TH1F* JetS_W1J_BSd = new TH1F("JetS_W1J_BSd","JetS Beam spot distance",20,0,0.2);
+TH1F* JetS_W1J_BSd = new TH1F("JetS_W1J_BSd","JetS Beam spot distance",100,0,0.2);
 
-//TH1F* JetS_TTZ_BSd = new TH1F("JetS_TTZ_BSd","JetS Beam spot distance",20,0,0.2);
+//TH1F* JetS_TTZ_BSd = new TH1F("JetS_TTZ_BSd","JetS Beam spot distance",100,0,0.2);
 
-//TH1F* JetS_WW_BSd = new TH1F("JetS_WW_BSd","JetS Beam spot distance",20,0,0.2);
+//TH1F* JetS_WW_BSd = new TH1F("JetS_WW_BSd","JetS Beam spot distance",100,0,0.2);
 
-//TH1F* JetS_WZ_BSd = new TH1F("JetS_WZ_BSd","JetS Beam spot distance",20,0,0.2);
+//TH1F* JetS_WZ_BSd = new TH1F("JetS_WZ_BSd","JetS Beam spot distance",100,0,0.2);
 
-TH1F* JetS_LW200_BSd = new TH1F("JetS_LW200_BSd","JetS Beam spot distance",20,0,0.2);
+TH1F* JetS_LW200_BSd = new TH1F("JetS_LW200_BSd","JetS Beam spot distance",100,0,0.2);
 
-//TH1F* JetS_LW300_BSd = new TH1F("JetS_LW300_BSd","JetS Beam spot distance",20,0,0.2);
+//TH1F* JetS_LW300_BSd = new TH1F("JetS_LW300_BSd","JetS Beam spot distance",100,0,0.2);
 
-//TH1F* JetS_LW400_BSd = new TH1F("JetS_LW400_BSd","JetS Beam spot distance",20,0,0.2);
+//TH1F* JetS_LW400_BSd = new TH1F("JetS_LW400_BSd","JetS Beam spot distance",100,0,0.2);
 
-//TH1F* JetS_LW500_BSd = new TH1F("JetS_LW500_BSd","JetS Beam spot distance",20,0,0.2);
+//TH1F* JetS_LW500_BSd = new TH1F("JetS_LW500_BSd","JetS Beam spot distance",100,0,0.2);
 
 TH1F* JetS_dataRunB_EleJet1DR = new TH1F("JetS_dataRunB_EleJet1DR","JetS Electron first Jet DeltaR distance",100,0,25);
 
@@ -6118,125 +6120,11 @@ void EventLoopAnalysisTemplate::analysis()
   //cout<<"analysis() execution"<<endl;
   histograms("NF");
 
-  //minimal selection including trigger requirement
-  if (!MinimalSelection()) return;
-  //counter_ms++;
-
-
-  //fill histograms for signal region
-  histograms("TF");
-
-  /////Identify electron as Trig OBJ
-  std::vector<bool> TobjisFound;
-  TobjisFound.clear();
-  size_t objcount=0;
-
-  vector<int>  TobjisHQ;
-  TobjisHQ.clear();
-  size_t hqcount=0;
-
-  for (size_t y=0; y<trigobj_e->size(); y++){
-    float saveDR=100;
-    int saveQ=false;
-    for (size_t x=0; x<electron_e->size(); x++){
-      if(abs(electron_eta->at(x))<1.44 && abs(trigobj_eta->at(y))<1.44){
-        float DRet=deltaR(electron_eta->at(x),electron_phi->at(x),trigobj_eta->at(y),trigobj_phi->at(y));
-        if(DRet<saveDR){
-           saveDR=DRet;
-           saveQ=trk_isHQ->at(x);
-        }
-      }
-    }
-    if (saveDR<0.1){
-      TobjisFound.push_back(true);
-      objcount++;
-
-      TobjisHQ.push_back(saveQ);
-      if(saveQ==1) hqcount++;
-
-    }
-    else{
-      TobjisFound.push_back(false);
-      TobjisHQ.push_back(saveQ);
-    }
-  }
-  if(objcount<2) return;
-
-  histograms("TO");
-
-  //////////////HQ gsf electrons
-
-  if(hqcount<2) return;
-
-  histograms("HQ");
-
-  //////////JetSelection///////
-  vector<bool> JetisHQ;
-  JetisHQ.clear();
-  size_t Jhqcount=0;
-  for(size_t x=0; x<jet_e->size(); x++){
-    if(abs(jet_eta->at(x))<1.33){
-      if(NConstituents->at(x)>1 && NeutralHF->at(x)<0.9 && MuonF->at(x)<0.8 && ChargedEMF->at(x)<0.6){
-        JetisHQ.push_back(true);
-        Jhqcount++;
-      }
-      else JetisHQ.push_back(false);
-    }
-  }
-  //cout<<"No paso: "<< Jhqcount<<endl;
-  if(Jhqcount<4) return;
-  //cout<<" Paso: "<< Jhqcount<<endl;
-
-  histograms("JetS");
-
-///////////////////////////////////////DRcut selection//////////////////////
+  ///////////////////Neutral current Check/////////////////
+  bool Neutralcheck=false;
   vector<pair<float,size_t>> ElecPtTemp;
   vector<pair<float,size_t>> PosiPtTemp;
-  vector<pair<float,size_t>> JetPtTemp;
-  vector<float> EleDRTemp;
-  ElecPtTemp.clear();
-  PosiPtTemp.clear();
-  JetPtTemp.clear();
-  EleDRTemp.clear();
-  float DRdiff1=100;
-  float DRdiff2=100;
-  bool Neutralcheck=false;
 
-  for (size_t i = 0; i < electron_pt->size(); i++) {
-    if(abs(electron_eta->at(i))<1.44) ElecPtTemp.push_back(make_pair(electron_pt->at(i),i));
-  }
-  sort(ElecPtTemp.begin(),ElecPtTemp.end());
-
-  for(size_t x=0; x<jet_pt->size(); x++){
-    if(abs(jet_eta->at(x))<1.33) JetPtTemp.push_back(make_pair(corr_jet_pt->at(x),x));
-  }
-  sort(JetPtTemp.begin(),JetPtTemp.end());
-
-  if(JetPtTemp.size()>=4 && ElecPtTemp.size()>=2 && ElecPtTemp.back().first>40 && ElecPtTemp.end()[-2].first>25){
-    for (size_t i = 0; i < electron_pt->size(); i++) {
-      if(i==ElecPtTemp.back().second || i==ElecPtTemp.end()[-2].second){
-        EleDRTemp.clear();
-        for(size_t x=0; x<corr_jet_pt->size(); x++){
-          if(x==JetPtTemp.back().second||x==JetPtTemp.end()[-2].second||x==JetPtTemp.end()[-3].second||x==JetPtTemp.end()[-4].second){
-            EleDRTemp.push_back(deltaR(jet_eta->at(x),jet_phi->at(x),electron_eta->at(i),electron_phi->at(i)));
-          }
-        }
-        sort(EleDRTemp.begin(),EleDRTemp.end());
-        if(i==ElecPtTemp.back().second) DRdiff1=abs(EleDRTemp.at(1)-EleDRTemp.front());
-        if(i==ElecPtTemp.end()[-2].second) DRdiff2=abs(EleDRTemp.at(1)-EleDRTemp.front());
-      }
-    }
-  }
-  //cout<<"No Paso: "<<DRdiff1<<" "<<DRdiff2<<endl;
-  if(DRdiff1 < 0.2 || DRdiff2 < 0.2) return;
-  //cout<<"\n Paso: "<<DRdiff1<<" "<<DRdiff2<<"\n\n";
- histograms("DRC");
-
-  /////////Signal selection//////////////////
-  ElecPtTemp.clear();
-  PosiPtTemp.clear();
-  JetPtTemp.clear();
-  EleDRTemp.clear();
 
   for (size_t i = 0; i < electron_pt->size(); i++) {
     if(electron_ch->at(i)==1) ElecPtTemp.push_back(make_pair(electron_pt->at(i),i));
@@ -6249,12 +6137,143 @@ void EventLoopAnalysisTemplate::analysis()
       Neutralcheck=true;
     }
   }
+  if(Neutralcheck){
+    //minimal selection including trigger requirement
+    if (!MinimalSelection()) return;
+    //counter_ms++;
 
-  //if(DRdiff1<0.2 && DRdiff2<0.2) return;
-  if(!Neutralcheck) return;
-   histograms("SG");
 
+    //fill histograms for signal region
+    histograms("TF");
 
+    /////Identify electron as Trig OBJ
+    std::vector<bool> TobjisFound;
+    TobjisFound.clear();
+    size_t objcount=0;
+
+    vector<int>  TobjisHQ;
+    TobjisHQ.clear();
+    size_t hqcount=0;
+
+    for (size_t y=0; y<trigobj_e->size(); y++){
+      float saveDR=100;
+      int saveQ=false;
+      for (size_t x=0; x<electron_e->size(); x++){
+        if(abs(electron_eta->at(x))<1.44 && abs(trigobj_eta->at(y))<1.44){
+          float DRet=deltaR(electron_eta->at(x),electron_phi->at(x),trigobj_eta->at(y),trigobj_phi->at(y));
+          if(DRet<saveDR){
+             saveDR=DRet;
+             saveQ=trk_isHQ->at(x);
+          }
+        }
+      }
+      if (saveDR<0.1){
+        TobjisFound.push_back(true);
+        objcount++;
+
+        TobjisHQ.push_back(saveQ);
+        if(saveQ==1) hqcount++;
+
+      }
+      else{
+        TobjisFound.push_back(false);
+        TobjisHQ.push_back(saveQ);
+      }
+    }
+    if(objcount<2) return;
+
+    histograms("TO");
+
+    //////////////HQ gsf electrons
+
+    if(hqcount<2) return;
+
+    histograms("HQ");
+
+    //////////JetSelection///////
+    vector<bool> JetisHQ;
+    JetisHQ.clear();
+    size_t Jhqcount=0;
+    for(size_t x=0; x<jet_e->size(); x++){
+      if(abs(jet_eta->at(x))<1.33){
+        if(NConstituents->at(x)>1 && NeutralHF->at(x)<0.9 && MuonF->at(x)<0.8 && ChargedEMF->at(x)<0.6){
+          JetisHQ.push_back(true);
+          Jhqcount++;
+        }
+        else JetisHQ.push_back(false);
+      }
+    }
+    //cout<<"No paso: "<< Jhqcount<<endl;
+    if(Jhqcount<4) return;
+    //cout<<" Paso: "<< Jhqcount<<endl;
+
+    histograms("JetS");
+
+  ///////////////////////////////////////DRcut selection//////////////////////
+    vector<pair<float,size_t>> JetPtTemp;
+    vector<float> EleDRTemp;
+    ElecPtTemp.clear();
+    PosiPtTemp.clear();
+    JetPtTemp.clear();
+    EleDRTemp.clear();
+    float DRdiff1=100;
+    float DRdiff2=100;
+    Neutralcheck=false;
+
+    for (size_t i = 0; i < electron_pt->size(); i++) {
+      if(abs(electron_eta->at(i))<1.44) ElecPtTemp.push_back(make_pair(electron_pt->at(i),i));
+    }
+    sort(ElecPtTemp.begin(),ElecPtTemp.end());
+
+    for(size_t x=0; x<jet_pt->size(); x++){
+      if(abs(jet_eta->at(x))<1.33) JetPtTemp.push_back(make_pair(corr_jet_pt->at(x),x));
+    }
+    sort(JetPtTemp.begin(),JetPtTemp.end());
+
+    if(JetPtTemp.size()>=4 && ElecPtTemp.size()>=2 && ElecPtTemp.back().first>40 && ElecPtTemp.end()[-2].first>25){
+      for (size_t i = 0; i < electron_pt->size(); i++) {
+        if(i==ElecPtTemp.back().second || i==ElecPtTemp.end()[-2].second){
+          EleDRTemp.clear();
+          for(size_t x=0; x<corr_jet_pt->size(); x++){
+            if(x==JetPtTemp.back().second||x==JetPtTemp.end()[-2].second||x==JetPtTemp.end()[-3].second||x==JetPtTemp.end()[-4].second){
+              EleDRTemp.push_back(deltaR(jet_eta->at(x),jet_phi->at(x),electron_eta->at(i),electron_phi->at(i)));
+            }
+          }
+          sort(EleDRTemp.begin(),EleDRTemp.end());
+          if(i==ElecPtTemp.back().second) DRdiff1=abs(EleDRTemp.at(1)-EleDRTemp.front());
+          if(i==ElecPtTemp.end()[-2].second) DRdiff2=abs(EleDRTemp.at(1)-EleDRTemp.front());
+        }
+      }
+    }
+    //cout<<"No Paso: "<<DRdiff1<<" "<<DRdiff2<<endl;
+    if(DRdiff1 < 0.2 || DRdiff2 < 0.2) return;
+    //cout<<"\n Paso: "<<DRdiff1<<" "<<DRdiff2<<"\n\n";
+   histograms("DRC");
+
+    /////////Signal selection//////////////////
+    ElecPtTemp.clear();
+    PosiPtTemp.clear();
+    JetPtTemp.clear();
+    EleDRTemp.clear();
+
+    for (size_t i = 0; i < electron_pt->size(); i++) {
+      if(electron_ch->at(i)==1) ElecPtTemp.push_back(make_pair(electron_pt->at(i),i));
+      else if(electron_ch->at(i)==-1) PosiPtTemp.push_back(make_pair(electron_pt->at(i),i));
+    }
+    if(ElecPtTemp.size()>=1 && PosiPtTemp.size()>=1){
+      sort(ElecPtTemp.begin(),ElecPtTemp.end());
+      sort(PosiPtTemp.begin(),PosiPtTemp.end());
+      if( (ElecPtTemp.back().first>25 && PosiPtTemp.back().first>40) || (ElecPtTemp.back().first>40 && PosiPtTemp.back().first>25) ){
+        Neutralcheck=true;
+      }
+    }
+
+    //cout<<"No paso: "<<Neutralcheck<<endl;
+    if(!Neutralcheck) return;
+    //cout<<"Paso: "<< Neutralcheck<<endl;
+     histograms("SG");
+  }
+  else
 
 }//------analysis()
 
