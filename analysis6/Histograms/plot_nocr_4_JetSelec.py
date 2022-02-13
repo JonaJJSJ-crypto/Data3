@@ -144,17 +144,17 @@ def main(variable):
     data.Add(dataRunC)
 
     # Data-driven QCD estimation
-#    QCD = getHistogram(tfile, "dataRunB", variable, "_cr")
-#    QCDRunC = getHistogram(tfile, "dataRunC", variable, "_cr")
-#    QCD.Add(QCDRunC)
-#    for name in ["W1J", "W2J", "W3J", "TT", "ZLL"]:
-#        ss = getHistogram(tfile, name, variable, "_cr")
-#        QCD.Add(ss, -1.0)
-#    for i in range(1, QCD.GetNbinsX() + 1):
-#        if QCD.GetBinContent(i) < 0.0:
-#            QCD.SetBinContent(i, 0.0)
-#    QCDScaleFactor = 0.80
-#    QCD.Scale(QCDScaleFactor)
+    QCD = getHistogram(tfile, "JetS_dataRunB", variable, "_cr")
+    QCDRunC = getHistogram(tfile, "JetS_dataRunC", variable, "_cr")
+    QCD.Add(QCDRunC)
+    for name in ["JetS_W1J", "JetS_W2J", "JetS_W3J", "JetS_TT", "JetS_ZLL"]:
+        ss = getHistogram(tfile, name, variable, "_cr")
+        QCD.Add(ss, -1.0)
+    for i in range(1, QCD.GetNbinsX() + 1):
+        if QCD.GetBinContent(i) < 0.0:
+            QCD.SetBinContent(i, 0.0)
+    QCDScaleFactor = 0.80
+    QCD.Scale(QCDScaleFactor)
 
     # Draw histograms
     data.SetMarkerStyle(20)
@@ -181,7 +181,7 @@ def main(variable):
         #x.SetLineWidth(3)
 
 
-    for x, l in [(TT, "TT"), (ZLL, "ZLL"), (W, "W")]:#,(WW, "WW"), (WZ, "WZ"), (ttZ, "ttZ")]:
+    for x, l in [(TT, "TT"), (ZLL, "ZLL"), (W, "W"), (QCD, "QCD")]:#,(WW, "WW"), (WZ, "WZ"), (ttZ, "ttZ")]:
         x.SetLineWidth(0)
         x.SetFillColor(colors[l])
     #ZLL.SetLineWidth(0)
@@ -189,8 +189,8 @@ def main(variable):
 
 
     stack = ROOT.THStack("", "")
-#    for x in [QCD, TT, W, ZLL]:
-    for x in [TT, W, ZLL]:#, WW, WZ, ttZ]:
+    for x in [QCD, TT, W, ZLL]:
+#    for x in [TT, W, ZLL]:#, WW, WZ, ttZ]:
         stack.Add(x)
     #stack.Add(ZLL)
 
@@ -221,7 +221,7 @@ def main(variable):
     legend.AddEntry(ZLL, "Z#rightarrowll", "f")
     legend.AddEntry(W, "W+jets", "f")
     legend.AddEntry(TT, "t#bar{t}", "f")
-    #legend.AddEntry(QCD, "QCD multijet", "f")
+    legend.AddEntry(QCD, "QCD multijet", "f")
     #legend.AddEntry(ggH, "gg#rightarrowH (x%.0f)"%scale_ggH, "l")
     legend.AddEntry(LW200, "lwe#rightarrowZe (x%.0f)"%scale_LW200, "l")
     legend.AddEntry(data, "Data", "lep")
