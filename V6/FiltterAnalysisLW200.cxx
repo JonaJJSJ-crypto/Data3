@@ -1,4 +1,4 @@
-    //////////////////////////////////////////////////////////////////////
+//////////////////////////////////////////////////////////////////////
 // This template analysis code has been built with fragments from the
 // classes automatically obtained by the TTree MakeClass() method.
 //
@@ -162,10 +162,15 @@ TH1F* LW200NeutralEMF = new TH1F("LW200NeutralEMF","Jet Neutral Electromagnetic 
 
 TH1F* LW200EleZdauDR = new TH1F("LW200EleZdauDR","Electron Zdau DR;DeltaR;",100,0,25);
 TH1F* LW200EleSZdauDR = new TH1F("LW200EleSZdauDR","Electron Selected Zdau DR;DeltaR;",100,0,25);
+TH1F* LW200EleBZdauDR = new TH1F("LW200EleBZdauDR","Electron closest Selected Zdau DR;DeltaR;",100,0,25);
+TH1F* LW200ZdauSZdauDR = new TH1F("LW200ZdauSZdauDR","Zdau Selected Zdau DR;DeltaR;",100,0,25);
 TH1F* LW200EleNSZdauDR = new TH1F("LW200EleNSZdauDR","Electron Non Selected Zdau DR;DeltaR;",100,0,25);
 TH1F* LW200EleZdauPT = new TH1F("LW200EleZdauPT","Electron Zdau Total momentum;Momentum[GeV];",100,0,400);
 TH1F* LW200EleSZdauPT = new TH1F("LW200EleSZdauPT","Electron Signal Zdau Total momentum;Momentum[GeV];",100,0,400);
 TH1F* LW200EleSZdau_ptdiff = new TH1F("LW200EleSZdau_ptdiff","Electron Signal Zdau Pt diff;Momentum[GeV];",100,0,0.01);
+TH1F* LW200ZdauInvmass = new TH1F("LW200ZdauInvmass","Zdau Invariant mass;InvariantMass[GeV];",100,0,200);
+TH1F* LW200RecoZdauInvmass = new TH1F("LW200RecoZdauInvmass","Reco Zdau Invariant mass;InvariantMass[GeV];",100,0,200);
+TH1F* LW200RecoZdauEleInvmass = new TH1F("LW200RecoZdauEleInvmass","Reco Zdau plus Reco Electron Invariant mass;InvariantMass[GeV];",100,0,500);
 
 TH1F* LW200EleDijet_Ppoint = new TH1F("LW200EleDijet_Ppoint","Electron dijet total momentum Secondary vertex point;Ppoint[GeV*mm];",100,-100,100);
 TH1F* LW200EleDijet_PpointS = new TH1F("LW200EleDijet_PpointS","Electron dijet total momentum Secondary vertex point sign;Ppoint sign;",100,-2,2);
@@ -176,7 +181,31 @@ TH1F* LW200SecVec_PpointS = new TH1F("LW200SecVec_PpointS","Secondary vertex tot
 TH1F* LW200GenSecVec_Ppoint = new TH1F("LW200GenSecVec_Ppoint","Gen Secondary vertex total momentum Secondary vertex point;Ppoint[GeV*mm];",100,-100,100);
 TH1F* LW200GenSecVec_PpointS = new TH1F("LW200GenSecVec_PpointS","Gen Secondary vertex total momentum Secondary vertex point sign;Ppoint sign;",100,-2,2);
 
+TH1F* LW200Zdau_GenjetMatch = new TH1F("LW200Zdau_GenjetMatch","Zdau is Matched in a jet;Boolean;",2,0,2);
+TH1F* LW200Zdau_BjetMatch = new TH1F("LW200Zdau_BjetMatch","Zdau is matched in the most energetic jet;Boolean;",2,0,2);
+TH1F* LW200Zdau_SBjetMatch = new TH1F("LW200Zdau_SBjetMatch","Zdau is matched in a second most energetic jet;Boolean;",2,0,2);
+TH1F* LW200Zdau_3jetMatch = new TH1F("LW200Zdau_3jetMatch","Zdau is matched in a third most energetic jet;Boolean;",2,0,2);
+TH1F* LW200Zdau_4jetMatch = new TH1F("LW200Zdau_4jetMatch","Zdau is matched in a Fourth most energetic jet;Boolean;",2,0,2);
 
+TH1F* LW200BZdau_GenjetMatch = new TH1F("LW200BZdau_GenjetMatch","Most energetic Zdau is Matched in a jet;Boolean;",2,0,2);
+TH1F* LW200BZdau_BjetMatch = new TH1F("LW200BZdau_BjetMatch","Most energetic Zdau is matched in the most energetic jet;Boolean;",2,0,2);
+TH1F* LW200BZdau_SBjetMatch = new TH1F("LW200BZdau_SBjetMatch","Most energetic Zdau is matched in a second most energetic jet;Boolean;",2,0,2);
+TH1F* LW200BZdau_3jetMatch = new TH1F("LW200BZdau_3jetMatch","Most energetic Zdau is matched in a third most energetic jet;Boolean;",2,0,2);
+TH1F* LW200BZdau_4jetMatch = new TH1F("LW200BZdau_4jetMatch","Most energetic Zdau is matched in a Fourth most energetic jet;Boolean;",2,0,2);
+
+TH1F* LW200Elec_GenElecMatch = new TH1F("LW200Elec_GenElecMatch","GenElectron is Matched in a RecoElectron;Boolean;",2,0,2);
+TH1F* LW200Elec_BElecMatch = new TH1F("LW200Elec_BElecMatch","GenElectron is matched in the most energetic RecoElectron;Boolean;",2,0,2);
+TH1F* LW200Elec_SBElecMatch = new TH1F("LW200Elec_SBElecMatch","GenElectron is matched in the second most energetic RecoElectron;Boolean;",2,0,2);
+
+TH1F* LW200BElec_GenElecMatch = new TH1F("LW200BElec_GenElecMatch","Most energetic GenElectron is Matched in a RecoElectron;Boolean;",2,0,2);
+TH1F* LW200BElec_BElecMatch = new TH1F("LW200BElec_BElecMatch","Most energetic GenElectron is matched in the most energetic RecoElectron;Boolean;",2,0,2);
+TH1F* LW200BElec_SBElecMatch = new TH1F("LW200BElec_SBElecMatch","Most energetic GenElectron is matched in the second most energetic RecoElectron;Boolean;",2,0,2);
+
+TH1F* LW200SBElec_GenElecMatch = new TH1F("LW200SBElec_GenElecMatch","Second most energetic GenElectron is Matched in a RecoElectron;Boolean;",2,0,2);
+TH1F* LW200SBElec_BElecMatch = new TH1F("LW200SBElec_BElecMatch","Second most energetic GenElectron is matched in the most energetic RecoElectron;Boolean;",2,0,2);
+TH1F* LW200SBElec_SBElecMatch = new TH1F("LW200SBElec_SBElecMatch","Second most energetic GenElectron is matched in the second most energetic RecoElectron;Boolean;",2,0,2);
+TH1F* LW200SBElec_3ElecMatch = new TH1F("LW200SBElec_3ElecMatch","Second most energetic GenElectron is matched in the third most energetic RecoElectron;Boolean;",2,0,2);
+TH1F* LW200SBElec_4ElecMatch = new TH1F("LW200SBElec_4ElecMatch","Second most energetic GenElectron is matched in the fourth most energetic RecoElectron;Boolean;",2,0,2);
 
 
 
@@ -1497,8 +1526,46 @@ if(gjet_DRscore.size()>1){
       }
     }
     if(Zbool){
-      LW200EleSZdauDR->Fill(deltaR(GenDau_eta->at(Eindex),GenDau_phi->at(Eindex),GenDau_eta->at(Zindex[0]),GenDau_phi->at(Zindex[0])));
-      LW200EleSZdauDR->Fill(deltaR(GenDau_eta->at(Eindex),GenDau_phi->at(Eindex),GenDau_eta->at(Zindex[1]),GenDau_phi->at(Zindex[1])));
+      float ZdR1=deltaR(GenDau_eta->at(Eindex),GenDau_phi->at(Eindex),GenDau_eta->at(Zindex[0]),GenDau_phi->at(Zindex[0]));
+      float ZdR2=deltaR(GenDau_eta->at(Eindex),GenDau_phi->at(Eindex),GenDau_eta->at(Zindex[1]),GenDau_phi->at(Zindex[1]));
+      LW200EleSZdauDR->Fill(ZdR1);
+      LW200EleSZdauDR->Fill(ZdR2);
+      LW200EleBZdauDR->Fill(min(ZdR1,ZdR2));
+      LW200ZdauSZdauDR->Fill(deltaR(GenDau_eta->at(Zindex[0]),GenDau_phi->at(Zindex[0]),GenDau_eta->at(Zindex[1]),GenDau_phi->at(Zindex[1])));
+
+      float ZTE=0;//GenDau_e->at(Zindex[0]) + GenDau_e->at(Zindex[1]);
+      float ZTpx=GenDau_px->at(Zindex[0]) + GenDau_px->at(Zindex[1]);
+      float ZTpy=GenDau_py->at(Zindex[0]) + GenDau_py->at(Zindex[1]);
+      float ZTpz=GenDau_pz->at(Zindex[0]) + GenDau_pz->at(Zindex[1]);
+      LW200ZdauInvmass->Fill(sqrt(ZTE*ZTE-ZTpx*ZTpx-ZTpy*ZTpy-ZTpz*ZTpz));
+
+      ZTE=0;
+      ZTpx=0;
+      ZTpy=0;
+      ZTpz=0;
+      size_t Zcount=0;
+
+      for(size_t i=0; i<jet_pt->size(); i++){
+        if((genjet_DRscore->at(i)<0.5 && genjet_pt->at(i)==GenDau_pt->at(Zindex[0])) || (genjet_DRscore->at(i)<0.5 && genjet_pt->at(i)==GenDau_pt->at(Zindex[1]))){
+          ZTE=ZTE+jet_e->at(i);
+          ZTpx=ZTpx+jet_px->at(i);
+          ZTpy=ZTpy+jet_py->at(i);
+          ZTpz=ZTpz+jet_pz->at(i);
+          Zcount++;
+        }
+      }
+      if(Zcount>=2){
+        LW200RecoZdauInvmass->Fill(sqrt(ZTE*ZTE-ZTpx*ZTpx-ZTpy*ZTpy-ZTpz*ZTpz));
+        for(size_t i=0; i<electron_pt->size(); i++){
+          if(genelec_DRscore->at(i)<0.1 && genelec_pt->at(i)==GenDau_pt->at(Eindex)){
+            ZTE=ZTE+electron_e->at(i);
+            ZTpx=ZTpx+electron_px->at(i);
+            ZTpy=ZTpy+electron_px->at(i);
+            ZTpz=ZTpz+electron_px->at(i);
+          }
+        }
+        LW200RecoZdauEleInvmass->Fill(sqrt(ZTE*ZTE-ZTpx*ZTpx-ZTpy*ZTpy-ZTpz*ZTpz));
+      }
     }
 
 
@@ -1616,11 +1683,8 @@ if(gjet_DRscore.size()>1){
 
     ///////////////New Secvecdisplacement///////
 
-    /*for(size_t x=0; x<secvec_posx->size(); x++){
+    for(size_t x=0; x<secvec_posx->size(); x++){
       if(secvec_eleTag->at(x)!=-1){
-
-        cout<<secvec_px->at(x)<<' '<<secvec_py->at(x)<<' '<<secvec_pz->at(x)<<endl;
-
         Vx=secvec_posx->at(x)-PV_x->at(0);
         Vy=secvec_posy->at(x)-PV_y->at(0);
         Vz=secvec_posz->at(x)-PV_z->at(0);
@@ -1629,7 +1693,7 @@ if(gjet_DRscore.size()>1){
         if(Ppoint>0)LW200SecVec_PpointS->Fill(1);
         else if(Ppoint<0) LW200SecVec_PpointS->Fill(-1);
       }
-    }*/
+    }
 
     float pvx,pvy,pvz,ppx,ppy,ppz;
     for(size_t x=0; x<GenPart_pt->size(); x++){
@@ -1653,6 +1717,217 @@ if(gjet_DRscore.size()>1){
         else if(Ppoint<0) LW200GenSecVec_PpointS->Fill(-1);
       }
     }
+
+    if(jet_pt->size()>=4){
+
+      JetPtTemp.clear();
+
+      for(size_t x=0; x<corr_jet_pt->size(); x++ ){JetPtTemp.push_back(make_pair(corr_jet_pt->at(x),x));}
+      sort(JetPtTemp.begin(), JetPtTemp.end());
+
+      vector<pair<float,size_t>> GenDauPtTemp;
+      GenDauPtTemp.clear();
+      for(size_t x=0; x<GenDau_pt->size(); x++){
+        if(GenDau_mompdgId->at(x)==23) GenDauPtTemp.push_back(make_pair(GenDau_pt->at(x),x));
+      }
+      sort(GenDauPtTemp.begin(), GenDauPtTemp.end());
+
+      for(size_t x=0; x<GenDau_pt->size(); x++){
+        if(GenDau_mompdgId->at(x)==23){
+          bool IsMatchFlag=false;
+          bool IsBFlag=false;
+          bool IsSBFlag=false;
+          bool Is3Flag=false;
+          bool Is4Flag=false;
+
+          for(size_t y=0; y<jet_pt->size(); y++){
+            if(genjet_DRscore->at(y)<0.5 && genjet_pt->at(y)==GenDau_pt->at(x)){
+
+              IsMatchFlag=true;
+
+              if(y==JetPtTemp.back().second) IsBFlag=true;
+
+              if(y==JetPtTemp.end()[-2].second) IsSBFlag=true;
+
+              if(y==JetPtTemp.end()[-3].second) Is3Flag=true;
+
+              if(y==JetPtTemp.end()[-4].second) Is4Flag=true;
+
+            }
+          }
+
+          if(IsMatchFlag) LW200Zdau_GenjetMatch->Fill(1);
+          else LW200Zdau_GenjetMatch->Fill(0);
+
+          if(IsBFlag) LW200Zdau_BjetMatch->Fill(1);
+          else LW200Zdau_BjetMatch->Fill(0);
+
+          if(IsSBFlag) LW200Zdau_SBjetMatch->Fill(1);
+          else LW200Zdau_SBjetMatch->Fill(0);
+
+          if(Is3Flag) LW200Zdau_3jetMatch->Fill(1);
+          else LW200Zdau_3jetMatch->Fill(0);
+
+          if(Is4Flag) LW200Zdau_4jetMatch->Fill(1);
+          else LW200Zdau_4jetMatch->Fill(0);
+
+          if(x==GenDauPtTemp.back().second){
+
+            IsMatchFlag=false;
+            IsBFlag=false;
+            IsSBFlag=false;
+            Is3Flag=false;
+            Is4Flag=false;
+
+            for(size_t y=0; y<jet_pt->size(); y++){
+              if(genjet_DRscore->at(y)<0.5 && genjet_pt->at(y)==GenDau_pt->at(x)){
+                IsMatchFlag=true;
+
+                if(y==JetPtTemp.back().second) IsBFlag=true;
+
+                if(y==JetPtTemp.end()[-2].second) IsSBFlag=true;
+
+                if(y==JetPtTemp.end()[-3].second) Is3Flag=true;
+
+                if(y==JetPtTemp.end()[-4].second) Is4Flag=true;
+
+              }
+            }
+
+            if(IsMatchFlag) LW200BZdau_GenjetMatch->Fill(1);
+            else LW200BZdau_GenjetMatch->Fill(0);
+
+            if(IsBFlag) LW200BZdau_BjetMatch->Fill(1);
+            else LW200BZdau_BjetMatch->Fill(0);
+
+            if(IsSBFlag) LW200BZdau_SBjetMatch->Fill(1);
+            else LW200BZdau_SBjetMatch->Fill(0);
+
+            if(Is3Flag) LW200BZdau_3jetMatch->Fill(1);
+            else LW200BZdau_3jetMatch->Fill(0);
+
+            if(Is4Flag) LW200BZdau_4jetMatch->Fill(1);
+            else LW200BZdau_4jetMatch->Fill(0);
+
+          }
+        }
+      }
+    }
+
+
+    if(electron_e->size()>=4){
+      ElePtTemp.clear();
+      for(size_t y=0; y<electron_e->size(); y++){ElePtTemp.push_back(make_pair(electron_pt->at(y),y));}
+      sort(ElePtTemp.begin(),ElePtTemp.end());
+
+      vector<pair<float,size_t>> GenDauPtTemp;
+      GenDauPtTemp.clear();
+      for(size_t x=0; x<GenDau_pt->size(); x++){
+        if(abs(GenDau_pdgId->at(x))==11 && abs(GenDau_mompdgId->at(x))==556) GenDauPtTemp.push_back(make_pair(GenDau_pt->at(x),x));
+      }
+      sort(GenDauPtTemp.begin(), GenDauPtTemp.end());
+
+      for(size_t x=0; x<GenDau_pt->size(); x++){
+        if(abs(GenDau_pdgId->at(x))==11 && abs(GenDau_mompdgId->at(x))==556){
+
+          bool IsMatchFlag=false;
+          bool IsBFlag=false;
+          bool IsSBFlag=false;
+          bool Is3Flag=false;
+          bool Is4Flag=false;
+
+          for(size_t y=0; y<electron_e->size(); y++){
+            if(genelec_DRscore->at(y)<0.1 && genelec_pt->at(y)==GenDau_pt->at(x)){
+              IsMatchFlag=true;
+
+              if(y==ElePtTemp.back().second) IsBFlag=true;
+
+              if(y==ElePtTemp.end()[-2].second) IsSBFlag=true;
+
+            }
+          }
+
+          if(IsMatchFlag) LW200Elec_GenElecMatch->Fill(1);
+          else LW200Elec_GenElecMatch->Fill(0);
+
+          if(IsBFlag) LW200Elec_BElecMatch->Fill(1);
+          else LW200Elec_BElecMatch->Fill(0);
+
+          if(IsSBFlag) LW200Elec_SBElecMatch->Fill(1);
+          else LW200Elec_SBElecMatch->Fill(0);
+
+          if(x==GenDauPtTemp.back().second){
+            IsMatchFlag=false;
+            IsBFlag=false;
+            IsSBFlag=false;
+
+            for(size_t y=0; y<electron_pt->size(); y++){
+              if(genelec_DRscore->at(y)<0.1 && genelec_pt->at(y)==GenDau_pt->at(x)){
+                IsMatchFlag=true;
+
+                if(y==ElePtTemp.back().second) IsBFlag=true;
+
+                if(y==ElePtTemp.end()[-2].second) IsSBFlag=true;
+
+              }
+            }
+
+            if(IsMatchFlag) LW200BElec_GenElecMatch->Fill(1);
+            else LW200BElec_GenElecMatch->Fill(0);
+
+            if(IsBFlag) LW200BElec_BElecMatch->Fill(1);
+            else LW200BElec_BElecMatch->Fill(0);
+
+            if(IsSBFlag) LW200BElec_SBElecMatch->Fill(1);
+            else LW200BElec_SBElecMatch->Fill(0);
+
+          }
+
+          if(x==GenDauPtTemp.end()[-2].second){
+            IsMatchFlag=false;
+            IsBFlag=false;
+            IsSBFlag=false;
+            Is3Flag=false;
+            Is4Flag=false;
+
+            for(size_t y=0; y<electron_pt->size(); y++){
+              if(genelec_DRscore->at(y)<0.1 && genelec_pt->at(y)==GenDau_pt->at(x)){
+                IsMatchFlag=true;
+
+                if(y==ElePtTemp.back().second) IsBFlag=true;
+
+                if(y==ElePtTemp.end()[-2].second) IsSBFlag=true;
+
+                if(y==ElePtTemp.end()[-3].second) Is3Flag=true;
+
+                if(y==ElePtTemp.end()[-4].second) Is4Flag=true;
+
+              }
+            }
+
+            if(IsMatchFlag) LW200SBElec_GenElecMatch->Fill(1);
+            else LW200SBElec_GenElecMatch->Fill(0);
+
+            if(IsBFlag) LW200SBElec_BElecMatch->Fill(1);
+            else LW200SBElec_BElecMatch->Fill(0);
+
+            if(IsSBFlag) LW200SBElec_SBElecMatch->Fill(1);
+            else LW200SBElec_SBElecMatch->Fill(0);
+
+            if(Is3Flag) LW200SBElec_3ElecMatch->Fill(1);
+            else LW200SBElec_3ElecMatch->Fill(0);
+
+            if(Is4Flag) LW200SBElec_4ElecMatch->Fill(1);
+            else LW200SBElec_4ElecMatch->Fill(0);
+
+          }
+
+        }
+      }
+    }
+
+
+
 
 
 
@@ -1866,6 +2141,11 @@ int main()
   LW200EleZdauPT->Write();
   LW200EleSZdauPT->Write();
   LW200EleSZdau_ptdiff->Write();
+  LW200ZdauSZdauDR->Write();
+  LW200EleBZdauDR->Write();
+  LW200ZdauInvmass->Write();
+  LW200RecoZdauInvmass->Write();
+  LW200RecoZdauEleInvmass->Write();
 
   LW200SecVec_Ppoint->Write();
   LW200SecVec_PpointS->Write();
@@ -1875,6 +2155,32 @@ int main()
   LW200EleJetInvM_PpointS->Write();
   LW200GenSecVec_PpointS->Write();
   LW200GenSecVec_Ppoint->Write();
+
+  LW200Zdau_GenjetMatch->Write();
+  LW200Zdau_BjetMatch->Write();
+  LW200Zdau_SBjetMatch->Write();
+  LW200Zdau_3jetMatch->Write();
+  LW200Zdau_4jetMatch->Write();
+
+  LW200BZdau_GenjetMatch->Write();
+  LW200BZdau_BjetMatch->Write();
+  LW200BZdau_SBjetMatch->Write();
+  LW200BZdau_3jetMatch->Write();
+  LW200BZdau_4jetMatch->Write();
+
+  LW200Elec_GenElecMatch->Write();
+  LW200Elec_BElecMatch->Write();
+  LW200Elec_SBElecMatch->Write();
+
+  LW200BElec_GenElecMatch->Write();
+  LW200BElec_BElecMatch->Write();
+  LW200BElec_SBElecMatch->Write();
+
+  LW200SBElec_GenElecMatch->Write();
+  LW200SBElec_BElecMatch->Write();
+  LW200SBElec_SBElecMatch->Write();
+  LW200SBElec_3ElecMatch->Write();
+  LW200SBElec_4ElecMatch->Write();
 
 
   hfile->Close();

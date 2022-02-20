@@ -7032,6 +7032,7 @@ public :
   UInt_t          luminosityBlock;
   ULong64_t	   event;
   Int_t           PV_npvs;
+  Int_t           PV_npvsGood;
   std::map<std::string, int> *triggermap;
   Int_t           numbersecvec;
   vector<float>   *PV_x;
@@ -7105,6 +7106,7 @@ public :
   TBranch        *b_luminosityBlock;   //!
   TBranch        *b_event;   //!
   TBranch        *b_PV_npvs;   //!
+  TBranch        *b_PV_npvsGood;   //!
   TBranch        *b_numbersecvec;   //!
   TBranch        *b_PV_x;   //!
   TBranch        *b_PV_y;   //!
@@ -10840,6 +10842,7 @@ void EventLoopAnalysisTemplate::Init(TTree *tree)
    fChain->SetBranchAddress("luminosityBlock", &luminosityBlock, &b_luminosityBlock);
    fChain->SetBranchAddress("event", &event, &b_event);
    fChain->SetBranchAddress("PV_npvs", &PV_npvs, &b_PV_npvs);
+   fChain->SetBranchAddress("PV_npvsGood", &PV_npvsGood, &b_PV_npvsGood);
    fChain->SetBranchAddress("numbersecvec", &numbersecvec, &b_numbersecvec);
    fChain->SetBranchAddress("PV_x", &PV_x, &b_PV_x);
    fChain->SetBranchAddress("PV_y", &PV_y, &b_PV_y);
@@ -11279,7 +11282,7 @@ void EventLoopAnalysisTemplate::histograms(string cut) {
       //primary vertices
       //cout<<"npv\n";
       if(thevar == "npv" || thevar == "npv_cr"){
-	       hists.at(j)->Fill(PV_npvs,theweight);
+	       hists.at(j)->Fill(PV_npvsGood,theweight);
       }
 
       //secondary Vertices
