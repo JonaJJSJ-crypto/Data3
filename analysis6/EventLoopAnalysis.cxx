@@ -7098,6 +7098,8 @@ public :
   vector<float>   *Bsp_x;
   vector<float>   *Bsp_y;
   vector<float>   *Bsp_z;
+  vector<float>   *Bsp_widthx;
+  vector<float>   *Bsp_widthy;
   Float_t         met_pt;
   Float_t         met_phi;
 
@@ -7174,6 +7176,8 @@ public :
   TBranch    *b_Bsp_x;
   TBranch    *b_Bsp_y;
   TBranch    *b_Bsp_z;
+  TBranch    *b_Bsp_widthx;
+  TBranch    *b_Bsp_widthy;
 
   EventLoopAnalysisTemplate(TString filename, TString labeltag, Float_t theweight);
   virtual ~EventLoopAnalysisTemplate();
@@ -10829,6 +10833,8 @@ void EventLoopAnalysisTemplate::Init(TTree *tree)
    Bsp_x=0;
    Bsp_y=0;
    Bsp_z=0;
+   Bsp_widthx=0;
+   Bsp_widthy=0;
 
    // Set branch addresses and branch pointers
    if (!tree) return;
@@ -10891,6 +10897,8 @@ void EventLoopAnalysisTemplate::Init(TTree *tree)
    fChain->SetBranchAddress("Bsp_x",&Bsp_x,&b_Bsp_x);
    fChain->SetBranchAddress("Bsp_y",&Bsp_y,&b_Bsp_y);
    fChain->SetBranchAddress("Bsp_z",&Bsp_z,&b_Bsp_z);
+   fChain->SetBranchAddress("Bsp_widthx",&Bsp_widthx,&b_Bsp_widthx);
+   fChain->SetBranchAddress("Bsp_widthy",&Bsp_widthy,&b_Bsp_widthy);
 
    Notify();
 }
@@ -11442,11 +11450,16 @@ void EventLoopAnalysisTemplate::histograms(string cut) {
         float dx,dy,dz,disp;
         for (size_t i = 0; i < secvec_posx->size(); i++) {
           if(secvec_eleTag->at(i)!=-1){
+
             dx=Bsp_x->at(0)-secvec_posx->at(i);
             dy=Bsp_y->at(0)-secvec_posy->at(i);
-            dz=Bsp_z->at(0)-secvec_posz->at(i);
-            disp=sqrt( dx*dx + dy*dy + dz*dz );
-            hists.at(j)->Fill(disp,theweight);
+            //dz=Bsp_z->at(0)-secvec_posz->at(i);
+            sigmax=Bsp_widthx->at(0)+secvec_poserrorx->at(i);
+            sigmay=Bsp_widthy->at(0)+secvec_poserrory->at(i);
+
+            disp = sqrt( dx*dx + dy*dy );
+            sigma = sqrt( sigmax*sigmax + sigmay*sigmay );
+            hists.at(j)->Fill(disp/sigma,theweight);
           }
         }
       }

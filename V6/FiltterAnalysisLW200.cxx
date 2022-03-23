@@ -180,6 +180,8 @@ TH1F* LW200SecVec_Ppoint = new TH1F("LW200SecVec_Ppoint","Secondary vertex total
 TH1F* LW200SecVec_PpointS = new TH1F("LW200SecVec_PpointS","Secondary vertex total momentum Secondary vertex point sign;Ppoint sign;",100,-2,2);
 TH1F* LW200GenSecVec_Ppoint = new TH1F("LW200GenSecVec_Ppoint","Gen Secondary vertex total momentum Secondary vertex point;Ppoint[GeV*mm];",100,-100,100);
 TH1F* LW200GenSecVec_PpointS = new TH1F("LW200GenSecVec_PpointS","Gen Secondary vertex total momentum Secondary vertex point sign;Ppoint sign;",100,-2,2);
+TH1F* LW200SecVec_EleJet_Ppoint = new TH1F("LW200SecVec_EleJet_Ppoint","Secondary vertex matched jet total momentum Secondary vertex point;Ppoint[GeV*mm];",100,-100,100);
+TH1F* LW200SecVec_EleJet_PpointS = new TH1F("LW200SecVec_EleJet_PpointS","Secondary vertex matched jet total momentum Secondary vertex point sign;Ppoint sign;",100,-2,2);
 
 TH1F* LW200Zdau_GenjetMatch = new TH1F("LW200Zdau_GenjetMatch","Zdau is Matched in a jet;Boolean;",2,0,2);
 TH1F* LW200Zdau_BjetMatch = new TH1F("LW200Zdau_BjetMatch","Zdau is matched in the most energetic jet;Boolean;",2,0,2);
@@ -206,6 +208,8 @@ TH1F* LW200SBElec_BElecMatch = new TH1F("LW200SBElec_BElecMatch","Second most en
 TH1F* LW200SBElec_SBElecMatch = new TH1F("LW200SBElec_SBElecMatch","Second most energetic GenElectron is matched in the second most energetic RecoElectron;Boolean;",2,0,2);
 TH1F* LW200SBElec_3ElecMatch = new TH1F("LW200SBElec_3ElecMatch","Second most energetic GenElectron is matched in the third most energetic RecoElectron;Boolean;",2,0,2);
 TH1F* LW200SBElec_4ElecMatch = new TH1F("LW200SBElec_4ElecMatch","Second most energetic GenElectron is matched in the fourth most energetic RecoElectron;Boolean;",2,0,2);
+
+TH1F* LW200Secvec_jet = new TH1F("LW200Secvec_jet","Secvec jet pt differece to Reco Zdau;TrAnsversal momentum difference[GeV];",100,0,200);
 
 
 
@@ -344,6 +348,15 @@ public :
   vector<float>   *Bsp_x;
   vector<float>   *Bsp_y;
   vector<float>   *Bsp_z;
+  vector<float> *secvec_jet_px;
+  vector<float> *secvec_jet_py;
+  vector<float> *secvec_jet_pz;
+  vector<float> *secvec_jet_pt1;
+  vector<float> *secvec_jet_eta1;
+  vector<float> *secvec_jet_phi1;
+  vector<float> *secvec_jet_pt2;
+  vector<float> *secvec_jet_eta2;
+  vector<float> *secvec_jet_phi2;
 
 
   TBranch        *b_run;   //!
@@ -437,6 +450,15 @@ public :
   TBranch    *b_Bsp_x;
   TBranch    *b_Bsp_y;
   TBranch    *b_Bsp_z;
+  TBranch *b_secvec_jet_px;
+  TBranch *b_secvec_jet_py;
+  TBranch *b_secvec_jet_pz;
+  TBranch *b_secvec_jet_pt1;
+  TBranch *b_secvec_jet_eta1;
+  TBranch *b_secvec_jet_phi1;
+  TBranch *b_secvec_jet_pt2;
+  TBranch *b_secvec_jet_eta2;
+  TBranch *b_secvec_jet_phi2;
 
 
 
@@ -637,6 +659,15 @@ void EventLoopAnalysisTemplate::Init(TTree *tree)
    Bsp_x=0;
    Bsp_y=0;
    Bsp_z=0;
+   secvec_jet_px=0;
+   secvec_jet_py=0;
+   secvec_jet_pz=0;
+   secvec_jet_pt1=0;
+   secvec_jet_eta1=0;
+   secvec_jet_phi1=0;
+   secvec_jet_pt2=0;
+   secvec_jet_eta2=0;
+   secvec_jet_phi2=0;
 
    // Set branch addresses and branch pointers
    if (!tree) return;
@@ -737,6 +768,15 @@ void EventLoopAnalysisTemplate::Init(TTree *tree)
    fChain->SetBranchAddress("Bsp_x",&Bsp_x,&b_Bsp_x);
    fChain->SetBranchAddress("Bsp_y",&Bsp_y,&b_Bsp_y);
    fChain->SetBranchAddress("Bsp_z",&Bsp_z,&b_Bsp_z);
+   fChain->SetBranchAddress("secvec_jet_px",&secvec_jet_px,&b_secvec_jet_px);
+   fChain->SetBranchAddress("secvec_jet_py",&secvec_jet_py,&b_secvec_jet_py);
+   fChain->SetBranchAddress("secvec_jet_pz",&secvec_jet_pz,&b_secvec_jet_pz);
+   fChain->SetBranchAddress("secvec_jet_pt1",&secvec_jet_pt1,&b_secvec_jet_pt1);
+   fChain->SetBranchAddress("secvec_jet_eta1",&secvec_jet_eta1,&b_secvec_jet_eta1);
+   fChain->SetBranchAddress("secvec_jet_phi1",&secvec_jet_phi1,&b_secvec_jet_phi1);
+   fChain->SetBranchAddress("secvec_jet_pt2",&secvec_jet_pt2,&b_secvec_jet_pt2);
+   fChain->SetBranchAddress("secvec_jet_eta2",&secvec_jet_eta2,&b_secvec_jet_eta2);
+   fChain->SetBranchAddress("secvec_jet_phi2",&secvec_jet_phi2,&b_secvec_jet_phi2);
 
 
    Notify();
@@ -862,6 +902,16 @@ void EventLoopAnalysisTemplate::analysis()
             LW200W_Genjet_eta->Fill(GenDau_eta->at(x));
             LW200W_RecoZdau_pt->Fill(jet_pt->at(y));
             LW200W_RecoZdau_corr_pt->Fill(corr_jet_pt->at(y));
+          }
+          for(size_t k=0; k<secvec_jet_eta1->size();k++){
+            if(secvec_jet_px->at(k)!=-1 ){
+              if(jet_pt->at(y)-secvec_jet_pt1->at(k)==0){
+                LW200Secvec_jet->Fill(jet_pt->at(y)-secvec_jet_pt1->at(k));
+              }
+              if(jet_pt->at(y)-secvec_jet_pt2->at(k)==0){
+                LW200Secvec_jet->Fill(jet_pt->at(y)-secvec_jet_pt2->at(k));
+              }
+            }
           }
         }
       }
@@ -1695,6 +1745,18 @@ if(gjet_DRscore.size()>1){
       }
     }
 
+    for(size_t x=0; x<secvec_posx->size(); x++){
+      if(secvec_eleTag->at(x)!=-1){
+        Vx=secvec_posx->at(x)-PV_x->at(0);
+        Vy=secvec_posy->at(x)-PV_y->at(0);
+        Vz=secvec_posz->at(x)-PV_z->at(0);
+        Ppoint= secvec_jet_px->at(x)*Vx+secvec_jet_py->at(x)*Vy+secvec_jet_pz->at(x)*Vz;
+        LW200SecVec_EleJet_Ppoint->Fill(Ppoint);
+        if(Ppoint>0)LW200SecVec_EleJet_PpointS->Fill(1);
+        else if(Ppoint<0) LW200SecVec_EleJet_PpointS->Fill(-1);
+      }
+    }
+
     float pvx,pvy,pvz,ppx,ppy,ppz;
     for(size_t x=0; x<GenPart_pt->size(); x++){
       if(GenPart_pdgId->at(x)==556){
@@ -1994,7 +2056,7 @@ int main()
 
 
   map<string, pair<string,float> > sampleNames;
-  sampleNames.insert(make_pair("LWSM200DnR",make_pair("LW200",1)));
+  sampleNames.insert(make_pair("myoutput_200",make_pair("LW200",1)));
 
 
 
@@ -2155,6 +2217,8 @@ int main()
   LW200EleJetInvM_PpointS->Write();
   LW200GenSecVec_PpointS->Write();
   LW200GenSecVec_Ppoint->Write();
+  LW200SecVec_EleJet_Ppoint->Write();
+  LW200SecVec_EleJet_PpointS->Write();
 
   LW200Zdau_GenjetMatch->Write();
   LW200Zdau_BjetMatch->Write();
@@ -2181,6 +2245,8 @@ int main()
   LW200SBElec_SBElecMatch->Write();
   LW200SBElec_3ElecMatch->Write();
   LW200SBElec_4ElecMatch->Write();
+
+  LW200Secvec_jet->Write();
 
 
   hfile->Close();
