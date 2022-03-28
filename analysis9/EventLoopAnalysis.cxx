@@ -3986,6 +3986,569 @@ TH1F* JetS_LW200_JetJetFDR = new TH1F("JetS_LW200_JetJetFDR","JetS Jet further J
 
 
 
+TH1F* IPP_dataRunB_ppoint = new TH1F("IPP_dataRunB_ppoint","IPP Scalar product displacement and total momentum of secondary vertex",2,0,2);
+
+TH1F* IPP_dataRunC_ppoint = new TH1F("IPP_dataRunC_ppoint","IPP Scalar product displacement and total momentum of secondary vertex",2,0,2);
+
+TH1F* IPP_ZLL_ppoint = new TH1F("IPP_ZLL_ppoint","IPP Scalar product displacement and total momentum of secondary vertex",2,0,2);
+
+TH1F* IPP_TT_ppoint = new TH1F("IPP_TT_ppoint","IPP Scalar product displacement and total momentum of secondary vertex",2,0,2);
+
+TH1F* IPP_W3J_ppoint = new TH1F("IPP_W3J_ppoint","IPP Scalar product displacement and total momentum of secondary vertex",2,0,2);
+
+TH1F* IPP_W2J_ppoint = new TH1F("IPP_W2J_ppoint","IPP Scalar product displacement and total momentum of secondary vertex",2,0,2);
+
+TH1F* IPP_W1J_ppoint = new TH1F("IPP_W1J_ppoint","IPP Scalar product displacement and total momentum of secondary vertex",2,0,2);
+
+//TH1F* //IPP_TTZ_ppoint = new TH1F("//IPP_TTZ_ppoint","IPP Scalar product displacement and total momentum of secondary vertex",2,0,2);
+
+//TH1F* //IPP_WW_ppoint = new TH1F("//IPP_WW_ppoint","IPP Scalar product displacement and total momentum of secondary vertex",2,0,2);
+
+//TH1F* //IPP_WZ_ppoint = new TH1F("//IPP_WZ_ppoint","IPP Scalar product displacement and total momentum of secondary vertex",2,0,2);
+
+TH1F* IPP_LW200_ppoint = new TH1F("IPP_LW200_ppoint","IPP Scalar product displacement and total momentum of secondary vertex",2,0,2);
+
+////TH1F* //IPP_LW300_ppoint = new TH1F("//IPP_LW300_ppoint","IPP Scalar product displacement and total momentum of secondary vertex",2,0,2);
+
+//TH1F* IPP_LW400_ppoint = new TH1F("IPP_LW400_ppoint","IPP Scalar product displacement and total momentum of secondary vertex",2,0,2);
+
+//TH1F* IPP_LW500_ppoint = new TH1F("IPP_LW500_ppoint","IPP Scalar product displacement and total momentum of secondary vertex",2,0,2);
+
+TH1F* IPP_dataRunB_npv = new TH1F("IPP_dataRunB_npv","IPP Number of primary vertices",25,5,30);
+
+TH1F* IPP_dataRunC_npv = new TH1F("IPP_dataRunC_npv","IPP Number of primary vertices",25,5,30);
+
+TH1F* IPP_ZLL_npv = new TH1F("IPP_ZLL_npv","IPP Number of primary vertices",25,5,30);
+
+TH1F* IPP_TT_npv = new TH1F("IPP_TT_npv","IPP Number of primary vertices",25,5,30);
+
+TH1F* IPP_W3J_npv = new TH1F("IPP_W3J_npv","IPP Number of primary vertices",25,5,30);
+
+TH1F* IPP_W2J_npv = new TH1F("IPP_W2J_npv","IPP Number of primary vertices",25,5,30);
+
+TH1F* IPP_W1J_npv = new TH1F("IPP_W1J_npv","IPP Number of primary vertices",25,5,30);
+
+//TH1F* //IPP_TTZ_npv = new TH1F("//IPP_TTZ_npv","IPP Number of primary vertices",25,5,30);
+
+//TH1F* //IPP_WW_npv = new TH1F("//IPP_WW_npv","IPP Number of primary vertices",25,5,30);
+
+//TH1F* //IPP_WZ_npv = new TH1F("//IPP_WZ_npv","IPP Number of primary vertices",25,5,30);
+
+TH1F* IPP_LW200_npv = new TH1F("IPP_LW200_npv","IPP Number of primary vertices",25,5,30);
+
+////TH1F* //IPP_LW300_npv = new TH1F("//IPP_LW300_npv","IPP Number of primary vertices",25,5,30);
+
+//TH1F* IPP_LW400_npv = new TH1F("IPP_LW400_npv","IPP Number of primary vertices",25,5,30);
+
+//TH1F* IPP_LW500_npv = new TH1F("IPP_LW500_npv","IPP Number of primary vertices",25,5,30);
+
+TH1F* IPP_dataRunB_nsv = new TH1F("IPP_dataRunB_nsv","IPP Number of secondary vertices",20,0,10);
+
+TH1F* IPP_dataRunC_nsv = new TH1F("IPP_dataRunC_nsv","IPP Number of secondary vertices",20,0,10);
+
+TH1F* IPP_ZLL_nsv = new TH1F("IPP_ZLL_nsv","IPP Number of secondary vertices",20,0,10);
+
+TH1F* IPP_TT_nsv = new TH1F("IPP_TT_nsv","IPP Number of secondary vertices",20,0,10);
+
+TH1F* IPP_W3J_nsv = new TH1F("IPP_W3J_nsv","IPP Number of secondary vertices",20,0,10);
+
+TH1F* IPP_W2J_nsv = new TH1F("IPP_W2J_nsv","IPP Number of secondary vertices",20,0,10);
+
+TH1F* IPP_W1J_nsv = new TH1F("IPP_W1J_nsv","IPP Number of secondary vertices",20,0,10);
+
+//TH1F* //IPP_TTZ_nsv = new TH1F("//IPP_TTZ_nsv","IPP Number of secondary vertices",20,0,10);
+
+//TH1F* //IPP_WW_nsv = new TH1F("//IPP_WW_nsv","IPP Number of secondary vertices",20,0,10);
+
+//TH1F* //IPP_WZ_nsv = new TH1F("//IPP_WZ_nsv","IPP Number of secondary vertices",20,0,10);
+
+TH1F* IPP_LW200_nsv = new TH1F("IPP_LW200_nsv","IPP Number of secondary vertices",20,0,10);
+
+////TH1F* //IPP_LW300_nsv = new TH1F("//IPP_LW300_nsv","IPP Number of secondary vertices",20,0,10);
+
+//TH1F* IPP_LW400_nsv = new TH1F("IPP_LW400_nsv","IPP Number of secondary vertices",20,0,10);
+
+//TH1F* IPP_LW500_nsv = new TH1F("IPP_LW500_nsv","IPP Number of secondary vertices",20,0,10);
+
+TH1F* IPP_dataRunB_svd = new TH1F("IPP_dataRunB_svd","IPP secondary vertex displacement",100,0,1);
+
+TH1F* IPP_dataRunC_svd = new TH1F("IPP_dataRunC_svd","IPP secondary vertex displacement",100,0,1);
+
+TH1F* IPP_ZLL_svd = new TH1F("IPP_ZLL_svd","IPP secondary vertex displacement",100,0,1);
+
+TH1F* IPP_TT_svd = new TH1F("IPP_TT_svd","IPP secondary vertex displacement",100,0,1);
+
+TH1F* IPP_W3J_svd = new TH1F("IPP_W3J_svd","IPP secondary vertex displacement",100,0,1);
+
+TH1F* IPP_W2J_svd = new TH1F("IPP_W2J_svd","IPP secondary vertex displacement",100,0,1);
+
+TH1F* IPP_W1J_svd = new TH1F("IPP_W1J_svd","IPP secondary vertex displacement",100,0,1);
+
+//TH1F* //IPP_TTZ_svd = new TH1F("//IPP_TTZ_svd","IPP secondary vertex displacement",100,0,1);
+
+//TH1F* //IPP_WW_svd = new TH1F("//IPP_WW_svd","IPP secondary vertex displacement",100,0,1);
+
+//TH1F* //IPP_WZ_svd = new TH1F("//IPP_WZ_svd","IPP secondary vertex displacement",100,0,1);
+
+TH1F* IPP_LW200_svd = new TH1F("IPP_LW200_svd","IPP secondary vertex displacement",100,0,1);
+
+////TH1F* //IPP_LW300_svd = new TH1F("//IPP_LW300_svd","IPP secondary vertex displacement",100,0,1);
+
+//TH1F* IPP_LW400_svd = new TH1F("IPP_LW400_svd","IPP secondary vertex displacement",100,0,1);
+
+//TH1F* IPP_LW500_svd = new TH1F("IPP_LW500_svd","IPP secondary vertex displacement",100,0,1);
+
+TH1F* IPP_dataRunB_JetMass = new TH1F("IPP_dataRunB_JetMass","IPP Invariant mass from DiJets",100,0,400);
+
+TH1F* IPP_dataRunC_JetMass = new TH1F("IPP_dataRunC_JetMass","IPP Invariant mass from DiJets",100,0,400);
+
+TH1F* IPP_ZLL_JetMass = new TH1F("IPP_ZLL_JetMass","IPP Invariant mass from DiJets",100,0,400);
+
+TH1F* IPP_TT_JetMass = new TH1F("IPP_TT_JetMass","IPP Invariant mass from DiJets",100,0,400);
+
+TH1F* IPP_W3J_JetMass = new TH1F("IPP_W3J_JetMass","IPP Invariant mass from DiJets",100,0,400);
+
+TH1F* IPP_W2J_JetMass = new TH1F("IPP_W2J_JetMass","IPP Invariant mass from DiJets",100,0,400);
+
+TH1F* IPP_W1J_JetMass = new TH1F("IPP_W1J_JetMass","IPP Invariant mass from DiJets",100,0,400);
+
+//TH1F* //IPP_TTZ_JetMass = new TH1F("//IPP_TTZ_JetMass","IPP Invariant mass from DiJets",100,0,400);
+
+//TH1F* //IPP_WW_JetMass = new TH1F("//IPP_WW_JetMass","IPP Invariant mass from DiJets",100,0,400);
+
+//TH1F* //IPP_WZ_JetMass = new TH1F("//IPP_WZ_JetMass","IPP Invariant mass from DiJets",100,0,400);
+
+TH1F* IPP_LW200_JetMass = new TH1F("IPP_LW200_JetMass","IPP Invariant mass from DiJets",100,0,400);
+
+////TH1F* //IPP_LW300_JetMass = new TH1F("//IPP_LW300_JetMass","IPP Invariant mass from DiJets",100,0,400);
+
+//TH1F* IPP_LW400_JetMass = new TH1F("IPP_LW400_JetMass","IPP Invariant mass from DiJets",100,0,400);
+
+//TH1F* IPP_LW500_JetMass = new TH1F("IPP_LW500_JetMass","IPP Invariant mass from DiJets",100,0,400);
+
+TH1F* IPP_dataRunB_LWMass = new TH1F("IPP_dataRunB_LWMass","IPP Invariant mass from LW",100,0,400);
+
+TH1F* IPP_dataRunC_LWMass = new TH1F("IPP_dataRunC_LWMass","IPP Invariant mass from LW",100,0,400);
+
+TH1F* IPP_ZLL_LWMass = new TH1F("IPP_ZLL_LWMass","IPP Invariant mass from LW",100,0,400);
+
+TH1F* IPP_TT_LWMass = new TH1F("IPP_TT_LWMass","IPP Invariant mass from LW",100,0,400);
+
+TH1F* IPP_W3J_LWMass = new TH1F("IPP_W3J_LWMass","IPP Invariant mass from LW",100,0,400);
+
+TH1F* IPP_W2J_LWMass = new TH1F("IPP_W2J_LWMass","IPP Invariant mass from LW",100,0,400);
+
+TH1F* IPP_W1J_LWMass = new TH1F("IPP_W1J_LWMass","IPP Invariant mass from LW",100,0,400);
+
+//TH1F* //IPP_TTZ_LWMass = new TH1F("//IPP_TTZ_LWMass","IPP Invariant mass from LW",100,0,400);
+
+//TH1F* //IPP_WW_LWMass = new TH1F("//IPP_WW_LWMass","IPP Invariant mass from LW",100,0,400);
+
+//TH1F* //IPP_WZ_LWMass = new TH1F("//IPP_WZ_LWMass","IPP Invariant mass from LW",100,0,400);
+
+TH1F* IPP_LW200_LWMass = new TH1F("IPP_LW200_LWMass","IPP Invariant mass from LW",100,0,400);
+
+////TH1F* //IPP_LW300_LWMass = new TH1F("//IPP_LW300_LWMass","IPP Invariant mass from LW",100,0,400);
+
+//TH1F* IPP_LW400_LWMass = new TH1F("IPP_LW400_LWMass","IPP Invariant mass from LW",100,0,400);
+
+//TH1F* IPP_LW500_LWMass = new TH1F("IPP_LW500_LWMass","IPP Invariant mass from LW",100,0,400);
+
+TH1F* IPP_dataRunB_Elept = new TH1F("IPP_dataRunB_Elept","IPP Electron pt distribution",100,0,200);
+
+TH1F* IPP_dataRunC_Elept = new TH1F("IPP_dataRunC_Elept","IPP Electron pt distribution",100,0,200);
+
+TH1F* IPP_ZLL_Elept = new TH1F("IPP_ZLL_Elept","IPP Electron pt distribution",100,0,200);
+
+TH1F* IPP_TT_Elept = new TH1F("IPP_TT_Elept","IPP Electron pt distribution",100,0,200);
+
+TH1F* IPP_W3J_Elept = new TH1F("IPP_W3J_Elept","IPP Electron pt distribution",100,0,200);
+
+TH1F* IPP_W2J_Elept = new TH1F("IPP_W2J_Elept","IPP Electron pt distribution",100,0,200);
+
+TH1F* IPP_W1J_Elept = new TH1F("IPP_W1J_Elept","IPP Electron pt distribution",100,0,200);
+
+//TH1F* //IPP_TTZ_Elept = new TH1F("//IPP_TTZ_Elept","IPP Electron pt distribution",100,0,200);
+
+//TH1F* //IPP_WW_Elept = new TH1F("//IPP_WW_Elept","IPP Electron pt distribution",100,0,200);
+
+//TH1F* //IPP_WZ_Elept = new TH1F("//IPP_WZ_Elept","IPP Electron pt distribution",100,0,200);
+
+TH1F* IPP_LW200_Elept = new TH1F("IPP_LW200_Elept","IPP Electron pt distribution",100,0,200);
+
+////TH1F* //IPP_LW300_Elept = new TH1F("//IPP_LW300_Elept","IPP Electron pt distribution",100,0,200);
+
+//TH1F* IPP_LW400_Elept = new TH1F("IPP_LW400_Elept","IPP Electron pt distribution",100,0,200);
+
+//TH1F* IPP_LW500_Elept = new TH1F("IPP_LW500_Elept","IPP Electron pt distribution",100,0,200);
+
+TH1F* IPP_dataRunB_DieledR = new TH1F("IPP_dataRunB_DieledR","IPP delta R separation between electrons",100,0,8);
+
+TH1F* IPP_dataRunC_DieledR = new TH1F("IPP_dataRunC_DieledR","IPP delta R separation between electrons",100,0,8);
+
+TH1F* IPP_ZLL_DieledR = new TH1F("IPP_ZLL_DieledR","IPP delta R separation between electrons",100,0,8);
+
+TH1F* IPP_TT_DieledR = new TH1F("IPP_TT_DieledR","IPP delta R separation between electrons",100,0,8);
+
+TH1F* IPP_W3J_DieledR = new TH1F("IPP_W3J_DieledR","IPP delta R separation between electrons",100,0,8);
+
+TH1F* IPP_W2J_DieledR = new TH1F("IPP_W2J_DieledR","IPP delta R separation between electrons",100,0,8);
+
+TH1F* IPP_W1J_DieledR = new TH1F("IPP_W1J_DieledR","IPP delta R separation between electrons",100,0,8);
+
+//TH1F* //IPP_TTZ_DieledR = new TH1F("//IPP_TTZ_DieledR","IPP delta R separation between electrons",100,0,8);
+
+//TH1F* //IPP_WW_DieledR = new TH1F("//IPP_WW_DieledR","IPP delta R separation between electrons",100,0,8);
+
+//TH1F* //IPP_WZ_DieledR = new TH1F("//IPP_WZ_DieledR","IPP delta R separation between electrons",100,0,8);
+
+TH1F* IPP_LW200_DieledR = new TH1F("IPP_LW200_DieledR","IPP delta R separation between electrons",100,0,8);
+
+////TH1F* //IPP_LW300_DieledR = new TH1F("//IPP_LW300_DieledR","IPP delta R separation between electrons",100,0,8);
+
+//TH1F* IPP_LW400_DieledR = new TH1F("IPP_LW400_DieledR","IPP delta R separation between electrons",100,0,8);
+
+//TH1F* IPP_LW500_DieledR = new TH1F("IPP_LW500_DieledR","IPP delta R separation between electrons",100,0,8);
+
+TH1F* IPP_dataRunB_LWdR = new TH1F("IPP_dataRunB_LWdR","IPP delta R separation between electrons and jets",100,0,5);
+
+TH1F* IPP_dataRunC_LWdR = new TH1F("IPP_dataRunC_LWdR","IPP delta R separation between electrons and jets",100,0,5);
+
+TH1F* IPP_ZLL_LWdR = new TH1F("IPP_ZLL_LWdR","IPP delta R separation between electrons and jets",100,0,5);
+
+TH1F* IPP_TT_LWdR = new TH1F("IPP_TT_LWdR","IPP delta R separation between electrons and jets",100,0,5);
+
+TH1F* IPP_W3J_LWdR = new TH1F("IPP_W3J_LWdR","IPP delta R separation between electrons and jets",100,0,5);
+
+TH1F* IPP_W2J_LWdR = new TH1F("IPP_W2J_LWdR","IPP delta R separation between electrons and jets",100,0,5);
+
+TH1F* IPP_W1J_LWdR = new TH1F("IPP_W1J_LWdR","IPP delta R separation between electrons and jets",100,0,5);
+
+//TH1F* //IPP_TTZ_LWdR = new TH1F("//IPP_TTZ_LWdR","IPP delta R separation between electrons and jets",100,0,5);
+
+//TH1F* //IPP_WW_LWdR = new TH1F("//IPP_WW_LWdR","IPP delta R separation between electrons and jets",100,0,5);
+
+//TH1F* //IPP_WZ_LWdR = new TH1F("//IPP_WZ_LWdR","IPP delta R separation between electrons and jets",100,0,5);
+
+TH1F* IPP_LW200_LWdR = new TH1F("IPP_LW200_LWdR","IPP delta R separation between electrons and jets",100,0,5);
+
+////TH1F* //IPP_LW300_LWdR = new TH1F("//IPP_LW300_LWdR","IPP delta R separation between electrons and jets",100,0,5);
+
+//TH1F* IPP_LW400_LWdR = new TH1F("IPP_LW400_LWdR","IPP delta R separation between electrons and jets",100,0,5);
+
+//TH1F* IPP_LW500_LWdR = new TH1F("IPP_LW500_LWdR","IPP delta R separation between electrons and jets",100,0,5);
+
+TH1F* IPP_dataRunB_DiJetdR = new TH1F("IPP_dataRunB_DiJetdR","IPP delta R separation between Jet Candidates",100,0,8);
+
+TH1F* IPP_dataRunC_DiJetdR = new TH1F("IPP_dataRunC_DiJetdR","IPP delta R separation between Jet Candidates",100,0,8);
+
+TH1F* IPP_ZLL_DiJetdR = new TH1F("IPP_ZLL_DiJetdR","IPP delta R separation between Jet Candidates",100,0,8);
+
+TH1F* IPP_TT_DiJetdR = new TH1F("IPP_TT_DiJetdR","IPP delta R separation between Jet Candidates",100,0,8);
+
+TH1F* IPP_W3J_DiJetdR = new TH1F("IPP_W3J_DiJetdR","IPP delta R separation between Jet Candidates",100,0,8);
+
+TH1F* IPP_W2J_DiJetdR = new TH1F("IPP_W2J_DiJetdR","IPP delta R separation between Jet Candidates",100,0,8);
+
+TH1F* IPP_W1J_DiJetdR = new TH1F("IPP_W1J_DiJetdR","IPP delta R separation between Jet Candidates",100,0,8);
+
+//TH1F* //IPP_TTZ_DiJetdR = new TH1F("//IPP_TTZ_DiJetdR","IPP delta R separation between Jet Candidates",100,0,8);
+
+//TH1F* //IPP_WW_DiJetdR = new TH1F("//IPP_WW_DiJetdR","IPP delta R separation between Jet Candidates",100,0,8);
+
+//TH1F* //IPP_WZ_DiJetdR = new TH1F("//IPP_WZ_DiJetdR","IPP delta R separation between Jet Candidates",100,0,8);
+
+TH1F* IPP_LW200_DiJetdR = new TH1F("IPP_LW200_DiJetdR","IPP delta R separation between Jet Candidates",100,0,8);
+
+////TH1F* //IPP_LW300_DiJetdR = new TH1F("//IPP_LW300_DiJetdR","IPP delta R separation between Jet Candidates",100,0,8);
+
+//TH1F* IPP_LW400_DiJetdR = new TH1F("IPP_LW400_DiJetdR","IPP delta R separation between Jet Candidates",100,0,8);
+
+//TH1F* IPP_LW500_DiJetdR = new TH1F("IPP_LW500_DiJetdR","IPP delta R separation between Jet Candidates",100,0,8);
+
+TH1F* IPP_dataRunB_BJetPt = new TH1F("IPP_dataRunB_BJetPt","IPP Most energetic Jet pt",100,0,250);
+
+TH1F* IPP_dataRunC_BJetPt = new TH1F("IPP_dataRunC_BJetPt","IPP Most energetic Jet pt",100,0,250);
+
+TH1F* IPP_ZLL_BJetPt = new TH1F("IPP_ZLL_BJetPt","IPP Most energetic Jet pt",100,0,250);
+
+TH1F* IPP_TT_BJetPt = new TH1F("IPP_TT_BJetPt","IPP Most energetic Jet pt",100,0,250);
+
+TH1F* IPP_W3J_BJetPt = new TH1F("IPP_W3J_BJetPt","IPP Most energetic Jet pt",100,0,250);
+
+TH1F* IPP_W2J_BJetPt = new TH1F("IPP_W2J_BJetPt","IPP Most energetic Jet pt",100,0,250);
+
+TH1F* IPP_W1J_BJetPt = new TH1F("IPP_W1J_BJetPt","IPP Most energetic Jet pt",100,0,250);
+
+//TH1F* //IPP_TTZ_BJetPt = new TH1F("//IPP_TTZ_BJetPt","IPP Most energetic Jet pt",100,0,250);
+
+//TH1F* //IPP_WW_BJetPt = new TH1F("//IPP_WW_BJetPt","IPP Most energetic Jet pt",100,0,250);
+
+//TH1F* //IPP_WZ_BJetPt = new TH1F("//IPP_WZ_BJetPt","IPP Most energetic Jet pt",100,0,250);
+
+TH1F* IPP_LW200_BJetPt = new TH1F("IPP_LW200_BJetPt","IPP Most energetic Jet pt",100,0,250);
+
+//TH1F* //IPP_LW300_BJetPt = new TH1F("//IPP_LW300_BJetPt","IPP Most energetic Jet pt",100,0,250);
+
+//TH1F* IPP_LW400_BJetPt = new TH1F("IPP_LW400_BJetPt","IPP Most energetic Jet pt",100,0,250);
+
+//TH1F* IPP_LW500_BJetPt = new TH1F("IPP_LW500_BJetPt","IPP Most energetic Jet pt",100,0,250);
+
+TH1F* IPP_dataRunB_SBJetPt = new TH1F("IPP_dataRunB_SBJetPt","Second IPP Most energetic Jet pt",100,0,250);
+
+TH1F* IPP_dataRunC_SBJetPt = new TH1F("IPP_dataRunC_SBJetPt","Second IPP Most energetic Jet pt",100,0,250);
+
+TH1F* IPP_ZLL_SBJetPt = new TH1F("IPP_ZLL_SBJetPt","Second IPP Most energetic Jet pt",100,0,250);
+
+TH1F* IPP_TT_SBJetPt = new TH1F("IPP_TT_SBJetPt","Second IPP Most energetic Jet pt",100,0,250);
+
+TH1F* IPP_W3J_SBJetPt = new TH1F("IPP_W3J_SBJetPt","Second IPP Most energetic Jet pt",100,0,250);
+
+TH1F* IPP_W2J_SBJetPt = new TH1F("IPP_W2J_SBJetPt","Second IPP Most energetic Jet pt",100,0,250);
+
+TH1F* IPP_W1J_SBJetPt = new TH1F("IPP_W1J_SBJetPt","Second IPP Most energetic Jet pt",100,0,250);
+
+//TH1F* //IPP_TTZ_SBJetPt = new TH1F("//IPP_TTZ_SBJetPt","Second IPP Most energetic Jet pt",100,0,250);
+
+//TH1F* //IPP_WW_SBJetPt = new TH1F("//IPP_WW_SBJetPt","Second IPP Most energetic Jet pt",100,0,250);
+
+//TH1F* //IPP_WZ_SBJetPt = new TH1F("//IPP_WZ_SBJetPt","Second IPP Most energetic Jet pt",100,0,250);
+
+TH1F* IPP_LW200_SBJetPt = new TH1F("IPP_LW200_SBJetPt","Second IPP Most energetic Jet pt",100,0,250);
+
+//TH1F* //IPP_LW300_SBJetPt = new TH1F("//IPP_LW300_SBJetPt","Second IPP Most energetic Jet pt",100,0,250);
+
+//TH1F* IPP_LW400_SBJetPt = new TH1F("IPP_LW400_SBJetPt","Second IPP Most energetic Jet pt",100,0,250);
+
+//TH1F* IPP_LW500_SBJetPt = new TH1F("IPP_LW500_SBJetPt","Second IPP Most energetic Jet pt",100,0,250);
+
+TH1F* IPP_dataRunB_NJet = new TH1F("IPP_dataRunB_NJet","IPP Number of Jets",20,0,20);
+
+TH1F* IPP_dataRunC_NJet = new TH1F("IPP_dataRunC_NJet","IPP Number of Jets",20,0,20);
+
+TH1F* IPP_ZLL_NJet = new TH1F("IPP_ZLL_NJet","IPP Number of Jets",20,0,20);
+
+TH1F* IPP_TT_NJet = new TH1F("IPP_TT_NJet","IPP Number of Jets",20,0,20);
+
+TH1F* IPP_W3J_NJet = new TH1F("IPP_W3J_NJet","IPP Number of Jets",20,0,20);
+
+TH1F* IPP_W2J_NJet = new TH1F("IPP_W2J_NJet","IPP Number of Jets",20,0,20);
+
+TH1F* IPP_W1J_NJet = new TH1F("IPP_W1J_NJet","IPP Number of Jets",20,0,20);
+
+//TH1F* //IPP_TTZ_NJet = new TH1F("//IPP_TTZ_NJet","IPP Number of Jets",20,0,20);
+
+//TH1F* //IPP_WW_NJet = new TH1F("//IPP_WW_NJet","IPP Number of Jets",20,0,20);
+
+//TH1F* //IPP_WZ_NJet = new TH1F("//IPP_WZ_NJet","IPP Number of Jets",20,0,20);
+
+TH1F* IPP_LW200_NJet = new TH1F("IPP_LW200_NJet","IPP Number of Jets",20,0,20);
+
+//TH1F* //IPP_LW300_NJet = new TH1F("//IPP_LW300_NJet","IPP Number of Jets",20,0,20);
+
+//TH1F* IPP_LW400_NJet = new TH1F("IPP_LW400_NJet","IPP Number of Jets",20,0,20);
+
+//TH1F* IPP_LW500_NJet = new TH1F("IPP_LW500_NJet","IPP Number of Jets",20,0,20);
+
+TH1F* IPP_dataRunB_NEle = new TH1F("IPP_dataRunB_NEle","IPP Number of electrons",20,0,20);
+
+TH1F* IPP_dataRunC_NEle = new TH1F("IPP_dataRunC_NEle","IPP Number of electrons",20,0,20);
+
+TH1F* IPP_ZLL_NEle = new TH1F("IPP_ZLL_NEle","IPP Number of electrons",20,0,20);
+
+TH1F* IPP_TT_NEle = new TH1F("IPP_TT_NEle","IPP Number of electrons",20,0,20);
+
+TH1F* IPP_W3J_NEle = new TH1F("IPP_W3J_NEle","IPP Number of electrons",20,0,20);
+
+TH1F* IPP_W2J_NEle = new TH1F("IPP_W2J_NEle","IPP Number of electrons",20,0,20);
+
+TH1F* IPP_W1J_NEle = new TH1F("IPP_W1J_NEle","IPP Number of electrons",20,0,20);
+
+//TH1F* //IPP_TTZ_NEle = new TH1F("//IPP_TTZ_NEle","IPP Number of electrons",20,0,20);
+
+//TH1F* //IPP_WW_NEle = new TH1F("//IPP_WW_NEle","IPP Number of electrons",20,0,20);
+
+//TH1F* //IPP_WZ_NEle = new TH1F("//IPP_WZ_NEle","IPP Number of electrons",20,0,20);
+
+TH1F* IPP_LW200_NEle = new TH1F("IPP_LW200_NEle","IPP Number of electrons",20,0,20);
+
+//TH1F* //IPP_LW300_NEle = new TH1F("//IPP_LW300_NEle","IPP Number of electrons",20,0,20);
+
+//TH1F* IPP_LW400_NEle = new TH1F("IPP_LW400_NEle","IPP Number of electrons",20,0,20);
+
+//TH1F* IPP_LW500_NEle = new TH1F("IPP_LW500_NEle","IPP Number of electrons",20,0,20);
+
+TH1F* IPP_dataRunB_BSd = new TH1F("IPP_dataRunB_BSd","IPP Beam spot distance",100,0,1);
+
+TH1F* IPP_dataRunC_BSd = new TH1F("IPP_dataRunC_BSd","IPP Beam spot distance",100,0,1);
+
+TH1F* IPP_ZLL_BSd = new TH1F("IPP_ZLL_BSd","IPP Beam spot distance",100,0,1);
+
+TH1F* IPP_TT_BSd = new TH1F("IPP_TT_BSd","IPP Beam spot distance",100,0,1);
+
+TH1F* IPP_W3J_BSd = new TH1F("IPP_W3J_BSd","IPP Beam spot distance",100,0,1);
+
+TH1F* IPP_W2J_BSd = new TH1F("IPP_W2J_BSd","IPP Beam spot distance",100,0,1);
+
+TH1F* IPP_W1J_BSd = new TH1F("IPP_W1J_BSd","IPP Beam spot distance",100,0,1);
+
+//TH1F* IPP_TTZ_BSd = new TH1F("IPP_TTZ_BSd","IPP Beam spot distance",100,0,1);
+
+//TH1F* IPP_WW_BSd = new TH1F("IPP_WW_BSd","IPP Beam spot distance",100,0,1);
+
+//TH1F* IPP_WZ_BSd = new TH1F("IPP_WZ_BSd","IPP Beam spot distance",100,0,1);
+
+TH1F* IPP_LW200_BSd = new TH1F("IPP_LW200_BSd","IPP Beam spot distance",100,0,1);
+
+//TH1F* IPP_LW300_BSd = new TH1F("IPP_LW300_BSd","IPP Beam spot distance",100,0,1);
+
+//TH1F* IPP_LW400_BSd = new TH1F("IPP_LW400_BSd","IPP Beam spot distance",100,0,1);
+
+//TH1F* IPP_LW500_BSd = new TH1F("IPP_LW500_BSd","IPP Beam spot distance",100,0,1);
+
+TH1F* IPP_dataRunB_EleJet1DR = new TH1F("IPP_dataRunB_EleJet1DR","IPP Electron first Jet DeltaR distance",100,0,5);
+
+TH1F* IPP_dataRunC_EleJet1DR = new TH1F("IPP_dataRunC_EleJet1DR","IPP Electron first Jet DeltaR distance",100,0,5);
+
+TH1F* IPP_ZLL_EleJet1DR = new TH1F("IPP_ZLL_EleJet1DR","IPP Electron first Jet DeltaR distance",100,0,5);
+
+TH1F* IPP_TT_EleJet1DR = new TH1F("IPP_TT_EleJet1DR","IPP Electron first Jet DeltaR distance",100,0,5);
+
+TH1F* IPP_W3J_EleJet1DR = new TH1F("IPP_W3J_EleJet1DR","IPP Electron first Jet DeltaR distance",100,0,5);
+
+TH1F* IPP_W2J_EleJet1DR = new TH1F("IPP_W2J_EleJet1DR","IPP Electron first Jet DeltaR distance",100,0,5);
+
+TH1F* IPP_W1J_EleJet1DR = new TH1F("IPP_W1J_EleJet1DR","IPP Electron first Jet DeltaR distance",100,0,5);
+
+//TH1F* IPP_TTZ_EleJet1DR = new TH1F("IPP_TTZ_EleJet1DR","IPP Electron first Jet DeltaR distance",100,0,5);
+
+//TH1F* IPP_WW_EleJet1DR = new TH1F("IPP_WW_EleJet1DR","IPP Electron first Jet DeltaR distance",100,0,5);
+
+//TH1F* IPP_WZ_EleJet1DR = new TH1F("IPP_WZ_EleJet1DR","IPP Electron first Jet DeltaR distance",100,0,5);
+
+TH1F* IPP_LW200_EleJet1DR = new TH1F("IPP_LW200_EleJet1DR","IPP Electron first Jet DeltaR distance",100,0,5);
+
+//TH1F* IPP_LW300_EleJet1DR = new TH1F("IPP_LW300_EleJet1DR","IPP Electron first Jet DeltaR distance",100,0,5);
+
+//TH1F* IPP_LW400_EleJet1DR = new TH1F("IPP_LW400_EleJet1DR","IPP Electron first Jet DeltaR distance",100,0,5);
+
+//TH1F* IPP_LW500_EleJet1DR = new TH1F("IPP_LW500_EleJet1DR","IPP Electron first Jet DeltaR distance",100,0,5);
+
+TH1F* IPP_dataRunB_EleJet2DR = new TH1F("IPP_dataRunB_EleJet2DR","IPP Electron second Jet DeltaR distance",100,0,5);
+
+TH1F* IPP_dataRunC_EleJet2DR = new TH1F("IPP_dataRunC_EleJet2DR","IPP Electron second Jet DeltaR distance",100,0,5);
+
+TH1F* IPP_ZLL_EleJet2DR = new TH1F("IPP_ZLL_EleJet2DR","IPP Electron second Jet DeltaR distance",100,0,5);
+
+TH1F* IPP_TT_EleJet2DR = new TH1F("IPP_TT_EleJet2DR","IPP Electron second Jet DeltaR distance",100,0,5);
+
+TH1F* IPP_W3J_EleJet2DR = new TH1F("IPP_W3J_EleJet2DR","IPP Electron second Jet DeltaR distance",100,0,5);
+
+TH1F* IPP_W2J_EleJet2DR = new TH1F("IPP_W2J_EleJet2DR","IPP Electron second Jet DeltaR distance",100,0,5);
+
+TH1F* IPP_W1J_EleJet2DR = new TH1F("IPP_W1J_EleJet2DR","IPP Electron second Jet DeltaR distance",100,0,5);
+
+//TH1F* IPP_TTZ_EleJet2DR = new TH1F("IPP_TTZ_EleJet2DR","IPP Electron second Jet DeltaR distance",100,0,5);
+
+//TH1F* IPP_WW_EleJet2DR = new TH1F("IPP_WW_EleJet2DR","IPP Electron second Jet DeltaR distance",100,0,5);
+
+//TH1F* IPP_WZ_EleJet2DR = new TH1F("IPP_WZ_EleJet2DR","IPP Electron second Jet DeltaR distance",100,0,5);
+
+TH1F* IPP_LW200_EleJet2DR = new TH1F("IPP_LW200_EleJet2DR","IPP Electron second Jet DeltaR distance",100,0,5);
+
+//TH1F* IPP_LW300_EleJet2DR = new TH1F("IPP_LW300_EleJet2DR","IPP Electron second Jet DeltaR distance",100,0,5);
+
+//TH1F* IPP_LW400_EleJet2DR = new TH1F("IPP_LW400_EleJet2DR","IPP Electron second Jet DeltaR distance",100,0,5);
+
+//TH1F* IPP_LW500_EleJet2DR = new TH1F("IPP_LW500_EleJet2DR","IPP Electron second Jet DeltaR distance",100,0,5);
+
+TH1F* IPP_dataRunB_JetJet1DR = new TH1F("IPP_dataRunB_JetJet1DR","IPP Jet first Jet DeltaR distance",100,0,5);
+
+TH1F* IPP_dataRunC_JetJet1DR = new TH1F("IPP_dataRunC_JetJet1DR","IPP Jet first Jet DeltaR distance",100,0,5);
+
+TH1F* IPP_ZLL_JetJet1DR = new TH1F("IPP_ZLL_JetJet1DR","IPP Jet first Jet DeltaR distance",100,0,5);
+
+TH1F* IPP_TT_JetJet1DR = new TH1F("IPP_TT_JetJet1DR","IPP Jet first Jet DeltaR distance",100,0,5);
+
+TH1F* IPP_W3J_JetJet1DR = new TH1F("IPP_W3J_JetJet1DR","IPP Jet first Jet DeltaR distance",100,0,5);
+
+TH1F* IPP_W2J_JetJet1DR = new TH1F("IPP_W2J_JetJet1DR","IPP Jet first Jet DeltaR distance",100,0,5);
+
+TH1F* IPP_W1J_JetJet1DR = new TH1F("IPP_W1J_JetJet1DR","IPP Jet first Jet DeltaR distance",100,0,5);
+
+//TH1F* IPP_TTZ_JetJet1DR = new TH1F("IPP_TTZ_JetJet1DR","IPP Jet first Jet DeltaR distance",100,0,5);
+
+//TH1F* IPP_WW_JetJet1DR = new TH1F("IPP_WW_JetJet1DR","IPP Jet first Jet DeltaR distance",100,0,5);
+
+//TH1F* IPP_WZ_JetJet1DR = new TH1F("IPP_WZ_JetJet1DR","IPP Jet first Jet DeltaR distance",100,0,5);
+
+TH1F* IPP_LW200_JetJet1DR = new TH1F("IPP_LW200_JetJet1DR","IPP Jet first Jet DeltaR distance",100,0,5);
+
+//TH1F* IPP_LW300_JetJet1DR = new TH1F("IPP_LW300_JetJet1DR","IPP Jet first Jet DeltaR distance",100,0,5);
+
+//TH1F* IPP_LW400_JetJet1DR = new TH1F("IPP_LW400_JetJet1DR","IPP Jet first Jet DeltaR distance",100,0,5);
+
+//TH1F* IPP_LW500_JetJet1DR = new TH1F("IPP_LW500_JetJet1DR","IPP Jet first Jet DeltaR distance",100,0,5);
+
+TH1F* IPP_dataRunB_JetJet2DR = new TH1F("IPP_dataRunB_JetJet2DR","IPP Jet second closest Jet DeltaR distance",100,0,5);
+
+TH1F* IPP_dataRunC_JetJet2DR = new TH1F("IPP_dataRunC_JetJet2DR","IPP Jet second closest Jet DeltaR distance",100,0,5);
+
+TH1F* IPP_ZLL_JetJet2DR = new TH1F("IPP_ZLL_JetJet2DR","IPP Jet second closest Jet DeltaR distance",100,0,5);
+
+TH1F* IPP_TT_JetJet2DR = new TH1F("IPP_TT_JetJet2DR","IPP Jet second closest Jet DeltaR distance",100,0,5);
+
+TH1F* IPP_W3J_JetJet2DR = new TH1F("IPP_W3J_JetJet2DR","IPP Jet second closest Jet DeltaR distance",100,0,5);
+
+TH1F* IPP_W2J_JetJet2DR = new TH1F("IPP_W2J_JetJet2DR","IPP Jet second closest Jet DeltaR distance",100,0,5);
+
+TH1F* IPP_W1J_JetJet2DR = new TH1F("IPP_W1J_JetJet2DR","IPP Jet second closest Jet DeltaR distance",100,0,5);
+
+//TH1F* IPP_TTZ_JetJet2DR = new TH1F("IPP_TTZ_JetJet2DR","IPP Jet second closest Jet DeltaR distance",100,0,5);
+
+//TH1F* IPP_WW_JetJet2DR = new TH1F("IPP_WW_JetJet2DR","IPP Jet second closest Jet DeltaR distance",100,0,5);
+
+//TH1F* IPP_WZ_JetJet2DR = new TH1F("IPP_WZ_JetJet2DR","IPP Jet second closest Jet DeltaR distance",100,0,5);
+
+TH1F* IPP_LW200_JetJet2DR = new TH1F("IPP_LW200_JetJet2DR","IPP Jet second closest Jet DeltaR distance",100,0,5);
+
+//TH1F* IPP_LW300_JetJet2DR = new TH1F("IPP_LW300_JetJet2DR","IPP Jet second closest Jet DeltaR distance",100,0,5);
+
+//TH1F* IPP_LW400_JetJet2DR = new TH1F("IPP_LW400_JetJet2DR","IPP Jet second closest Jet DeltaR distance",100,0,5);
+
+//TH1F* IPP_LW500_JetJet2DR = new TH1F("IPP_LW500_JetJet2DR","IPP Jet second closest Jet DeltaR distance",100,0,5);
+
+TH1F* IPP_dataRunB_JetJetFDR = new TH1F("IPP_dataRunB_JetJetFDR","IPP Jet further Jet DeltaR distance",100,0,5);
+
+TH1F* IPP_dataRunC_JetJetFDR = new TH1F("IPP_dataRunC_JetJetFDR","IPP Jet further Jet DeltaR distance",100,0,5);
+
+TH1F* IPP_ZLL_JetJetFDR = new TH1F("IPP_ZLL_JetJetFDR","IPP Jet further Jet DeltaR distance",100,0,5);
+
+TH1F* IPP_TT_JetJetFDR = new TH1F("IPP_TT_JetJetFDR","IPP Jet further Jet DeltaR distance",100,0,5);
+
+TH1F* IPP_W3J_JetJetFDR = new TH1F("IPP_W3J_JetJetFDR","IPP Jet further Jet DeltaR distance",100,0,5);
+
+TH1F* IPP_W2J_JetJetFDR = new TH1F("IPP_W2J_JetJetFDR","IPP Jet further Jet DeltaR distance",100,0,5);
+
+TH1F* IPP_W1J_JetJetFDR = new TH1F("IPP_W1J_JetJetFDR","IPP Jet further Jet DeltaR distance",100,0,5);
+
+//TH1F* IPP_TTZ_JetJetFDR = new TH1F("IPP_TTZ_JetJetFDR","IPP Jet further Jet DeltaR distance",100,0,5);
+
+//TH1F* IPP_WW_JetJetFDR = new TH1F("IPP_WW_JetJetFDR","IPP Jet further Jet DeltaR distance",100,0,5);
+
+//TH1F* IPP_WZ_JetJetFDR = new TH1F("IPP_WZ_JetJetFDR","IPP Jet further Jet DeltaR distance",100,0,5);
+
+TH1F* IPP_LW200_JetJetFDR = new TH1F("IPP_LW200_JetJetFDR","IPP Jet further Jet DeltaR distance",100,0,5);
+
+//TH1F* IPP_LW300_JetJetFDR = new TH1F("IPP_LW300_JetJetFDR","IPP Jet further Jet DeltaR distance",100,0,5);
+
+//TH1F* IPP_LW400_JetJetFDR = new TH1F("IPP_LW400_JetJetFDR","IPP Jet further Jet DeltaR distance",100,0,5);
+
+//TH1F* IPP_LW500_JetJetFDR = new TH1F("IPP_LW500_JetJetFDR","IPP Jet further Jet DeltaR distance",100,0,5);
+
+
+
+
 
 /////////////////////////////////////QCD////////////////////////////////////////////////
 //////////////////////////////////////Trigg filter
@@ -7359,6 +7922,568 @@ TH1F* JetS_LW200_JetJetFDR_cr = new TH1F("JetS_LW200_JetJetFDR_cr","JetS Jet fur
 
 //TH1F* JetS_LW500_JetJetFDR_cr = new TH1F("JetS_LW500_JetJetFDR_cr","JetS Jet further Jet DeltaR distance",100,0,5);
 
+//////////////////////////////////////Is antiparallel cut//////////////////////////
+
+TH1F* IPP_dataRunB_ppoint_cr = new TH1F("IPP_dataRunB_ppoint_cr","IPP Scalar product displacement and total momentum of secondary vertex",2,0,2);
+
+TH1F* IPP_dataRunC_ppoint_cr = new TH1F("IPP_dataRunC_ppoint_cr","IPP Scalar product displacement and total momentum of secondary vertex",2,0,2);
+
+TH1F* IPP_ZLL_ppoint_cr = new TH1F("IPP_ZLL_ppoint_cr","IPP Scalar product displacement and total momentum of secondary vertex",2,0,2);
+
+TH1F* IPP_TT_ppoint_cr = new TH1F("IPP_TT_ppoint_cr","IPP Scalar product displacement and total momentum of secondary vertex",2,0,2);
+
+TH1F* IPP_W3J_ppoint_cr = new TH1F("IPP_W3J_ppoint_cr","IPP Scalar product displacement and total momentum of secondary vertex",2,0,2);
+
+TH1F* IPP_W2J_ppoint_cr = new TH1F("IPP_W2J_ppoint_cr","IPP Scalar product displacement and total momentum of secondary vertex",2,0,2);
+
+TH1F* IPP_W1J_ppoint_cr = new TH1F("IPP_W1J_ppoint_cr","IPP Scalar product displacement and total momentum of secondary vertex",2,0,2);
+
+//TH1F* //IPP_TTZ_ppoint_cr = new TH1F("//IPP_TTZ_ppoint_cr","IPP Scalar product displacement and total momentum of secondary vertex",2,0,2);
+
+//TH1F* //IPP_WW_ppoint_cr = new TH1F("//IPP_WW_ppoint_cr","IPP Scalar product displacement and total momentum of secondary vertex",2,0,2);
+
+//TH1F* //IPP_WZ_ppoint_cr = new TH1F("//IPP_WZ_ppoint_cr","IPP Scalar product displacement and total momentum of secondary vertex",2,0,2);
+
+TH1F* IPP_LW200_ppoint_cr = new TH1F("IPP_LW200_ppoint_cr","IPP Scalar product displacement and total momentum of secondary vertex",2,0,2);
+
+////TH1F* //IPP_LW300_ppoint_cr = new TH1F("//IPP_LW300_ppoint_cr","IPP Scalar product displacement and total momentum of secondary vertex",2,0,2);
+
+//TH1F* IPP_LW400_ppoint_cr = new TH1F("IPP_LW400_ppoint_cr","IPP Scalar product displacement and total momentum of secondary vertex",2,0,2);
+
+//TH1F* IPP_LW500_ppoint_cr = new TH1F("IPP_LW500_ppoint_cr","IPP Scalar product displacement and total momentum of secondary vertex",2,0,2);
+
+TH1F* IPP_dataRunB_npv_cr = new TH1F("IPP_dataRunB_npv_cr","IPP Number of primary vertices",25,5,30);
+
+TH1F* IPP_dataRunC_npv_cr = new TH1F("IPP_dataRunC_npv_cr","IPP Number of primary vertices",25,5,30);
+
+TH1F* IPP_ZLL_npv_cr = new TH1F("IPP_ZLL_npv_cr","IPP Number of primary vertices",25,5,30);
+
+TH1F* IPP_TT_npv_cr = new TH1F("IPP_TT_npv_cr","IPP Number of primary vertices",25,5,30);
+
+TH1F* IPP_W3J_npv_cr = new TH1F("IPP_W3J_npv_cr","IPP Number of primary vertices",25,5,30);
+
+TH1F* IPP_W2J_npv_cr = new TH1F("IPP_W2J_npv_cr","IPP Number of primary vertices",25,5,30);
+
+TH1F* IPP_W1J_npv_cr = new TH1F("IPP_W1J_npv_cr","IPP Number of primary vertices",25,5,30);
+
+//TH1F* //IPP_TTZ_npv_cr = new TH1F("//IPP_TTZ_npv_cr","IPP Number of primary vertices",25,5,30);
+
+//TH1F* //IPP_WW_npv_cr = new TH1F("//IPP_WW_npv_cr","IPP Number of primary vertices",25,5,30);
+
+//TH1F* //IPP_WZ_npv_cr = new TH1F("//IPP_WZ_npv_cr","IPP Number of primary vertices",25,5,30);
+
+TH1F* IPP_LW200_npv_cr = new TH1F("IPP_LW200_npv_cr","IPP Number of primary vertices",25,5,30);
+
+////TH1F* //IPP_LW300_npv_cr = new TH1F("//IPP_LW300_npv_cr","IPP Number of primary vertices",25,5,30);
+
+//TH1F* IPP_LW400_npv_cr = new TH1F("IPP_LW400_npv_cr","IPP Number of primary vertices",25,5,30);
+
+//TH1F* IPP_LW500_npv_cr = new TH1F("IPP_LW500_npv_cr","IPP Number of primary vertices",25,5,30);
+
+TH1F* IPP_dataRunB_nsv_cr = new TH1F("IPP_dataRunB_nsv_cr","IPP Number of secondary vertices",20,0,10);
+
+TH1F* IPP_dataRunC_nsv_cr = new TH1F("IPP_dataRunC_nsv_cr","IPP Number of secondary vertices",20,0,10);
+
+TH1F* IPP_ZLL_nsv_cr = new TH1F("IPP_ZLL_nsv_cr","IPP Number of secondary vertices",20,0,10);
+
+TH1F* IPP_TT_nsv_cr = new TH1F("IPP_TT_nsv_cr","IPP Number of secondary vertices",20,0,10);
+
+TH1F* IPP_W3J_nsv_cr = new TH1F("IPP_W3J_nsv_cr","IPP Number of secondary vertices",20,0,10);
+
+TH1F* IPP_W2J_nsv_cr = new TH1F("IPP_W2J_nsv_cr","IPP Number of secondary vertices",20,0,10);
+
+TH1F* IPP_W1J_nsv_cr = new TH1F("IPP_W1J_nsv_cr","IPP Number of secondary vertices",20,0,10);
+
+//TH1F* //IPP_TTZ_nsv_cr = new TH1F("//IPP_TTZ_nsv_cr","IPP Number of secondary vertices",20,0,10);
+
+//TH1F* //IPP_WW_nsv_cr = new TH1F("//IPP_WW_nsv_cr","IPP Number of secondary vertices",20,0,10);
+
+//TH1F* //IPP_WZ_nsv_cr = new TH1F("//IPP_WZ_nsv_cr","IPP Number of secondary vertices",20,0,10);
+
+TH1F* IPP_LW200_nsv_cr = new TH1F("IPP_LW200_nsv_cr","IPP Number of secondary vertices",20,0,10);
+
+////TH1F* //IPP_LW300_nsv_cr = new TH1F("//IPP_LW300_nsv_cr","IPP Number of secondary vertices",20,0,10);
+
+//TH1F* IPP_LW400_nsv_cr = new TH1F("IPP_LW400_nsv_cr","IPP Number of secondary vertices",20,0,10);
+
+//TH1F* IPP_LW500_nsv_cr = new TH1F("IPP_LW500_nsv_cr","IPP Number of secondary vertices",20,0,10);
+
+TH1F* IPP_dataRunB_svd_cr = new TH1F("IPP_dataRunB_svd_cr","IPP secondary vertex displacement",100,0,1);
+
+TH1F* IPP_dataRunC_svd_cr = new TH1F("IPP_dataRunC_svd_cr","IPP secondary vertex displacement",100,0,1);
+
+TH1F* IPP_ZLL_svd_cr = new TH1F("IPP_ZLL_svd_cr","IPP secondary vertex displacement",100,0,1);
+
+TH1F* IPP_TT_svd_cr = new TH1F("IPP_TT_svd_cr","IPP secondary vertex displacement",100,0,1);
+
+TH1F* IPP_W3J_svd_cr = new TH1F("IPP_W3J_svd_cr","IPP secondary vertex displacement",100,0,1);
+
+TH1F* IPP_W2J_svd_cr = new TH1F("IPP_W2J_svd_cr","IPP secondary vertex displacement",100,0,1);
+
+TH1F* IPP_W1J_svd_cr = new TH1F("IPP_W1J_svd_cr","IPP secondary vertex displacement",100,0,1);
+
+//TH1F* //IPP_TTZ_svd_cr = new TH1F("//IPP_TTZ_svd_cr","IPP secondary vertex displacement",100,0,1);
+
+//TH1F* //IPP_WW_svd_cr = new TH1F("//IPP_WW_svd_cr","IPP secondary vertex displacement",100,0,1);
+
+//TH1F* //IPP_WZ_svd_cr = new TH1F("//IPP_WZ_svd_cr","IPP secondary vertex displacement",100,0,1);
+
+TH1F* IPP_LW200_svd_cr = new TH1F("IPP_LW200_svd_cr","IPP secondary vertex displacement",100,0,1);
+
+////TH1F* //IPP_LW300_svd_cr = new TH1F("//IPP_LW300_svd_cr","IPP secondary vertex displacement",100,0,1);
+
+//TH1F* IPP_LW400_svd_cr = new TH1F("IPP_LW400_svd_cr","IPP secondary vertex displacement",100,0,1);
+
+//TH1F* IPP_LW500_svd_cr = new TH1F("IPP_LW500_svd_cr","IPP secondary vertex displacement",100,0,1);
+
+TH1F* IPP_dataRunB_JetMass_cr = new TH1F("IPP_dataRunB_JetMass_cr","IPP Invariant mass from DiJets",100,0,400);
+
+TH1F* IPP_dataRunC_JetMass_cr = new TH1F("IPP_dataRunC_JetMass_cr","IPP Invariant mass from DiJets",100,0,400);
+
+TH1F* IPP_ZLL_JetMass_cr = new TH1F("IPP_ZLL_JetMass_cr","IPP Invariant mass from DiJets",100,0,400);
+
+TH1F* IPP_TT_JetMass_cr = new TH1F("IPP_TT_JetMass_cr","IPP Invariant mass from DiJets",100,0,400);
+
+TH1F* IPP_W3J_JetMass_cr = new TH1F("IPP_W3J_JetMass_cr","IPP Invariant mass from DiJets",100,0,400);
+
+TH1F* IPP_W2J_JetMass_cr = new TH1F("IPP_W2J_JetMass_cr","IPP Invariant mass from DiJets",100,0,400);
+
+TH1F* IPP_W1J_JetMass_cr = new TH1F("IPP_W1J_JetMass_cr","IPP Invariant mass from DiJets",100,0,400);
+
+//TH1F* //IPP_TTZ_JetMass_cr = new TH1F("//IPP_TTZ_JetMass_cr","IPP Invariant mass from DiJets",100,0,400);
+
+//TH1F* //IPP_WW_JetMass_cr = new TH1F("//IPP_WW_JetMass_cr","IPP Invariant mass from DiJets",100,0,400);
+
+//TH1F* //IPP_WZ_JetMass_cr = new TH1F("//IPP_WZ_JetMass_cr","IPP Invariant mass from DiJets",100,0,400);
+
+TH1F* IPP_LW200_JetMass_cr = new TH1F("IPP_LW200_JetMass_cr","IPP Invariant mass from DiJets",100,0,400);
+
+////TH1F* //IPP_LW300_JetMass_cr = new TH1F("//IPP_LW300_JetMass_cr","IPP Invariant mass from DiJets",100,0,400);
+
+//TH1F* IPP_LW400_JetMass_cr = new TH1F("IPP_LW400_JetMass_cr","IPP Invariant mass from DiJets",100,0,400);
+
+//TH1F* IPP_LW500_JetMass_cr = new TH1F("IPP_LW500_JetMass_cr","IPP Invariant mass from DiJets",100,0,400);
+
+TH1F* IPP_dataRunB_LWMass_cr = new TH1F("IPP_dataRunB_LWMass_cr","IPP Invariant mass from LW",100,0,400);
+
+TH1F* IPP_dataRunC_LWMass_cr = new TH1F("IPP_dataRunC_LWMass_cr","IPP Invariant mass from LW",100,0,400);
+
+TH1F* IPP_ZLL_LWMass_cr = new TH1F("IPP_ZLL_LWMass_cr","IPP Invariant mass from LW",100,0,400);
+
+TH1F* IPP_TT_LWMass_cr = new TH1F("IPP_TT_LWMass_cr","IPP Invariant mass from LW",100,0,400);
+
+TH1F* IPP_W3J_LWMass_cr = new TH1F("IPP_W3J_LWMass_cr","IPP Invariant mass from LW",100,0,400);
+
+TH1F* IPP_W2J_LWMass_cr = new TH1F("IPP_W2J_LWMass_cr","IPP Invariant mass from LW",100,0,400);
+
+TH1F* IPP_W1J_LWMass_cr = new TH1F("IPP_W1J_LWMass_cr","IPP Invariant mass from LW",100,0,400);
+
+//TH1F* //IPP_TTZ_LWMass_cr = new TH1F("//IPP_TTZ_LWMass_cr","IPP Invariant mass from LW",100,0,400);
+
+//TH1F* //IPP_WW_LWMass_cr = new TH1F("//IPP_WW_LWMass_cr","IPP Invariant mass from LW",100,0,400);
+
+//TH1F* //IPP_WZ_LWMass_cr = new TH1F("//IPP_WZ_LWMass_cr","IPP Invariant mass from LW",100,0,400);
+
+TH1F* IPP_LW200_LWMass_cr = new TH1F("IPP_LW200_LWMass_cr","IPP Invariant mass from LW",100,0,400);
+
+////TH1F* //IPP_LW300_LWMass_cr = new TH1F("//IPP_LW300_LWMass_cr","IPP Invariant mass from LW",100,0,400);
+
+//TH1F* IPP_LW400_LWMass_cr = new TH1F("IPP_LW400_LWMass_cr","IPP Invariant mass from LW",100,0,400);
+
+//TH1F* IPP_LW500_LWMass_cr = new TH1F("IPP_LW500_LWMass_cr","IPP Invariant mass from LW",100,0,400);
+
+TH1F* IPP_dataRunB_Elept_cr = new TH1F("IPP_dataRunB_Elept_cr","IPP Electron pt distribution",100,0,200);
+
+TH1F* IPP_dataRunC_Elept_cr = new TH1F("IPP_dataRunC_Elept_cr","IPP Electron pt distribution",100,0,200);
+
+TH1F* IPP_ZLL_Elept_cr = new TH1F("IPP_ZLL_Elept_cr","IPP Electron pt distribution",100,0,200);
+
+TH1F* IPP_TT_Elept_cr = new TH1F("IPP_TT_Elept_cr","IPP Electron pt distribution",100,0,200);
+
+TH1F* IPP_W3J_Elept_cr = new TH1F("IPP_W3J_Elept_cr","IPP Electron pt distribution",100,0,200);
+
+TH1F* IPP_W2J_Elept_cr = new TH1F("IPP_W2J_Elept_cr","IPP Electron pt distribution",100,0,200);
+
+TH1F* IPP_W1J_Elept_cr = new TH1F("IPP_W1J_Elept_cr","IPP Electron pt distribution",100,0,200);
+
+//TH1F* //IPP_TTZ_Elept_cr = new TH1F("//IPP_TTZ_Elept_cr","IPP Electron pt distribution",100,0,200);
+
+//TH1F* //IPP_WW_Elept_cr = new TH1F("//IPP_WW_Elept_cr","IPP Electron pt distribution",100,0,200);
+
+//TH1F* //IPP_WZ_Elept_cr = new TH1F("//IPP_WZ_Elept_cr","IPP Electron pt distribution",100,0,200);
+
+TH1F* IPP_LW200_Elept_cr = new TH1F("IPP_LW200_Elept_cr","IPP Electron pt distribution",100,0,200);
+
+////TH1F* //IPP_LW300_Elept_cr = new TH1F("//IPP_LW300_Elept_cr","IPP Electron pt distribution",100,0,200);
+
+//TH1F* IPP_LW400_Elept_cr = new TH1F("IPP_LW400_Elept_cr","IPP Electron pt distribution",100,0,200);
+
+//TH1F* IPP_LW500_Elept_cr = new TH1F("IPP_LW500_Elept_cr","IPP Electron pt distribution",100,0,200);
+
+TH1F* IPP_dataRunB_DieledR_cr = new TH1F("IPP_dataRunB_DieledR_cr","IPP delta R separation between electrons",100,0,8);
+
+TH1F* IPP_dataRunC_DieledR_cr = new TH1F("IPP_dataRunC_DieledR_cr","IPP delta R separation between electrons",100,0,8);
+
+TH1F* IPP_ZLL_DieledR_cr = new TH1F("IPP_ZLL_DieledR_cr","IPP delta R separation between electrons",100,0,8);
+
+TH1F* IPP_TT_DieledR_cr = new TH1F("IPP_TT_DieledR_cr","IPP delta R separation between electrons",100,0,8);
+
+TH1F* IPP_W3J_DieledR_cr = new TH1F("IPP_W3J_DieledR_cr","IPP delta R separation between electrons",100,0,8);
+
+TH1F* IPP_W2J_DieledR_cr = new TH1F("IPP_W2J_DieledR_cr","IPP delta R separation between electrons",100,0,8);
+
+TH1F* IPP_W1J_DieledR_cr = new TH1F("IPP_W1J_DieledR_cr","IPP delta R separation between electrons",100,0,8);
+
+//TH1F* //IPP_TTZ_DieledR_cr = new TH1F("//IPP_TTZ_DieledR_cr","IPP delta R separation between electrons",100,0,8);
+
+//TH1F* //IPP_WW_DieledR_cr = new TH1F("//IPP_WW_DieledR_cr","IPP delta R separation between electrons",100,0,8);
+
+//TH1F* //IPP_WZ_DieledR_cr = new TH1F("//IPP_WZ_DieledR_cr","IPP delta R separation between electrons",100,0,8);
+
+TH1F* IPP_LW200_DieledR_cr = new TH1F("IPP_LW200_DieledR_cr","IPP delta R separation between electrons",100,0,8);
+
+////TH1F* //IPP_LW300_DieledR_cr = new TH1F("//IPP_LW300_DieledR_cr","IPP delta R separation between electrons",100,0,8);
+
+//TH1F* IPP_LW400_DieledR_cr = new TH1F("IPP_LW400_DieledR_cr","IPP delta R separation between electrons",100,0,8);
+
+//TH1F* IPP_LW500_DieledR_cr = new TH1F("IPP_LW500_DieledR_cr","IPP delta R separation between electrons",100,0,8);
+
+TH1F* IPP_dataRunB_LWdR_cr = new TH1F("IPP_dataRunB_LWdR_cr","IPP delta R separation between electrons and jets",100,0,5);
+
+TH1F* IPP_dataRunC_LWdR_cr = new TH1F("IPP_dataRunC_LWdR_cr","IPP delta R separation between electrons and jets",100,0,5);
+
+TH1F* IPP_ZLL_LWdR_cr = new TH1F("IPP_ZLL_LWdR_cr","IPP delta R separation between electrons and jets",100,0,5);
+
+TH1F* IPP_TT_LWdR_cr = new TH1F("IPP_TT_LWdR_cr","IPP delta R separation between electrons and jets",100,0,5);
+
+TH1F* IPP_W3J_LWdR_cr = new TH1F("IPP_W3J_LWdR_cr","IPP delta R separation between electrons and jets",100,0,5);
+
+TH1F* IPP_W2J_LWdR_cr = new TH1F("IPP_W2J_LWdR_cr","IPP delta R separation between electrons and jets",100,0,5);
+
+TH1F* IPP_W1J_LWdR_cr = new TH1F("IPP_W1J_LWdR_cr","IPP delta R separation between electrons and jets",100,0,5);
+
+//TH1F* //IPP_TTZ_LWdR_cr = new TH1F("//IPP_TTZ_LWdR_cr","IPP delta R separation between electrons and jets",100,0,5);
+
+//TH1F* //IPP_WW_LWdR_cr = new TH1F("//IPP_WW_LWdR_cr","IPP delta R separation between electrons and jets",100,0,5);
+
+//TH1F* //IPP_WZ_LWdR_cr = new TH1F("//IPP_WZ_LWdR_cr","IPP delta R separation between electrons and jets",100,0,5);
+
+TH1F* IPP_LW200_LWdR_cr = new TH1F("IPP_LW200_LWdR_cr","IPP delta R separation between electrons and jets",100,0,5);
+
+////TH1F* //IPP_LW300_LWdR_cr = new TH1F("//IPP_LW300_LWdR_cr","IPP delta R separation between electrons and jets",100,0,5);
+
+//TH1F* IPP_LW400_LWdR_cr = new TH1F("IPP_LW400_LWdR_cr","IPP delta R separation between electrons and jets",100,0,5);
+
+//TH1F* IPP_LW500_LWdR_cr = new TH1F("IPP_LW500_LWdR_cr","IPP delta R separation between electrons and jets",100,0,5);
+
+TH1F* IPP_dataRunB_DiJetdR_cr = new TH1F("IPP_dataRunB_DiJetdR_cr","IPP delta R separation between Jet Candidates",100,0,8);
+
+TH1F* IPP_dataRunC_DiJetdR_cr = new TH1F("IPP_dataRunC_DiJetdR_cr","IPP delta R separation between Jet Candidates",100,0,8);
+
+TH1F* IPP_ZLL_DiJetdR_cr = new TH1F("IPP_ZLL_DiJetdR_cr","IPP delta R separation between Jet Candidates",100,0,8);
+
+TH1F* IPP_TT_DiJetdR_cr = new TH1F("IPP_TT_DiJetdR_cr","IPP delta R separation between Jet Candidates",100,0,8);
+
+TH1F* IPP_W3J_DiJetdR_cr = new TH1F("IPP_W3J_DiJetdR_cr","IPP delta R separation between Jet Candidates",100,0,8);
+
+TH1F* IPP_W2J_DiJetdR_cr = new TH1F("IPP_W2J_DiJetdR_cr","IPP delta R separation between Jet Candidates",100,0,8);
+
+TH1F* IPP_W1J_DiJetdR_cr = new TH1F("IPP_W1J_DiJetdR_cr","IPP delta R separation between Jet Candidates",100,0,8);
+
+//TH1F* //IPP_TTZ_DiJetdR_cr = new TH1F("//IPP_TTZ_DiJetdR_cr","IPP delta R separation between Jet Candidates",100,0,8);
+
+//TH1F* //IPP_WW_DiJetdR_cr = new TH1F("//IPP_WW_DiJetdR_cr","IPP delta R separation between Jet Candidates",100,0,8);
+
+//TH1F* //IPP_WZ_DiJetdR_cr = new TH1F("//IPP_WZ_DiJetdR_cr","IPP delta R separation between Jet Candidates",100,0,8);
+
+TH1F* IPP_LW200_DiJetdR_cr = new TH1F("IPP_LW200_DiJetdR_cr","IPP delta R separation between Jet Candidates",100,0,8);
+
+////TH1F* //IPP_LW300_DiJetdR_cr = new TH1F("//IPP_LW300_DiJetdR_cr","IPP delta R separation between Jet Candidates",100,0,8);
+
+//TH1F* IPP_LW400_DiJetdR_cr = new TH1F("IPP_LW400_DiJetdR_cr","IPP delta R separation between Jet Candidates",100,0,8);
+
+//TH1F* IPP_LW500_DiJetdR_cr = new TH1F("IPP_LW500_DiJetdR_cr","IPP delta R separation between Jet Candidates",100,0,8);
+
+TH1F* IPP_dataRunB_BJetPt_cr = new TH1F("IPP_dataRunB_BJetPt_cr","IPP Most energetic Jet pt",100,0,250);
+
+TH1F* IPP_dataRunC_BJetPt_cr = new TH1F("IPP_dataRunC_BJetPt_cr","IPP Most energetic Jet pt",100,0,250);
+
+TH1F* IPP_ZLL_BJetPt_cr = new TH1F("IPP_ZLL_BJetPt_cr","IPP Most energetic Jet pt",100,0,250);
+
+TH1F* IPP_TT_BJetPt_cr = new TH1F("IPP_TT_BJetPt_cr","IPP Most energetic Jet pt",100,0,250);
+
+TH1F* IPP_W3J_BJetPt_cr = new TH1F("IPP_W3J_BJetPt_cr","IPP Most energetic Jet pt",100,0,250);
+
+TH1F* IPP_W2J_BJetPt_cr = new TH1F("IPP_W2J_BJetPt_cr","IPP Most energetic Jet pt",100,0,250);
+
+TH1F* IPP_W1J_BJetPt_cr = new TH1F("IPP_W1J_BJetPt_cr","IPP Most energetic Jet pt",100,0,250);
+
+//TH1F* //IPP_TTZ_BJetPt_cr = new TH1F("//IPP_TTZ_BJetPt_cr","IPP Most energetic Jet pt",100,0,250);
+
+//TH1F* //IPP_WW_BJetPt_cr = new TH1F("//IPP_WW_BJetPt_cr","IPP Most energetic Jet pt",100,0,250);
+
+//TH1F* //IPP_WZ_BJetPt_cr = new TH1F("//IPP_WZ_BJetPt_cr","IPP Most energetic Jet pt",100,0,250);
+
+TH1F* IPP_LW200_BJetPt_cr = new TH1F("IPP_LW200_BJetPt_cr","IPP Most energetic Jet pt",100,0,250);
+
+//TH1F* //IPP_LW300_BJetPt_cr = new TH1F("//IPP_LW300_BJetPt_cr","IPP Most energetic Jet pt",100,0,250);
+
+//TH1F* IPP_LW400_BJetPt_cr = new TH1F("IPP_LW400_BJetPt_cr","IPP Most energetic Jet pt",100,0,250);
+
+//TH1F* IPP_LW500_BJetPt_cr = new TH1F("IPP_LW500_BJetPt_cr","IPP Most energetic Jet pt",100,0,250);
+
+TH1F* IPP_dataRunB_SBJetPt_cr = new TH1F("IPP_dataRunB_SBJetPt_cr","Second IPP Most energetic Jet pt",100,0,250);
+
+TH1F* IPP_dataRunC_SBJetPt_cr = new TH1F("IPP_dataRunC_SBJetPt_cr","Second IPP Most energetic Jet pt",100,0,250);
+
+TH1F* IPP_ZLL_SBJetPt_cr = new TH1F("IPP_ZLL_SBJetPt_cr","Second IPP Most energetic Jet pt",100,0,250);
+
+TH1F* IPP_TT_SBJetPt_cr = new TH1F("IPP_TT_SBJetPt_cr","Second IPP Most energetic Jet pt",100,0,250);
+
+TH1F* IPP_W3J_SBJetPt_cr = new TH1F("IPP_W3J_SBJetPt_cr","Second IPP Most energetic Jet pt",100,0,250);
+
+TH1F* IPP_W2J_SBJetPt_cr = new TH1F("IPP_W2J_SBJetPt_cr","Second IPP Most energetic Jet pt",100,0,250);
+
+TH1F* IPP_W1J_SBJetPt_cr = new TH1F("IPP_W1J_SBJetPt_cr","Second IPP Most energetic Jet pt",100,0,250);
+
+//TH1F* //IPP_TTZ_SBJetPt_cr = new TH1F("//IPP_TTZ_SBJetPt_cr","Second IPP Most energetic Jet pt",100,0,250);
+
+//TH1F* //IPP_WW_SBJetPt_cr = new TH1F("//IPP_WW_SBJetPt_cr","Second IPP Most energetic Jet pt",100,0,250);
+
+//TH1F* //IPP_WZ_SBJetPt_cr = new TH1F("//IPP_WZ_SBJetPt_cr","Second IPP Most energetic Jet pt",100,0,250);
+
+TH1F* IPP_LW200_SBJetPt_cr = new TH1F("IPP_LW200_SBJetPt_cr","Second IPP Most energetic Jet pt",100,0,250);
+
+//TH1F* //IPP_LW300_SBJetPt_cr = new TH1F("//IPP_LW300_SBJetPt_cr","Second IPP Most energetic Jet pt",100,0,250);
+
+//TH1F* IPP_LW400_SBJetPt_cr = new TH1F("IPP_LW400_SBJetPt_cr","Second IPP Most energetic Jet pt",100,0,250);
+
+//TH1F* IPP_LW500_SBJetPt_cr = new TH1F("IPP_LW500_SBJetPt_cr","Second IPP Most energetic Jet pt",100,0,250);
+
+TH1F* IPP_dataRunB_NJet_cr = new TH1F("IPP_dataRunB_NJet_cr","IPP Number of Jets",20,0,20);
+
+TH1F* IPP_dataRunC_NJet_cr = new TH1F("IPP_dataRunC_NJet_cr","IPP Number of Jets",20,0,20);
+
+TH1F* IPP_ZLL_NJet_cr = new TH1F("IPP_ZLL_NJet_cr","IPP Number of Jets",20,0,20);
+
+TH1F* IPP_TT_NJet_cr = new TH1F("IPP_TT_NJet_cr","IPP Number of Jets",20,0,20);
+
+TH1F* IPP_W3J_NJet_cr = new TH1F("IPP_W3J_NJet_cr","IPP Number of Jets",20,0,20);
+
+TH1F* IPP_W2J_NJet_cr = new TH1F("IPP_W2J_NJet_cr","IPP Number of Jets",20,0,20);
+
+TH1F* IPP_W1J_NJet_cr = new TH1F("IPP_W1J_NJet_cr","IPP Number of Jets",20,0,20);
+
+//TH1F* //IPP_TTZ_NJet_cr = new TH1F("//IPP_TTZ_NJet_cr","IPP Number of Jets",20,0,20);
+
+//TH1F* //IPP_WW_NJet_cr = new TH1F("//IPP_WW_NJet_cr","IPP Number of Jets",20,0,20);
+
+//TH1F* //IPP_WZ_NJet_cr = new TH1F("//IPP_WZ_NJet_cr","IPP Number of Jets",20,0,20);
+
+TH1F* IPP_LW200_NJet_cr = new TH1F("IPP_LW200_NJet_cr","IPP Number of Jets",20,0,20);
+
+//TH1F* //IPP_LW300_NJet_cr = new TH1F("//IPP_LW300_NJet_cr","IPP Number of Jets",20,0,20);
+
+//TH1F* IPP_LW400_NJet_cr = new TH1F("IPP_LW400_NJet_cr","IPP Number of Jets",20,0,20);
+
+//TH1F* IPP_LW500_NJet_cr = new TH1F("IPP_LW500_NJet_cr","IPP Number of Jets",20,0,20);
+
+TH1F* IPP_dataRunB_NEle_cr = new TH1F("IPP_dataRunB_NEle_cr","IPP Number of electrons",20,0,20);
+
+TH1F* IPP_dataRunC_NEle_cr = new TH1F("IPP_dataRunC_NEle_cr","IPP Number of electrons",20,0,20);
+
+TH1F* IPP_ZLL_NEle_cr = new TH1F("IPP_ZLL_NEle_cr","IPP Number of electrons",20,0,20);
+
+TH1F* IPP_TT_NEle_cr = new TH1F("IPP_TT_NEle_cr","IPP Number of electrons",20,0,20);
+
+TH1F* IPP_W3J_NEle_cr = new TH1F("IPP_W3J_NEle_cr","IPP Number of electrons",20,0,20);
+
+TH1F* IPP_W2J_NEle_cr = new TH1F("IPP_W2J_NEle_cr","IPP Number of electrons",20,0,20);
+
+TH1F* IPP_W1J_NEle_cr = new TH1F("IPP_W1J_NEle_cr","IPP Number of electrons",20,0,20);
+
+//TH1F* //IPP_TTZ_NEle_cr = new TH1F("//IPP_TTZ_NEle_cr","IPP Number of electrons",20,0,20);
+
+//TH1F* //IPP_WW_NEle_cr = new TH1F("//IPP_WW_NEle_cr","IPP Number of electrons",20,0,20);
+
+//TH1F* //IPP_WZ_NEle_cr = new TH1F("//IPP_WZ_NEle_cr","IPP Number of electrons",20,0,20);
+
+TH1F* IPP_LW200_NEle_cr = new TH1F("IPP_LW200_NEle_cr","IPP Number of electrons",20,0,20);
+
+//TH1F* //IPP_LW300_NEle_cr = new TH1F("//IPP_LW300_NEle_cr","IPP Number of electrons",20,0,20);
+
+//TH1F* IPP_LW400_NEle_cr = new TH1F("IPP_LW400_NEle_cr","IPP Number of electrons",20,0,20);
+
+//TH1F* IPP_LW500_NEle_cr = new TH1F("IPP_LW500_NEle_cr","IPP Number of electrons",20,0,20);
+
+TH1F* IPP_dataRunB_BSd_cr = new TH1F("IPP_dataRunB_BSd_cr","IPP Beam spot distance",100,0,1);
+
+TH1F* IPP_dataRunC_BSd_cr = new TH1F("IPP_dataRunC_BSd_cr","IPP Beam spot distance",100,0,1);
+
+TH1F* IPP_ZLL_BSd_cr = new TH1F("IPP_ZLL_BSd_cr","IPP Beam spot distance",100,0,1);
+
+TH1F* IPP_TT_BSd_cr = new TH1F("IPP_TT_BSd_cr","IPP Beam spot distance",100,0,1);
+
+TH1F* IPP_W3J_BSd_cr = new TH1F("IPP_W3J_BSd_cr","IPP Beam spot distance",100,0,1);
+
+TH1F* IPP_W2J_BSd_cr = new TH1F("IPP_W2J_BSd_cr","IPP Beam spot distance",100,0,1);
+
+TH1F* IPP_W1J_BSd_cr = new TH1F("IPP_W1J_BSd_cr","IPP Beam spot distance",100,0,1);
+
+//TH1F* IPP_TTZ_BSd_cr = new TH1F("IPP_TTZ_BSd_cr","IPP Beam spot distance",100,0,1);
+
+//TH1F* IPP_WW_BSd_cr = new TH1F("IPP_WW_BSd_cr","IPP Beam spot distance",100,0,1);
+
+//TH1F* IPP_WZ_BSd_cr = new TH1F("IPP_WZ_BSd_cr","IPP Beam spot distance",100,0,1);
+
+TH1F* IPP_LW200_BSd_cr = new TH1F("IPP_LW200_BSd_cr","IPP Beam spot distance",100,0,1);
+
+//TH1F* IPP_LW300_BSd_cr = new TH1F("IPP_LW300_BSd_cr","IPP Beam spot distance",100,0,1);
+
+//TH1F* IPP_LW400_BSd_cr = new TH1F("IPP_LW400_BSd_cr","IPP Beam spot distance",100,0,1);
+
+//TH1F* IPP_LW500_BSd_cr = new TH1F("IPP_LW500_BSd_cr","IPP Beam spot distance",100,0,1);
+
+TH1F* IPP_dataRunB_EleJet1DR_cr = new TH1F("IPP_dataRunB_EleJet1DR_cr","IPP Electron first Jet DeltaR distance",100,0,5);
+
+TH1F* IPP_dataRunC_EleJet1DR_cr = new TH1F("IPP_dataRunC_EleJet1DR_cr","IPP Electron first Jet DeltaR distance",100,0,5);
+
+TH1F* IPP_ZLL_EleJet1DR_cr = new TH1F("IPP_ZLL_EleJet1DR_cr","IPP Electron first Jet DeltaR distance",100,0,5);
+
+TH1F* IPP_TT_EleJet1DR_cr = new TH1F("IPP_TT_EleJet1DR_cr","IPP Electron first Jet DeltaR distance",100,0,5);
+
+TH1F* IPP_W3J_EleJet1DR_cr = new TH1F("IPP_W3J_EleJet1DR_cr","IPP Electron first Jet DeltaR distance",100,0,5);
+
+TH1F* IPP_W2J_EleJet1DR_cr = new TH1F("IPP_W2J_EleJet1DR_cr","IPP Electron first Jet DeltaR distance",100,0,5);
+
+TH1F* IPP_W1J_EleJet1DR_cr = new TH1F("IPP_W1J_EleJet1DR_cr","IPP Electron first Jet DeltaR distance",100,0,5);
+
+//TH1F* IPP_TTZ_EleJet1DR_cr = new TH1F("IPP_TTZ_EleJet1DR_cr","IPP Electron first Jet DeltaR distance",100,0,5);
+
+//TH1F* IPP_WW_EleJet1DR_cr = new TH1F("IPP_WW_EleJet1DR_cr","IPP Electron first Jet DeltaR distance",100,0,5);
+
+//TH1F* IPP_WZ_EleJet1DR_cr = new TH1F("IPP_WZ_EleJet1DR_cr","IPP Electron first Jet DeltaR distance",100,0,5);
+
+TH1F* IPP_LW200_EleJet1DR_cr = new TH1F("IPP_LW200_EleJet1DR_cr","IPP Electron first Jet DeltaR distance",100,0,5);
+
+//TH1F* IPP_LW300_EleJet1DR_cr = new TH1F("IPP_LW300_EleJet1DR_cr","IPP Electron first Jet DeltaR distance",100,0,5);
+
+//TH1F* IPP_LW400_EleJet1DR_cr = new TH1F("IPP_LW400_EleJet1DR_cr","IPP Electron first Jet DeltaR distance",100,0,5);
+
+//TH1F* IPP_LW500_EleJet1DR_cr = new TH1F("IPP_LW500_EleJet1DR_cr","IPP Electron first Jet DeltaR distance",100,0,5);
+
+TH1F* IPP_dataRunB_EleJet2DR_cr = new TH1F("IPP_dataRunB_EleJet2DR_cr","IPP Electron second Jet DeltaR distance",100,0,5);
+
+TH1F* IPP_dataRunC_EleJet2DR_cr = new TH1F("IPP_dataRunC_EleJet2DR_cr","IPP Electron second Jet DeltaR distance",100,0,5);
+
+TH1F* IPP_ZLL_EleJet2DR_cr = new TH1F("IPP_ZLL_EleJet2DR_cr","IPP Electron second Jet DeltaR distance",100,0,5);
+
+TH1F* IPP_TT_EleJet2DR_cr = new TH1F("IPP_TT_EleJet2DR_cr","IPP Electron second Jet DeltaR distance",100,0,5);
+
+TH1F* IPP_W3J_EleJet2DR_cr = new TH1F("IPP_W3J_EleJet2DR_cr","IPP Electron second Jet DeltaR distance",100,0,5);
+
+TH1F* IPP_W2J_EleJet2DR_cr = new TH1F("IPP_W2J_EleJet2DR_cr","IPP Electron second Jet DeltaR distance",100,0,5);
+
+TH1F* IPP_W1J_EleJet2DR_cr = new TH1F("IPP_W1J_EleJet2DR_cr","IPP Electron second Jet DeltaR distance",100,0,5);
+
+//TH1F* IPP_TTZ_EleJet2DR_cr = new TH1F("IPP_TTZ_EleJet2DR_cr","IPP Electron second Jet DeltaR distance",100,0,5);
+
+//TH1F* IPP_WW_EleJet2DR_cr = new TH1F("IPP_WW_EleJet2DR_cr","IPP Electron second Jet DeltaR distance",100,0,5);
+
+//TH1F* IPP_WZ_EleJet2DR_cr = new TH1F("IPP_WZ_EleJet2DR_cr","IPP Electron second Jet DeltaR distance",100,0,5);
+
+TH1F* IPP_LW200_EleJet2DR_cr = new TH1F("IPP_LW200_EleJet2DR_cr","IPP Electron second Jet DeltaR distance",100,0,5);
+
+//TH1F* IPP_LW300_EleJet2DR_cr = new TH1F("IPP_LW300_EleJet2DR_cr","IPP Electron second Jet DeltaR distance",100,0,5);
+
+//TH1F* IPP_LW400_EleJet2DR_cr = new TH1F("IPP_LW400_EleJet2DR_cr","IPP Electron second Jet DeltaR distance",100,0,5);
+
+//TH1F* IPP_LW500_EleJet2DR_cr = new TH1F("IPP_LW500_EleJet2DR_cr","IPP Electron second Jet DeltaR distance",100,0,5);
+
+TH1F* IPP_dataRunB_JetJet1DR_cr = new TH1F("IPP_dataRunB_JetJet1DR_cr","IPP Jet first Jet DeltaR distance",100,0,5);
+
+TH1F* IPP_dataRunC_JetJet1DR_cr = new TH1F("IPP_dataRunC_JetJet1DR_cr","IPP Jet first Jet DeltaR distance",100,0,5);
+
+TH1F* IPP_ZLL_JetJet1DR_cr = new TH1F("IPP_ZLL_JetJet1DR_cr","IPP Jet first Jet DeltaR distance",100,0,5);
+
+TH1F* IPP_TT_JetJet1DR_cr = new TH1F("IPP_TT_JetJet1DR_cr","IPP Jet first Jet DeltaR distance",100,0,5);
+
+TH1F* IPP_W3J_JetJet1DR_cr = new TH1F("IPP_W3J_JetJet1DR_cr","IPP Jet first Jet DeltaR distance",100,0,5);
+
+TH1F* IPP_W2J_JetJet1DR_cr = new TH1F("IPP_W2J_JetJet1DR_cr","IPP Jet first Jet DeltaR distance",100,0,5);
+
+TH1F* IPP_W1J_JetJet1DR_cr = new TH1F("IPP_W1J_JetJet1DR_cr","IPP Jet first Jet DeltaR distance",100,0,5);
+
+//TH1F* IPP_TTZ_JetJet1DR_cr = new TH1F("IPP_TTZ_JetJet1DR_cr","IPP Jet first Jet DeltaR distance",100,0,5);
+
+//TH1F* IPP_WW_JetJet1DR_cr = new TH1F("IPP_WW_JetJet1DR_cr","IPP Jet first Jet DeltaR distance",100,0,5);
+
+//TH1F* IPP_WZ_JetJet1DR_cr = new TH1F("IPP_WZ_JetJet1DR_cr","IPP Jet first Jet DeltaR distance",100,0,5);
+
+TH1F* IPP_LW200_JetJet1DR_cr = new TH1F("IPP_LW200_JetJet1DR_cr","IPP Jet first Jet DeltaR distance",100,0,5);
+
+//TH1F* IPP_LW300_JetJet1DR_cr = new TH1F("IPP_LW300_JetJet1DR_cr","IPP Jet first Jet DeltaR distance",100,0,5);
+
+//TH1F* IPP_LW400_JetJet1DR_cr = new TH1F("IPP_LW400_JetJet1DR_cr","IPP Jet first Jet DeltaR distance",100,0,5);
+
+//TH1F* IPP_LW500_JetJet1DR_cr = new TH1F("IPP_LW500_JetJet1DR_cr","IPP Jet first Jet DeltaR distance",100,0,5);
+
+TH1F* IPP_dataRunB_JetJet2DR_cr = new TH1F("IPP_dataRunB_JetJet2DR_cr","IPP Jet second closest Jet DeltaR distance",100,0,5);
+
+TH1F* IPP_dataRunC_JetJet2DR_cr = new TH1F("IPP_dataRunC_JetJet2DR_cr","IPP Jet second closest Jet DeltaR distance",100,0,5);
+
+TH1F* IPP_ZLL_JetJet2DR_cr = new TH1F("IPP_ZLL_JetJet2DR_cr","IPP Jet second closest Jet DeltaR distance",100,0,5);
+
+TH1F* IPP_TT_JetJet2DR_cr = new TH1F("IPP_TT_JetJet2DR_cr","IPP Jet second closest Jet DeltaR distance",100,0,5);
+
+TH1F* IPP_W3J_JetJet2DR_cr = new TH1F("IPP_W3J_JetJet2DR_cr","IPP Jet second closest Jet DeltaR distance",100,0,5);
+
+TH1F* IPP_W2J_JetJet2DR_cr = new TH1F("IPP_W2J_JetJet2DR_cr","IPP Jet second closest Jet DeltaR distance",100,0,5);
+
+TH1F* IPP_W1J_JetJet2DR_cr = new TH1F("IPP_W1J_JetJet2DR_cr","IPP Jet second closest Jet DeltaR distance",100,0,5);
+
+//TH1F* IPP_TTZ_JetJet2DR_cr = new TH1F("IPP_TTZ_JetJet2DR_cr","IPP Jet second closest Jet DeltaR distance",100,0,5);
+
+//TH1F* IPP_WW_JetJet2DR_cr = new TH1F("IPP_WW_JetJet2DR_cr","IPP Jet second closest Jet DeltaR distance",100,0,5);
+
+//TH1F* IPP_WZ_JetJet2DR_cr = new TH1F("IPP_WZ_JetJet2DR_cr","IPP Jet second closest Jet DeltaR distance",100,0,5);
+
+TH1F* IPP_LW200_JetJet2DR_cr = new TH1F("IPP_LW200_JetJet2DR_cr","IPP Jet second closest Jet DeltaR distance",100,0,5);
+
+//TH1F* IPP_LW300_JetJet2DR_cr = new TH1F("IPP_LW300_JetJet2DR_cr","IPP Jet second closest Jet DeltaR distance",100,0,5);
+
+//TH1F* IPP_LW400_JetJet2DR_cr = new TH1F("IPP_LW400_JetJet2DR_cr","IPP Jet second closest Jet DeltaR distance",100,0,5);
+
+//TH1F* IPP_LW500_JetJet2DR_cr = new TH1F("IPP_LW500_JetJet2DR_cr","IPP Jet second closest Jet DeltaR distance",100,0,5);
+
+TH1F* IPP_dataRunB_JetJetFDR_cr = new TH1F("IPP_dataRunB_JetJetFDR_cr","IPP Jet further Jet DeltaR distance",100,0,5);
+
+TH1F* IPP_dataRunC_JetJetFDR_cr = new TH1F("IPP_dataRunC_JetJetFDR_cr","IPP Jet further Jet DeltaR distance",100,0,5);
+
+TH1F* IPP_ZLL_JetJetFDR_cr = new TH1F("IPP_ZLL_JetJetFDR_cr","IPP Jet further Jet DeltaR distance",100,0,5);
+
+TH1F* IPP_TT_JetJetFDR_cr = new TH1F("IPP_TT_JetJetFDR_cr","IPP Jet further Jet DeltaR distance",100,0,5);
+
+TH1F* IPP_W3J_JetJetFDR_cr = new TH1F("IPP_W3J_JetJetFDR_cr","IPP Jet further Jet DeltaR distance",100,0,5);
+
+TH1F* IPP_W2J_JetJetFDR_cr = new TH1F("IPP_W2J_JetJetFDR_cr","IPP Jet further Jet DeltaR distance",100,0,5);
+
+TH1F* IPP_W1J_JetJetFDR_cr = new TH1F("IPP_W1J_JetJetFDR_cr","IPP Jet further Jet DeltaR distance",100,0,5);
+
+//TH1F* IPP_TTZ_JetJetFDR_cr = new TH1F("IPP_TTZ_JetJetFDR_cr","IPP Jet further Jet DeltaR distance",100,0,5);
+
+//TH1F* IPP_WW_JetJetFDR_cr = new TH1F("IPP_WW_JetJetFDR_cr","IPP Jet further Jet DeltaR distance",100,0,5);
+
+//TH1F* IPP_WZ_JetJetFDR_cr = new TH1F("IPP_WZ_JetJetFDR_cr","IPP Jet further Jet DeltaR distance",100,0,5);
+
+TH1F* IPP_LW200_JetJetFDR_cr = new TH1F("IPP_LW200_JetJetFDR_cr","IPP Jet further Jet DeltaR distance",100,0,5);
+
+//TH1F* IPP_LW300_JetJetFDR_cr = new TH1F("IPP_LW300_JetJetFDR_cr","IPP Jet further Jet DeltaR distance",100,0,5);
+
+//TH1F* IPP_LW400_JetJetFDR_cr = new TH1F("IPP_LW400_JetJetFDR_cr","IPP Jet further Jet DeltaR distance",100,0,5);
+
+//TH1F* IPP_LW500_JetJetFDR_cr = new TH1F("IPP_LW500_JetJetFDR_cr","IPP Jet further Jet DeltaR distance",100,0,5);
+
 
 
 //Requiered trigger
@@ -7943,6 +9068,188 @@ EventLoopAnalysisTemplate::EventLoopAnalysisTemplate(TString thefile, TString th
   //hists.push_back(//TF_LW300_JetJetFDR);
   //hists.push_back(TF_LW400_JetJetFDR);
   //hists.push_back(TF_LW500_JetJetFDR);
+  hists.push_back(TF_dataRunB_npv);
+  hists.push_back(TF_dataRunC_npv);
+  hists.push_back(TF_ZLL_npv);
+  hists.push_back(TF_TT_npv);
+  hists.push_back(TF_W3J_npv);
+  hists.push_back(TF_W2J_npv);
+  hists.push_back(TF_W1J_npv);
+  hists.push_back(TF_LW200_npv);
+  hists.push_back(TF_dataRunB_JetMass);
+  hists.push_back(TF_dataRunC_JetMass);
+  hists.push_back(TF_ZLL_JetMass);
+  hists.push_back(TF_TT_JetMass);
+  hists.push_back(TF_W3J_JetMass);
+  hists.push_back(TF_W2J_JetMass);
+  hists.push_back(TF_W1J_JetMass);
+  hists.push_back(TF_LW200_JetMass);
+  hists.push_back(TF_dataRunB_LWMass);
+  hists.push_back(TF_dataRunC_LWMass);
+  hists.push_back(TF_ZLL_LWMass);
+  hists.push_back(TF_TT_LWMass);
+  hists.push_back(TF_W3J_LWMass);
+  hists.push_back(TF_W2J_LWMass);
+  hists.push_back(TF_W1J_LWMass);
+  hists.push_back(TF_LW200_LWMass);
+  //hists.push_back(//TF_WW_npv);
+  //hists.push_back(//TF_WZ_npv);
+  //hists.push_back(//TF_TTZ_npv);
+  //hists.push_back(//TF_WW_JetMass);
+  //hists.push_back(//TF_WZ_JetMass);
+  //hists.push_back(//TF_TTZ_JetMass);
+  //hists.push_back(//TF_WW_LWMass);
+  //hists.push_back(//TF_WZ_LWMass);
+  //hists.push_back(//TF_TTZ_LWMass);
+  //hists.push_back(//TF_LW300_LWMass);
+  //hists.push_back(TF_LW400_LWMass);
+  //hists.push_back(TF_LW500_LWMass);
+  //hists.push_back(//TF_LW300_JetMass);
+  //hists.push_back(TF_LW400_JetMass);
+  //hists.push_back(TF_LW500_JetMass);
+  //hists.push_back(//TF_LW300_npv);
+  //hists.push_back(TF_LW400_npv);
+  //hists.push_back(TF_LW500_npv);
+  hists.push_back(TF_dataRunB_nsv);
+  hists.push_back(TF_dataRunC_nsv);
+  hists.push_back(TF_ZLL_nsv);
+  hists.push_back(TF_TT_nsv);
+  hists.push_back(TF_W3J_nsv);
+  hists.push_back(TF_W2J_nsv);
+  hists.push_back(TF_W1J_nsv);
+  //hists.push_back(//TF_WW_nsv);
+  //hists.push_back(//TF_WZ_nsv);
+  //hists.push_back(//TF_TTZ_nsv);
+  hists.push_back(TF_LW200_nsv);
+  hists.push_back(TF_LW200_nsv);
+  //hists.push_back(TF_LW400_nsv);
+  //hists.push_back(TF_LW500_nsv);
+  hists.push_back(TF_dataRunB_svd);
+  hists.push_back(TF_dataRunC_svd);
+  hists.push_back(TF_ZLL_svd);
+  hists.push_back(TF_TT_svd);
+  hists.push_back(TF_W3J_svd);
+  hists.push_back(TF_W2J_svd);
+  hists.push_back(TF_W1J_svd);
+  //hists.push_back(//TF_WW_svd);
+  //hists.push_back(//TF_WZ_svd);
+  //hists.push_back(//TF_TTZ_svd);
+  hists.push_back(TF_LW200_svd);
+  hists.push_back(TF_LW200_svd);
+  //hists.push_back(TF_LW400_svd);
+  //hists.push_back(TF_LW500_svd);
+  hists.push_back(TF_dataRunB_Elept);
+  hists.push_back(TF_dataRunC_Elept);
+  hists.push_back(TF_ZLL_Elept);
+  hists.push_back(TF_TT_Elept);
+  hists.push_back(TF_W3J_Elept);
+  hists.push_back(TF_W2J_Elept);
+  hists.push_back(TF_W1J_Elept);
+  //hists.push_back(//TF_WW_Elept);
+  //hists.push_back(//TF_WZ_Elept);
+  //hists.push_back(//TF_TTZ_Elept);
+  hists.push_back(TF_LW200_Elept);
+  hists.push_back(TF_LW200_Elept);
+  //hists.push_back(TF_LW400_svd);
+  //hists.push_back(TF_LW500_svd);
+  hists.push_back(TF_dataRunB_DieledR);
+  hists.push_back(TF_dataRunC_DieledR);
+  hists.push_back(TF_ZLL_DieledR);
+  hists.push_back(TF_TT_DieledR);
+  hists.push_back(TF_W3J_DieledR);
+  hists.push_back(TF_W2J_DieledR);
+  hists.push_back(TF_W1J_DieledR);
+  //hists.push_back(//TF_WW_DieledR);
+  //hists.push_back(//TF_WZ_DieledR);
+  //hists.push_back(//TF_TTZ_DieledR);
+  hists.push_back(TF_LW200_DieledR);
+  hists.push_back(TF_LW200_DieledR);
+  //hists.push_back(TF_LW400_svd);
+  //hists.push_back(TF_LW500_svd);
+  hists.push_back(TF_dataRunB_LWdR);
+  hists.push_back(TF_dataRunC_LWdR);
+  hists.push_back(TF_ZLL_LWdR);
+  hists.push_back(TF_TT_LWdR);
+  hists.push_back(TF_W3J_LWdR);
+  hists.push_back(TF_W2J_LWdR);
+  hists.push_back(TF_W1J_LWdR);
+  //hists.push_back(//TF_WW_LWdR);
+  //hists.push_back(//TF_WZ_LWdR);
+  //hists.push_back(//TF_TTZ_LWdR);
+  hists.push_back(TF_LW200_LWdR);
+  hists.push_back(TF_LW200_LWdR);
+  //hists.push_back(TF_LW400_svd);
+  //hists.push_back(TF_LW500_svd);
+  hists.push_back(TF_dataRunB_DiJetdR);
+  hists.push_back(TF_dataRunC_DiJetdR);
+  hists.push_back(TF_ZLL_DiJetdR);
+  hists.push_back(TF_TT_DiJetdR);
+  hists.push_back(TF_W3J_DiJetdR);
+  hists.push_back(TF_W2J_DiJetdR);
+  hists.push_back(TF_W1J_DiJetdR);
+  //hists.push_back(//TF_WW_DiJetdR);
+  //hists.push_back(//TF_WZ_DiJetdR);
+  //hists.push_back(//TF_TTZ_DiJetdR);
+  hists.push_back(TF_LW200_DiJetdR);
+  hists.push_back(TF_LW200_DiJetdR);
+  //hists.push_back(TF_LW400_svd);
+  //hists.push_back(TF_LW500_svd);
+  hists.push_back(TF_dataRunB_BJetPt);
+  hists.push_back(TF_dataRunC_BJetPt);
+  hists.push_back(TF_ZLL_BJetPt);
+  hists.push_back(TF_TT_BJetPt);
+  hists.push_back(TF_W3J_BJetPt);
+  hists.push_back(TF_W2J_BJetPt);
+  hists.push_back(TF_W1J_BJetPt);
+  //hists.push_back(//TF_WW_BJetPt);
+  //hists.push_back(//TF_WZ_BJetPt);
+  //hists.push_back(//TF_TTZ_BJetPt);
+  hists.push_back(TF_LW200_BJetPt);
+  hists.push_back(TF_LW200_BJetPt);
+  //hists.push_back(TF_LW400_svd);
+  //hists.push_back(TF_LW500_svd);
+  hists.push_back(TF_dataRunB_SBJetPt);
+  hists.push_back(TF_dataRunC_SBJetPt);
+  hists.push_back(TF_ZLL_SBJetPt);
+  hists.push_back(TF_TT_SBJetPt);
+  hists.push_back(TF_W3J_SBJetPt);
+  hists.push_back(TF_W2J_SBJetPt);
+  hists.push_back(TF_W1J_SBJetPt);
+  //hists.push_back(//TF_WW_SBJetPt);
+  //hists.push_back(//TF_WZ_SBJetPt);
+  //hists.push_back(//TF_TTZ_SBJetPt);
+  hists.push_back(TF_LW200_SBJetPt);
+  hists.push_back(TF_LW200_SBJetPt);
+  //hists.push_back(TF_LW400_svd);
+  //hists.push_back(TF_LW500_svd);
+  hists.push_back(TF_dataRunB_NJet);
+  hists.push_back(TF_dataRunC_NJet);
+  hists.push_back(TF_ZLL_NJet);
+  hists.push_back(TF_TT_NJet);
+  hists.push_back(TF_W3J_NJet);
+  hists.push_back(TF_W2J_NJet);
+  hists.push_back(TF_W1J_NJet);
+  //hists.push_back(//TF_WW_NJet);
+  //hists.push_back(//TF_WZ_NJet);
+  //hists.push_back(//TF_TTZ_NJet);
+  hists.push_back(TF_LW200_NJet);
+  hists.push_back(TF_LW200_NJet);
+  //hists.push_back(TF_LW400_svd);
+  //hists.push_back(TF_LW500_svd);
+  hists.push_back(TF_dataRunB_NEle);
+  hists.push_back(TF_dataRunC_NEle);
+  hists.push_back(TF_ZLL_NEle);
+  hists.push_back(TF_TT_NEle);
+  hists.push_back(TF_W3J_NEle);
+  hists.push_back(TF_W2J_NEle);
+  hists.push_back(TF_W1J_NEle);
+  //hists.push_back(//TF_WW_NEle);
+  //hists.push_back(//TF_WZ_NEle);
+  //hists.push_back(//TF_TTZ_NEle);
+  hists.push_back(TF_LW200_NEle);
+  hists.push_back(TF_LW200_NEle);
+  //hists.push_back(TF_LW400_svd);
+  //hists.push_back(TF_LW500_svd);
 
   hists.push_back(TO_dataRunB_ppoint);
   hists.push_back(TO_dataRunC_ppoint);
@@ -8036,6 +9343,188 @@ EventLoopAnalysisTemplate::EventLoopAnalysisTemplate(TString thefile, TString th
   //hists.push_back(//TO_LW300_JetJetFDR);
   //hists.push_back(TO_LW400_JetJetFDR);
   //hists.push_back(TO_LW500_JetJetFDR);
+  hists.push_back(TO_dataRunB_npv);
+  hists.push_back(TO_dataRunC_npv);
+  hists.push_back(TO_ZLL_npv);
+  hists.push_back(TO_TT_npv);
+  hists.push_back(TO_W3J_npv);
+  hists.push_back(TO_W2J_npv);
+  hists.push_back(TO_W1J_npv);
+  hists.push_back(TO_LW200_npv);
+  hists.push_back(TO_dataRunB_JetMass);
+  hists.push_back(TO_dataRunC_JetMass);
+  hists.push_back(TO_ZLL_JetMass);
+  hists.push_back(TO_TT_JetMass);
+  hists.push_back(TO_W3J_JetMass);
+  hists.push_back(TO_W2J_JetMass);
+  hists.push_back(TO_W1J_JetMass);
+  hists.push_back(TO_LW200_JetMass);
+  hists.push_back(TO_dataRunB_LWMass);
+  hists.push_back(TO_dataRunC_LWMass);
+  hists.push_back(TO_ZLL_LWMass);
+  hists.push_back(TO_TT_LWMass);
+  hists.push_back(TO_W3J_LWMass);
+  hists.push_back(TO_W2J_LWMass);
+  hists.push_back(TO_W1J_LWMass);
+  hists.push_back(TO_LW200_LWMass);
+  //hists.push_back(//TO_WW_npv);
+  //hists.push_back(////TO_WZ_npv);
+  //hists.push_back(//TO_TTZ_npv);
+  //hists.push_back(//TO_WW_JetMass);
+  //hists.push_back(////TO_WZ_JetMass);
+  //hists.push_back(//TO_TTZ_JetMass);
+  //hists.push_back(//TO_WW_LWMass);
+  //hists.push_back(////TO_WZ_LWMass);
+  //hists.push_back(//TO_TTZ_LWMass);
+  //hists.push_back(//TO_LW300_LWMass);
+  //hists.push_back(TO_LW400_LWMass);
+  //hists.push_back(TO_LW500_LWMass);
+  //hists.push_back(//TO_LW300_JetMass);
+  //hists.push_back(TO_LW400_JetMass);
+  //hists.push_back(TO_LW500_JetMass);
+  //hists.push_back(//TO_LW300_npv);
+  //hists.push_back(TO_LW400_npv);
+  //hists.push_back(TO_LW500_npv);
+  hists.push_back(TO_dataRunB_nsv);
+  hists.push_back(TO_dataRunC_nsv);
+  hists.push_back(TO_ZLL_nsv);
+  hists.push_back(TO_TT_nsv);
+  hists.push_back(TO_W3J_nsv);
+  hists.push_back(TO_W2J_nsv);
+  hists.push_back(TO_W1J_nsv);
+  //hists.push_back(//TO_WW_nsv);
+  //hists.push_back(////TO_WZ_nsv);
+  //hists.push_back(//TO_TTZ_nsv);
+  hists.push_back(TO_LW200_nsv);
+  //hists.push_back(TO_LW200_nsv);
+  //hists.push_back(TO_LW400_nsv);
+  //hists.push_back(TO_LW500_nsv);
+  hists.push_back(TO_dataRunB_svd);
+  hists.push_back(TO_dataRunC_svd);
+  hists.push_back(TO_ZLL_svd);
+  hists.push_back(TO_TT_svd);
+  hists.push_back(TO_W3J_svd);
+  hists.push_back(TO_W2J_svd);
+  hists.push_back(TO_W1J_svd);
+  //hists.push_back(//TO_WW_svd);
+  //hists.push_back(////TO_WZ_svd);
+  //hists.push_back(//TO_TTZ_svd);
+  hists.push_back(TO_LW200_svd);
+  //hists.push_back(TO_LW200_svd);
+  //hists.push_back(TO_LW400_svd);
+  //hists.push_back(TO_LW500_svd);
+  hists.push_back(TO_dataRunB_Elept);
+  hists.push_back(TO_dataRunC_Elept);
+  hists.push_back(TO_ZLL_Elept);
+  hists.push_back(TO_TT_Elept);
+  hists.push_back(TO_W3J_Elept);
+  hists.push_back(TO_W2J_Elept);
+  hists.push_back(TO_W1J_Elept);
+  //hists.push_back(//TO_WW_Elept);
+  //hists.push_back(////TO_WZ_Elept);
+  //hists.push_back(//TO_TTZ_Elept);
+  hists.push_back(TO_LW200_Elept);
+  //hists.push_back(TO_LW200_Elept);
+  //hists.push_back(TO_LW400_svd);
+  //hists.push_back(TO_LW500_svd);
+  hists.push_back(TO_dataRunB_DieledR);
+  hists.push_back(TO_dataRunC_DieledR);
+  hists.push_back(TO_ZLL_DieledR);
+  hists.push_back(TO_TT_DieledR);
+  hists.push_back(TO_W3J_DieledR);
+  hists.push_back(TO_W2J_DieledR);
+  hists.push_back(TO_W1J_DieledR);
+  //hists.push_back(//TO_WW_DieledR);
+  //hists.push_back(////TO_WZ_DieledR);
+  //hists.push_back(//TO_TTZ_DieledR);
+  hists.push_back(TO_LW200_DieledR);
+  //hists.push_back(TO_LW200_DieledR);
+  //hists.push_back(TO_LW400_svd);
+  //hists.push_back(TO_LW500_svd);
+  hists.push_back(TO_dataRunB_LWdR);
+  hists.push_back(TO_dataRunC_LWdR);
+  hists.push_back(TO_ZLL_LWdR);
+  hists.push_back(TO_TT_LWdR);
+  hists.push_back(TO_W3J_LWdR);
+  hists.push_back(TO_W2J_LWdR);
+  hists.push_back(TO_W1J_LWdR);
+  //hists.push_back(//TO_WW_LWdR);
+  //hists.push_back(////TO_WZ_LWdR);
+  //hists.push_back(//TO_TTZ_LWdR);
+  hists.push_back(TO_LW200_LWdR);
+  //hists.push_back(TO_LW200_LWdR);
+  //hists.push_back(TO_LW400_svd);
+  //hists.push_back(TO_LW500_svd);
+  hists.push_back(TO_dataRunB_DiJetdR);
+  hists.push_back(TO_dataRunC_DiJetdR);
+  hists.push_back(TO_ZLL_DiJetdR);
+  hists.push_back(TO_TT_DiJetdR);
+  hists.push_back(TO_W3J_DiJetdR);
+  hists.push_back(TO_W2J_DiJetdR);
+  hists.push_back(TO_W1J_DiJetdR);
+  //hists.push_back(//TO_WW_DiJetdR);
+  //hists.push_back(////TO_WZ_DiJetdR);
+  //hists.push_back(//TO_TTZ_DiJetdR);
+  hists.push_back(TO_LW200_DiJetdR);
+  //hists.push_back(TO_LW200_DiJetdR);
+  //hists.push_back(TO_LW400_svd);
+  //hists.push_back(TO_LW500_svd);
+  hists.push_back(TO_dataRunB_BJetPt);
+  hists.push_back(TO_dataRunC_BJetPt);
+  hists.push_back(TO_ZLL_BJetPt);
+  hists.push_back(TO_TT_BJetPt);
+  hists.push_back(TO_W3J_BJetPt);
+  hists.push_back(TO_W2J_BJetPt);
+  hists.push_back(TO_W1J_BJetPt);
+  //hists.push_back(//TO_WW_BJetPt);
+  //hists.push_back(////TO_WZ_BJetPt);
+  //hists.push_back(//TO_TTZ_BJetPt);
+  hists.push_back(TO_LW200_BJetPt);
+  //hists.push_back(TO_LW200_BJetPt);
+  //hists.push_back(TO_LW400_svd);
+  //hists.push_back(TO_LW500_svd);
+  hists.push_back(TO_dataRunB_SBJetPt);
+  hists.push_back(TO_dataRunC_SBJetPt);
+  hists.push_back(TO_ZLL_SBJetPt);
+  hists.push_back(TO_TT_SBJetPt);
+  hists.push_back(TO_W3J_SBJetPt);
+  hists.push_back(TO_W2J_SBJetPt);
+  hists.push_back(TO_W1J_SBJetPt);
+  //hists.push_back(//TO_WW_SBJetPt);
+  //hists.push_back(////TO_WZ_SBJetPt);
+  //hists.push_back(//TO_TTZ_SBJetPt);
+  hists.push_back(TO_LW200_SBJetPt);
+  //hists.push_back(TO_LW200_SBJetPt);
+  //hists.push_back(TO_LW400_svd);
+  //hists.push_back(TO_LW500_svd);
+  hists.push_back(TO_dataRunB_NJet);
+  hists.push_back(TO_dataRunC_NJet);
+  hists.push_back(TO_ZLL_NJet);
+  hists.push_back(TO_TT_NJet);
+  hists.push_back(TO_W3J_NJet);
+  hists.push_back(TO_W2J_NJet);
+  hists.push_back(TO_W1J_NJet);
+  //hists.push_back(//TO_WW_NJet);
+  //hists.push_back(////TO_WZ_NJet);
+  //hists.push_back(//TO_TTZ_NJet);
+  hists.push_back(TO_LW200_NJet);
+  //hists.push_back(TO_LW200_NJet);
+  //hists.push_back(TO_LW400_svd);
+  //hists.push_back(TO_LW500_svd);
+  hists.push_back(TO_dataRunB_NEle);
+  hists.push_back(TO_dataRunC_NEle);
+  hists.push_back(TO_ZLL_NEle);
+  hists.push_back(TO_TT_NEle);
+  hists.push_back(TO_W3J_NEle);
+  hists.push_back(TO_W2J_NEle);
+  hists.push_back(TO_W1J_NEle);
+  //hists.push_back(//TO_WW_NEle);
+  //hists.push_back(////TO_WZ_NEle);
+  //hists.push_back(//TO_TTZ_NEle);
+  hists.push_back(TO_LW200_NEle);
+  //hists.push_back(TO_LW200_NEle);
+  //hists.push_back(TO_LW400_svd);
+  //hists.push_back(TO_LW500_svd);
 
   hists.push_back(HQ_dataRunB_ppoint);
   hists.push_back(HQ_dataRunC_ppoint);
@@ -8312,929 +9801,14 @@ EventLoopAnalysisTemplate::EventLoopAnalysisTemplate(TString thefile, TString th
   //hists.push_back(HQ_LW400_svd);
   //hists.push_back(HQ_LW500_svd);
 
-  hists.push_back(DRC_dataRunB_ppoint);
-  hists.push_back(DRC_dataRunC_ppoint);
-  hists.push_back(DRC_ZLL_ppoint);
-  hists.push_back(DRC_TT_ppoint);
-  hists.push_back(DRC_W3J_ppoint);
-  hists.push_back(DRC_W2J_ppoint);
-  hists.push_back(DRC_W1J_ppoint);
-  hists.push_back(DRC_LW200_ppoint);
-  hists.push_back(DRC_dataRunB_BSd);
-  hists.push_back(DRC_dataRunC_BSd);
-  hists.push_back(DRC_ZLL_BSd);
-  hists.push_back(DRC_TT_BSd);
-  hists.push_back(DRC_W3J_BSd);
-  hists.push_back(DRC_W2J_BSd);
-  hists.push_back(DRC_W1J_BSd);
-  hists.push_back(DRC_LW200_BSd);
-  //hists.push_back(//DRC_WW_BSd);
-  //hists.push_back(//DRC_WZ_BSd);
-  //hists.push_back(//DRC_TTZ_BSd);
-  //hists.push_back(//DRC_LW300_BSd);
-  //hists.push_back(DRC_LW400_BSd);
-  //hists.push_back(DRC_LW500_BSd);
-  hists.push_back(DRC_dataRunB_EleJet1DR);
-  hists.push_back(DRC_dataRunC_EleJet1DR);
-  hists.push_back(DRC_ZLL_EleJet1DR);
-  hists.push_back(DRC_TT_EleJet1DR);
-  hists.push_back(DRC_W3J_EleJet1DR);
-  hists.push_back(DRC_W2J_EleJet1DR);
-  hists.push_back(DRC_W1J_EleJet1DR);
-  hists.push_back(DRC_LW200_EleJet1DR);
-  //hists.push_back(//DRC_WW_EleJet1DR);
-  //hists.push_back(//DRC_WZ_EleJet1DR);
-  //hists.push_back(//DRC_TTZ_EleJet1DR);
-  //hists.push_back(//DRC_LW300_EleJet1DR);
-  //hists.push_back(DRC_LW400_EleJet1DR);
-  //hists.push_back(DRC_LW500_EleJet1DR);
-  hists.push_back(DRC_dataRunB_EleJet2DR);
-  hists.push_back(DRC_dataRunC_EleJet2DR);
-  hists.push_back(DRC_ZLL_EleJet2DR);
-  hists.push_back(DRC_TT_EleJet2DR);
-  hists.push_back(DRC_W3J_EleJet2DR);
-  hists.push_back(DRC_W2J_EleJet2DR);
-  hists.push_back(DRC_W1J_EleJet2DR);
-  hists.push_back(DRC_LW200_EleJet2DR);
-  //hists.push_back(//DRC_WW_EleJet2DR);
-  //hists.push_back(//DRC_WZ_EleJet2DR);
-  //hists.push_back(//DRC_TTZ_EleJet2DR);
-  //hists.push_back(//DRC_LW300_EleJet2DR);
-  //hists.push_back(DRC_LW400_EleJet2DR);
-  //hists.push_back(DRC_LW500_EleJet2DR);
-  hists.push_back(DRC_dataRunB_JetJet1DR);
-  hists.push_back(DRC_dataRunC_JetJet1DR);
-  hists.push_back(DRC_ZLL_JetJet1DR);
-  hists.push_back(DRC_TT_JetJet1DR);
-  hists.push_back(DRC_W3J_JetJet1DR);
-  hists.push_back(DRC_W2J_JetJet1DR);
-  hists.push_back(DRC_W1J_JetJet1DR);
-  hists.push_back(DRC_LW200_JetJet1DR);
-  //hists.push_back(//DRC_WW_JetJet1DR);
-  //hists.push_back(//DRC_WZ_JetJet1DR);
-  //hists.push_back(//DRC_TTZ_JetJet1DR);
-  //hists.push_back(//DRC_LW300_JetJet1DR);
-  //hists.push_back(DRC_LW400_JetJet1DR);
-  //hists.push_back(DRC_LW500_JetJet1DR);
-  hists.push_back(DRC_dataRunB_JetJet2DR);
-  hists.push_back(DRC_dataRunC_JetJet2DR);
-  hists.push_back(DRC_ZLL_JetJet2DR);
-  hists.push_back(DRC_TT_JetJet2DR);
-  hists.push_back(DRC_W3J_JetJet2DR);
-  hists.push_back(DRC_W2J_JetJet2DR);
-  hists.push_back(DRC_W1J_JetJet2DR);
-  hists.push_back(DRC_LW200_JetJet2DR);
-  //hists.push_back(//DRC_WW_JetJet2DR);
-  //hists.push_back(//DRC_WZ_JetJet2DR);
-  //hists.push_back(//DRC_TTZ_JetJet2DR);
-  //hists.push_back(//DRC_LW300_JetJet2DR);
-  //hists.push_back(DRC_LW400_JetJet2DR);
-  //hists.push_back(DRC_LW500_JetJet2DR);
-  hists.push_back(DRC_dataRunB_JetJetFDR);
-  hists.push_back(DRC_dataRunC_JetJetFDR);
-  hists.push_back(DRC_ZLL_JetJetFDR);
-  hists.push_back(DRC_TT_JetJetFDR);
-  hists.push_back(DRC_W3J_JetJetFDR);
-  hists.push_back(DRC_W2J_JetJetFDR);
-  hists.push_back(DRC_W1J_JetJetFDR);
-  hists.push_back(DRC_LW200_JetJetFDR);
-  //hists.push_back(//DRC_WW_JetJetFDR);
-  //hists.push_back(//DRC_WZ_JetJetFDR);
-  //hists.push_back(//DRC_TTZ_JetJetFDR);
-  //hists.push_back(//DRC_LW300_JetJetFDR);
-  //hists.push_back(DRC_LW400_JetJetFDR);
-  //hists.push_back(DRC_LW500_JetJetFDR);
-
-  hists.push_back(SG_dataRunB_ppoint);
-  hists.push_back(SG_dataRunC_ppoint);
-  hists.push_back(SG_ZLL_ppoint);
-  hists.push_back(SG_TT_ppoint);
-  hists.push_back(SG_W3J_ppoint);
-  hists.push_back(SG_W2J_ppoint);
-  hists.push_back(SG_W1J_ppoint);
-  hists.push_back(SG_LW200_ppoint);
-  hists.push_back(SG_dataRunB_BSd);
-  hists.push_back(SG_dataRunC_BSd);
-  hists.push_back(SG_ZLL_BSd);
-  hists.push_back(SG_TT_BSd);
-  hists.push_back(SG_W3J_BSd);
-  hists.push_back(SG_W2J_BSd);
-  hists.push_back(SG_W1J_BSd);
-  hists.push_back(SG_LW200_BSd);
-  //hists.push_back(//SG_WW_BSd);
-  //hists.push_back(//SG_WZ_BSd);
-  //hists.push_back(//SG_TTZ_BSd);
-  //hists.push_back(//SG_LW300_BSd);
-  //hists.push_back(SG_LW400_BSd);
-  //hists.push_back(SG_LW500_BSd);
-  hists.push_back(SG_dataRunB_EleJet1DR);
-  hists.push_back(SG_dataRunC_EleJet1DR);
-  hists.push_back(SG_ZLL_EleJet1DR);
-  hists.push_back(SG_TT_EleJet1DR);
-  hists.push_back(SG_W3J_EleJet1DR);
-  hists.push_back(SG_W2J_EleJet1DR);
-  hists.push_back(SG_W1J_EleJet1DR);
-  hists.push_back(SG_LW200_EleJet1DR);
-  //hists.push_back(//SG_WW_EleJet1DR);
-  //hists.push_back(//SG_WZ_EleJet1DR);
-  //hists.push_back(//SG_TTZ_EleJet1DR);
-  //hists.push_back(//SG_LW300_EleJet1DR);
-  //hists.push_back(SG_LW400_EleJet1DR);
-  //hists.push_back(SG_LW500_EleJet1DR);
-  hists.push_back(SG_dataRunB_EleJet2DR);
-  hists.push_back(SG_dataRunC_EleJet2DR);
-  hists.push_back(SG_ZLL_EleJet2DR);
-  hists.push_back(SG_TT_EleJet2DR);
-  hists.push_back(SG_W3J_EleJet2DR);
-  hists.push_back(SG_W2J_EleJet2DR);
-  hists.push_back(SG_W1J_EleJet2DR);
-  hists.push_back(SG_LW200_EleJet2DR);
-  //hists.push_back(//SG_WW_EleJet2DR);
-  //hists.push_back(//SG_WZ_EleJet2DR);
-  //hists.push_back(//SG_TTZ_EleJet2DR);
-  //hists.push_back(//SG_LW300_EleJet2DR);
-  //hists.push_back(SG_LW400_EleJet2DR);
-  //hists.push_back(SG_LW500_EleJet2DR);
-  hists.push_back(SG_dataRunB_JetJet1DR);
-  hists.push_back(SG_dataRunC_JetJet1DR);
-  hists.push_back(SG_ZLL_JetJet1DR);
-  hists.push_back(SG_TT_JetJet1DR);
-  hists.push_back(SG_W3J_JetJet1DR);
-  hists.push_back(SG_W2J_JetJet1DR);
-  hists.push_back(SG_W1J_JetJet1DR);
-  hists.push_back(SG_LW200_JetJet1DR);
-  //hists.push_back(//SG_WW_JetJet1DR);
-  //hists.push_back(//SG_WZ_JetJet1DR);
-  //hists.push_back(//SG_TTZ_JetJet1DR);
-  //hists.push_back(//SG_LW300_JetJet1DR);
-  //hists.push_back(SG_LW400_JetJet1DR);
-  //hists.push_back(SG_LW500_JetJet1DR);
-  hists.push_back(SG_dataRunB_JetJet2DR);
-  hists.push_back(SG_dataRunC_JetJet2DR);
-  hists.push_back(SG_ZLL_JetJet2DR);
-  hists.push_back(SG_TT_JetJet2DR);
-  hists.push_back(SG_W3J_JetJet2DR);
-  hists.push_back(SG_W2J_JetJet2DR);
-  hists.push_back(SG_W1J_JetJet2DR);
-  hists.push_back(SG_LW200_JetJet2DR);
-  //hists.push_back(//SG_WW_JetJet2DR);
-  //hists.push_back(//SG_WZ_JetJet2DR);
-  //hists.push_back(//SG_TTZ_JetJet2DR);
-  //hists.push_back(//SG_LW300_JetJet2DR);
-  //hists.push_back(SG_LW400_JetJet2DR);
-  //hists.push_back(SG_LW500_JetJet2DR);
-  hists.push_back(SG_dataRunB_JetJetFDR);
-  hists.push_back(SG_dataRunC_JetJetFDR);
-  hists.push_back(SG_ZLL_JetJetFDR);
-  hists.push_back(SG_TT_JetJetFDR);
-  hists.push_back(SG_W3J_JetJetFDR);
-  hists.push_back(SG_W2J_JetJetFDR);
-  hists.push_back(SG_W1J_JetJetFDR);
-  hists.push_back(SG_LW200_JetJetFDR);
-  //hists.push_back(//SG_WW_JetJetFDR);
-  //hists.push_back(//SG_WZ_JetJetFDR);
-  //hists.push_back(//SG_TTZ_JetJetFDR);
-  //hists.push_back(//SG_LW300_JetJetFDR);
-  //hists.push_back(SG_LW400_JetJetFDR);
-  //hists.push_back(SG_LW500_JetJetFDR);
-
-
-
-
-  hists.push_back(TF_dataRunB_npv);
-  hists.push_back(TF_dataRunC_npv);
-  hists.push_back(TF_ZLL_npv);
-  hists.push_back(TF_TT_npv);
-  hists.push_back(TF_W3J_npv);
-  hists.push_back(TF_W2J_npv);
-  hists.push_back(TF_W1J_npv);
-  hists.push_back(TF_LW200_npv);
-  hists.push_back(TF_dataRunB_JetMass);
-  hists.push_back(TF_dataRunC_JetMass);
-  hists.push_back(TF_ZLL_JetMass);
-  hists.push_back(TF_TT_JetMass);
-  hists.push_back(TF_W3J_JetMass);
-  hists.push_back(TF_W2J_JetMass);
-  hists.push_back(TF_W1J_JetMass);
-  hists.push_back(TF_LW200_JetMass);
-  hists.push_back(TF_dataRunB_LWMass);
-  hists.push_back(TF_dataRunC_LWMass);
-  hists.push_back(TF_ZLL_LWMass);
-  hists.push_back(TF_TT_LWMass);
-  hists.push_back(TF_W3J_LWMass);
-  hists.push_back(TF_W2J_LWMass);
-  hists.push_back(TF_W1J_LWMass);
-  hists.push_back(TF_LW200_LWMass);
-  //hists.push_back(//TF_WW_npv);
-  //hists.push_back(//TF_WZ_npv);
-  //hists.push_back(//TF_TTZ_npv);
-  //hists.push_back(//TF_WW_JetMass);
-  //hists.push_back(//TF_WZ_JetMass);
-  //hists.push_back(//TF_TTZ_JetMass);
-  //hists.push_back(//TF_WW_LWMass);
-  //hists.push_back(//TF_WZ_LWMass);
-  //hists.push_back(//TF_TTZ_LWMass);
-  //hists.push_back(//TF_LW300_LWMass);
-  //hists.push_back(TF_LW400_LWMass);
-  //hists.push_back(TF_LW500_LWMass);
-  //hists.push_back(//TF_LW300_JetMass);
-  //hists.push_back(TF_LW400_JetMass);
-  //hists.push_back(TF_LW500_JetMass);
-  //hists.push_back(//TF_LW300_npv);
-  //hists.push_back(TF_LW400_npv);
-  //hists.push_back(TF_LW500_npv);
-  hists.push_back(TF_dataRunB_nsv);
-  hists.push_back(TF_dataRunC_nsv);
-  hists.push_back(TF_ZLL_nsv);
-  hists.push_back(TF_TT_nsv);
-  hists.push_back(TF_W3J_nsv);
-  hists.push_back(TF_W2J_nsv);
-  hists.push_back(TF_W1J_nsv);
-  //hists.push_back(//TF_WW_nsv);
-  //hists.push_back(//TF_WZ_nsv);
-  //hists.push_back(//TF_TTZ_nsv);
-  hists.push_back(TF_LW200_nsv);
-  hists.push_back(TF_LW200_nsv);
-  //hists.push_back(TF_LW400_nsv);
-  //hists.push_back(TF_LW500_nsv);
-  hists.push_back(TF_dataRunB_svd);
-  hists.push_back(TF_dataRunC_svd);
-  hists.push_back(TF_ZLL_svd);
-  hists.push_back(TF_TT_svd);
-  hists.push_back(TF_W3J_svd);
-  hists.push_back(TF_W2J_svd);
-  hists.push_back(TF_W1J_svd);
-  //hists.push_back(//TF_WW_svd);
-  //hists.push_back(//TF_WZ_svd);
-  //hists.push_back(//TF_TTZ_svd);
-  hists.push_back(TF_LW200_svd);
-  hists.push_back(TF_LW200_svd);
-  //hists.push_back(TF_LW400_svd);
-  //hists.push_back(TF_LW500_svd);
-  hists.push_back(TF_dataRunB_Elept);
-  hists.push_back(TF_dataRunC_Elept);
-  hists.push_back(TF_ZLL_Elept);
-  hists.push_back(TF_TT_Elept);
-  hists.push_back(TF_W3J_Elept);
-  hists.push_back(TF_W2J_Elept);
-  hists.push_back(TF_W1J_Elept);
-  //hists.push_back(//TF_WW_Elept);
-  //hists.push_back(//TF_WZ_Elept);
-  //hists.push_back(//TF_TTZ_Elept);
-  hists.push_back(TF_LW200_Elept);
-  hists.push_back(TF_LW200_Elept);
-  //hists.push_back(TF_LW400_svd);
-  //hists.push_back(TF_LW500_svd);
-  hists.push_back(TF_dataRunB_DieledR);
-  hists.push_back(TF_dataRunC_DieledR);
-  hists.push_back(TF_ZLL_DieledR);
-  hists.push_back(TF_TT_DieledR);
-  hists.push_back(TF_W3J_DieledR);
-  hists.push_back(TF_W2J_DieledR);
-  hists.push_back(TF_W1J_DieledR);
-  //hists.push_back(//TF_WW_DieledR);
-  //hists.push_back(//TF_WZ_DieledR);
-  //hists.push_back(//TF_TTZ_DieledR);
-  hists.push_back(TF_LW200_DieledR);
-  hists.push_back(TF_LW200_DieledR);
-  //hists.push_back(TF_LW400_svd);
-  //hists.push_back(TF_LW500_svd);
-  hists.push_back(TF_dataRunB_LWdR);
-  hists.push_back(TF_dataRunC_LWdR);
-  hists.push_back(TF_ZLL_LWdR);
-  hists.push_back(TF_TT_LWdR);
-  hists.push_back(TF_W3J_LWdR);
-  hists.push_back(TF_W2J_LWdR);
-  hists.push_back(TF_W1J_LWdR);
-  //hists.push_back(//TF_WW_LWdR);
-  //hists.push_back(//TF_WZ_LWdR);
-  //hists.push_back(//TF_TTZ_LWdR);
-  hists.push_back(TF_LW200_LWdR);
-  hists.push_back(TF_LW200_LWdR);
-  //hists.push_back(TF_LW400_svd);
-  //hists.push_back(TF_LW500_svd);
-  hists.push_back(TF_dataRunB_DiJetdR);
-  hists.push_back(TF_dataRunC_DiJetdR);
-  hists.push_back(TF_ZLL_DiJetdR);
-  hists.push_back(TF_TT_DiJetdR);
-  hists.push_back(TF_W3J_DiJetdR);
-  hists.push_back(TF_W2J_DiJetdR);
-  hists.push_back(TF_W1J_DiJetdR);
-  //hists.push_back(//TF_WW_DiJetdR);
-  //hists.push_back(//TF_WZ_DiJetdR);
-  //hists.push_back(//TF_TTZ_DiJetdR);
-  hists.push_back(TF_LW200_DiJetdR);
-  hists.push_back(TF_LW200_DiJetdR);
-  //hists.push_back(TF_LW400_svd);
-  //hists.push_back(TF_LW500_svd);
-  hists.push_back(TF_dataRunB_BJetPt);
-  hists.push_back(TF_dataRunC_BJetPt);
-  hists.push_back(TF_ZLL_BJetPt);
-  hists.push_back(TF_TT_BJetPt);
-  hists.push_back(TF_W3J_BJetPt);
-  hists.push_back(TF_W2J_BJetPt);
-  hists.push_back(TF_W1J_BJetPt);
-  //hists.push_back(//TF_WW_BJetPt);
-  //hists.push_back(//TF_WZ_BJetPt);
-  //hists.push_back(//TF_TTZ_BJetPt);
-  hists.push_back(TF_LW200_BJetPt);
-  hists.push_back(TF_LW200_BJetPt);
-  //hists.push_back(TF_LW400_svd);
-  //hists.push_back(TF_LW500_svd);
-  hists.push_back(TF_dataRunB_SBJetPt);
-  hists.push_back(TF_dataRunC_SBJetPt);
-  hists.push_back(TF_ZLL_SBJetPt);
-  hists.push_back(TF_TT_SBJetPt);
-  hists.push_back(TF_W3J_SBJetPt);
-  hists.push_back(TF_W2J_SBJetPt);
-  hists.push_back(TF_W1J_SBJetPt);
-  //hists.push_back(//TF_WW_SBJetPt);
-  //hists.push_back(//TF_WZ_SBJetPt);
-  //hists.push_back(//TF_TTZ_SBJetPt);
-  hists.push_back(TF_LW200_SBJetPt);
-  hists.push_back(TF_LW200_SBJetPt);
-  //hists.push_back(TF_LW400_svd);
-  //hists.push_back(TF_LW500_svd);
-  hists.push_back(TF_dataRunB_NJet);
-  hists.push_back(TF_dataRunC_NJet);
-  hists.push_back(TF_ZLL_NJet);
-  hists.push_back(TF_TT_NJet);
-  hists.push_back(TF_W3J_NJet);
-  hists.push_back(TF_W2J_NJet);
-  hists.push_back(TF_W1J_NJet);
-  //hists.push_back(//TF_WW_NJet);
-  //hists.push_back(//TF_WZ_NJet);
-  //hists.push_back(//TF_TTZ_NJet);
-  hists.push_back(TF_LW200_NJet);
-  hists.push_back(TF_LW200_NJet);
-  //hists.push_back(TF_LW400_svd);
-  //hists.push_back(TF_LW500_svd);
-  hists.push_back(TF_dataRunB_NEle);
-  hists.push_back(TF_dataRunC_NEle);
-  hists.push_back(TF_ZLL_NEle);
-  hists.push_back(TF_TT_NEle);
-  hists.push_back(TF_W3J_NEle);
-  hists.push_back(TF_W2J_NEle);
-  hists.push_back(TF_W1J_NEle);
-  //hists.push_back(//TF_WW_NEle);
-  //hists.push_back(//TF_WZ_NEle);
-  //hists.push_back(//TF_TTZ_NEle);
-  hists.push_back(TF_LW200_NEle);
-  hists.push_back(TF_LW200_NEle);
-  //hists.push_back(TF_LW400_svd);
-  //hists.push_back(TF_LW500_svd);
-
-  hists.push_back(TO_dataRunB_npv);
-  hists.push_back(TO_dataRunC_npv);
-  hists.push_back(TO_ZLL_npv);
-  hists.push_back(TO_TT_npv);
-  hists.push_back(TO_W3J_npv);
-  hists.push_back(TO_W2J_npv);
-  hists.push_back(TO_W1J_npv);
-  hists.push_back(TO_LW200_npv);
-  hists.push_back(TO_dataRunB_JetMass);
-  hists.push_back(TO_dataRunC_JetMass);
-  hists.push_back(TO_ZLL_JetMass);
-  hists.push_back(TO_TT_JetMass);
-  hists.push_back(TO_W3J_JetMass);
-  hists.push_back(TO_W2J_JetMass);
-  hists.push_back(TO_W1J_JetMass);
-  hists.push_back(TO_LW200_JetMass);
-  hists.push_back(TO_dataRunB_LWMass);
-  hists.push_back(TO_dataRunC_LWMass);
-  hists.push_back(TO_ZLL_LWMass);
-  hists.push_back(TO_TT_LWMass);
-  hists.push_back(TO_W3J_LWMass);
-  hists.push_back(TO_W2J_LWMass);
-  hists.push_back(TO_W1J_LWMass);
-  hists.push_back(TO_LW200_LWMass);
-  //hists.push_back(//TO_WW_npv);
-  //hists.push_back(////TO_WZ_npv);
-  //hists.push_back(//TO_TTZ_npv);
-  //hists.push_back(//TO_WW_JetMass);
-  //hists.push_back(////TO_WZ_JetMass);
-  //hists.push_back(//TO_TTZ_JetMass);
-  //hists.push_back(//TO_WW_LWMass);
-  //hists.push_back(////TO_WZ_LWMass);
-  //hists.push_back(//TO_TTZ_LWMass);
-  //hists.push_back(//TO_LW300_LWMass);
-  //hists.push_back(TO_LW400_LWMass);
-  //hists.push_back(TO_LW500_LWMass);
-  //hists.push_back(//TO_LW300_JetMass);
-  //hists.push_back(TO_LW400_JetMass);
-  //hists.push_back(TO_LW500_JetMass);
-  //hists.push_back(//TO_LW300_npv);
-  //hists.push_back(TO_LW400_npv);
-  //hists.push_back(TO_LW500_npv);
-  hists.push_back(TO_dataRunB_nsv);
-  hists.push_back(TO_dataRunC_nsv);
-  hists.push_back(TO_ZLL_nsv);
-  hists.push_back(TO_TT_nsv);
-  hists.push_back(TO_W3J_nsv);
-  hists.push_back(TO_W2J_nsv);
-  hists.push_back(TO_W1J_nsv);
-  //hists.push_back(//TO_WW_nsv);
-  //hists.push_back(////TO_WZ_nsv);
-  //hists.push_back(//TO_TTZ_nsv);
-  hists.push_back(TO_LW200_nsv);
-  //hists.push_back(TO_LW200_nsv);
-  //hists.push_back(TO_LW400_nsv);
-  //hists.push_back(TO_LW500_nsv);
-  hists.push_back(TO_dataRunB_svd);
-  hists.push_back(TO_dataRunC_svd);
-  hists.push_back(TO_ZLL_svd);
-  hists.push_back(TO_TT_svd);
-  hists.push_back(TO_W3J_svd);
-  hists.push_back(TO_W2J_svd);
-  hists.push_back(TO_W1J_svd);
-  //hists.push_back(//TO_WW_svd);
-  //hists.push_back(////TO_WZ_svd);
-  //hists.push_back(//TO_TTZ_svd);
-  hists.push_back(TO_LW200_svd);
-  //hists.push_back(TO_LW200_svd);
-  //hists.push_back(TO_LW400_svd);
-  //hists.push_back(TO_LW500_svd);
-  hists.push_back(TO_dataRunB_Elept);
-  hists.push_back(TO_dataRunC_Elept);
-  hists.push_back(TO_ZLL_Elept);
-  hists.push_back(TO_TT_Elept);
-  hists.push_back(TO_W3J_Elept);
-  hists.push_back(TO_W2J_Elept);
-  hists.push_back(TO_W1J_Elept);
-  //hists.push_back(//TO_WW_Elept);
-  //hists.push_back(////TO_WZ_Elept);
-  //hists.push_back(//TO_TTZ_Elept);
-  hists.push_back(TO_LW200_Elept);
-  //hists.push_back(TO_LW200_Elept);
-  //hists.push_back(TO_LW400_svd);
-  //hists.push_back(TO_LW500_svd);
-  hists.push_back(TO_dataRunB_DieledR);
-  hists.push_back(TO_dataRunC_DieledR);
-  hists.push_back(TO_ZLL_DieledR);
-  hists.push_back(TO_TT_DieledR);
-  hists.push_back(TO_W3J_DieledR);
-  hists.push_back(TO_W2J_DieledR);
-  hists.push_back(TO_W1J_DieledR);
-  //hists.push_back(//TO_WW_DieledR);
-  //hists.push_back(////TO_WZ_DieledR);
-  //hists.push_back(//TO_TTZ_DieledR);
-  hists.push_back(TO_LW200_DieledR);
-  //hists.push_back(TO_LW200_DieledR);
-  //hists.push_back(TO_LW400_svd);
-  //hists.push_back(TO_LW500_svd);
-  hists.push_back(TO_dataRunB_LWdR);
-  hists.push_back(TO_dataRunC_LWdR);
-  hists.push_back(TO_ZLL_LWdR);
-  hists.push_back(TO_TT_LWdR);
-  hists.push_back(TO_W3J_LWdR);
-  hists.push_back(TO_W2J_LWdR);
-  hists.push_back(TO_W1J_LWdR);
-  //hists.push_back(//TO_WW_LWdR);
-  //hists.push_back(////TO_WZ_LWdR);
-  //hists.push_back(//TO_TTZ_LWdR);
-  hists.push_back(TO_LW200_LWdR);
-  //hists.push_back(TO_LW200_LWdR);
-  //hists.push_back(TO_LW400_svd);
-  //hists.push_back(TO_LW500_svd);
-  hists.push_back(TO_dataRunB_DiJetdR);
-  hists.push_back(TO_dataRunC_DiJetdR);
-  hists.push_back(TO_ZLL_DiJetdR);
-  hists.push_back(TO_TT_DiJetdR);
-  hists.push_back(TO_W3J_DiJetdR);
-  hists.push_back(TO_W2J_DiJetdR);
-  hists.push_back(TO_W1J_DiJetdR);
-  //hists.push_back(//TO_WW_DiJetdR);
-  //hists.push_back(////TO_WZ_DiJetdR);
-  //hists.push_back(//TO_TTZ_DiJetdR);
-  hists.push_back(TO_LW200_DiJetdR);
-  //hists.push_back(TO_LW200_DiJetdR);
-  //hists.push_back(TO_LW400_svd);
-  //hists.push_back(TO_LW500_svd);
-  hists.push_back(TO_dataRunB_BJetPt);
-  hists.push_back(TO_dataRunC_BJetPt);
-  hists.push_back(TO_ZLL_BJetPt);
-  hists.push_back(TO_TT_BJetPt);
-  hists.push_back(TO_W3J_BJetPt);
-  hists.push_back(TO_W2J_BJetPt);
-  hists.push_back(TO_W1J_BJetPt);
-  //hists.push_back(//TO_WW_BJetPt);
-  //hists.push_back(////TO_WZ_BJetPt);
-  //hists.push_back(//TO_TTZ_BJetPt);
-  hists.push_back(TO_LW200_BJetPt);
-  //hists.push_back(TO_LW200_BJetPt);
-  //hists.push_back(TO_LW400_svd);
-  //hists.push_back(TO_LW500_svd);
-  hists.push_back(TO_dataRunB_SBJetPt);
-  hists.push_back(TO_dataRunC_SBJetPt);
-  hists.push_back(TO_ZLL_SBJetPt);
-  hists.push_back(TO_TT_SBJetPt);
-  hists.push_back(TO_W3J_SBJetPt);
-  hists.push_back(TO_W2J_SBJetPt);
-  hists.push_back(TO_W1J_SBJetPt);
-  //hists.push_back(//TO_WW_SBJetPt);
-  //hists.push_back(////TO_WZ_SBJetPt);
-  //hists.push_back(//TO_TTZ_SBJetPt);
-  hists.push_back(TO_LW200_SBJetPt);
-  //hists.push_back(TO_LW200_SBJetPt);
-  //hists.push_back(TO_LW400_svd);
-  //hists.push_back(TO_LW500_svd);
-  hists.push_back(TO_dataRunB_NJet);
-  hists.push_back(TO_dataRunC_NJet);
-  hists.push_back(TO_ZLL_NJet);
-  hists.push_back(TO_TT_NJet);
-  hists.push_back(TO_W3J_NJet);
-  hists.push_back(TO_W2J_NJet);
-  hists.push_back(TO_W1J_NJet);
-  //hists.push_back(//TO_WW_NJet);
-  //hists.push_back(////TO_WZ_NJet);
-  //hists.push_back(//TO_TTZ_NJet);
-  hists.push_back(TO_LW200_NJet);
-  //hists.push_back(TO_LW200_NJet);
-  //hists.push_back(TO_LW400_svd);
-  //hists.push_back(TO_LW500_svd);
-  hists.push_back(TO_dataRunB_NEle);
-  hists.push_back(TO_dataRunC_NEle);
-  hists.push_back(TO_ZLL_NEle);
-  hists.push_back(TO_TT_NEle);
-  hists.push_back(TO_W3J_NEle);
-  hists.push_back(TO_W2J_NEle);
-  hists.push_back(TO_W1J_NEle);
-  //hists.push_back(//TO_WW_NEle);
-  //hists.push_back(////TO_WZ_NEle);
-  //hists.push_back(//TO_TTZ_NEle);
-  hists.push_back(TO_LW200_NEle);
-  //hists.push_back(TO_LW200_NEle);
-  //hists.push_back(TO_LW400_svd);
-  //hists.push_back(TO_LW500_svd);
-
-
-
-  hists.push_back(SG_dataRunB_npv);
-  hists.push_back(SG_dataRunC_npv);
-  hists.push_back(SG_ZLL_npv);
-  hists.push_back(SG_TT_npv);
-  hists.push_back(SG_W3J_npv);
-  hists.push_back(SG_W2J_npv);
-  hists.push_back(SG_W1J_npv);
-  hists.push_back(SG_LW200_npv);
-  hists.push_back(SG_dataRunB_JetMass);
-  hists.push_back(SG_dataRunC_JetMass);
-  hists.push_back(SG_ZLL_JetMass);
-  hists.push_back(SG_TT_JetMass);
-  hists.push_back(SG_W3J_JetMass);
-  hists.push_back(SG_W2J_JetMass);
-  hists.push_back(SG_W1J_JetMass);
-  hists.push_back(SG_LW200_JetMass);
-  hists.push_back(SG_dataRunB_LWMass);
-  hists.push_back(SG_dataRunC_LWMass);
-  hists.push_back(SG_ZLL_LWMass);
-  hists.push_back(SG_TT_LWMass);
-  hists.push_back(SG_W3J_LWMass);
-  hists.push_back(SG_W2J_LWMass);
-  hists.push_back(SG_W1J_LWMass);
-  hists.push_back(SG_LW200_LWMass);
-  //hists.push_back(SG_WW_npv);
-  //hists.push_back(SG_WZ_npv);
-  //hists.push_back(SG_TTZ_npv);
-  //hists.push_back(SG_WW_JetMass);
-  //hists.push_back(SG_WZ_JetMass);
-  //hists.push_back(SG_TTZ_JetMass);
-  //hists.push_back(SG_WW_LWMass);
-  //hists.push_back(SG_WZ_LWMass);
-  //hists.push_back(SG_TTZ_LWMass);
-  //hists.push_back(//HQ_LW300_LWMass);
-  //hists.push_back(SG_LW400_LWMass);
-  //hists.push_back(SG_LW500_LWMass);
-  //hists.push_back(//HQ_LW300_JetMass);
-  //hists.push_back(SG_LW400_JetMass);
-  //hists.push_back(SG_LW500_JetMass);
-  //hists.push_back(//HQ_LW300_npv);
-  //hists.push_back(SG_LW400_npv);
-  //hists.push_back(SG_LW500_npv);
-  hists.push_back(SG_dataRunB_nsv);
-  hists.push_back(SG_dataRunC_nsv);
-  hists.push_back(SG_ZLL_nsv);
-  hists.push_back(SG_TT_nsv);
-  hists.push_back(SG_W3J_nsv);
-  hists.push_back(SG_W2J_nsv);
-  hists.push_back(SG_W1J_nsv);
-  //hists.push_back(SG_WW_nsv);
-  //hists.push_back(SG_WZ_nsv);
-  //hists.push_back(SG_TTZ_nsv);
-  hists.push_back(SG_LW200_nsv);
-  //hists.push_back(SG_LW200_nsv);
-  //hists.push_back(SG_LW400_nsv);
-  //hists.push_back(SG_LW500_nsv);
-  hists.push_back(SG_dataRunB_svd);
-  hists.push_back(SG_dataRunC_svd);
-  hists.push_back(SG_ZLL_svd);
-  hists.push_back(SG_TT_svd);
-  hists.push_back(SG_W3J_svd);
-  hists.push_back(SG_W2J_svd);
-  hists.push_back(SG_W1J_svd);
-  //hists.push_back(SG_WW_svd);
-  //hists.push_back(SG_WZ_svd);
-  //hists.push_back(SG_TTZ_svd);
-  hists.push_back(SG_LW200_svd);
-  //hists.push_back(SG_LW200_svd);
-  //hists.push_back(SG_LW400_svd);
-  //hists.push_back(SG_LW500_svd);
-  hists.push_back(SG_dataRunB_Elept);
-  hists.push_back(SG_dataRunC_Elept);
-  hists.push_back(SG_ZLL_Elept);
-  hists.push_back(SG_TT_Elept);
-  hists.push_back(SG_W3J_Elept);
-  hists.push_back(SG_W2J_Elept);
-  hists.push_back(SG_W1J_Elept);
-  //hists.push_back(SG_WW_Elept);
-  //hists.push_back(SG_WZ_Elept);
-  //hists.push_back(SG_TTZ_Elept);
-  hists.push_back(SG_LW200_Elept);
-  //hists.push_back(SG_LW200_Elept);
-  //hists.push_back(SG_LW400_svd);
-  //hists.push_back(SG_LW500_svd);
-  hists.push_back(SG_dataRunB_DieledR);
-  hists.push_back(SG_dataRunC_DieledR);
-  hists.push_back(SG_ZLL_DieledR);
-  hists.push_back(SG_TT_DieledR);
-  hists.push_back(SG_W3J_DieledR);
-  hists.push_back(SG_W2J_DieledR);
-  hists.push_back(SG_W1J_DieledR);
-  //hists.push_back(SG_WW_DieledR);
-  //hists.push_back(SG_WZ_DieledR);
-  //hists.push_back(SG_TTZ_DieledR);
-  hists.push_back(SG_LW200_DieledR);
-  //hists.push_back(SG_LW200_DieledR);
-  //hists.push_back(SG_LW400_svd);
-  //hists.push_back(SG_LW500_svd);
-  hists.push_back(SG_dataRunB_LWdR);
-  hists.push_back(SG_dataRunC_LWdR);
-  hists.push_back(SG_ZLL_LWdR);
-  hists.push_back(SG_TT_LWdR);
-  hists.push_back(SG_W3J_LWdR);
-  hists.push_back(SG_W2J_LWdR);
-  hists.push_back(SG_W1J_LWdR);
-  //hists.push_back(SG_WW_LWdR);
-  //hists.push_back(SG_WZ_LWdR);
-  //hists.push_back(SG_TTZ_LWdR);
-  hists.push_back(SG_LW200_LWdR);
-  //hists.push_back(SG_LW200_LWdR);
-  //hists.push_back(SG_LW400_svd);
-  //hists.push_back(SG_LW500_svd);
-  hists.push_back(SG_dataRunB_DiJetdR);
-  hists.push_back(SG_dataRunC_DiJetdR);
-  hists.push_back(SG_ZLL_DiJetdR);
-  hists.push_back(SG_TT_DiJetdR);
-  hists.push_back(SG_W3J_DiJetdR);
-  hists.push_back(SG_W2J_DiJetdR);
-  hists.push_back(SG_W1J_DiJetdR);
-  //hists.push_back(SG_WW_DiJetdR);
-  //hists.push_back(SG_WZ_DiJetdR);
-  //hists.push_back(SG_TTZ_DiJetdR);
-  hists.push_back(SG_LW200_DiJetdR);
-  //hists.push_back(SG_LW200_DiJetdR);
-  //hists.push_back(SG_LW400_svd);
-  //hists.push_back(SG_LW500_svd);
-  hists.push_back(SG_dataRunB_BJetPt);
-  hists.push_back(SG_dataRunC_BJetPt);
-  hists.push_back(SG_ZLL_BJetPt);
-  hists.push_back(SG_TT_BJetPt);
-  hists.push_back(SG_W3J_BJetPt);
-  hists.push_back(SG_W2J_BJetPt);
-  hists.push_back(SG_W1J_BJetPt);
-  //hists.push_back(SG_WW_BJetPt);
-  //hists.push_back(SG_WZ_BJetPt);
-  //hists.push_back(SG_TTZ_BJetPt);
-  hists.push_back(SG_LW200_BJetPt);
-  //hists.push_back(SG_LW200_BJetPt);
-  //hists.push_back(SG_LW400_svd);
-  //hists.push_back(SG_LW500_svd);
-  hists.push_back(SG_dataRunB_SBJetPt);
-  hists.push_back(SG_dataRunC_SBJetPt);
-  hists.push_back(SG_ZLL_SBJetPt);
-  hists.push_back(SG_TT_SBJetPt);
-  hists.push_back(SG_W3J_SBJetPt);
-  hists.push_back(SG_W2J_SBJetPt);
-  hists.push_back(SG_W1J_SBJetPt);
-  //hists.push_back(SG_WW_SBJetPt);
-  //hists.push_back(SG_WZ_SBJetPt);
-  //hists.push_back(SG_TTZ_SBJetPt);
-  hists.push_back(SG_LW200_SBJetPt);
-  //hists.push_back(SG_LW200_SBJetPt);
-  //hists.push_back(SG_LW400_svd);
-  //hists.push_back(SG_LW500_svd);
-  hists.push_back(SG_dataRunB_NJet);
-  hists.push_back(SG_dataRunC_NJet);
-  hists.push_back(SG_ZLL_NJet);
-  hists.push_back(SG_TT_NJet);
-  hists.push_back(SG_W3J_NJet);
-  hists.push_back(SG_W2J_NJet);
-  hists.push_back(SG_W1J_NJet);
-  //hists.push_back(SG_WW_NJet);
-  //hists.push_back(SG_WZ_NJet);
-  //hists.push_back(SG_TTZ_NJet);
-  hists.push_back(SG_LW200_NJet);
-  //hists.push_back(SG_LW200_NJet);
-  //hists.push_back(SG_LW400_svd);
-  //hists.push_back(SG_LW500_svd);
-  hists.push_back(SG_dataRunB_NEle);
-  hists.push_back(SG_dataRunC_NEle);
-  hists.push_back(SG_ZLL_NEle);
-  hists.push_back(SG_TT_NEle);
-  hists.push_back(SG_W3J_NEle);
-  hists.push_back(SG_W2J_NEle);
-  hists.push_back(SG_W1J_NEle);
-  //hists.push_back(SG_WW_NEle);
-  //hists.push_back(SG_WZ_NEle);
-  //hists.push_back(SG_TTZ_NEle);
-  hists.push_back(SG_LW200_NEle);
-  //hists.push_back(SG_LW200_NEle);
-  //hists.push_back(SG_LW400_svd);
-  //hists.push_back(SG_LW500_svd);
-
-  hists.push_back(DRC_dataRunB_npv);
-  hists.push_back(DRC_dataRunC_npv);
-  hists.push_back(DRC_ZLL_npv);
-  hists.push_back(DRC_TT_npv);
-  hists.push_back(DRC_W3J_npv);
-  hists.push_back(DRC_W2J_npv);
-  hists.push_back(DRC_W1J_npv);
-  hists.push_back(DRC_LW200_npv);
-  hists.push_back(DRC_dataRunB_JetMass);
-  hists.push_back(DRC_dataRunC_JetMass);
-  hists.push_back(DRC_ZLL_JetMass);
-  hists.push_back(DRC_TT_JetMass);
-  hists.push_back(DRC_W3J_JetMass);
-  hists.push_back(DRC_W2J_JetMass);
-  hists.push_back(DRC_W1J_JetMass);
-  hists.push_back(DRC_LW200_JetMass);
-  hists.push_back(DRC_dataRunB_LWMass);
-  hists.push_back(DRC_dataRunC_LWMass);
-  hists.push_back(DRC_ZLL_LWMass);
-  hists.push_back(DRC_TT_LWMass);
-  hists.push_back(DRC_W3J_LWMass);
-  hists.push_back(DRC_W2J_LWMass);
-  hists.push_back(DRC_W1J_LWMass);
-  hists.push_back(DRC_LW200_LWMass);
-  //hists.push_back(DRC_WW_npv);
-  //hists.push_back(DRC_WZ_npv);
-  //hists.push_back(DRC_TTZ_npv);
-  //hists.push_back(DRC_WW_JetMass);
-  //hists.push_back(DRC_WZ_JetMass);
-  //hists.push_back(DRC_TTZ_JetMass);
-  //hists.push_back(DRC_WW_LWMass);
-  //hists.push_back(DRC_WZ_LWMass);
-  //hists.push_back(DRC_TTZ_LWMass);
-  //hists.push_back(//HQ_LW300_LWMass);
-  //hists.push_back(DRC_LW400_LWMass);
-  //hists.push_back(DRC_LW500_LWMass);
-  //hists.push_back(//HQ_LW300_JetMass);
-  //hists.push_back(DRC_LW400_JetMass);
-  //hists.push_back(DRC_LW500_JetMass);
-  //hists.push_back(//HQ_LW300_npv);
-  //hists.push_back(DRC_LW400_npv);
-  //hists.push_back(DRC_LW500_npv);
-  hists.push_back(DRC_dataRunB_nsv);
-  hists.push_back(DRC_dataRunC_nsv);
-  hists.push_back(DRC_ZLL_nsv);
-  hists.push_back(DRC_TT_nsv);
-  hists.push_back(DRC_W3J_nsv);
-  hists.push_back(DRC_W2J_nsv);
-  hists.push_back(DRC_W1J_nsv);
-  //hists.push_back(DRC_WW_nsv);
-  //hists.push_back(DRC_WZ_nsv);
-  //hists.push_back(DRC_TTZ_nsv);
-  hists.push_back(DRC_LW200_nsv);
-  //hists.push_back(DRC_LW200_nsv);
-  //hists.push_back(DRC_LW400_nsv);
-  //hists.push_back(DRC_LW500_nsv);
-  hists.push_back(DRC_dataRunB_svd);
-  hists.push_back(DRC_dataRunC_svd);
-  hists.push_back(DRC_ZLL_svd);
-  hists.push_back(DRC_TT_svd);
-  hists.push_back(DRC_W3J_svd);
-  hists.push_back(DRC_W2J_svd);
-  hists.push_back(DRC_W1J_svd);
-  //hists.push_back(DRC_WW_svd);
-  //hists.push_back(DRC_WZ_svd);
-  //hists.push_back(DRC_TTZ_svd);
-  hists.push_back(DRC_LW200_svd);
-  //hists.push_back(DRC_LW200_svd);
-  //hists.push_back(DRC_LW400_svd);
-  //hists.push_back(DRC_LW500_svd);
-  hists.push_back(DRC_dataRunB_Elept);
-  hists.push_back(DRC_dataRunC_Elept);
-  hists.push_back(DRC_ZLL_Elept);
-  hists.push_back(DRC_TT_Elept);
-  hists.push_back(DRC_W3J_Elept);
-  hists.push_back(DRC_W2J_Elept);
-  hists.push_back(DRC_W1J_Elept);
-  //hists.push_back(DRC_WW_Elept);
-  //hists.push_back(DRC_WZ_Elept);
-  //hists.push_back(DRC_TTZ_Elept);
-  hists.push_back(DRC_LW200_Elept);
-  //hists.push_back(DRC_LW200_Elept);
-  //hists.push_back(DRC_LW400_svd);
-  //hists.push_back(DRC_LW500_svd);
-  hists.push_back(DRC_dataRunB_DieledR);
-  hists.push_back(DRC_dataRunC_DieledR);
-  hists.push_back(DRC_ZLL_DieledR);
-  hists.push_back(DRC_TT_DieledR);
-  hists.push_back(DRC_W3J_DieledR);
-  hists.push_back(DRC_W2J_DieledR);
-  hists.push_back(DRC_W1J_DieledR);
-  //hists.push_back(DRC_WW_DieledR);
-  //hists.push_back(DRC_WZ_DieledR);
-  //hists.push_back(DRC_TTZ_DieledR);
-  hists.push_back(DRC_LW200_DieledR);
-  //hists.push_back(DRC_LW200_DieledR);
-  //hists.push_back(DRC_LW400_svd);
-  //hists.push_back(DRC_LW500_svd);
-  hists.push_back(DRC_dataRunB_LWdR);
-  hists.push_back(DRC_dataRunC_LWdR);
-  hists.push_back(DRC_ZLL_LWdR);
-  hists.push_back(DRC_TT_LWdR);
-  hists.push_back(DRC_W3J_LWdR);
-  hists.push_back(DRC_W2J_LWdR);
-  hists.push_back(DRC_W1J_LWdR);
-  //hists.push_back(DRC_WW_LWdR);
-  //hists.push_back(DRC_WZ_LWdR);
-  //hists.push_back(DRC_TTZ_LWdR);
-  hists.push_back(DRC_LW200_LWdR);
-  //hists.push_back(DRC_LW200_LWdR);
-  //hists.push_back(DRC_LW400_svd);
-  //hists.push_back(DRC_LW500_svd);
-  hists.push_back(DRC_dataRunB_DiJetdR);
-  hists.push_back(DRC_dataRunC_DiJetdR);
-  hists.push_back(DRC_ZLL_DiJetdR);
-  hists.push_back(DRC_TT_DiJetdR);
-  hists.push_back(DRC_W3J_DiJetdR);
-  hists.push_back(DRC_W2J_DiJetdR);
-  hists.push_back(DRC_W1J_DiJetdR);
-  //hists.push_back(DRC_WW_DiJetdR);
-  //hists.push_back(DRC_WZ_DiJetdR);
-  //hists.push_back(DRC_TTZ_DiJetdR);
-  hists.push_back(DRC_LW200_DiJetdR);
-  //hists.push_back(DRC_LW200_DiJetdR);
-  //hists.push_back(DRC_LW400_svd);
-  //hists.push_back(DRC_LW500_svd);
-  hists.push_back(DRC_dataRunB_BJetPt);
-  hists.push_back(DRC_dataRunC_BJetPt);
-  hists.push_back(DRC_ZLL_BJetPt);
-  hists.push_back(DRC_TT_BJetPt);
-  hists.push_back(DRC_W3J_BJetPt);
-  hists.push_back(DRC_W2J_BJetPt);
-  hists.push_back(DRC_W1J_BJetPt);
-  //hists.push_back(DRC_WW_BJetPt);
-  //hists.push_back(DRC_WZ_BJetPt);
-  //hists.push_back(DRC_TTZ_BJetPt);
-  hists.push_back(DRC_LW200_BJetPt);
-  //hists.push_back(DRC_LW200_BJetPt);
-  //hists.push_back(DRC_LW400_svd);
-  //hists.push_back(DRC_LW500_svd);
-  hists.push_back(DRC_dataRunB_SBJetPt);
-  hists.push_back(DRC_dataRunC_SBJetPt);
-  hists.push_back(DRC_ZLL_SBJetPt);
-  hists.push_back(DRC_TT_SBJetPt);
-  hists.push_back(DRC_W3J_SBJetPt);
-  hists.push_back(DRC_W2J_SBJetPt);
-  hists.push_back(DRC_W1J_SBJetPt);
-  //hists.push_back(DRC_WW_SBJetPt);
-  //hists.push_back(DRC_WZ_SBJetPt);
-  //hists.push_back(DRC_TTZ_SBJetPt);
-  hists.push_back(DRC_LW200_SBJetPt);
-  //hists.push_back(DRC_LW200_SBJetPt);
-  //hists.push_back(DRC_LW400_svd);
-  //hists.push_back(DRC_LW500_svd);
-  hists.push_back(DRC_dataRunB_NJet);
-  hists.push_back(DRC_dataRunC_NJet);
-  hists.push_back(DRC_ZLL_NJet);
-  hists.push_back(DRC_TT_NJet);
-  hists.push_back(DRC_W3J_NJet);
-  hists.push_back(DRC_W2J_NJet);
-  hists.push_back(DRC_W1J_NJet);
-  //hists.push_back(DRC_WW_NJet);
-  //hists.push_back(DRC_WZ_NJet);
-  //hists.push_back(DRC_TTZ_NJet);
-  hists.push_back(DRC_LW200_NJet);
-  //hists.push_back(DRC_LW200_NJet);
-  //hists.push_back(DRC_LW400_svd);
-  //hists.push_back(DRC_LW500_svd);
-  hists.push_back(DRC_dataRunB_NEle);
-  hists.push_back(DRC_dataRunC_NEle);
-  hists.push_back(DRC_ZLL_NEle);
-  hists.push_back(DRC_TT_NEle);
-  hists.push_back(DRC_W3J_NEle);
-  hists.push_back(DRC_W2J_NEle);
-  hists.push_back(DRC_W1J_NEle);
-  //hists.push_back(DRC_WW_NEle);
-  //hists.push_back(DRC_WZ_NEle);
-  //hists.push_back(DRC_TTZ_NEle);
-  hists.push_back(DRC_LW200_NEle);
-  //hists.push_back(DRC_LW200_NEle);
-  //hists.push_back(DRC_LW400_svd);
-  //hists.push_back(DRC_LW500_svd);
-
+  hists.push_back(JetS_dataRunB_ppoint);
+  hists.push_back(JetS_dataRunC_ppoint);
+  hists.push_back(JetS_ZLL_ppoint);
+  hists.push_back(JetS_TT_ppoint);
+  hists.push_back(JetS_W3J_ppoint);
+  hists.push_back(JetS_W2J_ppoint);
+  hists.push_back(JetS_W1J_ppoint);
+  hists.push_back(JetS_LW200_ppoint);
   hists.push_back(JetS_dataRunB_BSd);
   hists.push_back(JetS_dataRunC_BSd);
   hists.push_back(JetS_ZLL_BSd);
@@ -9501,6 +10075,843 @@ EventLoopAnalysisTemplate::EventLoopAnalysisTemplate(TString thefile, TString th
   //hists.push_back(JetS_LW200_NEle);
   //hists.push_back(JetS_LW400_svd);
   //hists.push_back(JetS_LW500_svd);
+
+  hists.push_back(DRC_dataRunB_ppoint);
+  hists.push_back(DRC_dataRunC_ppoint);
+  hists.push_back(DRC_ZLL_ppoint);
+  hists.push_back(DRC_TT_ppoint);
+  hists.push_back(DRC_W3J_ppoint);
+  hists.push_back(DRC_W2J_ppoint);
+  hists.push_back(DRC_W1J_ppoint);
+  hists.push_back(DRC_LW200_ppoint);
+  hists.push_back(DRC_dataRunB_BSd);
+  hists.push_back(DRC_dataRunC_BSd);
+  hists.push_back(DRC_ZLL_BSd);
+  hists.push_back(DRC_TT_BSd);
+  hists.push_back(DRC_W3J_BSd);
+  hists.push_back(DRC_W2J_BSd);
+  hists.push_back(DRC_W1J_BSd);
+  hists.push_back(DRC_LW200_BSd);
+  //hists.push_back(//DRC_WW_BSd);
+  //hists.push_back(//DRC_WZ_BSd);
+  //hists.push_back(//DRC_TTZ_BSd);
+  //hists.push_back(//DRC_LW300_BSd);
+  //hists.push_back(DRC_LW400_BSd);
+  //hists.push_back(DRC_LW500_BSd);
+  hists.push_back(DRC_dataRunB_EleJet1DR);
+  hists.push_back(DRC_dataRunC_EleJet1DR);
+  hists.push_back(DRC_ZLL_EleJet1DR);
+  hists.push_back(DRC_TT_EleJet1DR);
+  hists.push_back(DRC_W3J_EleJet1DR);
+  hists.push_back(DRC_W2J_EleJet1DR);
+  hists.push_back(DRC_W1J_EleJet1DR);
+  hists.push_back(DRC_LW200_EleJet1DR);
+  //hists.push_back(//DRC_WW_EleJet1DR);
+  //hists.push_back(//DRC_WZ_EleJet1DR);
+  //hists.push_back(//DRC_TTZ_EleJet1DR);
+  //hists.push_back(//DRC_LW300_EleJet1DR);
+  //hists.push_back(DRC_LW400_EleJet1DR);
+  //hists.push_back(DRC_LW500_EleJet1DR);
+  hists.push_back(DRC_dataRunB_EleJet2DR);
+  hists.push_back(DRC_dataRunC_EleJet2DR);
+  hists.push_back(DRC_ZLL_EleJet2DR);
+  hists.push_back(DRC_TT_EleJet2DR);
+  hists.push_back(DRC_W3J_EleJet2DR);
+  hists.push_back(DRC_W2J_EleJet2DR);
+  hists.push_back(DRC_W1J_EleJet2DR);
+  hists.push_back(DRC_LW200_EleJet2DR);
+  //hists.push_back(//DRC_WW_EleJet2DR);
+  //hists.push_back(//DRC_WZ_EleJet2DR);
+  //hists.push_back(//DRC_TTZ_EleJet2DR);
+  //hists.push_back(//DRC_LW300_EleJet2DR);
+  //hists.push_back(DRC_LW400_EleJet2DR);
+  //hists.push_back(DRC_LW500_EleJet2DR);
+  hists.push_back(DRC_dataRunB_JetJet1DR);
+  hists.push_back(DRC_dataRunC_JetJet1DR);
+  hists.push_back(DRC_ZLL_JetJet1DR);
+  hists.push_back(DRC_TT_JetJet1DR);
+  hists.push_back(DRC_W3J_JetJet1DR);
+  hists.push_back(DRC_W2J_JetJet1DR);
+  hists.push_back(DRC_W1J_JetJet1DR);
+  hists.push_back(DRC_LW200_JetJet1DR);
+  //hists.push_back(//DRC_WW_JetJet1DR);
+  //hists.push_back(//DRC_WZ_JetJet1DR);
+  //hists.push_back(//DRC_TTZ_JetJet1DR);
+  //hists.push_back(//DRC_LW300_JetJet1DR);
+  //hists.push_back(DRC_LW400_JetJet1DR);
+  //hists.push_back(DRC_LW500_JetJet1DR);
+  hists.push_back(DRC_dataRunB_JetJet2DR);
+  hists.push_back(DRC_dataRunC_JetJet2DR);
+  hists.push_back(DRC_ZLL_JetJet2DR);
+  hists.push_back(DRC_TT_JetJet2DR);
+  hists.push_back(DRC_W3J_JetJet2DR);
+  hists.push_back(DRC_W2J_JetJet2DR);
+  hists.push_back(DRC_W1J_JetJet2DR);
+  hists.push_back(DRC_LW200_JetJet2DR);
+  //hists.push_back(//DRC_WW_JetJet2DR);
+  //hists.push_back(//DRC_WZ_JetJet2DR);
+  //hists.push_back(//DRC_TTZ_JetJet2DR);
+  //hists.push_back(//DRC_LW300_JetJet2DR);
+  //hists.push_back(DRC_LW400_JetJet2DR);
+  //hists.push_back(DRC_LW500_JetJet2DR);
+  hists.push_back(DRC_dataRunB_JetJetFDR);
+  hists.push_back(DRC_dataRunC_JetJetFDR);
+  hists.push_back(DRC_ZLL_JetJetFDR);
+  hists.push_back(DRC_TT_JetJetFDR);
+  hists.push_back(DRC_W3J_JetJetFDR);
+  hists.push_back(DRC_W2J_JetJetFDR);
+  hists.push_back(DRC_W1J_JetJetFDR);
+  hists.push_back(DRC_LW200_JetJetFDR);
+  //hists.push_back(//DRC_WW_JetJetFDR);
+  //hists.push_back(//DRC_WZ_JetJetFDR);
+  //hists.push_back(//DRC_TTZ_JetJetFDR);
+  //hists.push_back(//DRC_LW300_JetJetFDR);
+  //hists.push_back(DRC_LW400_JetJetFDR);
+  //hists.push_back(DRC_LW500_JetJetFDR);
+  hists.push_back(DRC_dataRunB_npv);
+  hists.push_back(DRC_dataRunC_npv);
+  hists.push_back(DRC_ZLL_npv);
+  hists.push_back(DRC_TT_npv);
+  hists.push_back(DRC_W3J_npv);
+  hists.push_back(DRC_W2J_npv);
+  hists.push_back(DRC_W1J_npv);
+  hists.push_back(DRC_LW200_npv);
+  hists.push_back(DRC_dataRunB_JetMass);
+  hists.push_back(DRC_dataRunC_JetMass);
+  hists.push_back(DRC_ZLL_JetMass);
+  hists.push_back(DRC_TT_JetMass);
+  hists.push_back(DRC_W3J_JetMass);
+  hists.push_back(DRC_W2J_JetMass);
+  hists.push_back(DRC_W1J_JetMass);
+  hists.push_back(DRC_LW200_JetMass);
+  hists.push_back(DRC_dataRunB_LWMass);
+  hists.push_back(DRC_dataRunC_LWMass);
+  hists.push_back(DRC_ZLL_LWMass);
+  hists.push_back(DRC_TT_LWMass);
+  hists.push_back(DRC_W3J_LWMass);
+  hists.push_back(DRC_W2J_LWMass);
+  hists.push_back(DRC_W1J_LWMass);
+  hists.push_back(DRC_LW200_LWMass);
+  //hists.push_back(//DRC_WW_npv);
+  //hists.push_back(//DRC_WZ_npv);
+  //hists.push_back(////DRC_TTZ_npv);
+  //hists.push_back(//DRC_WW_JetMass);
+  //hists.push_back(//DRC_WZ_JetMass);
+  //hists.push_back(////DRC_TTZ_JetMass);
+  //hists.push_back(//DRC_WW_LWMass);
+  //hists.push_back(//DRC_WZ_LWMass);
+  //hists.push_back(////DRC_TTZ_LWMass);
+  //hists.push_back(//DRC_LW300_LWMass);
+  //hists.push_back(DRC_LW400_LWMass);
+  //hists.push_back(DRC_LW500_LWMass);
+  //hists.push_back(//DRC_LW300_JetMass);
+  //hists.push_back(DRC_LW400_JetMass);
+  //hists.push_back(DRC_LW500_JetMass);
+  //hists.push_back(//DRC_LW300_npv);
+  //hists.push_back(DRC_LW400_npv);
+  //hists.push_back(DRC_LW500_npv);
+  hists.push_back(DRC_dataRunB_nsv);
+  hists.push_back(DRC_dataRunC_nsv);
+  hists.push_back(DRC_ZLL_nsv);
+  hists.push_back(DRC_TT_nsv);
+  hists.push_back(DRC_W3J_nsv);
+  hists.push_back(DRC_W2J_nsv);
+  hists.push_back(DRC_W1J_nsv);
+  //hists.push_back(//DRC_WW_nsv);
+  //hists.push_back(//DRC_WZ_nsv);
+  //hists.push_back(////DRC_TTZ_nsv);
+  hists.push_back(DRC_LW200_nsv);
+  //hists.push_back(DRC_LW200_nsv);
+  //hists.push_back(DRC_LW400_nsv);
+  //hists.push_back(DRC_LW500_nsv);
+  hists.push_back(DRC_dataRunB_svd);
+  hists.push_back(DRC_dataRunC_svd);
+  hists.push_back(DRC_ZLL_svd);
+  hists.push_back(DRC_TT_svd);
+  hists.push_back(DRC_W3J_svd);
+  hists.push_back(DRC_W2J_svd);
+  hists.push_back(DRC_W1J_svd);
+  //hists.push_back(//DRC_WW_svd);
+  //hists.push_back(//DRC_WZ_svd);
+  //hists.push_back(////DRC_TTZ_svd);
+  hists.push_back(DRC_LW200_svd);
+  //hists.push_back(DRC_LW200_svd);
+  //hists.push_back(DRC_LW400_svd);
+  //hists.push_back(DRC_LW500_svd);
+  hists.push_back(DRC_dataRunB_Elept);
+  hists.push_back(DRC_dataRunC_Elept);
+  hists.push_back(DRC_ZLL_Elept);
+  hists.push_back(DRC_TT_Elept);
+  hists.push_back(DRC_W3J_Elept);
+  hists.push_back(DRC_W2J_Elept);
+  hists.push_back(DRC_W1J_Elept);
+  //hists.push_back(//DRC_WW_Elept);
+  //hists.push_back(//DRC_WZ_Elept);
+  //hists.push_back(////DRC_TTZ_Elept);
+  hists.push_back(DRC_LW200_Elept);
+  //hists.push_back(DRC_LW200_Elept);
+  //hists.push_back(DRC_LW400_svd);
+  //hists.push_back(DRC_LW500_svd);
+  hists.push_back(DRC_dataRunB_DieledR);
+  hists.push_back(DRC_dataRunC_DieledR);
+  hists.push_back(DRC_ZLL_DieledR);
+  hists.push_back(DRC_TT_DieledR);
+  hists.push_back(DRC_W3J_DieledR);
+  hists.push_back(DRC_W2J_DieledR);
+  hists.push_back(DRC_W1J_DieledR);
+  //hists.push_back(//DRC_WW_DieledR);
+  //hists.push_back(//DRC_WZ_DieledR);
+  //hists.push_back(////DRC_TTZ_DieledR);
+  hists.push_back(DRC_LW200_DieledR);
+  //hists.push_back(DRC_LW200_DieledR);
+  //hists.push_back(DRC_LW400_svd);
+  //hists.push_back(DRC_LW500_svd);
+  hists.push_back(DRC_dataRunB_LWdR);
+  hists.push_back(DRC_dataRunC_LWdR);
+  hists.push_back(DRC_ZLL_LWdR);
+  hists.push_back(DRC_TT_LWdR);
+  hists.push_back(DRC_W3J_LWdR);
+  hists.push_back(DRC_W2J_LWdR);
+  hists.push_back(DRC_W1J_LWdR);
+  //hists.push_back(//DRC_WW_LWdR);
+  //hists.push_back(//DRC_WZ_LWdR);
+  //hists.push_back(////DRC_TTZ_LWdR);
+  hists.push_back(DRC_LW200_LWdR);
+  //hists.push_back(DRC_LW200_LWdR);
+  //hists.push_back(DRC_LW400_svd);
+  //hists.push_back(DRC_LW500_svd);
+  hists.push_back(DRC_dataRunB_DiJetdR);
+  hists.push_back(DRC_dataRunC_DiJetdR);
+  hists.push_back(DRC_ZLL_DiJetdR);
+  hists.push_back(DRC_TT_DiJetdR);
+  hists.push_back(DRC_W3J_DiJetdR);
+  hists.push_back(DRC_W2J_DiJetdR);
+  hists.push_back(DRC_W1J_DiJetdR);
+  //hists.push_back(//DRC_WW_DiJetdR);
+  //hists.push_back(//DRC_WZ_DiJetdR);
+  //hists.push_back(////DRC_TTZ_DiJetdR);
+  hists.push_back(DRC_LW200_DiJetdR);
+  //hists.push_back(DRC_LW200_DiJetdR);
+  //hists.push_back(DRC_LW400_svd);
+  //hists.push_back(DRC_LW500_svd);
+  hists.push_back(DRC_dataRunB_BJetPt);
+  hists.push_back(DRC_dataRunC_BJetPt);
+  hists.push_back(DRC_ZLL_BJetPt);
+  hists.push_back(DRC_TT_BJetPt);
+  hists.push_back(DRC_W3J_BJetPt);
+  hists.push_back(DRC_W2J_BJetPt);
+  hists.push_back(DRC_W1J_BJetPt);
+  //hists.push_back(//DRC_WW_BJetPt);
+  //hists.push_back(//DRC_WZ_BJetPt);
+  //hists.push_back(////DRC_TTZ_BJetPt);
+  hists.push_back(DRC_LW200_BJetPt);
+  //hists.push_back(DRC_LW200_BJetPt);
+  //hists.push_back(DRC_LW400_svd);
+  //hists.push_back(DRC_LW500_svd);
+  hists.push_back(DRC_dataRunB_SBJetPt);
+  hists.push_back(DRC_dataRunC_SBJetPt);
+  hists.push_back(DRC_ZLL_SBJetPt);
+  hists.push_back(DRC_TT_SBJetPt);
+  hists.push_back(DRC_W3J_SBJetPt);
+  hists.push_back(DRC_W2J_SBJetPt);
+  hists.push_back(DRC_W1J_SBJetPt);
+  //hists.push_back(//DRC_WW_SBJetPt);
+  //hists.push_back(//DRC_WZ_SBJetPt);
+  //hists.push_back(////DRC_TTZ_SBJetPt);
+  hists.push_back(DRC_LW200_SBJetPt);
+  //hists.push_back(DRC_LW200_SBJetPt);
+  //hists.push_back(DRC_LW400_svd);
+  //hists.push_back(DRC_LW500_svd);
+  hists.push_back(DRC_dataRunB_NJet);
+  hists.push_back(DRC_dataRunC_NJet);
+  hists.push_back(DRC_ZLL_NJet);
+  hists.push_back(DRC_TT_NJet);
+  hists.push_back(DRC_W3J_NJet);
+  hists.push_back(DRC_W2J_NJet);
+  hists.push_back(DRC_W1J_NJet);
+  //hists.push_back(//DRC_WW_NJet);
+  //hists.push_back(//DRC_WZ_NJet);
+  //hists.push_back(////DRC_TTZ_NJet);
+  hists.push_back(DRC_LW200_NJet);
+  //hists.push_back(DRC_LW200_NJet);
+  //hists.push_back(DRC_LW400_svd);
+  //hists.push_back(DRC_LW500_svd);
+  hists.push_back(DRC_dataRunB_NEle);
+  hists.push_back(DRC_dataRunC_NEle);
+  hists.push_back(DRC_ZLL_NEle);
+  hists.push_back(DRC_TT_NEle);
+  hists.push_back(DRC_W3J_NEle);
+  hists.push_back(DRC_W2J_NEle);
+  hists.push_back(DRC_W1J_NEle);
+  //hists.push_back(//DRC_WW_NEle);
+  //hists.push_back(//DRC_WZ_NEle);
+  //hists.push_back(////DRC_TTZ_NEle);
+  hists.push_back(DRC_LW200_NEle);
+  //hists.push_back(DRC_LW200_NEle);
+  //hists.push_back(DRC_LW400_svd);
+  //hists.push_back(DRC_LW500_svd);
+
+
+
+
+
+
+
+
+
+  hists.push_back(SG_dataRunB_ppoint);
+  hists.push_back(SG_dataRunC_ppoint);
+  hists.push_back(SG_ZLL_ppoint);
+  hists.push_back(SG_TT_ppoint);
+  hists.push_back(SG_W3J_ppoint);
+  hists.push_back(SG_W2J_ppoint);
+  hists.push_back(SG_W1J_ppoint);
+  hists.push_back(SG_LW200_ppoint);
+  hists.push_back(SG_dataRunB_BSd);
+  hists.push_back(SG_dataRunC_BSd);
+  hists.push_back(SG_ZLL_BSd);
+  hists.push_back(SG_TT_BSd);
+  hists.push_back(SG_W3J_BSd);
+  hists.push_back(SG_W2J_BSd);
+  hists.push_back(SG_W1J_BSd);
+  hists.push_back(SG_LW200_BSd);
+  //hists.push_back(//SG_WW_BSd);
+  //hists.push_back(//SG_WZ_BSd);
+  //hists.push_back(//SG_TTZ_BSd);
+  //hists.push_back(//SG_LW300_BSd);
+  //hists.push_back(SG_LW400_BSd);
+  //hists.push_back(SG_LW500_BSd);
+  hists.push_back(SG_dataRunB_EleJet1DR);
+  hists.push_back(SG_dataRunC_EleJet1DR);
+  hists.push_back(SG_ZLL_EleJet1DR);
+  hists.push_back(SG_TT_EleJet1DR);
+  hists.push_back(SG_W3J_EleJet1DR);
+  hists.push_back(SG_W2J_EleJet1DR);
+  hists.push_back(SG_W1J_EleJet1DR);
+  hists.push_back(SG_LW200_EleJet1DR);
+  //hists.push_back(//SG_WW_EleJet1DR);
+  //hists.push_back(//SG_WZ_EleJet1DR);
+  //hists.push_back(//SG_TTZ_EleJet1DR);
+  //hists.push_back(//SG_LW300_EleJet1DR);
+  //hists.push_back(SG_LW400_EleJet1DR);
+  //hists.push_back(SG_LW500_EleJet1DR);
+  hists.push_back(SG_dataRunB_EleJet2DR);
+  hists.push_back(SG_dataRunC_EleJet2DR);
+  hists.push_back(SG_ZLL_EleJet2DR);
+  hists.push_back(SG_TT_EleJet2DR);
+  hists.push_back(SG_W3J_EleJet2DR);
+  hists.push_back(SG_W2J_EleJet2DR);
+  hists.push_back(SG_W1J_EleJet2DR);
+  hists.push_back(SG_LW200_EleJet2DR);
+  //hists.push_back(//SG_WW_EleJet2DR);
+  //hists.push_back(//SG_WZ_EleJet2DR);
+  //hists.push_back(//SG_TTZ_EleJet2DR);
+  //hists.push_back(//SG_LW300_EleJet2DR);
+  //hists.push_back(SG_LW400_EleJet2DR);
+  //hists.push_back(SG_LW500_EleJet2DR);
+  hists.push_back(SG_dataRunB_JetJet1DR);
+  hists.push_back(SG_dataRunC_JetJet1DR);
+  hists.push_back(SG_ZLL_JetJet1DR);
+  hists.push_back(SG_TT_JetJet1DR);
+  hists.push_back(SG_W3J_JetJet1DR);
+  hists.push_back(SG_W2J_JetJet1DR);
+  hists.push_back(SG_W1J_JetJet1DR);
+  hists.push_back(SG_LW200_JetJet1DR);
+  //hists.push_back(//SG_WW_JetJet1DR);
+  //hists.push_back(//SG_WZ_JetJet1DR);
+  //hists.push_back(//SG_TTZ_JetJet1DR);
+  //hists.push_back(//SG_LW300_JetJet1DR);
+  //hists.push_back(SG_LW400_JetJet1DR);
+  //hists.push_back(SG_LW500_JetJet1DR);
+  hists.push_back(SG_dataRunB_JetJet2DR);
+  hists.push_back(SG_dataRunC_JetJet2DR);
+  hists.push_back(SG_ZLL_JetJet2DR);
+  hists.push_back(SG_TT_JetJet2DR);
+  hists.push_back(SG_W3J_JetJet2DR);
+  hists.push_back(SG_W2J_JetJet2DR);
+  hists.push_back(SG_W1J_JetJet2DR);
+  hists.push_back(SG_LW200_JetJet2DR);
+  //hists.push_back(//SG_WW_JetJet2DR);
+  //hists.push_back(//SG_WZ_JetJet2DR);
+  //hists.push_back(//SG_TTZ_JetJet2DR);
+  //hists.push_back(//SG_LW300_JetJet2DR);
+  //hists.push_back(SG_LW400_JetJet2DR);
+  //hists.push_back(SG_LW500_JetJet2DR);
+  hists.push_back(SG_dataRunB_JetJetFDR);
+  hists.push_back(SG_dataRunC_JetJetFDR);
+  hists.push_back(SG_ZLL_JetJetFDR);
+  hists.push_back(SG_TT_JetJetFDR);
+  hists.push_back(SG_W3J_JetJetFDR);
+  hists.push_back(SG_W2J_JetJetFDR);
+  hists.push_back(SG_W1J_JetJetFDR);
+  hists.push_back(SG_LW200_JetJetFDR);
+  //hists.push_back(//SG_WW_JetJetFDR);
+  //hists.push_back(//SG_WZ_JetJetFDR);
+  //hists.push_back(//SG_TTZ_JetJetFDR);
+  //hists.push_back(//SG_LW300_JetJetFDR);
+  //hists.push_back(SG_LW400_JetJetFDR);
+  //hists.push_back(SG_LW500_JetJetFDR);
+  hists.push_back(SG_dataRunB_npv);
+  hists.push_back(SG_dataRunC_npv);
+  hists.push_back(SG_ZLL_npv);
+  hists.push_back(SG_TT_npv);
+  hists.push_back(SG_W3J_npv);
+  hists.push_back(SG_W2J_npv);
+  hists.push_back(SG_W1J_npv);
+  hists.push_back(SG_LW200_npv);
+  hists.push_back(SG_dataRunB_JetMass);
+  hists.push_back(SG_dataRunC_JetMass);
+  hists.push_back(SG_ZLL_JetMass);
+  hists.push_back(SG_TT_JetMass);
+  hists.push_back(SG_W3J_JetMass);
+  hists.push_back(SG_W2J_JetMass);
+  hists.push_back(SG_W1J_JetMass);
+  hists.push_back(SG_LW200_JetMass);
+  hists.push_back(SG_dataRunB_LWMass);
+  hists.push_back(SG_dataRunC_LWMass);
+  hists.push_back(SG_ZLL_LWMass);
+  hists.push_back(SG_TT_LWMass);
+  hists.push_back(SG_W3J_LWMass);
+  hists.push_back(SG_W2J_LWMass);
+  hists.push_back(SG_W1J_LWMass);
+  hists.push_back(SG_LW200_LWMass);
+  //hists.push_back(//SG_WW_npv);
+  //hists.push_back(//SG_WZ_npv);
+  //hists.push_back(////SG_TTZ_npv);
+  //hists.push_back(//SG_WW_JetMass);
+  //hists.push_back(//SG_WZ_JetMass);
+  //hists.push_back(////SG_TTZ_JetMass);
+  //hists.push_back(//SG_WW_LWMass);
+  //hists.push_back(//SG_WZ_LWMass);
+  //hists.push_back(////SG_TTZ_LWMass);
+  //hists.push_back(//SG_LW300_LWMass);
+  //hists.push_back(SG_LW400_LWMass);
+  //hists.push_back(SG_LW500_LWMass);
+  //hists.push_back(//SG_LW300_JetMass);
+  //hists.push_back(SG_LW400_JetMass);
+  //hists.push_back(SG_LW500_JetMass);
+  //hists.push_back(//SG_LW300_npv);
+  //hists.push_back(SG_LW400_npv);
+  //hists.push_back(SG_LW500_npv);
+  hists.push_back(SG_dataRunB_nsv);
+  hists.push_back(SG_dataRunC_nsv);
+  hists.push_back(SG_ZLL_nsv);
+  hists.push_back(SG_TT_nsv);
+  hists.push_back(SG_W3J_nsv);
+  hists.push_back(SG_W2J_nsv);
+  hists.push_back(SG_W1J_nsv);
+  //hists.push_back(//SG_WW_nsv);
+  //hists.push_back(//SG_WZ_nsv);
+  //hists.push_back(////SG_TTZ_nsv);
+  hists.push_back(SG_LW200_nsv);
+  //hists.push_back(SG_LW200_nsv);
+  //hists.push_back(SG_LW400_nsv);
+  //hists.push_back(SG_LW500_nsv);
+  hists.push_back(SG_dataRunB_svd);
+  hists.push_back(SG_dataRunC_svd);
+  hists.push_back(SG_ZLL_svd);
+  hists.push_back(SG_TT_svd);
+  hists.push_back(SG_W3J_svd);
+  hists.push_back(SG_W2J_svd);
+  hists.push_back(SG_W1J_svd);
+  //hists.push_back(//SG_WW_svd);
+  //hists.push_back(//SG_WZ_svd);
+  //hists.push_back(////SG_TTZ_svd);
+  hists.push_back(SG_LW200_svd);
+  //hists.push_back(SG_LW200_svd);
+  //hists.push_back(SG_LW400_svd);
+  //hists.push_back(SG_LW500_svd);
+  hists.push_back(SG_dataRunB_Elept);
+  hists.push_back(SG_dataRunC_Elept);
+  hists.push_back(SG_ZLL_Elept);
+  hists.push_back(SG_TT_Elept);
+  hists.push_back(SG_W3J_Elept);
+  hists.push_back(SG_W2J_Elept);
+  hists.push_back(SG_W1J_Elept);
+  //hists.push_back(//SG_WW_Elept);
+  //hists.push_back(//SG_WZ_Elept);
+  //hists.push_back(////SG_TTZ_Elept);
+  hists.push_back(SG_LW200_Elept);
+  //hists.push_back(SG_LW200_Elept);
+  //hists.push_back(SG_LW400_svd);
+  //hists.push_back(SG_LW500_svd);
+  hists.push_back(SG_dataRunB_DieledR);
+  hists.push_back(SG_dataRunC_DieledR);
+  hists.push_back(SG_ZLL_DieledR);
+  hists.push_back(SG_TT_DieledR);
+  hists.push_back(SG_W3J_DieledR);
+  hists.push_back(SG_W2J_DieledR);
+  hists.push_back(SG_W1J_DieledR);
+  //hists.push_back(//SG_WW_DieledR);
+  //hists.push_back(//SG_WZ_DieledR);
+  //hists.push_back(////SG_TTZ_DieledR);
+  hists.push_back(SG_LW200_DieledR);
+  //hists.push_back(SG_LW200_DieledR);
+  //hists.push_back(SG_LW400_svd);
+  //hists.push_back(SG_LW500_svd);
+  hists.push_back(SG_dataRunB_LWdR);
+  hists.push_back(SG_dataRunC_LWdR);
+  hists.push_back(SG_ZLL_LWdR);
+  hists.push_back(SG_TT_LWdR);
+  hists.push_back(SG_W3J_LWdR);
+  hists.push_back(SG_W2J_LWdR);
+  hists.push_back(SG_W1J_LWdR);
+  //hists.push_back(//SG_WW_LWdR);
+  //hists.push_back(//SG_WZ_LWdR);
+  //hists.push_back(////SG_TTZ_LWdR);
+  hists.push_back(SG_LW200_LWdR);
+  //hists.push_back(SG_LW200_LWdR);
+  //hists.push_back(SG_LW400_svd);
+  //hists.push_back(SG_LW500_svd);
+  hists.push_back(SG_dataRunB_DiJetdR);
+  hists.push_back(SG_dataRunC_DiJetdR);
+  hists.push_back(SG_ZLL_DiJetdR);
+  hists.push_back(SG_TT_DiJetdR);
+  hists.push_back(SG_W3J_DiJetdR);
+  hists.push_back(SG_W2J_DiJetdR);
+  hists.push_back(SG_W1J_DiJetdR);
+  //hists.push_back(//SG_WW_DiJetdR);
+  //hists.push_back(//SG_WZ_DiJetdR);
+  //hists.push_back(////SG_TTZ_DiJetdR);
+  hists.push_back(SG_LW200_DiJetdR);
+  //hists.push_back(SG_LW200_DiJetdR);
+  //hists.push_back(SG_LW400_svd);
+  //hists.push_back(SG_LW500_svd);
+  hists.push_back(SG_dataRunB_BJetPt);
+  hists.push_back(SG_dataRunC_BJetPt);
+  hists.push_back(SG_ZLL_BJetPt);
+  hists.push_back(SG_TT_BJetPt);
+  hists.push_back(SG_W3J_BJetPt);
+  hists.push_back(SG_W2J_BJetPt);
+  hists.push_back(SG_W1J_BJetPt);
+  //hists.push_back(//SG_WW_BJetPt);
+  //hists.push_back(//SG_WZ_BJetPt);
+  //hists.push_back(////SG_TTZ_BJetPt);
+  hists.push_back(SG_LW200_BJetPt);
+  //hists.push_back(SG_LW200_BJetPt);
+  //hists.push_back(SG_LW400_svd);
+  //hists.push_back(SG_LW500_svd);
+  hists.push_back(SG_dataRunB_SBJetPt);
+  hists.push_back(SG_dataRunC_SBJetPt);
+  hists.push_back(SG_ZLL_SBJetPt);
+  hists.push_back(SG_TT_SBJetPt);
+  hists.push_back(SG_W3J_SBJetPt);
+  hists.push_back(SG_W2J_SBJetPt);
+  hists.push_back(SG_W1J_SBJetPt);
+  //hists.push_back(//SG_WW_SBJetPt);
+  //hists.push_back(//SG_WZ_SBJetPt);
+  //hists.push_back(////SG_TTZ_SBJetPt);
+  hists.push_back(SG_LW200_SBJetPt);
+  //hists.push_back(SG_LW200_SBJetPt);
+  //hists.push_back(SG_LW400_svd);
+  //hists.push_back(SG_LW500_svd);
+  hists.push_back(SG_dataRunB_NJet);
+  hists.push_back(SG_dataRunC_NJet);
+  hists.push_back(SG_ZLL_NJet);
+  hists.push_back(SG_TT_NJet);
+  hists.push_back(SG_W3J_NJet);
+  hists.push_back(SG_W2J_NJet);
+  hists.push_back(SG_W1J_NJet);
+  //hists.push_back(//SG_WW_NJet);
+  //hists.push_back(//SG_WZ_NJet);
+  //hists.push_back(////SG_TTZ_NJet);
+  hists.push_back(SG_LW200_NJet);
+  //hists.push_back(SG_LW200_NJet);
+  //hists.push_back(SG_LW400_svd);
+  //hists.push_back(SG_LW500_svd);
+  hists.push_back(SG_dataRunB_NEle);
+  hists.push_back(SG_dataRunC_NEle);
+  hists.push_back(SG_ZLL_NEle);
+  hists.push_back(SG_TT_NEle);
+  hists.push_back(SG_W3J_NEle);
+  hists.push_back(SG_W2J_NEle);
+  hists.push_back(SG_W1J_NEle);
+  //hists.push_back(//SG_WW_NEle);
+  //hists.push_back(//SG_WZ_NEle);
+  //hists.push_back(////SG_TTZ_NEle);
+  hists.push_back(SG_LW200_NEle);
+  //hists.push_back(SG_LW200_NEle);
+  //hists.push_back(SG_LW400_svd);
+  //hists.push_back(SG_LW500_svd);
+
+
+
+
+
+  hists.push_back(IPP_dataRunB_ppoint);
+  hists.push_back(IPP_dataRunC_ppoint);
+  hists.push_back(IPP_ZLL_ppoint);
+  hists.push_back(IPP_TT_ppoint);
+  hists.push_back(IPP_W3J_ppoint);
+  hists.push_back(IPP_W2J_ppoint);
+  hists.push_back(IPP_W1J_ppoint);
+  hists.push_back(IPP_LW200_ppoint);
+  hists.push_back(IPP_dataRunB_BSd);
+  hists.push_back(IPP_dataRunC_BSd);
+  hists.push_back(IPP_ZLL_BSd);
+  hists.push_back(IPP_TT_BSd);
+  hists.push_back(IPP_W3J_BSd);
+  hists.push_back(IPP_W2J_BSd);
+  hists.push_back(IPP_W1J_BSd);
+  hists.push_back(IPP_LW200_BSd);
+  //hists.push_back(//IPP_WW_BSd);
+  //hists.push_back(//IPP_WZ_BSd);
+  //hists.push_back(//IPP_TTZ_BSd);
+  //hists.push_back(//IPP_LW300_BSd);
+  //hists.push_back(IPP_LW400_BSd);
+  //hists.push_back(IPP_LW500_BSd);
+  hists.push_back(IPP_dataRunB_EleJet1DR);
+  hists.push_back(IPP_dataRunC_EleJet1DR);
+  hists.push_back(IPP_ZLL_EleJet1DR);
+  hists.push_back(IPP_TT_EleJet1DR);
+  hists.push_back(IPP_W3J_EleJet1DR);
+  hists.push_back(IPP_W2J_EleJet1DR);
+  hists.push_back(IPP_W1J_EleJet1DR);
+  hists.push_back(IPP_LW200_EleJet1DR);
+  //hists.push_back(//IPP_WW_EleJet1DR);
+  //hists.push_back(//IPP_WZ_EleJet1DR);
+  //hists.push_back(//IPP_TTZ_EleJet1DR);
+  //hists.push_back(//IPP_LW300_EleJet1DR);
+  //hists.push_back(IPP_LW400_EleJet1DR);
+  //hists.push_back(IPP_LW500_EleJet1DR);
+  hists.push_back(IPP_dataRunB_EleJet2DR);
+  hists.push_back(IPP_dataRunC_EleJet2DR);
+  hists.push_back(IPP_ZLL_EleJet2DR);
+  hists.push_back(IPP_TT_EleJet2DR);
+  hists.push_back(IPP_W3J_EleJet2DR);
+  hists.push_back(IPP_W2J_EleJet2DR);
+  hists.push_back(IPP_W1J_EleJet2DR);
+  hists.push_back(IPP_LW200_EleJet2DR);
+  //hists.push_back(//IPP_WW_EleJet2DR);
+  //hists.push_back(//IPP_WZ_EleJet2DR);
+  //hists.push_back(//IPP_TTZ_EleJet2DR);
+  //hists.push_back(//IPP_LW300_EleJet2DR);
+  //hists.push_back(IPP_LW400_EleJet2DR);
+  //hists.push_back(IPP_LW500_EleJet2DR);
+  hists.push_back(IPP_dataRunB_JetJet1DR);
+  hists.push_back(IPP_dataRunC_JetJet1DR);
+  hists.push_back(IPP_ZLL_JetJet1DR);
+  hists.push_back(IPP_TT_JetJet1DR);
+  hists.push_back(IPP_W3J_JetJet1DR);
+  hists.push_back(IPP_W2J_JetJet1DR);
+  hists.push_back(IPP_W1J_JetJet1DR);
+  hists.push_back(IPP_LW200_JetJet1DR);
+  //hists.push_back(//IPP_WW_JetJet1DR);
+  //hists.push_back(//IPP_WZ_JetJet1DR);
+  //hists.push_back(//IPP_TTZ_JetJet1DR);
+  //hists.push_back(//IPP_LW300_JetJet1DR);
+  //hists.push_back(IPP_LW400_JetJet1DR);
+  //hists.push_back(IPP_LW500_JetJet1DR);
+  hists.push_back(IPP_dataRunB_JetJet2DR);
+  hists.push_back(IPP_dataRunC_JetJet2DR);
+  hists.push_back(IPP_ZLL_JetJet2DR);
+  hists.push_back(IPP_TT_JetJet2DR);
+  hists.push_back(IPP_W3J_JetJet2DR);
+  hists.push_back(IPP_W2J_JetJet2DR);
+  hists.push_back(IPP_W1J_JetJet2DR);
+  hists.push_back(IPP_LW200_JetJet2DR);
+  //hists.push_back(//IPP_WW_JetJet2DR);
+  //hists.push_back(//IPP_WZ_JetJet2DR);
+  //hists.push_back(//IPP_TTZ_JetJet2DR);
+  //hists.push_back(//IPP_LW300_JetJet2DR);
+  //hists.push_back(IPP_LW400_JetJet2DR);
+  //hists.push_back(IPP_LW500_JetJet2DR);
+  hists.push_back(IPP_dataRunB_JetJetFDR);
+  hists.push_back(IPP_dataRunC_JetJetFDR);
+  hists.push_back(IPP_ZLL_JetJetFDR);
+  hists.push_back(IPP_TT_JetJetFDR);
+  hists.push_back(IPP_W3J_JetJetFDR);
+  hists.push_back(IPP_W2J_JetJetFDR);
+  hists.push_back(IPP_W1J_JetJetFDR);
+  hists.push_back(IPP_LW200_JetJetFDR);
+  //hists.push_back(//IPP_WW_JetJetFDR);
+  //hists.push_back(//IPP_WZ_JetJetFDR);
+  //hists.push_back(//IPP_TTZ_JetJetFDR);
+  //hists.push_back(//IPP_LW300_JetJetFDR);
+  //hists.push_back(IPP_LW400_JetJetFDR);
+  //hists.push_back(IPP_LW500_JetJetFDR);
+  hists.push_back(IPP_dataRunB_npv);
+  hists.push_back(IPP_dataRunC_npv);
+  hists.push_back(IPP_ZLL_npv);
+  hists.push_back(IPP_TT_npv);
+  hists.push_back(IPP_W3J_npv);
+  hists.push_back(IPP_W2J_npv);
+  hists.push_back(IPP_W1J_npv);
+  hists.push_back(IPP_LW200_npv);
+  hists.push_back(IPP_dataRunB_JetMass);
+  hists.push_back(IPP_dataRunC_JetMass);
+  hists.push_back(IPP_ZLL_JetMass);
+  hists.push_back(IPP_TT_JetMass);
+  hists.push_back(IPP_W3J_JetMass);
+  hists.push_back(IPP_W2J_JetMass);
+  hists.push_back(IPP_W1J_JetMass);
+  hists.push_back(IPP_LW200_JetMass);
+  hists.push_back(IPP_dataRunB_LWMass);
+  hists.push_back(IPP_dataRunC_LWMass);
+  hists.push_back(IPP_ZLL_LWMass);
+  hists.push_back(IPP_TT_LWMass);
+  hists.push_back(IPP_W3J_LWMass);
+  hists.push_back(IPP_W2J_LWMass);
+  hists.push_back(IPP_W1J_LWMass);
+  hists.push_back(IPP_LW200_LWMass);
+  //hists.push_back(//IPP_WW_npv);
+  //hists.push_back(//IPP_WZ_npv);
+  //hists.push_back(////IPP_TTZ_npv);
+  //hists.push_back(//IPP_WW_JetMass);
+  //hists.push_back(//IPP_WZ_JetMass);
+  //hists.push_back(////IPP_TTZ_JetMass);
+  //hists.push_back(//IPP_WW_LWMass);
+  //hists.push_back(//IPP_WZ_LWMass);
+  //hists.push_back(////IPP_TTZ_LWMass);
+  //hists.push_back(//IPP_LW300_LWMass);
+  //hists.push_back(IPP_LW400_LWMass);
+  //hists.push_back(IPP_LW500_LWMass);
+  //hists.push_back(//IPP_LW300_JetMass);
+  //hists.push_back(IPP_LW400_JetMass);
+  //hists.push_back(IPP_LW500_JetMass);
+  //hists.push_back(//IPP_LW300_npv);
+  //hists.push_back(IPP_LW400_npv);
+  //hists.push_back(IPP_LW500_npv);
+  hists.push_back(IPP_dataRunB_nsv);
+  hists.push_back(IPP_dataRunC_nsv);
+  hists.push_back(IPP_ZLL_nsv);
+  hists.push_back(IPP_TT_nsv);
+  hists.push_back(IPP_W3J_nsv);
+  hists.push_back(IPP_W2J_nsv);
+  hists.push_back(IPP_W1J_nsv);
+  //hists.push_back(//IPP_WW_nsv);
+  //hists.push_back(//IPP_WZ_nsv);
+  //hists.push_back(////IPP_TTZ_nsv);
+  hists.push_back(IPP_LW200_nsv);
+  //hists.push_back(IPP_LW200_nsv);
+  //hists.push_back(IPP_LW400_nsv);
+  //hists.push_back(IPP_LW500_nsv);
+  hists.push_back(IPP_dataRunB_svd);
+  hists.push_back(IPP_dataRunC_svd);
+  hists.push_back(IPP_ZLL_svd);
+  hists.push_back(IPP_TT_svd);
+  hists.push_back(IPP_W3J_svd);
+  hists.push_back(IPP_W2J_svd);
+  hists.push_back(IPP_W1J_svd);
+  //hists.push_back(//IPP_WW_svd);
+  //hists.push_back(//IPP_WZ_svd);
+  //hists.push_back(////IPP_TTZ_svd);
+  hists.push_back(IPP_LW200_svd);
+  //hists.push_back(IPP_LW200_svd);
+  //hists.push_back(IPP_LW400_svd);
+  //hists.push_back(IPP_LW500_svd);
+  hists.push_back(IPP_dataRunB_Elept);
+  hists.push_back(IPP_dataRunC_Elept);
+  hists.push_back(IPP_ZLL_Elept);
+  hists.push_back(IPP_TT_Elept);
+  hists.push_back(IPP_W3J_Elept);
+  hists.push_back(IPP_W2J_Elept);
+  hists.push_back(IPP_W1J_Elept);
+  //hists.push_back(//IPP_WW_Elept);
+  //hists.push_back(//IPP_WZ_Elept);
+  //hists.push_back(////IPP_TTZ_Elept);
+  hists.push_back(IPP_LW200_Elept);
+  //hists.push_back(IPP_LW200_Elept);
+  //hists.push_back(IPP_LW400_svd);
+  //hists.push_back(IPP_LW500_svd);
+  hists.push_back(IPP_dataRunB_DieledR);
+  hists.push_back(IPP_dataRunC_DieledR);
+  hists.push_back(IPP_ZLL_DieledR);
+  hists.push_back(IPP_TT_DieledR);
+  hists.push_back(IPP_W3J_DieledR);
+  hists.push_back(IPP_W2J_DieledR);
+  hists.push_back(IPP_W1J_DieledR);
+  //hists.push_back(//IPP_WW_DieledR);
+  //hists.push_back(//IPP_WZ_DieledR);
+  //hists.push_back(////IPP_TTZ_DieledR);
+  hists.push_back(IPP_LW200_DieledR);
+  //hists.push_back(IPP_LW200_DieledR);
+  //hists.push_back(IPP_LW400_svd);
+  //hists.push_back(IPP_LW500_svd);
+  hists.push_back(IPP_dataRunB_LWdR);
+  hists.push_back(IPP_dataRunC_LWdR);
+  hists.push_back(IPP_ZLL_LWdR);
+  hists.push_back(IPP_TT_LWdR);
+  hists.push_back(IPP_W3J_LWdR);
+  hists.push_back(IPP_W2J_LWdR);
+  hists.push_back(IPP_W1J_LWdR);
+  //hists.push_back(//IPP_WW_LWdR);
+  //hists.push_back(//IPP_WZ_LWdR);
+  //hists.push_back(////IPP_TTZ_LWdR);
+  hists.push_back(IPP_LW200_LWdR);
+  //hists.push_back(IPP_LW200_LWdR);
+  //hists.push_back(IPP_LW400_svd);
+  //hists.push_back(IPP_LW500_svd);
+  hists.push_back(IPP_dataRunB_DiJetdR);
+  hists.push_back(IPP_dataRunC_DiJetdR);
+  hists.push_back(IPP_ZLL_DiJetdR);
+  hists.push_back(IPP_TT_DiJetdR);
+  hists.push_back(IPP_W3J_DiJetdR);
+  hists.push_back(IPP_W2J_DiJetdR);
+  hists.push_back(IPP_W1J_DiJetdR);
+  //hists.push_back(//IPP_WW_DiJetdR);
+  //hists.push_back(//IPP_WZ_DiJetdR);
+  //hists.push_back(////IPP_TTZ_DiJetdR);
+  hists.push_back(IPP_LW200_DiJetdR);
+  //hists.push_back(IPP_LW200_DiJetdR);
+  //hists.push_back(IPP_LW400_svd);
+  //hists.push_back(IPP_LW500_svd);
+  hists.push_back(IPP_dataRunB_BJetPt);
+  hists.push_back(IPP_dataRunC_BJetPt);
+  hists.push_back(IPP_ZLL_BJetPt);
+  hists.push_back(IPP_TT_BJetPt);
+  hists.push_back(IPP_W3J_BJetPt);
+  hists.push_back(IPP_W2J_BJetPt);
+  hists.push_back(IPP_W1J_BJetPt);
+  //hists.push_back(//IPP_WW_BJetPt);
+  //hists.push_back(//IPP_WZ_BJetPt);
+  //hists.push_back(////IPP_TTZ_BJetPt);
+  hists.push_back(IPP_LW200_BJetPt);
+  //hists.push_back(IPP_LW200_BJetPt);
+  //hists.push_back(IPP_LW400_svd);
+  //hists.push_back(IPP_LW500_svd);
+  hists.push_back(IPP_dataRunB_SBJetPt);
+  hists.push_back(IPP_dataRunC_SBJetPt);
+  hists.push_back(IPP_ZLL_SBJetPt);
+  hists.push_back(IPP_TT_SBJetPt);
+  hists.push_back(IPP_W3J_SBJetPt);
+  hists.push_back(IPP_W2J_SBJetPt);
+  hists.push_back(IPP_W1J_SBJetPt);
+  //hists.push_back(//IPP_WW_SBJetPt);
+  //hists.push_back(//IPP_WZ_SBJetPt);
+  //hists.push_back(////IPP_TTZ_SBJetPt);
+  hists.push_back(IPP_LW200_SBJetPt);
+  //hists.push_back(IPP_LW200_SBJetPt);
+  //hists.push_back(IPP_LW400_svd);
+  //hists.push_back(IPP_LW500_svd);
+  hists.push_back(IPP_dataRunB_NJet);
+  hists.push_back(IPP_dataRunC_NJet);
+  hists.push_back(IPP_ZLL_NJet);
+  hists.push_back(IPP_TT_NJet);
+  hists.push_back(IPP_W3J_NJet);
+  hists.push_back(IPP_W2J_NJet);
+  hists.push_back(IPP_W1J_NJet);
+  //hists.push_back(//IPP_WW_NJet);
+  //hists.push_back(//IPP_WZ_NJet);
+  //hists.push_back(////IPP_TTZ_NJet);
+  hists.push_back(IPP_LW200_NJet);
+  //hists.push_back(IPP_LW200_NJet);
+  //hists.push_back(IPP_LW400_svd);
+  //hists.push_back(IPP_LW500_svd);
+  hists.push_back(IPP_dataRunB_NEle);
+  hists.push_back(IPP_dataRunC_NEle);
+  hists.push_back(IPP_ZLL_NEle);
+  hists.push_back(IPP_TT_NEle);
+  hists.push_back(IPP_W3J_NEle);
+  hists.push_back(IPP_W2J_NEle);
+  hists.push_back(IPP_W1J_NEle);
+  //hists.push_back(//IPP_WW_NEle);
+  //hists.push_back(//IPP_WZ_NEle);
+  //hists.push_back(////IPP_TTZ_NEle);
+  hists.push_back(IPP_LW200_NEle);
+  //hists.push_back(IPP_LW200_NEle);
+  //hists.push_back(IPP_LW400_svd);
+  //hists.push_back(IPP_LW500_svd);
 
   ///////////////////////////////////////////////////
   /////////////////////////QCD///////////////////////
@@ -10890,6 +12301,21 @@ EventLoopAnalysisTemplate::EventLoopAnalysisTemplate(TString thefile, TString th
   //hists.push_back(DRC_LW400_svd_cr);
   //hists.push_back(DRC_LW500_svd_cr);
 
+  hists.push_back(JetS_dataRunB_ppoint_cr);
+  hists.push_back(JetS_dataRunC_ppoint_cr);
+  hists.push_back(JetS_ZLL_ppoint_cr);
+  hists.push_back(JetS_TT_ppoint_cr);
+  hists.push_back(JetS_W3J_ppoint_cr);
+  hists.push_back(JetS_W2J_ppoint_cr);
+  hists.push_back(JetS_W1J_ppoint_cr);
+  hists.push_back(JetS_LW200_ppoint_cr);
+  //hists.push_back(//JetS_WW_ppoint_cr);
+  //hists.push_back(//JetS_WZ_ppoint_cr);
+  //hists.push_back(//JetS_TTZ_ppoint_cr);
+  //hists.push_back(//JetS_LW300_ppoint_cr);
+  //hists.push_back(JetS_LW400_ppoint_cr);
+  //hists.push_back(JetS_LW500_ppoint_cr);
+
   hists.push_back(JetS_dataRunB_BSd_cr);
   hists.push_back(JetS_dataRunC_BSd_cr);
   hists.push_back(JetS_ZLL_BSd_cr);
@@ -11156,6 +12582,280 @@ EventLoopAnalysisTemplate::EventLoopAnalysisTemplate(TString thefile, TString th
   //hists.push_back(JetS_LW200_NEle_cr);
   //hists.push_back(JetS_LW400_svd_cr);
   //hists.push_back(JetS_LW500_svd_cr);
+  hists.push_back(IPP_dataRunB_ppoint_cr);
+  hists.push_back(IPP_dataRunC_ppoint_cr);
+  hists.push_back(IPP_ZLL_ppoint_cr);
+  hists.push_back(IPP_TT_ppoint_cr);
+  hists.push_back(IPP_W3J_ppoint_cr);
+  hists.push_back(IPP_W2J_ppoint_cr);
+  hists.push_back(IPP_W1J_ppoint_cr);
+  hists.push_back(IPP_LW200_ppoint_cr);
+  hists.push_back(IPP_dataRunB_BSd_cr);
+  hists.push_back(IPP_dataRunC_BSd_cr);
+  hists.push_back(IPP_ZLL_BSd_cr);
+  hists.push_back(IPP_TT_BSd_cr);
+  hists.push_back(IPP_W3J_BSd_cr);
+  hists.push_back(IPP_W2J_BSd_cr);
+  hists.push_back(IPP_W1J_BSd_cr);
+  hists.push_back(IPP_LW200_BSd_cr);
+  //hists.push_back(//IPP_WW_BSd_cr);
+  //hists.push_back(//IPP_WZ_BSd_cr);
+  //hists.push_back(//IPP_TTZ_BSd_cr);
+  //hists.push_back(//IPP_LW300_BSd_cr);
+  //hists.push_back(IPP_LW400_BSd_cr);
+  //hists.push_back(IPP_LW500_BSd_cr);
+  hists.push_back(IPP_dataRunB_EleJet1DR_cr);
+  hists.push_back(IPP_dataRunC_EleJet1DR_cr);
+  hists.push_back(IPP_ZLL_EleJet1DR_cr);
+  hists.push_back(IPP_TT_EleJet1DR_cr);
+  hists.push_back(IPP_W3J_EleJet1DR_cr);
+  hists.push_back(IPP_W2J_EleJet1DR_cr);
+  hists.push_back(IPP_W1J_EleJet1DR_cr);
+  hists.push_back(IPP_LW200_EleJet1DR_cr);
+  //hists.push_back(//IPP_WW_EleJet1DR_cr);
+  //hists.push_back(//IPP_WZ_EleJet1DR_cr);
+  //hists.push_back(//IPP_TTZ_EleJet1DR_cr);
+  //hists.push_back(//IPP_LW300_EleJet1DR_cr);
+  //hists.push_back(IPP_LW400_EleJet1DR_cr);
+  //hists.push_back(IPP_LW500_EleJet1DR_cr);
+  hists.push_back(IPP_dataRunB_EleJet2DR_cr);
+  hists.push_back(IPP_dataRunC_EleJet2DR_cr);
+  hists.push_back(IPP_ZLL_EleJet2DR_cr);
+  hists.push_back(IPP_TT_EleJet2DR_cr);
+  hists.push_back(IPP_W3J_EleJet2DR_cr);
+  hists.push_back(IPP_W2J_EleJet2DR_cr);
+  hists.push_back(IPP_W1J_EleJet2DR_cr);
+  hists.push_back(IPP_LW200_EleJet2DR_cr);
+  //hists.push_back(//IPP_WW_EleJet2DR_cr);
+  //hists.push_back(//IPP_WZ_EleJet2DR_cr);
+  //hists.push_back(//IPP_TTZ_EleJet2DR_cr);
+  //hists.push_back(//IPP_LW300_EleJet2DR_cr);
+  //hists.push_back(IPP_LW400_EleJet2DR_cr);
+  //hists.push_back(IPP_LW500_EleJet2DR_cr);
+  hists.push_back(IPP_dataRunB_JetJet1DR_cr);
+  hists.push_back(IPP_dataRunC_JetJet1DR_cr);
+  hists.push_back(IPP_ZLL_JetJet1DR_cr);
+  hists.push_back(IPP_TT_JetJet1DR_cr);
+  hists.push_back(IPP_W3J_JetJet1DR_cr);
+  hists.push_back(IPP_W2J_JetJet1DR_cr);
+  hists.push_back(IPP_W1J_JetJet1DR_cr);
+  hists.push_back(IPP_LW200_JetJet1DR_cr);
+  //hists.push_back(//IPP_WW_JetJet1DR_cr);
+  //hists.push_back(//IPP_WZ_JetJet1DR_cr);
+  //hists.push_back(//IPP_TTZ_JetJet1DR_cr);
+  //hists.push_back(//IPP_LW300_JetJet1DR_cr);
+  //hists.push_back(IPP_LW400_JetJet1DR_cr);
+  //hists.push_back(IPP_LW500_JetJet1DR_cr);
+  hists.push_back(IPP_dataRunB_JetJet2DR_cr);
+  hists.push_back(IPP_dataRunC_JetJet2DR_cr);
+  hists.push_back(IPP_ZLL_JetJet2DR_cr);
+  hists.push_back(IPP_TT_JetJet2DR_cr);
+  hists.push_back(IPP_W3J_JetJet2DR_cr);
+  hists.push_back(IPP_W2J_JetJet2DR_cr);
+  hists.push_back(IPP_W1J_JetJet2DR_cr);
+  hists.push_back(IPP_LW200_JetJet2DR_cr);
+  //hists.push_back(//IPP_WW_JetJet2DR_cr);
+  //hists.push_back(//IPP_WZ_JetJet2DR_cr);
+  //hists.push_back(//IPP_TTZ_JetJet2DR_cr);
+  //hists.push_back(//IPP_LW300_JetJet2DR_cr);
+  //hists.push_back(IPP_LW400_JetJet2DR_cr);
+  //hists.push_back(IPP_LW500_JetJet2DR_cr);
+  hists.push_back(IPP_dataRunB_JetJetFDR_cr);
+  hists.push_back(IPP_dataRunC_JetJetFDR_cr);
+  hists.push_back(IPP_ZLL_JetJetFDR_cr);
+  hists.push_back(IPP_TT_JetJetFDR_cr);
+  hists.push_back(IPP_W3J_JetJetFDR_cr);
+  hists.push_back(IPP_W2J_JetJetFDR_cr);
+  hists.push_back(IPP_W1J_JetJetFDR_cr);
+  hists.push_back(IPP_LW200_JetJetFDR_cr);
+  //hists.push_back(//IPP_WW_JetJetFDR_cr);
+  //hists.push_back(//IPP_WZ_JetJetFDR_cr);
+  //hists.push_back(//IPP_TTZ_JetJetFDR_cr);
+  //hists.push_back(//IPP_LW300_JetJetFDR_cr);
+  //hists.push_back(IPP_LW400_JetJetFDR_cr);
+  //hists.push_back(IPP_LW500_JetJetFDR_cr);
+  hists.push_back(IPP_dataRunB_npv_cr);
+  hists.push_back(IPP_dataRunC_npv_cr);
+  hists.push_back(IPP_ZLL_npv_cr);
+  hists.push_back(IPP_TT_npv_cr);
+  hists.push_back(IPP_W3J_npv_cr);
+  hists.push_back(IPP_W2J_npv_cr);
+  hists.push_back(IPP_W1J_npv_cr);
+  hists.push_back(IPP_LW200_npv_cr);
+  hists.push_back(IPP_dataRunB_JetMass_cr);
+  hists.push_back(IPP_dataRunC_JetMass_cr);
+  hists.push_back(IPP_ZLL_JetMass_cr);
+  hists.push_back(IPP_TT_JetMass_cr);
+  hists.push_back(IPP_W3J_JetMass_cr);
+  hists.push_back(IPP_W2J_JetMass_cr);
+  hists.push_back(IPP_W1J_JetMass_cr);
+  hists.push_back(IPP_LW200_JetMass_cr);
+  hists.push_back(IPP_dataRunB_LWMass_cr);
+  hists.push_back(IPP_dataRunC_LWMass_cr);
+  hists.push_back(IPP_ZLL_LWMass_cr);
+  hists.push_back(IPP_TT_LWMass_cr);
+  hists.push_back(IPP_W3J_LWMass_cr);
+  hists.push_back(IPP_W2J_LWMass_cr);
+  hists.push_back(IPP_W1J_LWMass_cr);
+  hists.push_back(IPP_LW200_LWMass_cr);
+  //hists.push_back(//IPP_WW_npv_cr);
+  //hists.push_back(//IPP_WZ_npv_cr);
+  //hists.push_back(////IPP_TTZ_npv_cr);
+  //hists.push_back(//IPP_WW_JetMass_cr);
+  //hists.push_back(//IPP_WZ_JetMass_cr);
+  //hists.push_back(////IPP_TTZ_JetMass_cr);
+  //hists.push_back(//IPP_WW_LWMass_cr);
+  //hists.push_back(//IPP_WZ_LWMass_cr);
+  //hists.push_back(////IPP_TTZ_LWMass_cr);
+  //hists.push_back(//IPP_LW300_LWMass_cr);
+  //hists.push_back(IPP_LW400_LWMass_cr);
+  //hists.push_back(IPP_LW500_LWMass_cr);
+  //hists.push_back(//IPP_LW300_JetMass_cr);
+  //hists.push_back(IPP_LW400_JetMass_cr);
+  //hists.push_back(IPP_LW500_JetMass_cr);
+  //hists.push_back(//IPP_LW300_npv_cr);
+  //hists.push_back(IPP_LW400_npv_cr);
+  //hists.push_back(IPP_LW500_npv_cr);
+  hists.push_back(IPP_dataRunB_nsv_cr);
+  hists.push_back(IPP_dataRunC_nsv_cr);
+  hists.push_back(IPP_ZLL_nsv_cr);
+  hists.push_back(IPP_TT_nsv_cr);
+  hists.push_back(IPP_W3J_nsv_cr);
+  hists.push_back(IPP_W2J_nsv_cr);
+  hists.push_back(IPP_W1J_nsv_cr);
+  //hists.push_back(//IPP_WW_nsv_cr);
+  //hists.push_back(//IPP_WZ_nsv_cr);
+  //hists.push_back(////IPP_TTZ_nsv_cr);
+  hists.push_back(IPP_LW200_nsv_cr);
+  //hists.push_back(IPP_LW200_nsv_cr);
+  //hists.push_back(IPP_LW400_nsv_cr);
+  //hists.push_back(IPP_LW500_nsv_cr);
+  hists.push_back(IPP_dataRunB_svd_cr);
+  hists.push_back(IPP_dataRunC_svd_cr);
+  hists.push_back(IPP_ZLL_svd_cr);
+  hists.push_back(IPP_TT_svd_cr);
+  hists.push_back(IPP_W3J_svd_cr);
+  hists.push_back(IPP_W2J_svd_cr);
+  hists.push_back(IPP_W1J_svd_cr);
+  //hists.push_back(//IPP_WW_svd_cr);
+  //hists.push_back(//IPP_WZ_svd_cr);
+  //hists.push_back(////IPP_TTZ_svd_cr);
+  hists.push_back(IPP_LW200_svd_cr);
+  //hists.push_back(IPP_LW200_svd_cr);
+  //hists.push_back(IPP_LW400_svd_cr);
+  //hists.push_back(IPP_LW500_svd_cr);
+  hists.push_back(IPP_dataRunB_Elept_cr);
+  hists.push_back(IPP_dataRunC_Elept_cr);
+  hists.push_back(IPP_ZLL_Elept_cr);
+  hists.push_back(IPP_TT_Elept_cr);
+  hists.push_back(IPP_W3J_Elept_cr);
+  hists.push_back(IPP_W2J_Elept_cr);
+  hists.push_back(IPP_W1J_Elept_cr);
+  //hists.push_back(//IPP_WW_Elept_cr);
+  //hists.push_back(//IPP_WZ_Elept_cr);
+  //hists.push_back(////IPP_TTZ_Elept_cr);
+  hists.push_back(IPP_LW200_Elept_cr);
+  //hists.push_back(IPP_LW200_Elept_cr);
+  //hists.push_back(IPP_LW400_svd_cr);
+  //hists.push_back(IPP_LW500_svd_cr);
+  hists.push_back(IPP_dataRunB_DieledR_cr);
+  hists.push_back(IPP_dataRunC_DieledR_cr);
+  hists.push_back(IPP_ZLL_DieledR_cr);
+  hists.push_back(IPP_TT_DieledR_cr);
+  hists.push_back(IPP_W3J_DieledR_cr);
+  hists.push_back(IPP_W2J_DieledR_cr);
+  hists.push_back(IPP_W1J_DieledR_cr);
+  //hists.push_back(//IPP_WW_DieledR_cr);
+  //hists.push_back(//IPP_WZ_DieledR_cr);
+  //hists.push_back(////IPP_TTZ_DieledR_cr);
+  hists.push_back(IPP_LW200_DieledR_cr);
+  //hists.push_back(IPP_LW200_DieledR_cr);
+  //hists.push_back(IPP_LW400_svd_cr);
+  //hists.push_back(IPP_LW500_svd_cr);
+  hists.push_back(IPP_dataRunB_LWdR_cr);
+  hists.push_back(IPP_dataRunC_LWdR_cr);
+  hists.push_back(IPP_ZLL_LWdR_cr);
+  hists.push_back(IPP_TT_LWdR_cr);
+  hists.push_back(IPP_W3J_LWdR_cr);
+  hists.push_back(IPP_W2J_LWdR_cr);
+  hists.push_back(IPP_W1J_LWdR_cr);
+  //hists.push_back(//IPP_WW_LWdR_cr);
+  //hists.push_back(//IPP_WZ_LWdR_cr);
+  //hists.push_back(////IPP_TTZ_LWdR_cr);
+  hists.push_back(IPP_LW200_LWdR_cr);
+  //hists.push_back(IPP_LW200_LWdR_cr);
+  //hists.push_back(IPP_LW400_svd_cr);
+  //hists.push_back(IPP_LW500_svd_cr);
+  hists.push_back(IPP_dataRunB_DiJetdR_cr);
+  hists.push_back(IPP_dataRunC_DiJetdR_cr);
+  hists.push_back(IPP_ZLL_DiJetdR_cr);
+  hists.push_back(IPP_TT_DiJetdR_cr);
+  hists.push_back(IPP_W3J_DiJetdR_cr);
+  hists.push_back(IPP_W2J_DiJetdR_cr);
+  hists.push_back(IPP_W1J_DiJetdR_cr);
+  //hists.push_back(//IPP_WW_DiJetdR_cr);
+  //hists.push_back(//IPP_WZ_DiJetdR_cr);
+  //hists.push_back(////IPP_TTZ_DiJetdR_cr);
+  hists.push_back(IPP_LW200_DiJetdR_cr);
+  //hists.push_back(IPP_LW200_DiJetdR_cr);
+  //hists.push_back(IPP_LW400_svd_cr);
+  //hists.push_back(IPP_LW500_svd_cr);
+  hists.push_back(IPP_dataRunB_BJetPt_cr);
+  hists.push_back(IPP_dataRunC_BJetPt_cr);
+  hists.push_back(IPP_ZLL_BJetPt_cr);
+  hists.push_back(IPP_TT_BJetPt_cr);
+  hists.push_back(IPP_W3J_BJetPt_cr);
+  hists.push_back(IPP_W2J_BJetPt_cr);
+  hists.push_back(IPP_W1J_BJetPt_cr);
+  //hists.push_back(//IPP_WW_BJetPt_cr);
+  //hists.push_back(//IPP_WZ_BJetPt_cr);
+  //hists.push_back(////IPP_TTZ_BJetPt_cr);
+  hists.push_back(IPP_LW200_BJetPt_cr);
+  //hists.push_back(IPP_LW200_BJetPt_cr);
+  //hists.push_back(IPP_LW400_svd_cr);
+  //hists.push_back(IPP_LW500_svd_cr);
+  hists.push_back(IPP_dataRunB_SBJetPt_cr);
+  hists.push_back(IPP_dataRunC_SBJetPt_cr);
+  hists.push_back(IPP_ZLL_SBJetPt_cr);
+  hists.push_back(IPP_TT_SBJetPt_cr);
+  hists.push_back(IPP_W3J_SBJetPt_cr);
+  hists.push_back(IPP_W2J_SBJetPt_cr);
+  hists.push_back(IPP_W1J_SBJetPt_cr);
+  //hists.push_back(//IPP_WW_SBJetPt_cr);
+  //hists.push_back(//IPP_WZ_SBJetPt_cr);
+  //hists.push_back(////IPP_TTZ_SBJetPt_cr);
+  hists.push_back(IPP_LW200_SBJetPt_cr);
+  //hists.push_back(IPP_LW200_SBJetPt_cr);
+  //hists.push_back(IPP_LW400_svd_cr);
+  //hists.push_back(IPP_LW500_svd_cr);
+  hists.push_back(IPP_dataRunB_NJet_cr);
+  hists.push_back(IPP_dataRunC_NJet_cr);
+  hists.push_back(IPP_ZLL_NJet_cr);
+  hists.push_back(IPP_TT_NJet_cr);
+  hists.push_back(IPP_W3J_NJet_cr);
+  hists.push_back(IPP_W2J_NJet_cr);
+  hists.push_back(IPP_W1J_NJet_cr);
+  //hists.push_back(//IPP_WW_NJet_cr);
+  //hists.push_back(//IPP_WZ_NJet_cr);
+  //hists.push_back(////IPP_TTZ_NJet_cr);
+  hists.push_back(IPP_LW200_NJet_cr);
+  //hists.push_back(IPP_LW200_NJet_cr);
+  //hists.push_back(IPP_LW400_svd_cr);
+  //hists.push_back(IPP_LW500_svd_cr);
+  hists.push_back(IPP_dataRunB_NEle_cr);
+  hists.push_back(IPP_dataRunC_NEle_cr);
+  hists.push_back(IPP_ZLL_NEle_cr);
+  hists.push_back(IPP_TT_NEle_cr);
+  hists.push_back(IPP_W3J_NEle_cr);
+  hists.push_back(IPP_W2J_NEle_cr);
+  hists.push_back(IPP_W1J_NEle_cr);
+  //hists.push_back(//IPP_WW_NEle_cr);
+  //hists.push_back(//IPP_WZ_NEle_cr);
+  //hists.push_back(////IPP_TTZ_NEle_cr);
+  hists.push_back(IPP_LW200_NEle_cr);
+  //hists.push_back(IPP_LW200_NEle_cr);
+  //hists.push_back(IPP_LW400_svd_cr);
+  //hists.push_back(IPP_LW500_svd_cr);
 
 
 
@@ -11708,6 +13408,9 @@ void EventLoopAnalysisTemplate::analysis()
     if(!Neutralcheck) return;
     //cout<<"Paso: "<< Neutralcheck<<endl;
      histograms("SG");
+
+     /////////////////////////Is antiparallel selection////////////////////
+     histograms("IPP");
   }
 
 }//------analysis()
@@ -11749,6 +13452,26 @@ void EventLoopAnalysisTemplate::histograms(string cut) {
     TString thevar = histname(histname.First("_")+1,histname.Sizeof());
 
     if (thecut == cut && thelabel == labeltag){
+      /////////////////Antiparallel ///////////////////////////
+      bool isAntiParallel=true;
+      if(cut=="IPP"){
+        isAntiParallel=false;
+        for(size_t i=0; i<Esecvec_posx->size(); i++){
+          float Vx=Esecvec_posx->at(i)-Bsp_x->at(0);
+          float Vy=Esecvec_posy->at(i)-Bsp_y->at(0);
+          if(sqrt(Vx*Vx+Vy*Vy)>0.02){
+            float ppoint = Vx*Esecvec_px->at(i) + Vy*Esecvec_py->at(i);
+            if(thelabel(0,2)=="LW"){
+              if(ppoint>0) isAntiParallel=true;
+            }
+            else{
+              if(ppoint<0) isAntiParallel=true;
+            }
+          }
+        }
+      }
+
+      if(!isAntiParallel) return;
 
       //primary vertices
       //cout<<"npv\n";
@@ -11759,8 +13482,14 @@ void EventLoopAnalysisTemplate::histograms(string cut) {
           Vy=Esecvec_posy->at(i)-Bsp_y->at(0);
           if(sqrt(Vx*Vx+Vy*Vy)>0.02){
             ppoint = Vx*Esecvec_px->at(i) + Vy*Esecvec_py->at(i);
-            if(ppoint>0) hists.at(j)->Fill(1, theweight);
-            else if(ppoint<0) hists.at(j)->Fill(0.0, theweight);
+            if(thelabel(0,2)=="LW"){
+              if(ppoint<0) hists.at(j)->Fill(1, theweight);
+              else if(ppoint>0) hists.at(j)->Fill(0.0, theweight);
+            }
+            else{
+              if(ppoint>0) hists.at(j)->Fill(1, theweight);
+              else if(ppoint<0) hists.at(j)->Fill(0.0, theweight);
+            }
           }
         }
       }
@@ -12417,6 +14146,288 @@ int main()
   ////NF_LW300_JetJetFDR->Write();
   //NF_LW400_JetJetFDR->Write();
   //NF_LW500_JetJetFDR->Write();
+
+  IPP_dataRunB_ppoint->Write();
+  IPP_dataRunC_ppoint->Write();
+  IPP_ZLL_ppoint->Write();
+  IPP_TT_ppoint->Write();
+  IPP_W3J_ppoint->Write();
+  IPP_W2J_ppoint->Write();
+  IPP_W1J_ppoint->Write();
+  //IPP_WW_ppoint->Write();
+  //IPP_WZ_ppoint->Write();
+  //IPP_TTZ_ppoint->Write();
+  IPP_LW200_ppoint->Write();
+  //IPP_LW300_ppoint->Write();
+  //IPP_LW400_ppoint->Write();
+  //IPP_LW500_ppoint->Write();
+
+  IPP_dataRunB_npv->Write();
+  IPP_dataRunC_npv->Write();
+  IPP_ZLL_npv->Write();
+  IPP_TT_npv->Write();
+  IPP_W3J_npv->Write();
+  IPP_W2J_npv->Write();
+  IPP_W1J_npv->Write();
+  //IPP_WW_npv->Write();
+  //IPP_WZ_npv->Write();
+  //IPP_TTZ_npv->Write();
+  IPP_LW200_npv->Write();
+  //IPP_LW300_npv->Write();
+  //IPP_LW400_npv->Write();
+  //IPP_LW500_npv->Write();
+  IPP_dataRunB_JetMass->Write();
+  IPP_dataRunC_JetMass->Write();
+  IPP_ZLL_JetMass->Write();
+  IPP_TT_JetMass->Write();
+  IPP_W3J_JetMass->Write();
+  IPP_W2J_JetMass->Write();
+  IPP_W1J_JetMass->Write();
+  //IPP_WW_JetMass->Write();
+  //IPP_WZ_JetMass->Write();
+  //IPP_TTZ_JetMass->Write();
+  IPP_LW200_JetMass->Write();
+  //IPP_LW300_JetMass->Write();
+  //IPP_LW400_JetMass->Write();
+  //IPP_LW500_JetMass->Write();
+  IPP_dataRunB_LWMass->Write();
+  IPP_dataRunC_LWMass->Write();
+  IPP_ZLL_LWMass->Write();
+  IPP_TT_LWMass->Write();
+  IPP_W3J_LWMass->Write();
+  IPP_W2J_LWMass->Write();
+  IPP_W1J_LWMass->Write();
+  //IPP_WW_LWMass->Write();
+  //IPP_WZ_LWMass->Write();
+  //IPP_TTZ_LWMass->Write();
+  IPP_LW200_LWMass->Write();
+  //IPP_LW300_LWMass->Write();
+  //IPP_LW400_LWMass->Write();
+  //IPP_LW500_LWMass->Write();
+  IPP_dataRunB_nsv->Write();
+  IPP_dataRunC_nsv->Write();
+  IPP_ZLL_nsv->Write();
+  IPP_TT_nsv->Write();
+  IPP_W3J_nsv->Write();
+  IPP_W2J_nsv->Write();
+  IPP_W1J_nsv->Write();
+  //IPP_WW_nsv->Write();
+  //IPP_WZ_nsv->Write();
+  //IPP_TTZ_nsv->Write();
+  IPP_LW200_nsv->Write();
+  //IPP_LW300_nsv->Write();
+  //IPP_LW400_nsv->Write();
+  //IPP_LW500_nsv->Write();
+  IPP_dataRunB_svd->Write();
+  IPP_dataRunC_svd->Write();
+  IPP_ZLL_svd->Write();
+  IPP_TT_svd->Write();
+  IPP_W3J_svd->Write();
+  IPP_W2J_svd->Write();
+  IPP_W1J_svd->Write();
+  //IPP_WW_svd->Write();
+  //IPP_WZ_svd->Write();
+  //IPP_TTZ_svd->Write();
+  IPP_LW200_svd->Write();
+  //IPP_LW300_svd->Write();
+  //IPP_LW400_svd->Write();
+  //IPP_LW500_svd->Write();
+  IPP_dataRunB_Elept->Write();
+  IPP_dataRunC_Elept->Write();
+  IPP_ZLL_Elept->Write();
+  IPP_TT_Elept->Write();
+  IPP_W3J_Elept->Write();
+  IPP_W2J_Elept->Write();
+  IPP_W1J_Elept->Write();
+  //IPP_WW_Elept->Write();
+  //IPP_WZ_Elept->Write();
+  //IPP_TTZ_Elept->Write();
+  IPP_LW200_Elept->Write();
+  //IPP_LW300_Elept->Write();
+  //IPP_LW400_Elept->Write();
+  //IPP_LW500_Elept->Write();
+  IPP_dataRunB_DieledR->Write();
+  IPP_dataRunC_DieledR->Write();
+  IPP_ZLL_DieledR->Write();
+  IPP_TT_DieledR->Write();
+  IPP_W3J_DieledR->Write();
+  IPP_W2J_DieledR->Write();
+  IPP_W1J_DieledR->Write();
+  //IPP_WW_DieledR->Write();
+  //IPP_WZ_DieledR->Write();
+  //IPP_TTZ_DieledR->Write();
+  IPP_LW200_DieledR->Write();
+  //IPP_LW300_DieledR->Write();
+  //IPP_LW400_DieledR->Write();
+  //IPP_LW500_DieledR->Write();
+  IPP_dataRunB_LWdR->Write();
+  IPP_dataRunC_LWdR->Write();
+  IPP_ZLL_LWdR->Write();
+  IPP_TT_LWdR->Write();
+  IPP_W3J_LWdR->Write();
+  IPP_W2J_LWdR->Write();
+  IPP_W1J_LWdR->Write();
+  //IPP_WW_LWdR->Write();
+  //IPP_WZ_LWdR->Write();
+  //IPP_TTZ_LWdR->Write();
+  IPP_LW200_LWdR->Write();
+  //IPP_LW300_LWdR->Write();
+  //IPP_LW400_LWdR->Write();
+  //IPP_LW500_LWdR->Write();
+  IPP_dataRunB_DiJetdR->Write();
+  IPP_dataRunC_DiJetdR->Write();
+  IPP_ZLL_DiJetdR->Write();
+  IPP_TT_DiJetdR->Write();
+  IPP_W3J_DiJetdR->Write();
+  IPP_W2J_DiJetdR->Write();
+  IPP_W1J_DiJetdR->Write();
+  //IPP_WW_DiJetdR->Write();
+  //IPP_WZ_DiJetdR->Write();
+  //IPP_TTZ_DiJetdR->Write();
+  IPP_LW200_DiJetdR->Write();
+  //IPP_LW300_DiJetdR->Write();
+  //IPP_LW400_DiJetdR->Write();
+  //IPP_LW500_DiJetdR->Write();
+  IPP_dataRunB_BJetPt->Write();
+  IPP_dataRunC_BJetPt->Write();
+  IPP_ZLL_BJetPt->Write();
+  IPP_TT_BJetPt->Write();
+  IPP_W3J_BJetPt->Write();
+  IPP_W2J_BJetPt->Write();
+  IPP_W1J_BJetPt->Write();
+  //IPP_WW_BJetPt->Write();
+  //IPP_WZ_BJetPt->Write();
+  //IPP_TTZ_BJetPt->Write();
+  IPP_LW200_BJetPt->Write();
+  //IPP_LW300_BJetPt->Write();
+  //IPP_LW400_BJetPt->Write();
+  //IPP_LW500_BJetPt->Write();
+  IPP_dataRunB_SBJetPt->Write();
+  IPP_dataRunC_SBJetPt->Write();
+  IPP_ZLL_SBJetPt->Write();
+  IPP_TT_SBJetPt->Write();
+  IPP_W3J_SBJetPt->Write();
+  IPP_W2J_SBJetPt->Write();
+  IPP_W1J_SBJetPt->Write();
+  //IPP_WW_SBJetPt->Write();
+  //IPP_WZ_SBJetPt->Write();
+  //IPP_TTZ_SBJetPt->Write();
+  IPP_LW200_SBJetPt->Write();
+  //IPP_LW300_SBJetPt->Write();
+  //IPP_LW400_SBJetPt->Write();
+  //IPP_LW500_SBJetPt->Write();
+  IPP_dataRunB_NJet->Write();
+  IPP_dataRunC_NJet->Write();
+  IPP_ZLL_NJet->Write();
+  IPP_TT_NJet->Write();
+  IPP_W3J_NJet->Write();
+  IPP_W2J_NJet->Write();
+  IPP_W1J_NJet->Write();
+  //IPP_WW_NJet->Write();
+  //IPP_WZ_NJet->Write();
+  //IPP_TTZ_NJet->Write();
+  IPP_LW200_NJet->Write();
+  //IPP_LW300_NJet->Write();
+  //IPP_LW400_NJet->Write();
+  //IPP_LW500_NJet->Write();
+  IPP_dataRunB_NEle->Write();
+  IPP_dataRunC_NEle->Write();
+  IPP_ZLL_NEle->Write();
+  IPP_TT_NEle->Write();
+  IPP_W3J_NEle->Write();
+  IPP_W2J_NEle->Write();
+  IPP_W1J_NEle->Write();
+  //IPP_WW_NEle->Write();
+  //IPP_WZ_NEle->Write();
+  //IPP_TTZ_NEle->Write();
+  IPP_LW200_NEle->Write();
+  //IPP_LW300_NEle->Write();
+  //IPP_LW400_NEle->Write();
+  //IPP_LW500_NEle->Write();
+  IPP_dataRunB_BSd->Write();
+  IPP_dataRunC_BSd->Write();
+  IPP_ZLL_BSd->Write();
+  IPP_TT_BSd->Write();
+  IPP_W3J_BSd->Write();
+  IPP_W2J_BSd->Write();
+  IPP_W1J_BSd->Write();
+  IPP_LW200_BSd->Write();
+  ////IPP_WW_BSd->Write();
+  ////IPP_WZ_BSd->Write();
+  ////IPP_TTZ_BSd->Write();
+  ////IPP_LW300_BSd->Write();
+  //IPP_LW400_BSd->Write();
+  //IPP_LW500_BSd->Write();
+  IPP_dataRunB_EleJet1DR->Write();
+  IPP_dataRunC_EleJet1DR->Write();
+  IPP_ZLL_EleJet1DR->Write();
+  IPP_TT_EleJet1DR->Write();
+  IPP_W3J_EleJet1DR->Write();
+  IPP_W2J_EleJet1DR->Write();
+  IPP_W1J_EleJet1DR->Write();
+  IPP_LW200_EleJet1DR->Write();
+  ////IPP_WW_EleJet1DR->Write();
+  ////IPP_WZ_EleJet1DR->Write();
+  ////IPP_TTZ_EleJet1DR->Write();
+  ////IPP_LW300_EleJet1DR->Write();
+  //IPP_LW400_EleJet1DR->Write();
+  //IPP_LW500_EleJet1DR->Write();
+  IPP_dataRunB_EleJet2DR->Write();
+  IPP_dataRunC_EleJet2DR->Write();
+  IPP_ZLL_EleJet2DR->Write();
+  IPP_TT_EleJet2DR->Write();
+  IPP_W3J_EleJet2DR->Write();
+  IPP_W2J_EleJet2DR->Write();
+  IPP_W1J_EleJet2DR->Write();
+  IPP_LW200_EleJet2DR->Write();
+  ////IPP_WW_EleJet2DR->Write();
+  ////IPP_WZ_EleJet2DR->Write();
+  ////IPP_TTZ_EleJet2DR->Write();
+  ////IPP_LW300_EleJet2DR->Write();
+  //IPP_LW400_EleJet2DR->Write();
+  //IPP_LW500_EleJet2DR->Write();
+  IPP_dataRunB_JetJet1DR->Write();
+  IPP_dataRunC_JetJet1DR->Write();
+  IPP_ZLL_JetJet1DR->Write();
+  IPP_TT_JetJet1DR->Write();
+  IPP_W3J_JetJet1DR->Write();
+  IPP_W2J_JetJet1DR->Write();
+  IPP_W1J_JetJet1DR->Write();
+  IPP_LW200_JetJet1DR->Write();
+  ////IPP_WW_JetJet1DR->Write();
+  ////IPP_WZ_JetJet1DR->Write();
+  ////IPP_TTZ_JetJet1DR->Write();
+  ////IPP_LW300_JetJet1DR->Write();
+  //IPP_LW400_JetJet1DR->Write();
+  //IPP_LW500_JetJet1DR->Write();
+  IPP_dataRunB_JetJet2DR->Write();
+  IPP_dataRunC_JetJet2DR->Write();
+  IPP_ZLL_JetJet2DR->Write();
+  IPP_TT_JetJet2DR->Write();
+  IPP_W3J_JetJet2DR->Write();
+  IPP_W2J_JetJet2DR->Write();
+  IPP_W1J_JetJet2DR->Write();
+  IPP_LW200_JetJet2DR->Write();
+  ////IPP_WW_JetJet2DR->Write();
+  ////IPP_WZ_JetJet2DR->Write();
+  ////IPP_TTZ_JetJet2DR->Write();
+  ////IPP_LW300_JetJet2DR->Write();
+  //IPP_LW400_JetJet2DR->Write();
+  //IPP_LW500_JetJet2DR->Write();
+  IPP_dataRunB_JetJetFDR->Write();
+  IPP_dataRunC_JetJetFDR->Write();
+  IPP_ZLL_JetJetFDR->Write();
+  IPP_TT_JetJetFDR->Write();
+  IPP_W3J_JetJetFDR->Write();
+  IPP_W2J_JetJetFDR->Write();
+  IPP_W1J_JetJetFDR->Write();
+  IPP_LW200_JetJetFDR->Write();
+  ////IPP_WW_JetJetFDR->Write();
+  ////IPP_WZ_JetJetFDR->Write();
+  ////IPP_TTZ_JetJetFDR->Write();
+  ////IPP_LW300_JetJetFDR->Write();
+  //IPP_LW400_JetJetFDR->Write();
+  //IPP_LW500_JetJetFDR->Write();
 
   TF_dataRunB_ppoint->Write();
   TF_dataRunC_ppoint->Write();
@@ -15806,6 +17817,289 @@ int main()
   ////JetS_LW300_JetJetFDR_cr->Write();
   //JetS_LW400_JetJetFDR_cr->Write();
   //JetS_LW500_JetJetFDR_cr->Write();
+
+
+
+  IPP_dataRunB_ppoint_cr->Write();
+  IPP_dataRunC_ppoint_cr->Write();
+  IPP_ZLL_ppoint_cr->Write();
+  IPP_TT_ppoint_cr->Write();
+  IPP_W3J_ppoint_cr->Write();
+  IPP_W2J_ppoint_cr->Write();
+  IPP_W1J_ppoint_cr->Write();
+  //IPP_WW_ppoint_cr->Write();
+  //IPP_WZ_ppoint_cr->Write();
+  //IPP_TTZ_ppoint_cr->Write();
+  IPP_LW200_ppoint_cr->Write();
+  //IPP_LW300_ppoint_cr->Write();
+  //IPP_LW400_ppoint_cr->Write();
+  //IPP_LW500_ppoint_cr->Write();
+  IPP_dataRunB_npv_cr->Write();
+  IPP_dataRunC_npv_cr->Write();
+  IPP_ZLL_npv_cr->Write();
+  IPP_TT_npv_cr->Write();
+  IPP_W3J_npv_cr->Write();
+  IPP_W2J_npv_cr->Write();
+  IPP_W1J_npv_cr->Write();
+  //IPP_WW_npv_cr->Write();
+  //IPP_WZ_npv_cr->Write();
+  ////IPP_TTZ_npv_cr->Write();
+  IPP_LW200_npv_cr->Write();
+  //IPP_LW300_npv_cr->Write();
+  //IPP_LW400_npv_cr->Write();
+  //IPP_LW500_npv_cr->Write();
+  IPP_dataRunB_JetMass_cr->Write();
+  IPP_dataRunC_JetMass_cr->Write();
+  IPP_ZLL_JetMass_cr->Write();
+  IPP_TT_JetMass_cr->Write();
+  IPP_W3J_JetMass_cr->Write();
+  IPP_W2J_JetMass_cr->Write();
+  IPP_W1J_JetMass_cr->Write();
+  //IPP_WW_JetMass_cr->Write();
+  //IPP_WZ_JetMass_cr->Write();
+  ////IPP_TTZ_JetMass_cr->Write();
+  IPP_LW200_JetMass_cr->Write();
+  //IPP_LW300_JetMass_cr->Write();
+  //IPP_LW400_JetMass_cr->Write();
+  //IPP_LW500_JetMass_cr->Write();
+  IPP_dataRunB_LWMass_cr->Write();
+  IPP_dataRunC_LWMass_cr->Write();
+  IPP_ZLL_LWMass_cr->Write();
+  IPP_TT_LWMass_cr->Write();
+  IPP_W3J_LWMass_cr->Write();
+  IPP_W2J_LWMass_cr->Write();
+  IPP_W1J_LWMass_cr->Write();
+  //IPP_WW_LWMass_cr->Write();
+  //IPP_WZ_LWMass_cr->Write();
+  ////IPP_TTZ_LWMass_cr->Write();
+  IPP_LW200_LWMass_cr->Write();
+  //IPP_LW300_LWMass_cr->Write();
+  //IPP_LW400_LWMass_cr->Write();
+  //IPP_LW500_LWMass_cr->Write();
+  IPP_dataRunB_nsv_cr->Write();
+  IPP_dataRunC_nsv_cr->Write();
+  IPP_ZLL_nsv_cr->Write();
+  IPP_TT_nsv_cr->Write();
+  IPP_W3J_nsv_cr->Write();
+  IPP_W2J_nsv_cr->Write();
+  IPP_W1J_nsv_cr->Write();
+  //IPP_WW_nsv_cr->Write();
+  //IPP_WZ_nsv_cr->Write();
+  ////IPP_TTZ_nsv_cr->Write();
+  IPP_LW200_nsv_cr->Write();
+  //IPP_LW300_nsv_cr->Write();
+  //IPP_LW400_nsv_cr->Write();
+  //IPP_LW500_nsv_cr->Write();
+  IPP_dataRunB_svd_cr->Write();
+  IPP_dataRunC_svd_cr->Write();
+  IPP_ZLL_svd_cr->Write();
+  IPP_TT_svd_cr->Write();
+  IPP_W3J_svd_cr->Write();
+  IPP_W2J_svd_cr->Write();
+  IPP_W1J_svd_cr->Write();
+  //IPP_WW_svd_cr->Write();
+  //IPP_WZ_svd_cr->Write();
+  ////IPP_TTZ_svd_cr->Write();
+  IPP_LW200_svd_cr->Write();
+  //IPP_LW300_svd_cr->Write();
+  //IPP_LW400_svd_cr->Write();
+  //IPP_LW500_svd_cr->Write();
+  IPP_dataRunB_Elept_cr->Write();
+  IPP_dataRunC_Elept_cr->Write();
+  IPP_ZLL_Elept_cr->Write();
+  IPP_TT_Elept_cr->Write();
+  IPP_W3J_Elept_cr->Write();
+  IPP_W2J_Elept_cr->Write();
+  IPP_W1J_Elept_cr->Write();
+  //IPP_WW_Elept_cr->Write();
+  //IPP_WZ_Elept_cr->Write();
+  ////IPP_TTZ_Elept_cr->Write();
+  IPP_LW200_Elept_cr->Write();
+  //IPP_LW300_Elept_cr->Write();
+  //IPP_LW400_Elept_cr->Write();
+  //IPP_LW500_Elept_cr->Write();
+  IPP_dataRunB_DieledR_cr->Write();
+  IPP_dataRunC_DieledR_cr->Write();
+  IPP_ZLL_DieledR_cr->Write();
+  IPP_TT_DieledR_cr->Write();
+  IPP_W3J_DieledR_cr->Write();
+  IPP_W2J_DieledR_cr->Write();
+  IPP_W1J_DieledR_cr->Write();
+  //IPP_WW_DieledR_cr->Write();
+  //IPP_WZ_DieledR_cr->Write();
+  ////IPP_TTZ_DieledR_cr->Write();
+  IPP_LW200_DieledR_cr->Write();
+  //IPP_LW300_DieledR_cr->Write();
+  //IPP_LW400_DieledR_cr->Write();
+  //IPP_LW500_DieledR_cr->Write();
+  IPP_dataRunB_LWdR_cr->Write();
+  IPP_dataRunC_LWdR_cr->Write();
+  IPP_ZLL_LWdR_cr->Write();
+  IPP_TT_LWdR_cr->Write();
+  IPP_W3J_LWdR_cr->Write();
+  IPP_W2J_LWdR_cr->Write();
+  IPP_W1J_LWdR_cr->Write();
+  //IPP_WW_LWdR_cr->Write();
+  //IPP_WZ_LWdR_cr->Write();
+  ////IPP_TTZ_LWdR_cr->Write();
+  IPP_LW200_LWdR_cr->Write();
+  //IPP_LW300_LWdR_cr->Write();
+  //IPP_LW400_LWdR_cr->Write();
+  //IPP_LW500_LWdR_cr->Write();
+  IPP_dataRunB_DiJetdR_cr->Write();
+  IPP_dataRunC_DiJetdR_cr->Write();
+  IPP_ZLL_DiJetdR_cr->Write();
+  IPP_TT_DiJetdR_cr->Write();
+  IPP_W3J_DiJetdR_cr->Write();
+  IPP_W2J_DiJetdR_cr->Write();
+  IPP_W1J_DiJetdR_cr->Write();
+  //IPP_WW_DiJetdR_cr->Write();
+  //IPP_WZ_DiJetdR_cr->Write();
+  ////IPP_TTZ_DiJetdR_cr->Write();
+  IPP_LW200_DiJetdR_cr->Write();
+  //IPP_LW300_DiJetdR_cr->Write();
+  //IPP_LW400_DiJetdR_cr->Write();
+  //IPP_LW500_DiJetdR_cr->Write();
+  IPP_dataRunB_BJetPt_cr->Write();
+  IPP_dataRunC_BJetPt_cr->Write();
+  IPP_ZLL_BJetPt_cr->Write();
+  IPP_TT_BJetPt_cr->Write();
+  IPP_W3J_BJetPt_cr->Write();
+  IPP_W2J_BJetPt_cr->Write();
+  IPP_W1J_BJetPt_cr->Write();
+  //IPP_WW_BJetPt_cr->Write();
+  //IPP_WZ_BJetPt_cr->Write();
+  ////IPP_TTZ_BJetPt_cr->Write();
+  IPP_LW200_BJetPt_cr->Write();
+  //IPP_LW300_BJetPt_cr->Write();
+  //IPP_LW400_BJetPt_cr->Write();
+  //IPP_LW500_BJetPt_cr->Write();
+  IPP_dataRunB_SBJetPt_cr->Write();
+  IPP_dataRunC_SBJetPt_cr->Write();
+  IPP_ZLL_SBJetPt_cr->Write();
+  IPP_TT_SBJetPt_cr->Write();
+  IPP_W3J_SBJetPt_cr->Write();
+  IPP_W2J_SBJetPt_cr->Write();
+  IPP_W1J_SBJetPt_cr->Write();
+  //IPP_WW_SBJetPt_cr->Write();
+  //IPP_WZ_SBJetPt_cr->Write();
+  ////IPP_TTZ_SBJetPt_cr->Write();
+  IPP_LW200_SBJetPt_cr->Write();
+  //IPP_LW300_SBJetPt_cr->Write();
+  //IPP_LW400_SBJetPt_cr->Write();
+  //IPP_LW500_SBJetPt_cr->Write();
+  IPP_dataRunB_NJet_cr->Write();
+  IPP_dataRunC_NJet_cr->Write();
+  IPP_ZLL_NJet_cr->Write();
+  IPP_TT_NJet_cr->Write();
+  IPP_W3J_NJet_cr->Write();
+  IPP_W2J_NJet_cr->Write();
+  IPP_W1J_NJet_cr->Write();
+  //IPP_WW_NJet_cr->Write();
+  //IPP_WZ_NJet_cr->Write();
+  ////IPP_TTZ_NJet_cr->Write();
+  IPP_LW200_NJet_cr->Write();
+  //IPP_LW300_NJet_cr->Write();
+  //IPP_LW400_NJet_cr->Write();
+  //IPP_LW500_NJet_cr->Write();
+  IPP_dataRunB_NEle_cr->Write();
+  IPP_dataRunC_NEle_cr->Write();
+  IPP_ZLL_NEle_cr->Write();
+  IPP_TT_NEle_cr->Write();
+  IPP_W3J_NEle_cr->Write();
+  IPP_W2J_NEle_cr->Write();
+  IPP_W1J_NEle_cr->Write();
+  //IPP_WW_NEle_cr->Write();
+  //IPP_WZ_NEle_cr->Write();
+  ////IPP_TTZ_NEle_cr->Write();
+  IPP_LW200_NEle_cr->Write();
+  //IPP_LW300_NEle_cr->Write();
+  //IPP_LW400_NEle_cr->Write();
+  //IPP_LW500_NEle_cr->Write();
+  IPP_dataRunB_BSd_cr->Write();
+  IPP_dataRunC_BSd_cr->Write();
+  IPP_ZLL_BSd_cr->Write();
+  IPP_TT_BSd_cr->Write();
+  IPP_W3J_BSd_cr->Write();
+  IPP_W2J_BSd_cr->Write();
+  IPP_W1J_BSd_cr->Write();
+  IPP_LW200_BSd_cr->Write();
+  ////IPP_WW_BSd_cr->Write();
+  ////IPP_WZ_BSd_cr->Write();
+  ////IPP_TTZ_BSd_cr->Write();
+  ////IPP_LW300_BSd_cr->Write();
+  //IPP_LW400_BSd_cr->Write();
+  //IPP_LW500_BSd_cr->Write();
+  IPP_dataRunB_EleJet1DR_cr->Write();
+  IPP_dataRunC_EleJet1DR_cr->Write();
+  IPP_ZLL_EleJet1DR_cr->Write();
+  IPP_TT_EleJet1DR_cr->Write();
+  IPP_W3J_EleJet1DR_cr->Write();
+  IPP_W2J_EleJet1DR_cr->Write();
+  IPP_W1J_EleJet1DR_cr->Write();
+  IPP_LW200_EleJet1DR_cr->Write();
+  ////IPP_WW_EleJet1DR_cr->Write();
+  ////IPP_WZ_EleJet1DR_cr->Write();
+  ////IPP_TTZ_EleJet1DR_cr->Write();
+  ////IPP_LW300_EleJet1DR_cr->Write();
+  //IPP_LW400_EleJet1DR_cr->Write();
+  //IPP_LW500_EleJet1DR_cr->Write();
+  IPP_dataRunB_EleJet2DR_cr->Write();
+  IPP_dataRunC_EleJet2DR_cr->Write();
+  IPP_ZLL_EleJet2DR_cr->Write();
+  IPP_TT_EleJet2DR_cr->Write();
+  IPP_W3J_EleJet2DR_cr->Write();
+  IPP_W2J_EleJet2DR_cr->Write();
+  IPP_W1J_EleJet2DR_cr->Write();
+  IPP_LW200_EleJet2DR_cr->Write();
+  ////IPP_WW_EleJet2DR_cr->Write();
+  ////IPP_WZ_EleJet2DR_cr->Write();
+  ////IPP_TTZ_EleJet2DR_cr->Write();
+  ////IPP_LW300_EleJet2DR_cr->Write();
+  //IPP_LW400_EleJet2DR_cr->Write();
+  //IPP_LW500_EleJet2DR_cr->Write();
+  IPP_dataRunB_JetJet1DR_cr->Write();
+  IPP_dataRunC_JetJet1DR_cr->Write();
+  IPP_ZLL_JetJet1DR_cr->Write();
+  IPP_TT_JetJet1DR_cr->Write();
+  IPP_W3J_JetJet1DR_cr->Write();
+  IPP_W2J_JetJet1DR_cr->Write();
+  IPP_W1J_JetJet1DR_cr->Write();
+  IPP_LW200_JetJet1DR_cr->Write();
+  ////IPP_WW_JetJet1DR_cr->Write();
+  ////IPP_WZ_JetJet1DR_cr->Write();
+  ////IPP_TTZ_JetJet1DR_cr->Write();
+  ////IPP_LW300_JetJet1DR_cr->Write();
+  //IPP_LW400_JetJet1DR_cr->Write();
+  //IPP_LW500_JetJet1DR_cr->Write();
+  IPP_dataRunB_JetJet2DR_cr->Write();
+  IPP_dataRunC_JetJet2DR_cr->Write();
+  IPP_ZLL_JetJet2DR_cr->Write();
+  IPP_TT_JetJet2DR_cr->Write();
+  IPP_W3J_JetJet2DR_cr->Write();
+  IPP_W2J_JetJet2DR_cr->Write();
+  IPP_W1J_JetJet2DR_cr->Write();
+  IPP_LW200_JetJet2DR_cr->Write();
+  ////IPP_WW_JetJet2DR_cr->Write();
+  ////IPP_WZ_JetJet2DR_cr->Write();
+  ////IPP_TTZ_JetJet2DR_cr->Write();
+  ////IPP_LW300_JetJet2DR_cr->Write();
+  //IPP_LW400_JetJet2DR_cr->Write();
+  //IPP_LW500_JetJet2DR_cr->Write();
+  IPP_dataRunB_JetJetFDR_cr->Write();
+  IPP_dataRunC_JetJetFDR_cr->Write();
+  IPP_ZLL_JetJetFDR_cr->Write();
+  IPP_TT_JetJetFDR_cr->Write();
+  IPP_W3J_JetJetFDR_cr->Write();
+  IPP_W2J_JetJetFDR_cr->Write();
+  IPP_W1J_JetJetFDR_cr->Write();
+  IPP_LW200_JetJetFDR_cr->Write();
+  ////IPP_WW_JetJetFDR_cr->Write();
+  ////IPP_WZ_JetJetFDR_cr->Write();
+  ////IPP_TTZ_JetJetFDR_cr->Write();
+  ////IPP_LW300_JetJetFDR_cr->Write();
+  //IPP_LW400_JetJetFDR_cr->Write();
+  //IPP_LW500_JetJetFDR_cr->Write();
 
   hfile->Close();
 
