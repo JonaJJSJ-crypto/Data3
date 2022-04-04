@@ -190,6 +190,10 @@ def main(variable):
 
 
     stack = ROOT.THStack("", "")
+    sum = ZLL.Clone()
+    sum.Add(TT)
+    sum.Add(W)
+    sum.Add(QCD)
     for x in [QCD, TT, W, ZLL]:
 #    for x in [TT, W, ZLL]:#, WW, WZ, ttZ]:
         stack.Add(x)
@@ -197,7 +201,19 @@ def main(variable):
 
     c = ROOT.TCanvas("", "", 600, 600)
     #c.SetLogy()
+    #stack.Draw("E3")
     stack.Draw("hist")
+    sum.SetBinError(3,100000)
+    sum.SetBinError(4,100000)
+    #sum.SetFillColor(0)
+    sum.SetFillStyle(3004)
+    sum.SetLineWidth(1)
+    #sum.SetFillStyle(3365)
+    sum.SetFillColorAlpha(1, 0.35)
+    sum.SetLineColor(2)
+    sum.SetLineStyle(1)
+    sum.SetLineWidth(1)
+    sum.Draw("LE2 SAME")
     name = data.GetTitle()
     if name in labels:
         title = labels[name]
@@ -208,7 +224,7 @@ def main(variable):
     stack.SetMaximum(max(stack.GetMaximum(), data.GetMaximum()) * 1.4)
     stack.SetMinimum(1.0)
 
-    #ggH.Draw("HIST SAME")
+    #ggH.IST SAME")
     LW200.Draw("HIST SAME")
 
     data.Draw("E1P SAME")
