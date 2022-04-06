@@ -241,7 +241,7 @@ def main(variable):
     latex.DrawLatex(0.24, 0.935, "#bf{CMS Open Data}")
 
     # Save
-    if variable == "svd" or variable == "nsv":
+    if variable == "svd" or variable == "nsv" or variable == "ppoint" or variable == "BSdChi2norm":
         c.SetLogy()
         c.SaveAs("%s.pdf" % ("PDF/"+variable+"_3_HQ"))
         c.SaveAs("%s.png" % ("PNG/"+variable+"_3_HQ"))
