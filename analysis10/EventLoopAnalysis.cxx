@@ -14639,6 +14639,22 @@ void EventLoopAnalysisTemplate::histograms(string cut) {
     TString thelabel = histname(0,histname.First("_"));
     TString thevar = histname(histname.First("_")+1,histname.Sizeof());
 
+
+
+    /////////////////////////////Electron Storage/////////////////////////////////////////
+    vector<float> JetDRTemp;
+    vector<pair <float,size_t> > ElePtTemp;
+    vector<float> EleDRTemp;
+
+    for (size_t i = 0; i < electron_pt->size(); i++) {
+      if(abs(electron_eta->at(i))<1.44) ElePtTemp.push_back(make_pair(electron_pt->at(i),i));
+    }
+    sort(ElePtTemp.begin(),ElePtTemp.end());
+    ///////////////////////////////////////////////////////////////////////////
+
+
+
+
     if (thecut == cut && thelabel == labeltag){
       /////////////////Antiparallel ///////////////////////////
       bool EleTagIsDisp[electron_pt->size()]={0};
@@ -14677,19 +14693,21 @@ void EventLoopAnalysisTemplate::histograms(string cut) {
       //cout<<"npv\n";
       float Vx,Vy,ppoint;
       if(thevar == "ppointS" || thevar == "ppointS_cr"){
-        for(size_t i=0; i<Esecvec_posx->size(); i++){
-          if(EleTagIsDisp[Esecvec_eleTag->at(i)]==false){
-            Vx=Esecvec_posx->at(i)-Bsp_x->at(0);
-            Vy=Esecvec_posy->at(i)-Bsp_y->at(0);
-            if(sqrt(Vx*Vx+Vy*Vy)>0.02){
-              ppoint = Vx*Esecvec_px->at(i) + Vy*Esecvec_py->at(i);
-              if(thelabel(0,2)=="LW"){
-                if(ppoint<0) hists.at(j)->Fill(1, theweight);
-                else if(ppoint>0) hists.at(j)->Fill(0.0, theweight);
-              }
-              else{
-                if(ppoint>0) hists.at(j)->Fill(1, theweight);
-                else if(ppoint<0) hists.at(j)->Fill(0.0, theweight);
+        if(ElePtTemp.size()>=1){
+          for(size_t i=0; i<Esecvec_posx->size(); i++){
+            if( EleTagIsDisp[Esecvec_eleTag->at(i)]==false && Esecvec_eleTag->at(i)==ElePtTemp.back().second ){
+              Vx=Esecvec_posx->at(i)-Bsp_x->at(0);
+              Vy=Esecvec_posy->at(i)-Bsp_y->at(0);
+              if(sqrt(Vx*Vx+Vy*Vy)>0.02){
+                ppoint = Vx*Esecvec_px->at(i) + Vy*Esecvec_py->at(i);
+                if(thelabel(0,2)=="LW"){
+                  if(ppoint<0) hists.at(j)->Fill(1, theweight);
+                  else if(ppoint>0) hists.at(j)->Fill(0.0, theweight);
+                }
+                else{
+                  if(ppoint>0) hists.at(j)->Fill(1, theweight);
+                  else if(ppoint<0) hists.at(j)->Fill(0.0, theweight);
+                }
               }
             }
           }
@@ -14905,16 +14923,7 @@ void EventLoopAnalysisTemplate::histograms(string cut) {
         }
       }
 
-      /////////////////////////////Electron Storage/////////////////////////////////////////
-      vector<float> JetDRTemp;
-      vector<pair <float,size_t> > ElePtTemp;
-      vector<float> EleDRTemp;
 
-      for (size_t i = 0; i < electron_pt->size(); i++) {
-        if(abs(electron_eta->at(i))<1.44) ElePtTemp.push_back(make_pair(electron_pt->at(i),i));
-      }
-      sort(ElePtTemp.begin(),ElePtTemp.end());
-      ///////////////////////////////////////////////////////////////////////////
 
       if(thevar == "EleJet1DR" || thevar == "EleJet1DR_cr"){
         if(JetPtTemp.size()>=4 && ElePtTemp.size()>=2 && ElePtTemp.back().first>40 && ElePtTemp.end()[-2].first>25){

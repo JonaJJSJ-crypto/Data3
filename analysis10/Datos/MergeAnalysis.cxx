@@ -62,6 +62,15 @@ TH1F* LW200SecVec_TrkHQ= new TH1F("LW200SecVec_TrkHQ","Signal electrons quality"
 TH1F* LW200SecVec_HQElept= new TH1F("LW200SecVec_HQElept","HQ electrons pt",100,0,200);
 TH1F* LW200SecVec_HQTrkpt= new TH1F("LW200SecVec_HQTrkpt","HQ electrontrack pt",100,0,200);
 
+TH1F* LW200SecVec_NSignal_ppoint = new TH1F("LW200SecVec_NSignal_ppoint", "Non Signal objects Ppoint",51,-100,100);
+TH1F* LW200SecVec_NSignal_ppointS = new TH1F("LW200SecVec_NSignal_ppointS", "Non Signal objects Ppoint sign",2,0,2);
+TH1F* LW200SecVec_Signal_ppoint = new TH1F("LW200SecVec_Signal_ppoint", "Signal objects Ppoint",51,-100,100);
+TH1F* LW200SecVec_Signal_ppointS = new TH1F("LW200SecVec_Signal_ppointS", "Signal objects Ppoint sign",2,0,2);
+TH1F* LW200SecVec_Signal_NPP_PT = new TH1F("LW200SecVec_Signal_NPP_PT", "Signal objects Negative PP Total momentum",50,0,500);
+TH1F* LW200SecVec_Signal_NPP_disp = new TH1F("LW200SecVec_Signal_NPP_disp", "Signal objects Negative PP displacement",50,0,0.1);
+TH1F* LW200SecVec_Signal_PPP_PT = new TH1F("LW200SecVec_Signal_PPP_PT", "Signal objects Positive PP Total momentum",50,0,500);
+TH1F* LW200SecVec_Signal_PPP_disp = new TH1F("LW200SecVec_Signal_PPP_disp", "Signal objects Positive PP displacement",50,0,0.1);
+
 TH1F* LW200SecVec_Ppoint = new TH1F("LW200SecVec_Ppoint","Secondary vertex total momentum Secondary vertex point;Ppoint[GeV*mm];",100,-100,100);
 TH1F* LW200SecVec_PpointS = new TH1F("LW200SecVec_PpointS","Secondary vertex total momentum Secondary vertex point sign;Ppoint sign;",100,-2,2);
 TH1F* LW200SecVec_Ppoint_2m = new TH1F("LW200SecVec_Ppoint_2m","Secondary vertex total momentum Secondary vertex point dxy>0.02mm;Ppoint[GeV*mm];",100,-100,100);
@@ -128,6 +137,9 @@ public :
   vector<float>   *PV_y;
   vector<float>   *PV_z;
   vector<float>   *electron_pt;
+  vector<float>   *electron_px;
+  vector<float>   *electron_py;
+  vector<float>   *electron_pz;
   vector<float>   *electron_eta;
   vector<float>   *electron_phi;
   vector<float>   *electron_dxy;
@@ -168,21 +180,13 @@ public :
   vector<float>   *Esecvec_posz;
   vector<float>   *Esecvec_poserrorz;
   vector<float>   *Esecvec_eta;
-  vector<float>   *Esecvec_phi;
+  vector<float>   *Esecvec_jet_phi;
   vector<float>   *Esecvec_eta1;
-  vector<float>   *Esecvec_phi1;
+  vector<float>   *Esecvec_jet_phi1;
   vector<float>   *Esecvec_eta2;
-  vector<float>   *Esecvec_phi2;
+  vector<float>   *Esecvec_jet_phi2;
   vector<float>   *Esecvec_jet_pt2;
   vector<float>   *Esecvec_jet_pt1;
-  vector<float>   *genjet_e;
-  vector<float>   *genjet_pt;
-  vector<float>   *genjet_pz;
-  vector<float>   *genjet_px;
-  vector<float>   *genjet_py;
-  vector<float>   *genjet_eta;
-  vector<float>   *genjet_phi;
-  vector<float>   *genjet_DRscore;
   vector<float>   *GenPart_pt;
   vector<float>   *GenPart_px;
   vector<float>   *GenPart_py;
@@ -204,7 +208,6 @@ public :
   vector<float>   *GenDau_phi;
   vector<float>   *GenDau_pdgId;
   vector<float>   *GenDau_mompdgId;
-  vector<float>   *jet_pt;
   vector<float>   *trigobj_e;
   vector<float>   *trigobj_pt;
   vector<float>   *trigobj_pz;
@@ -215,6 +218,24 @@ public :
   vector<float>   *Bsp_x;
   vector<float>   *Bsp_y;
   vector<float>   *Bsp_z;
+  vector<float>   *jet_mass;
+  vector<float>   *jet_e;
+  vector<float>   *jet_pt;
+  vector<float>   *corr_jet_pt;
+  vector<float>   *jet_pz;
+  vector<float>   *jet_px;
+  vector<float>   *jet_py;
+  vector<float>   *jet_phi;
+  vector<float>   *jet_eta;
+  vector<float>   *jet_ch;
+  vector<float>   *genjet_e;
+  vector<float>   *genjet_pt;
+  vector<float>   *genjet_pz;
+  vector<float>   *genjet_px;
+  vector<float>   *genjet_py;
+  vector<float>   *genjet_eta;
+  vector<float>   *genjet_phi;
+  vector<float>   *genjet_DRscore;
 
   TBranch        *b_run;   //!
   TBranch        *b_luminosityBlock;   //!
@@ -224,6 +245,9 @@ public :
   TBranch        *b_PV_y;   //!
   TBranch        *b_PV_z;   //!
   TBranch        *b_electron_pt;
+  TBranch        *b_electron_px;
+  TBranch        *b_electron_py;
+  TBranch        *b_electron_pz;
   TBranch        *b_electron_eta;
   TBranch        *b_electron_phi;
   TBranch        *b_electron_dxy;
@@ -259,25 +283,17 @@ public :
   TBranch        *b_Esecvec_posx;
   TBranch        *b_Esecvec_posy;
   TBranch        *b_Esecvec_posz;
-  TBranch        *b_Esecvec_phi;
+  TBranch        *b_Esecvec_jet_phi;
   TBranch        *b_Esecvec_eta;
-  TBranch        *b_Esecvec_phi1;
+  TBranch        *b_Esecvec_jet_phi1;
   TBranch        *b_Esecvec_eta1;
-  TBranch        *b_Esecvec_phi2;
+  TBranch        *b_Esecvec_jet_phi2;
   TBranch        *b_Esecvec_eta2;
   TBranch        *b_Esecvec_jet_pt1;
   TBranch        *b_Esecvec_jet_pt2;
   TBranch        *b_Esecvec_poserrorx;
   TBranch        *b_Esecvec_poserrory;
   TBranch        *b_Esecvec_poserrorz;
-  TBranch        *b_genjet_e;
-  TBranch        *b_genjet_pt;
-  TBranch        *b_genjet_pz;
-  TBranch        *b_genjet_px;
-  TBranch        *b_genjet_py;
-  TBranch        *b_genjet_eta;
-  TBranch        *b_genjet_phi;
-  TBranch        *b_genjet_DRscore;
   TBranch        *b_GenPart_pt;
   TBranch        *b_GenPart_px;
   TBranch        *b_GenPart_py;
@@ -299,7 +315,6 @@ public :
   TBranch        *b_GenDau_phi;
   TBranch        *b_GenDau_pdgId;
   TBranch        *b_GenDau_mompdgId;
-  TBranch        *b_jet_pt;
   TBranch        *b_trk_isHQ;
   TBranch        *b_trigobj_e;
   TBranch        *b_trigobj_pt;
@@ -311,6 +326,24 @@ public :
   TBranch        *b_Bsp_x;
   TBranch        *b_Bsp_y;
   TBranch        *b_Bsp_z;
+  TBranch        *b_jet_mass;
+  TBranch        *b_jet_e;
+  TBranch        *b_jet_pt;
+  TBranch        *b_corr_jet_pt;
+  TBranch        *b_jet_pz;
+  TBranch        *b_jet_px;
+  TBranch        *b_jet_py;
+  TBranch        *b_jet_phi;
+  TBranch        *b_jet_eta;
+  TBranch        *b_jet_ch;
+  TBranch        *b_genjet_e;
+  TBranch        *b_genjet_pt;
+  TBranch        *b_genjet_pz;
+  TBranch        *b_genjet_px;
+  TBranch        *b_genjet_py;
+  TBranch        *b_genjet_eta;
+  TBranch        *b_genjet_phi;
+  TBranch        *b_genjet_DRscore;
 
   EventLoopAnalysisTemplate(TString filename, TString labeltag, Float_t theweight);
   virtual ~EventLoopAnalysisTemplate();
@@ -434,6 +467,9 @@ void EventLoopAnalysisTemplate::Init(TTree *tree)
    Bsp_y = 0;
    Bsp_z = 0;
    electron_pt=0;
+   electron_px=0;
+   electron_py=0;
+   electron_pz=0;
    electron_eta=0;
    electron_phi=0;
    electron_dxy=0;
@@ -473,22 +509,14 @@ void EventLoopAnalysisTemplate::Init(TTree *tree)
    Esecvec_poserrorx=0;
    Esecvec_poserrory=0;
    Esecvec_poserrorz=0;
-   Esecvec_phi=0;
+   Esecvec_jet_phi=0;
    Esecvec_eta=0;
-   Esecvec_phi1=0;
+   Esecvec_jet_phi1=0;
    Esecvec_eta1=0;
-   Esecvec_phi2=0;
+   Esecvec_jet_phi2=0;
    Esecvec_eta2=0;
    Esecvec_jet_pt1=0;
    Esecvec_jet_pt2=0;
-   genjet_e=0;
-   genjet_pt=0;
-   genjet_pz=0;
-   genjet_px=0;
-   genjet_py=0;
-   genjet_eta=0;
-   genjet_phi=0;
-   genjet_DRscore=0;
    GenPart_pt=0;
    GenPart_px=0;
    GenPart_py=0;
@@ -510,7 +538,6 @@ void EventLoopAnalysisTemplate::Init(TTree *tree)
    GenDau_phi=0;
    GenDau_pdgId=0;
    GenDau_mompdgId=0;
-   jet_pt=0;
    trigobj_e = 0;
    trigobj_pt = 0;
    trigobj_px = 0;
@@ -518,6 +545,24 @@ void EventLoopAnalysisTemplate::Init(TTree *tree)
    trigobj_pz = 0;
    trigobj_eta = 0;
    trigobj_phi = 0;
+   jet_mass=0;
+   jet_e=0;
+   jet_pt=0;
+   corr_jet_pt=0;
+   jet_pz=0;
+   jet_px=0;
+   jet_py=0;
+   jet_phi=0;
+   jet_eta=0;
+   jet_ch=0;
+   genjet_e=0;
+   genjet_pt=0;
+   genjet_pz=0;
+   genjet_px=0;
+   genjet_py=0;
+   genjet_eta=0;
+   genjet_phi=0;
+   genjet_DRscore=0;
 
 
    //b_GenPart_vertex=0;
@@ -543,6 +588,9 @@ void EventLoopAnalysisTemplate::Init(TTree *tree)
    fChain->SetBranchAddress("Bsp_y", &Bsp_y, &b_Bsp_y);
    fChain->SetBranchAddress("Bsp_z", &Bsp_z, &b_Bsp_z);
    fChain->SetBranchAddress("electron_pt",&electron_pt,&b_electron_pt);
+   fChain->SetBranchAddress("electron_px",&electron_px,&b_electron_px);
+   fChain->SetBranchAddress("electron_py",&electron_py,&b_electron_py);
+   fChain->SetBranchAddress("electron_pz",&electron_pz,&b_electron_pz);
    fChain->SetBranchAddress("electron_eta",&electron_eta,&b_electron_eta);
    fChain->SetBranchAddress("electron_phi",&electron_phi,&b_electron_phi);
    fChain->SetBranchAddress("electron_dxy",&electron_dxy,&b_electron_dxy);
@@ -555,7 +603,7 @@ void EventLoopAnalysisTemplate::Init(TTree *tree)
    //fChain->SetBranchAddress("electron_Bsecvec",&electron_Bsecvec,&b_electron_Bsecvec);
    //fChain->SetBranchAddress("secvec_deltaR",&secvec_deltaR,&b_secvec_deltaR);
    //fChain->SetBranchAddress("secvec_disp",&secvec_disp,&b_secvec_disp);
-   fChain->SetBranchAddress("secvec_posx",&secvec_posx,&b_secvec_posx);
+   /*fChain->SetBranchAddress("secvec_posx",&secvec_posx,&b_secvec_posx);
    fChain->SetBranchAddress("secvec_posy",&secvec_posy,&b_secvec_posy);
    fChain->SetBranchAddress("secvec_posz",&secvec_posz,&b_secvec_posz);
    fChain->SetBranchAddress("secvec_px",&secvec_px,&b_secvec_px);
@@ -564,7 +612,7 @@ void EventLoopAnalysisTemplate::Init(TTree *tree)
    fChain->SetBranchAddress("secvec_poserrorx",&secvec_poserrorx,&b_secvec_poserrorx);
    fChain->SetBranchAddress("secvec_poserrory",&secvec_poserrory,&b_secvec_poserrory);
    fChain->SetBranchAddress("secvec_poserrorz",&secvec_poserrorz,&b_secvec_poserrorz);
-   fChain->SetBranchAddress("secvec_eleTag",&secvec_eleTag,&b_secvec_eleTag);
+   fChain->SetBranchAddress("secvec_eleTag",&secvec_eleTag,&b_secvec_eleTag);*/
    fChain->SetBranchAddress("Esecvec_eleTag",&Esecvec_eleTag,&b_Esecvec_eleTag);
    fChain->SetBranchAddress("Esecvec_posx",&Esecvec_posx,&b_Esecvec_posx);
    fChain->SetBranchAddress("Esecvec_posy",&Esecvec_posy,&b_Esecvec_posy);
@@ -577,6 +625,8 @@ void EventLoopAnalysisTemplate::Init(TTree *tree)
    fChain->SetBranchAddress("Esecvec_poserrorz",&Esecvec_poserrorz,&b_Esecvec_poserrorz);
    fChain->SetBranchAddress("Esecvec_jet_pt1",&Esecvec_jet_pt1,&b_Esecvec_jet_pt1);
    fChain->SetBranchAddress("Esecvec_jet_pt2",&Esecvec_jet_pt2,&b_Esecvec_jet_pt2);
+   fChain->SetBranchAddress("Esecvec_jet_phi1",&Esecvec_jet_phi1,&b_Esecvec_jet_phi1);
+   fChain->SetBranchAddress("Esecvec_jet_phi2",&Esecvec_jet_phi2,&b_Esecvec_jet_phi2);
    /*fChain->SetBranchAddress("secvec_phi",&secvec_phi,&b_secvec_phi);
    fChain->SetBranchAddress("secvec_eta",&secvec_eta,&b_secvec_eta);
    fChain->SetBranchAddress("secvec_phi1",&secvec_phi1,&b_secvec_phi1);
@@ -620,6 +670,24 @@ void EventLoopAnalysisTemplate::Init(TTree *tree)
    fChain->SetBranchAddress("trigobj_eta",&trigobj_eta,&b_trigobj_eta);
    fChain->SetBranchAddress("trigobj_phi",&trigobj_phi,&b_trigobj_phi);
    fChain->SetBranchAddress("trk_isHQ",&trk_isHQ,&b_trk_isHQ);
+   fChain->SetBranchAddress("jet_mass",&jet_mass,&b_jet_mass);
+   fChain->SetBranchAddress("jet_e",&jet_e,&b_jet_e);
+   fChain->SetBranchAddress("jet_pt",&jet_pt,&b_jet_pt);
+   fChain->SetBranchAddress("corr_jet_pt",&corr_jet_pt,&b_corr_jet_pt);
+   fChain->SetBranchAddress("jet_pz",&jet_pz,&b_jet_pz);
+   fChain->SetBranchAddress("jet_px",&jet_px,&b_jet_px);
+   fChain->SetBranchAddress("jet_py",&jet_py,&b_jet_py);
+   fChain->SetBranchAddress("jet_phi",&jet_phi,&b_jet_phi);
+   fChain->SetBranchAddress("jet_eta",&jet_eta,&b_jet_eta);
+   fChain->SetBranchAddress("jet_ch",&jet_ch,&b_jet_ch);
+   fChain->SetBranchAddress("genjet_e",&genjet_e,&b_genjet_e);
+   fChain->SetBranchAddress("genjet_pt",&genjet_pt,&b_genjet_pt);
+   fChain->SetBranchAddress("genjet_pz",&genjet_pz,&b_genjet_pz);
+   fChain->SetBranchAddress("genjet_px",&genjet_px,&b_genjet_px);
+   fChain->SetBranchAddress("genjet_py",&genjet_py,&b_genjet_py);
+   fChain->SetBranchAddress("genjet_eta",&genjet_eta,&b_genjet_eta);
+   fChain->SetBranchAddress("genjet_phi",&genjet_phi,&b_genjet_phi);
+   fChain->SetBranchAddress("genjet_DRscore",&genjet_DRscore,&b_genjet_DRscore);
 
    Notify();
 }
@@ -660,10 +728,10 @@ void EventLoopAnalysisTemplate::Loop()
   Long64_t nbytes = 0, nb = 0;
   for (Long64_t jentry=0; jentry<nentries;jentry++) {
     //Just an informative printout
-    if(jentry%1 == 0) {
+    if(jentry%10000 == 0) {
       cout<<"Processed "<<jentry<<" events out of "<<nentries<<endl;
       //cout<<"number of Secvec: "<< secvec_posx->size() << endl;
-      cout<<"number of E Secvec: "<< Esecvec_posx->size() << endl;
+      //cout<<"number of E Secvec: "<< Esecvec_posx->size() << endl;
     }
     //cout<<"flag\n";
     if(jentry==16) {
@@ -741,7 +809,7 @@ void EventLoopAnalysisTemplate::Loop()
       //TGraphErrors* myPlot = new TGraphErrors(secvec_posx->size(),secvec_posx,secvec_posy,secvec_poserrorx,secvec_poserrory);
       for(size_t x=0; x<Esecvec_posx->size(); x++){
         if(Esecvec_eleTag->at(x)!=-1){
-          cout<<"secvec eletag "<<Esecvec_eleTag->at(x)<<endl;
+          //cout<<"secvec eletag "<<Esecvec_eleTag->at(x)<<endl;
           //float modulo=sqrt(Esecvec_px->at(x)*Esecvec_px->at(x)+Esecvec_py->at(x)*Esecvec_py->at(x));
 
 
@@ -755,19 +823,19 @@ void EventLoopAnalysisTemplate::Loop()
       }
       LW200SecVec_XY->Fill(Bsp_x->at(0),Bsp_y->at(0),100);
       LW200SecVec_XY_P->Fill(Bsp_x->at(0),Bsp_y->at(0),100);
-      cout<<"Number of electron: "<< electron_pt->size()<<endl;
+      //cout<<"Number of electron: "<< electron_pt->size()<<endl;
       //gen secvec impresion
       for(size_t x=0; x<GenPart_vx->size(); x++){
         if(abs(GenPart_pdgId->at(x))==11 && abs(GenPart_mompdgId->at(x))==556){
           //cout<<"SV: "<<GenPart_vx->at(x)<<' '<<GenPart_vy->at(x)<<endl;
-          cout<<"SV: "<<GenPart_vx->at(x)<< ' '<<GenPart_vy->at(x)<<endl;
+          //cout<<"SV: "<<GenPart_vx->at(x)<< ' '<<GenPart_vy->at(x)<<endl;
           LW200SecVec_XYGen->Fill(GenPart_vx->at(x),GenPart_vy->at(x),100);
           if(GenPart_pdgId->at(x)==11) LW200SecVec_XYGen1->Fill(GenPart_vx->at(x),GenPart_vy->at(x),100);
           if(GenPart_pdgId->at(x)==-11) LW200SecVec_XYGen2->Fill(GenPart_vx->at(x),GenPart_vy->at(x),100);
         }
         //primary vertex
         if(abs(GenPart_pdgId->at(x))==556){
-          cout<<"PV: "<<GenPart_vx->at(0)<< ' '<<GenPart_vy->at(0)<<endl;
+          //cout<<"PV: "<<GenPart_vx->at(0)<< ' '<<GenPart_vy->at(0)<<endl;
           LW200SecVec_XYGen->Fill(GenPart_vx->at(x),GenPart_vy->at(x),100);
           LW200SecVec_XYGen1->Fill(GenPart_vx->at(x),GenPart_vy->at(x),100);
           LW200SecVec_XYGen2->Fill(GenPart_vx->at(x),GenPart_vy->at(x),100);
@@ -775,7 +843,7 @@ void EventLoopAnalysisTemplate::Loop()
 
         if(abs(GenPart_pdgId->at(x))==11 && abs(GenPart_mompdgId->at(x))==556){
           for (size_t i = 0; i < electron_pt->size(); i++) {
-            cout<<"Ele pt: "<<electron_pt->at(i)<<endl;
+            //cout<<"Ele pt: "<<electron_pt->at(i)<<endl;
             if( genelec_DRscore->at(i)<0.1 && genelec_pt->at(i)==GenPart_pt->at(x) ){
               for(size_t j=0; j<Esecvec_posx->size(); j++){
                 //DRele=deltaR(electron_eta->at(i),electron_phi->at(i),secvec_eta->at(j),secvec_phi->at(j));
@@ -876,45 +944,148 @@ void EventLoopAnalysisTemplate::analysis()
 
   //Secvec secvecstudy
   vector <pair<size_t,bool>> EleTag;
-  for(size_t x=0; x<Esecvec_px->size(); x++){
-    if(Esecvec_eleTag->at(x)!=-1){
-      if(EleTag.size()>=1){
-        if(Esecvec_eleTag->at(x)!=EleTag.back().first) EleTag.push_back(make_pair(x,true));
-      }
-      else EleTag.push_back(make_pair(x,true));
-    }
+  for(size_t x=0; x<electron_pt->size(); x++){
+    EleTag.push_back(make_pair(x,true));
   }
+
+  //cout<<electron_pt->size()<<" "<<EleTag.size()<<endl;
   for(size_t y=0; y<EleTag.size(); y++){
     for(size_t x=0; x<Esecvec_px->size(); x++){
       if(Esecvec_eleTag->at(x)==EleTag.at(y).first ){
         float Vx=Esecvec_posx->at(x)-PV_x->at(0);
         float Vy=Esecvec_posy->at(x)-PV_y->at(0);
         float Vz=Esecvec_posz->at(x)-PV_z->at(0);
-        if(sqrt(Vx*Vx+Vy*Vy)<0.03) EleTag.at(y).second=false;
+        if(sqrt(Vx*Vx+Vy*Vy)<0.02) EleTag.at(y).second=false;
       }
     }
   }
   bool ValidSecVec;
   for(size_t x=0; x<Esecvec_px->size(); x++){
-    if(Esecvec_eleTag->at(x)!=-1){
-      ValidSecVec=false;
-      for(size_t y=0; y<EleTag.size(); y++){
-        if(Esecvec_eleTag->at(x)==EleTag.at(y).first) ValidSecVec=EleTag.at(y).second;
+    ValidSecVec=false;
+    for(size_t y=0; y<EleTag.size(); y++){
+      if(Esecvec_eleTag->at(x)==EleTag.at(y).first) ValidSecVec=EleTag.at(y).second;
+    }
+    float Vx=Esecvec_posx->at(x)-PV_x->at(0);
+    float Vy=Esecvec_posy->at(x)-PV_y->at(0);
+    float Vz=Esecvec_posz->at(x)-PV_z->at(0);
+    float Ppoint= Esecvec_px->at(x)*Vx + Esecvec_py->at(x)*Vy + Esecvec_pz->at(x)*Vz;
+    if(ValidSecVec){
+      LW200SecVec_Ppoint_2m->Fill(Ppoint);
+      if(Ppoint>0)LW200SecVec_PpointS_2m->Fill(1);
+      else if(Ppoint<0) LW200SecVec_PpointS_2m->Fill(0);
+    }
+    LW200SecVec_Ppoint->Fill(Ppoint);
+    if(Ppoint>0)LW200SecVec_PpointS->Fill(1);
+    else if(Ppoint<0) LW200SecVec_PpointS->Fill(0);
+  }
+
+
+  //////////////////////////EleZdauDR/////////////////////////
+  vector <pair<float,size_t>> RecoZdau;
+  RecoZdau.clear();
+  float Zpt=0;
+  size_t Zindex[2];
+  size_t Eindex;
+  bool Zbool = false;
+  for(size_t x=0; x<GenDau_pt->size(); x++){
+    if(GenDau_pdgId->at(x)==23 && GenDau_mompdgId->at(x)==556){
+      Zpt=GenDau_pt->at(x);
+    }
+    if(GenDau_pdgId->at(x)==11 && GenDau_mompdgId->at(x)==556) Eindex=x;
+  }
+
+  for(size_t x=0; x<GenDau_pt->size(); x++){
+    for(size_t y=x+1; y<GenDau_pt->size(); y++){
+
+      if(GenDau_mompdgId->at(x)==23 && GenDau_mompdgId->at(y)==23){
+        float px= GenDau_px->at(x)+GenDau_px->at(y);
+        float py= GenDau_py->at(x)+GenDau_py->at(y);
+
+        //LW200EleSZdau_ptdiff->Fill(abs(sqrt(px*px+py*py)-Zpt));
+
+        //LW200ZdauCharge->Fill(GenDau_pdgId->at(x));
+
+        if(abs(sqrt(px*px+py*py)-Zpt)<0.001){
+          Zindex[0]=x;
+          Zindex[1]=y;
+          Zbool=true;
+        }
       }
-      float Vx=Esecvec_posx->at(x)-PV_x->at(0);
-      float Vy=Esecvec_posy->at(x)-PV_y->at(0);
-      float Vz=Esecvec_posz->at(x)-PV_z->at(0);
-      float Ppoint= Esecvec_px->at(x)*Vx + Esecvec_py->at(x)*Vy + Esecvec_pz->at(x)*Vz;
-      if(ValidSecVec){
-        LW200SecVec_Ppoint_2m->Fill(Ppoint);
-        if(Ppoint>0)LW200SecVec_PpointS_2m->Fill(1);
-        else if(Ppoint<0) LW200SecVec_PpointS_2m->Fill(0);
-      }
-      LW200SecVec_Ppoint->Fill(Ppoint);
-      if(Ppoint>0)LW200SecVec_PpointS->Fill(1);
-      else if(Ppoint<0) LW200SecVec_PpointS->Fill(0);
     }
   }
+
+  float px,py,pz;
+
+  if(Zbool){
+    /*px=GenDau_px->at(Eindex)+GenDau_px->at(Zindex[0])+GenDau_px->at(Zindex[1]);
+    py=GenDau_py->at(Eindex)+GenDau_py->at(Zindex[0])+GenDau_py->at(Zindex[1]);
+    pz=GenDau_pz->at(Eindex)+GenDau_pz->at(Zindex[0])+GenDau_pz->at(Zindex[1]);*/
+    //LW200EleSZdauPT->Fill(sqrt(px*px+py*py+pz*pz));
+    size_t Jet1=1000;
+    size_t Jet2=1000;
+    size_t Ele0=1000;
+    for(size_t i=0; i<jet_pt->size(); i++){
+      if( genjet_DRscore->at(i)<0.5 && genjet_pt->at(i)==GenDau_pt->at(Zindex[0]) ) Jet1=i;
+      if( genjet_DRscore->at(i)<0.5 && genjet_pt->at(i)==GenDau_pt->at(Zindex[1]) ) Jet2=i;
+    }
+    for(size_t i=0; i<electron_pt->size(); i++){
+      if( genelec_DRscore->at(i)<0.1 && genelec_pt->at(i)==GenDau_pt->at(Eindex) ) Ele0=i;
+    }
+
+    if(Jet1 != 1000 && Jet2 != 1000 && Ele0 !=1000){
+      for(size_t x=0; x<Esecvec_px->size(); x++){
+        ValidSecVec=false;
+        for(size_t y=0; y<EleTag.size(); y++){
+          if(Esecvec_eleTag->at(x)==EleTag.at(y).first) ValidSecVec=EleTag.at(y).second;
+        }
+
+        if( Esecvec_eleTag->at(x)==Ele0 && ValidSecVec ) {
+
+          float Vx=Esecvec_posx->at(x)-PV_x->at(0);
+          float Vy=Esecvec_posy->at(x)-PV_y->at(0);
+          float Vz=Esecvec_posz->at(x)-PV_z->at(0);
+          float Esvp= Esecvec_px->at(x)*Vx + Esecvec_py->at(x)*Vy + Esecvec_pz->at(x)*Vz;
+          LW200SecVec_NSignal_ppoint->Fill(Esvp);
+          if(Esvp>0) LW200SecVec_NSignal_ppointS->Fill(1);
+          else LW200SecVec_NSignal_ppointS->Fill(0);
+
+          if( (Esecvec_jet_phi1->at(x)==jet_phi->at(Jet1) && Esecvec_jet_phi2->at(x)==jet_phi->at(Jet2))
+           || (Esecvec_jet_phi1->at(x)==jet_phi->at(Jet2) && Esecvec_jet_phi2->at(x)==jet_phi->at(Jet1)) ){
+            px=electron_px->at(Esecvec_eleTag->at(x))+jet_px->at(Jet1)+jet_px->at(Jet2);
+            py=electron_py->at(Esecvec_eleTag->at(x))+jet_py->at(Jet1)+jet_py->at(Jet2);
+            pz=electron_pz->at(Esecvec_eleTag->at(x))+jet_pz->at(Jet1)+jet_pz->at(Jet2);
+            //cout<<"Found!!! "<<sqrt(px*px+py*py+pz*pz)<<" "<<sqrt(Vx*Vx+Vy*Vy+Vz*Vz)<<" "<<Esvp<<"\n";
+            LW200SecVec_Signal_ppoint->Fill(Esvp);
+            if(Esvp>0){
+              LW200SecVec_Signal_ppointS->Fill(1);
+              LW200SecVec_Signal_PPP_PT->Fill(sqrt(px*px+py*py+pz*pz));
+              LW200SecVec_Signal_PPP_disp->Fill(sqrt(Vx*Vx+Vy*Vy+Vz*Vz));
+            }
+            else {
+              LW200SecVec_Signal_ppointS->Fill(0);
+              LW200SecVec_Signal_NPP_PT->Fill(sqrt(px*px+py*py+pz*pz));
+              LW200SecVec_Signal_NPP_disp->Fill(sqrt(Vx*Vx+Vy*Vy+Vz*Vz));
+            }
+
+          }
+          //else cout<<"Otro "<<Esvp<<"\n";
+        }
+      }
+    }
+  }
+
+  /*for(size_t x=0; x<GenDau_pt->size(); x++){
+    for(size_t y=0; y<GenDau_pt->size(); y++){
+      for(size_t z=y+1; z<GenDau_pt->size(); z++){
+        if(GenDau_pdgId->at(x)==11 && GenDau_mompdgId->at(y)==23 && GenDau_mompdgId->at(z)){
+          px=GenDau_px->at(x)+GenDau_px->at(y)+GenDau_px->at(z);
+          py=GenDau_py->at(x)+GenDau_py->at(y)+GenDau_py->at(z);
+          pz=GenDau_pz->at(x)+GenDau_pz->at(y)+GenDau_pz->at(z);
+          LW200EleZdauPT->Fill(sqrt(px*px+py*py+pz*pz));
+        }
+      }
+    }
+  }*/
 
   /*float dx,dy,dz,SVdR,SVdR1,SVdR2,dist,maxx,maxy,maxz;
   size_t SVCount=0;
@@ -1222,7 +1393,7 @@ int main()
 
 
   map<string, pair<string,float> > sampleNames;
-  sampleNames.insert(make_pair("LWSM200DnR",make_pair("LW200",1)));
+  sampleNames.insert(make_pair("myoutput_200",make_pair("LW200",1)));
 
 
 
@@ -1289,6 +1460,15 @@ int main()
   LW200SecVec_PpointS->Write();
   LW200SecVec_Ppoint_2m->Write();
   LW200SecVec_PpointS_2m->Write();
+
+  LW200SecVec_NSignal_ppoint->Write();
+  LW200SecVec_NSignal_ppointS->Write();
+  LW200SecVec_Signal_ppoint->Write();
+  LW200SecVec_Signal_ppointS->Write();
+  LW200SecVec_Signal_NPP_PT->Write();
+  LW200SecVec_Signal_NPP_disp->Write();
+  LW200SecVec_Signal_PPP_PT->Write();
+  LW200SecVec_Signal_PPP_disp->Write();
   //LW200SecVec_XY->Write();
 
   hfile->Close();
