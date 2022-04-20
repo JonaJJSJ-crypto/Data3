@@ -12,10 +12,13 @@ labels = {
         "ppoint": "SV Paralelity: displacement & Total momentum",
         "ppointS": "SV Paralelity sign: displacement & Total momentum",
         "npv": "Number of primary vertices",
-        "JetMass": "DiJets invariant mass",
-        "LWMass": "LW invariant mass",
+        #"JetMass": "DiJets invariant mass",
+        #"LWMass": "LW invariant mass",
         "nsv": "Number od secondary vertices",
         "svd": "Secondary vertex displacement",
+        "BSd": "Secondary vertex Distance to Bsp",
+        "BSdChi2norm": "Secondary vertex Distance/Norm to Bsp",}
+'''
         "Elept": "Electron Tranversal momentum",
         "DieledR": "Di electron delta R",
         "LWdR": "DiJet+electron delta R",
@@ -33,7 +36,7 @@ labels = {
         "JetJetFDR": "Jet further Jet DR",
         #"eta_2": "Tau #eta",
         #"m_vis": "Visible di-tau mass / GeV",
-        }
+        }'''
 
 # Specify the color for each process
 colors = {
@@ -156,7 +159,7 @@ def main(variable):
     for i in range(1, QCD.GetNbinsX() + 1):
         if QCD.GetBinContent(i) < 0.0:
             QCD.SetBinContent(i, 0.0)
-    QCDScaleFactor = 0.80
+    QCDScaleFactor = 0.90
     QCD.Scale(QCDScaleFactor)
 
     # Draw histograms
@@ -200,6 +203,91 @@ def main(variable):
     c = ROOT.TCanvas("", "", 600, 600)
     #c.SetLogy()
     stack.Draw("hist")
+
+    sum = ZLL.Clone()
+    sum.Add(TT)
+    sum.Add(W)
+    sum.Add(QCD)
+
+    if variable == "ppoint":
+        # Simulation
+        #ggH = getHistogram(tfile, "ggH", variable)
+        Uncert_LW200 = getHistogram(tfile, "DRC_LW200", variable,"_uncert")
+
+        Uncert_W = getHistogram(tfile, "DRC_W1J", variable,"_uncert")
+        Uncert_W2J = getHistogram(tfile, "DRC_W2J", variable,"_uncert")
+        Uncert_W3J = getHistogram(tfile, "DRC_W3J", variable,"_uncert")
+        Uncert_W.Add(Uncert_W2J)
+        Uncert_W.Add(Uncert_W3J)
+
+        Uncert_TT = getHistogram(tfile, "DRC_TT", variable,"_uncert")
+
+        Uncert_ZLL = getHistogram(tfile, "DRC_ZLL", variable,"_uncert")
+
+        #WW = getHistogram(tfile, "DRC_WW", variable)
+
+        #WZ = getHistogram(tfile, "DRC_WZ", variable)
+
+        #ttZ = getHistogram(tfile, "DRC_ttZ", variable)
+
+        # Data
+        Uncert_data = getHistogram(tfile, "DRC_dataRunB", variable,"_uncert")
+        Uncert_dataRunC = getHistogram(tfile, "DRC_dataRunC", variable,"_uncert")
+        Uncert_data.Add(Uncert_dataRunC)
+
+        # Data-driven QCD estimation
+        Uncert_QCD = getHistogram(tfile, "DRC_dataRunB", variable,"_uncert")
+        Uncert_QCDRunC = getHistogram(tfile, "DRC_dataRunC", variable,"_uncert")
+        Uncert_QCD.Add(Uncert_QCDRunC)
+        for name in ["DRC_W1J", "DRC_W2J", "DRC_W3J", "DRC_TT", "DRC_ZLL"]:
+            ss = getHistogram(tfile, name, variable,"_uncert")
+            Uncert_QCD.Add(ss, -1.0)
+        for i in range(1, Uncert_QCD.GetNbinsX() + 1):
+            if Uncert_QCD.GetBinContent(i) < 0.0:
+                Uncert_QCD.SetBinContent(i, 0.0)
+        Uncert_QCDScaleFactor = 0.9
+        Uncert_QCD.Scale(Uncert_QCDScaleFactor)
+
+
+        Uncert_sum = Uncert_ZLL.Clone()
+        Uncert_sum.Sumw2()
+        Uncert_sum.Add(Uncert_TT)
+        Uncert_sum.Add(Uncert_W)
+        Uncert_sum.Add(Uncert_QCD)
+
+
+
+
+        for i in range(1, Uncert_sum.GetNbinsX() + 1):
+            error = Uncert_sum.GetBinError(i)
+            print(error)
+            sum.SetBinError(i,error)
+        #sum.SetFillColor(0)
+        sum.SetFillStyle(3004)
+        sum.SetLineWidth(1)
+        #sum.SetFillStyle(3365)
+        sum.SetFillColorAlpha(1, 0.35)
+        sum.SetLineColor(2)
+        sum.SetLineStyle(1)
+        sum.SetLineWidth(1)
+        sum.Draw("LE2 SAME")
+
+    if variable == "svd":
+        for i in range(1, sum.GetNbinsX() + 1):
+            error = 0.01*sum.GetBinContent(i)
+            print(error)
+            sum.SetBinError(i,error)
+        #sum.SetFillColor(0)
+        sum.SetFillStyle(3004)
+        sum.SetLineWidth(1)
+        #sum.SetFillStyle(3365)
+        sum.SetFillColorAlpha(1, 0.35)
+        sum.SetLineColor(2)
+        sum.SetLineStyle(1)
+        sum.SetLineWidth(1)
+        sum.Draw("LE2 SAME")
+
+
     name = data.GetTitle()
     if name in labels:
         title = labels[name]
@@ -216,8 +304,8 @@ def main(variable):
     data.Draw("E1P SAME")
 
     # Add legend
-    legend = ROOT.TLegend(0.4, 0.73, 0.90, 0.88)
-    legend.SetNColumns(2)
+    legend = ROOT.TLegend(0.65, 0.73, 0.90, 0.88)
+    legend.SetNColumns(1)
     #legend.AddEntry(WW, "WW", "f")
     #legend.AddEntry(WZ, "WZ", "f")
     #legend.AddEntry(ttZ, "t#bar{t}Z", "f")

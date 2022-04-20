@@ -1,4 +1,4 @@
-//////////////////////////////////////////////////////////////////////
+HQ//////////////////////////////////////////////////////////////////////
 // This template analysis code has been built with fragments from the
 // classes automatically obtained by the TTree MakeClass() method.
 //
@@ -48,6 +48,232 @@ const std::string samplesBasePath = "Datos/";
 //book example histograms for specific variables
 //copy them in the constructor if you add more
 const int nhists = 624;
+
+//uncertainty histograms
+
+TH1F* NF_dataRunB_ppoint_uncert = new TH1F("NF_dataRunB_ppoint_uncert","NF Scalar product displacement and total momentum of secondary vertex",31,-100,100);
+
+TH1F* NF_dataRunC_ppoint_uncert  = new TH1F("NF_dataRunC_ppoint_uncert","NF Scalar product displacement and total momentum of secondary vertex",31,-100,100);
+
+TH1F* NF_ZLL_ppoint_uncert = new TH1F("NF_ZLL_ppoint_uncert","NF Scalar product displacement and total momentum of secondary vertex",31,-100,100);
+
+TH1F* NF_TT_ppoint_uncert = new TH1F("NF_TT_ppoint_uncert","NF Scalar product displacement and total momentum of secondary vertex",31,-100,100);
+
+TH1F* NF_W3J_ppoint_uncert = new TH1F("NF_W3J_ppoint_uncert","NF Scalar product displacement and total momentum of secondary vertex",31,-100,100);
+
+TH1F* NF_W2J_ppoint_uncert = new TH1F("NF_W2J_ppoint_uncert","NF Scalar product displacement and total momentum of secondary vertex",31,-100,100);
+
+TH1F* NF_W1J_ppoint_uncert = new TH1F("NF_W1J_ppoint_uncert","NF Scalar product displacement and total momentum of secondary vertex",31,-100,100);
+
+//TH1F* //NF_TTZ_ppoint_uncert = new TH1F("//NF_TTZ_ppoint_uncert","NF Scalar product displacement and total momentum of secondary vertex",31,-100,100);
+
+//TH1F* //NF_WW_ppoint_uncert = new TH1F("//NF_WW_ppoint_uncert","NF Scalar product displacement and total momentum of secondary vertex",31,-100,100);
+
+//TH1F* //NF_WZ_ppoint_uncert = new TH1F("//NF_WZ_ppoint_uncert","NF Scalar product displacement and total momentum of secondary vertex",31,-100,100);
+
+TH1F* NF_LW200_ppoint_uncert = new TH1F("NF_LW200_ppoint_uncert","NF Scalar product displacement and total momentum of secondary vertex",31,-100,100);
+
+////TH1F* //NF_LW300_ppoint_uncert = new TH1F("//NF_LW300_ppoint_uncert","NF Scalar product displacement and total momentum of secondary vertex",31,-100,100);
+
+//TH1F* NF_LW400_ppoint_uncert = new TH1F("NF_LW400_ppoint_uncert","NF Scalar product displacement and total momentum of secondary vertex",31,-100,100);
+
+//TH1F* NF_LW500_ppoint_uncert = new TH1F("NF_LW500_ppoint_uncert","NF Scalar product displacement and total momentum of secondary vertex",31,-100,100);
+
+TH1F* TF_dataRunB_ppoint_uncert = new TH1F("TF_dataRunB_ppoint_uncert","TF Scalar product displacement and total momentum of secondary vertex",31,-100,100);
+
+TH1F* TF_dataRunC_ppoint_uncert  = new TH1F("TF_dataRunC_ppoint_uncert","TF Scalar product displacement and total momentum of secondary vertex",31,-100,100);
+
+TH1F* TF_ZLL_ppoint_uncert = new TH1F("TF_ZLL_ppoint_uncert","TF Scalar product displacement and total momentum of secondary vertex",31,-100,100);
+
+TH1F* TF_TT_ppoint_uncert = new TH1F("TF_TT_ppoint_uncert","TF Scalar product displacement and total momentum of secondary vertex",31,-100,100);
+
+TH1F* TF_W3J_ppoint_uncert = new TH1F("TF_W3J_ppoint_uncert","TF Scalar product displacement and total momentum of secondary vertex",31,-100,100);
+
+TH1F* TF_W2J_ppoint_uncert = new TH1F("TF_W2J_ppoint_uncert","TF Scalar product displacement and total momentum of secondary vertex",31,-100,100);
+
+TH1F* TF_W1J_ppoint_uncert = new TH1F("TF_W1J_ppoint_uncert","TF Scalar product displacement and total momentum of secondary vertex",31,-100,100);
+
+//TH1F* //TF_TTZ_ppoint_uncert = new TH1F("//TF_TTZ_ppoint_uncert","TF Scalar product displacement and total momentum of secondary vertex",31,-100,100);
+
+//TH1F* //TF_WW_ppoint_uncert = new TH1F("//TF_WW_ppoint_uncert","TF Scalar product displacement and total momentum of secondary vertex",31,-100,100);
+
+//TH1F* //TF_WZ_ppoint_uncert = new TH1F("//TF_WZ_ppoint_uncert","TF Scalar product displacement and total momentum of secondary vertex",31,-100,100);
+
+TH1F* TF_LW200_ppoint_uncert = new TH1F("TF_LW200_ppoint_uncert","TF Scalar product displacement and total momentum of secondary vertex",31,-100,100);
+
+////TH1F* //TF_LW300_ppoint_uncert = new TH1F("//TF_LW300_ppoint_uncert","TF Scalar product displacement and total momentum of secondary vertex",31,-100,100);
+
+//TH1F* TF_LW400_ppoint_uncert = new TH1F("TF_LW400_ppoint_uncert","TF Scalar product displacement and total momentum of secondary vertex",31,-100,100);
+
+//TH1F* TF_LW500_ppoint_uncert = new TH1F("TF_LW500_ppoint_uncert","TF Scalar product displacement and total momentum of secondary vertex",31,-100,100);
+
+TH1F* TO_dataRunB_ppoint_uncert = new TH1F("TO_dataRunB_ppoint_uncert","TO Scalar product displacement and total momentum of secondary vertex",31,-100,100);
+
+TH1F* TO_dataRunC_ppoint_uncert  = new TH1F("TO_dataRunC_ppoint_uncert","TO Scalar product displacement and total momentum of secondary vertex",31,-100,100);
+
+TH1F* TO_ZLL_ppoint_uncert = new TH1F("TO_ZLL_ppoint_uncert","TO Scalar product displacement and total momentum of secondary vertex",31,-100,100);
+
+TH1F* TO_TT_ppoint_uncert = new TH1F("TO_TT_ppoint_uncert","TO Scalar product displacement and total momentum of secondary vertex",31,-100,100);
+
+TH1F* TO_W3J_ppoint_uncert = new TH1F("TO_W3J_ppoint_uncert","TO Scalar product displacement and total momentum of secondary vertex",31,-100,100);
+
+TH1F* TO_W2J_ppoint_uncert = new TH1F("TO_W2J_ppoint_uncert","TO Scalar product displacement and total momentum of secondary vertex",31,-100,100);
+
+TH1F* TO_W1J_ppoint_uncert = new TH1F("TO_W1J_ppoint_uncert","TO Scalar product displacement and total momentum of secondary vertex",31,-100,100);
+
+//TH1F* //TO_TTZ_ppoint_uncert = new TH1F("//TO_TTZ_ppoint_uncert","TO Scalar product displacement and total momentum of secondary vertex",31,-100,100);
+
+//TH1F* //TO_WW_ppoint_uncert = new TH1F("//TO_WW_ppoint_uncert","TO Scalar product displacement and total momentum of secondary vertex",31,-100,100);
+
+//TH1F* //TO_WZ_ppoint_uncert = new TH1F("//TO_WZ_ppoint_uncert","TO Scalar product displacement and total momentum of secondary vertex",31,-100,100);
+
+TH1F* TO_LW200_ppoint_uncert = new TH1F("TO_LW200_ppoint_uncert","TO Scalar product displacement and total momentum of secondary vertex",31,-100,100);
+
+////TH1F* //TO_LW300_ppoint_uncert = new TH1F("//TO_LW300_ppoint_uncert","TO Scalar product displacement and total momentum of secondary vertex",31,-100,100);
+
+//TH1F* TO_LW400_ppoint_uncert = new TH1F("TO_LW400_ppoint_uncert","TO Scalar product displacement and total momentum of secondary vertex",31,-100,100);
+
+//TH1F* TO_LW500_ppoint_uncert = new TH1F("TO_LW500_ppoint_uncert","TO Scalar product displacement and total momentum of secondary vertex",31,-100,100);
+
+TH1F* HQ_dataRunB_ppoint_uncert = new TH1F("HQ_dataRunB_ppoint_uncert","HQ Scalar product displacement and total momentum of secondary vertex",31,-100,100);
+
+TH1F* HQ_dataRunC_ppoint_uncert  = new TH1F("HQ_dataRunC_ppoint_uncert","HQ Scalar product displacement and total momentum of secondary vertex",31,-100,100);
+
+TH1F* HQ_ZLL_ppoint_uncert = new TH1F("HQ_ZLL_ppoint_uncert","HQ Scalar product displacement and total momentum of secondary vertex",31,-100,100);
+
+TH1F* HQ_TT_ppoint_uncert = new TH1F("HQ_TT_ppoint_uncert","HQ Scalar product displacement and total momentum of secondary vertex",31,-100,100);
+
+TH1F* HQ_W3J_ppoint_uncert = new TH1F("HQ_W3J_ppoint_uncert","HQ Scalar product displacement and total momentum of secondary vertex",31,-100,100);
+
+TH1F* HQ_W2J_ppoint_uncert = new TH1F("HQ_W2J_ppoint_uncert","HQ Scalar product displacement and total momentum of secondary vertex",31,-100,100);
+
+TH1F* HQ_W1J_ppoint_uncert = new TH1F("HQ_W1J_ppoint_uncert","HQ Scalar product displacement and total momentum of secondary vertex",31,-100,100);
+
+//TH1F* //HQ_TTZ_ppoint_uncert = new TH1F("//HQ_TTZ_ppoint_uncert","HQ Scalar product displacement and total momentum of secondary vertex",31,-100,100);
+
+//TH1F* //HQ_WW_ppoint_uncert = new TH1F("//HQ_WW_ppoint_uncert","HQ Scalar product displacement and total momentum of secondary vertex",31,-100,100);
+
+//TH1F* //HQ_WZ_ppoint_uncert = new TH1F("//HQ_WZ_ppoint_uncert","HQ Scalar product displacement and total momentum of secondary vertex",31,-100,100);
+
+TH1F* HQ_LW200_ppoint_uncert = new TH1F("HQ_LW200_ppoint_uncert","HQ Scalar product displacement and total momentum of secondary vertex",31,-100,100);
+
+////TH1F* //HQ_LW300_ppoint_uncert = new TH1F("//HQ_LW300_ppoint_uncert","HQ Scalar product displacement and total momentum of secondary vertex",31,-100,100);
+
+//TH1F* HQ_LW400_ppoint_uncert = new TH1F("HQ_LW400_ppoint_uncert","HQ Scalar product displacement and total momentum of secondary vertex",31,-100,100);
+
+//TH1F* HQ_LW500_ppoint_uncert = new TH1F("HQ_LW500_ppoint_uncert","HQ Scalar product displacement and total momentum of secondary vertex",31,-100,100);
+
+TH1F* JetS_dataRunB_ppoint_uncert = new TH1F("JetS_dataRunB_ppoint_uncert","JetS Scalar product displacement and total momentum of secondary vertex",31,-100,100);
+
+TH1F* JetS_dataRunC_ppoint_uncert  = new TH1F("JetS_dataRunC_ppoint_uncert","JetS Scalar product displacement and total momentum of secondary vertex",31,-100,100);
+
+TH1F* JetS_ZLL_ppoint_uncert = new TH1F("JetS_ZLL_ppoint_uncert","JetS Scalar product displacement and total momentum of secondary vertex",31,-100,100);
+
+TH1F* JetS_TT_ppoint_uncert = new TH1F("JetS_TT_ppoint_uncert","JetS Scalar product displacement and total momentum of secondary vertex",31,-100,100);
+
+TH1F* JetS_W3J_ppoint_uncert = new TH1F("JetS_W3J_ppoint_uncert","JetS Scalar product displacement and total momentum of secondary vertex",31,-100,100);
+
+TH1F* JetS_W2J_ppoint_uncert = new TH1F("JetS_W2J_ppoint_uncert","JetS Scalar product displacement and total momentum of secondary vertex",31,-100,100);
+
+TH1F* JetS_W1J_ppoint_uncert = new TH1F("JetS_W1J_ppoint_uncert","JetS Scalar product displacement and total momentum of secondary vertex",31,-100,100);
+
+//TH1F* //JetS_TTZ_ppoint_uncert = new TH1F("//JetS_TTZ_ppoint_uncert","JetS Scalar product displacement and total momentum of secondary vertex",31,-100,100);
+
+//TH1F* //JetS_WW_ppoint_uncert = new TH1F("//JetS_WW_ppoint_uncert","JetS Scalar product displacement and total momentum of secondary vertex",31,-100,100);
+
+//TH1F* //JetS_WZ_ppoint_uncert = new TH1F("//JetS_WZ_ppoint_uncert","JetS Scalar product displacement and total momentum of secondary vertex",31,-100,100);
+
+TH1F* JetS_LW200_ppoint_uncert = new TH1F("JetS_LW200_ppoint_uncert","JetS Scalar product displacement and total momentum of secondary vertex",31,-100,100);
+
+////TH1F* //JetS_LW300_ppoint_uncert = new TH1F("//JetS_LW300_ppoint_uncert","JetS Scalar product displacement and total momentum of secondary vertex",31,-100,100);
+
+//TH1F* JetS_LW400_ppoint_uncert = new TH1F("JetS_LW400_ppoint_uncert","JetS Scalar product displacement and total momentum of secondary vertex",31,-100,100);
+
+//TH1F* JetS_LW500_ppoint_uncert = new TH1F("JetS_LW500_ppoint_uncert","JetS Scalar product displacement and total momentum of secondary vertex",31,-100,100);
+
+TH1F* DRC_dataRunB_ppoint_uncert = new TH1F("DRC_dataRunB_ppoint_uncert","DRC Scalar product displacement and total momentum of secondary vertex",31,-100,100);
+
+TH1F* DRC_dataRunC_ppoint_uncert  = new TH1F("DRC_dataRunC_ppoint_uncert","DRC Scalar product displacement and total momentum of secondary vertex",31,-100,100);
+
+TH1F* DRC_ZLL_ppoint_uncert = new TH1F("DRC_ZLL_ppoint_uncert","DRC Scalar product displacement and total momentum of secondary vertex",31,-100,100);
+
+TH1F* DRC_TT_ppoint_uncert = new TH1F("DRC_TT_ppoint_uncert","DRC Scalar product displacement and total momentum of secondary vertex",31,-100,100);
+
+TH1F* DRC_W3J_ppoint_uncert = new TH1F("DRC_W3J_ppoint_uncert","DRC Scalar product displacement and total momentum of secondary vertex",31,-100,100);
+
+TH1F* DRC_W2J_ppoint_uncert = new TH1F("DRC_W2J_ppoint_uncert","DRC Scalar product displacement and total momentum of secondary vertex",31,-100,100);
+
+TH1F* DRC_W1J_ppoint_uncert = new TH1F("DRC_W1J_ppoint_uncert","DRC Scalar product displacement and total momentum of secondary vertex",31,-100,100);
+
+//TH1F* //DRC_TTZ_ppoint_uncert = new TH1F("//DRC_TTZ_ppoint_uncert","DRC Scalar product displacement and total momentum of secondary vertex",31,-100,100);
+
+//TH1F* //DRC_WW_ppoint_uncert = new TH1F("//DRC_WW_ppoint_uncert","DRC Scalar product displacement and total momentum of secondary vertex",31,-100,100);
+
+//TH1F* //DRC_WZ_ppoint_uncert = new TH1F("//DRC_WZ_ppoint_uncert","DRC Scalar product displacement and total momentum of secondary vertex",31,-100,100);
+
+TH1F* DRC_LW200_ppoint_uncert = new TH1F("DRC_LW200_ppoint_uncert","DRC Scalar product displacement and total momentum of secondary vertex",31,-100,100);
+
+////TH1F* //DRC_LW300_ppoint_uncert = new TH1F("//DRC_LW300_ppoint_uncert","DRC Scalar product displacement and total momentum of secondary vertex",31,-100,100);
+
+//TH1F* DRC_LW400_ppoint_uncert = new TH1F("DRC_LW400_ppoint_uncert","DRC Scalar product displacement and total momentum of secondary vertex",31,-100,100);
+
+//TH1F* DRC_LW500_ppoint_uncert = new TH1F("DRC_LW500_ppoint_uncert","DRC Scalar product displacement and total momentum of secondary vertex",31,-100,100);
+
+TH1F* SG_dataRunB_ppoint_uncert = new TH1F("SG_dataRunB_ppoint_uncert","SG Scalar product displacement and total momentum of secondary vertex",31,-100,100);
+
+TH1F* SG_dataRunC_ppoint_uncert  = new TH1F("SG_dataRunC_ppoint_uncert","SG Scalar product displacement and total momentum of secondary vertex",31,-100,100);
+
+TH1F* SG_ZLL_ppoint_uncert = new TH1F("SG_ZLL_ppoint_uncert","SG Scalar product displacement and total momentum of secondary vertex",31,-100,100);
+
+TH1F* SG_TT_ppoint_uncert = new TH1F("SG_TT_ppoint_uncert","SG Scalar product displacement and total momentum of secondary vertex",31,-100,100);
+
+TH1F* SG_W3J_ppoint_uncert = new TH1F("SG_W3J_ppoint_uncert","SG Scalar product displacement and total momentum of secondary vertex",31,-100,100);
+
+TH1F* SG_W2J_ppoint_uncert = new TH1F("SG_W2J_ppoint_uncert","SG Scalar product displacement and total momentum of secondary vertex",31,-100,100);
+
+TH1F* SG_W1J_ppoint_uncert = new TH1F("SG_W1J_ppoint_uncert","SG Scalar product displacement and total momentum of secondary vertex",31,-100,100);
+
+//TH1F* //SG_TTZ_ppoint_uncert = new TH1F("//SG_TTZ_ppoint_uncert","SG Scalar product displacement and total momentum of secondary vertex",31,-100,100);
+
+//TH1F* //SG_WW_ppoint_uncert = new TH1F("//SG_WW_ppoint_uncert","SG Scalar product displacement and total momentum of secondary vertex",31,-100,100);
+
+//TH1F* //SG_WZ_ppoint_uncert = new TH1F("//SG_WZ_ppoint_uncert","SG Scalar product displacement and total momentum of secondary vertex",31,-100,100);
+
+TH1F* SG_LW200_ppoint_uncert = new TH1F("SG_LW200_ppoint_uncert","SG Scalar product displacement and total momentum of secondary vertex",31,-100,100);
+
+////TH1F* //SG_LW300_ppoint_uncert = new TH1F("//SG_LW300_ppoint_uncert","SG Scalar product displacement and total momentum of secondary vertex",31,-100,100);
+
+//TH1F* SG_LW400_ppoint_uncert = new TH1F("SG_LW400_ppoint_uncert","SG Scalar product displacement and total momentum of secondary vertex",31,-100,100);
+
+//TH1F* SG_LW500_ppoint_uncert = new TH1F("SG_LW500_ppoint_uncert","SG Scalar product displacement and total momentum of secondary vertex",31,-100,100);
+
+TH1F* IPP_dataRunB_ppoint_uncert = new TH1F("IPP_dataRunB_ppoint_uncert","IPP Scalar product displacement and total momentum of secondary vertex",31,-100,100);
+
+TH1F* IPP_dataRunC_ppoint_uncert  = new TH1F("IPP_dataRunC_ppoint_uncert","IPP Scalar product displacement and total momentum of secondary vertex",31,-100,100);
+
+TH1F* IPP_ZLL_ppoint_uncert = new TH1F("IPP_ZLL_ppoint_uncert","IPP Scalar product displacement and total momentum of secondary vertex",31,-100,100);
+
+TH1F* IPP_TT_ppoint_uncert = new TH1F("IPP_TT_ppoint_uncert","IPP Scalar product displacement and total momentum of secondary vertex",31,-100,100);
+
+TH1F* IPP_W3J_ppoint_uncert = new TH1F("IPP_W3J_ppoint_uncert","IPP Scalar product displacement and total momentum of secondary vertex",31,-100,100);
+
+TH1F* IPP_W2J_ppoint_uncert = new TH1F("IPP_W2J_ppoint_uncert","IPP Scalar product displacement and total momentum of secondary vertex",31,-100,100);
+
+TH1F* IPP_W1J_ppoint_uncert = new TH1F("IPP_W1J_ppoint_uncert","IPP Scalar product displacement and total momentum of secondary vertex",31,-100,100);
+
+//TH1F* //IPP_TTZ_ppoint_uncert = new TH1F("//IPP_TTZ_ppoint_uncert","IPP Scalar product displacement and total momentum of secondary vertex",31,-100,100);
+
+//TH1F* //IPP_WW_ppoint_uncert = new TH1F("//IPP_WW_ppoint_uncert","IPP Scalar product displacement and total momentum of secondary vertex",31,-100,100);
+
+//TH1F* //IPP_WZ_ppoint_uncert = new TH1F("//IPP_WZ_ppoint_uncert","IPP Scalar product displacement and total momentum of secondary vertex",31,-100,100);
+
+TH1F* IPP_LW200_ppoint_uncert = new TH1F("IPP_LW200_ppoint_uncert","IPP Scalar product displacement and total momentum of secondary vertex",31,-100,100);
+
+////TH1F* //IPP_LW300_ppoint_uncert = new TH1F("//IPP_LW300_ppoint_uncert","IPP Scalar product displacement and total momentum of secondary vertex",31,-100,100);
+
+//TH1F* IPP_LW400_ppoint_uncert = new TH1F("IPP_LW400_ppoint_uncert","IPP Scalar product displacement and total momentum of secondary vertex",31,-100,100);
+
+//TH1F* IPP_LW500_ppoint_uncert = new TH1F("IPP_LW500_ppoint_uncert","IPP Scalar product displacement and total momentum of secondary vertex",31,-100,100);
 
 //Histograms for signal region no Filter
 
@@ -9371,6 +9597,7 @@ public :
   //array to keep histograms to be written and easily loop over them
   //TH1F            *hists[nhists];
   std::vector<TH1F*> hists;
+  std::vector<TH1F*> Uhists;
 
   // Declaration of example leaf types
   Int_t           run;
@@ -9552,6 +9779,78 @@ EventLoopAnalysisTemplate::EventLoopAnalysisTemplate(TString thefile, TString th
   labeltag = thelabel;
   theweight = sampleweight;
 
+  //Load histograms for uncertainty
+  Uhists.push_back(NF_dataRunB_ppoint_uncert);
+  Uhists.push_back(NF_dataRunC_ppoint_uncert);
+  Uhists.push_back(NF_ZLL_ppoint_uncert);
+  Uhists.push_back(NF_TT_ppoint_uncert);
+  Uhists.push_back(NF_W3J_ppoint_uncert);
+  Uhists.push_back(NF_W2J_ppoint_uncert);
+  Uhists.push_back(NF_W1J_ppoint_uncert);
+  Uhists.push_back(NF_LW200_ppoint_uncert);
+
+  Uhists.push_back(TF_dataRunB_ppoint_uncert);
+  Uhists.push_back(TF_dataRunC_ppoint_uncert);
+  Uhists.push_back(TF_ZLL_ppoint_uncert);
+  Uhists.push_back(TF_TT_ppoint_uncert);
+  Uhists.push_back(TF_W3J_ppoint_uncert);
+  Uhists.push_back(TF_W2J_ppoint_uncert);
+  Uhists.push_back(TF_W1J_ppoint_uncert);
+  Uhists.push_back(TF_LW200_ppoint_uncert);
+
+  Uhists.push_back(TO_dataRunB_ppoint_uncert);
+  Uhists.push_back(TO_dataRunC_ppoint_uncert);
+  Uhists.push_back(TO_ZLL_ppoint_uncert);
+  Uhists.push_back(TO_TT_ppoint_uncert);
+  Uhists.push_back(TO_W3J_ppoint_uncert);
+  Uhists.push_back(TO_W2J_ppoint_uncert);
+  Uhists.push_back(TO_W1J_ppoint_uncert);
+  Uhists.push_back(TO_LW200_ppoint_uncert);
+
+  Uhists.push_back(HQ_dataRunB_ppoint_uncert);
+  Uhists.push_back(HQ_dataRunC_ppoint_uncert);
+  Uhists.push_back(HQ_ZLL_ppoint_uncert);
+  Uhists.push_back(HQ_TT_ppoint_uncert);
+  Uhists.push_back(HQ_W3J_ppoint_uncert);
+  Uhists.push_back(HQ_W2J_ppoint_uncert);
+  Uhists.push_back(HQ_W1J_ppoint_uncert);
+  Uhists.push_back(HQ_LW200_ppoint_uncert);
+
+  Uhists.push_back(JetS_dataRunB_ppoint_uncert);
+  Uhists.push_back(JetS_dataRunC_ppoint_uncert);
+  Uhists.push_back(JetS_ZLL_ppoint_uncert);
+  Uhists.push_back(JetS_TT_ppoint_uncert);
+  Uhists.push_back(JetS_W3J_ppoint_uncert);
+  Uhists.push_back(JetS_W2J_ppoint_uncert);
+  Uhists.push_back(JetS_W1J_ppoint_uncert);
+  Uhists.push_back(JetS_LW200_ppoint_uncert);
+
+  Uhists.push_back(DRC_dataRunB_ppoint_uncert);
+  Uhists.push_back(DRC_dataRunC_ppoint_uncert);
+  Uhists.push_back(DRC_ZLL_ppoint_uncert);
+  Uhists.push_back(DRC_TT_ppoint_uncert);
+  Uhists.push_back(DRC_W3J_ppoint_uncert);
+  Uhists.push_back(DRC_W2J_ppoint_uncert);
+  Uhists.push_back(DRC_W1J_ppoint_uncert);
+  Uhists.push_back(DRC_LW200_ppoint_uncert);
+
+  Uhists.push_back(SG_dataRunB_ppoint_uncert);
+  Uhists.push_back(SG_dataRunC_ppoint_uncert);
+  Uhists.push_back(SG_ZLL_ppoint_uncert);
+  Uhists.push_back(SG_TT_ppoint_uncert);
+  Uhists.push_back(SG_W3J_ppoint_uncert);
+  Uhists.push_back(SG_W2J_ppoint_uncert);
+  Uhists.push_back(SG_W1J_ppoint_uncert);
+  Uhists.push_back(SG_LW200_ppoint_uncert);
+
+  Uhists.push_back(IPP_dataRunB_ppoint_uncert);
+  Uhists.push_back(IPP_dataRunC_ppoint_uncert);
+  Uhists.push_back(IPP_ZLL_ppoint_uncert);
+  Uhists.push_back(IPP_TT_ppoint_uncert);
+  Uhists.push_back(IPP_W3J_ppoint_uncert);
+  Uhists.push_back(IPP_W2J_ppoint_uncert);
+  Uhists.push_back(IPP_W1J_ppoint_uncert);
+  Uhists.push_back(IPP_LW200_ppoint_uncert);
 
   //Load histograms for signal region
   hists.push_back(NF_dataRunB_npv);
@@ -14720,6 +15019,19 @@ void EventLoopAnalysisTemplate::histograms(string cut) {
             Vy=Esecvec_posy->at(i)-Bsp_y->at(0);
             if(sqrt(Vx*Vx+Vy*Vy)>0.02){
               ppoint = Vx*Esecvec_px->at(i) + Vy*Esecvec_py->at(i);
+              //////////////save uncertainty value///////////////////////
+              for (size_t n=0;n<hists.size();++n){
+                TString Uhistname = TString(Uhists.at(n)->GetName());
+                TString Uthecut = Uhistname(0,Uhistname.First("_"));
+                Uhistname = Uhistname(Uhistname.First("_")+1,Uhistname.Sizeof());
+                TString Uthelabel = Uhistname(0,Uhistname.First("_"));
+                if( Uthecut == cut && Uthelabel == labeltag ){
+                  float uncert= sqrt(0.01*0.01 + 0.01*0.01);
+                  Uhists.at(n)->Fill( sqrt(Vx*Vx*0.0001+Esecvec_px->at(i)*Esecvec_px->at(i)*0.0001
+                                      +Vy*Vy*0.0001+Esecvec_py->at(i)*Esecvec_py->at(i)*0.0001) );
+                }
+              }
+              //////////////// end uncertainty save//////////////////
               if(thelabel(0,2)=="LW"){
                 hists.at(j)->Fill(-1*ppoint, theweight);
               }
@@ -15108,6 +15420,127 @@ int main()
   }
 
   TFile* hfile = new TFile("Histograms/histograms.root","RECREATE");
+
+  //Save uncertainty histograms
+  NF_dataRunB_ppoint_uncert->Write();
+  NF_dataRunC_ppoint_uncert->Write();
+  NF_ZLL_ppoint_uncert->Write();
+  NF_TT_ppoint_uncert->Write();
+  NF_W3J_ppoint_uncert->Write();
+  NF_W2J_ppoint_uncert->Write();
+  NF_W1J_ppoint_uncert->Write();
+  //NF_WW_ppoint_uncert->Write();
+  //NF_WZ_ppoint_uncert->Write();
+  //NF_TTZ_ppoint_uncert->Write();
+  NF_LW200_ppoint_uncert->Write();
+  //NF_LW300_ppoint_uncert->Write();
+  //NF_LW400_ppoint_uncert->Write();
+  //NF_LW500_ppoint_uncert->Write();
+
+  TF_dataRunB_ppoint_uncert->Write();
+  TF_dataRunC_ppoint_uncert->Write();
+  TF_ZLL_ppoint_uncert->Write();
+  TF_TT_ppoint_uncert->Write();
+  TF_W3J_ppoint_uncert->Write();
+  TF_W2J_ppoint_uncert->Write();
+  TF_W1J_ppoint_uncert->Write();
+  //TF_WW_ppoint_uncert->Write();
+  //TF_WZ_ppoint_uncert->Write();
+  //TF_TTZ_ppoint_uncert->Write();
+  TF_LW200_ppoint_uncert->Write();
+  //TF_LW300_ppoint_uncert->Write();
+  //TF_LW400_ppoint_uncert->Write();
+  //TF_LW500_ppoint_uncert->Write();
+
+  TO_dataRunB_ppoint_uncert->Write();
+  TO_dataRunC_ppoint_uncert->Write();
+  TO_ZLL_ppoint_uncert->Write();
+  TO_TT_ppoint_uncert->Write();
+  TO_W3J_ppoint_uncert->Write();
+  TO_W2J_ppoint_uncert->Write();
+  TO_W1J_ppoint_uncert->Write();
+  //TO_WW_ppoint_uncert->Write();
+  //TO_WZ_ppoint_uncert->Write();
+  //TO_TTZ_ppoint_uncert->Write();
+  TO_LW200_ppoint_uncert->Write();
+  //TO_LW300_ppoint_uncert->Write();
+  //TO_LW400_ppoint_uncert->Write();
+  //TO_LW500_ppoint_uncert->Write();
+
+  HQ_dataRunB_ppoint_uncert->Write();
+  HQ_dataRunC_ppoint_uncert->Write();
+  HQ_ZLL_ppoint_uncert->Write();
+  HQ_TT_ppoint_uncert->Write();
+  HQ_W3J_ppoint_uncert->Write();
+  HQ_W2J_ppoint_uncert->Write();
+  HQ_W1J_ppoint_uncert->Write();
+  //HQ_WW_ppoint_uncert->Write();
+  //HQ_WZ_ppoint_uncert->Write();
+  //HQ_TTZ_ppoint_uncert->Write();
+  HQ_LW200_ppoint_uncert->Write();
+  //HQ_LW300_ppoint_uncert->Write();
+  //HQ_LW400_ppoint_uncert->Write();
+  //HQ_LW500_ppoint_uncert->Write();
+
+  SG_dataRunB_ppoint_uncert->Write();
+  SG_dataRunC_ppoint_uncert->Write();
+  SG_ZLL_ppoint_uncert->Write();
+  SG_TT_ppoint_uncert->Write();
+  SG_W3J_ppoint_uncert->Write();
+  SG_W2J_ppoint_uncert->Write();
+  SG_W1J_ppoint_uncert->Write();
+  //SG_WW_ppoint_uncert->Write();
+  //SG_WZ_ppoint_uncert->Write();
+  //SG_TTZ_ppoint_uncert->Write();
+  SG_LW200_ppoint_uncert->Write();
+  //SG_LW300_ppoint_uncert->Write();
+  //SG_LW400_ppoint_uncert->Write();
+  //SG_LW500_ppoint_uncert->Write();
+
+  JetS_dataRunB_ppoint_uncert->Write();
+  JetS_dataRunC_ppoint_uncert->Write();
+  JetS_ZLL_ppoint_uncert->Write();
+  JetS_TT_ppoint_uncert->Write();
+  JetS_W3J_ppoint_uncert->Write();
+  JetS_W2J_ppoint_uncert->Write();
+  JetS_W1J_ppoint_uncert->Write();
+  //JetS_WW_ppoint_uncert->Write();
+  //JetS_WZ_ppoint_uncert->Write();
+  //JetS_TTZ_ppoint_uncert->Write();
+  JetS_LW200_ppoint_uncert->Write();
+  //JetS_LW300_ppoint_uncert->Write();
+  //JetS_LW400_ppoint_uncert->Write();
+  //JetS_LW500_ppoint_uncert->Write();
+
+  DRC_dataRunB_ppoint_uncert->Write();
+  DRC_dataRunC_ppoint_uncert->Write();
+  DRC_ZLL_ppoint_uncert->Write();
+  DRC_TT_ppoint_uncert->Write();
+  DRC_W3J_ppoint_uncert->Write();
+  DRC_W2J_ppoint_uncert->Write();
+  DRC_W1J_ppoint_uncert->Write();
+  //DRC_WW_ppoint_uncert->Write();
+  //DRC_WZ_ppoint_uncert->Write();
+  //DRC_TTZ_ppoint_uncert->Write();
+  DRC_LW200_ppoint_uncert->Write();
+  //DRC_LW300_ppoint_uncert->Write();
+  //DRC_LW400_ppoint_uncert->Write();
+  //DRC_LW500_ppoint_uncert->Write();
+
+  IPP_dataRunB_ppoint_uncert->Write();
+  IPP_dataRunC_ppoint_uncert->Write();
+  IPP_ZLL_ppoint_uncert->Write();
+  IPP_TT_ppoint_uncert->Write();
+  IPP_W3J_ppoint_uncert->Write();
+  IPP_W2J_ppoint_uncert->Write();
+  IPP_W1J_ppoint_uncert->Write();
+  //IPP_WW_ppoint_uncert->Write();
+  //IPP_WZ_ppoint_uncert->Write();
+  //IPP_TTZ_ppoint_uncert->Write();
+  IPP_LW200_ppoint_uncert->Write();
+  //IPP_LW300_ppoint_uncert->Write();
+  //IPP_LW400_ppoint_uncert->Write();
+  //IPP_LW500_ppoint_uncert->Write();
 
   //Save signal region histos
   NF_dataRunB_ppoint->Write();
