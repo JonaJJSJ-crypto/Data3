@@ -9,14 +9,14 @@ ROOT.gROOT.SetBatch(True)
 
 # Declare a human-readable label for each variable
 labels = {
-        "ppoint": "SV Paralelity: displacement & Total momentum",
-        "ppointS": "SV Paralelity sign: displacement & Total momentum",
+        "ppoint": "SV Propagation Paralelity [GeV*mm]",
+        "ppointS": "SV Propagation Paralelity sign",
         "npv": "Number of primary vertices",
         #"JetMass": "DiJets invariant mass",
         #"LWMass": "LW invariant mass",
-        "nsv": "Number od secondary vertices",
-        "svd": "Secondary vertex displacement",
-        "BSd": "Secondary vertex Distance to Bsp",
+        "nsv": "number of secondary vertices",
+        "svd": "Secondary vertex displacement [mm]",
+        "BSd": "Secondary vertex Distance to Bsp [mm]",
         "BSdChi2norm": "Secondary vertex Distance/Norm to Bsp",}
 '''
         "Elept": "Electron Tranversal momentum",
@@ -159,7 +159,7 @@ def main(variable):
     for i in range(1, QCD.GetNbinsX() + 1):
         if QCD.GetBinContent(i) < 0.0:
             QCD.SetBinContent(i, 0.0)
-    QCDScaleFactor = 0.90
+    QCDScaleFactor = 0.80
     QCD.Scale(QCDScaleFactor)
 
     # Draw histograms
@@ -168,6 +168,7 @@ def main(variable):
     #ggH.SetLineColor(colors["ggH"])
     LW200.SetMarkerStyle(20)
     LW200.SetLineColor(colors["LW200"])
+    LW200.SetLineStyle(5)
 
     #scale_ggH = 10.0
     #ggH.Scale(scale_ggH)
@@ -245,7 +246,7 @@ def main(variable):
         for i in range(1, Uncert_QCD.GetNbinsX() + 1):
             if Uncert_QCD.GetBinContent(i) < 0.0:
                 Uncert_QCD.SetBinContent(i, 0.0)
-        Uncert_QCDScaleFactor = 0.9
+        Uncert_QCDScaleFactor = 0.8
         Uncert_QCD.Scale(Uncert_QCDScaleFactor)
 
 
@@ -289,12 +290,9 @@ def main(variable):
 
 
     name = data.GetTitle()
-    if name in labels:
-        title = labels[name]
-    else:
-        title = name
+    title = "TO "+labels.get(variable)
     stack.GetXaxis().SetTitle(title)
-    stack.GetYaxis().SetTitle("N_{Events}")
+    stack.GetYaxis().SetTitle("N_{Events}per10GeV*mm")
     stack.SetMaximum(max(stack.GetMaximum(), data.GetMaximum()) * 1.4)
     stack.SetMinimum(1.0)
 

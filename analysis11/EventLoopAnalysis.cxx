@@ -51,229 +51,229 @@ const int nhists = 624;
 
 //Uncertainty Histograms
 
-TH1F* NF_dataRunB_ppoint_uncert = new TH1F("NF_dataRunB_ppoint_uncert","NF Scalar product displacement and total momentum of secondary vertex",30,-100,100);
+TH1F* NF_dataRunB_ppoint_uncert = new TH1F("NF_dataRunB_ppoint_uncert","NF Scalar product displacement and total momentum of secondary vertex",30,-150,150);
 
-TH1F* NF_dataRunC_ppoint_uncert  = new TH1F("NF_dataRunC_ppoint_uncert","NF Scalar product displacement and total momentum of secondary vertex",30,-100,100);
+TH1F* NF_dataRunC_ppoint_uncert  = new TH1F("NF_dataRunC_ppoint_uncert","NF Scalar product displacement and total momentum of secondary vertex",30,-150,150);
 
-TH1F* NF_ZLL_ppoint_uncert = new TH1F("NF_ZLL_ppoint_uncert","NF Scalar product displacement and total momentum of secondary vertex",30,-100,100);
+TH1F* NF_ZLL_ppoint_uncert = new TH1F("NF_ZLL_ppoint_uncert","NF Scalar product displacement and total momentum of secondary vertex",30,-150,150);
 
-TH1F* NF_TT_ppoint_uncert = new TH1F("NF_TT_ppoint_uncert","NF Scalar product displacement and total momentum of secondary vertex",30,-100,100);
+TH1F* NF_TT_ppoint_uncert = new TH1F("NF_TT_ppoint_uncert","NF Scalar product displacement and total momentum of secondary vertex",30,-150,150);
 
-TH1F* NF_W3J_ppoint_uncert = new TH1F("NF_W3J_ppoint_uncert","NF Scalar product displacement and total momentum of secondary vertex",30,-100,100);
+TH1F* NF_W3J_ppoint_uncert = new TH1F("NF_W3J_ppoint_uncert","NF Scalar product displacement and total momentum of secondary vertex",30,-150,150);
 
-TH1F* NF_W2J_ppoint_uncert = new TH1F("NF_W2J_ppoint_uncert","NF Scalar product displacement and total momentum of secondary vertex",30,-100,100);
+TH1F* NF_W2J_ppoint_uncert = new TH1F("NF_W2J_ppoint_uncert","NF Scalar product displacement and total momentum of secondary vertex",30,-150,150);
 
-TH1F* NF_W1J_ppoint_uncert = new TH1F("NF_W1J_ppoint_uncert","NF Scalar product displacement and total momentum of secondary vertex",30,-100,100);
+TH1F* NF_W1J_ppoint_uncert = new TH1F("NF_W1J_ppoint_uncert","NF Scalar product displacement and total momentum of secondary vertex",30,-150,150);
 
-//TH1F* //NF_TTZ_ppoint_uncert = new TH1F("//NF_TTZ_ppoint_uncert","NF Scalar product displacement and total momentum of secondary vertex",30,-100,100);
+//TH1F* //NF_TTZ_ppoint_uncert = new TH1F("//NF_TTZ_ppoint_uncert","NF Scalar product displacement and total momentum of secondary vertex",30,-150,150);
 
-//TH1F* //NF_WW_ppoint_uncert = new TH1F("//NF_WW_ppoint_uncert","NF Scalar product displacement and total momentum of secondary vertex",30,-100,100);
+//TH1F* //NF_WW_ppoint_uncert = new TH1F("//NF_WW_ppoint_uncert","NF Scalar product displacement and total momentum of secondary vertex",30,-150,150);
 
-//TH1F* //NF_WZ_ppoint_uncert = new TH1F("//NF_WZ_ppoint_uncert","NF Scalar product displacement and total momentum of secondary vertex",30,-100,100);
+//TH1F* //NF_WZ_ppoint_uncert = new TH1F("//NF_WZ_ppoint_uncert","NF Scalar product displacement and total momentum of secondary vertex",30,-150,150);
 
-TH1F* NF_LW200_ppoint_uncert = new TH1F("NF_LW200_ppoint_uncert","NF Scalar product displacement and total momentum of secondary vertex",30,-100,100);
+TH1F* NF_LW200_ppoint_uncert = new TH1F("NF_LW200_ppoint_uncert","NF Scalar product displacement and total momentum of secondary vertex",30,-150,150);
 
-////TH1F* //NF_LW300_ppoint_uncert = new TH1F("//NF_LW300_ppoint_uncert","NF Scalar product displacement and total momentum of secondary vertex",30,-100,100);
+////TH1F* //NF_LW300_ppoint_uncert = new TH1F("//NF_LW300_ppoint_uncert","NF Scalar product displacement and total momentum of secondary vertex",30,-150,150);
 
-//TH1F* NF_LW400_ppoint_uncert = new TH1F("NF_LW400_ppoint_uncert","NF Scalar product displacement and total momentum of secondary vertex",30,-100,100);
+//TH1F* NF_LW400_ppoint_uncert = new TH1F("NF_LW400_ppoint_uncert","NF Scalar product displacement and total momentum of secondary vertex",30,-150,150);
 
-//TH1F* NF_LW500_ppoint_uncert = new TH1F("NF_LW500_ppoint_uncert","NF Scalar product displacement and total momentum of secondary vertex",30,-100,100);
+//TH1F* NF_LW500_ppoint_uncert = new TH1F("NF_LW500_ppoint_uncert","NF Scalar product displacement and total momentum of secondary vertex",30,-150,150);
 
-TH1F* TF_dataRunB_ppoint_uncert = new TH1F("TF_dataRunB_ppoint_uncert","TF Scalar product displacement and total momentum of secondary vertex",30,-100,100);
+TH1F* TF_dataRunB_ppoint_uncert = new TH1F("TF_dataRunB_ppoint_uncert","TF Scalar product displacement and total momentum of secondary vertex",30,-150,150);
 
-TH1F* TF_dataRunC_ppoint_uncert  = new TH1F("TF_dataRunC_ppoint_uncert","TF Scalar product displacement and total momentum of secondary vertex",30,-100,100);
+TH1F* TF_dataRunC_ppoint_uncert  = new TH1F("TF_dataRunC_ppoint_uncert","TF Scalar product displacement and total momentum of secondary vertex",30,-150,150);
 
-TH1F* TF_ZLL_ppoint_uncert = new TH1F("TF_ZLL_ppoint_uncert","TF Scalar product displacement and total momentum of secondary vertex",30,-100,100);
+TH1F* TF_ZLL_ppoint_uncert = new TH1F("TF_ZLL_ppoint_uncert","TF Scalar product displacement and total momentum of secondary vertex",30,-150,150);
 
-TH1F* TF_TT_ppoint_uncert = new TH1F("TF_TT_ppoint_uncert","TF Scalar product displacement and total momentum of secondary vertex",30,-100,100);
+TH1F* TF_TT_ppoint_uncert = new TH1F("TF_TT_ppoint_uncert","TF Scalar product displacement and total momentum of secondary vertex",30,-150,150);
 
-TH1F* TF_W3J_ppoint_uncert = new TH1F("TF_W3J_ppoint_uncert","TF Scalar product displacement and total momentum of secondary vertex",30,-100,100);
+TH1F* TF_W3J_ppoint_uncert = new TH1F("TF_W3J_ppoint_uncert","TF Scalar product displacement and total momentum of secondary vertex",30,-150,150);
 
-TH1F* TF_W2J_ppoint_uncert = new TH1F("TF_W2J_ppoint_uncert","TF Scalar product displacement and total momentum of secondary vertex",30,-100,100);
+TH1F* TF_W2J_ppoint_uncert = new TH1F("TF_W2J_ppoint_uncert","TF Scalar product displacement and total momentum of secondary vertex",30,-150,150);
 
-TH1F* TF_W1J_ppoint_uncert = new TH1F("TF_W1J_ppoint_uncert","TF Scalar product displacement and total momentum of secondary vertex",30,-100,100);
+TH1F* TF_W1J_ppoint_uncert = new TH1F("TF_W1J_ppoint_uncert","TF Scalar product displacement and total momentum of secondary vertex",30,-150,150);
 
-//TH1F* //TF_TTZ_ppoint_uncert = new TH1F("//TF_TTZ_ppoint_uncert","TF Scalar product displacement and total momentum of secondary vertex",30,-100,100);
+//TH1F* //TF_TTZ_ppoint_uncert = new TH1F("//TF_TTZ_ppoint_uncert","TF Scalar product displacement and total momentum of secondary vertex",30,-150,150);
 
-//TH1F* //TF_WW_ppoint_uncert = new TH1F("//TF_WW_ppoint_uncert","TF Scalar product displacement and total momentum of secondary vertex",30,-100,100);
+//TH1F* //TF_WW_ppoint_uncert = new TH1F("//TF_WW_ppoint_uncert","TF Scalar product displacement and total momentum of secondary vertex",30,-150,150);
 
-//TH1F* //TF_WZ_ppoint_uncert = new TH1F("//TF_WZ_ppoint_uncert","TF Scalar product displacement and total momentum of secondary vertex",30,-100,100);
+//TH1F* //TF_WZ_ppoint_uncert = new TH1F("//TF_WZ_ppoint_uncert","TF Scalar product displacement and total momentum of secondary vertex",30,-150,150);
 
-TH1F* TF_LW200_ppoint_uncert = new TH1F("TF_LW200_ppoint_uncert","TF Scalar product displacement and total momentum of secondary vertex",30,-100,100);
+TH1F* TF_LW200_ppoint_uncert = new TH1F("TF_LW200_ppoint_uncert","TF Scalar product displacement and total momentum of secondary vertex",30,-150,150);
 
-////TH1F* //TF_LW300_ppoint_uncert = new TH1F("//TF_LW300_ppoint_uncert","TF Scalar product displacement and total momentum of secondary vertex",30,-100,100);
+////TH1F* //TF_LW300_ppoint_uncert = new TH1F("//TF_LW300_ppoint_uncert","TF Scalar product displacement and total momentum of secondary vertex",30,-150,150);
 
-//TH1F* TF_LW400_ppoint_uncert = new TH1F("TF_LW400_ppoint_uncert","TF Scalar product displacement and total momentum of secondary vertex",30,-100,100);
+//TH1F* TF_LW400_ppoint_uncert = new TH1F("TF_LW400_ppoint_uncert","TF Scalar product displacement and total momentum of secondary vertex",30,-150,150);
 
-//TH1F* TF_LW500_ppoint_uncert = new TH1F("TF_LW500_ppoint_uncert","TF Scalar product displacement and total momentum of secondary vertex",30,-100,100);
+//TH1F* TF_LW500_ppoint_uncert = new TH1F("TF_LW500_ppoint_uncert","TF Scalar product displacement and total momentum of secondary vertex",30,-150,150);
 
-TH1F* TO_dataRunB_ppoint_uncert = new TH1F("TO_dataRunB_ppoint_uncert","TO Scalar product displacement and total momentum of secondary vertex",30,-100,100);
+TH1F* TO_dataRunB_ppoint_uncert = new TH1F("TO_dataRunB_ppoint_uncert","TO Scalar product displacement and total momentum of secondary vertex",30,-150,150);
 
-TH1F* TO_dataRunC_ppoint_uncert  = new TH1F("TO_dataRunC_ppoint_uncert","TO Scalar product displacement and total momentum of secondary vertex",30,-100,100);
+TH1F* TO_dataRunC_ppoint_uncert  = new TH1F("TO_dataRunC_ppoint_uncert","TO Scalar product displacement and total momentum of secondary vertex",30,-150,150);
 
-TH1F* TO_ZLL_ppoint_uncert = new TH1F("TO_ZLL_ppoint_uncert","TO Scalar product displacement and total momentum of secondary vertex",30,-100,100);
+TH1F* TO_ZLL_ppoint_uncert = new TH1F("TO_ZLL_ppoint_uncert","TO Scalar product displacement and total momentum of secondary vertex",30,-150,150);
 
-TH1F* TO_TT_ppoint_uncert = new TH1F("TO_TT_ppoint_uncert","TO Scalar product displacement and total momentum of secondary vertex",30,-100,100);
+TH1F* TO_TT_ppoint_uncert = new TH1F("TO_TT_ppoint_uncert","TO Scalar product displacement and total momentum of secondary vertex",30,-150,150);
 
-TH1F* TO_W3J_ppoint_uncert = new TH1F("TO_W3J_ppoint_uncert","TO Scalar product displacement and total momentum of secondary vertex",30,-100,100);
+TH1F* TO_W3J_ppoint_uncert = new TH1F("TO_W3J_ppoint_uncert","TO Scalar product displacement and total momentum of secondary vertex",30,-150,150);
 
-TH1F* TO_W2J_ppoint_uncert = new TH1F("TO_W2J_ppoint_uncert","TO Scalar product displacement and total momentum of secondary vertex",30,-100,100);
+TH1F* TO_W2J_ppoint_uncert = new TH1F("TO_W2J_ppoint_uncert","TO Scalar product displacement and total momentum of secondary vertex",30,-150,150);
 
-TH1F* TO_W1J_ppoint_uncert = new TH1F("TO_W1J_ppoint_uncert","TO Scalar product displacement and total momentum of secondary vertex",30,-100,100);
+TH1F* TO_W1J_ppoint_uncert = new TH1F("TO_W1J_ppoint_uncert","TO Scalar product displacement and total momentum of secondary vertex",30,-150,150);
 
-//TH1F* //TO_TTZ_ppoint_uncert = new TH1F("//TO_TTZ_ppoint_uncert","TO Scalar product displacement and total momentum of secondary vertex",30,-100,100);
+//TH1F* //TO_TTZ_ppoint_uncert = new TH1F("//TO_TTZ_ppoint_uncert","TO Scalar product displacement and total momentum of secondary vertex",30,-150,150);
 
-//TH1F* //TO_WW_ppoint_uncert = new TH1F("//TO_WW_ppoint_uncert","TO Scalar product displacement and total momentum of secondary vertex",30,-100,100);
+//TH1F* //TO_WW_ppoint_uncert = new TH1F("//TO_WW_ppoint_uncert","TO Scalar product displacement and total momentum of secondary vertex",30,-150,150);
 
-//TH1F* //TO_WZ_ppoint_uncert = new TH1F("//TO_WZ_ppoint_uncert","TO Scalar product displacement and total momentum of secondary vertex",30,-100,100);
+//TH1F* //TO_WZ_ppoint_uncert = new TH1F("//TO_WZ_ppoint_uncert","TO Scalar product displacement and total momentum of secondary vertex",30,-150,150);
 
-TH1F* TO_LW200_ppoint_uncert = new TH1F("TO_LW200_ppoint_uncert","TO Scalar product displacement and total momentum of secondary vertex",30,-100,100);
+TH1F* TO_LW200_ppoint_uncert = new TH1F("TO_LW200_ppoint_uncert","TO Scalar product displacement and total momentum of secondary vertex",30,-150,150);
 
-////TH1F* //TO_LW300_ppoint_uncert = new TH1F("//TO_LW300_ppoint_uncert","TO Scalar product displacement and total momentum of secondary vertex",30,-100,100);
+////TH1F* //TO_LW300_ppoint_uncert = new TH1F("//TO_LW300_ppoint_uncert","TO Scalar product displacement and total momentum of secondary vertex",30,-150,150);
 
-//TH1F* TO_LW400_ppoint_uncert = new TH1F("TO_LW400_ppoint_uncert","TO Scalar product displacement and total momentum of secondary vertex",30,-100,100);
+//TH1F* TO_LW400_ppoint_uncert = new TH1F("TO_LW400_ppoint_uncert","TO Scalar product displacement and total momentum of secondary vertex",30,-150,150);
 
-//TH1F* TO_LW500_ppoint_uncert = new TH1F("TO_LW500_ppoint_uncert","TO Scalar product displacement and total momentum of secondary vertex",30,-100,100);
+//TH1F* TO_LW500_ppoint_uncert = new TH1F("TO_LW500_ppoint_uncert","TO Scalar product displacement and total momentum of secondary vertex",30,-150,150);
 
-TH1F* HQ_dataRunB_ppoint_uncert = new TH1F("HQ_dataRunB_ppoint_uncert","HQ Scalar product displacement and total momentum of secondary vertex",30,-100,100);
+TH1F* HQ_dataRunB_ppoint_uncert = new TH1F("HQ_dataRunB_ppoint_uncert","HQ Scalar product displacement and total momentum of secondary vertex",30,-150,150);
 
-TH1F* HQ_dataRunC_ppoint_uncert  = new TH1F("HQ_dataRunC_ppoint_uncert","HQ Scalar product displacement and total momentum of secondary vertex",30,-100,100);
+TH1F* HQ_dataRunC_ppoint_uncert  = new TH1F("HQ_dataRunC_ppoint_uncert","HQ Scalar product displacement and total momentum of secondary vertex",30,-150,150);
 
-TH1F* HQ_ZLL_ppoint_uncert = new TH1F("HQ_ZLL_ppoint_uncert","HQ Scalar product displacement and total momentum of secondary vertex",30,-100,100);
+TH1F* HQ_ZLL_ppoint_uncert = new TH1F("HQ_ZLL_ppoint_uncert","HQ Scalar product displacement and total momentum of secondary vertex",30,-150,150);
 
-TH1F* HQ_TT_ppoint_uncert = new TH1F("HQ_TT_ppoint_uncert","HQ Scalar product displacement and total momentum of secondary vertex",30,-100,100);
+TH1F* HQ_TT_ppoint_uncert = new TH1F("HQ_TT_ppoint_uncert","HQ Scalar product displacement and total momentum of secondary vertex",30,-150,150);
 
-TH1F* HQ_W3J_ppoint_uncert = new TH1F("HQ_W3J_ppoint_uncert","HQ Scalar product displacement and total momentum of secondary vertex",30,-100,100);
+TH1F* HQ_W3J_ppoint_uncert = new TH1F("HQ_W3J_ppoint_uncert","HQ Scalar product displacement and total momentum of secondary vertex",30,-150,150);
 
-TH1F* HQ_W2J_ppoint_uncert = new TH1F("HQ_W2J_ppoint_uncert","HQ Scalar product displacement and total momentum of secondary vertex",30,-100,100);
+TH1F* HQ_W2J_ppoint_uncert = new TH1F("HQ_W2J_ppoint_uncert","HQ Scalar product displacement and total momentum of secondary vertex",30,-150,150);
 
-TH1F* HQ_W1J_ppoint_uncert = new TH1F("HQ_W1J_ppoint_uncert","HQ Scalar product displacement and total momentum of secondary vertex",30,-100,100);
+TH1F* HQ_W1J_ppoint_uncert = new TH1F("HQ_W1J_ppoint_uncert","HQ Scalar product displacement and total momentum of secondary vertex",30,-150,150);
 
-//TH1F* //HQ_TTZ_ppoint_uncert = new TH1F("//HQ_TTZ_ppoint_uncert","HQ Scalar product displacement and total momentum of secondary vertex",30,-100,100);
+//TH1F* //HQ_TTZ_ppoint_uncert = new TH1F("//HQ_TTZ_ppoint_uncert","HQ Scalar product displacement and total momentum of secondary vertex",30,-150,150);
 
-//TH1F* //HQ_WW_ppoint_uncert = new TH1F("//HQ_WW_ppoint_uncert","HQ Scalar product displacement and total momentum of secondary vertex",30,-100,100);
+//TH1F* //HQ_WW_ppoint_uncert = new TH1F("//HQ_WW_ppoint_uncert","HQ Scalar product displacement and total momentum of secondary vertex",30,-150,150);
 
-//TH1F* //HQ_WZ_ppoint_uncert = new TH1F("//HQ_WZ_ppoint_uncert","HQ Scalar product displacement and total momentum of secondary vertex",30,-100,100);
+//TH1F* //HQ_WZ_ppoint_uncert = new TH1F("//HQ_WZ_ppoint_uncert","HQ Scalar product displacement and total momentum of secondary vertex",30,-150,150);
 
-TH1F* HQ_LW200_ppoint_uncert = new TH1F("HQ_LW200_ppoint_uncert","HQ Scalar product displacement and total momentum of secondary vertex",30,-100,100);
+TH1F* HQ_LW200_ppoint_uncert = new TH1F("HQ_LW200_ppoint_uncert","HQ Scalar product displacement and total momentum of secondary vertex",30,-150,150);
 
-////TH1F* //HQ_LW300_ppoint_uncert = new TH1F("//HQ_LW300_ppoint_uncert","HQ Scalar product displacement and total momentum of secondary vertex",30,-100,100);
+////TH1F* //HQ_LW300_ppoint_uncert = new TH1F("//HQ_LW300_ppoint_uncert","HQ Scalar product displacement and total momentum of secondary vertex",30,-150,150);
 
-//TH1F* HQ_LW400_ppoint_uncert = new TH1F("HQ_LW400_ppoint_uncert","HQ Scalar product displacement and total momentum of secondary vertex",30,-100,100);
+//TH1F* HQ_LW400_ppoint_uncert = new TH1F("HQ_LW400_ppoint_uncert","HQ Scalar product displacement and total momentum of secondary vertex",30,-150,150);
 
-//TH1F* HQ_LW500_ppoint_uncert = new TH1F("HQ_LW500_ppoint_uncert","HQ Scalar product displacement and total momentum of secondary vertex",30,-100,100);
+//TH1F* HQ_LW500_ppoint_uncert = new TH1F("HQ_LW500_ppoint_uncert","HQ Scalar product displacement and total momentum of secondary vertex",30,-150,150);
 
-TH1F* JetS_dataRunB_ppoint_uncert = new TH1F("JetS_dataRunB_ppoint_uncert","JetS Scalar product displacement and total momentum of secondary vertex",30,-100,100);
+TH1F* JetS_dataRunB_ppoint_uncert = new TH1F("JetS_dataRunB_ppoint_uncert","JetS Scalar product displacement and total momentum of secondary vertex",30,-150,150);
 
-TH1F* JetS_dataRunC_ppoint_uncert  = new TH1F("JetS_dataRunC_ppoint_uncert","JetS Scalar product displacement and total momentum of secondary vertex",30,-100,100);
+TH1F* JetS_dataRunC_ppoint_uncert  = new TH1F("JetS_dataRunC_ppoint_uncert","JetS Scalar product displacement and total momentum of secondary vertex",30,-150,150);
 
-TH1F* JetS_ZLL_ppoint_uncert = new TH1F("JetS_ZLL_ppoint_uncert","JetS Scalar product displacement and total momentum of secondary vertex",30,-100,100);
+TH1F* JetS_ZLL_ppoint_uncert = new TH1F("JetS_ZLL_ppoint_uncert","JetS Scalar product displacement and total momentum of secondary vertex",30,-150,150);
 
-TH1F* JetS_TT_ppoint_uncert = new TH1F("JetS_TT_ppoint_uncert","JetS Scalar product displacement and total momentum of secondary vertex",30,-100,100);
+TH1F* JetS_TT_ppoint_uncert = new TH1F("JetS_TT_ppoint_uncert","JetS Scalar product displacement and total momentum of secondary vertex",30,-150,150);
 
-TH1F* JetS_W3J_ppoint_uncert = new TH1F("JetS_W3J_ppoint_uncert","JetS Scalar product displacement and total momentum of secondary vertex",30,-100,100);
+TH1F* JetS_W3J_ppoint_uncert = new TH1F("JetS_W3J_ppoint_uncert","JetS Scalar product displacement and total momentum of secondary vertex",30,-150,150);
 
-TH1F* JetS_W2J_ppoint_uncert = new TH1F("JetS_W2J_ppoint_uncert","JetS Scalar product displacement and total momentum of secondary vertex",30,-100,100);
+TH1F* JetS_W2J_ppoint_uncert = new TH1F("JetS_W2J_ppoint_uncert","JetS Scalar product displacement and total momentum of secondary vertex",30,-150,150);
 
-TH1F* JetS_W1J_ppoint_uncert = new TH1F("JetS_W1J_ppoint_uncert","JetS Scalar product displacement and total momentum of secondary vertex",30,-100,100);
+TH1F* JetS_W1J_ppoint_uncert = new TH1F("JetS_W1J_ppoint_uncert","JetS Scalar product displacement and total momentum of secondary vertex",30,-150,150);
 
-//TH1F* //JetS_TTZ_ppoint_uncert = new TH1F("//JetS_TTZ_ppoint_uncert","JetS Scalar product displacement and total momentum of secondary vertex",30,-100,100);
+//TH1F* //JetS_TTZ_ppoint_uncert = new TH1F("//JetS_TTZ_ppoint_uncert","JetS Scalar product displacement and total momentum of secondary vertex",30,-150,150);
 
-//TH1F* //JetS_WW_ppoint_uncert = new TH1F("//JetS_WW_ppoint_uncert","JetS Scalar product displacement and total momentum of secondary vertex",30,-100,100);
+//TH1F* //JetS_WW_ppoint_uncert = new TH1F("//JetS_WW_ppoint_uncert","JetS Scalar product displacement and total momentum of secondary vertex",30,-150,150);
 
-//TH1F* //JetS_WZ_ppoint_uncert = new TH1F("//JetS_WZ_ppoint_uncert","JetS Scalar product displacement and total momentum of secondary vertex",30,-100,100);
+//TH1F* //JetS_WZ_ppoint_uncert = new TH1F("//JetS_WZ_ppoint_uncert","JetS Scalar product displacement and total momentum of secondary vertex",30,-150,150);
 
-TH1F* JetS_LW200_ppoint_uncert = new TH1F("JetS_LW200_ppoint_uncert","JetS Scalar product displacement and total momentum of secondary vertex",30,-100,100);
+TH1F* JetS_LW200_ppoint_uncert = new TH1F("JetS_LW200_ppoint_uncert","JetS Scalar product displacement and total momentum of secondary vertex",30,-150,150);
 
-////TH1F* //JetS_LW300_ppoint_uncert = new TH1F("//JetS_LW300_ppoint_uncert","JetS Scalar product displacement and total momentum of secondary vertex",30,-100,100);
+////TH1F* //JetS_LW300_ppoint_uncert = new TH1F("//JetS_LW300_ppoint_uncert","JetS Scalar product displacement and total momentum of secondary vertex",30,-150,150);
 
-//TH1F* JetS_LW400_ppoint_uncert = new TH1F("JetS_LW400_ppoint_uncert","JetS Scalar product displacement and total momentum of secondary vertex",30,-100,100);
+//TH1F* JetS_LW400_ppoint_uncert = new TH1F("JetS_LW400_ppoint_uncert","JetS Scalar product displacement and total momentum of secondary vertex",30,-150,150);
 
-//TH1F* JetS_LW500_ppoint_uncert = new TH1F("JetS_LW500_ppoint_uncert","JetS Scalar product displacement and total momentum of secondary vertex",30,-100,100);
+//TH1F* JetS_LW500_ppoint_uncert = new TH1F("JetS_LW500_ppoint_uncert","JetS Scalar product displacement and total momentum of secondary vertex",30,-150,150);
 
-TH1F* DRC_dataRunB_ppoint_uncert = new TH1F("DRC_dataRunB_ppoint_uncert","DRC Scalar product displacement and total momentum of secondary vertex",30,-100,100);
+TH1F* DRC_dataRunB_ppoint_uncert = new TH1F("DRC_dataRunB_ppoint_uncert","DRC Scalar product displacement and total momentum of secondary vertex",30,-150,150);
 
-TH1F* DRC_dataRunC_ppoint_uncert  = new TH1F("DRC_dataRunC_ppoint_uncert","DRC Scalar product displacement and total momentum of secondary vertex",30,-100,100);
+TH1F* DRC_dataRunC_ppoint_uncert  = new TH1F("DRC_dataRunC_ppoint_uncert","DRC Scalar product displacement and total momentum of secondary vertex",30,-150,150);
 
-TH1F* DRC_ZLL_ppoint_uncert = new TH1F("DRC_ZLL_ppoint_uncert","DRC Scalar product displacement and total momentum of secondary vertex",30,-100,100);
+TH1F* DRC_ZLL_ppoint_uncert = new TH1F("DRC_ZLL_ppoint_uncert","DRC Scalar product displacement and total momentum of secondary vertex",30,-150,150);
 
-TH1F* DRC_TT_ppoint_uncert = new TH1F("DRC_TT_ppoint_uncert","DRC Scalar product displacement and total momentum of secondary vertex",30,-100,100);
+TH1F* DRC_TT_ppoint_uncert = new TH1F("DRC_TT_ppoint_uncert","DRC Scalar product displacement and total momentum of secondary vertex",30,-150,150);
 
-TH1F* DRC_W3J_ppoint_uncert = new TH1F("DRC_W3J_ppoint_uncert","DRC Scalar product displacement and total momentum of secondary vertex",30,-100,100);
+TH1F* DRC_W3J_ppoint_uncert = new TH1F("DRC_W3J_ppoint_uncert","DRC Scalar product displacement and total momentum of secondary vertex",30,-150,150);
 
-TH1F* DRC_W2J_ppoint_uncert = new TH1F("DRC_W2J_ppoint_uncert","DRC Scalar product displacement and total momentum of secondary vertex",30,-100,100);
+TH1F* DRC_W2J_ppoint_uncert = new TH1F("DRC_W2J_ppoint_uncert","DRC Scalar product displacement and total momentum of secondary vertex",30,-150,150);
 
-TH1F* DRC_W1J_ppoint_uncert = new TH1F("DRC_W1J_ppoint_uncert","DRC Scalar product displacement and total momentum of secondary vertex",30,-100,100);
+TH1F* DRC_W1J_ppoint_uncert = new TH1F("DRC_W1J_ppoint_uncert","DRC Scalar product displacement and total momentum of secondary vertex",30,-150,150);
 
-//TH1F* //DRC_TTZ_ppoint_uncert = new TH1F("//DRC_TTZ_ppoint_uncert","DRC Scalar product displacement and total momentum of secondary vertex",30,-100,100);
+//TH1F* //DRC_TTZ_ppoint_uncert = new TH1F("//DRC_TTZ_ppoint_uncert","DRC Scalar product displacement and total momentum of secondary vertex",30,-150,150);
 
-//TH1F* //DRC_WW_ppoint_uncert = new TH1F("//DRC_WW_ppoint_uncert","DRC Scalar product displacement and total momentum of secondary vertex",30,-100,100);
+//TH1F* //DRC_WW_ppoint_uncert = new TH1F("//DRC_WW_ppoint_uncert","DRC Scalar product displacement and total momentum of secondary vertex",30,-150,150);
 
-//TH1F* //DRC_WZ_ppoint_uncert = new TH1F("//DRC_WZ_ppoint_uncert","DRC Scalar product displacement and total momentum of secondary vertex",30,-100,100);
+//TH1F* //DRC_WZ_ppoint_uncert = new TH1F("//DRC_WZ_ppoint_uncert","DRC Scalar product displacement and total momentum of secondary vertex",30,-150,150);
 
-TH1F* DRC_LW200_ppoint_uncert = new TH1F("DRC_LW200_ppoint_uncert","DRC Scalar product displacement and total momentum of secondary vertex",30,-100,100);
+TH1F* DRC_LW200_ppoint_uncert = new TH1F("DRC_LW200_ppoint_uncert","DRC Scalar product displacement and total momentum of secondary vertex",30,-150,150);
 
-////TH1F* //DRC_LW300_ppoint_uncert = new TH1F("//DRC_LW300_ppoint_uncert","DRC Scalar product displacement and total momentum of secondary vertex",30,-100,100);
+////TH1F* //DRC_LW300_ppoint_uncert = new TH1F("//DRC_LW300_ppoint_uncert","DRC Scalar product displacement and total momentum of secondary vertex",30,-150,150);
 
-//TH1F* DRC_LW400_ppoint_uncert = new TH1F("DRC_LW400_ppoint_uncert","DRC Scalar product displacement and total momentum of secondary vertex",30,-100,100);
+//TH1F* DRC_LW400_ppoint_uncert = new TH1F("DRC_LW400_ppoint_uncert","DRC Scalar product displacement and total momentum of secondary vertex",30,-150,150);
 
-//TH1F* DRC_LW500_ppoint_uncert = new TH1F("DRC_LW500_ppoint_uncert","DRC Scalar product displacement and total momentum of secondary vertex",30,-100,100);
+//TH1F* DRC_LW500_ppoint_uncert = new TH1F("DRC_LW500_ppoint_uncert","DRC Scalar product displacement and total momentum of secondary vertex",30,-150,150);
 
-TH1F* SG_dataRunB_ppoint_uncert = new TH1F("SG_dataRunB_ppoint_uncert","SG Scalar product displacement and total momentum of secondary vertex",30,-100,100);
+TH1F* SG_dataRunB_ppoint_uncert = new TH1F("SG_dataRunB_ppoint_uncert","SG Scalar product displacement and total momentum of secondary vertex",30,-150,150);
 
-TH1F* SG_dataRunC_ppoint_uncert  = new TH1F("SG_dataRunC_ppoint_uncert","SG Scalar product displacement and total momentum of secondary vertex",30,-100,100);
+TH1F* SG_dataRunC_ppoint_uncert  = new TH1F("SG_dataRunC_ppoint_uncert","SG Scalar product displacement and total momentum of secondary vertex",30,-150,150);
 
-TH1F* SG_ZLL_ppoint_uncert = new TH1F("SG_ZLL_ppoint_uncert","SG Scalar product displacement and total momentum of secondary vertex",30,-100,100);
+TH1F* SG_ZLL_ppoint_uncert = new TH1F("SG_ZLL_ppoint_uncert","SG Scalar product displacement and total momentum of secondary vertex",30,-150,150);
 
-TH1F* SG_TT_ppoint_uncert = new TH1F("SG_TT_ppoint_uncert","SG Scalar product displacement and total momentum of secondary vertex",30,-100,100);
+TH1F* SG_TT_ppoint_uncert = new TH1F("SG_TT_ppoint_uncert","SG Scalar product displacement and total momentum of secondary vertex",30,-150,150);
 
-TH1F* SG_W3J_ppoint_uncert = new TH1F("SG_W3J_ppoint_uncert","SG Scalar product displacement and total momentum of secondary vertex",30,-100,100);
+TH1F* SG_W3J_ppoint_uncert = new TH1F("SG_W3J_ppoint_uncert","SG Scalar product displacement and total momentum of secondary vertex",30,-150,150);
 
-TH1F* SG_W2J_ppoint_uncert = new TH1F("SG_W2J_ppoint_uncert","SG Scalar product displacement and total momentum of secondary vertex",30,-100,100);
+TH1F* SG_W2J_ppoint_uncert = new TH1F("SG_W2J_ppoint_uncert","SG Scalar product displacement and total momentum of secondary vertex",30,-150,150);
 
-TH1F* SG_W1J_ppoint_uncert = new TH1F("SG_W1J_ppoint_uncert","SG Scalar product displacement and total momentum of secondary vertex",30,-100,100);
+TH1F* SG_W1J_ppoint_uncert = new TH1F("SG_W1J_ppoint_uncert","SG Scalar product displacement and total momentum of secondary vertex",30,-150,150);
 
-//TH1F* //SG_TTZ_ppoint_uncert = new TH1F("//SG_TTZ_ppoint_uncert","SG Scalar product displacement and total momentum of secondary vertex",30,-100,100);
+//TH1F* //SG_TTZ_ppoint_uncert = new TH1F("//SG_TTZ_ppoint_uncert","SG Scalar product displacement and total momentum of secondary vertex",30,-150,150);
 
-//TH1F* //SG_WW_ppoint_uncert = new TH1F("//SG_WW_ppoint_uncert","SG Scalar product displacement and total momentum of secondary vertex",30,-100,100);
+//TH1F* //SG_WW_ppoint_uncert = new TH1F("//SG_WW_ppoint_uncert","SG Scalar product displacement and total momentum of secondary vertex",30,-150,150);
 
-//TH1F* //SG_WZ_ppoint_uncert = new TH1F("//SG_WZ_ppoint_uncert","SG Scalar product displacement and total momentum of secondary vertex",30,-100,100);
+//TH1F* //SG_WZ_ppoint_uncert = new TH1F("//SG_WZ_ppoint_uncert","SG Scalar product displacement and total momentum of secondary vertex",30,-150,150);
 
-TH1F* SG_LW200_ppoint_uncert = new TH1F("SG_LW200_ppoint_uncert","SG Scalar product displacement and total momentum of secondary vertex",30,-100,100);
+TH1F* SG_LW200_ppoint_uncert = new TH1F("SG_LW200_ppoint_uncert","SG Scalar product displacement and total momentum of secondary vertex",30,-150,150);
 
-////TH1F* //SG_LW300_ppoint_uncert = new TH1F("//SG_LW300_ppoint_uncert","SG Scalar product displacement and total momentum of secondary vertex",30,-100,100);
+////TH1F* //SG_LW300_ppoint_uncert = new TH1F("//SG_LW300_ppoint_uncert","SG Scalar product displacement and total momentum of secondary vertex",30,-150,150);
 
-//TH1F* SG_LW400_ppoint_uncert = new TH1F("SG_LW400_ppoint_uncert","SG Scalar product displacement and total momentum of secondary vertex",30,-100,100);
+//TH1F* SG_LW400_ppoint_uncert = new TH1F("SG_LW400_ppoint_uncert","SG Scalar product displacement and total momentum of secondary vertex",30,-150,150);
 
-//TH1F* SG_LW500_ppoint_uncert = new TH1F("SG_LW500_ppoint_uncert","SG Scalar product displacement and total momentum of secondary vertex",30,-100,100);
+//TH1F* SG_LW500_ppoint_uncert = new TH1F("SG_LW500_ppoint_uncert","SG Scalar product displacement and total momentum of secondary vertex",30,-150,150);
 
-TH1F* IPP_dataRunB_ppoint_uncert = new TH1F("IPP_dataRunB_ppoint_uncert","IPP Scalar product displacement and total momentum of secondary vertex",30,-100,100);
+TH1F* IPP_dataRunB_ppoint_uncert = new TH1F("IPP_dataRunB_ppoint_uncert","IPP Scalar product displacement and total momentum of secondary vertex",30,-150,150);
 
-TH1F* IPP_dataRunC_ppoint_uncert  = new TH1F("IPP_dataRunC_ppoint_uncert","IPP Scalar product displacement and total momentum of secondary vertex",30,-100,100);
+TH1F* IPP_dataRunC_ppoint_uncert  = new TH1F("IPP_dataRunC_ppoint_uncert","IPP Scalar product displacement and total momentum of secondary vertex",30,-150,150);
 
-TH1F* IPP_ZLL_ppoint_uncert = new TH1F("IPP_ZLL_ppoint_uncert","IPP Scalar product displacement and total momentum of secondary vertex",30,-100,100);
+TH1F* IPP_ZLL_ppoint_uncert = new TH1F("IPP_ZLL_ppoint_uncert","IPP Scalar product displacement and total momentum of secondary vertex",30,-150,150);
 
-TH1F* IPP_TT_ppoint_uncert = new TH1F("IPP_TT_ppoint_uncert","IPP Scalar product displacement and total momentum of secondary vertex",30,-100,100);
+TH1F* IPP_TT_ppoint_uncert = new TH1F("IPP_TT_ppoint_uncert","IPP Scalar product displacement and total momentum of secondary vertex",30,-150,150);
 
-TH1F* IPP_W3J_ppoint_uncert = new TH1F("IPP_W3J_ppoint_uncert","IPP Scalar product displacement and total momentum of secondary vertex",30,-100,100);
+TH1F* IPP_W3J_ppoint_uncert = new TH1F("IPP_W3J_ppoint_uncert","IPP Scalar product displacement and total momentum of secondary vertex",30,-150,150);
 
-TH1F* IPP_W2J_ppoint_uncert = new TH1F("IPP_W2J_ppoint_uncert","IPP Scalar product displacement and total momentum of secondary vertex",30,-100,100);
+TH1F* IPP_W2J_ppoint_uncert = new TH1F("IPP_W2J_ppoint_uncert","IPP Scalar product displacement and total momentum of secondary vertex",30,-150,150);
 
-TH1F* IPP_W1J_ppoint_uncert = new TH1F("IPP_W1J_ppoint_uncert","IPP Scalar product displacement and total momentum of secondary vertex",30,-100,100);
+TH1F* IPP_W1J_ppoint_uncert = new TH1F("IPP_W1J_ppoint_uncert","IPP Scalar product displacement and total momentum of secondary vertex",30,-150,150);
 
-//TH1F* //IPP_TTZ_ppoint_uncert = new TH1F("//IPP_TTZ_ppoint_uncert","IPP Scalar product displacement and total momentum of secondary vertex",30,-100,100);
+//TH1F* //IPP_TTZ_ppoint_uncert = new TH1F("//IPP_TTZ_ppoint_uncert","IPP Scalar product displacement and total momentum of secondary vertex",30,-150,150);
 
-//TH1F* //IPP_WW_ppoint_uncert = new TH1F("//IPP_WW_ppoint_uncert","IPP Scalar product displacement and total momentum of secondary vertex",30,-100,100);
+//TH1F* //IPP_WW_ppoint_uncert = new TH1F("//IPP_WW_ppoint_uncert","IPP Scalar product displacement and total momentum of secondary vertex",30,-150,150);
 
-//TH1F* //IPP_WZ_ppoint_uncert = new TH1F("//IPP_WZ_ppoint_uncert","IPP Scalar product displacement and total momentum of secondary vertex",30,-100,100);
+//TH1F* //IPP_WZ_ppoint_uncert = new TH1F("//IPP_WZ_ppoint_uncert","IPP Scalar product displacement and total momentum of secondary vertex",30,-150,150);
 
-TH1F* IPP_LW200_ppoint_uncert = new TH1F("IPP_LW200_ppoint_uncert","IPP Scalar product displacement and total momentum of secondary vertex",30,-100,100);
+TH1F* IPP_LW200_ppoint_uncert = new TH1F("IPP_LW200_ppoint_uncert","IPP Scalar product displacement and total momentum of secondary vertex",30,-150,150);
 
-////TH1F* //IPP_LW300_ppoint_uncert = new TH1F("//IPP_LW300_ppoint_uncert","IPP Scalar product displacement and total momentum of secondary vertex",30,-100,100);
+////TH1F* //IPP_LW300_ppoint_uncert = new TH1F("//IPP_LW300_ppoint_uncert","IPP Scalar product displacement and total momentum of secondary vertex",30,-150,150);
 
-//TH1F* IPP_LW400_ppoint_uncert = new TH1F("IPP_LW400_ppoint_uncert","IPP Scalar product displacement and total momentum of secondary vertex",30,-100,100);
+//TH1F* IPP_LW400_ppoint_uncert = new TH1F("IPP_LW400_ppoint_uncert","IPP Scalar product displacement and total momentum of secondary vertex",30,-150,150);
 
-//TH1F* IPP_LW500_ppoint_uncert = new TH1F("IPP_LW500_ppoint_uncert","IPP Scalar product displacement and total momentum of secondary vertex",30,-100,100);
+//TH1F* IPP_LW500_ppoint_uncert = new TH1F("IPP_LW500_ppoint_uncert","IPP Scalar product displacement and total momentum of secondary vertex",30,-150,150);
 
 //Histograms for signal region no Filter
 
@@ -305,33 +305,33 @@ TH1F* NF_LW200_ppointS = new TH1F("NF_LW200_ppointS","NF Scalar product sign dis
 
 //TH1F* NF_LW500_ppointS = new TH1F("NF_LW500_ppointS","NF Scalar product sign displacement and total momentum of secondary vertex",2,0,2);
 
-TH1F* NF_dataRunB_ppoint = new TH1F("NF_dataRunB_ppoint","NF Scalar product displacement and total momentum of secondary vertex",30,-100,100);
+TH1F* NF_dataRunB_ppoint = new TH1F("NF_dataRunB_ppoint","NF Scalar product displacement and total momentum of secondary vertex",30,-150,150);
 
-TH1F* NF_dataRunC_ppoint  = new TH1F("NF_dataRunC_ppoint","NF Scalar product displacement and total momentum of secondary vertex",30,-100,100);
+TH1F* NF_dataRunC_ppoint  = new TH1F("NF_dataRunC_ppoint","NF Scalar product displacement and total momentum of secondary vertex",30,-150,150);
 
-TH1F* NF_ZLL_ppoint = new TH1F("NF_ZLL_ppoint","NF Scalar product displacement and total momentum of secondary vertex",30,-100,100);
+TH1F* NF_ZLL_ppoint = new TH1F("NF_ZLL_ppoint","NF Scalar product displacement and total momentum of secondary vertex",30,-150,150);
 
-TH1F* NF_TT_ppoint = new TH1F("NF_TT_ppoint","NF Scalar product displacement and total momentum of secondary vertex",30,-100,100);
+TH1F* NF_TT_ppoint = new TH1F("NF_TT_ppoint","NF Scalar product displacement and total momentum of secondary vertex",30,-150,150);
 
-TH1F* NF_W3J_ppoint = new TH1F("NF_W3J_ppoint","NF Scalar product displacement and total momentum of secondary vertex",30,-100,100);
+TH1F* NF_W3J_ppoint = new TH1F("NF_W3J_ppoint","NF Scalar product displacement and total momentum of secondary vertex",30,-150,150);
 
-TH1F* NF_W2J_ppoint = new TH1F("NF_W2J_ppoint","NF Scalar product displacement and total momentum of secondary vertex",30,-100,100);
+TH1F* NF_W2J_ppoint = new TH1F("NF_W2J_ppoint","NF Scalar product displacement and total momentum of secondary vertex",30,-150,150);
 
-TH1F* NF_W1J_ppoint = new TH1F("NF_W1J_ppoint","NF Scalar product displacement and total momentum of secondary vertex",30,-100,100);
+TH1F* NF_W1J_ppoint = new TH1F("NF_W1J_ppoint","NF Scalar product displacement and total momentum of secondary vertex",30,-150,150);
 
-//TH1F* //NF_TTZ_ppoint = new TH1F("//NF_TTZ_ppoint","NF Scalar product displacement and total momentum of secondary vertex",30,-100,100);
+//TH1F* //NF_TTZ_ppoint = new TH1F("//NF_TTZ_ppoint","NF Scalar product displacement and total momentum of secondary vertex",30,-150,150);
 
-//TH1F* //NF_WW_ppoint = new TH1F("//NF_WW_ppoint","NF Scalar product displacement and total momentum of secondary vertex",30,-100,100);
+//TH1F* //NF_WW_ppoint = new TH1F("//NF_WW_ppoint","NF Scalar product displacement and total momentum of secondary vertex",30,-150,150);
 
-//TH1F* //NF_WZ_ppoint = new TH1F("//NF_WZ_ppoint","NF Scalar product displacement and total momentum of secondary vertex",30,-100,100);
+//TH1F* //NF_WZ_ppoint = new TH1F("//NF_WZ_ppoint","NF Scalar product displacement and total momentum of secondary vertex",30,-150,150);
 
-TH1F* NF_LW200_ppoint = new TH1F("NF_LW200_ppoint","NF Scalar product displacement and total momentum of secondary vertex",30,-100,100);
+TH1F* NF_LW200_ppoint = new TH1F("NF_LW200_ppoint","NF Scalar product displacement and total momentum of secondary vertex",30,-150,150);
 
-////TH1F* //NF_LW300_ppoint = new TH1F("//NF_LW300_ppoint","NF Scalar product displacement and total momentum of secondary vertex",30,-100,100);
+////TH1F* //NF_LW300_ppoint = new TH1F("//NF_LW300_ppoint","NF Scalar product displacement and total momentum of secondary vertex",30,-150,150);
 
-//TH1F* NF_LW400_ppoint = new TH1F("NF_LW400_ppoint","NF Scalar product displacement and total momentum of secondary vertex",30,-100,100);
+//TH1F* NF_LW400_ppoint = new TH1F("NF_LW400_ppoint","NF Scalar product displacement and total momentum of secondary vertex",30,-150,150);
 
-//TH1F* NF_LW500_ppoint = new TH1F("NF_LW500_ppoint","NF Scalar product displacement and total momentum of secondary vertex",30,-100,100);
+//TH1F* NF_LW500_ppoint = new TH1F("NF_LW500_ppoint","NF Scalar product displacement and total momentum of secondary vertex",30,-150,150);
 
 TH1F* NF_dataRunB_npv = new TH1F("NF_dataRunB_npv","NF Number of primary vertices",25,5,30);
 
@@ -895,33 +895,33 @@ TH1F* NF_LW200_JetJetFDR = new TH1F("NF_LW200_JetJetFDR","NF Jet further Jet Del
 
 
 //////////////////////////////////////Trigg filter
-TH1F* TF_dataRunB_ppoint = new TH1F("TF_dataRunB_ppoint","TF Scalar product displacement and total momentum of secondary vertex",30,-100,100);
+TH1F* TF_dataRunB_ppoint = new TH1F("TF_dataRunB_ppoint","TF Scalar product displacement and total momentum of secondary vertex",30,-150,150);
 
-TH1F* TF_dataRunC_ppoint  = new TH1F("TF_dataRunC_ppoint","TF Scalar product displacement and total momentum of secondary vertex",30,-100,100);
+TH1F* TF_dataRunC_ppoint  = new TH1F("TF_dataRunC_ppoint","TF Scalar product displacement and total momentum of secondary vertex",30,-150,150);
 
-TH1F* TF_ZLL_ppoint = new TH1F("TF_ZLL_ppoint","TF Scalar product displacement and total momentum of secondary vertex",30,-100,100);
+TH1F* TF_ZLL_ppoint = new TH1F("TF_ZLL_ppoint","TF Scalar product displacement and total momentum of secondary vertex",30,-150,150);
 
-TH1F* TF_TT_ppoint = new TH1F("TF_TT_ppoint","TF Scalar product displacement and total momentum of secondary vertex",30,-100,100);
+TH1F* TF_TT_ppoint = new TH1F("TF_TT_ppoint","TF Scalar product displacement and total momentum of secondary vertex",30,-150,150);
 
-TH1F* TF_W3J_ppoint = new TH1F("TF_W3J_ppoint","TF Scalar product displacement and total momentum of secondary vertex",30,-100,100);
+TH1F* TF_W3J_ppoint = new TH1F("TF_W3J_ppoint","TF Scalar product displacement and total momentum of secondary vertex",30,-150,150);
 
-TH1F* TF_W2J_ppoint = new TH1F("TF_W2J_ppoint","TF Scalar product displacement and total momentum of secondary vertex",30,-100,100);
+TH1F* TF_W2J_ppoint = new TH1F("TF_W2J_ppoint","TF Scalar product displacement and total momentum of secondary vertex",30,-150,150);
 
-TH1F* TF_W1J_ppoint = new TH1F("TF_W1J_ppoint","TF Scalar product displacement and total momentum of secondary vertex",30,-100,100);
+TH1F* TF_W1J_ppoint = new TH1F("TF_W1J_ppoint","TF Scalar product displacement and total momentum of secondary vertex",30,-150,150);
 
-//TH1F* //TF_TTZ_ppoint = new TH1F("//TF_TTZ_ppoint","TF Scalar product displacement and total momentum of secondary vertex",30,-100,100);
+//TH1F* //TF_TTZ_ppoint = new TH1F("//TF_TTZ_ppoint","TF Scalar product displacement and total momentum of secondary vertex",30,-150,150);
 
-//TH1F* //TF_WW_ppoint = new TH1F("//TF_WW_ppoint","TF Scalar product displacement and total momentum of secondary vertex",30,-100,100);
+//TH1F* //TF_WW_ppoint = new TH1F("//TF_WW_ppoint","TF Scalar product displacement and total momentum of secondary vertex",30,-150,150);
 
-//TH1F* //TF_WZ_ppoint = new TH1F("//TF_WZ_ppoint","TF Scalar product displacement and total momentum of secondary vertex",30,-100,100);
+//TH1F* //TF_WZ_ppoint = new TH1F("//TF_WZ_ppoint","TF Scalar product displacement and total momentum of secondary vertex",30,-150,150);
 
-TH1F* TF_LW200_ppoint = new TH1F("TF_LW200_ppoint","TF Scalar product displacement and total momentum of secondary vertex",30,-100,100);
+TH1F* TF_LW200_ppoint = new TH1F("TF_LW200_ppoint","TF Scalar product displacement and total momentum of secondary vertex",30,-150,150);
 
-////TH1F* //TF_LW300_ppoint = new TH1F("//TF_LW300_ppoint","TF Scalar product displacement and total momentum of secondary vertex",30,-100,100);
+////TH1F* //TF_LW300_ppoint = new TH1F("//TF_LW300_ppoint","TF Scalar product displacement and total momentum of secondary vertex",30,-150,150);
 
-//TH1F* TF_LW400_ppoint = new TH1F("TF_LW400_ppoint","TF Scalar product displacement and total momentum of secondary vertex",30,-100,100);
+//TH1F* TF_LW400_ppoint = new TH1F("TF_LW400_ppoint","TF Scalar product displacement and total momentum of secondary vertex",30,-150,150);
 
-//TH1F* TF_LW500_ppoint = new TH1F("TF_LW500_ppoint","TF Scalar product displacement and total momentum of secondary vertex",30,-100,100);
+//TH1F* TF_LW500_ppoint = new TH1F("TF_LW500_ppoint","TF Scalar product displacement and total momentum of secondary vertex",30,-150,150);
 
 TH1F* TF_dataRunB_ppointS = new TH1F("TF_dataRunB_ppointS","TF Scalar product sign displacement and total momentum of secondary vertex",2,0,2);
 
@@ -1512,33 +1512,33 @@ TH1F* TF_LW200_JetJetFDR = new TH1F("TF_LW200_JetJetFDR","TF Jet further Jet Del
 //TH1F* TF_LW500_JetJetFDR = new TH1F("TF_LW500_JetJetFDR","TF Jet further Jet DeltaR distance",30,0,5);
 
 //////////////////////////////////////Trigg object////////////////////////////////////////
-TH1F* TO_dataRunB_ppoint = new TH1F("TO_dataRunB_ppoint","TO Scalar product displacement and total momentum of secondary vertex",30,-100,100);
+TH1F* TO_dataRunB_ppoint = new TH1F("TO_dataRunB_ppoint","TO Scalar product displacement and total momentum of secondary vertex",30,-150,150);
 
-TH1F* TO_dataRunC_ppoint  = new TH1F("TO_dataRunC_ppoint","TO Scalar product displacement and total momentum of secondary vertex",30,-100,100);
+TH1F* TO_dataRunC_ppoint  = new TH1F("TO_dataRunC_ppoint","TO Scalar product displacement and total momentum of secondary vertex",30,-150,150);
 
-TH1F* TO_ZLL_ppoint = new TH1F("TO_ZLL_ppoint","TO Scalar product displacement and total momentum of secondary vertex",30,-100,100);
+TH1F* TO_ZLL_ppoint = new TH1F("TO_ZLL_ppoint","TO Scalar product displacement and total momentum of secondary vertex",30,-150,150);
 
-TH1F* TO_TT_ppoint = new TH1F("TO_TT_ppoint","TO Scalar product displacement and total momentum of secondary vertex",30,-100,100);
+TH1F* TO_TT_ppoint = new TH1F("TO_TT_ppoint","TO Scalar product displacement and total momentum of secondary vertex",30,-150,150);
 
-TH1F* TO_W3J_ppoint = new TH1F("TO_W3J_ppoint","TO Scalar product displacement and total momentum of secondary vertex",30,-100,100);
+TH1F* TO_W3J_ppoint = new TH1F("TO_W3J_ppoint","TO Scalar product displacement and total momentum of secondary vertex",30,-150,150);
 
-TH1F* TO_W2J_ppoint = new TH1F("TO_W2J_ppoint","TO Scalar product displacement and total momentum of secondary vertex",30,-100,100);
+TH1F* TO_W2J_ppoint = new TH1F("TO_W2J_ppoint","TO Scalar product displacement and total momentum of secondary vertex",30,-150,150);
 
-TH1F* TO_W1J_ppoint = new TH1F("TO_W1J_ppoint","TO Scalar product displacement and total momentum of secondary vertex",30,-100,100);
+TH1F* TO_W1J_ppoint = new TH1F("TO_W1J_ppoint","TO Scalar product displacement and total momentum of secondary vertex",30,-150,150);
 
-//TH1F* //TO_TTZ_ppoint = new TH1F("//TO_TTZ_ppoint","TO Scalar product displacement and total momentum of secondary vertex",30,-100,100);
+//TH1F* //TO_TTZ_ppoint = new TH1F("//TO_TTZ_ppoint","TO Scalar product displacement and total momentum of secondary vertex",30,-150,150);
 
-//TH1F* //TO_WW_ppoint = new TH1F("//TO_WW_ppoint","TO Scalar product displacement and total momentum of secondary vertex",30,-100,100);
+//TH1F* //TO_WW_ppoint = new TH1F("//TO_WW_ppoint","TO Scalar product displacement and total momentum of secondary vertex",30,-150,150);
 
-//TH1F* //TO_WZ_ppoint = new TH1F("//TO_WZ_ppoint","TO Scalar product displacement and total momentum of secondary vertex",30,-100,100);
+//TH1F* //TO_WZ_ppoint = new TH1F("//TO_WZ_ppoint","TO Scalar product displacement and total momentum of secondary vertex",30,-150,150);
 
-TH1F* TO_LW200_ppoint = new TH1F("TO_LW200_ppoint","TO Scalar product displacement and total momentum of secondary vertex",30,-100,100);
+TH1F* TO_LW200_ppoint = new TH1F("TO_LW200_ppoint","TO Scalar product displacement and total momentum of secondary vertex",30,-150,150);
 
-////TH1F* //TO_LW300_ppoint = new TH1F("//TO_LW300_ppoint","TO Scalar product displacement and total momentum of secondary vertex",30,-100,100);
+////TH1F* //TO_LW300_ppoint = new TH1F("//TO_LW300_ppoint","TO Scalar product displacement and total momentum of secondary vertex",30,-150,150);
 
-//TH1F* TO_LW400_ppoint = new TH1F("TO_LW400_ppoint","TO Scalar product displacement and total momentum of secondary vertex",30,-100,100);
+//TH1F* TO_LW400_ppoint = new TH1F("TO_LW400_ppoint","TO Scalar product displacement and total momentum of secondary vertex",30,-150,150);
 
-//TH1F* TO_LW500_ppoint = new TH1F("TO_LW500_ppoint","TO Scalar product displacement and total momentum of secondary vertex",30,-100,100);
+//TH1F* TO_LW500_ppoint = new TH1F("TO_LW500_ppoint","TO Scalar product displacement and total momentum of secondary vertex",30,-150,150);
 
 TH1F* TO_dataRunB_ppointS = new TH1F("TO_dataRunB_ppointS","TO Scalar product sign displacement and total momentum of secondary vertex",2,0,2);
 
@@ -2130,33 +2130,33 @@ TH1F* TO_LW200_JetJetFDR = new TH1F("TO_LW200_JetJetFDR","TO Jet further Jet Del
 
 
 //////////////////////////////////////High quality////////////////////////////////////////
-TH1F* HQ_dataRunB_ppoint = new TH1F("HQ_dataRunB_ppoint","HQ Scalar product displacement and total momentum of secondary vertex",30,-100,100);
+TH1F* HQ_dataRunB_ppoint = new TH1F("HQ_dataRunB_ppoint","HQ Scalar product displacement and total momentum of secondary vertex",30,-150,150);
 
-TH1F* HQ_dataRunC_ppoint  = new TH1F("HQ_dataRunC_ppoint","HQ Scalar product displacement and total momentum of secondary vertex",30,-100,100);
+TH1F* HQ_dataRunC_ppoint  = new TH1F("HQ_dataRunC_ppoint","HQ Scalar product displacement and total momentum of secondary vertex",30,-150,150);
 
-TH1F* HQ_ZLL_ppoint = new TH1F("HQ_ZLL_ppoint","HQ Scalar product displacement and total momentum of secondary vertex",30,-100,100);
+TH1F* HQ_ZLL_ppoint = new TH1F("HQ_ZLL_ppoint","HQ Scalar product displacement and total momentum of secondary vertex",30,-150,150);
 
-TH1F* HQ_TT_ppoint = new TH1F("HQ_TT_ppoint","HQ Scalar product displacement and total momentum of secondary vertex",30,-100,100);
+TH1F* HQ_TT_ppoint = new TH1F("HQ_TT_ppoint","HQ Scalar product displacement and total momentum of secondary vertex",30,-150,150);
 
-TH1F* HQ_W3J_ppoint = new TH1F("HQ_W3J_ppoint","HQ Scalar product displacement and total momentum of secondary vertex",30,-100,100);
+TH1F* HQ_W3J_ppoint = new TH1F("HQ_W3J_ppoint","HQ Scalar product displacement and total momentum of secondary vertex",30,-150,150);
 
-TH1F* HQ_W2J_ppoint = new TH1F("HQ_W2J_ppoint","HQ Scalar product displacement and total momentum of secondary vertex",30,-100,100);
+TH1F* HQ_W2J_ppoint = new TH1F("HQ_W2J_ppoint","HQ Scalar product displacement and total momentum of secondary vertex",30,-150,150);
 
-TH1F* HQ_W1J_ppoint = new TH1F("HQ_W1J_ppoint","HQ Scalar product displacement and total momentum of secondary vertex",30,-100,100);
+TH1F* HQ_W1J_ppoint = new TH1F("HQ_W1J_ppoint","HQ Scalar product displacement and total momentum of secondary vertex",30,-150,150);
 
-//TH1F* //HQ_TTZ_ppoint = new TH1F("//HQ_TTZ_ppoint","HQ Scalar product displacement and total momentum of secondary vertex",30,-100,100);
+//TH1F* //HQ_TTZ_ppoint = new TH1F("//HQ_TTZ_ppoint","HQ Scalar product displacement and total momentum of secondary vertex",30,-150,150);
 
-//TH1F* //HQ_WW_ppoint = new TH1F("//HQ_WW_ppoint","HQ Scalar product displacement and total momentum of secondary vertex",30,-100,100);
+//TH1F* //HQ_WW_ppoint = new TH1F("//HQ_WW_ppoint","HQ Scalar product displacement and total momentum of secondary vertex",30,-150,150);
 
-//TH1F* //HQ_WZ_ppoint = new TH1F("//HQ_WZ_ppoint","HQ Scalar product displacement and total momentum of secondary vertex",30,-100,100);
+//TH1F* //HQ_WZ_ppoint = new TH1F("//HQ_WZ_ppoint","HQ Scalar product displacement and total momentum of secondary vertex",30,-150,150);
 
-TH1F* HQ_LW200_ppoint = new TH1F("HQ_LW200_ppoint","HQ Scalar product displacement and total momentum of secondary vertex",30,-100,100);
+TH1F* HQ_LW200_ppoint = new TH1F("HQ_LW200_ppoint","HQ Scalar product displacement and total momentum of secondary vertex",30,-150,150);
 
-////TH1F* //HQ_LW300_ppoint = new TH1F("//HQ_LW300_ppoint","HQ Scalar product displacement and total momentum of secondary vertex",30,-100,100);
+////TH1F* //HQ_LW300_ppoint = new TH1F("//HQ_LW300_ppoint","HQ Scalar product displacement and total momentum of secondary vertex",30,-150,150);
 
-//TH1F* HQ_LW400_ppoint = new TH1F("HQ_LW400_ppoint","HQ Scalar product displacement and total momentum of secondary vertex",30,-100,100);
+//TH1F* HQ_LW400_ppoint = new TH1F("HQ_LW400_ppoint","HQ Scalar product displacement and total momentum of secondary vertex",30,-150,150);
 
-//TH1F* HQ_LW500_ppoint = new TH1F("HQ_LW500_ppoint","HQ Scalar product displacement and total momentum of secondary vertex",30,-100,100);
+//TH1F* HQ_LW500_ppoint = new TH1F("HQ_LW500_ppoint","HQ Scalar product displacement and total momentum of secondary vertex",30,-150,150);
 
 TH1F* HQ_dataRunB_ppointS = new TH1F("HQ_dataRunB_ppointS","HQ Scalar product sign displacement and total momentum of secondary vertex",2,0,2);
 
@@ -2747,33 +2747,33 @@ TH1F* HQ_LW200_JetJetFDR = new TH1F("HQ_LW200_JetJetFDR","HQ Jet further Jet Del
 //TH1F* HQ_LW500_JetJetFDR = new TH1F("HQ_LW500_JetJetFDR","HQ Jet further Jet DeltaR distance",30,0,5);
 
 //////////////////////////////////////Signal ////////////////////////////////////////
-TH1F* SG_dataRunB_ppoint = new TH1F("SG_dataRunB_ppoint","SG Scalar product displacement and total momentum of secondary vertex",30,-100,100);
+TH1F* SG_dataRunB_ppoint = new TH1F("SG_dataRunB_ppoint","SG Scalar product displacement and total momentum of secondary vertex",30,-150,150);
 
-TH1F* SG_dataRunC_ppoint  = new TH1F("SG_dataRunC_ppoint","SG Scalar product displacement and total momentum of secondary vertex",30,-100,100);
+TH1F* SG_dataRunC_ppoint  = new TH1F("SG_dataRunC_ppoint","SG Scalar product displacement and total momentum of secondary vertex",30,-150,150);
 
-TH1F* SG_ZLL_ppoint = new TH1F("SG_ZLL_ppoint","SG Scalar product displacement and total momentum of secondary vertex",30,-100,100);
+TH1F* SG_ZLL_ppoint = new TH1F("SG_ZLL_ppoint","SG Scalar product displacement and total momentum of secondary vertex",30,-150,150);
 
-TH1F* SG_TT_ppoint = new TH1F("SG_TT_ppoint","SG Scalar product displacement and total momentum of secondary vertex",30,-100,100);
+TH1F* SG_TT_ppoint = new TH1F("SG_TT_ppoint","SG Scalar product displacement and total momentum of secondary vertex",30,-150,150);
 
-TH1F* SG_W3J_ppoint = new TH1F("SG_W3J_ppoint","SG Scalar product displacement and total momentum of secondary vertex",30,-100,100);
+TH1F* SG_W3J_ppoint = new TH1F("SG_W3J_ppoint","SG Scalar product displacement and total momentum of secondary vertex",30,-150,150);
 
-TH1F* SG_W2J_ppoint = new TH1F("SG_W2J_ppoint","SG Scalar product displacement and total momentum of secondary vertex",30,-100,100);
+TH1F* SG_W2J_ppoint = new TH1F("SG_W2J_ppoint","SG Scalar product displacement and total momentum of secondary vertex",30,-150,150);
 
-TH1F* SG_W1J_ppoint = new TH1F("SG_W1J_ppoint","SG Scalar product displacement and total momentum of secondary vertex",30,-100,100);
+TH1F* SG_W1J_ppoint = new TH1F("SG_W1J_ppoint","SG Scalar product displacement and total momentum of secondary vertex",30,-150,150);
 
-//TH1F* //SG_TTZ_ppoint = new TH1F("//SG_TTZ_ppoint","SG Scalar product displacement and total momentum of secondary vertex",30,-100,100);
+//TH1F* //SG_TTZ_ppoint = new TH1F("//SG_TTZ_ppoint","SG Scalar product displacement and total momentum of secondary vertex",30,-150,150);
 
-//TH1F* //SG_WW_ppoint = new TH1F("//SG_WW_ppoint","SG Scalar product displacement and total momentum of secondary vertex",30,-100,100);
+//TH1F* //SG_WW_ppoint = new TH1F("//SG_WW_ppoint","SG Scalar product displacement and total momentum of secondary vertex",30,-150,150);
 
-//TH1F* //SG_WZ_ppoint = new TH1F("//SG_WZ_ppoint","SG Scalar product displacement and total momentum of secondary vertex",30,-100,100);
+//TH1F* //SG_WZ_ppoint = new TH1F("//SG_WZ_ppoint","SG Scalar product displacement and total momentum of secondary vertex",30,-150,150);
 
-TH1F* SG_LW200_ppoint = new TH1F("SG_LW200_ppoint","SG Scalar product displacement and total momentum of secondary vertex",30,-100,100);
+TH1F* SG_LW200_ppoint = new TH1F("SG_LW200_ppoint","SG Scalar product displacement and total momentum of secondary vertex",30,-150,150);
 
-////TH1F* //SG_LW300_ppoint = new TH1F("//SG_LW300_ppoint","SG Scalar product displacement and total momentum of secondary vertex",30,-100,100);
+////TH1F* //SG_LW300_ppoint = new TH1F("//SG_LW300_ppoint","SG Scalar product displacement and total momentum of secondary vertex",30,-150,150);
 
-//TH1F* SG_LW400_ppoint = new TH1F("SG_LW400_ppoint","SG Scalar product displacement and total momentum of secondary vertex",30,-100,100);
+//TH1F* SG_LW400_ppoint = new TH1F("SG_LW400_ppoint","SG Scalar product displacement and total momentum of secondary vertex",30,-150,150);
 
-//TH1F* SG_LW500_ppoint = new TH1F("SG_LW500_ppoint","SG Scalar product displacement and total momentum of secondary vertex",30,-100,100);
+//TH1F* SG_LW500_ppoint = new TH1F("SG_LW500_ppoint","SG Scalar product displacement and total momentum of secondary vertex",30,-150,150);
 
 TH1F* SG_dataRunB_ppointS = new TH1F("SG_dataRunB_ppointS","SG Scalar product sign displacement and total momentum of secondary vertex",2,0,2);
 
@@ -3364,33 +3364,33 @@ TH1F* SG_LW200_JetJetFDR = new TH1F("SG_LW200_JetJetFDR","SG Jet further Jet Del
 //TH1F* SG_LW500_JetJetFDR = new TH1F("SG_LW500_JetJetFDR","SG Jet further Jet DeltaR distance",30,0,5);
 
 //////////////////////////////////////DR cut ////////////////////////////////////////
-TH1F* DRC_dataRunB_ppoint = new TH1F("DRC_dataRunB_ppoint","DRC Scalar product displacement and total momentum of secondary vertex",30,-100,100);
+TH1F* DRC_dataRunB_ppoint = new TH1F("DRC_dataRunB_ppoint","DRC Scalar product displacement and total momentum of secondary vertex",30,-150,150);
 
-TH1F* DRC_dataRunC_ppoint  = new TH1F("DRC_dataRunC_ppoint","DRC Scalar product displacement and total momentum of secondary vertex",30,-100,100);
+TH1F* DRC_dataRunC_ppoint  = new TH1F("DRC_dataRunC_ppoint","DRC Scalar product displacement and total momentum of secondary vertex",30,-150,150);
 
-TH1F* DRC_ZLL_ppoint = new TH1F("DRC_ZLL_ppoint","DRC Scalar product displacement and total momentum of secondary vertex",30,-100,100);
+TH1F* DRC_ZLL_ppoint = new TH1F("DRC_ZLL_ppoint","DRC Scalar product displacement and total momentum of secondary vertex",30,-150,150);
 
-TH1F* DRC_TT_ppoint = new TH1F("DRC_TT_ppoint","DRC Scalar product displacement and total momentum of secondary vertex",30,-100,100);
+TH1F* DRC_TT_ppoint = new TH1F("DRC_TT_ppoint","DRC Scalar product displacement and total momentum of secondary vertex",30,-150,150);
 
-TH1F* DRC_W3J_ppoint = new TH1F("DRC_W3J_ppoint","DRC Scalar product displacement and total momentum of secondary vertex",30,-100,100);
+TH1F* DRC_W3J_ppoint = new TH1F("DRC_W3J_ppoint","DRC Scalar product displacement and total momentum of secondary vertex",30,-150,150);
 
-TH1F* DRC_W2J_ppoint = new TH1F("DRC_W2J_ppoint","DRC Scalar product displacement and total momentum of secondary vertex",30,-100,100);
+TH1F* DRC_W2J_ppoint = new TH1F("DRC_W2J_ppoint","DRC Scalar product displacement and total momentum of secondary vertex",30,-150,150);
 
-TH1F* DRC_W1J_ppoint = new TH1F("DRC_W1J_ppoint","DRC Scalar product displacement and total momentum of secondary vertex",30,-100,100);
+TH1F* DRC_W1J_ppoint = new TH1F("DRC_W1J_ppoint","DRC Scalar product displacement and total momentum of secondary vertex",30,-150,150);
 
-//TH1F* //DRC_TTZ_ppoint = new TH1F("//DRC_TTZ_ppoint","DRC Scalar product displacement and total momentum of secondary vertex",30,-100,100);
+//TH1F* //DRC_TTZ_ppoint = new TH1F("//DRC_TTZ_ppoint","DRC Scalar product displacement and total momentum of secondary vertex",30,-150,150);
 
-//TH1F* //DRC_WW_ppoint = new TH1F("//DRC_WW_ppoint","DRC Scalar product displacement and total momentum of secondary vertex",30,-100,100);
+//TH1F* //DRC_WW_ppoint = new TH1F("//DRC_WW_ppoint","DRC Scalar product displacement and total momentum of secondary vertex",30,-150,150);
 
-//TH1F* //DRC_WZ_ppoint = new TH1F("//DRC_WZ_ppoint","DRC Scalar product displacement and total momentum of secondary vertex",30,-100,100);
+//TH1F* //DRC_WZ_ppoint = new TH1F("//DRC_WZ_ppoint","DRC Scalar product displacement and total momentum of secondary vertex",30,-150,150);
 
-TH1F* DRC_LW200_ppoint = new TH1F("DRC_LW200_ppoint","DRC Scalar product displacement and total momentum of secondary vertex",30,-100,100);
+TH1F* DRC_LW200_ppoint = new TH1F("DRC_LW200_ppoint","DRC Scalar product displacement and total momentum of secondary vertex",30,-150,150);
 
-////TH1F* //DRC_LW300_ppoint = new TH1F("//DRC_LW300_ppoint","DRC Scalar product displacement and total momentum of secondary vertex",30,-100,100);
+////TH1F* //DRC_LW300_ppoint = new TH1F("//DRC_LW300_ppoint","DRC Scalar product displacement and total momentum of secondary vertex",30,-150,150);
 
-//TH1F* DRC_LW400_ppoint = new TH1F("DRC_LW400_ppoint","DRC Scalar product displacement and total momentum of secondary vertex",30,-100,100);
+//TH1F* DRC_LW400_ppoint = new TH1F("DRC_LW400_ppoint","DRC Scalar product displacement and total momentum of secondary vertex",30,-150,150);
 
-//TH1F* DRC_LW500_ppoint = new TH1F("DRC_LW500_ppoint","DRC Scalar product displacement and total momentum of secondary vertex",30,-100,100);
+//TH1F* DRC_LW500_ppoint = new TH1F("DRC_LW500_ppoint","DRC Scalar product displacement and total momentum of secondary vertex",30,-150,150);
 
 TH1F* DRC_dataRunB_ppointS = new TH1F("DRC_dataRunB_ppointS","DRC Scalar product sign displacement and total momentum of secondary vertex",2,0,2);
 
@@ -3992,33 +3992,33 @@ TH1F* DRC_LW200_JetJetFDR = new TH1F("DRC_LW200_JetJetFDR","DRC Jet further Jet 
 
 
 //////////////////////////////////////Jet Selection////////////////////////////////////////
-TH1F* JetS_dataRunB_ppoint = new TH1F("JetS_dataRunB_ppoint","JetS Scalar product displacement and total momentum of secondary vertex",30,-100,100);
+TH1F* JetS_dataRunB_ppoint = new TH1F("JetS_dataRunB_ppoint","JetS Scalar product displacement and total momentum of secondary vertex",30,-150,150);
 
-TH1F* JetS_dataRunC_ppoint  = new TH1F("JetS_dataRunC_ppoint","JetS Scalar product displacement and total momentum of secondary vertex",30,-100,100);
+TH1F* JetS_dataRunC_ppoint  = new TH1F("JetS_dataRunC_ppoint","JetS Scalar product displacement and total momentum of secondary vertex",30,-150,150);
 
-TH1F* JetS_ZLL_ppoint = new TH1F("JetS_ZLL_ppoint","JetS Scalar product displacement and total momentum of secondary vertex",30,-100,100);
+TH1F* JetS_ZLL_ppoint = new TH1F("JetS_ZLL_ppoint","JetS Scalar product displacement and total momentum of secondary vertex",30,-150,150);
 
-TH1F* JetS_TT_ppoint = new TH1F("JetS_TT_ppoint","JetS Scalar product displacement and total momentum of secondary vertex",30,-100,100);
+TH1F* JetS_TT_ppoint = new TH1F("JetS_TT_ppoint","JetS Scalar product displacement and total momentum of secondary vertex",30,-150,150);
 
-TH1F* JetS_W3J_ppoint = new TH1F("JetS_W3J_ppoint","JetS Scalar product displacement and total momentum of secondary vertex",30,-100,100);
+TH1F* JetS_W3J_ppoint = new TH1F("JetS_W3J_ppoint","JetS Scalar product displacement and total momentum of secondary vertex",30,-150,150);
 
-TH1F* JetS_W2J_ppoint = new TH1F("JetS_W2J_ppoint","JetS Scalar product displacement and total momentum of secondary vertex",30,-100,100);
+TH1F* JetS_W2J_ppoint = new TH1F("JetS_W2J_ppoint","JetS Scalar product displacement and total momentum of secondary vertex",30,-150,150);
 
-TH1F* JetS_W1J_ppoint = new TH1F("JetS_W1J_ppoint","JetS Scalar product displacement and total momentum of secondary vertex",30,-100,100);
+TH1F* JetS_W1J_ppoint = new TH1F("JetS_W1J_ppoint","JetS Scalar product displacement and total momentum of secondary vertex",30,-150,150);
 
-//TH1F* //JetS_TTZ_ppoint = new TH1F("//JetS_TTZ_ppoint","JetS Scalar product displacement and total momentum of secondary vertex",30,-100,100);
+//TH1F* //JetS_TTZ_ppoint = new TH1F("//JetS_TTZ_ppoint","JetS Scalar product displacement and total momentum of secondary vertex",30,-150,150);
 
-//TH1F* //JetS_WW_ppoint = new TH1F("//JetS_WW_ppoint","JetS Scalar product displacement and total momentum of secondary vertex",30,-100,100);
+//TH1F* //JetS_WW_ppoint = new TH1F("//JetS_WW_ppoint","JetS Scalar product displacement and total momentum of secondary vertex",30,-150,150);
 
-//TH1F* //JetS_WZ_ppoint = new TH1F("//JetS_WZ_ppoint","JetS Scalar product displacement and total momentum of secondary vertex",30,-100,100);
+//TH1F* //JetS_WZ_ppoint = new TH1F("//JetS_WZ_ppoint","JetS Scalar product displacement and total momentum of secondary vertex",30,-150,150);
 
-TH1F* JetS_LW200_ppoint = new TH1F("JetS_LW200_ppoint","JetS Scalar product displacement and total momentum of secondary vertex",30,-100,100);
+TH1F* JetS_LW200_ppoint = new TH1F("JetS_LW200_ppoint","JetS Scalar product displacement and total momentum of secondary vertex",30,-150,150);
 
-////TH1F* //JetS_LW300_ppoint = new TH1F("//JetS_LW300_ppoint","JetS Scalar product displacement and total momentum of secondary vertex",30,-100,100);
+////TH1F* //JetS_LW300_ppoint = new TH1F("//JetS_LW300_ppoint","JetS Scalar product displacement and total momentum of secondary vertex",30,-150,150);
 
-//TH1F* JetS_LW400_ppoint = new TH1F("JetS_LW400_ppoint","JetS Scalar product displacement and total momentum of secondary vertex",30,-100,100);
+//TH1F* JetS_LW400_ppoint = new TH1F("JetS_LW400_ppoint","JetS Scalar product displacement and total momentum of secondary vertex",30,-150,150);
 
-//TH1F* JetS_LW500_ppoint = new TH1F("JetS_LW500_ppoint","JetS Scalar product displacement and total momentum of secondary vertex",30,-100,100);
+//TH1F* JetS_LW500_ppoint = new TH1F("JetS_LW500_ppoint","JetS Scalar product displacement and total momentum of secondary vertex",30,-150,150);
 
 TH1F* JetS_dataRunB_ppointS = new TH1F("JetS_dataRunB_ppointS","JetS Scalar product sign displacement and total momentum of secondary vertex",2,0,2);
 
@@ -4612,33 +4612,33 @@ TH1F* JetS_LW200_JetJetFDR = new TH1F("JetS_LW200_JetJetFDR","JetS Jet further J
 
 
 
-TH1F* IPP_dataRunB_ppoint = new TH1F("IPP_dataRunB_ppoint","IPP Scalar product displacement and total momentum of secondary vertex",30,-100,100);
+TH1F* IPP_dataRunB_ppoint = new TH1F("IPP_dataRunB_ppoint","IPP Scalar product displacement and total momentum of secondary vertex",30,-150,150);
 
-TH1F* IPP_dataRunC_ppoint = new TH1F("IPP_dataRunC_ppoint","IPP Scalar product displacement and total momentum of secondary vertex",30,-100,100);
+TH1F* IPP_dataRunC_ppoint = new TH1F("IPP_dataRunC_ppoint","IPP Scalar product displacement and total momentum of secondary vertex",30,-150,150);
 
-TH1F* IPP_ZLL_ppoint = new TH1F("IPP_ZLL_ppoint","IPP Scalar product displacement and total momentum of secondary vertex",30,-100,100);
+TH1F* IPP_ZLL_ppoint = new TH1F("IPP_ZLL_ppoint","IPP Scalar product displacement and total momentum of secondary vertex",30,-150,150);
 
-TH1F* IPP_TT_ppoint = new TH1F("IPP_TT_ppoint","IPP Scalar product displacement and total momentum of secondary vertex",30,-100,100);
+TH1F* IPP_TT_ppoint = new TH1F("IPP_TT_ppoint","IPP Scalar product displacement and total momentum of secondary vertex",30,-150,150);
 
-TH1F* IPP_W3J_ppoint = new TH1F("IPP_W3J_ppoint","IPP Scalar product displacement and total momentum of secondary vertex",30,-100,100);
+TH1F* IPP_W3J_ppoint = new TH1F("IPP_W3J_ppoint","IPP Scalar product displacement and total momentum of secondary vertex",30,-150,150);
 
-TH1F* IPP_W2J_ppoint = new TH1F("IPP_W2J_ppoint","IPP Scalar product displacement and total momentum of secondary vertex",30,-100,100);
+TH1F* IPP_W2J_ppoint = new TH1F("IPP_W2J_ppoint","IPP Scalar product displacement and total momentum of secondary vertex",30,-150,150);
 
-TH1F* IPP_W1J_ppoint = new TH1F("IPP_W1J_ppoint","IPP Scalar product displacement and total momentum of secondary vertex",30,-100,100);
+TH1F* IPP_W1J_ppoint = new TH1F("IPP_W1J_ppoint","IPP Scalar product displacement and total momentum of secondary vertex",30,-150,150);
 
-//TH1F* //IPP_TTZ_ppoint = new TH1F("//IPP_TTZ_ppoint","IPP Scalar product displacement and total momentum of secondary vertex",30,-100,100);
+//TH1F* //IPP_TTZ_ppoint = new TH1F("//IPP_TTZ_ppoint","IPP Scalar product displacement and total momentum of secondary vertex",30,-150,150);
 
-//TH1F* //IPP_WW_ppoint = new TH1F("//IPP_WW_ppoint","IPP Scalar product displacement and total momentum of secondary vertex",30,-100,100);
+//TH1F* //IPP_WW_ppoint = new TH1F("//IPP_WW_ppoint","IPP Scalar product displacement and total momentum of secondary vertex",30,-150,150);
 
-//TH1F* //IPP_WZ_ppoint = new TH1F("//IPP_WZ_ppoint","IPP Scalar product displacement and total momentum of secondary vertex",30,-100,100);
+//TH1F* //IPP_WZ_ppoint = new TH1F("//IPP_WZ_ppoint","IPP Scalar product displacement and total momentum of secondary vertex",30,-150,150);
 
-TH1F* IPP_LW200_ppoint = new TH1F("IPP_LW200_ppoint","IPP Scalar product displacement and total momentum of secondary vertex",30,-100,100);
+TH1F* IPP_LW200_ppoint = new TH1F("IPP_LW200_ppoint","IPP Scalar product displacement and total momentum of secondary vertex",30,-150,150);
 
-////TH1F* //IPP_LW300_ppoint = new TH1F("//IPP_LW300_ppoint","IPP Scalar product displacement and total momentum of secondary vertex",30,-100,100);
+////TH1F* //IPP_LW300_ppoint = new TH1F("//IPP_LW300_ppoint","IPP Scalar product displacement and total momentum of secondary vertex",30,-150,150);
 
-//TH1F* IPP_LW400_ppoint = new TH1F("IPP_LW400_ppoint","IPP Scalar product displacement and total momentum of secondary vertex",30,-100,100);
+//TH1F* IPP_LW400_ppoint = new TH1F("IPP_LW400_ppoint","IPP Scalar product displacement and total momentum of secondary vertex",30,-150,150);
 
-//TH1F* IPP_LW500_ppoint = new TH1F("IPP_LW500_ppoint","IPP Scalar product displacement and total momentum of secondary vertex",30,-100,100);
+//TH1F* IPP_LW500_ppoint = new TH1F("IPP_LW500_ppoint","IPP Scalar product displacement and total momentum of secondary vertex",30,-150,150);
 
 TH1F* IPP_dataRunB_ppointS = new TH1F("IPP_dataRunB_ppointS","IPP Scalar product sign displacement and total momentum of secondary vertex",2,0,2);
 
@@ -5234,33 +5234,33 @@ TH1F* IPP_LW200_JetJetFDR = new TH1F("IPP_LW200_JetJetFDR","IPP Jet further Jet 
 
 /////////////////////////////////////QCD////////////////////////////////////////////////
 //////////////////////////////////////Trigg filter
-TH1F* TF_dataRunB_ppoint_cr = new TH1F("TF_dataRunB_ppoint_cr","TF Scalar product displacement and total momentum of secondary vertex",30,-100,100);
+TH1F* TF_dataRunB_ppoint_cr = new TH1F("TF_dataRunB_ppoint_cr","TF Scalar product displacement and total momentum of secondary vertex",30,-150,150);
 
-TH1F* TF_dataRunC_ppoint_cr  = new TH1F("TF_dataRunC_ppoint_cr","TF Scalar product displacement and total momentum of secondary vertex",30,-100,100);
+TH1F* TF_dataRunC_ppoint_cr  = new TH1F("TF_dataRunC_ppoint_cr","TF Scalar product displacement and total momentum of secondary vertex",30,-150,150);
 
-TH1F* TF_ZLL_ppoint_cr = new TH1F("TF_ZLL_ppoint_cr","TF Scalar product displacement and total momentum of secondary vertex",30,-100,100);
+TH1F* TF_ZLL_ppoint_cr = new TH1F("TF_ZLL_ppoint_cr","TF Scalar product displacement and total momentum of secondary vertex",30,-150,150);
 
-TH1F* TF_TT_ppoint_cr = new TH1F("TF_TT_ppoint_cr","TF Scalar product displacement and total momentum of secondary vertex",30,-100,100);
+TH1F* TF_TT_ppoint_cr = new TH1F("TF_TT_ppoint_cr","TF Scalar product displacement and total momentum of secondary vertex",30,-150,150);
 
-TH1F* TF_W3J_ppoint_cr = new TH1F("TF_W3J_ppoint_cr","TF Scalar product displacement and total momentum of secondary vertex",30,-100,100);
+TH1F* TF_W3J_ppoint_cr = new TH1F("TF_W3J_ppoint_cr","TF Scalar product displacement and total momentum of secondary vertex",30,-150,150);
 
-TH1F* TF_W2J_ppoint_cr = new TH1F("TF_W2J_ppoint_cr","TF Scalar product displacement and total momentum of secondary vertex",30,-100,100);
+TH1F* TF_W2J_ppoint_cr = new TH1F("TF_W2J_ppoint_cr","TF Scalar product displacement and total momentum of secondary vertex",30,-150,150);
 
-TH1F* TF_W1J_ppoint_cr = new TH1F("TF_W1J_ppoint_cr","TF Scalar product displacement and total momentum of secondary vertex",30,-100,100);
+TH1F* TF_W1J_ppoint_cr = new TH1F("TF_W1J_ppoint_cr","TF Scalar product displacement and total momentum of secondary vertex",30,-150,150);
 
-//TH1F* //TF_TTZ_ppoint_cr = new TH1F("//TF_TTZ_ppoint_cr","TF Scalar product displacement and total momentum of secondary vertex",30,-100,100);
+//TH1F* //TF_TTZ_ppoint_cr = new TH1F("//TF_TTZ_ppoint_cr","TF Scalar product displacement and total momentum of secondary vertex",30,-150,150);
 
-//TH1F* //TF_WW_ppoint_cr = new TH1F("//TF_WW_ppoint_cr","TF Scalar product displacement and total momentum of secondary vertex",30,-100,100);
+//TH1F* //TF_WW_ppoint_cr = new TH1F("//TF_WW_ppoint_cr","TF Scalar product displacement and total momentum of secondary vertex",30,-150,150);
 
-//TH1F* //TF_WZ_ppoint_cr = new TH1F("//TF_WZ_ppoint_cr","TF Scalar product displacement and total momentum of secondary vertex",30,-100,100);
+//TH1F* //TF_WZ_ppoint_cr = new TH1F("//TF_WZ_ppoint_cr","TF Scalar product displacement and total momentum of secondary vertex",30,-150,150);
 
-TH1F* TF_LW200_ppoint_cr = new TH1F("TF_LW200_ppoint_cr","TF Scalar product displacement and total momentum of secondary vertex",30,-100,100);
+TH1F* TF_LW200_ppoint_cr = new TH1F("TF_LW200_ppoint_cr","TF Scalar product displacement and total momentum of secondary vertex",30,-150,150);
 
-////TH1F* //TF_LW300_ppoint_cr = new TH1F("//TF_LW300_ppoint_cr","TF Scalar product displacement and total momentum of secondary vertex",30,-100,100);
+////TH1F* //TF_LW300_ppoint_cr = new TH1F("//TF_LW300_ppoint_cr","TF Scalar product displacement and total momentum of secondary vertex",30,-150,150);
 
-//TH1F* TF_LW400_ppoint_cr = new TH1F("TF_LW400_ppoint_cr","TF Scalar product displacement and total momentum of secondary vertex",30,-100,100);
+//TH1F* TF_LW400_ppoint_cr = new TH1F("TF_LW400_ppoint_cr","TF Scalar product displacement and total momentum of secondary vertex",30,-150,150);
 
-//TH1F* TF_LW500_ppoint_cr = new TH1F("TF_LW500_ppoint_cr","TF Scalar product displacement and total momentum of secondary vertex",30,-100,100);
+//TH1F* TF_LW500_ppoint_cr = new TH1F("TF_LW500_ppoint_cr","TF Scalar product displacement and total momentum of secondary vertex",30,-150,150);
 
 TH1F* TF_dataRunB_ppointS_cr = new TH1F("TF_dataRunB_ppointS_cr","TF Scalar product sign displacement and total momentum of secondary vertex",2,0,2);
 
@@ -5851,33 +5851,33 @@ TH1F* TF_LW200_JetJetFDR_cr = new TH1F("TF_LW200_JetJetFDR_cr","TF Jet further J
 //TH1F* TF_LW500_JetJetFDR_cr = new TH1F("TF_LW500_JetJetFDR_cr","TF Jet further Jet DeltaR distance",30,0,5);
 
 //////////////////////////////////////Trigg object////////////////////////////////////////
-TH1F* TO_dataRunB_ppoint_cr = new TH1F("TO_dataRunB_ppoint_cr","TO Scalar product displacement and total momentum of secondary vertex",30,-100,100);
+TH1F* TO_dataRunB_ppoint_cr = new TH1F("TO_dataRunB_ppoint_cr","TO Scalar product displacement and total momentum of secondary vertex",30,-150,150);
 
-TH1F* TO_dataRunC_ppoint_cr  = new TH1F("TO_dataRunC_ppoint_cr","TO Scalar product displacement and total momentum of secondary vertex",30,-100,100);
+TH1F* TO_dataRunC_ppoint_cr  = new TH1F("TO_dataRunC_ppoint_cr","TO Scalar product displacement and total momentum of secondary vertex",30,-150,150);
 
-TH1F* TO_ZLL_ppoint_cr = new TH1F("TO_ZLL_ppoint_cr","TO Scalar product displacement and total momentum of secondary vertex",30,-100,100);
+TH1F* TO_ZLL_ppoint_cr = new TH1F("TO_ZLL_ppoint_cr","TO Scalar product displacement and total momentum of secondary vertex",30,-150,150);
 
-TH1F* TO_TT_ppoint_cr = new TH1F("TO_TT_ppoint_cr","TO Scalar product displacement and total momentum of secondary vertex",30,-100,100);
+TH1F* TO_TT_ppoint_cr = new TH1F("TO_TT_ppoint_cr","TO Scalar product displacement and total momentum of secondary vertex",30,-150,150);
 
-TH1F* TO_W3J_ppoint_cr = new TH1F("TO_W3J_ppoint_cr","TO Scalar product displacement and total momentum of secondary vertex",30,-100,100);
+TH1F* TO_W3J_ppoint_cr = new TH1F("TO_W3J_ppoint_cr","TO Scalar product displacement and total momentum of secondary vertex",30,-150,150);
 
-TH1F* TO_W2J_ppoint_cr = new TH1F("TO_W2J_ppoint_cr","TO Scalar product displacement and total momentum of secondary vertex",30,-100,100);
+TH1F* TO_W2J_ppoint_cr = new TH1F("TO_W2J_ppoint_cr","TO Scalar product displacement and total momentum of secondary vertex",30,-150,150);
 
-TH1F* TO_W1J_ppoint_cr = new TH1F("TO_W1J_ppoint_cr","TO Scalar product displacement and total momentum of secondary vertex",30,-100,100);
+TH1F* TO_W1J_ppoint_cr = new TH1F("TO_W1J_ppoint_cr","TO Scalar product displacement and total momentum of secondary vertex",30,-150,150);
 
-//TH1F* //TO_TTZ_ppoint_cr = new TH1F("//TO_TTZ_ppoint_cr","TO Scalar product displacement and total momentum of secondary vertex",30,-100,100);
+//TH1F* //TO_TTZ_ppoint_cr = new TH1F("//TO_TTZ_ppoint_cr","TO Scalar product displacement and total momentum of secondary vertex",30,-150,150);
 
-//TH1F* //TO_WW_ppoint_cr = new TH1F("//TO_WW_ppoint_cr","TO Scalar product displacement and total momentum of secondary vertex",30,-100,100);
+//TH1F* //TO_WW_ppoint_cr = new TH1F("//TO_WW_ppoint_cr","TO Scalar product displacement and total momentum of secondary vertex",30,-150,150);
 
-//TH1F* //TO_WZ_ppoint_cr = new TH1F("//TO_WZ_ppoint_cr","TO Scalar product displacement and total momentum of secondary vertex",30,-100,100);
+//TH1F* //TO_WZ_ppoint_cr = new TH1F("//TO_WZ_ppoint_cr","TO Scalar product displacement and total momentum of secondary vertex",30,-150,150);
 
-TH1F* TO_LW200_ppoint_cr = new TH1F("TO_LW200_ppoint_cr","TO Scalar product displacement and total momentum of secondary vertex",30,-100,100);
+TH1F* TO_LW200_ppoint_cr = new TH1F("TO_LW200_ppoint_cr","TO Scalar product displacement and total momentum of secondary vertex",30,-150,150);
 
-////TH1F* //TO_LW300_ppoint_cr = new TH1F("//TO_LW300_ppoint_cr","TO Scalar product displacement and total momentum of secondary vertex",30,-100,100);
+////TH1F* //TO_LW300_ppoint_cr = new TH1F("//TO_LW300_ppoint_cr","TO Scalar product displacement and total momentum of secondary vertex",30,-150,150);
 
-//TH1F* TO_LW400_ppoint_cr = new TH1F("TO_LW400_ppoint_cr","TO Scalar product displacement and total momentum of secondary vertex",30,-100,100);
+//TH1F* TO_LW400_ppoint_cr = new TH1F("TO_LW400_ppoint_cr","TO Scalar product displacement and total momentum of secondary vertex",30,-150,150);
 
-//TH1F* TO_LW500_ppoint_cr = new TH1F("TO_LW500_ppoint_cr","TO Scalar product displacement and total momentum of secondary vertex",30,-100,100);
+//TH1F* TO_LW500_ppoint_cr = new TH1F("TO_LW500_ppoint_cr","TO Scalar product displacement and total momentum of secondary vertex",30,-150,150);
 
 TH1F* TO_dataRunB_ppointS_cr = new TH1F("TO_dataRunB_ppointS_cr","TO Scalar product sign displacement and total momentum of secondary vertex",2,0,2);
 
@@ -6469,33 +6469,33 @@ TH1F* TO_LW200_JetJetFDR_cr = new TH1F("TO_LW200_JetJetFDR_cr","TO Jet further J
 
 
 //////////////////////////////////////High quality////////////////////////////////////////
-TH1F* HQ_dataRunB_ppoint_cr = new TH1F("HQ_dataRunB_ppoint_cr","HQ Scalar product displacement and total momentum of secondary vertex",30,-100,100);
+TH1F* HQ_dataRunB_ppoint_cr = new TH1F("HQ_dataRunB_ppoint_cr","HQ Scalar product displacement and total momentum of secondary vertex",30,-150,150);
 
-TH1F* HQ_dataRunC_ppoint_cr  = new TH1F("HQ_dataRunC_ppoint_cr","HQ Scalar product displacement and total momentum of secondary vertex",30,-100,100);
+TH1F* HQ_dataRunC_ppoint_cr  = new TH1F("HQ_dataRunC_ppoint_cr","HQ Scalar product displacement and total momentum of secondary vertex",30,-150,150);
 
-TH1F* HQ_ZLL_ppoint_cr = new TH1F("HQ_ZLL_ppoint_cr","HQ Scalar product displacement and total momentum of secondary vertex",30,-100,100);
+TH1F* HQ_ZLL_ppoint_cr = new TH1F("HQ_ZLL_ppoint_cr","HQ Scalar product displacement and total momentum of secondary vertex",30,-150,150);
 
-TH1F* HQ_TT_ppoint_cr = new TH1F("HQ_TT_ppoint_cr","HQ Scalar product displacement and total momentum of secondary vertex",30,-100,100);
+TH1F* HQ_TT_ppoint_cr = new TH1F("HQ_TT_ppoint_cr","HQ Scalar product displacement and total momentum of secondary vertex",30,-150,150);
 
-TH1F* HQ_W3J_ppoint_cr = new TH1F("HQ_W3J_ppoint_cr","HQ Scalar product displacement and total momentum of secondary vertex",30,-100,100);
+TH1F* HQ_W3J_ppoint_cr = new TH1F("HQ_W3J_ppoint_cr","HQ Scalar product displacement and total momentum of secondary vertex",30,-150,150);
 
-TH1F* HQ_W2J_ppoint_cr = new TH1F("HQ_W2J_ppoint_cr","HQ Scalar product displacement and total momentum of secondary vertex",30,-100,100);
+TH1F* HQ_W2J_ppoint_cr = new TH1F("HQ_W2J_ppoint_cr","HQ Scalar product displacement and total momentum of secondary vertex",30,-150,150);
 
-TH1F* HQ_W1J_ppoint_cr = new TH1F("HQ_W1J_ppoint_cr","HQ Scalar product displacement and total momentum of secondary vertex",30,-100,100);
+TH1F* HQ_W1J_ppoint_cr = new TH1F("HQ_W1J_ppoint_cr","HQ Scalar product displacement and total momentum of secondary vertex",30,-150,150);
 
-//TH1F* //HQ_TTZ_ppoint_cr = new TH1F("//HQ_TTZ_ppoint_cr","HQ Scalar product displacement and total momentum of secondary vertex",30,-100,100);
+//TH1F* //HQ_TTZ_ppoint_cr = new TH1F("//HQ_TTZ_ppoint_cr","HQ Scalar product displacement and total momentum of secondary vertex",30,-150,150);
 
-//TH1F* //HQ_WW_ppoint_cr = new TH1F("//HQ_WW_ppoint_cr","HQ Scalar product displacement and total momentum of secondary vertex",30,-100,100);
+//TH1F* //HQ_WW_ppoint_cr = new TH1F("//HQ_WW_ppoint_cr","HQ Scalar product displacement and total momentum of secondary vertex",30,-150,150);
 
-//TH1F* //HQ_WZ_ppoint_cr = new TH1F("//HQ_WZ_ppoint_cr","HQ Scalar product displacement and total momentum of secondary vertex",30,-100,100);
+//TH1F* //HQ_WZ_ppoint_cr = new TH1F("//HQ_WZ_ppoint_cr","HQ Scalar product displacement and total momentum of secondary vertex",30,-150,150);
 
-TH1F* HQ_LW200_ppoint_cr = new TH1F("HQ_LW200_ppoint_cr","HQ Scalar product displacement and total momentum of secondary vertex",30,-100,100);
+TH1F* HQ_LW200_ppoint_cr = new TH1F("HQ_LW200_ppoint_cr","HQ Scalar product displacement and total momentum of secondary vertex",30,-150,150);
 
-////TH1F* //HQ_LW300_ppoint_cr = new TH1F("//HQ_LW300_ppoint_cr","HQ Scalar product displacement and total momentum of secondary vertex",30,-100,100);
+////TH1F* //HQ_LW300_ppoint_cr = new TH1F("//HQ_LW300_ppoint_cr","HQ Scalar product displacement and total momentum of secondary vertex",30,-150,150);
 
-//TH1F* HQ_LW400_ppoint_cr = new TH1F("HQ_LW400_ppoint_cr","HQ Scalar product displacement and total momentum of secondary vertex",30,-100,100);
+//TH1F* HQ_LW400_ppoint_cr = new TH1F("HQ_LW400_ppoint_cr","HQ Scalar product displacement and total momentum of secondary vertex",30,-150,150);
 
-//TH1F* HQ_LW500_ppoint_cr = new TH1F("HQ_LW500_ppoint_cr","HQ Scalar product displacement and total momentum of secondary vertex",30,-100,100);
+//TH1F* HQ_LW500_ppoint_cr = new TH1F("HQ_LW500_ppoint_cr","HQ Scalar product displacement and total momentum of secondary vertex",30,-150,150);
 
 TH1F* HQ_dataRunB_ppointS_cr = new TH1F("HQ_dataRunB_ppointS_cr","HQ Scalar product sign displacement and total momentum of secondary vertex",2,0,2);
 
@@ -7086,33 +7086,33 @@ TH1F* HQ_LW200_JetJetFDR_cr = new TH1F("HQ_LW200_JetJetFDR_cr","HQ Jet further J
 //TH1F* HQ_LW500_JetJetFDR_cr = new TH1F("HQ_LW500_JetJetFDR_cr","HQ Jet further Jet DeltaR distance",30,0,5);
 
 //////////////////////////////////////Signal ////////////////////////////////////////
-TH1F* SG_dataRunB_ppoint_cr = new TH1F("SG_dataRunB_ppoint_cr","SG Scalar product displacement and total momentum of secondary vertex",30,-100,100);
+TH1F* SG_dataRunB_ppoint_cr = new TH1F("SG_dataRunB_ppoint_cr","SG Scalar product displacement and total momentum of secondary vertex",30,-150,150);
 
-TH1F* SG_dataRunC_ppoint_cr  = new TH1F("SG_dataRunC_ppoint_cr","SG Scalar product displacement and total momentum of secondary vertex",30,-100,100);
+TH1F* SG_dataRunC_ppoint_cr  = new TH1F("SG_dataRunC_ppoint_cr","SG Scalar product displacement and total momentum of secondary vertex",30,-150,150);
 
-TH1F* SG_ZLL_ppoint_cr = new TH1F("SG_ZLL_ppoint_cr","SG Scalar product displacement and total momentum of secondary vertex",30,-100,100);
+TH1F* SG_ZLL_ppoint_cr = new TH1F("SG_ZLL_ppoint_cr","SG Scalar product displacement and total momentum of secondary vertex",30,-150,150);
 
-TH1F* SG_TT_ppoint_cr = new TH1F("SG_TT_ppoint_cr","SG Scalar product displacement and total momentum of secondary vertex",30,-100,100);
+TH1F* SG_TT_ppoint_cr = new TH1F("SG_TT_ppoint_cr","SG Scalar product displacement and total momentum of secondary vertex",30,-150,150);
 
-TH1F* SG_W3J_ppoint_cr = new TH1F("SG_W3J_ppoint_cr","SG Scalar product displacement and total momentum of secondary vertex",30,-100,100);
+TH1F* SG_W3J_ppoint_cr = new TH1F("SG_W3J_ppoint_cr","SG Scalar product displacement and total momentum of secondary vertex",30,-150,150);
 
-TH1F* SG_W2J_ppoint_cr = new TH1F("SG_W2J_ppoint_cr","SG Scalar product displacement and total momentum of secondary vertex",30,-100,100);
+TH1F* SG_W2J_ppoint_cr = new TH1F("SG_W2J_ppoint_cr","SG Scalar product displacement and total momentum of secondary vertex",30,-150,150);
 
-TH1F* SG_W1J_ppoint_cr = new TH1F("SG_W1J_ppoint_cr","SG Scalar product displacement and total momentum of secondary vertex",30,-100,100);
+TH1F* SG_W1J_ppoint_cr = new TH1F("SG_W1J_ppoint_cr","SG Scalar product displacement and total momentum of secondary vertex",30,-150,150);
 
-//TH1F* //SG_TTZ_ppoint_cr = new TH1F("//SG_TTZ_ppoint_cr","SG Scalar product displacement and total momentum of secondary vertex",30,-100,100);
+//TH1F* //SG_TTZ_ppoint_cr = new TH1F("//SG_TTZ_ppoint_cr","SG Scalar product displacement and total momentum of secondary vertex",30,-150,150);
 
-//TH1F* //SG_WW_ppoint_cr = new TH1F("//SG_WW_ppoint_cr","SG Scalar product displacement and total momentum of secondary vertex",30,-100,100);
+//TH1F* //SG_WW_ppoint_cr = new TH1F("//SG_WW_ppoint_cr","SG Scalar product displacement and total momentum of secondary vertex",30,-150,150);
 
-//TH1F* //SG_WZ_ppoint_cr = new TH1F("//SG_WZ_ppoint_cr","SG Scalar product displacement and total momentum of secondary vertex",30,-100,100);
+//TH1F* //SG_WZ_ppoint_cr = new TH1F("//SG_WZ_ppoint_cr","SG Scalar product displacement and total momentum of secondary vertex",30,-150,150);
 
-TH1F* SG_LW200_ppoint_cr = new TH1F("SG_LW200_ppoint_cr","SG Scalar product displacement and total momentum of secondary vertex",30,-100,100);
+TH1F* SG_LW200_ppoint_cr = new TH1F("SG_LW200_ppoint_cr","SG Scalar product displacement and total momentum of secondary vertex",30,-150,150);
 
-////TH1F* //SG_LW300_ppoint_cr = new TH1F("//SG_LW300_ppoint_cr","SG Scalar product displacement and total momentum of secondary vertex",30,-100,100);
+////TH1F* //SG_LW300_ppoint_cr = new TH1F("//SG_LW300_ppoint_cr","SG Scalar product displacement and total momentum of secondary vertex",30,-150,150);
 
-//TH1F* SG_LW400_ppoint_cr = new TH1F("SG_LW400_ppoint_cr","SG Scalar product displacement and total momentum of secondary vertex",30,-100,100);
+//TH1F* SG_LW400_ppoint_cr = new TH1F("SG_LW400_ppoint_cr","SG Scalar product displacement and total momentum of secondary vertex",30,-150,150);
 
-//TH1F* SG_LW500_ppoint_cr = new TH1F("SG_LW500_ppoint_cr","SG Scalar product displacement and total momentum of secondary vertex",30,-100,100);
+//TH1F* SG_LW500_ppoint_cr = new TH1F("SG_LW500_ppoint_cr","SG Scalar product displacement and total momentum of secondary vertex",30,-150,150);
 
 TH1F* SG_dataRunB_ppointS_cr = new TH1F("SG_dataRunB_ppointS_cr","SG Scalar product sign displacement and total momentum of secondary vertex",2,0,2);
 
@@ -7703,33 +7703,33 @@ TH1F* SG_LW200_JetJetFDR_cr = new TH1F("SG_LW200_JetJetFDR_cr","SG Jet further J
 //TH1F* SG_LW500_JetJetFDR_cr = new TH1F("SG_LW500_JetJetFDR_cr","SG Jet further Jet DeltaR distance",30,0,5);
 
 //////////////////////////////////////DR cut ////////////////////////////////////////
-TH1F* DRC_dataRunB_ppoint_cr = new TH1F("DRC_dataRunB_ppoint_cr","DRC Scalar product displacement and total momentum of secondary vertex",30,-100,100);
+TH1F* DRC_dataRunB_ppoint_cr = new TH1F("DRC_dataRunB_ppoint_cr","DRC Scalar product displacement and total momentum of secondary vertex",30,-150,150);
 
-TH1F* DRC_dataRunC_ppoint_cr  = new TH1F("DRC_dataRunC_ppoint_cr","DRC Scalar product displacement and total momentum of secondary vertex",30,-100,100);
+TH1F* DRC_dataRunC_ppoint_cr  = new TH1F("DRC_dataRunC_ppoint_cr","DRC Scalar product displacement and total momentum of secondary vertex",30,-150,150);
 
-TH1F* DRC_ZLL_ppoint_cr = new TH1F("DRC_ZLL_ppoint_cr","DRC Scalar product displacement and total momentum of secondary vertex",30,-100,100);
+TH1F* DRC_ZLL_ppoint_cr = new TH1F("DRC_ZLL_ppoint_cr","DRC Scalar product displacement and total momentum of secondary vertex",30,-150,150);
 
-TH1F* DRC_TT_ppoint_cr = new TH1F("DRC_TT_ppoint_cr","DRC Scalar product displacement and total momentum of secondary vertex",30,-100,100);
+TH1F* DRC_TT_ppoint_cr = new TH1F("DRC_TT_ppoint_cr","DRC Scalar product displacement and total momentum of secondary vertex",30,-150,150);
 
-TH1F* DRC_W3J_ppoint_cr = new TH1F("DRC_W3J_ppoint_cr","DRC Scalar product displacement and total momentum of secondary vertex",30,-100,100);
+TH1F* DRC_W3J_ppoint_cr = new TH1F("DRC_W3J_ppoint_cr","DRC Scalar product displacement and total momentum of secondary vertex",30,-150,150);
 
-TH1F* DRC_W2J_ppoint_cr = new TH1F("DRC_W2J_ppoint_cr","DRC Scalar product displacement and total momentum of secondary vertex",30,-100,100);
+TH1F* DRC_W2J_ppoint_cr = new TH1F("DRC_W2J_ppoint_cr","DRC Scalar product displacement and total momentum of secondary vertex",30,-150,150);
 
-TH1F* DRC_W1J_ppoint_cr = new TH1F("DRC_W1J_ppoint_cr","DRC Scalar product displacement and total momentum of secondary vertex",30,-100,100);
+TH1F* DRC_W1J_ppoint_cr = new TH1F("DRC_W1J_ppoint_cr","DRC Scalar product displacement and total momentum of secondary vertex",30,-150,150);
 
-//TH1F* //DRC_TTZ_ppoint_cr = new TH1F("//DRC_TTZ_ppoint_cr","DRC Scalar product displacement and total momentum of secondary vertex",30,-100,100);
+//TH1F* //DRC_TTZ_ppoint_cr = new TH1F("//DRC_TTZ_ppoint_cr","DRC Scalar product displacement and total momentum of secondary vertex",30,-150,150);
 
-//TH1F* //DRC_WW_ppoint_cr = new TH1F("//DRC_WW_ppoint_cr","DRC Scalar product displacement and total momentum of secondary vertex",30,-100,100);
+//TH1F* //DRC_WW_ppoint_cr = new TH1F("//DRC_WW_ppoint_cr","DRC Scalar product displacement and total momentum of secondary vertex",30,-150,150);
 
-//TH1F* //DRC_WZ_ppoint_cr = new TH1F("//DRC_WZ_ppoint_cr","DRC Scalar product displacement and total momentum of secondary vertex",30,-100,100);
+//TH1F* //DRC_WZ_ppoint_cr = new TH1F("//DRC_WZ_ppoint_cr","DRC Scalar product displacement and total momentum of secondary vertex",30,-150,150);
 
-TH1F* DRC_LW200_ppoint_cr = new TH1F("DRC_LW200_ppoint_cr","DRC Scalar product displacement and total momentum of secondary vertex",30,-100,100);
+TH1F* DRC_LW200_ppoint_cr = new TH1F("DRC_LW200_ppoint_cr","DRC Scalar product displacement and total momentum of secondary vertex",30,-150,150);
 
-////TH1F* //DRC_LW300_ppoint_cr = new TH1F("//DRC_LW300_ppoint_cr","DRC Scalar product displacement and total momentum of secondary vertex",30,-100,100);
+////TH1F* //DRC_LW300_ppoint_cr = new TH1F("//DRC_LW300_ppoint_cr","DRC Scalar product displacement and total momentum of secondary vertex",30,-150,150);
 
-//TH1F* DRC_LW400_ppoint_cr = new TH1F("DRC_LW400_ppoint_cr","DRC Scalar product displacement and total momentum of secondary vertex",30,-100,100);
+//TH1F* DRC_LW400_ppoint_cr = new TH1F("DRC_LW400_ppoint_cr","DRC Scalar product displacement and total momentum of secondary vertex",30,-150,150);
 
-//TH1F* DRC_LW500_ppoint_cr = new TH1F("DRC_LW500_ppoint_cr","DRC Scalar product displacement and total momentum of secondary vertex",30,-100,100);
+//TH1F* DRC_LW500_ppoint_cr = new TH1F("DRC_LW500_ppoint_cr","DRC Scalar product displacement and total momentum of secondary vertex",30,-150,150);
 
 TH1F* DRC_dataRunB_ppointS_cr = new TH1F("DRC_dataRunB_ppointS_cr","DRC Scalar product sign displacement and total momentum of secondary vertex",2,0,2);
 
@@ -8329,33 +8329,33 @@ TH1F* DRC_LW200_JetJetFDR_cr = new TH1F("DRC_LW200_JetJetFDR_cr","DRC Jet furthe
 
 
 //////////////////////////////////////Jet Selection////////////////////////////////////////
-TH1F* JetS_dataRunB_ppoint_cr = new TH1F("JetS_dataRunB_ppoint_cr","JetS Scalar product displacement and total momentum of secondary vertex",30,-100,100);
+TH1F* JetS_dataRunB_ppoint_cr = new TH1F("JetS_dataRunB_ppoint_cr","JetS Scalar product displacement and total momentum of secondary vertex",30,-150,150);
 
-TH1F* JetS_dataRunC_ppoint_cr  = new TH1F("JetS_dataRunC_ppoint_cr","JetS Scalar product displacement and total momentum of secondary vertex",30,-100,100);
+TH1F* JetS_dataRunC_ppoint_cr  = new TH1F("JetS_dataRunC_ppoint_cr","JetS Scalar product displacement and total momentum of secondary vertex",30,-150,150);
 
-TH1F* JetS_ZLL_ppoint_cr = new TH1F("JetS_ZLL_ppoint_cr","JetS Scalar product displacement and total momentum of secondary vertex",30,-100,100);
+TH1F* JetS_ZLL_ppoint_cr = new TH1F("JetS_ZLL_ppoint_cr","JetS Scalar product displacement and total momentum of secondary vertex",30,-150,150);
 
-TH1F* JetS_TT_ppoint_cr = new TH1F("JetS_TT_ppoint_cr","JetS Scalar product displacement and total momentum of secondary vertex",30,-100,100);
+TH1F* JetS_TT_ppoint_cr = new TH1F("JetS_TT_ppoint_cr","JetS Scalar product displacement and total momentum of secondary vertex",30,-150,150);
 
-TH1F* JetS_W3J_ppoint_cr = new TH1F("JetS_W3J_ppoint_cr","JetS Scalar product displacement and total momentum of secondary vertex",30,-100,100);
+TH1F* JetS_W3J_ppoint_cr = new TH1F("JetS_W3J_ppoint_cr","JetS Scalar product displacement and total momentum of secondary vertex",30,-150,150);
 
-TH1F* JetS_W2J_ppoint_cr = new TH1F("JetS_W2J_ppoint_cr","JetS Scalar product displacement and total momentum of secondary vertex",30,-100,100);
+TH1F* JetS_W2J_ppoint_cr = new TH1F("JetS_W2J_ppoint_cr","JetS Scalar product displacement and total momentum of secondary vertex",30,-150,150);
 
-TH1F* JetS_W1J_ppoint_cr = new TH1F("JetS_W1J_ppoint_cr","JetS Scalar product displacement and total momentum of secondary vertex",30,-100,100);
+TH1F* JetS_W1J_ppoint_cr = new TH1F("JetS_W1J_ppoint_cr","JetS Scalar product displacement and total momentum of secondary vertex",30,-150,150);
 
-//TH1F* //JetS_TTZ_ppoint_cr = new TH1F("//JetS_TTZ_ppoint_cr","JetS Scalar product displacement and total momentum of secondary vertex",30,-100,100);
+//TH1F* //JetS_TTZ_ppoint_cr = new TH1F("//JetS_TTZ_ppoint_cr","JetS Scalar product displacement and total momentum of secondary vertex",30,-150,150);
 
-//TH1F* //JetS_WW_ppoint_cr = new TH1F("//JetS_WW_ppoint_cr","JetS Scalar product displacement and total momentum of secondary vertex",30,-100,100);
+//TH1F* //JetS_WW_ppoint_cr = new TH1F("//JetS_WW_ppoint_cr","JetS Scalar product displacement and total momentum of secondary vertex",30,-150,150);
 
-//TH1F* //JetS_WZ_ppoint_cr = new TH1F("//JetS_WZ_ppoint_cr","JetS Scalar product displacement and total momentum of secondary vertex",30,-100,100);
+//TH1F* //JetS_WZ_ppoint_cr = new TH1F("//JetS_WZ_ppoint_cr","JetS Scalar product displacement and total momentum of secondary vertex",30,-150,150);
 
-TH1F* JetS_LW200_ppoint_cr = new TH1F("JetS_LW200_ppoint_cr","JetS Scalar product displacement and total momentum of secondary vertex",30,-100,100);
+TH1F* JetS_LW200_ppoint_cr = new TH1F("JetS_LW200_ppoint_cr","JetS Scalar product displacement and total momentum of secondary vertex",30,-150,150);
 
-////TH1F* //JetS_LW300_ppoint_cr = new TH1F("//JetS_LW300_ppoint_cr","JetS Scalar product displacement and total momentum of secondary vertex",30,-100,100);
+////TH1F* //JetS_LW300_ppoint_cr = new TH1F("//JetS_LW300_ppoint_cr","JetS Scalar product displacement and total momentum of secondary vertex",30,-150,150);
 
-//TH1F* JetS_LW400_ppoint_cr = new TH1F("JetS_LW400_ppoint_cr","JetS Scalar product displacement and total momentum of secondary vertex",30,-100,100);
+//TH1F* JetS_LW400_ppoint_cr = new TH1F("JetS_LW400_ppoint_cr","JetS Scalar product displacement and total momentum of secondary vertex",30,-150,150);
 
-//TH1F* JetS_LW500_ppoint_cr = new TH1F("JetS_LW500_ppoint_cr","JetS Scalar product displacement and total momentum of secondary vertex",30,-100,100);
+//TH1F* JetS_LW500_ppoint_cr = new TH1F("JetS_LW500_ppoint_cr","JetS Scalar product displacement and total momentum of secondary vertex",30,-150,150);
 
 TH1F* JetS_dataRunB_ppointS_cr = new TH1F("JetS_dataRunB_ppointS_cr","JetS Scalar product sign displacement and total momentum of secondary vertex",2,0,2);
 
@@ -15612,7 +15612,8 @@ void EventLoopAnalysisTemplate::histograms(string cut) {
           if(EleTagIsDisp[Esecvec_eleTag->at(i)]==false){
             float Vx=Esecvec_posx->at(i)-Bsp_x->at(0);
             float Vy=Esecvec_posy->at(i)-Bsp_y->at(0);
-            if(sqrt(Vx*Vx+Vy*Vy)>0.02){
+            float Pt=sqrt(Esecvec_px->at(i)*Esecvec_px->at(i) + Esecvec_py->at(i)*Esecvec_py->at(i));
+            if(sqrt(Vx*Vx+Vy*Vy)>0.02 && Pt>20){
               float ppoint = Vx*Esecvec_px->at(i) + Vy*Esecvec_py->at(i);
               if(thelabel(0,2)=="LW"){
                 if(ppoint>0) isAntiParallel=true;
@@ -15637,7 +15638,8 @@ void EventLoopAnalysisTemplate::histograms(string cut) {
             if( EleTagIsDisp[Esecvec_eleTag->at(i)]==false ){
               Vx=Esecvec_posx->at(i)-Bsp_x->at(0);
               Vy=Esecvec_posy->at(i)-Bsp_y->at(0);
-              if(sqrt(Vx*Vx+Vy*Vy)>0.02){
+              float Pt=sqrt(Esecvec_px->at(i)*Esecvec_px->at(i) + Esecvec_py->at(i)*Esecvec_py->at(i));
+              if(sqrt(Vx*Vx+Vy*Vy)>0.02 && Pt>20){
                 ppoint = Vx*Esecvec_px->at(i) + Vy*Esecvec_py->at(i);
                 if(thelabel(0,2)=="LW"){
                   if(ppoint<0) hists.at(j)->Fill(1, theweight);
@@ -15659,7 +15661,8 @@ void EventLoopAnalysisTemplate::histograms(string cut) {
           if(EleTagIsDisp[Esecvec_eleTag->at(i)]==false){
             Vx=Esecvec_posx->at(i)-Bsp_x->at(0);
             Vy=Esecvec_posy->at(i)-Bsp_y->at(0);
-            if(sqrt(Vx*Vx+Vy*Vy)>0.02){
+            float Pt=sqrt(Esecvec_px->at(i)*Esecvec_px->at(i) + Esecvec_py->at(i)*Esecvec_py->at(i));
+            if(sqrt(Vx*Vx+Vy*Vy)>0.02 && Pt>20){
               ppoint = Vx*Esecvec_px->at(i) + Vy*Esecvec_py->at(i);
               //////////////save uncertainty value///////////////////////
               for (size_t n=0;n<Uhists.size();++n){
