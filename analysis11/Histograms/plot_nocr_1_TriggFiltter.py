@@ -9,7 +9,7 @@ ROOT.gROOT.SetBatch(True)
 
 # Declare a human-readable label for each variable
 labels = {
-        "ppoint": "SV Propagation Paralelity [GeV*mm]",
+        "ppoint": "\kappa_\parallel (GeV\cdot{mm})",
         "ppointS": "SV Propagation Paralelity sign",
         "npv": "Number of primary vertices",
         #"JetMass": "DiJets invariant mass",
@@ -276,6 +276,8 @@ def main(variable):
         sum.SetLineWidth(1)
         sum.Draw("LE2 SAME")
 
+
+
     if variable == "svd":
         for i in range(1, sum.GetNbinsX() + 1):
             error = 0.01*sum.GetBinContent(i)
@@ -291,10 +293,12 @@ def main(variable):
         sum.SetLineWidth(1)
         sum.Draw("LE2 SAME")
 
+
+
     name = data.GetTitle()
-    title = "TF "+labels.get(variable)
+    title = labels.get(variable)
     stack.GetXaxis().SetTitle(title)
-    stack.GetYaxis().SetTitle("N_{Events}per10[GeV*mm]")
+    stack.GetYaxis().SetTitle("Entries/bin")
     stack.SetMaximum(max(stack.GetMaximum(), data.GetMaximum()) * 1.4)
     stack.SetMinimum(1.0)
 
@@ -302,6 +306,8 @@ def main(variable):
     LW200.Draw("HIST SAME")
 
     data.Draw("E1P SAME")
+
+    rp = ROOT.TRatioPlot(sum,data)
 
     # Add legend
     legend = ROOT.TLegend(0.65, 0.73, 0.90, 0.88)
@@ -327,6 +333,13 @@ def main(variable):
     latex.SetTextFont(42)
     latex.DrawLatex(0.6, 0.935, "11.5 fb^{-1} (2012, 8 TeV)")
     latex.DrawLatex(0.24, 0.935, "#bf{CMS Open Data}")
+
+    c.SetTicks(0,1)
+    rp.GetLowYaxis().SetNdivisions(30)
+    #c.Update()
+    #c.Draw()
+    #rp.Draw()
+
 
     # Save
     if variable == "svd" or variable == "nsv" or variable == "ppoint" or variable == "BSdChi2norm":

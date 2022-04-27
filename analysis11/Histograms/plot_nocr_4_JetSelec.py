@@ -9,7 +9,7 @@ ROOT.gROOT.SetBatch(True)
 
 # Declare a human-readable label for each variable
 labels = {
-        "ppoint": "SV Propagation Paralelity [GeV*mm]",
+        "ppoint": "\kappa_\parallel (GeV\cdot{mm})",
         "ppointS": "SV Propagation Paralelity sign",
         "npv": "Number of primary vertices",
         #"JetMass": "DiJets invariant mass",
@@ -290,9 +290,9 @@ def main(variable):
 
 
     name = data.GetTitle()
-    title = "JetS "+labels.get(variable)
+    title = labels.get(variable)
     stack.GetXaxis().SetTitle(title)
-    stack.GetYaxis().SetTitle("N_{Events}per10GeV*mm")
+    stack.GetYaxis().SetTitle("Entries/bin")
     stack.SetMaximum(max(stack.GetMaximum(), data.GetMaximum()) * 1.4)
     stack.SetMinimum(1.0)
 
